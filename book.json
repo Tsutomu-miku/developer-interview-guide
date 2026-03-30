@@ -1,0 +1,27 @@
+{
+  "title": "全栈开发面试指南",
+  "description": "涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料",
+  "language": "zh-hans",
+  "plugins": [
+    "theme-default",
+    "search",
+    "highlight",
+    "sharing",
+    "fontsettings"
+  ],
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    },
+    "sharing": {
+      "facebook": false,
+      "twitter": false,
+      "all": ["github"]
+    }
+  },
+  "links": {
+    "sidebar": {
+      "GitHub": "https://github.com/Tsutomu-miku/developer-interview-guide"
+    }
+  }
+}
