@@ -15,10 +15,6 @@
   "pluginsConfig": {
     "theme-default": {
       "showLevel": true
-    },
-    "search-pro": {
-      "cutWordLib": "nodejieba",
-      "defineWord": ["微前端", "微模块", "状态管理", "设计模式", "Module Federation", "Serverless"]
     }
   },
   "links": {

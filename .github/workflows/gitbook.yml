@@ -23,12 +23,10 @@ jobs:
 
       - name: Install HonKit and plugins
         run: |
-          npm install -g honkit
-          npm install gitbook-plugin-search-pro gitbook-plugin-fontsettings gitbook-plugin-theme-default gitbook-plugin-highlight
-          honkit install
+          npm install honkit gitbook-plugin-search-pro gitbook-plugin-fontsettings gitbook-plugin-theme-default gitbook-plugin-highlight
 
       - name: Build GitBook
-        run: honkit build . ./docs
+        run: npx honkit build . ./docs
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
