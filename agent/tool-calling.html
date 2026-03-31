@@ -3,10 +3,11 @@
 <html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>工具调用与Function Calling · 全栈开发面试指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="generator" content="GitBook 6.1.7">
         
         
         
@@ -16,19 +17,23 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -69,10 +74,14 @@
     </head>
     <body>
         
-<div class="book honkit-cloak">
+<div class="book">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -269,6 +278,66 @@
             
         </li>
     
+        <li class="chapter " data-level="2.11" data-path="../frontend/micro-frontend.html">
+            
+                <a href="../frontend/micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../frontend/mobile-dev.html">
+            
+                <a href="../frontend/mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../frontend/state-management.html">
+            
+                <a href="../frontend/state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../frontend/design-patterns.html">
+            
+                <a href="../frontend/design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -359,6 +428,21 @@
                         <b>3.6.</b>
                     
                     最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../nodejs/serverless.html">
+            
+                <a href="../nodejs/serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
             
                 </a>
             
@@ -463,6 +547,21 @@
             
         </li>
     
+        <li class="chapter " data-level="4.7" data-path="../golang/cloud-native.html">
+            
+                <a href="../golang/cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -553,6 +652,21 @@
                         <b>5.6.</b>
                     
                     实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="evaluation.html">
+            
+                <a href="evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
             
                 </a>
             
@@ -657,14 +771,29 @@
             
         </li>
     
+        <li class="chapter " data-level="6.7" data-path="../algorithm/system-design.html">
+            
+                <a href="../algorithm/system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
     <li class="divider"></li>
 
     <li>
-        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
-            本书使用 HonKit 发布
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -697,6 +826,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="工具调用与-function-calling-面试指南">工具调用与 Function Calling 面试指南</h1>
@@ -788,8 +920,8 @@ message = response.choices[<span class="hljs-number">0</span>].message
         messages.append(message)  <span class="hljs-comment"># 添加 assistant 的 tool_call 消息</span>
         messages.append({
             <span class="hljs-string">"role"</span>: <span class="hljs-string">"tool"</span>,
-            <span class="hljs-string">"tool_call_id"</span>: tool_call.<span class="hljs-built_in">id</span>,
-            <span class="hljs-string">"content"</span>: json.dumps(result, ensure_ascii=<span class="hljs-literal">False</span>)
+            <span class="hljs-string">"tool_call_id"</span>: tool_call.id,
+            <span class="hljs-string">"content"</span>: json.dumps(result, ensure_ascii=<span class="hljs-keyword">False</span>)
         })
 
     <span class="hljs-comment"># 6. LLM 生成最终回答</span>
@@ -798,7 +930,7 @@ message = response.choices[<span class="hljs-number">0</span>].message
         messages=messages,
         tools=tools
     )
-    <span class="hljs-built_in">print</span>(final_response.choices[<span class="hljs-number">0</span>].message.content)
+    print(final_response.choices[<span class="hljs-number">0</span>].message.content)
 </code></pre>
 <h3 id="22-toolchoice-参数">2.2 tool_choice 参数</h3>
 <table>
@@ -926,14 +1058,14 @@ orders = get_orders(user_id=user[<span class="hljs-string">"id"</span>])
 <p>多个独立的工具调用可以同时执行。OpenAI API 支持模型在一次响应中返回多个 tool_calls：</p>
 <pre><code class="lang-python"><span class="hljs-comment"># 模型可能同时返回多个 tool_calls</span>
 response.choices[<span class="hljs-number">0</span>].message.tool_calls = [
-    ToolCall(<span class="hljs-built_in">id</span>=<span class="hljs-string">"call_1"</span>, function=Function(name=<span class="hljs-string">"get_weather"</span>, arguments=<span class="hljs-string">'{"city":"北京"}'</span>)),
-    ToolCall(<span class="hljs-built_in">id</span>=<span class="hljs-string">"call_2"</span>, function=Function(name=<span class="hljs-string">"get_weather"</span>, arguments=<span class="hljs-string">'{"city":"上海"}'</span>)),
+    ToolCall(id=<span class="hljs-string">"call_1"</span>, function=Function(name=<span class="hljs-string">"get_weather"</span>, arguments=<span class="hljs-string">'{"city":"北京"}'</span>)),
+    ToolCall(id=<span class="hljs-string">"call_2"</span>, function=Function(name=<span class="hljs-string">"get_weather"</span>, arguments=<span class="hljs-string">'{"city":"上海"}'</span>)),
 ]
 
 <span class="hljs-comment"># 并行执行</span>
 <span class="hljs-keyword">import</span> asyncio
 
-<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">execute_parallel</span>(<span class="hljs-params">tool_calls</span>):
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_parallel</span><span class="hljs-params">(tool_calls)</span>:</span>
     tasks = [execute_tool(tc) <span class="hljs-keyword">for</span> tc <span class="hljs-keyword">in</span> tool_calls]
     results = <span class="hljs-keyword">await</span> asyncio.gather(*tasks)
     <span class="hljs-keyword">return</span> results
@@ -941,11 +1073,11 @@ response.choices[<span class="hljs-number">0</span>].message.tool_calls = [
 <h3 id="43-嵌套调用">4.3 嵌套调用</h3>
 <p>一个工具的实现内部可能需要调用其他工具或触发另一个 Agent：</p>
 <pre><code class="lang-python"><span class="hljs-meta">@tool</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">analyze_competitor</span>(<span class="hljs-params">company_name: <span class="hljs-built_in">str</span></span>) -&gt; <span class="hljs-built_in">str</span>:
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">analyze_competitor</span><span class="hljs-params">(company_name: str)</span> -&gt; str:</span>
     <span class="hljs-string">"""分析竞争对手，内部涉及多个子任务"""</span>
     <span class="hljs-comment"># 嵌套调用：搜索 → 数据提取 → 分析</span>
-    search_results = search_web(<span class="hljs-string">f"<span class="hljs-subst">{company_name}</span> latest news"</span>)
-    financial_data = query_database(<span class="hljs-string">f"SELECT * FROM financials WHERE company='<span class="hljs-subst">{company_name}</span>'"</span>)
+    search_results = search_web(f<span class="hljs-string">"{company_name} latest news"</span>)
+    financial_data = query_database(f<span class="hljs-string">"SELECT * FROM financials WHERE company='{company_name}'"</span>)
     analysis = llm.analyze(search_results, financial_data)
     <span class="hljs-keyword">return</span> analysis
 </code></pre>
@@ -970,7 +1102,7 @@ response.choices[<span class="hljs-number">0</span>].message.tool_calls = [
 <h2 id="5-常见工具类型">5. 常见工具类型</h2>
 <h3 id="51-搜索工具">5.1 搜索工具</h3>
 <pre><code class="lang-python"><span class="hljs-meta">@tool</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">web_search</span>(<span class="hljs-params">query: <span class="hljs-built_in">str</span>, num_results: <span class="hljs-built_in">int</span> = <span class="hljs-number">5</span></span>) -&gt; <span class="hljs-built_in">str</span>:
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">web_search</span><span class="hljs-params">(query: str, num_results: int = <span class="hljs-number">5</span>)</span> -&gt; str:</span>
     <span class="hljs-string">"""搜索互联网获取最新信息。
 
     Args:
@@ -985,7 +1117,7 @@ response.choices[<span class="hljs-number">0</span>].message.tool_calls = [
 </code></pre>
 <h3 id="52-代码执行工具">5.2 代码执行工具</h3>
 <pre><code class="lang-python"><span class="hljs-meta">@tool</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">execute_python</span>(<span class="hljs-params">code: <span class="hljs-built_in">str</span></span>) -&gt; <span class="hljs-built_in">str</span>:
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_python</span><span class="hljs-params">(code: str)</span> -&gt; str:</span>
     <span class="hljs-string">"""在安全沙箱中执行Python代码。
 
     可以用于数据分析、数学计算、图表生成等。
@@ -998,11 +1130,11 @@ response.choices[<span class="hljs-number">0</span>].message.tool_calls = [
         代码的标准输出和错误输出
     """</span>
     result = sandbox.run(code, timeout=<span class="hljs-number">30</span>)
-    <span class="hljs-keyword">return</span> <span class="hljs-string">f"stdout: <span class="hljs-subst">{result.stdout}</span>\nstderr: <span class="hljs-subst">{result.stderr}</span>"</span>
+    <span class="hljs-keyword">return</span> f<span class="hljs-string">"stdout: {result.stdout}\nstderr: {result.stderr}"</span>
 </code></pre>
 <h3 id="53-数据库查询工具">5.3 数据库查询工具</h3>
 <pre><code class="lang-python"><span class="hljs-meta">@tool</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">query_database</span>(<span class="hljs-params">sql: <span class="hljs-built_in">str</span></span>) -&gt; <span class="hljs-built_in">str</span>:
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">query_database</span><span class="hljs-params">(sql: str)</span> -&gt; str:</span>
     <span class="hljs-string">"""执行只读SQL查询。
 
     仅支持SELECT语句，禁止INSERT/UPDATE/DELETE。
@@ -1017,11 +1149,11 @@ response.choices[<span class="hljs-number">0</span>].message.tool_calls = [
     <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sql.strip().upper().startswith(<span class="hljs-string">"SELECT"</span>):
         <span class="hljs-keyword">return</span> <span class="hljs-string">"错误：仅支持SELECT查询"</span>
     result = db.execute(sql + <span class="hljs-string">" LIMIT 100"</span>)
-    <span class="hljs-keyword">return</span> json.dumps(result, ensure_ascii=<span class="hljs-literal">False</span>)
+    <span class="hljs-keyword">return</span> json.dumps(result, ensure_ascii=<span class="hljs-keyword">False</span>)
 </code></pre>
 <h3 id="54-api-调用工具">5.4 API 调用工具</h3>
 <pre><code class="lang-python"><span class="hljs-meta">@tool</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">call_api</span>(<span class="hljs-params">endpoint: <span class="hljs-built_in">str</span>, method: <span class="hljs-built_in">str</span> = <span class="hljs-string">"GET"</span>, body: <span class="hljs-built_in">dict</span> = <span class="hljs-literal">None</span></span>) -&gt; <span class="hljs-built_in">str</span>:
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">call_api</span><span class="hljs-params">(endpoint: str, method: str = <span class="hljs-string">"GET"</span>, body: dict = None)</span> -&gt; str:</span>
     <span class="hljs-string">"""调用内部REST API。
 
     Args:
@@ -1037,7 +1169,7 @@ response.choices[<span class="hljs-number">0</span>].message.tool_calls = [
 </code></pre>
 <h3 id="55-文件操作工具">5.5 文件操作工具</h3>
 <pre><code class="lang-python"><span class="hljs-meta">@tool</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">read_file</span>(<span class="hljs-params">file_path: <span class="hljs-built_in">str</span></span>) -&gt; <span class="hljs-built_in">str</span>:
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read_file</span><span class="hljs-params">(file_path: str)</span> -&gt; str:</span>
     <span class="hljs-string">"""读取文件内容。仅允许读取指定目录下的文件。
 
     Args:
@@ -1046,7 +1178,7 @@ response.choices[<span class="hljs-number">0</span>].message.tool_calls = [
     safe_path = os.path.join(WORKSPACE_DIR, file_path)
     <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> safe_path.startswith(WORKSPACE_DIR):
         <span class="hljs-keyword">return</span> <span class="hljs-string">"错误：不允许访问工作目录外的文件"</span>
-    <span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(safe_path, <span class="hljs-string">'r'</span>) <span class="hljs-keyword">as</span> f:
+    <span class="hljs-keyword">with</span> open(safe_path, <span class="hljs-string">'r'</span>) <span class="hljs-keyword">as</span> f:
         <span class="hljs-keyword">return</span> f.read()
 </code></pre>
 <hr></hr>
@@ -1084,7 +1216,7 @@ response.choices[<span class="hljs-number">0</span>].message.tool_calls = [
 server = Server(<span class="hljs-string">"weather-server"</span>)
 
 <span class="hljs-meta">@server.list_tools()</span>
-<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">list_tools</span>():
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">list_tools</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">return</span> [
         Tool(
             name=<span class="hljs-string">"get_weather"</span>,
@@ -1100,10 +1232,10 @@ server = Server(<span class="hljs-string">"weather-server"</span>)
     ]
 
 <span class="hljs-meta">@server.call_tool()</span>
-<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">call_tool</span>(<span class="hljs-params">name: <span class="hljs-built_in">str</span>, arguments: <span class="hljs-built_in">dict</span></span>):
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">call_tool</span><span class="hljs-params">(name: str, arguments: dict)</span>:</span>
     <span class="hljs-keyword">if</span> name == <span class="hljs-string">"get_weather"</span>:
         weather = <span class="hljs-keyword">await</span> fetch_weather(arguments[<span class="hljs-string">"city"</span>])
-        <span class="hljs-keyword">return</span> [TextContent(<span class="hljs-built_in">type</span>=<span class="hljs-string">"text"</span>, text=json.dumps(weather))]
+        <span class="hljs-keyword">return</span> [TextContent(type=<span class="hljs-string">"text"</span>, text=json.dumps(weather))]
 </code></pre>
 <blockquote>
 <p><strong>面试题：MCP 协议解决了什么问题？它和传统的 Function Calling 有什么关系？</strong></p>
@@ -1124,22 +1256,22 @@ server = Server(<span class="hljs-string">"weather-server"</span>)
 <pre><code class="lang-python"><span class="hljs-keyword">import</span> subprocess
 <span class="hljs-keyword">import</span> tempfile
 
-<span class="hljs-keyword">class</span> <span class="hljs-title class_">CodeSandbox</span>:
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, timeout=<span class="hljs-number">30</span>, max_memory=<span class="hljs-string">"256m"</span></span>):
-        <span class="hljs-variable language_">self</span>.timeout = timeout
-        <span class="hljs-variable language_">self</span>.max_memory = max_memory
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CodeSandbox</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, timeout=<span class="hljs-number">30</span>, max_memory=<span class="hljs-string">"256m"</span>)</span>:</span>
+        self.timeout = timeout
+        self.max_memory = max_memory
 
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">execute</span>(<span class="hljs-params">self, code: <span class="hljs-built_in">str</span></span>) -&gt; <span class="hljs-built_in">dict</span>:
-        <span class="hljs-keyword">with</span> tempfile.NamedTemporaryFile(suffix=<span class="hljs-string">".py"</span>, mode=<span class="hljs-string">"w"</span>, delete=<span class="hljs-literal">False</span>) <span class="hljs-keyword">as</span> f:
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute</span><span class="hljs-params">(self, code: str)</span> -&gt; dict:</span>
+        <span class="hljs-keyword">with</span> tempfile.NamedTemporaryFile(suffix=<span class="hljs-string">".py"</span>, mode=<span class="hljs-string">"w"</span>, delete=<span class="hljs-keyword">False</span>) <span class="hljs-keyword">as</span> f:
             f.write(code)
             f.flush()
 
             <span class="hljs-keyword">try</span>:
                 result = subprocess.run(
                     [<span class="hljs-string">"python"</span>, f.name],
-                    capture_output=<span class="hljs-literal">True</span>,
-                    text=<span class="hljs-literal">True</span>,
-                    timeout=<span class="hljs-variable language_">self</span>.timeout,
+                    capture_output=<span class="hljs-keyword">True</span>,
+                    text=<span class="hljs-keyword">True</span>,
+                    timeout=self.timeout,
                     <span class="hljs-comment"># 资源限制</span>
                     env={**os.environ, <span class="hljs-string">"PYTHONDONTWRITEBYTECODE"</span>: <span class="hljs-string">"1"</span>}
                 )
@@ -1149,7 +1281,7 @@ server = Server(<span class="hljs-string">"weather-server"</span>)
                     <span class="hljs-string">"returncode"</span>: result.returncode
                 }
             <span class="hljs-keyword">except</span> subprocess.TimeoutExpired:
-                <span class="hljs-keyword">return</span> {<span class="hljs-string">"error"</span>: <span class="hljs-string">"执行超时"</span>, <span class="hljs-string">"timeout"</span>: <span class="hljs-variable language_">self</span>.timeout}
+                <span class="hljs-keyword">return</span> {<span class="hljs-string">"error"</span>: <span class="hljs-string">"执行超时"</span>, <span class="hljs-string">"timeout"</span>: self.timeout}
 </code></pre>
 <blockquote>
 <p><strong>面试题：Code Interpreter 的沙箱需要考虑哪些安全问题？</strong></p>
@@ -1167,7 +1299,7 @@ server = Server(<span class="hljs-string">"weather-server"</span>)
 <hr></hr>
 <h2 id="8-web-浏览器工具">8. Web 浏览器工具</h2>
 <pre><code class="lang-python"><span class="hljs-meta">@tool</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">browse_web</span>(<span class="hljs-params">url: <span class="hljs-built_in">str</span>, action: <span class="hljs-built_in">str</span> = <span class="hljs-string">"read"</span></span>) -&gt; <span class="hljs-built_in">str</span>:
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">browse_web</span><span class="hljs-params">(url: str, action: str = <span class="hljs-string">"read"</span>)</span> -&gt; str:</span>
     <span class="hljs-string">"""浏览网页并提取内容。
 
     Args:
@@ -1209,7 +1341,7 @@ server = Server(<span class="hljs-string">"weather-server"</span>)
 
 <span class="hljs-comment"># 策略2：工具分组</span>
 <span class="hljs-comment"># 根据任务阶段提供不同的工具子集</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">get_tools_for_stage</span>(<span class="hljs-params">stage</span>):
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_tools_for_stage</span><span class="hljs-params">(stage)</span>:</span>
     <span class="hljs-keyword">if</span> stage == <span class="hljs-string">"research"</span>:
         <span class="hljs-keyword">return</span> [web_search, read_document, summarize]
     <span class="hljs-keyword">elif</span> stage == <span class="hljs-string">"coding"</span>:
@@ -1219,7 +1351,7 @@ server = Server(<span class="hljs-string">"weather-server"</span>)
 
 <span class="hljs-comment"># 策略3：工具路由</span>
 <span class="hljs-comment"># 用一个轻量级模型先分类意图，再选择工具子集</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">route_tools</span>(<span class="hljs-params">user_query</span>):
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">route_tools</span><span class="hljs-params">(user_query)</span>:</span>
     intent = classifier.predict(user_query)
     <span class="hljs-keyword">return</span> tool_groups[intent]
 </code></pre>
@@ -1237,7 +1369,7 @@ server = Server(<span class="hljs-string">"weather-server"</span>)
 <hr></hr>
 <h2 id="10-错误处理与重试机制">10. 错误处理与重试机制</h2>
 <h3 id="101-错误类型">10.1 错误类型</h3>
-<pre><code class="lang-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">ToolError</span>:
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToolError</span>:</span>
     PARSE_ERROR = <span class="hljs-string">"参数解析错误"</span>      <span class="hljs-comment"># LLM 生成了无效的 JSON</span>
     VALIDATION_ERROR = <span class="hljs-string">"参数校验错误"</span>  <span class="hljs-comment"># 参数类型或值不合法</span>
     EXECUTION_ERROR = <span class="hljs-string">"执行错误"</span>       <span class="hljs-comment"># 工具运行时错误</span>
@@ -1249,11 +1381,11 @@ server = Server(<span class="hljs-string">"weather-server"</span>)
 <pre><code class="lang-python"><span class="hljs-keyword">import</span> time
 <span class="hljs-keyword">from</span> functools <span class="hljs-keyword">import</span> wraps
 
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">retry_with_backoff</span>(<span class="hljs-params">max_retries=<span class="hljs-number">3</span>, base_delay=<span class="hljs-number">1</span>, backoff_factor=<span class="hljs-number">2</span></span>):
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">decorator</span>(<span class="hljs-params">func</span>):
-<span class="hljs-meta">        @wraps(<span class="hljs-params">func</span>)</span>
-        <span class="hljs-keyword">def</span> <span class="hljs-title function_">wrapper</span>(<span class="hljs-params">*args, **kwargs</span>):
-            <span class="hljs-keyword">for</span> attempt <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(max_retries):
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">retry_with_backoff</span><span class="hljs-params">(max_retries=<span class="hljs-number">3</span>, base_delay=<span class="hljs-number">1</span>, backoff_factor=<span class="hljs-number">2</span>)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">decorator</span><span class="hljs-params">(func)</span>:</span>
+<span class="hljs-meta">        @wraps(func)</span>
+        <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">wrapper</span><span class="hljs-params">(*args, **kwargs)</span>:</span>
+            <span class="hljs-keyword">for</span> attempt <span class="hljs-keyword">in</span> range(max_retries):
                 <span class="hljs-keyword">try</span>:
                     <span class="hljs-keyword">return</span> func(*args, **kwargs)
                 <span class="hljs-keyword">except</span> (TimeoutError, ConnectionError) <span class="hljs-keyword">as</span> e:
@@ -1263,13 +1395,13 @@ server = Server(<span class="hljs-string">"weather-server"</span>)
                     time.sleep(delay)
                 <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:
                     <span class="hljs-comment"># 参数错误不重试，直接反馈给 LLM</span>
-                    <span class="hljs-keyword">return</span> {<span class="hljs-string">"error"</span>: <span class="hljs-built_in">str</span>(e), <span class="hljs-string">"retry"</span>: <span class="hljs-literal">False</span>}
-            <span class="hljs-keyword">return</span> {<span class="hljs-string">"error"</span>: <span class="hljs-string">"超过最大重试次数"</span>, <span class="hljs-string">"retry"</span>: <span class="hljs-literal">False</span>}
+                    <span class="hljs-keyword">return</span> {<span class="hljs-string">"error"</span>: str(e), <span class="hljs-string">"retry"</span>: <span class="hljs-keyword">False</span>}
+            <span class="hljs-keyword">return</span> {<span class="hljs-string">"error"</span>: <span class="hljs-string">"超过最大重试次数"</span>, <span class="hljs-string">"retry"</span>: <span class="hljs-keyword">False</span>}
         <span class="hljs-keyword">return</span> wrapper
     <span class="hljs-keyword">return</span> decorator
 
-<span class="hljs-meta">@retry_with_backoff(<span class="hljs-params">max_retries=<span class="hljs-number">3</span></span>)</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">execute_tool</span>(<span class="hljs-params">tool_name, arguments</span>):
+<span class="hljs-meta">@retry_with_backoff(max_retries=3)</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_tool</span><span class="hljs-params">(tool_name, arguments)</span>:</span>
     tool = tool_registry[tool_name]
     validated_args = tool.validate(arguments)
     <span class="hljs-keyword">return</span> tool.execute(validated_args)
@@ -1278,9 +1410,9 @@ server = Server(<span class="hljs-string">"weather-server"</span>)
 <pre><code class="lang-python"><span class="hljs-comment"># 将错误信息结构化地返回给 LLM</span>
 error_message = {
     <span class="hljs-string">"role"</span>: <span class="hljs-string">"tool"</span>,
-    <span class="hljs-string">"tool_call_id"</span>: tool_call.<span class="hljs-built_in">id</span>,
+    <span class="hljs-string">"tool_call_id"</span>: tool_call.id,
     <span class="hljs-string">"content"</span>: json.dumps({
-        <span class="hljs-string">"error"</span>: <span class="hljs-literal">True</span>,
+        <span class="hljs-string">"error"</span>: <span class="hljs-keyword">True</span>,
         <span class="hljs-string">"error_type"</span>: <span class="hljs-string">"VALIDATION_ERROR"</span>,
         <span class="hljs-string">"message"</span>: <span class="hljs-string">"参数 'date' 的格式应为 YYYY-MM-DD，收到的值为 '明天'"</span>,
         <span class="hljs-string">"suggestion"</span>: <span class="hljs-string">"请将日期转换为具体日期格式，如 2024-01-15"</span>
@@ -1302,34 +1434,34 @@ error_message = {
 <hr></hr>
 <h2 id="11-安全性">11. 安全性</h2>
 <h3 id="111-工具权限控制">11.1 工具权限控制</h3>
-<pre><code class="lang-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">ToolPermission</span>:
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToolPermission</span>:</span>
     READ_ONLY = <span class="hljs-string">"read_only"</span>       <span class="hljs-comment"># 只读操作</span>
     READ_WRITE = <span class="hljs-string">"read_write"</span>     <span class="hljs-comment"># 读写操作</span>
     ADMIN = <span class="hljs-string">"admin"</span>               <span class="hljs-comment"># 管理员操作</span>
     DANGEROUS = <span class="hljs-string">"dangerous"</span>       <span class="hljs-comment"># 危险操作（需人工确认）</span>
 
-<span class="hljs-keyword">class</span> <span class="hljs-title class_">SecureToolRegistry</span>:
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):
-        <span class="hljs-variable language_">self</span>.tools = {}
-        <span class="hljs-variable language_">self</span>.permissions = {}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SecureToolRegistry</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+        self.tools = {}
+        self.permissions = {}
 
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">register</span>(<span class="hljs-params">self, tool, permission_level</span>):
-        <span class="hljs-variable language_">self</span>.tools[tool.name] = tool
-        <span class="hljs-variable language_">self</span>.permissions[tool.name] = permission_level
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">register</span><span class="hljs-params">(self, tool, permission_level)</span>:</span>
+        self.tools[tool.name] = tool
+        self.permissions[tool.name] = permission_level
 
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">execute</span>(<span class="hljs-params">self, tool_name, args, user_permission</span>):
-        required = <span class="hljs-variable language_">self</span>.permissions[tool_name]
-        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> <span class="hljs-variable language_">self</span>.has_permission(user_permission, required):
-            <span class="hljs-keyword">raise</span> PermissionError(<span class="hljs-string">f"权限不足：需要 <span class="hljs-subst">{required}</span>"</span>)
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute</span><span class="hljs-params">(self, tool_name, args, user_permission)</span>:</span>
+        required = self.permissions[tool_name]
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> self.has_permission(user_permission, required):
+            <span class="hljs-keyword">raise</span> PermissionError(f<span class="hljs-string">"权限不足：需要 {required}"</span>)
 
         <span class="hljs-keyword">if</span> required == ToolPermission.DANGEROUS:
-            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> <span class="hljs-variable language_">self</span>.get_human_confirmation(tool_name, args):
+            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> self.get_human_confirmation(tool_name, args):
                 <span class="hljs-keyword">return</span> {<span class="hljs-string">"error"</span>: <span class="hljs-string">"用户拒绝执行此操作"</span>}
 
-        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">self</span>.tools[tool_name].execute(args)
+        <span class="hljs-keyword">return</span> self.tools[tool_name].execute(args)
 </code></pre>
 <h3 id="112-输入校验">11.2 输入校验</h3>
-<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">validate_tool_input</span>(<span class="hljs-params">tool_name, arguments</span>):
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">validate_tool_input</span><span class="hljs-params">(tool_name, arguments)</span>:</span>
     <span class="hljs-string">"""严格校验工具输入"""</span>
     schema = tool_schemas[tool_name]
 
@@ -1339,7 +1471,7 @@ error_message = {
     <span class="hljs-comment"># 自定义安全校验</span>
     <span class="hljs-keyword">if</span> tool_name == <span class="hljs-string">"query_database"</span>:
         <span class="hljs-comment"># SQL 注入防护</span>
-        <span class="hljs-keyword">if</span> <span class="hljs-built_in">any</span>(keyword <span class="hljs-keyword">in</span> arguments[<span class="hljs-string">"sql"</span>].upper() 
+        <span class="hljs-keyword">if</span> any(keyword <span class="hljs-keyword">in</span> arguments[<span class="hljs-string">"sql"</span>].upper() 
                <span class="hljs-keyword">for</span> keyword <span class="hljs-keyword">in</span> [<span class="hljs-string">"DROP"</span>, <span class="hljs-string">"DELETE"</span>, <span class="hljs-string">"UPDATE"</span>, <span class="hljs-string">"INSERT"</span>, <span class="hljs-string">"ALTER"</span>]):
             <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">"仅允许 SELECT 查询"</span>)
 
@@ -1372,15 +1504,15 @@ error_message = {
 <hr></hr>
 <h2 id="12-工具注册与发现">12. 工具注册与发现</h2>
 <h3 id="121-工具注册表">12.1 工具注册表</h3>
-<pre><code class="lang-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">ToolRegistry</span>:
-    _instance = <span class="hljs-literal">None</span>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToolRegistry</span>:</span>
+    _instance = <span class="hljs-keyword">None</span>
 
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):
-        <span class="hljs-variable language_">self</span>.tools = {}
-        <span class="hljs-variable language_">self</span>.categories = {}
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+        self.tools = {}
+        self.categories = {}
 
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">register</span>(<span class="hljs-params">self, tool, category=<span class="hljs-string">"default"</span>, tags=<span class="hljs-literal">None</span></span>):
-        <span class="hljs-variable language_">self</span>.tools[tool.name] = {
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">register</span><span class="hljs-params">(self, tool, category=<span class="hljs-string">"default"</span>, tags=None)</span>:</span>
+        self.tools[tool.name] = {
             <span class="hljs-string">"tool"</span>: tool,
             <span class="hljs-string">"category"</span>: category,
             <span class="hljs-string">"tags"</span>: tags <span class="hljs-keyword">or</span> [],
@@ -1388,16 +1520,16 @@ error_message = {
             <span class="hljs-string">"usage_count"</span>: <span class="hljs-number">0</span>,
             <span class="hljs-string">"avg_latency"</span>: <span class="hljs-number">0</span>
         }
-        <span class="hljs-variable language_">self</span>.categories.setdefault(category, []).append(tool.name)
+        self.categories.setdefault(category, []).append(tool.name)
 
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">discover</span>(<span class="hljs-params">self, query=<span class="hljs-literal">None</span>, category=<span class="hljs-literal">None</span>, tags=<span class="hljs-literal">None</span></span>):
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">discover</span><span class="hljs-params">(self, query=None, category=None, tags=None)</span>:</span>
         <span class="hljs-string">"""根据条件发现可用工具"""</span>
-        candidates = <span class="hljs-built_in">list</span>(<span class="hljs-variable language_">self</span>.tools.values())
+        candidates = list(self.tools.values())
         <span class="hljs-keyword">if</span> category:
-            names = <span class="hljs-variable language_">self</span>.categories.get(category, [])
-            candidates = [<span class="hljs-variable language_">self</span>.tools[n] <span class="hljs-keyword">for</span> n <span class="hljs-keyword">in</span> names]
+            names = self.categories.get(category, [])
+            candidates = [self.tools[n] <span class="hljs-keyword">for</span> n <span class="hljs-keyword">in</span> names]
         <span class="hljs-keyword">if</span> tags:
-            candidates = [t <span class="hljs-keyword">for</span> t <span class="hljs-keyword">in</span> candidates <span class="hljs-keyword">if</span> <span class="hljs-built_in">set</span>(tags) &amp; <span class="hljs-built_in">set</span>(t[<span class="hljs-string">"tags"</span>])]
+            candidates = [t <span class="hljs-keyword">for</span> t <span class="hljs-keyword">in</span> candidates <span class="hljs-keyword">if</span> set(tags) &amp; set(t[<span class="hljs-string">"tags"</span>])]
         <span class="hljs-keyword">if</span> query:
             <span class="hljs-comment"># 语义匹配工具描述</span>
             candidates = semantic_search(query, candidates)
@@ -1407,8 +1539,8 @@ error_message = {
 <pre><code class="lang-python"><span class="hljs-comment"># 按需加载工具插件</span>
 <span class="hljs-keyword">import</span> importlib
 
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">load_tool_plugin</span>(<span class="hljs-params">plugin_name</span>):
-    module = importlib.import_module(<span class="hljs-string">f"tools.<span class="hljs-subst">{plugin_name}</span>"</span>)
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_tool_plugin</span><span class="hljs-params">(plugin_name)</span>:</span>
+    module = importlib.import_module(f<span class="hljs-string">"tools.{plugin_name}"</span>)
     tool = module.create_tool()
     registry.register(tool)
     <span class="hljs-keyword">return</span> tool
@@ -1418,7 +1550,7 @@ error_message = {
 <h3 id="131-组合工具模式">13.1 组合工具模式</h3>
 <p>将多个原子工具组合为高级工具：</p>
 <pre><code class="lang-python"><span class="hljs-meta">@tool</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">research_topic</span>(<span class="hljs-params">topic: <span class="hljs-built_in">str</span></span>) -&gt; <span class="hljs-built_in">str</span>:
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">research_topic</span><span class="hljs-params">(topic: str)</span> -&gt; str:</span>
     <span class="hljs-string">"""对某个主题进行全面研究。内部组合搜索、阅读、总结等操作。"""</span>
     <span class="hljs-comment"># 搜索相关文章</span>
     search_results = web_search(topic, num_results=<span class="hljs-number">10</span>)
@@ -1431,12 +1563,12 @@ error_message = {
 <h3 id="132-确认工具模式">13.2 确认工具模式</h3>
 <p>对有副作用的操作先生成预览，确认后再执行：</p>
 <pre><code class="lang-python"><span class="hljs-meta">@tool</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">send_email_preview</span>(<span class="hljs-params">to: <span class="hljs-built_in">str</span>, subject: <span class="hljs-built_in">str</span>, body: <span class="hljs-built_in">str</span></span>) -&gt; <span class="hljs-built_in">str</span>:
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">send_email_preview</span><span class="hljs-params">(to: str, subject: str, body: str)</span> -&gt; str:</span>
     <span class="hljs-string">"""生成邮件预览，等待用户确认后发送"""</span>
-    <span class="hljs-keyword">return</span> <span class="hljs-string">f"准备发送邮件：\n收件人：<span class="hljs-subst">{to}</span>\n主题：<span class="hljs-subst">{subject}</span>\n正文：<span class="hljs-subst">{body}</span>\n\n请确认是否发送？"</span>
+    <span class="hljs-keyword">return</span> f<span class="hljs-string">"准备发送邮件：\n收件人：{to}\n主题：{subject}\n正文：{body}\n\n请确认是否发送？"</span>
 
 <span class="hljs-meta">@tool</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">send_email_confirm</span>(<span class="hljs-params">email_id: <span class="hljs-built_in">str</span></span>) -&gt; <span class="hljs-built_in">str</span>:
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">send_email_confirm</span><span class="hljs-params">(email_id: str)</span> -&gt; str:</span>
     <span class="hljs-string">"""确认并发送已预览的邮件"""</span>
     email = pending_emails[email_id]
     <span class="hljs-keyword">return</span> smtp.send(email)
@@ -1444,11 +1576,11 @@ error_message = {
 <h3 id="133-幂等工具模式">13.3 幂等工具模式</h3>
 <p>确保工具多次调用不会产生重复副作用：</p>
 <pre><code class="lang-python"><span class="hljs-meta">@tool</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">create_order</span>(<span class="hljs-params">order_id: <span class="hljs-built_in">str</span>, items: <span class="hljs-built_in">list</span></span>) -&gt; <span class="hljs-built_in">str</span>:
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create_order</span><span class="hljs-params">(order_id: str, items: list)</span> -&gt; str:</span>
     <span class="hljs-string">"""创建订单（幂等操作：相同order_id只创建一次）"""</span>
     existing = db.get_order(order_id)
     <span class="hljs-keyword">if</span> existing:
-        <span class="hljs-keyword">return</span> <span class="hljs-string">f"订单 <span class="hljs-subst">{order_id}</span> 已存在，无需重复创建"</span>
+        <span class="hljs-keyword">return</span> f<span class="hljs-string">"订单 {order_id} 已存在，无需重复创建"</span>
     <span class="hljs-keyword">return</span> db.create_order(order_id, items)
 </code></pre>
 <blockquote>
@@ -1509,6 +1641,22 @@ error_message = {
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -1532,73 +1680,29 @@ error_message = {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"工具调用与Function Calling","level":"5.5","depth":1,"next":{"title":"实战与进阶","level":"5.6","depth":1,"path":"agent/practice.md","ref":"agent/practice.md","articles":[]},"previous":{"title":"Agent架构","level":"5.4","depth":1,"path":"agent/agent-architecture.md","ref":"agent/agent-architecture.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"agent/tool-calling.md","mtime":"2026-03-31T06:35:11.835Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"工具调用与Function Calling","level":"5.5","depth":1,"next":{"title":"实战与进阶","level":"5.6","depth":1,"path":"agent/practice.md","ref":"agent/practice.md","articles":[]},"previous":{"title":"Agent架构","level":"5.4","depth":1,"path":"agent/agent-architecture.md","ref":"agent/agent-architecture.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"agent/tool-calling.md","mtime":"2026-03-31T12:30:26.827Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    <noscript>
-        <style>
-            .honkit-cloak {
-                display: block !important;
-            }
-        </style>
-    </noscript>
-    <script>
-        // Restore sidebar state as critical path for prevent layout shift
-        function __init__getSidebarState(defaultValue){
-            var baseKey = "";
-            var key = baseKey + ":sidebar";
-            try {
-                var value = localStorage[key];
-                if (value === undefined) {
-                    return defaultValue;
-                }
-                var parsed = JSON.parse(value);
-                return parsed == null ? defaultValue : parsed;
-            } catch (e) {
-                return defaultValue;
-            }
-        }
-        function __init__restoreLastSidebarState() {
-            var isMobile = window.matchMedia("(max-width: 600px)").matches;
-            if (isMobile) {
-                // Init last state if not mobile
-                return;
-            }
-            var sidebarState = __init__getSidebarState(true);
-            var book = document.querySelector(".book");
-            // Show sidebar if it enabled
-            if (sidebarState && book) {
-                book.classList.add("without-animation", "with-summary");
-            }
-        }
-
-        try {
-            __init__restoreLastSidebarState();
-        } finally {
-            var book = document.querySelector(".book");
-            book.classList.remove("honkit-cloak");
-        }
-    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

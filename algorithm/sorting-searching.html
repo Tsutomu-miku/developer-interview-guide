@@ -3,10 +3,11 @@
 <html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>排序与搜索 · 全栈开发面试指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="generator" content="GitBook 6.1.7">
         
         
         
@@ -16,19 +17,23 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -69,10 +74,14 @@
     </head>
     <body>
         
-<div class="book honkit-cloak">
+<div class="book">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -269,6 +278,66 @@
             
         </li>
     
+        <li class="chapter " data-level="2.11" data-path="../frontend/micro-frontend.html">
+            
+                <a href="../frontend/micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../frontend/mobile-dev.html">
+            
+                <a href="../frontend/mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../frontend/state-management.html">
+            
+                <a href="../frontend/state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../frontend/design-patterns.html">
+            
+                <a href="../frontend/design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -359,6 +428,21 @@
                         <b>3.6.</b>
                     
                     最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../nodejs/serverless.html">
+            
+                <a href="../nodejs/serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
             
                 </a>
             
@@ -463,6 +547,21 @@
             
         </li>
     
+        <li class="chapter " data-level="4.7" data-path="../golang/cloud-native.html">
+            
+                <a href="../golang/cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -553,6 +652,21 @@
                         <b>5.6.</b>
                     
                     实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../agent/evaluation.html">
+            
+                <a href="../agent/evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
             
                 </a>
             
@@ -657,14 +771,29 @@
             
         </li>
     
+        <li class="chapter " data-level="6.7" data-path="system-design.html">
+            
+                <a href="system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
     <li class="divider"></li>
 
     <li>
-        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
-            本书使用 HonKit 发布
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -697,6 +826,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="排序与搜索算法">排序与搜索算法</h1>
@@ -710,8 +842,8 @@
 <li><strong>空间复杂度</strong>：O(1)</li>
 <li><strong>稳定性</strong>：稳定</li>
 </ul>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">bubbleSort</span>(<span class="hljs-params">arr</span>) {
-  <span class="hljs-keyword">const</span> n = arr.<span class="hljs-property">length</span>;
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bubbleSort</span>(<span class="hljs-params">arr</span>) </span>{
+  <span class="hljs-keyword">const</span> n = arr.length;
   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; n - <span class="hljs-number">1</span>; i++) {
     <span class="hljs-keyword">let</span> swapped = <span class="hljs-literal">false</span>;
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = <span class="hljs-number">0</span>; j &lt; n - <span class="hljs-number">1</span> - i; j++) {
@@ -725,7 +857,7 @@
   <span class="hljs-keyword">return</span> arr;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">bubbleSort</span><span class="hljs-params">(arr []<span class="hljs-type">int</span>)</span></span> []<span class="hljs-type">int</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">bubbleSort</span><span class="hljs-params">(arr []<span class="hljs-keyword">int</span>)</span> []<span class="hljs-title">int</span></span> {
     n := <span class="hljs-built_in">len</span>(arr)
     <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; n<span class="hljs-number">-1</span>; i++ {
         swapped := <span class="hljs-literal">false</span>
@@ -749,8 +881,8 @@
 <li><strong>空间复杂度</strong>：O(1)</li>
 <li><strong>稳定性</strong>：不稳定</li>
 </ul>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">selectionSort</span>(<span class="hljs-params">arr</span>) {
-  <span class="hljs-keyword">const</span> n = arr.<span class="hljs-property">length</span>;
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">selectionSort</span>(<span class="hljs-params">arr</span>) </span>{
+  <span class="hljs-keyword">const</span> n = arr.length;
   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; n - <span class="hljs-number">1</span>; i++) {
     <span class="hljs-keyword">let</span> minIdx = i;
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = i + <span class="hljs-number">1</span>; j &lt; n; j++) {
@@ -761,7 +893,7 @@
   <span class="hljs-keyword">return</span> arr;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">selectionSort</span><span class="hljs-params">(arr []<span class="hljs-type">int</span>)</span></span> []<span class="hljs-type">int</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">selectionSort</span><span class="hljs-params">(arr []<span class="hljs-keyword">int</span>)</span> []<span class="hljs-title">int</span></span> {
     n := <span class="hljs-built_in">len</span>(arr)
     <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; n<span class="hljs-number">-1</span>; i++ {
         minIdx := i
@@ -784,8 +916,8 @@
 <li><strong>空间复杂度</strong>：O(1)</li>
 <li><strong>稳定性</strong>：稳定</li>
 </ul>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">insertionSort</span>(<span class="hljs-params">arr</span>) {
-  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">1</span>; i &lt; arr.<span class="hljs-property">length</span>; i++) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">insertionSort</span>(<span class="hljs-params">arr</span>) </span>{
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">1</span>; i &lt; arr.length; i++) {
     <span class="hljs-keyword">const</span> key = arr[i];
     <span class="hljs-keyword">let</span> j = i - <span class="hljs-number">1</span>;
     <span class="hljs-keyword">while</span> (j &gt;= <span class="hljs-number">0</span> &amp;&amp; arr[j] &gt; key) {
@@ -797,7 +929,7 @@
   <span class="hljs-keyword">return</span> arr;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">insertionSort</span><span class="hljs-params">(arr []<span class="hljs-type">int</span>)</span></span> []<span class="hljs-type">int</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">insertionSort</span><span class="hljs-params">(arr []<span class="hljs-keyword">int</span>)</span> []<span class="hljs-title">int</span></span> {
     <span class="hljs-keyword">for</span> i := <span class="hljs-number">1</span>; i &lt; <span class="hljs-built_in">len</span>(arr); i++ {
         key := arr[i]
         j := i - <span class="hljs-number">1</span>
@@ -817,25 +949,25 @@
 <li><strong>空间复杂度</strong>：O(n)</li>
 <li><strong>稳定性</strong>：稳定</li>
 </ul>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">mergeSort</span>(<span class="hljs-params">arr</span>) {
-  <span class="hljs-keyword">if</span> (arr.<span class="hljs-property">length</span> &lt;= <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> arr;
-  <span class="hljs-keyword">const</span> mid = arr.<span class="hljs-property">length</span> &gt;&gt; <span class="hljs-number">1</span>;
-  <span class="hljs-keyword">const</span> left = <span class="hljs-title function_">mergeSort</span>(arr.<span class="hljs-title function_">slice</span>(<span class="hljs-number">0</span>, mid));
-  <span class="hljs-keyword">const</span> right = <span class="hljs-title function_">mergeSort</span>(arr.<span class="hljs-title function_">slice</span>(mid));
-  <span class="hljs-keyword">return</span> <span class="hljs-title function_">merge</span>(left, right);
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mergeSort</span>(<span class="hljs-params">arr</span>) </span>{
+  <span class="hljs-keyword">if</span> (arr.length &lt;= <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> arr;
+  <span class="hljs-keyword">const</span> mid = arr.length &gt;&gt; <span class="hljs-number">1</span>;
+  <span class="hljs-keyword">const</span> left = mergeSort(arr.slice(<span class="hljs-number">0</span>, mid));
+  <span class="hljs-keyword">const</span> right = mergeSort(arr.slice(mid));
+  <span class="hljs-keyword">return</span> merge(left, right);
 }
 
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">merge</span>(<span class="hljs-params">l, r</span>) {
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">merge</span>(<span class="hljs-params">l, r</span>) </span>{
   <span class="hljs-keyword">const</span> res = [];
   <span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>, j = <span class="hljs-number">0</span>;
-  <span class="hljs-keyword">while</span> (i &lt; l.<span class="hljs-property">length</span> &amp;&amp; j &lt; r.<span class="hljs-property">length</span>) {
-    <span class="hljs-keyword">if</span> (l[i] &lt;= r[j]) res.<span class="hljs-title function_">push</span>(l[i++]);
-    <span class="hljs-keyword">else</span> res.<span class="hljs-title function_">push</span>(r[j++]);
+  <span class="hljs-keyword">while</span> (i &lt; l.length &amp;&amp; j &lt; r.length) {
+    <span class="hljs-keyword">if</span> (l[i] &lt;= r[j]) res.push(l[i++]);
+    <span class="hljs-keyword">else</span> res.push(r[j++]);
   }
-  <span class="hljs-keyword">return</span> res.<span class="hljs-title function_">concat</span>(l.<span class="hljs-title function_">slice</span>(i), r.<span class="hljs-title function_">slice</span>(j));
+  <span class="hljs-keyword">return</span> res.concat(l.slice(i), r.slice(j));
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">mergeSort</span><span class="hljs-params">(arr []<span class="hljs-type">int</span>)</span></span> []<span class="hljs-type">int</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">mergeSort</span><span class="hljs-params">(arr []<span class="hljs-keyword">int</span>)</span> []<span class="hljs-title">int</span></span> {
     <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(arr) &lt;= <span class="hljs-number">1</span> {
         <span class="hljs-keyword">return</span> arr
     }
@@ -845,8 +977,8 @@
     <span class="hljs-keyword">return</span> mergeTwoSlices(left, right)
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">mergeTwoSlices</span><span class="hljs-params">(l, r []<span class="hljs-type">int</span>)</span></span> []<span class="hljs-type">int</span> {
-    res := <span class="hljs-built_in">make</span>([]<span class="hljs-type">int</span>, <span class="hljs-number">0</span>, <span class="hljs-built_in">len</span>(l)+<span class="hljs-built_in">len</span>(r))
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">mergeTwoSlices</span><span class="hljs-params">(l, r []<span class="hljs-keyword">int</span>)</span> []<span class="hljs-title">int</span></span> {
+    res := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int</span>, <span class="hljs-number">0</span>, <span class="hljs-built_in">len</span>(l)+<span class="hljs-built_in">len</span>(r))
     i, j := <span class="hljs-number">0</span>, <span class="hljs-number">0</span>
     <span class="hljs-keyword">for</span> i &lt; <span class="hljs-built_in">len</span>(l) &amp;&amp; j &lt; <span class="hljs-built_in">len</span>(r) {
         <span class="hljs-keyword">if</span> l[i] &lt;= r[j] {
@@ -869,7 +1001,7 @@
 <li><strong>空间复杂度</strong>：O(log n)（递归栈）</li>
 <li><strong>稳定性</strong>：不稳定</li>
 </ul>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">quickSort</span>(<span class="hljs-params">arr, lo = <span class="hljs-number">0</span>, hi = arr.length - <span class="hljs-number">1</span></span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">quickSort</span>(<span class="hljs-params">arr, lo = <span class="hljs-number">0</span>, hi = arr.length - <span class="hljs-number">1</span></span>) </span>{
   <span class="hljs-keyword">if</span> (lo &gt;= hi) <span class="hljs-keyword">return</span> arr;
   <span class="hljs-keyword">const</span> pivot = arr[lo + ((hi - lo) &gt;&gt; <span class="hljs-number">1</span>)];
   <span class="hljs-keyword">let</span> i = lo, j = hi;
@@ -882,12 +1014,12 @@
       j--;
     }
   }
-  <span class="hljs-title function_">quickSort</span>(arr, lo, j);
-  <span class="hljs-title function_">quickSort</span>(arr, i, hi);
+  quickSort(arr, lo, j);
+  quickSort(arr, i, hi);
   <span class="hljs-keyword">return</span> arr;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">quickSort</span><span class="hljs-params">(arr []<span class="hljs-type">int</span>, lo, hi <span class="hljs-type">int</span>)</span></span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">quickSort</span><span class="hljs-params">(arr []<span class="hljs-keyword">int</span>, lo, hi <span class="hljs-keyword">int</span>)</span></span> {
     <span class="hljs-keyword">if</span> lo &gt;= hi {
         <span class="hljs-keyword">return</span>
     }
@@ -917,35 +1049,35 @@
 <li><strong>空间复杂度</strong>：O(1)（原地排序）</li>
 <li><strong>稳定性</strong>：不稳定</li>
 </ul>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">heapSort</span>(<span class="hljs-params">arr</span>) {
-  <span class="hljs-keyword">const</span> n = arr.<span class="hljs-property">length</span>;
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">heapSort</span>(<span class="hljs-params">arr</span>) </span>{
+  <span class="hljs-keyword">const</span> n = arr.length;
 
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">siftDown</span>(<span class="hljs-params">i, size</span>) {
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">siftDown</span>(<span class="hljs-params">i, size</span>) </span>{
     <span class="hljs-keyword">let</span> largest = i;
     <span class="hljs-keyword">const</span> l = <span class="hljs-number">2</span> * i + <span class="hljs-number">1</span>, r = <span class="hljs-number">2</span> * i + <span class="hljs-number">2</span>;
     <span class="hljs-keyword">if</span> (l &lt; size &amp;&amp; arr[l] &gt; arr[largest]) largest = l;
     <span class="hljs-keyword">if</span> (r &lt; size &amp;&amp; arr[r] &gt; arr[largest]) largest = r;
     <span class="hljs-keyword">if</span> (largest !== i) {
       [arr[i], arr[largest]] = [arr[largest], arr[i]];
-      <span class="hljs-title function_">siftDown</span>(largest, size);
+      siftDown(largest, size);
     }
   }
 
   <span class="hljs-comment">// 建堆</span>
-  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = (n &gt;&gt; <span class="hljs-number">1</span>) - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; i--) <span class="hljs-title function_">siftDown</span>(i, n);
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = (n &gt;&gt; <span class="hljs-number">1</span>) - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; i--) siftDown(i, n);
   <span class="hljs-comment">// 排序</span>
   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = n - <span class="hljs-number">1</span>; i &gt; <span class="hljs-number">0</span>; i--) {
     [arr[<span class="hljs-number">0</span>], arr[i]] = [arr[i], arr[<span class="hljs-number">0</span>]];
-    <span class="hljs-title function_">siftDown</span>(<span class="hljs-number">0</span>, i);
+    siftDown(<span class="hljs-number">0</span>, i);
   }
   <span class="hljs-keyword">return</span> arr;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">heapSort</span><span class="hljs-params">(arr []<span class="hljs-type">int</span>)</span></span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">heapSort</span><span class="hljs-params">(arr []<span class="hljs-keyword">int</span>)</span></span> {
     n := <span class="hljs-built_in">len</span>(arr)
 
-    <span class="hljs-keyword">var</span> siftDown <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(i, size <span class="hljs-type">int</span>)</span></span>
-    siftDown = <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(i, size <span class="hljs-type">int</span>)</span></span> {
+    <span class="hljs-keyword">var</span> siftDown <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(i, size <span class="hljs-keyword">int</span>)</span>
+    <span class="hljs-title">siftDown</span> = <span class="hljs-title">func</span><span class="hljs-params">(i, size <span class="hljs-keyword">int</span>)</span></span> {
         largest := i
         l, r := <span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>, <span class="hljs-number">2</span>*i+<span class="hljs-number">2</span>
         <span class="hljs-keyword">if</span> l &lt; size &amp;&amp; arr[l] &gt; arr[largest] {
@@ -976,20 +1108,20 @@
 <li><strong>空间复杂度</strong>：O(k)</li>
 <li><strong>稳定性</strong>：稳定</li>
 </ul>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">countingSort</span>(<span class="hljs-params">arr</span>) {
-  <span class="hljs-keyword">if</span> (arr.<span class="hljs-property">length</span> === <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> arr;
-  <span class="hljs-keyword">const</span> minVal = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">min</span>(...arr);
-  <span class="hljs-keyword">const</span> maxVal = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">max</span>(...arr);
-  <span class="hljs-keyword">const</span> count = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Array</span>(maxVal - minVal + <span class="hljs-number">1</span>).<span class="hljs-title function_">fill</span>(<span class="hljs-number">0</span>);
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">countingSort</span>(<span class="hljs-params">arr</span>) </span>{
+  <span class="hljs-keyword">if</span> (arr.length === <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> arr;
+  <span class="hljs-keyword">const</span> minVal = <span class="hljs-built_in">Math</span>.min(...arr);
+  <span class="hljs-keyword">const</span> maxVal = <span class="hljs-built_in">Math</span>.max(...arr);
+  <span class="hljs-keyword">const</span> count = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(maxVal - minVal + <span class="hljs-number">1</span>).fill(<span class="hljs-number">0</span>);
   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> v <span class="hljs-keyword">of</span> arr) count[v - minVal]++;
   <span class="hljs-keyword">let</span> idx = <span class="hljs-number">0</span>;
-  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; count.<span class="hljs-property">length</span>; i++) {
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; count.length; i++) {
     <span class="hljs-keyword">while</span> (count[i]-- &gt; <span class="hljs-number">0</span>) arr[idx++] = i + minVal;
   }
   <span class="hljs-keyword">return</span> arr;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">countingSort</span><span class="hljs-params">(arr []<span class="hljs-type">int</span>)</span></span> []<span class="hljs-type">int</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">countingSort</span><span class="hljs-params">(arr []<span class="hljs-keyword">int</span>)</span> []<span class="hljs-title">int</span></span> {
     <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(arr) == <span class="hljs-number">0</span> {
         <span class="hljs-keyword">return</span> arr
     }
@@ -1002,7 +1134,7 @@
             maxVal = v
         }
     }
-    count := <span class="hljs-built_in">make</span>([]<span class="hljs-type">int</span>, maxVal-minVal+<span class="hljs-number">1</span>)
+    count := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int</span>, maxVal-minVal+<span class="hljs-number">1</span>)
     <span class="hljs-keyword">for</span> _, v := <span class="hljs-keyword">range</span> arr {
         count[v-minVal]++
     }
@@ -1024,25 +1156,25 @@
 <li><strong>空间复杂度</strong>：O(n + k)</li>
 <li><strong>稳定性</strong>：稳定</li>
 </ul>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">radixSort</span>(<span class="hljs-params">arr</span>) {
-  <span class="hljs-keyword">if</span> (arr.<span class="hljs-property">length</span> === <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> arr;
-  <span class="hljs-keyword">let</span> maxVal = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">max</span>(...arr);
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">radixSort</span>(<span class="hljs-params">arr</span>) </span>{
+  <span class="hljs-keyword">if</span> (arr.length === <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> arr;
+  <span class="hljs-keyword">let</span> maxVal = <span class="hljs-built_in">Math</span>.max(...arr);
   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> exp = <span class="hljs-number">1</span>; maxVal / exp &gt;= <span class="hljs-number">1</span>; exp *= <span class="hljs-number">10</span>) {
-    <span class="hljs-keyword">const</span> output = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Array</span>(arr.<span class="hljs-property">length</span>);
-    <span class="hljs-keyword">const</span> count = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Array</span>(<span class="hljs-number">10</span>).<span class="hljs-title function_">fill</span>(<span class="hljs-number">0</span>);
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> v <span class="hljs-keyword">of</span> arr) count[<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>(v / exp) % <span class="hljs-number">10</span>]++;
+    <span class="hljs-keyword">const</span> output = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(arr.length);
+    <span class="hljs-keyword">const</span> count = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(<span class="hljs-number">10</span>).fill(<span class="hljs-number">0</span>);
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> v <span class="hljs-keyword">of</span> arr) count[<span class="hljs-built_in">Math</span>.floor(v / exp) % <span class="hljs-number">10</span>]++;
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">1</span>; i &lt; <span class="hljs-number">10</span>; i++) count[i] += count[i - <span class="hljs-number">1</span>];
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = arr.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; i--) {
-      <span class="hljs-keyword">const</span> d = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>(arr[i] / exp) % <span class="hljs-number">10</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = arr.length - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; i--) {
+      <span class="hljs-keyword">const</span> d = <span class="hljs-built_in">Math</span>.floor(arr[i] / exp) % <span class="hljs-number">10</span>;
       output[count[d] - <span class="hljs-number">1</span>] = arr[i];
       count[d]--;
     }
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; arr.<span class="hljs-property">length</span>; i++) arr[i] = output[i];
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; arr.length; i++) arr[i] = output[i];
   }
   <span class="hljs-keyword">return</span> arr;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">radixSort</span><span class="hljs-params">(arr []<span class="hljs-type">int</span>)</span></span> []<span class="hljs-type">int</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">radixSort</span><span class="hljs-params">(arr []<span class="hljs-keyword">int</span>)</span> []<span class="hljs-title">int</span></span> {
     <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(arr) == <span class="hljs-number">0</span> {
         <span class="hljs-keyword">return</span> arr
     }
@@ -1053,8 +1185,8 @@
         }
     }
     <span class="hljs-keyword">for</span> exp := <span class="hljs-number">1</span>; maxVal/exp &gt;= <span class="hljs-number">1</span>; exp *= <span class="hljs-number">10</span> {
-        output := <span class="hljs-built_in">make</span>([]<span class="hljs-type">int</span>, <span class="hljs-built_in">len</span>(arr))
-        count := <span class="hljs-built_in">make</span>([]<span class="hljs-type">int</span>, <span class="hljs-number">10</span>)
+        output := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int</span>, <span class="hljs-built_in">len</span>(arr))
+        count := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int</span>, <span class="hljs-number">10</span>)
         <span class="hljs-keyword">for</span> _, v := <span class="hljs-keyword">range</span> arr {
             count[(v/exp)%<span class="hljs-number">10</span>]++
         }
@@ -1155,18 +1287,18 @@
 <h2 id="二分查找（binary-search）">二分查找（Binary Search）</h2>
 <h3 id="基本二分查找">基本二分查找</h3>
 <p>在<strong>有序数组</strong>中查找目标值。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">binarySearch</span>(<span class="hljs-params">nums, target</span>) {
-  <span class="hljs-keyword">let</span> lo = <span class="hljs-number">0</span>, hi = nums.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>;
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">binarySearch</span>(<span class="hljs-params">nums, target</span>) </span>{
+  <span class="hljs-keyword">let</span> lo = <span class="hljs-number">0</span>, hi = nums.length - <span class="hljs-number">1</span>;
   <span class="hljs-keyword">while</span> (lo &lt;= hi) {
     <span class="hljs-keyword">const</span> mid = lo + ((hi - lo) &gt;&gt; <span class="hljs-number">1</span>);
     <span class="hljs-keyword">if</span> (nums[mid] === target) <span class="hljs-keyword">return</span> mid;
     <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (nums[mid] &lt; target) lo = mid + <span class="hljs-number">1</span>;
     <span class="hljs-keyword">else</span> hi = mid - <span class="hljs-number">1</span>;
   }
-  <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+  <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">binarySearch</span><span class="hljs-params">(nums []<span class="hljs-type">int</span>, target <span class="hljs-type">int</span>)</span></span> <span class="hljs-type">int</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">binarySearch</span><span class="hljs-params">(nums []<span class="hljs-keyword">int</span>, target <span class="hljs-keyword">int</span>)</span> <span class="hljs-title">int</span></span> {
     lo, hi := <span class="hljs-number">0</span>, <span class="hljs-built_in">len</span>(nums)<span class="hljs-number">-1</span>
     <span class="hljs-keyword">for</span> lo &lt;= hi {
         mid := lo + (hi-lo)/<span class="hljs-number">2</span>
@@ -1182,8 +1314,8 @@
 }
 </code></pre>
 <h3 id="查找左边界（第一个等于-target-的位置）">查找左边界（第一个等于 target 的位置）</h3>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">lowerBound</span>(<span class="hljs-params">nums, target</span>) {
-  <span class="hljs-keyword">let</span> lo = <span class="hljs-number">0</span>, hi = nums.<span class="hljs-property">length</span>;
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">lowerBound</span>(<span class="hljs-params">nums, target</span>) </span>{
+  <span class="hljs-keyword">let</span> lo = <span class="hljs-number">0</span>, hi = nums.length;
   <span class="hljs-keyword">while</span> (lo &lt; hi) {
     <span class="hljs-keyword">const</span> mid = lo + ((hi - lo) &gt;&gt; <span class="hljs-number">1</span>);
     <span class="hljs-keyword">if</span> (nums[mid] &lt; target) lo = mid + <span class="hljs-number">1</span>;
@@ -1192,7 +1324,7 @@
   <span class="hljs-keyword">return</span> lo;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">lowerBound</span><span class="hljs-params">(nums []<span class="hljs-type">int</span>, target <span class="hljs-type">int</span>)</span></span> <span class="hljs-type">int</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">lowerBound</span><span class="hljs-params">(nums []<span class="hljs-keyword">int</span>, target <span class="hljs-keyword">int</span>)</span> <span class="hljs-title">int</span></span> {
     lo, hi := <span class="hljs-number">0</span>, <span class="hljs-built_in">len</span>(nums)
     <span class="hljs-keyword">for</span> lo &lt; hi {
         mid := lo + (hi-lo)/<span class="hljs-number">2</span>
@@ -1206,8 +1338,8 @@
 }
 </code></pre>
 <h3 id="查找右边界（最后一个等于-target-的位置）">查找右边界（最后一个等于 target 的位置）</h3>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">upperBound</span>(<span class="hljs-params">nums, target</span>) {
-  <span class="hljs-keyword">let</span> lo = <span class="hljs-number">0</span>, hi = nums.<span class="hljs-property">length</span>;
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">upperBound</span>(<span class="hljs-params">nums, target</span>) </span>{
+  <span class="hljs-keyword">let</span> lo = <span class="hljs-number">0</span>, hi = nums.length;
   <span class="hljs-keyword">while</span> (lo &lt; hi) {
     <span class="hljs-keyword">const</span> mid = lo + ((hi - lo) &gt;&gt; <span class="hljs-number">1</span>);
     <span class="hljs-keyword">if</span> (nums[mid] &lt;= target) lo = mid + <span class="hljs-number">1</span>;
@@ -1216,7 +1348,7 @@
   <span class="hljs-keyword">return</span> lo - <span class="hljs-number">1</span>;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">upperBound</span><span class="hljs-params">(nums []<span class="hljs-type">int</span>, target <span class="hljs-type">int</span>)</span></span> <span class="hljs-type">int</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">upperBound</span><span class="hljs-params">(nums []<span class="hljs-keyword">int</span>, target <span class="hljs-keyword">int</span>)</span> <span class="hljs-title">int</span></span> {
     lo, hi := <span class="hljs-number">0</span>, <span class="hljs-built_in">len</span>(nums)
     <span class="hljs-keyword">for</span> lo &lt; hi {
         mid := lo + (hi-lo)/<span class="hljs-number">2</span>
@@ -1235,8 +1367,8 @@
 <p>整数数组 <code>nums</code> 按升序排列后在某个点旋转（如 <code>[4,5,6,7,0,1,2]</code>），给定一个目标值 <code>target</code>，若存在则返回索引，否则返回 -1。要求时间复杂度 O(log n)。</p>
 <h3 id="思路分析">思路分析</h3>
 <p>二分查找时，<code>[lo, mid]</code> 或 <code>[mid, hi]</code> 中至少有一半是有序的。先判断哪一半有序，再决定 target 在有序半边还是另一半。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">search</span>(<span class="hljs-params">nums, target</span>) {
-  <span class="hljs-keyword">let</span> lo = <span class="hljs-number">0</span>, hi = nums.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>;
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">search</span>(<span class="hljs-params">nums, target</span>) </span>{
+  <span class="hljs-keyword">let</span> lo = <span class="hljs-number">0</span>, hi = nums.length - <span class="hljs-number">1</span>;
   <span class="hljs-keyword">while</span> (lo &lt;= hi) {
     <span class="hljs-keyword">const</span> mid = lo + ((hi - lo) &gt;&gt; <span class="hljs-number">1</span>);
     <span class="hljs-keyword">if</span> (nums[mid] === target) <span class="hljs-keyword">return</span> mid;
@@ -1250,10 +1382,10 @@
       <span class="hljs-keyword">else</span> hi = mid - <span class="hljs-number">1</span>;
     }
   }
-  <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+  <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">search</span><span class="hljs-params">(nums []<span class="hljs-type">int</span>, target <span class="hljs-type">int</span>)</span></span> <span class="hljs-type">int</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">search</span><span class="hljs-params">(nums []<span class="hljs-keyword">int</span>, target <span class="hljs-keyword">int</span>)</span> <span class="hljs-title">int</span></span> {
     lo, hi := <span class="hljs-number">0</span>, <span class="hljs-built_in">len</span>(nums)<span class="hljs-number">-1</span>
     <span class="hljs-keyword">for</span> lo &lt;= hi {
         mid := lo + (hi-lo)/<span class="hljs-number">2</span>
@@ -1283,20 +1415,20 @@
 <p>给定两个大小分别为 <code>m</code> 和 <code>n</code> 的正序数组 <code>nums1</code> 和 <code>nums2</code>，返回这两个数组的中位数。要求时间复杂度 O(log(m+n))。</p>
 <h3 id="思路分析">思路分析</h3>
 <p>对较短数组进行二分查找。将两数组各自分成左右两部分，满足 <code>maxLeftA &lt;= minRightB</code> 且 <code>maxLeftB &lt;= minRightA</code> 时即找到了正确的分割点。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">findMedianSortedArrays</span>(<span class="hljs-params">nums1, nums2</span>) {
-  <span class="hljs-keyword">if</span> (nums1.<span class="hljs-property">length</span> &gt; nums2.<span class="hljs-property">length</span>) <span class="hljs-keyword">return</span> <span class="hljs-title function_">findMedianSortedArrays</span>(nums2, nums1);
-  <span class="hljs-keyword">const</span> m = nums1.<span class="hljs-property">length</span>, n = nums2.<span class="hljs-property">length</span>;
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">findMedianSortedArrays</span>(<span class="hljs-params">nums1, nums2</span>) </span>{
+  <span class="hljs-keyword">if</span> (nums1.length &gt; nums2.length) <span class="hljs-keyword">return</span> findMedianSortedArrays(nums2, nums1);
+  <span class="hljs-keyword">const</span> m = nums1.length, n = nums2.length;
   <span class="hljs-keyword">let</span> lo = <span class="hljs-number">0</span>, hi = m;
   <span class="hljs-keyword">while</span> (lo &lt;= hi) {
     <span class="hljs-keyword">const</span> i = (lo + hi) &gt;&gt; <span class="hljs-number">1</span>;
     <span class="hljs-keyword">const</span> j = ((m + n + <span class="hljs-number">1</span>) &gt;&gt; <span class="hljs-number">1</span>) - i;
-    <span class="hljs-keyword">const</span> maxLeftA = i === <span class="hljs-number">0</span> ? -<span class="hljs-title class_">Infinity</span> : nums1[i - <span class="hljs-number">1</span>];
-    <span class="hljs-keyword">const</span> minRightA = i === m ? <span class="hljs-title class_">Infinity</span> : nums1[i];
-    <span class="hljs-keyword">const</span> maxLeftB = j === <span class="hljs-number">0</span> ? -<span class="hljs-title class_">Infinity</span> : nums2[j - <span class="hljs-number">1</span>];
-    <span class="hljs-keyword">const</span> minRightB = j === n ? <span class="hljs-title class_">Infinity</span> : nums2[j];
+    <span class="hljs-keyword">const</span> maxLeftA = i === <span class="hljs-number">0</span> ? -<span class="hljs-literal">Infinity</span> : nums1[i - <span class="hljs-number">1</span>];
+    <span class="hljs-keyword">const</span> minRightA = i === m ? <span class="hljs-literal">Infinity</span> : nums1[i];
+    <span class="hljs-keyword">const</span> maxLeftB = j === <span class="hljs-number">0</span> ? -<span class="hljs-literal">Infinity</span> : nums2[j - <span class="hljs-number">1</span>];
+    <span class="hljs-keyword">const</span> minRightB = j === n ? <span class="hljs-literal">Infinity</span> : nums2[j];
     <span class="hljs-keyword">if</span> (maxLeftA &lt;= minRightB &amp;&amp; maxLeftB &lt;= minRightA) {
-      <span class="hljs-keyword">if</span> ((m + n) % <span class="hljs-number">2</span> === <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">max</span>(maxLeftA, maxLeftB);
-      <span class="hljs-keyword">return</span> (<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">max</span>(maxLeftA, maxLeftB) + <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">min</span>(minRightA, minRightB)) / <span class="hljs-number">2</span>;
+      <span class="hljs-keyword">if</span> ((m + n) % <span class="hljs-number">2</span> === <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.max(maxLeftA, maxLeftB);
+      <span class="hljs-keyword">return</span> (<span class="hljs-built_in">Math</span>.max(maxLeftA, maxLeftB) + <span class="hljs-built_in">Math</span>.min(minRightA, minRightB)) / <span class="hljs-number">2</span>;
     } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (maxLeftA &gt; minRightB) {
       hi = i - <span class="hljs-number">1</span>;
     } <span class="hljs-keyword">else</span> {
@@ -1306,7 +1438,7 @@
   <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">findMedianSortedArrays</span><span class="hljs-params">(nums1 []<span class="hljs-type">int</span>, nums2 []<span class="hljs-type">int</span>)</span></span> <span class="hljs-type">float64</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">findMedianSortedArrays</span><span class="hljs-params">(nums1 []<span class="hljs-keyword">int</span>, nums2 []<span class="hljs-keyword">int</span>)</span> <span class="hljs-title">float64</span></span> {
     <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(nums1) &gt; <span class="hljs-built_in">len</span>(nums2) {
         <span class="hljs-keyword">return</span> findMedianSortedArrays(nums2, nums1)
     }
@@ -1333,9 +1465,9 @@
         }
         <span class="hljs-keyword">if</span> maxLeftA &lt;= minRightB &amp;&amp; maxLeftB &lt;= minRightA {
             <span class="hljs-keyword">if</span> (m+n)%<span class="hljs-number">2</span> == <span class="hljs-number">1</span> {
-                <span class="hljs-keyword">return</span> <span class="hljs-type">float64</span>(max(maxLeftA, maxLeftB))
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">float64</span>(max(maxLeftA, maxLeftB))
             }
-            <span class="hljs-keyword">return</span> <span class="hljs-type">float64</span>(max(maxLeftA, maxLeftB)+min(minRightA, minRightB)) / <span class="hljs-number">2.0</span>
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">float64</span>(max(maxLeftA, maxLeftB)+min(minRightA, minRightB)) / <span class="hljs-number">2.0</span>
         } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> maxLeftA &gt; minRightB {
             hi = i - <span class="hljs-number">1</span>
         } <span class="hljs-keyword">else</span> {
@@ -1353,35 +1485,35 @@
 <p><strong>方法一：小顶堆</strong>。用哈希表统计频率，维护大小为 <code>k</code> 的小顶堆，遍历所有频率，堆满后若当前频率大于堆顶则替换。时间 O(n log k)。</p>
 <p><strong>方法二：桶排序</strong>。频率范围为 <code>[1, n]</code>，创建 <code>n+1</code> 个桶，将元素按频率放入对应桶中，从高频桶向低频桶收集 <code>k</code> 个元素。时间 O(n)。</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 桶排序法 O(n)</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">topKFrequent</span>(<span class="hljs-params">nums, k</span>) {
-  <span class="hljs-keyword">const</span> freqMap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>();
-  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> n <span class="hljs-keyword">of</span> nums) freqMap.<span class="hljs-title function_">set</span>(n, (freqMap.<span class="hljs-title function_">get</span>(n) || <span class="hljs-number">0</span>) + <span class="hljs-number">1</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">topKFrequent</span>(<span class="hljs-params">nums, k</span>) </span>{
+  <span class="hljs-keyword">const</span> freqMap = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> n <span class="hljs-keyword">of</span> nums) freqMap.set(n, (freqMap.get(n) || <span class="hljs-number">0</span>) + <span class="hljs-number">1</span>);
 
-  <span class="hljs-keyword">const</span> buckets = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Array</span>(nums.<span class="hljs-property">length</span> + <span class="hljs-number">1</span>).<span class="hljs-title function_">fill</span>(<span class="hljs-literal">null</span>).<span class="hljs-title function_">map</span>(<span class="hljs-function">() =&gt;</span> []);
+  <span class="hljs-keyword">const</span> buckets = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(nums.length + <span class="hljs-number">1</span>).fill(<span class="hljs-literal">null</span>).map(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> []);
   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> [num, freq] <span class="hljs-keyword">of</span> freqMap) {
-    buckets[freq].<span class="hljs-title function_">push</span>(num);
+    buckets[freq].push(num);
   }
 
   <span class="hljs-keyword">const</span> res = [];
-  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = buckets.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span> &amp;&amp; res.<span class="hljs-property">length</span> &lt; k; i--) {
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = buckets.length - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span> &amp;&amp; res.length &lt; k; i--) {
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> num <span class="hljs-keyword">of</span> buckets[i]) {
-      res.<span class="hljs-title function_">push</span>(num);
-      <span class="hljs-keyword">if</span> (res.<span class="hljs-property">length</span> === k) <span class="hljs-keyword">return</span> res;
+      res.push(num);
+      <span class="hljs-keyword">if</span> (res.length === k) <span class="hljs-keyword">return</span> res;
     }
   }
   <span class="hljs-keyword">return</span> res;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">topKFrequent</span><span class="hljs-params">(nums []<span class="hljs-type">int</span>, k <span class="hljs-type">int</span>)</span></span> []<span class="hljs-type">int</span> {
-    freqMap := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-type">int</span>]<span class="hljs-type">int</span>)
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">topKFrequent</span><span class="hljs-params">(nums []<span class="hljs-keyword">int</span>, k <span class="hljs-keyword">int</span>)</span> []<span class="hljs-title">int</span></span> {
+    freqMap := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-keyword">int</span>]<span class="hljs-keyword">int</span>)
     <span class="hljs-keyword">for</span> _, v := <span class="hljs-keyword">range</span> nums {
         freqMap[v]++
     }
-    buckets := <span class="hljs-built_in">make</span>([][]<span class="hljs-type">int</span>, <span class="hljs-built_in">len</span>(nums)+<span class="hljs-number">1</span>)
+    buckets := <span class="hljs-built_in">make</span>([][]<span class="hljs-keyword">int</span>, <span class="hljs-built_in">len</span>(nums)+<span class="hljs-number">1</span>)
     <span class="hljs-keyword">for</span> num, freq := <span class="hljs-keyword">range</span> freqMap {
         buckets[freq] = <span class="hljs-built_in">append</span>(buckets[freq], num)
     }
-    res := []<span class="hljs-type">int</span>{}
+    res := []<span class="hljs-keyword">int</span>{}
     <span class="hljs-keyword">for</span> i := <span class="hljs-built_in">len</span>(buckets) - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span> &amp;&amp; <span class="hljs-built_in">len</span>(res) &lt; k; i-- {
         <span class="hljs-keyword">for</span> _, num := <span class="hljs-keyword">range</span> buckets[i] {
             res = <span class="hljs-built_in">append</span>(res, num)
@@ -1399,11 +1531,11 @@
 <p>在未排序的数组中找到第 <code>k</code> 个最大的元素。</p>
 <h3 id="思路分析">思路分析</h3>
 <p><strong>快速选择算法（Quick Select）</strong>：基于快速排序的 partition，每次只递归一侧，平均时间 O(n)，最坏 O(n²)。随机选择 pivot 可优化期望复杂度。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">findKthLargest</span>(<span class="hljs-params">nums, k</span>) {
-  <span class="hljs-keyword">const</span> target = nums.<span class="hljs-property">length</span> - k; <span class="hljs-comment">// 转换为第 target 小</span>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">findKthLargest</span>(<span class="hljs-params">nums, k</span>) </span>{
+  <span class="hljs-keyword">const</span> target = nums.length - k; <span class="hljs-comment">// 转换为第 target 小</span>
 
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">quickSelect</span>(<span class="hljs-params">lo, hi</span>) {
-    <span class="hljs-keyword">const</span> pivotIdx = lo + <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>(<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">random</span>() * (hi - lo + <span class="hljs-number">1</span>));
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">quickSelect</span>(<span class="hljs-params">lo, hi</span>) </span>{
+    <span class="hljs-keyword">const</span> pivotIdx = lo + <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random() * (hi - lo + <span class="hljs-number">1</span>));
     [nums[pivotIdx], nums[hi]] = [nums[hi], nums[pivotIdx]];
     <span class="hljs-keyword">const</span> pivot = nums[hi];
     <span class="hljs-keyword">let</span> store = lo;
@@ -1416,19 +1548,19 @@
     [nums[store], nums[hi]] = [nums[hi], nums[store]];
 
     <span class="hljs-keyword">if</span> (store === target) <span class="hljs-keyword">return</span> nums[store];
-    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (store &lt; target) <span class="hljs-keyword">return</span> <span class="hljs-title function_">quickSelect</span>(store + <span class="hljs-number">1</span>, hi);
-    <span class="hljs-keyword">else</span> <span class="hljs-keyword">return</span> <span class="hljs-title function_">quickSelect</span>(lo, store - <span class="hljs-number">1</span>);
+    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (store &lt; target) <span class="hljs-keyword">return</span> quickSelect(store + <span class="hljs-number">1</span>, hi);
+    <span class="hljs-keyword">else</span> <span class="hljs-keyword">return</span> quickSelect(lo, store - <span class="hljs-number">1</span>);
   }
 
-  <span class="hljs-keyword">return</span> <span class="hljs-title function_">quickSelect</span>(<span class="hljs-number">0</span>, nums.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>);
+  <span class="hljs-keyword">return</span> quickSelect(<span class="hljs-number">0</span>, nums.length - <span class="hljs-number">1</span>);
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">findKthLargest</span><span class="hljs-params">(nums []<span class="hljs-type">int</span>, k <span class="hljs-type">int</span>)</span></span> <span class="hljs-type">int</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">findKthLargest</span><span class="hljs-params">(nums []<span class="hljs-keyword">int</span>, k <span class="hljs-keyword">int</span>)</span> <span class="hljs-title">int</span></span> {
     target := <span class="hljs-built_in">len</span>(nums) - k
     rand.Seed(time.Now().UnixNano())
 
-    <span class="hljs-keyword">var</span> quickSelect <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(lo, hi <span class="hljs-type">int</span>)</span></span> <span class="hljs-type">int</span>
-    quickSelect = <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(lo, hi <span class="hljs-type">int</span>)</span></span> <span class="hljs-type">int</span> {
+    <span class="hljs-keyword">var</span> quickSelect <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(lo, hi <span class="hljs-keyword">int</span>)</span> <span class="hljs-title">int</span>
+    <span class="hljs-title">quickSelect</span> = <span class="hljs-title">func</span><span class="hljs-params">(lo, hi <span class="hljs-keyword">int</span>)</span> <span class="hljs-title">int</span></span> {
         pivotIdx := lo + rand.Intn(hi-lo+<span class="hljs-number">1</span>)
         nums[pivotIdx], nums[hi] = nums[hi], nums[pivotIdx]
         pivot := nums[hi]
@@ -1458,7 +1590,7 @@
 <p>给定两个按非递减顺序排列的整数数组 <code>nums1</code> 和 <code>nums2</code>，以及 <code>nums1</code> 和 <code>nums2</code> 的元素数量 <code>m</code> 和 <code>n</code>。将 <code>nums2</code> 合并到 <code>nums1</code> 中，使其按非递减顺序排列。<code>nums1</code> 的长度为 <code>m + n</code>。</p>
 <h3 id="思路分析">思路分析</h3>
 <p><strong>逆向双指针</strong>：从 <code>nums1</code> 和 <code>nums2</code> 的末尾开始比较，将较大的放在 <code>nums1</code> 的末尾位置。这样不需要额外空间，且不会覆盖未处理的元素。时间 O(m+n)，空间 O(1)。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">merge</span>(<span class="hljs-params">nums1, m, nums2, n</span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">merge</span>(<span class="hljs-params">nums1, m, nums2, n</span>) </span>{
   <span class="hljs-keyword">let</span> p1 = m - <span class="hljs-number">1</span>, p2 = n - <span class="hljs-number">1</span>, p = m + n - <span class="hljs-number">1</span>;
   <span class="hljs-keyword">while</span> (p1 &gt;= <span class="hljs-number">0</span> &amp;&amp; p2 &gt;= <span class="hljs-number">0</span>) {
     <span class="hljs-keyword">if</span> (nums1[p1] &gt; nums2[p2]) {
@@ -1472,7 +1604,7 @@
   }
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">merge</span><span class="hljs-params">(nums1 []<span class="hljs-type">int</span>, m <span class="hljs-type">int</span>, nums2 []<span class="hljs-type">int</span>, n <span class="hljs-type">int</span>)</span></span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">merge</span><span class="hljs-params">(nums1 []<span class="hljs-keyword">int</span>, m <span class="hljs-keyword">int</span>, nums2 []<span class="hljs-keyword">int</span>, n <span class="hljs-keyword">int</span>)</span></span> {
     p1, p2, p := m<span class="hljs-number">-1</span>, n<span class="hljs-number">-1</span>, m+n<span class="hljs-number">-1</span>
     <span class="hljs-keyword">for</span> p1 &gt;= <span class="hljs-number">0</span> &amp;&amp; p2 &gt;= <span class="hljs-number">0</span> {
         <span class="hljs-keyword">if</span> nums1[p1] &gt; nums2[p2] {
@@ -1495,6 +1627,22 @@
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -1518,73 +1666,29 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"排序与搜索","level":"6.5","depth":1,"next":{"title":"回溯与贪心","level":"6.6","depth":1,"path":"algorithm/backtracking-greedy.md","ref":"algorithm/backtracking-greedy.md","articles":[]},"previous":{"title":"动态规划","level":"6.4","depth":1,"path":"algorithm/dp.md","ref":"algorithm/dp.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"algorithm/sorting-searching.md","mtime":"2026-03-31T06:35:11.836Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"排序与搜索","level":"6.5","depth":1,"next":{"title":"回溯与贪心","level":"6.6","depth":1,"path":"algorithm/backtracking-greedy.md","ref":"algorithm/backtracking-greedy.md","articles":[]},"previous":{"title":"动态规划","level":"6.4","depth":1,"path":"algorithm/dp.md","ref":"algorithm/dp.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"algorithm/sorting-searching.md","mtime":"2026-03-31T12:30:26.828Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    <noscript>
-        <style>
-            .honkit-cloak {
-                display: block !important;
-            }
-        </style>
-    </noscript>
-    <script>
-        // Restore sidebar state as critical path for prevent layout shift
-        function __init__getSidebarState(defaultValue){
-            var baseKey = "";
-            var key = baseKey + ":sidebar";
-            try {
-                var value = localStorage[key];
-                if (value === undefined) {
-                    return defaultValue;
-                }
-                var parsed = JSON.parse(value);
-                return parsed == null ? defaultValue : parsed;
-            } catch (e) {
-                return defaultValue;
-            }
-        }
-        function __init__restoreLastSidebarState() {
-            var isMobile = window.matchMedia("(max-width: 600px)").matches;
-            if (isMobile) {
-                // Init last state if not mobile
-                return;
-            }
-            var sidebarState = __init__getSidebarState(true);
-            var book = document.querySelector(".book");
-            // Show sidebar if it enabled
-            if (sidebarState && book) {
-                book.classList.add("without-animation", "with-summary");
-            }
-        }
-
-        try {
-            __init__restoreLastSidebarState();
-        } finally {
-            var book = document.querySelector(".book");
-            book.classList.remove("honkit-cloak");
-        }
-    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

@@ -3,10 +3,11 @@
 <html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>链表 · 全栈开发面试指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="generator" content="GitBook 6.1.7">
         
         
         
@@ -16,19 +17,23 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -69,10 +74,14 @@
     </head>
     <body>
         
-<div class="book honkit-cloak">
+<div class="book">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -269,6 +278,66 @@
             
         </li>
     
+        <li class="chapter " data-level="2.11" data-path="../frontend/micro-frontend.html">
+            
+                <a href="../frontend/micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../frontend/mobile-dev.html">
+            
+                <a href="../frontend/mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../frontend/state-management.html">
+            
+                <a href="../frontend/state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../frontend/design-patterns.html">
+            
+                <a href="../frontend/design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -359,6 +428,21 @@
                         <b>3.6.</b>
                     
                     最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../nodejs/serverless.html">
+            
+                <a href="../nodejs/serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
             
                 </a>
             
@@ -463,6 +547,21 @@
             
         </li>
     
+        <li class="chapter " data-level="4.7" data-path="../golang/cloud-native.html">
+            
+                <a href="../golang/cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -553,6 +652,21 @@
                         <b>5.6.</b>
                     
                     实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../agent/evaluation.html">
+            
+                <a href="../agent/evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
             
                 </a>
             
@@ -657,14 +771,29 @@
             
         </li>
     
+        <li class="chapter " data-level="6.7" data-path="system-design.html">
+            
+                <a href="system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
     <li class="divider"></li>
 
     <li>
-        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
-            本书使用 HonKit 发布
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -697,6 +826,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="链表经典算法题">链表经典算法题</h1>
@@ -709,11 +841,11 @@
 <p><strong>递归法：</strong> 递归地反转从第二个节点开始的子链表，然后将当前节点接到反转后子链表的尾部。递归的 base case 是链表为空或只有一个节点。</p>
 <p><strong>时间复杂度：</strong> O(n)，空间复杂度迭代 O(1)，递归 O(n)。</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 迭代法</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">reverseList</span>(<span class="hljs-params">head</span>) {
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reverseList</span>(<span class="hljs-params">head</span>) </span>{
   <span class="hljs-keyword">let</span> prev = <span class="hljs-literal">null</span>, curr = head;
   <span class="hljs-keyword">while</span> (curr !== <span class="hljs-literal">null</span>) {
-    <span class="hljs-keyword">const</span> next = curr.<span class="hljs-property">next</span>;
-    curr.<span class="hljs-property">next</span> = prev;
+    <span class="hljs-keyword">const</span> next = curr.next;
+    curr.next = prev;
     prev = curr;
     curr = next;
   }
@@ -721,16 +853,16 @@
 }
 
 <span class="hljs-comment">// 递归法</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">reverseListRecursive</span>(<span class="hljs-params">head</span>) {
-  <span class="hljs-keyword">if</span> (head === <span class="hljs-literal">null</span> || head.<span class="hljs-property">next</span> === <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> head;
-  <span class="hljs-keyword">const</span> newHead = <span class="hljs-title function_">reverseListRecursive</span>(head.<span class="hljs-property">next</span>);
-  head.<span class="hljs-property">next</span>.<span class="hljs-property">next</span> = head;
-  head.<span class="hljs-property">next</span> = <span class="hljs-literal">null</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reverseListRecursive</span>(<span class="hljs-params">head</span>) </span>{
+  <span class="hljs-keyword">if</span> (head === <span class="hljs-literal">null</span> || head.next === <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> head;
+  <span class="hljs-keyword">const</span> newHead = reverseListRecursive(head.next);
+  head.next.next = head;
+  head.next = <span class="hljs-literal">null</span>;
   <span class="hljs-keyword">return</span> newHead;
 }
 </code></pre>
 <pre><code class="lang-go"><span class="hljs-comment">// 迭代法</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">reverseList</span><span class="hljs-params">(head *ListNode)</span></span> *ListNode {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">reverseList</span><span class="hljs-params">(head *ListNode)</span> *<span class="hljs-title">ListNode</span></span> {
     <span class="hljs-keyword">var</span> prev *ListNode
     curr := head
     <span class="hljs-keyword">for</span> curr != <span class="hljs-literal">nil</span> {
@@ -743,7 +875,7 @@
 }
 
 <span class="hljs-comment">// 递归法</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">reverseListRecursive</span><span class="hljs-params">(head *ListNode)</span></span> *ListNode {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">reverseListRecursive</span><span class="hljs-params">(head *ListNode)</span> *<span class="hljs-title">ListNode</span></span> {
     <span class="hljs-keyword">if</span> head == <span class="hljs-literal">nil</span> || head.Next == <span class="hljs-literal">nil</span> {
         <span class="hljs-keyword">return</span> head
     }
@@ -758,24 +890,24 @@
 <p><strong>题目描述：</strong> 将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。</p>
 <p><strong>思路分析：</strong> 使用虚拟头节点 <code>dummy</code> 简化边界处理。维护一个当前指针 <code>curr</code>，每次比较两个链表当前节点的值，将较小的节点接到 <code>curr</code> 后面，然后移动对应链表的指针。当其中一个链表遍历完后，将另一个链表的剩余部分直接接上。</p>
 <p><strong>时间复杂度：</strong> O(m + n)，空间复杂度 O(1)。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">mergeTwoLists</span>(<span class="hljs-params">l1, l2</span>) {
-  <span class="hljs-keyword">const</span> dummy = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ListNode</span>(<span class="hljs-number">0</span>);
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mergeTwoLists</span>(<span class="hljs-params">l1, l2</span>) </span>{
+  <span class="hljs-keyword">const</span> dummy = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">0</span>);
   <span class="hljs-keyword">let</span> curr = dummy;
   <span class="hljs-keyword">while</span> (l1 !== <span class="hljs-literal">null</span> &amp;&amp; l2 !== <span class="hljs-literal">null</span>) {
-    <span class="hljs-keyword">if</span> (l1.<span class="hljs-property">val</span> &lt;= l2.<span class="hljs-property">val</span>) {
-      curr.<span class="hljs-property">next</span> = l1;
-      l1 = l1.<span class="hljs-property">next</span>;
+    <span class="hljs-keyword">if</span> (l1.val &lt;= l2.val) {
+      curr.next = l1;
+      l1 = l1.next;
     } <span class="hljs-keyword">else</span> {
-      curr.<span class="hljs-property">next</span> = l2;
-      l2 = l2.<span class="hljs-property">next</span>;
+      curr.next = l2;
+      l2 = l2.next;
     }
-    curr = curr.<span class="hljs-property">next</span>;
+    curr = curr.next;
   }
-  curr.<span class="hljs-property">next</span> = l1 !== <span class="hljs-literal">null</span> ? l1 : l2;
-  <span class="hljs-keyword">return</span> dummy.<span class="hljs-property">next</span>;
+  curr.next = l1 !== <span class="hljs-literal">null</span> ? l1 : l2;
+  <span class="hljs-keyword">return</span> dummy.next;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">mergeTwoLists</span><span class="hljs-params">(l1 *ListNode, l2 *ListNode)</span></span> *ListNode {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">mergeTwoLists</span><span class="hljs-params">(l1 *ListNode, l2 *ListNode)</span> *<span class="hljs-title">ListNode</span></span> {
     dummy := &amp;ListNode{}
     curr := dummy
     <span class="hljs-keyword">for</span> l1 != <span class="hljs-literal">nil</span> &amp;&amp; l2 != <span class="hljs-literal">nil</span> {
@@ -801,17 +933,17 @@
 <p><strong>题目描述：</strong> 给你一个链表的头节点 <code>head</code>，判断链表中是否有环。</p>
 <p><strong>思路分析：</strong> 使用快慢指针（Floyd 判圈算法）。慢指针每次走一步，快指针每次走两步。如果链表中存在环，快指针最终会追上慢指针（两者相遇）；如果没有环，快指针会先到达链表末尾。</p>
 <p><strong>时间复杂度：</strong> O(n)，空间复杂度 O(1)。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">hasCycle</span>(<span class="hljs-params">head</span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hasCycle</span>(<span class="hljs-params">head</span>) </span>{
   <span class="hljs-keyword">let</span> slow = head, fast = head;
-  <span class="hljs-keyword">while</span> (fast !== <span class="hljs-literal">null</span> &amp;&amp; fast.<span class="hljs-property">next</span> !== <span class="hljs-literal">null</span>) {
-    slow = slow.<span class="hljs-property">next</span>;
-    fast = fast.<span class="hljs-property">next</span>.<span class="hljs-property">next</span>;
+  <span class="hljs-keyword">while</span> (fast !== <span class="hljs-literal">null</span> &amp;&amp; fast.next !== <span class="hljs-literal">null</span>) {
+    slow = slow.next;
+    fast = fast.next.next;
     <span class="hljs-keyword">if</span> (slow === fast) <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
   }
   <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">hasCycle</span><span class="hljs-params">(head *ListNode)</span></span> <span class="hljs-type">bool</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">hasCycle</span><span class="hljs-params">(head *ListNode)</span> <span class="hljs-title">bool</span></span> {
     slow, fast := head, head
     <span class="hljs-keyword">for</span> fast != <span class="hljs-literal">nil</span> &amp;&amp; fast.Next != <span class="hljs-literal">nil</span> {
         slow = slow.Next
@@ -828,16 +960,16 @@
 <p><strong>题目描述：</strong> 给定一个链表的头节点 <code>head</code>，如果链表中有环，返回环的入口节点；否则返回 <code>null</code>。</p>
 <p><strong>思路分析：</strong> 首先使用快慢指针判断是否有环，找到相遇点。设链表头到入环点距离为 a，入环点到相遇点距离为 b，相遇点再走到入环点距离为 c。快指针走的路程是慢指针的两倍：<code>2(a + b) = a + b + n(b + c)</code>，化简得 <code>a = c + (n-1)(b+c)</code>。这意味着从链表头和相遇点同时出发，每次各走一步，两者会在入环点相遇。</p>
 <p><strong>时间复杂度：</strong> O(n)，空间复杂度 O(1)。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">detectCycle</span>(<span class="hljs-params">head</span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">detectCycle</span>(<span class="hljs-params">head</span>) </span>{
   <span class="hljs-keyword">let</span> slow = head, fast = head;
-  <span class="hljs-keyword">while</span> (fast !== <span class="hljs-literal">null</span> &amp;&amp; fast.<span class="hljs-property">next</span> !== <span class="hljs-literal">null</span>) {
-    slow = slow.<span class="hljs-property">next</span>;
-    fast = fast.<span class="hljs-property">next</span>.<span class="hljs-property">next</span>;
+  <span class="hljs-keyword">while</span> (fast !== <span class="hljs-literal">null</span> &amp;&amp; fast.next !== <span class="hljs-literal">null</span>) {
+    slow = slow.next;
+    fast = fast.next.next;
     <span class="hljs-keyword">if</span> (slow === fast) {
       <span class="hljs-keyword">let</span> ptr = head;
       <span class="hljs-keyword">while</span> (ptr !== slow) {
-        ptr = ptr.<span class="hljs-property">next</span>;
-        slow = slow.<span class="hljs-property">next</span>;
+        ptr = ptr.next;
+        slow = slow.next;
       }
       <span class="hljs-keyword">return</span> ptr;
     }
@@ -845,7 +977,7 @@
   <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">detectCycle</span><span class="hljs-params">(head *ListNode)</span></span> *ListNode {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">detectCycle</span><span class="hljs-params">(head *ListNode)</span> *<span class="hljs-title">ListNode</span></span> {
     slow, fast := head, head
     <span class="hljs-keyword">for</span> fast != <span class="hljs-literal">nil</span> &amp;&amp; fast.Next != <span class="hljs-literal">nil</span> {
         slow = slow.Next
@@ -867,21 +999,21 @@
 <p><strong>题目描述：</strong> 给你一个链表，删除链表的倒数第 <code>n</code> 个结点，并且返回链表的头结点。</p>
 <p><strong>思路分析：</strong> 使用双指针（快慢指针）配合虚拟头节点。先让快指针走 n 步，然后快慢指针同时走，当快指针到达链表末尾时，慢指针正好指向倒数第 n+1 个节点（即待删除节点的前驱）。使用虚拟头节点可以统一处理删除头节点的情况。</p>
 <p><strong>时间复杂度：</strong> O(n)，空间复杂度 O(1)。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">removeNthFromEnd</span>(<span class="hljs-params">head, n</span>) {
-  <span class="hljs-keyword">const</span> dummy = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ListNode</span>(<span class="hljs-number">0</span>, head);
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">removeNthFromEnd</span>(<span class="hljs-params">head, n</span>) </span>{
+  <span class="hljs-keyword">const</span> dummy = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">0</span>, head);
   <span class="hljs-keyword">let</span> fast = dummy, slow = dummy;
   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt;= n; i++) {
-    fast = fast.<span class="hljs-property">next</span>;
+    fast = fast.next;
   }
   <span class="hljs-keyword">while</span> (fast !== <span class="hljs-literal">null</span>) {
-    fast = fast.<span class="hljs-property">next</span>;
-    slow = slow.<span class="hljs-property">next</span>;
+    fast = fast.next;
+    slow = slow.next;
   }
-  slow.<span class="hljs-property">next</span> = slow.<span class="hljs-property">next</span>.<span class="hljs-property">next</span>;
-  <span class="hljs-keyword">return</span> dummy.<span class="hljs-property">next</span>;
+  slow.next = slow.next.next;
+  <span class="hljs-keyword">return</span> dummy.next;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">removeNthFromEnd</span><span class="hljs-params">(head *ListNode, n <span class="hljs-type">int</span>)</span></span> *ListNode {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">removeNthFromEnd</span><span class="hljs-params">(head *ListNode, n <span class="hljs-keyword">int</span>)</span> *<span class="hljs-title">ListNode</span></span> {
     dummy := &amp;ListNode{Next: head}
     fast, slow := dummy, dummy
     <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt;= n; i++ {
@@ -900,21 +1032,21 @@
 <p><strong>题目描述：</strong> 给你一个链表，两两交换其中相邻的节点，并返回交换后链表的头节点。你必须在不修改节点值的情况下完成交换（即只进行节点交换）。</p>
 <p><strong>思路分析：</strong> 使用虚拟头节点。设当前节点为 <code>prev</code>，需要交换 <code>prev.next</code>（节点 A）和 <code>prev.next.next</code>（节点 B）。操作步骤：1) <code>prev.next = B</code>；2) <code>A.next = B.next</code>；3) <code>B.next = A</code>；4) <code>prev = A</code>（移动到下一对的前驱位置）。</p>
 <p><strong>时间复杂度：</strong> O(n)，空间复杂度 O(1)。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">swapPairs</span>(<span class="hljs-params">head</span>) {
-  <span class="hljs-keyword">const</span> dummy = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ListNode</span>(<span class="hljs-number">0</span>, head);
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">swapPairs</span>(<span class="hljs-params">head</span>) </span>{
+  <span class="hljs-keyword">const</span> dummy = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">0</span>, head);
   <span class="hljs-keyword">let</span> prev = dummy;
-  <span class="hljs-keyword">while</span> (prev.<span class="hljs-property">next</span> !== <span class="hljs-literal">null</span> &amp;&amp; prev.<span class="hljs-property">next</span>.<span class="hljs-property">next</span> !== <span class="hljs-literal">null</span>) {
-    <span class="hljs-keyword">const</span> a = prev.<span class="hljs-property">next</span>;
-    <span class="hljs-keyword">const</span> b = prev.<span class="hljs-property">next</span>.<span class="hljs-property">next</span>;
-    prev.<span class="hljs-property">next</span> = b;
-    a.<span class="hljs-property">next</span> = b.<span class="hljs-property">next</span>;
-    b.<span class="hljs-property">next</span> = a;
+  <span class="hljs-keyword">while</span> (prev.next !== <span class="hljs-literal">null</span> &amp;&amp; prev.next.next !== <span class="hljs-literal">null</span>) {
+    <span class="hljs-keyword">const</span> a = prev.next;
+    <span class="hljs-keyword">const</span> b = prev.next.next;
+    prev.next = b;
+    a.next = b.next;
+    b.next = a;
     prev = a;
   }
-  <span class="hljs-keyword">return</span> dummy.<span class="hljs-property">next</span>;
+  <span class="hljs-keyword">return</span> dummy.next;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">swapPairs</span><span class="hljs-params">(head *ListNode)</span></span> *ListNode {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">swapPairs</span><span class="hljs-params">(head *ListNode)</span> *<span class="hljs-title">ListNode</span></span> {
     dummy := &amp;ListNode{Next: head}
     prev := dummy
     <span class="hljs-keyword">for</span> prev.Next != <span class="hljs-literal">nil</span> &amp;&amp; prev.Next.Next != <span class="hljs-literal">nil</span> {
@@ -933,36 +1065,36 @@
 <p><strong>题目描述：</strong> 给你链表的头节点 <code>head</code>，每 <code>k</code> 个节点一组进行翻转，请返回修改后的链表。如果节点总数不是 k 的整数倍，那么将最后剩余的节点保持原有顺序。</p>
 <p><strong>思路分析：</strong> 先统计链表长度或逐段检测是否够 k 个节点。对于每组 k 个节点，执行组内反转（类似反转链表的迭代法），然后将反转后的子链表与前后部分正确连接。使用虚拟头节点简化连接操作。关键是维护好每组反转前后的首尾指针。</p>
 <p><strong>时间复杂度：</strong> O(n)，空间复杂度 O(1)。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">reverseKGroup</span>(<span class="hljs-params">head, k</span>) {
-  <span class="hljs-keyword">const</span> dummy = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ListNode</span>(<span class="hljs-number">0</span>, head);
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reverseKGroup</span>(<span class="hljs-params">head, k</span>) </span>{
+  <span class="hljs-keyword">const</span> dummy = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">0</span>, head);
   <span class="hljs-keyword">let</span> prevGroupEnd = dummy;
 
   <span class="hljs-keyword">while</span> (<span class="hljs-literal">true</span>) {
     <span class="hljs-comment">// 检查剩余节点是否足够 k 个</span>
     <span class="hljs-keyword">let</span> kth = prevGroupEnd;
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; k; i++) {
-      kth = kth.<span class="hljs-property">next</span>;
-      <span class="hljs-keyword">if</span> (kth === <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> dummy.<span class="hljs-property">next</span>;
+      kth = kth.next;
+      <span class="hljs-keyword">if</span> (kth === <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> dummy.next;
     }
 
-    <span class="hljs-keyword">const</span> groupStart = prevGroupEnd.<span class="hljs-property">next</span>;
-    <span class="hljs-keyword">const</span> nextGroupStart = kth.<span class="hljs-property">next</span>;
+    <span class="hljs-keyword">const</span> groupStart = prevGroupEnd.next;
+    <span class="hljs-keyword">const</span> nextGroupStart = kth.next;
 
     <span class="hljs-comment">// 反转 k 个节点</span>
     <span class="hljs-keyword">let</span> prev = nextGroupStart, curr = groupStart;
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; k; i++) {
-      <span class="hljs-keyword">const</span> next = curr.<span class="hljs-property">next</span>;
-      curr.<span class="hljs-property">next</span> = prev;
+      <span class="hljs-keyword">const</span> next = curr.next;
+      curr.next = prev;
       prev = curr;
       curr = next;
     }
 
-    prevGroupEnd.<span class="hljs-property">next</span> = kth;
+    prevGroupEnd.next = kth;
     prevGroupEnd = groupStart;
   }
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">reverseKGroup</span><span class="hljs-params">(head *ListNode, k <span class="hljs-type">int</span>)</span></span> *ListNode {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">reverseKGroup</span><span class="hljs-params">(head *ListNode, k <span class="hljs-keyword">int</span>)</span> *<span class="hljs-title">ListNode</span></span> {
     dummy := &amp;ListNode{Next: head}
     prevGroupEnd := dummy
 
@@ -998,34 +1130,34 @@
 <p><strong>思路分析：</strong> 使用优先队列（最小堆）。将所有链表的头节点放入最小堆中，每次取出堆顶（最小值）节点接到结果链表，然后将该节点的下一个节点（如果存在）放入堆中。也可以使用分治法，两两合并链表，复杂度相同。</p>
 <p><strong>时间复杂度：</strong> O(N log k)，N 为所有节点总数，k 为链表个数。空间复杂度 O(k)。</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 使用分治法（JavaScript 中实现最小堆较冗长，分治更简洁）</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">mergeKLists</span>(<span class="hljs-params">lists</span>) {
-  <span class="hljs-keyword">if</span> (lists.<span class="hljs-property">length</span> === <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
-  <span class="hljs-keyword">return</span> <span class="hljs-title function_">divideAndMerge</span>(lists, <span class="hljs-number">0</span>, lists.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mergeKLists</span>(<span class="hljs-params">lists</span>) </span>{
+  <span class="hljs-keyword">if</span> (lists.length === <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+  <span class="hljs-keyword">return</span> divideAndMerge(lists, <span class="hljs-number">0</span>, lists.length - <span class="hljs-number">1</span>);
 }
 
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">divideAndMerge</span>(<span class="hljs-params">lists, left, right</span>) {
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">divideAndMerge</span>(<span class="hljs-params">lists, left, right</span>) </span>{
   <span class="hljs-keyword">if</span> (left === right) <span class="hljs-keyword">return</span> lists[left];
-  <span class="hljs-keyword">const</span> mid = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>((left + right) / <span class="hljs-number">2</span>);
-  <span class="hljs-keyword">const</span> l1 = <span class="hljs-title function_">divideAndMerge</span>(lists, left, mid);
-  <span class="hljs-keyword">const</span> l2 = <span class="hljs-title function_">divideAndMerge</span>(lists, mid + <span class="hljs-number">1</span>, right);
-  <span class="hljs-keyword">return</span> <span class="hljs-title function_">mergeTwoLists</span>(l1, l2);
+  <span class="hljs-keyword">const</span> mid = <span class="hljs-built_in">Math</span>.floor((left + right) / <span class="hljs-number">2</span>);
+  <span class="hljs-keyword">const</span> l1 = divideAndMerge(lists, left, mid);
+  <span class="hljs-keyword">const</span> l2 = divideAndMerge(lists, mid + <span class="hljs-number">1</span>, right);
+  <span class="hljs-keyword">return</span> mergeTwoLists(l1, l2);
 }
 
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">mergeTwoLists</span>(<span class="hljs-params">l1, l2</span>) {
-  <span class="hljs-keyword">const</span> dummy = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ListNode</span>(<span class="hljs-number">0</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mergeTwoLists</span>(<span class="hljs-params">l1, l2</span>) </span>{
+  <span class="hljs-keyword">const</span> dummy = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">0</span>);
   <span class="hljs-keyword">let</span> curr = dummy;
   <span class="hljs-keyword">while</span> (l1 !== <span class="hljs-literal">null</span> &amp;&amp; l2 !== <span class="hljs-literal">null</span>) {
-    <span class="hljs-keyword">if</span> (l1.<span class="hljs-property">val</span> &lt;= l2.<span class="hljs-property">val</span>) {
-      curr.<span class="hljs-property">next</span> = l1;
-      l1 = l1.<span class="hljs-property">next</span>;
+    <span class="hljs-keyword">if</span> (l1.val &lt;= l2.val) {
+      curr.next = l1;
+      l1 = l1.next;
     } <span class="hljs-keyword">else</span> {
-      curr.<span class="hljs-property">next</span> = l2;
-      l2 = l2.<span class="hljs-property">next</span>;
+      curr.next = l2;
+      l2 = l2.next;
     }
-    curr = curr.<span class="hljs-property">next</span>;
+    curr = curr.next;
   }
-  curr.<span class="hljs-property">next</span> = l1 !== <span class="hljs-literal">null</span> ? l1 : l2;
-  <span class="hljs-keyword">return</span> dummy.<span class="hljs-property">next</span>;
+  curr.next = l1 !== <span class="hljs-literal">null</span> ? l1 : l2;
+  <span class="hljs-keyword">return</span> dummy.next;
 }
 </code></pre>
 <pre><code class="lang-go"><span class="hljs-comment">// 使用最小堆</span>
@@ -1033,11 +1165,11 @@
 
 <span class="hljs-keyword">type</span> MinHeap []*ListNode
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(h MinHeap)</span></span> Len() <span class="hljs-type">int</span>            { <span class="hljs-keyword">return</span> <span class="hljs-built_in">len</span>(h) }
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(h MinHeap)</span></span> Less(i, j <span class="hljs-type">int</span>) <span class="hljs-type">bool</span>   { <span class="hljs-keyword">return</span> h[i].Val &lt; h[j].Val }
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(h MinHeap)</span></span> Swap(i, j <span class="hljs-type">int</span>)        { h[i], h[j] = h[j], h[i] }
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(h *MinHeap)</span></span> Push(x <span class="hljs-keyword">interface</span>{})  { *h = <span class="hljs-built_in">append</span>(*h, x.(*ListNode)) }
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(h *MinHeap)</span></span> Pop() <span class="hljs-keyword">interface</span>{} {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(h MinHeap)</span> <span class="hljs-title">Len</span><span class="hljs-params">()</span> <span class="hljs-title">int</span></span>            { <span class="hljs-keyword">return</span> <span class="hljs-built_in">len</span>(h) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(h MinHeap)</span> <span class="hljs-title">Less</span><span class="hljs-params">(i, j <span class="hljs-keyword">int</span>)</span> <span class="hljs-title">bool</span></span>   { <span class="hljs-keyword">return</span> h[i].Val &lt; h[j].Val }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(h MinHeap)</span> <span class="hljs-title">Swap</span><span class="hljs-params">(i, j <span class="hljs-keyword">int</span>)</span></span>        { h[i], h[j] = h[j], h[i] }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(h *MinHeap)</span> <span class="hljs-title">Push</span><span class="hljs-params">(x <span class="hljs-keyword">interface</span>{})</span></span>  { *h = <span class="hljs-built_in">append</span>(*h, x.(*ListNode)) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(h *MinHeap)</span> <span class="hljs-title">Pop</span><span class="hljs-params">()</span> <span class="hljs-title">interface</span></span>{} {
     old := *h
     n := <span class="hljs-built_in">len</span>(old)
     x := old[n<span class="hljs-number">-1</span>]
@@ -1045,7 +1177,7 @@
     <span class="hljs-keyword">return</span> x
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">mergeKLists</span><span class="hljs-params">(lists []*ListNode)</span></span> *ListNode {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">mergeKLists</span><span class="hljs-params">(lists []*ListNode)</span> *<span class="hljs-title">ListNode</span></span> {
     h := &amp;MinHeap{}
     heap.Init(h)
     <span class="hljs-keyword">for</span> _, node := <span class="hljs-keyword">range</span> lists {
@@ -1071,102 +1203,102 @@
 <p><strong>题目描述：</strong> 请你设计并实现一个满足 LRU（最近最少使用）缓存约束的数据结构。实现 <code>LRUCache</code> 类：<code>LRUCache(int capacity)</code> 以正整数作为容量初始化；<code>int get(int key)</code> 如果关键字存在缓存中则返回值，否则返回 -1；<code>void put(int key, int value)</code> 如果关键字已经存在则变更其值，如果不存在则插入。当缓存容量达到上限时应淘汰最久未使用的关键字。要求 get 和 put 的时间复杂度均为 O(1)。</p>
 <p><strong>思路分析：</strong> 使用哈希表 + 双向链表。哈希表提供 O(1) 的键值查找，双向链表维护访问顺序——最近使用的在链表头部，最久未使用的在尾部。get 操作时将节点移到链表头部；put 操作时若 key 存在则更新值并移到头部，若不存在则创建新节点插入头部，若超出容量则删除尾部节点。</p>
 <p><strong>时间复杂度：</strong> get 和 put 均为 O(1)。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">LRUCache</span> {
-  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">capacity</span>) {
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">capacity</span> = capacity;
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">map</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>();
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LRUCache</span> </span>{
+  <span class="hljs-keyword">constructor</span>(capacity) {
+    <span class="hljs-keyword">this</span>.capacity = capacity;
+    <span class="hljs-keyword">this</span>.map = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
     <span class="hljs-comment">// 双向链表的虚拟头尾节点</span>
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">head</span> = { <span class="hljs-attr">key</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">val</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">prev</span>: <span class="hljs-literal">null</span>, <span class="hljs-attr">next</span>: <span class="hljs-literal">null</span> };
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">tail</span> = { <span class="hljs-attr">key</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">val</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">prev</span>: <span class="hljs-literal">null</span>, <span class="hljs-attr">next</span>: <span class="hljs-literal">null</span> };
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">head</span>.<span class="hljs-property">next</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">tail</span>;
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">tail</span>.<span class="hljs-property">prev</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">head</span>;
+    <span class="hljs-keyword">this</span>.head = { <span class="hljs-attr">key</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">val</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">prev</span>: <span class="hljs-literal">null</span>, <span class="hljs-attr">next</span>: <span class="hljs-literal">null</span> };
+    <span class="hljs-keyword">this</span>.tail = { <span class="hljs-attr">key</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">val</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">prev</span>: <span class="hljs-literal">null</span>, <span class="hljs-attr">next</span>: <span class="hljs-literal">null</span> };
+    <span class="hljs-keyword">this</span>.head.next = <span class="hljs-keyword">this</span>.tail;
+    <span class="hljs-keyword">this</span>.tail.prev = <span class="hljs-keyword">this</span>.head;
   }
 
-  <span class="hljs-title function_">_addToHead</span>(<span class="hljs-params">node</span>) {
-    node.<span class="hljs-property">prev</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">head</span>;
-    node.<span class="hljs-property">next</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">head</span>.<span class="hljs-property">next</span>;
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">head</span>.<span class="hljs-property">next</span>.<span class="hljs-property">prev</span> = node;
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">head</span>.<span class="hljs-property">next</span> = node;
+  _addToHead(node) {
+    node.prev = <span class="hljs-keyword">this</span>.head;
+    node.next = <span class="hljs-keyword">this</span>.head.next;
+    <span class="hljs-keyword">this</span>.head.next.prev = node;
+    <span class="hljs-keyword">this</span>.head.next = node;
   }
 
-  <span class="hljs-title function_">_removeNode</span>(<span class="hljs-params">node</span>) {
-    node.<span class="hljs-property">prev</span>.<span class="hljs-property">next</span> = node.<span class="hljs-property">next</span>;
-    node.<span class="hljs-property">next</span>.<span class="hljs-property">prev</span> = node.<span class="hljs-property">prev</span>;
+  _removeNode(node) {
+    node.prev.next = node.next;
+    node.next.prev = node.prev;
   }
 
-  <span class="hljs-title function_">_moveToHead</span>(<span class="hljs-params">node</span>) {
-    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">_removeNode</span>(node);
-    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">_addToHead</span>(node);
+  _moveToHead(node) {
+    <span class="hljs-keyword">this</span>._removeNode(node);
+    <span class="hljs-keyword">this</span>._addToHead(node);
   }
 
-  <span class="hljs-title function_">get</span>(<span class="hljs-params">key</span>) {
-    <span class="hljs-keyword">if</span> (!<span class="hljs-variable language_">this</span>.<span class="hljs-property">map</span>.<span class="hljs-title function_">has</span>(key)) <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
-    <span class="hljs-keyword">const</span> node = <span class="hljs-variable language_">this</span>.<span class="hljs-property">map</span>.<span class="hljs-title function_">get</span>(key);
-    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">_moveToHead</span>(node);
-    <span class="hljs-keyword">return</span> node.<span class="hljs-property">val</span>;
+  get(key) {
+    <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.map.has(key)) <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;
+    <span class="hljs-keyword">const</span> node = <span class="hljs-keyword">this</span>.map.get(key);
+    <span class="hljs-keyword">this</span>._moveToHead(node);
+    <span class="hljs-keyword">return</span> node.val;
   }
 
-  <span class="hljs-title function_">put</span>(<span class="hljs-params">key, value</span>) {
-    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">map</span>.<span class="hljs-title function_">has</span>(key)) {
-      <span class="hljs-keyword">const</span> node = <span class="hljs-variable language_">this</span>.<span class="hljs-property">map</span>.<span class="hljs-title function_">get</span>(key);
-      node.<span class="hljs-property">val</span> = value;
-      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">_moveToHead</span>(node);
+  put(key, value) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.map.has(key)) {
+      <span class="hljs-keyword">const</span> node = <span class="hljs-keyword">this</span>.map.get(key);
+      node.val = value;
+      <span class="hljs-keyword">this</span>._moveToHead(node);
     } <span class="hljs-keyword">else</span> {
       <span class="hljs-keyword">const</span> node = { key, <span class="hljs-attr">val</span>: value, <span class="hljs-attr">prev</span>: <span class="hljs-literal">null</span>, <span class="hljs-attr">next</span>: <span class="hljs-literal">null</span> };
-      <span class="hljs-variable language_">this</span>.<span class="hljs-property">map</span>.<span class="hljs-title function_">set</span>(key, node);
-      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">_addToHead</span>(node);
-      <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">map</span>.<span class="hljs-property">size</span> &gt; <span class="hljs-variable language_">this</span>.<span class="hljs-property">capacity</span>) {
-        <span class="hljs-keyword">const</span> tail = <span class="hljs-variable language_">this</span>.<span class="hljs-property">tail</span>.<span class="hljs-property">prev</span>;
-        <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">_removeNode</span>(tail);
-        <span class="hljs-variable language_">this</span>.<span class="hljs-property">map</span>.<span class="hljs-title function_">delete</span>(tail.<span class="hljs-property">key</span>);
+      <span class="hljs-keyword">this</span>.map.set(key, node);
+      <span class="hljs-keyword">this</span>._addToHead(node);
+      <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.map.size &gt; <span class="hljs-keyword">this</span>.capacity) {
+        <span class="hljs-keyword">const</span> tail = <span class="hljs-keyword">this</span>.tail.prev;
+        <span class="hljs-keyword">this</span>._removeNode(tail);
+        <span class="hljs-keyword">this</span>.map.delete(tail.key);
       }
     }
   }
 }
 </code></pre>
 <pre><code class="lang-go"><span class="hljs-keyword">type</span> LRUCache <span class="hljs-keyword">struct</span> {
-    capacity <span class="hljs-type">int</span>
-    cache    <span class="hljs-keyword">map</span>[<span class="hljs-type">int</span>]*DLinkedNode
+    capacity <span class="hljs-keyword">int</span>
+    cache    <span class="hljs-keyword">map</span>[<span class="hljs-keyword">int</span>]*DLinkedNode
     head     *DLinkedNode
     tail     *DLinkedNode
 }
 
 <span class="hljs-keyword">type</span> DLinkedNode <span class="hljs-keyword">struct</span> {
-    key, value <span class="hljs-type">int</span>
+    key, value <span class="hljs-keyword">int</span>
     prev, next *DLinkedNode
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">Constructor</span><span class="hljs-params">(capacity <span class="hljs-type">int</span>)</span></span> LRUCache {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">Constructor</span><span class="hljs-params">(capacity <span class="hljs-keyword">int</span>)</span> <span class="hljs-title">LRUCache</span></span> {
     head := &amp;DLinkedNode{}
     tail := &amp;DLinkedNode{}
     head.next = tail
     tail.prev = head
     <span class="hljs-keyword">return</span> LRUCache{
         capacity: capacity,
-        cache:    <span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-type">int</span>]*DLinkedNode),
+        cache:    <span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-keyword">int</span>]*DLinkedNode),
         head:     head,
         tail:     tail,
     }
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(l *LRUCache)</span></span> addToHead(node *DLinkedNode) {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(l *LRUCache)</span> <span class="hljs-title">addToHead</span><span class="hljs-params">(node *DLinkedNode)</span></span> {
     node.prev = l.head
     node.next = l.head.next
     l.head.next.prev = node
     l.head.next = node
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(l *LRUCache)</span></span> removeNode(node *DLinkedNode) {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(l *LRUCache)</span> <span class="hljs-title">removeNode</span><span class="hljs-params">(node *DLinkedNode)</span></span> {
     node.prev.next = node.next
     node.next.prev = node.prev
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(l *LRUCache)</span></span> moveToHead(node *DLinkedNode) {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(l *LRUCache)</span> <span class="hljs-title">moveToHead</span><span class="hljs-params">(node *DLinkedNode)</span></span> {
     l.removeNode(node)
     l.addToHead(node)
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(l *LRUCache)</span></span> Get(key <span class="hljs-type">int</span>) <span class="hljs-type">int</span> {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(l *LRUCache)</span> <span class="hljs-title">Get</span><span class="hljs-params">(key <span class="hljs-keyword">int</span>)</span> <span class="hljs-title">int</span></span> {
     <span class="hljs-keyword">if</span> node, ok := l.cache[key]; ok {
         l.moveToHead(node)
         <span class="hljs-keyword">return</span> node.value
@@ -1174,7 +1306,7 @@
     <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(l *LRUCache)</span></span> Put(key <span class="hljs-type">int</span>, value <span class="hljs-type">int</span>) {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(l *LRUCache)</span> <span class="hljs-title">Put</span><span class="hljs-params">(key <span class="hljs-keyword">int</span>, value <span class="hljs-keyword">int</span>)</span></span> {
     <span class="hljs-keyword">if</span> node, ok := l.cache[key]; ok {
         node.value = value
         l.moveToHead(node)
@@ -1195,16 +1327,16 @@
 <p><strong>题目描述：</strong> 给你两个单链表的头节点 <code>headA</code> 和 <code>headB</code>，请找出并返回两个单链表相交的起始节点。如果没有相交则返回 <code>null</code>。</p>
 <p><strong>思路分析：</strong> 设链表 A 长度为 a，链表 B 长度为 b，公共部分长度为 c。指针 pA 从 A 出发，走完 A 后从 B 头继续走；指针 pB 从 B 出发，走完 B 后从 A 头继续走。当两者相遇时，各自走了 <code>a + (b - c)</code> 和 <code>b + (a - c)</code> 步，这两个值相等，因此会在交点相遇。如果不相交，两者会同时到达 null。</p>
 <p><strong>时间复杂度：</strong> O(m + n)，空间复杂度 O(1)。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">getIntersectionNode</span>(<span class="hljs-params">headA, headB</span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getIntersectionNode</span>(<span class="hljs-params">headA, headB</span>) </span>{
   <span class="hljs-keyword">let</span> pA = headA, pB = headB;
   <span class="hljs-keyword">while</span> (pA !== pB) {
-    pA = pA === <span class="hljs-literal">null</span> ? headB : pA.<span class="hljs-property">next</span>;
-    pB = pB === <span class="hljs-literal">null</span> ? headA : pB.<span class="hljs-property">next</span>;
+    pA = pA === <span class="hljs-literal">null</span> ? headB : pA.next;
+    pB = pB === <span class="hljs-literal">null</span> ? headA : pB.next;
   }
   <span class="hljs-keyword">return</span> pA;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">getIntersectionNode</span><span class="hljs-params">(headA, headB *ListNode)</span></span> *ListNode {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">getIntersectionNode</span><span class="hljs-params">(headA, headB *ListNode)</span> *<span class="hljs-title">ListNode</span></span> {
     pA, pB := headA, headB
     <span class="hljs-keyword">for</span> pA != pB {
         <span class="hljs-keyword">if</span> pA == <span class="hljs-literal">nil</span> {
@@ -1289,6 +1421,22 @@
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -1312,73 +1460,29 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"链表","level":"6.2","depth":1,"next":{"title":"树与图","level":"6.3","depth":1,"path":"algorithm/tree-graph.md","ref":"algorithm/tree-graph.md","articles":[]},"previous":{"title":"数组与字符串","level":"6.1","depth":1,"path":"algorithm/array-string.md","ref":"algorithm/array-string.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"algorithm/linked-list.md","mtime":"2026-03-31T06:35:11.836Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"链表","level":"6.2","depth":1,"next":{"title":"树与图","level":"6.3","depth":1,"path":"algorithm/tree-graph.md","ref":"algorithm/tree-graph.md","articles":[]},"previous":{"title":"数组与字符串","level":"6.1","depth":1,"path":"algorithm/array-string.md","ref":"algorithm/array-string.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"algorithm/linked-list.md","mtime":"2026-03-31T12:30:26.828Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    <noscript>
-        <style>
-            .honkit-cloak {
-                display: block !important;
-            }
-        </style>
-    </noscript>
-    <script>
-        // Restore sidebar state as critical path for prevent layout shift
-        function __init__getSidebarState(defaultValue){
-            var baseKey = "";
-            var key = baseKey + ":sidebar";
-            try {
-                var value = localStorage[key];
-                if (value === undefined) {
-                    return defaultValue;
-                }
-                var parsed = JSON.parse(value);
-                return parsed == null ? defaultValue : parsed;
-            } catch (e) {
-                return defaultValue;
-            }
-        }
-        function __init__restoreLastSidebarState() {
-            var isMobile = window.matchMedia("(max-width: 600px)").matches;
-            if (isMobile) {
-                // Init last state if not mobile
-                return;
-            }
-            var sidebarState = __init__getSidebarState(true);
-            var book = document.querySelector(".book");
-            // Show sidebar if it enabled
-            if (sidebarState && book) {
-                book.classList.add("without-animation", "with-summary");
-            }
-        }
-
-        try {
-            __init__restoreLastSidebarState();
-        } finally {
-            var book = document.querySelector(".book");
-            book.classList.remove("honkit-cloak");
-        }
-    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

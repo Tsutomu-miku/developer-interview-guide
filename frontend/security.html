@@ -3,10 +3,11 @@
 <html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>前端安全 · 全栈开发面试指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="generator" content="GitBook 6.1.7">
         
         
         
@@ -16,19 +17,23 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -60,7 +65,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../nodejs/basics.html" />
+    <link rel="next" href="micro-frontend.html" />
     
     
     <link rel="prev" href="performance.html" />
@@ -69,10 +74,14 @@
     </head>
     <body>
         
-<div class="book honkit-cloak">
+<div class="book">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -269,6 +278,66 @@
             
         </li>
     
+        <li class="chapter " data-level="2.11" data-path="micro-frontend.html">
+            
+                <a href="micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="mobile-dev.html">
+            
+                <a href="mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="state-management.html">
+            
+                <a href="state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="design-patterns.html">
+            
+                <a href="design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -359,6 +428,21 @@
                         <b>3.6.</b>
                     
                     最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../nodejs/serverless.html">
+            
+                <a href="../nodejs/serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
             
                 </a>
             
@@ -463,6 +547,21 @@
             
         </li>
     
+        <li class="chapter " data-level="4.7" data-path="../golang/cloud-native.html">
+            
+                <a href="../golang/cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -553,6 +652,21 @@
                         <b>5.6.</b>
                     
                     实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../agent/evaluation.html">
+            
+                <a href="../agent/evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
             
                 </a>
             
@@ -657,14 +771,29 @@
             
         </li>
     
+        <li class="chapter " data-level="6.7" data-path="../algorithm/system-design.html">
+            
+                <a href="../algorithm/system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
     <li class="divider"></li>
 
     <li>
-        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
-            本书使用 HonKit 发布
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -697,6 +826,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="前端安全面试指南">前端安全面试指南</h1>
@@ -742,12 +874,12 @@
 
 <span class="hljs-comment">// DOM 型 XSS：前端直接使用 URL 参数</span>
 <span class="hljs-comment">// URL: http://example.com?name=&lt;img src=x onerror=alert(1)&gt;</span>
-<span class="hljs-keyword">const</span> name = <span class="hljs-keyword">new</span> <span class="hljs-title class_">URLSearchParams</span>(location.<span class="hljs-property">search</span>).<span class="hljs-title function_">get</span>(<span class="hljs-string">'name'</span>);
-<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'greeting'</span>).<span class="hljs-property">innerHTML</span> = <span class="hljs-string">`Hello, <span class="hljs-subst">${name}</span>`</span>; <span class="hljs-comment">// 危险！</span>
+<span class="hljs-keyword">const</span> name = <span class="hljs-keyword">new</span> URLSearchParams(location.search).get(<span class="hljs-string">'name'</span>);
+<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'greeting'</span>).innerHTML = <span class="hljs-string">`Hello, <span class="hljs-subst">${name}</span>`</span>; <span class="hljs-comment">// 危险！</span>
 </code></pre>
 <p><strong>防御措施</strong></p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 1. 输出编码 — HTML 实体编码</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">escapeHTML</span>(<span class="hljs-params">str</span>) {
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">escapeHTML</span>(<span class="hljs-params">str</span>) </span>{
   <span class="hljs-keyword">const</span> escapeMap = {
     <span class="hljs-string">'&amp;'</span>: <span class="hljs-string">'&amp;amp;'</span>,
     <span class="hljs-string">'&lt;'</span>: <span class="hljs-string">'&amp;lt;'</span>,
@@ -756,14 +888,14 @@
     <span class="hljs-string">"'"</span>: <span class="hljs-string">'&amp;#x27;'</span>,
     <span class="hljs-string">'/'</span>: <span class="hljs-string">'&amp;#x2F;'</span>,
   };
-  <span class="hljs-keyword">return</span> str.<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/[&amp;&lt;&gt;"'/]/g</span>, <span class="hljs-function">(<span class="hljs-params">char</span>) =&gt;</span> escapeMap[char]);
+  <span class="hljs-keyword">return</span> str.replace(<span class="hljs-regexp">/[&amp;&lt;&gt;"'/]/g</span>, (char) =&gt; escapeMap[char]);
 }
 
 <span class="hljs-comment">// 2. 使用安全的 DOM API</span>
 <span class="hljs-comment">// 危险</span>
-element.<span class="hljs-property">innerHTML</span> = userInput;
+element.innerHTML = userInput;
 <span class="hljs-comment">// 安全</span>
-element.<span class="hljs-property">textContent</span> = userInput;
+element.textContent = userInput;
 
 <span class="hljs-comment">// 3. Vue/React 框架默认转义</span>
 <span class="hljs-comment">// Vue 模板中 {{ }} 会自动转义</span>
@@ -771,8 +903,8 @@ element.<span class="hljs-property">textContent</span> = userInput;
 <span class="hljs-comment">// &lt;div v-html="userInput"&gt;&lt;/div&gt;  ← 危险</span>
 
 <span class="hljs-comment">// 4. DOMPurify 清洗富文本</span>
-<span class="hljs-keyword">import</span> <span class="hljs-title class_">DOMPurify</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'dompurify'</span>;
-<span class="hljs-keyword">const</span> cleanHTML = <span class="hljs-title class_">DOMPurify</span>.<span class="hljs-title function_">sanitize</span>(dirtyHTML, {
+<span class="hljs-keyword">import</span> DOMPurify <span class="hljs-keyword">from</span> <span class="hljs-string">'dompurify'</span>;
+<span class="hljs-keyword">const</span> cleanHTML = DOMPurify.sanitize(dirtyHTML, {
   <span class="hljs-attr">ALLOWED_TAGS</span>: [<span class="hljs-string">'b'</span>, <span class="hljs-string">'i'</span>, <span class="hljs-string">'em'</span>, <span class="hljs-string">'strong'</span>, <span class="hljs-string">'p'</span>, <span class="hljs-string">'br'</span>],
   <span class="hljs-attr">ALLOWED_ATTR</span>: [<span class="hljs-string">'class'</span>],
 });
@@ -801,7 +933,7 @@ element.<span class="hljs-property">textContent</span> = userInput;
   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"hidden"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"to"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"hacker"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"hidden"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"amount"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"10000"</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript"><span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'hack-form'</span>).<span class="hljs-title function_">submit</span>();</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'hack-form'</span>).submit();</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
 <p><strong>防御方案</strong></p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 1. CSRF Token</span>
@@ -809,14 +941,14 @@ element.<span class="hljs-property">textContent</span> = userInput;
 <span class="hljs-comment">// &lt;meta name="csrf-token" content="随机token值"&gt;</span>
 
 <span class="hljs-comment">// 前端：请求时携带 token</span>
-<span class="hljs-keyword">const</span> csrfToken = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">'meta[name="csrf-token"]'</span>).<span class="hljs-property">content</span>;
-<span class="hljs-title function_">fetch</span>(<span class="hljs-string">'/api/transfer'</span>, {
+<span class="hljs-keyword">const</span> csrfToken = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'meta[name="csrf-token"]'</span>).content;
+fetch(<span class="hljs-string">'/api/transfer'</span>, {
   <span class="hljs-attr">method</span>: <span class="hljs-string">'POST'</span>,
   <span class="hljs-attr">headers</span>: {
     <span class="hljs-string">'X-CSRF-Token'</span>: csrfToken,
     <span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/json'</span>,
   },
-  <span class="hljs-attr">body</span>: <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>({ <span class="hljs-attr">to</span>: <span class="hljs-string">'friend'</span>, <span class="hljs-attr">amount</span>: <span class="hljs-number">100</span> }),
+  <span class="hljs-attr">body</span>: <span class="hljs-built_in">JSON</span>.stringify({ <span class="hljs-attr">to</span>: <span class="hljs-string">'friend'</span>, <span class="hljs-attr">amount</span>: <span class="hljs-number">100</span> }),
 });
 
 <span class="hljs-comment">// 2. SameSite Cookie（最推荐）</span>
@@ -838,7 +970,7 @@ element.<span class="hljs-property">textContent</span> = userInput;
 </blockquote>
 <p>点击劫持通过透明的 iframe 覆盖在正常页面上，诱导用户点击看似正常的按钮，实际上点击的是 iframe 中的恶意操作。</p>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!-- 攻击者页面 --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css">
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
   <span class="hljs-selector-tag">iframe</span> {
     <span class="hljs-attribute">position</span>: absolute;
     <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
@@ -862,8 +994,8 @@ element.<span class="hljs-property">textContent</span> = userInput;
 <span class="hljs-comment">// Content-Security-Policy: frame-ancestors 'self' https://trusted.com</span>
 
 <span class="hljs-comment">// 3. JavaScript 防御（兜底）</span>
-<span class="hljs-keyword">if</span> (<span class="hljs-variable language_">window</span>.<span class="hljs-property">top</span> !== <span class="hljs-variable language_">window</span>.<span class="hljs-property">self</span>) {
-  <span class="hljs-variable language_">window</span>.<span class="hljs-property">top</span>.<span class="hljs-property">location</span> = <span class="hljs-variable language_">window</span>.<span class="hljs-property">self</span>.<span class="hljs-property">location</span>;
+<span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.top !== <span class="hljs-built_in">window</span>.self) {
+  <span class="hljs-built_in">window</span>.top.location = <span class="hljs-built_in">window</span>.self.location;
 }
 </code></pre>
 <hr></hr>
@@ -886,15 +1018,15 @@ Content-Security-Policy:
   form-action 'self';                              // 限制表单提交目标
   upgrade-insecure-requests;                       // HTTP 自动升级 HTTPS
 </code></pre><pre><code class="lang-html"><span class="hljs-comment">&lt;!-- nonce 方式允许内联脚本（每次请求生成不同 nonce） --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">nonce</span>=<span class="hljs-string">"abc123"</span>&gt;</span><span class="language-javascript">
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">nonce</span>=<span class="hljs-string">"abc123"</span>&gt;</span><span class="javascript">
   <span class="hljs-comment">// 这个脚本被允许执行，因为 nonce 匹配</span>
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Hello'</span>);
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Hello'</span>);
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 
 <span class="hljs-comment">&lt;!-- 没有正确 nonce 的脚本会被阻止 --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
   <span class="hljs-comment">// 这个会被 CSP 阻止</span>
-  <span class="hljs-title function_">alert</span>(<span class="hljs-string">'blocked'</span>);
+  alert(<span class="hljs-string">'blocked'</span>);
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
 <p><strong>CSP 报告模式</strong></p>
@@ -938,16 +1070,16 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 </blockquote>
 <p>虽然 SQL 注入主要在后端防御，但前端也有责任做好输入校验。</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 前端输入校验（仅作为第一道防线，不能替代后端校验）</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">validateInput</span>(<span class="hljs-params">input</span>) {
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">validateInput</span>(<span class="hljs-params">input</span>) </span>{
   <span class="hljs-comment">// 1. 长度限制</span>
-  <span class="hljs-keyword">if</span> (input.<span class="hljs-property">length</span> &gt; <span class="hljs-number">200</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+  <span class="hljs-keyword">if</span> (input.length &gt; <span class="hljs-number">200</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
 
   <span class="hljs-comment">// 2. 类型检查</span>
   <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> input !== <span class="hljs-string">'string'</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
 
   <span class="hljs-comment">// 3. 特殊字符过滤（白名单策略优于黑名单）</span>
   <span class="hljs-keyword">const</span> allowedPattern = <span class="hljs-regexp">/^[a-zA-Z0-9\u4e00-\u9fa5\s@._-]+$/</span>;
-  <span class="hljs-keyword">return</span> allowedPattern.<span class="hljs-title function_">test</span>(input);
+  <span class="hljs-keyword">return</span> allowedPattern.test(input);
 }
 
 <span class="hljs-comment">// NoSQL 注入防御</span>
@@ -957,9 +1089,9 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 <span class="hljs-comment">// 这会匹配所有用户</span>
 
 <span class="hljs-comment">// 防御：严格校验输入类型</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">sanitizeMongoQuery</span>(<span class="hljs-params">input</span>) {
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sanitizeMongoQuery</span>(<span class="hljs-params">input</span>) </span>{
   <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> input !== <span class="hljs-string">'string'</span>) {
-    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'Invalid input type'</span>);
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">'Invalid input type'</span>);
   }
   <span class="hljs-keyword">return</span> input;
 }
@@ -970,34 +1102,34 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 <p>面试题：文件上传有哪些安全风险？如何防御？</p>
 </blockquote>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 前端文件上传校验</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">validateFile</span>(<span class="hljs-params">file</span>) {
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">validateFile</span>(<span class="hljs-params">file</span>) </span>{
   <span class="hljs-comment">// 1. 文件类型校验（MIME type + 扩展名）</span>
   <span class="hljs-keyword">const</span> allowedTypes = [<span class="hljs-string">'image/jpeg'</span>, <span class="hljs-string">'image/png'</span>, <span class="hljs-string">'image/gif'</span>, <span class="hljs-string">'image/webp'</span>];
   <span class="hljs-keyword">const</span> allowedExts = [<span class="hljs-string">'.jpg'</span>, <span class="hljs-string">'.jpeg'</span>, <span class="hljs-string">'.png'</span>, <span class="hljs-string">'.gif'</span>, <span class="hljs-string">'.webp'</span>];
 
-  <span class="hljs-keyword">if</span> (!allowedTypes.<span class="hljs-title function_">includes</span>(file.<span class="hljs-property">type</span>)) {
-    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'不支持的文件类型'</span>);
+  <span class="hljs-keyword">if</span> (!allowedTypes.includes(file.type)) {
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">'不支持的文件类型'</span>);
   }
 
-  <span class="hljs-keyword">const</span> ext = <span class="hljs-string">'.'</span> + file.<span class="hljs-property">name</span>.<span class="hljs-title function_">split</span>(<span class="hljs-string">'.'</span>).<span class="hljs-title function_">pop</span>().<span class="hljs-title function_">toLowerCase</span>();
-  <span class="hljs-keyword">if</span> (!allowedExts.<span class="hljs-title function_">includes</span>(ext)) {
-    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'不支持的文件扩展名'</span>);
+  <span class="hljs-keyword">const</span> ext = <span class="hljs-string">'.'</span> + file.name.split(<span class="hljs-string">'.'</span>).pop().toLowerCase();
+  <span class="hljs-keyword">if</span> (!allowedExts.includes(ext)) {
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">'不支持的文件扩展名'</span>);
   }
 
   <span class="hljs-comment">// 2. 文件大小限制</span>
   <span class="hljs-keyword">const</span> maxSize = <span class="hljs-number">5</span> * <span class="hljs-number">1024</span> * <span class="hljs-number">1024</span>; <span class="hljs-comment">// 5MB</span>
-  <span class="hljs-keyword">if</span> (file.<span class="hljs-property">size</span> &gt; maxSize) {
-    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'文件大小超过限制'</span>);
+  <span class="hljs-keyword">if</span> (file.size &gt; maxSize) {
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">'文件大小超过限制'</span>);
   }
 
   <span class="hljs-comment">// 3. 文件头魔数校验（更可靠的类型检测）</span>
-  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
-    <span class="hljs-keyword">const</span> reader = <span class="hljs-keyword">new</span> <span class="hljs-title class_">FileReader</span>();
-    reader.<span class="hljs-property">onload</span> = <span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> {
-      <span class="hljs-keyword">const</span> arr = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Uint8Array</span>(e.<span class="hljs-property">target</span>.<span class="hljs-property">result</span>).<span class="hljs-title function_">subarray</span>(<span class="hljs-number">0</span>, <span class="hljs-number">4</span>);
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> reader = <span class="hljs-keyword">new</span> FileReader();
+    reader.onload = <span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> {
+      <span class="hljs-keyword">const</span> arr = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Uint8Array</span>(e.target.result).subarray(<span class="hljs-number">0</span>, <span class="hljs-number">4</span>);
       <span class="hljs-keyword">let</span> header = <span class="hljs-string">''</span>;
-      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; arr.<span class="hljs-property">length</span>; i++) {
-        header += arr[i].<span class="hljs-title function_">toString</span>(<span class="hljs-number">16</span>).<span class="hljs-title function_">padStart</span>(<span class="hljs-number">2</span>, <span class="hljs-string">'0'</span>);
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; arr.length; i++) {
+        header += arr[i].toString(<span class="hljs-number">16</span>).padStart(<span class="hljs-number">2</span>, <span class="hljs-string">'0'</span>);
       }
       <span class="hljs-keyword">const</span> validHeaders = {
         <span class="hljs-string">'ffd8ffe0'</span>: <span class="hljs-string">'image/jpeg'</span>,
@@ -1007,11 +1139,11 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
         <span class="hljs-string">'47494638'</span>: <span class="hljs-string">'image/gif'</span>,
       };
       <span class="hljs-keyword">if</span> (!validHeaders[header]) {
-        <span class="hljs-title function_">reject</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'文件内容与类型不匹配'</span>));
+        reject(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">'文件内容与类型不匹配'</span>));
       }
-      <span class="hljs-title function_">resolve</span>(<span class="hljs-literal">true</span>);
+      resolve(<span class="hljs-literal">true</span>);
     };
-    reader.<span class="hljs-title function_">readAsArrayBuffer</span>(file.<span class="hljs-title function_">slice</span>(<span class="hljs-number">0</span>, <span class="hljs-number">4</span>));
+    reader.readAsArrayBuffer(file.slice(<span class="hljs-number">0</span>, <span class="hljs-number">4</span>));
   });
 }
 </code></pre>
@@ -1089,7 +1221,7 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 <span class="hljs-comment">// Set-Cookie: access_token=xxx; HttpOnly; Secure; SameSite=Lax; Path=/; Max-Age=3600</span>
 
 <span class="hljs-comment">// 前端：Token 自动随请求发送，无需手动处理</span>
-<span class="hljs-title function_">fetch</span>(<span class="hljs-string">'/api/data'</span>, {
+fetch(<span class="hljs-string">'/api/data'</span>, {
   <span class="hljs-attr">credentials</span>: <span class="hljs-string">'include'</span>, <span class="hljs-comment">// 携带 Cookie</span>
 });
 
@@ -1100,21 +1232,21 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 <span class="hljs-comment">// 4. 敏感操作前二次验证</span>
 
 <span class="hljs-comment">// 敏感信息加密存储示例</span>
-<span class="hljs-keyword">const</span> encoder = <span class="hljs-keyword">new</span> <span class="hljs-title class_">TextEncoder</span>();
-<span class="hljs-keyword">const</span> key = <span class="hljs-keyword">await</span> crypto.<span class="hljs-property">subtle</span>.<span class="hljs-title function_">generateKey</span>(
+<span class="hljs-keyword">const</span> encoder = <span class="hljs-keyword">new</span> TextEncoder();
+<span class="hljs-keyword">const</span> key = <span class="hljs-keyword">await</span> crypto.subtle.generateKey(
   { <span class="hljs-attr">name</span>: <span class="hljs-string">'AES-GCM'</span>, <span class="hljs-attr">length</span>: <span class="hljs-number">256</span> },
   <span class="hljs-literal">true</span>,
   [<span class="hljs-string">'encrypt'</span>, <span class="hljs-string">'decrypt'</span>]
 );
 
-<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">encryptData</span>(<span class="hljs-params">data</span>) {
-  <span class="hljs-keyword">const</span> iv = crypto.<span class="hljs-title function_">getRandomValues</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Uint8Array</span>(<span class="hljs-number">12</span>));
-  <span class="hljs-keyword">const</span> encrypted = <span class="hljs-keyword">await</span> crypto.<span class="hljs-property">subtle</span>.<span class="hljs-title function_">encrypt</span>(
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">encryptData</span>(<span class="hljs-params">data</span>) </span>{
+  <span class="hljs-keyword">const</span> iv = crypto.getRandomValues(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Uint8Array</span>(<span class="hljs-number">12</span>));
+  <span class="hljs-keyword">const</span> encrypted = <span class="hljs-keyword">await</span> crypto.subtle.encrypt(
     { <span class="hljs-attr">name</span>: <span class="hljs-string">'AES-GCM'</span>, iv },
     key,
-    encoder.<span class="hljs-title function_">encode</span>(<span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(data))
+    encoder.encode(<span class="hljs-built_in">JSON</span>.stringify(data))
   );
-  <span class="hljs-keyword">return</span> { <span class="hljs-attr">iv</span>: <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>(iv), <span class="hljs-attr">data</span>: <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Uint8Array</span>(encrypted)) };
+  <span class="hljs-keyword">return</span> { <span class="hljs-attr">iv</span>: <span class="hljs-built_in">Array</span>.from(iv), <span class="hljs-attr">data</span>: <span class="hljs-built_in">Array</span>.from(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Uint8Array</span>(encrypted)) };
 }
 </code></pre>
 <p><strong>前端敏感信息保护清单</strong></p>
@@ -1127,28 +1259,44 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 <li><strong>安全退出</strong>：清除本地存储的 Token 和缓存数据</li>
 </ol>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 安全退出实现</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">secureLogout</span>(<span class="hljs-params"></span>) {
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">secureLogout</span>(<span class="hljs-params"></span>) </span>{
   <span class="hljs-comment">// 1. 调用后端注销接口（使 Token 失效）</span>
-  <span class="hljs-title function_">fetch</span>(<span class="hljs-string">'/api/logout'</span>, { <span class="hljs-attr">method</span>: <span class="hljs-string">'POST'</span>, <span class="hljs-attr">credentials</span>: <span class="hljs-string">'include'</span> });
+  fetch(<span class="hljs-string">'/api/logout'</span>, { <span class="hljs-attr">method</span>: <span class="hljs-string">'POST'</span>, <span class="hljs-attr">credentials</span>: <span class="hljs-string">'include'</span> });
 
   <span class="hljs-comment">// 2. 清除本地存储</span>
-  <span class="hljs-variable language_">localStorage</span>.<span class="hljs-title function_">clear</span>();
-  <span class="hljs-variable language_">sessionStorage</span>.<span class="hljs-title function_">clear</span>();
+  localStorage.clear();
+  sessionStorage.clear();
 
   <span class="hljs-comment">// 3. 清除 Cookie（如果能通过 JS 访问的非 HttpOnly Cookie）</span>
-  <span class="hljs-variable language_">document</span>.<span class="hljs-property">cookie</span>.<span class="hljs-title function_">split</span>(<span class="hljs-string">';'</span>).<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">cookie</span>) =&gt;</span> {
-    <span class="hljs-keyword">const</span> name = cookie.<span class="hljs-title function_">split</span>(<span class="hljs-string">'='</span>)[<span class="hljs-number">0</span>].<span class="hljs-title function_">trim</span>();
-    <span class="hljs-variable language_">document</span>.<span class="hljs-property">cookie</span> = <span class="hljs-string">`<span class="hljs-subst">${name}</span>=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`</span>;
+  <span class="hljs-built_in">document</span>.cookie.split(<span class="hljs-string">';'</span>).forEach(<span class="hljs-function">(<span class="hljs-params">cookie</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> name = cookie.split(<span class="hljs-string">'='</span>)[<span class="hljs-number">0</span>].trim();
+    <span class="hljs-built_in">document</span>.cookie = <span class="hljs-string">`<span class="hljs-subst">${name}</span>=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`</span>;
   });
 
   <span class="hljs-comment">// 4. 重定向到登录页</span>
-  <span class="hljs-variable language_">window</span>.<span class="hljs-property">location</span>.<span class="hljs-property">href</span> = <span class="hljs-string">'/login'</span>;
+  <span class="hljs-built_in">window</span>.location.href = <span class="hljs-string">'/login'</span>;
 }
 </code></pre>
 
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -1161,7 +1309,7 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
                 </a>
                 
                 
-                <a href="../nodejs/basics.html" class="navigation navigation-next " aria-label="Next page: Node.js基础">
+                <a href="micro-frontend.html" class="navigation navigation-next " aria-label="Next page: 微前端与微模块">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1172,73 +1320,29 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"前端安全","level":"2.10","depth":1,"next":{"title":"Node.js基础","level":"3.1","depth":1,"path":"nodejs/basics.md","ref":"nodejs/basics.md","articles":[]},"previous":{"title":"性能优化","level":"2.9","depth":1,"path":"frontend/performance.md","ref":"frontend/performance.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"frontend/security.md","mtime":"2026-03-31T06:35:11.837Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"前端安全","level":"2.10","depth":1,"next":{"title":"微前端与微模块","level":"2.11","depth":1,"path":"frontend/micro-frontend.md","ref":"frontend/micro-frontend.md","articles":[]},"previous":{"title":"性能优化","level":"2.9","depth":1,"path":"frontend/performance.md","ref":"frontend/performance.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"frontend/security.md","mtime":"2026-03-31T12:30:30.411Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    <noscript>
-        <style>
-            .honkit-cloak {
-                display: block !important;
-            }
-        </style>
-    </noscript>
-    <script>
-        // Restore sidebar state as critical path for prevent layout shift
-        function __init__getSidebarState(defaultValue){
-            var baseKey = "";
-            var key = baseKey + ":sidebar";
-            try {
-                var value = localStorage[key];
-                if (value === undefined) {
-                    return defaultValue;
-                }
-                var parsed = JSON.parse(value);
-                return parsed == null ? defaultValue : parsed;
-            } catch (e) {
-                return defaultValue;
-            }
-        }
-        function __init__restoreLastSidebarState() {
-            var isMobile = window.matchMedia("(max-width: 600px)").matches;
-            if (isMobile) {
-                // Init last state if not mobile
-                return;
-            }
-            var sidebarState = __init__getSidebarState(true);
-            var book = document.querySelector(".book");
-            // Show sidebar if it enabled
-            if (sidebarState && book) {
-                book.classList.add("without-animation", "with-summary");
-            }
-        }
-
-        try {
-            __init__restoreLastSidebarState();
-        } finally {
-            var book = document.querySelector(".book");
-            book.classList.remove("honkit-cloak");
-        }
-    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

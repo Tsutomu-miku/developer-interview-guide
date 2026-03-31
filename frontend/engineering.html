@@ -3,10 +3,11 @@
 <html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>前端工程化 · 全栈开发面试指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="generator" content="GitBook 6.1.7">
         
         
         
@@ -16,19 +17,23 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -69,10 +74,14 @@
     </head>
     <body>
         
-<div class="book honkit-cloak">
+<div class="book">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -269,6 +278,66 @@
             
         </li>
     
+        <li class="chapter " data-level="2.11" data-path="micro-frontend.html">
+            
+                <a href="micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="mobile-dev.html">
+            
+                <a href="mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="state-management.html">
+            
+                <a href="state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="design-patterns.html">
+            
+                <a href="design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -359,6 +428,21 @@
                         <b>3.6.</b>
                     
                     最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../nodejs/serverless.html">
+            
+                <a href="../nodejs/serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
             
                 </a>
             
@@ -463,6 +547,21 @@
             
         </li>
     
+        <li class="chapter " data-level="4.7" data-path="../golang/cloud-native.html">
+            
+                <a href="../golang/cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -553,6 +652,21 @@
                         <b>5.6.</b>
                     
                     实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../agent/evaluation.html">
+            
+                <a href="../agent/evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
             
                 </a>
             
@@ -657,14 +771,29 @@
             
         </li>
     
+        <li class="chapter " data-level="6.7" data-path="../algorithm/system-design.html">
+            
+                <a href="../algorithm/system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
     <li class="divider"></li>
 
     <li>
-        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
-            本书使用 HonKit 发布
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -697,6 +826,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="前端工程化面试指南">前端工程化面试指南</h1>
@@ -737,14 +869,14 @@
 </table>
 <pre><code class="lang-javascript"><span class="hljs-comment">// webpack.config.js 基本配置</span>
 <span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
-<span class="hljs-keyword">const</span> <span class="hljs-title class_">HtmlWebpackPlugin</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'html-webpack-plugin'</span>);
-<span class="hljs-keyword">const</span> <span class="hljs-title class_">MiniCssExtractPlugin</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mini-css-extract-plugin'</span>);
+<span class="hljs-keyword">const</span> HtmlWebpackPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">'html-webpack-plugin'</span>);
+<span class="hljs-keyword">const</span> MiniCssExtractPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mini-css-extract-plugin'</span>);
 
-<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = {
+<span class="hljs-built_in">module</span>.exports = {
   <span class="hljs-attr">mode</span>: <span class="hljs-string">'production'</span>,
   <span class="hljs-attr">entry</span>: <span class="hljs-string">'./src/index.js'</span>,
   <span class="hljs-attr">output</span>: {
-    <span class="hljs-attr">path</span>: path.<span class="hljs-title function_">resolve</span>(__dirname, <span class="hljs-string">'dist'</span>),
+    <span class="hljs-attr">path</span>: path.resolve(__dirname, <span class="hljs-string">'dist'</span>),
     <span class="hljs-attr">filename</span>: <span class="hljs-string">'[name].[contenthash:8].js'</span>,
     <span class="hljs-attr">clean</span>: <span class="hljs-literal">true</span>,
   },
@@ -757,7 +889,7 @@
       },
       {
         <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.css$/</span>,
-        <span class="hljs-attr">use</span>: [<span class="hljs-title class_">MiniCssExtractPlugin</span>.<span class="hljs-property">loader</span>, <span class="hljs-string">'css-loader'</span>, <span class="hljs-string">'postcss-loader'</span>],
+        <span class="hljs-attr">use</span>: [MiniCssExtractPlugin.loader, <span class="hljs-string">'css-loader'</span>, <span class="hljs-string">'postcss-loader'</span>],
       },
       {
         <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.(png|jpe?g|gif|svg)$/</span>,
@@ -769,8 +901,8 @@
     ],
   },
   <span class="hljs-attr">plugins</span>: [
-    <span class="hljs-keyword">new</span> <span class="hljs-title class_">HtmlWebpackPlugin</span>({ <span class="hljs-attr">template</span>: <span class="hljs-string">'./public/index.html'</span> }),
-    <span class="hljs-keyword">new</span> <span class="hljs-title class_">MiniCssExtractPlugin</span>({ <span class="hljs-attr">filename</span>: <span class="hljs-string">'css/[name].[contenthash:8].css'</span> }),
+    <span class="hljs-keyword">new</span> HtmlWebpackPlugin({ <span class="hljs-attr">template</span>: <span class="hljs-string">'./public/index.html'</span> }),
+    <span class="hljs-keyword">new</span> MiniCssExtractPlugin({ <span class="hljs-attr">filename</span>: <span class="hljs-string">'css/[name].[contenthash:8].css'</span> }),
   ],
   <span class="hljs-attr">optimization</span>: {
     <span class="hljs-attr">splitChunks</span>: {
@@ -805,22 +937,22 @@
 <p>面试题：如何优化 Webpack 的构建速度和产物体积？</p>
 </blockquote>
 <p><strong>构建速度优化</strong></p>
-<pre><code class="lang-javascript"><span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = {
+<pre><code class="lang-javascript"><span class="hljs-built_in">module</span>.exports = {
   <span class="hljs-comment">// 1. 缩小搜索范围</span>
-  <span class="hljs-attr">resolve</span>: {
+  resolve: {
     <span class="hljs-attr">extensions</span>: [<span class="hljs-string">'.js'</span>, <span class="hljs-string">'.jsx'</span>, <span class="hljs-string">'.ts'</span>, <span class="hljs-string">'.tsx'</span>],
-    <span class="hljs-attr">alias</span>: { <span class="hljs-string">'@'</span>: path.<span class="hljs-title function_">resolve</span>(__dirname, <span class="hljs-string">'src'</span>) },
-    <span class="hljs-attr">modules</span>: [path.<span class="hljs-title function_">resolve</span>(__dirname, <span class="hljs-string">'node_modules'</span>)],
+    <span class="hljs-attr">alias</span>: { <span class="hljs-string">'@'</span>: path.resolve(__dirname, <span class="hljs-string">'src'</span>) },
+    <span class="hljs-attr">modules</span>: [path.resolve(__dirname, <span class="hljs-string">'node_modules'</span>)],
   },
   <span class="hljs-attr">module</span>: {
     <span class="hljs-attr">rules</span>: [
       {
         <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.js$/</span>,
-        <span class="hljs-attr">include</span>: path.<span class="hljs-title function_">resolve</span>(__dirname, <span class="hljs-string">'src'</span>), <span class="hljs-comment">// 只编译 src</span>
-        <span class="hljs-attr">use</span>: [
+        <span class="hljs-attr">include</span>: path.resolve(__dirname, <span class="hljs-string">'src'</span>), <span class="hljs-comment">// 只编译 src</span>
+        use: [
           {
             <span class="hljs-attr">loader</span>: <span class="hljs-string">'thread-loader'</span>, <span class="hljs-comment">// 2. 多线程编译</span>
-            <span class="hljs-attr">options</span>: { <span class="hljs-attr">workers</span>: <span class="hljs-number">4</span> },
+            options: { <span class="hljs-attr">workers</span>: <span class="hljs-number">4</span> },
           },
           <span class="hljs-string">'babel-loader'</span>,
         ],
@@ -828,7 +960,7 @@
     ],
   },
   <span class="hljs-comment">// 3. 持久化缓存（Webpack5）</span>
-  <span class="hljs-attr">cache</span>: {
+  cache: {
     <span class="hljs-attr">type</span>: <span class="hljs-string">'filesystem'</span>,
     <span class="hljs-attr">buildDependencies</span>: {
       <span class="hljs-attr">config</span>: [__filename],
@@ -877,8 +1009,8 @@ Vite：
 <span class="hljs-keyword">import</span> { defineConfig } <span class="hljs-keyword">from</span> <span class="hljs-string">'vite'</span>;
 <span class="hljs-keyword">import</span> vue <span class="hljs-keyword">from</span> <span class="hljs-string">'@vitejs/plugin-vue'</span>;
 
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title function_">defineConfig</span>({
-  <span class="hljs-attr">plugins</span>: [<span class="hljs-title function_">vue</span>()],
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> defineConfig({
+  <span class="hljs-attr">plugins</span>: [vue()],
   <span class="hljs-attr">resolve</span>: {
     <span class="hljs-attr">alias</span>: { <span class="hljs-string">'@'</span>: <span class="hljs-string">'/src'</span> },
   },
@@ -888,7 +1020,7 @@ Vite：
       <span class="hljs-string">'/api'</span>: {
         <span class="hljs-attr">target</span>: <span class="hljs-string">'http://localhost:8080'</span>,
         <span class="hljs-attr">changeOrigin</span>: <span class="hljs-literal">true</span>,
-        <span class="hljs-attr">rewrite</span>: <span class="hljs-function">(<span class="hljs-params">path</span>) =&gt;</span> path.<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/^\/api/</span>, <span class="hljs-string">''</span>),
+        <span class="hljs-attr">rewrite</span>: <span class="hljs-function">(<span class="hljs-params">path</span>) =&gt;</span> path.replace(<span class="hljs-regexp">/^\/api/</span>, <span class="hljs-string">''</span>),
       },
     },
   },
@@ -960,15 +1092,15 @@ Vite：
 </ol>
 <p><strong>Babel 插件示例 — 自动 console.log 移除</strong></p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// babel-plugin-remove-console.js</span>
-<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
   <span class="hljs-keyword">return</span> {
     <span class="hljs-attr">visitor</span>: {
-      <span class="hljs-title class_">CallExpression</span>(path) {
+      CallExpression(path) {
         <span class="hljs-keyword">if</span> (
-          path.<span class="hljs-property">node</span>.<span class="hljs-property">callee</span>.<span class="hljs-property">type</span> === <span class="hljs-string">'MemberExpression'</span> &amp;&amp;
-          path.<span class="hljs-property">node</span>.<span class="hljs-property">callee</span>.<span class="hljs-property">object</span>.<span class="hljs-property">name</span> === <span class="hljs-string">'console'</span>
+          path.node.callee.type === <span class="hljs-string">'MemberExpression'</span> &amp;&amp;
+          path.node.callee.object.name === <span class="hljs-string">'console'</span>
         ) {
-          path.<span class="hljs-title function_">remove</span>();
+          path.remove();
         }
       },
     },
@@ -977,13 +1109,13 @@ Vite：
 </code></pre>
 <p><strong>@babel/preset-env 的工作原理</strong></p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// babel.config.js</span>
-<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = {
+<span class="hljs-built_in">module</span>.exports = {
   <span class="hljs-attr">presets</span>: [
     [<span class="hljs-string">'@babel/preset-env'</span>, {
       <span class="hljs-attr">targets</span>: <span class="hljs-string">'&gt; 0.25%, not dead'</span>,  <span class="hljs-comment">// 目标浏览器</span>
-      <span class="hljs-attr">useBuiltIns</span>: <span class="hljs-string">'usage'</span>,          <span class="hljs-comment">// 按需引入 polyfill</span>
-      <span class="hljs-attr">corejs</span>: <span class="hljs-number">3</span>,                     <span class="hljs-comment">// core-js 版本</span>
-      <span class="hljs-attr">modules</span>: <span class="hljs-literal">false</span>,                <span class="hljs-comment">// 保留 ESM，利于 Tree-shaking</span>
+      useBuiltIns: <span class="hljs-string">'usage'</span>,          <span class="hljs-comment">// 按需引入 polyfill</span>
+      corejs: <span class="hljs-number">3</span>,                     <span class="hljs-comment">// core-js 版本</span>
+      modules: <span class="hljs-literal">false</span>,                <span class="hljs-comment">// 保留 ESM，利于 Tree-shaking</span>
     }],
   ],
 };
@@ -995,7 +1127,7 @@ Vite：
 <p>面试题：ESLint 和 Prettier 如何配合使用？如何解决冲突？</p>
 </blockquote>
 <pre><code class="lang-javascript"><span class="hljs-comment">// .eslintrc.js</span>
-<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = {
+<span class="hljs-built_in">module</span>.exports = {
   <span class="hljs-attr">parser</span>: <span class="hljs-string">'@typescript-eslint/parser'</span>,
   <span class="hljs-attr">extends</span>: [
     <span class="hljs-string">'eslint:recommended'</span>,
@@ -1005,7 +1137,7 @@ Vite：
   ],
   <span class="hljs-attr">plugins</span>: [<span class="hljs-string">'@typescript-eslint'</span>],
   <span class="hljs-attr">rules</span>: {
-    <span class="hljs-string">'no-console'</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">NODE_ENV</span> === <span class="hljs-string">'production'</span> ? <span class="hljs-string">'warn'</span> : <span class="hljs-string">'off'</span>,
+    <span class="hljs-string">'no-console'</span>: process.env.NODE_ENV === <span class="hljs-string">'production'</span> ? <span class="hljs-string">'warn'</span> : <span class="hljs-string">'off'</span>,
     <span class="hljs-string">'no-unused-vars'</span>: <span class="hljs-string">'off'</span>,
     <span class="hljs-string">'@typescript-eslint/no-unused-vars'</span>: <span class="hljs-string">'error'</span>,
   },
@@ -1166,8 +1298,8 @@ npx husky add .husky/pre-commit <span class="hljs-string">"npx lint-staged"</spa
 </table>
 <pre><code class="lang-yaml"><span class="hljs-comment"># pnpm-workspace.yaml</span>
 <span class="hljs-attr">packages:</span>
-  <span class="hljs-bullet">-</span> <span class="hljs-string">'packages/*'</span>
-  <span class="hljs-bullet">-</span> <span class="hljs-string">'apps/*'</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">'packages/*'</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">'apps/*'</span>
 </code></pre>
 <pre><code class="lang-json"><span class="hljs-comment">// turbo.json (Turborepo)</span>
 {
@@ -1194,41 +1326,41 @@ npx husky add .husky/pre-commit <span class="hljs-string">"npx lint-staged"</spa
 <p>面试题：前端项目的 CI/CD 流程一般是怎样的？</p>
 </blockquote>
 <pre><code class="lang-yaml"><span class="hljs-comment"># .github/workflows/ci.yml（GitHub Actions 示例）</span>
-<span class="hljs-attr">name:</span> <span class="hljs-string">CI/CD</span> <span class="hljs-string">Pipeline</span>
+<span class="hljs-attr">name:</span> CI/CD Pipeline
 
 <span class="hljs-attr">on:</span>
-  <span class="hljs-attr">push:</span>
-    <span class="hljs-attr">branches:</span> [<span class="hljs-string">main</span>, <span class="hljs-string">develop</span>]
-  <span class="hljs-attr">pull_request:</span>
-    <span class="hljs-attr">branches:</span> [<span class="hljs-string">main</span>]
+<span class="hljs-attr">  push:</span>
+<span class="hljs-attr">    branches:</span> [main, develop]
+<span class="hljs-attr">  pull_request:</span>
+<span class="hljs-attr">    branches:</span> [main]
 
 <span class="hljs-attr">jobs:</span>
-  <span class="hljs-attr">lint-and-test:</span>
-    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span>
-    <span class="hljs-attr">steps:</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout@v4</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-attr">uses:</span> <span class="hljs-string">pnpm/action-setup@v2</span>
-        <span class="hljs-attr">with:</span>
-          <span class="hljs-attr">version:</span> <span class="hljs-number">8</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/setup-node@v4</span>
-        <span class="hljs-attr">with:</span>
-          <span class="hljs-attr">node-version:</span> <span class="hljs-number">20</span>
-          <span class="hljs-attr">cache:</span> <span class="hljs-string">'pnpm'</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-attr">run:</span> <span class="hljs-string">pnpm</span> <span class="hljs-string">install</span> <span class="hljs-string">--frozen-lockfile</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-attr">run:</span> <span class="hljs-string">pnpm</span> <span class="hljs-string">lint</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-attr">run:</span> <span class="hljs-string">pnpm</span> <span class="hljs-string">test</span> <span class="hljs-string">--</span> <span class="hljs-string">--coverage</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-attr">run:</span> <span class="hljs-string">pnpm</span> <span class="hljs-string">build</span>
+<span class="hljs-attr">  lint-and-test:</span>
+<span class="hljs-attr">    runs-on:</span> ubuntu-latest
+<span class="hljs-attr">    steps:</span>
+<span class="hljs-attr">      - uses:</span> actions/checkout@v4
+<span class="hljs-attr">      - uses:</span> pnpm/action-setup@v2
+<span class="hljs-attr">        with:</span>
+<span class="hljs-attr">          version:</span> <span class="hljs-number">8</span>
+<span class="hljs-attr">      - uses:</span> actions/setup-node@v4
+<span class="hljs-attr">        with:</span>
+<span class="hljs-attr">          node-version:</span> <span class="hljs-number">20</span>
+<span class="hljs-attr">          cache:</span> <span class="hljs-string">'pnpm'</span>
+<span class="hljs-attr">      - run:</span> pnpm install --frozen-lockfile
+<span class="hljs-attr">      - run:</span> pnpm lint
+<span class="hljs-attr">      - run:</span> pnpm test -- --coverage
+<span class="hljs-attr">      - run:</span> pnpm build
 
-  <span class="hljs-attr">deploy:</span>
-    <span class="hljs-attr">needs:</span> <span class="hljs-string">lint-and-test</span>
-    <span class="hljs-attr">if:</span> <span class="hljs-string">github.ref</span> <span class="hljs-string">==</span> <span class="hljs-string">'refs/heads/main'</span>
-    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span>
-    <span class="hljs-attr">steps:</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout@v4</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-attr">run:</span> <span class="hljs-string">pnpm</span> <span class="hljs-string">install</span> <span class="hljs-string">--frozen-lockfile</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-attr">run:</span> <span class="hljs-string">pnpm</span> <span class="hljs-string">build</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Deploy</span> <span class="hljs-string">to</span> <span class="hljs-string">CDN</span> <span class="hljs-string">/</span> <span class="hljs-string">OSS</span>
-        <span class="hljs-attr">run:</span> <span class="hljs-string">|
+<span class="hljs-attr">  deploy:</span>
+<span class="hljs-attr">    needs:</span> lint-and-test
+<span class="hljs-attr">    if:</span> github.ref == <span class="hljs-string">'refs/heads/main'</span>
+<span class="hljs-attr">    runs-on:</span> ubuntu-latest
+<span class="hljs-attr">    steps:</span>
+<span class="hljs-attr">      - uses:</span> actions/checkout@v4
+<span class="hljs-attr">      - run:</span> pnpm install --frozen-lockfile
+<span class="hljs-attr">      - run:</span> pnpm build
+<span class="hljs-attr">      - name:</span> Deploy to CDN / OSS
+<span class="hljs-attr">        run:</span> <span class="hljs-string">|
           # 上传构建产物到 CDN
           aws s3 sync dist/ s3://my-bucket/ --delete
           # 刷新 CDN 缓存
@@ -1282,56 +1414,56 @@ npx husky add .husky/pre-commit <span class="hljs-string">"npx lint-staged"</spa
 </table>
 <p><strong>错误捕获实现</strong></p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 1. JS 运行时错误</span>
-<span class="hljs-variable language_">window</span>.<span class="hljs-property">onerror</span> = <span class="hljs-keyword">function</span> (<span class="hljs-params">message, source, lineno, colno, error</span>) {
-  <span class="hljs-title function_">reportError</span>({
+<span class="hljs-built_in">window</span>.onerror = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">message, source, lineno, colno, error</span>) </span>{
+  reportError({
     <span class="hljs-attr">type</span>: <span class="hljs-string">'js_error'</span>,
     message,
     source,
     lineno,
     colno,
-    <span class="hljs-attr">stack</span>: error?.<span class="hljs-property">stack</span>,
+    <span class="hljs-attr">stack</span>: error?.stack,
   });
 };
 
 <span class="hljs-comment">// 2. Promise 未处理拒绝</span>
-<span class="hljs-variable language_">window</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'unhandledrejection'</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
-  <span class="hljs-title function_">reportError</span>({
+<span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'unhandledrejection'</span>, (event) =&gt; {
+  reportError({
     <span class="hljs-attr">type</span>: <span class="hljs-string">'promise_error'</span>,
-    <span class="hljs-attr">message</span>: event.<span class="hljs-property">reason</span>?.<span class="hljs-property">message</span> || <span class="hljs-title class_">String</span>(event.<span class="hljs-property">reason</span>),
-    <span class="hljs-attr">stack</span>: event.<span class="hljs-property">reason</span>?.<span class="hljs-property">stack</span>,
+    <span class="hljs-attr">message</span>: event.reason?.message || <span class="hljs-built_in">String</span>(event.reason),
+    <span class="hljs-attr">stack</span>: event.reason?.stack,
   });
 });
 
 <span class="hljs-comment">// 3. 资源加载失败</span>
-<span class="hljs-variable language_">window</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'error'</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
-  <span class="hljs-keyword">const</span> target = event.<span class="hljs-property">target</span>;
-  <span class="hljs-keyword">if</span> (target &amp;&amp; (target.<span class="hljs-property">tagName</span> === <span class="hljs-string">'SCRIPT'</span> || target.<span class="hljs-property">tagName</span> === <span class="hljs-string">'LINK'</span> || target.<span class="hljs-property">tagName</span> === <span class="hljs-string">'IMG'</span>)) {
-    <span class="hljs-title function_">reportError</span>({
+<span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'error'</span>, (event) =&gt; {
+  <span class="hljs-keyword">const</span> target = event.target;
+  <span class="hljs-keyword">if</span> (target &amp;&amp; (target.tagName === <span class="hljs-string">'SCRIPT'</span> || target.tagName === <span class="hljs-string">'LINK'</span> || target.tagName === <span class="hljs-string">'IMG'</span>)) {
+    reportError({
       <span class="hljs-attr">type</span>: <span class="hljs-string">'resource_error'</span>,
-      <span class="hljs-attr">tagName</span>: target.<span class="hljs-property">tagName</span>,
-      <span class="hljs-attr">src</span>: target.<span class="hljs-property">src</span> || target.<span class="hljs-property">href</span>,
+      <span class="hljs-attr">tagName</span>: target.tagName,
+      <span class="hljs-attr">src</span>: target.src || target.href,
     });
   }
 }, <span class="hljs-literal">true</span>); <span class="hljs-comment">// 捕获阶段</span>
 
 <span class="hljs-comment">// 4. 接口请求监控 — 拦截 fetch</span>
-<span class="hljs-keyword">const</span> originalFetch = <span class="hljs-variable language_">window</span>.<span class="hljs-property">fetch</span>;
-<span class="hljs-variable language_">window</span>.<span class="hljs-property">fetch</span> = <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> (<span class="hljs-params">...args</span>) {
-  <span class="hljs-keyword">const</span> startTime = <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>();
+<span class="hljs-keyword">const</span> originalFetch = <span class="hljs-built_in">window</span>.fetch;
+<span class="hljs-built_in">window</span>.fetch = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">...args</span>) </span>{
+  <span class="hljs-keyword">const</span> startTime = <span class="hljs-built_in">Date</span>.now();
   <span class="hljs-keyword">try</span> {
-    <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> originalFetch.<span class="hljs-title function_">apply</span>(<span class="hljs-variable language_">this</span>, args);
-    <span class="hljs-title function_">reportApi</span>({
+    <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> originalFetch.apply(<span class="hljs-keyword">this</span>, args);
+    reportApi({
       <span class="hljs-attr">url</span>: args[<span class="hljs-number">0</span>],
-      <span class="hljs-attr">status</span>: response.<span class="hljs-property">status</span>,
-      <span class="hljs-attr">duration</span>: <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>() - startTime,
+      <span class="hljs-attr">status</span>: response.status,
+      <span class="hljs-attr">duration</span>: <span class="hljs-built_in">Date</span>.now() - startTime,
     });
     <span class="hljs-keyword">return</span> response;
   } <span class="hljs-keyword">catch</span> (error) {
-    <span class="hljs-title function_">reportApi</span>({
+    reportApi({
       <span class="hljs-attr">url</span>: args[<span class="hljs-number">0</span>],
       <span class="hljs-attr">status</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">duration</span>: <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>() - startTime,
-      <span class="hljs-attr">error</span>: error.<span class="hljs-property">message</span>,
+      <span class="hljs-attr">duration</span>: <span class="hljs-built_in">Date</span>.now() - startTime,
+      <span class="hljs-attr">error</span>: error.message,
     });
     <span class="hljs-keyword">throw</span> error;
   }
@@ -1396,7 +1528,7 @@ npx husky add .husky/pre-commit <span class="hljs-string">"npx lint-staged"</spa
 <pre><code class="lang-javascript"><span class="hljs-comment">// qiankun 主应用配置</span>
 <span class="hljs-keyword">import</span> { registerMicroApps, start } <span class="hljs-keyword">from</span> <span class="hljs-string">'qiankun'</span>;
 
-<span class="hljs-title function_">registerMicroApps</span>([
+registerMicroApps([
   {
     <span class="hljs-attr">name</span>: <span class="hljs-string">'sub-app-vue'</span>,
     <span class="hljs-attr">entry</span>: <span class="hljs-string">'//localhost:8081'</span>,
@@ -1412,7 +1544,7 @@ npx husky add .husky/pre-commit <span class="hljs-string">"npx lint-staged"</spa
   },
 ]);
 
-<span class="hljs-title function_">start</span>({
+start({
   <span class="hljs-attr">sandbox</span>: {
     <span class="hljs-attr">experimentalStyleIsolation</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// CSS 隔离</span>
   },
@@ -1489,22 +1621,22 @@ npx husky add .husky/pre-commit <span class="hljs-string">"npx lint-staged"</spa
 <pre><code class="lang-javascript"><span class="hljs-comment">// CommonJS（值拷贝）</span>
 <span class="hljs-comment">// a.js</span>
 <span class="hljs-keyword">let</span> count = <span class="hljs-number">0</span>;
-<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = { count, <span class="hljs-attr">increment</span>: <span class="hljs-function">() =&gt;</span> ++count };
+<span class="hljs-built_in">module</span>.exports = { count, <span class="hljs-attr">increment</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> ++count };
 
 <span class="hljs-comment">// b.js</span>
 <span class="hljs-keyword">const</span> { count, increment } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./a'</span>);
-<span class="hljs-title function_">increment</span>();
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(count); <span class="hljs-comment">// 0（值拷贝，不会变）</span>
+increment();
+<span class="hljs-built_in">console</span>.log(count); <span class="hljs-comment">// 0（值拷贝，不会变）</span>
 
 <span class="hljs-comment">// ES Module（引用绑定）</span>
 <span class="hljs-comment">// a.mjs</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">let</span> count = <span class="hljs-number">0</span>;
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">increment</span>(<span class="hljs-params"></span>) { count++; }
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">increment</span>(<span class="hljs-params"></span>) </span>{ count++; }
 
 <span class="hljs-comment">// b.mjs</span>
 <span class="hljs-keyword">import</span> { count, increment } <span class="hljs-keyword">from</span> <span class="hljs-string">'./a.mjs'</span>;
-<span class="hljs-title function_">increment</span>();
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(count); <span class="hljs-comment">// 1（引用绑定，实时获取最新值）</span>
+increment();
+<span class="hljs-built_in">console</span>.log(count); <span class="hljs-comment">// 1（引用绑定，实时获取最新值）</span>
 </code></pre>
 <hr></hr>
 <h2 id="12-source-map">12. Source Map</h2>
@@ -1661,6 +1793,22 @@ npx vue-tsc --noEmit
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -1684,73 +1832,29 @@ npx vue-tsc --noEmit
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"前端工程化","level":"2.8","depth":1,"next":{"title":"性能优化","level":"2.9","depth":1,"path":"frontend/performance.md","ref":"frontend/performance.md","articles":[]},"previous":{"title":"Vue","level":"2.7","depth":1,"path":"frontend/vue.md","ref":"frontend/vue.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"frontend/engineering.md","mtime":"2026-03-31T06:35:11.837Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"前端工程化","level":"2.8","depth":1,"next":{"title":"性能优化","level":"2.9","depth":1,"path":"frontend/performance.md","ref":"frontend/performance.md","articles":[]},"previous":{"title":"Vue","level":"2.7","depth":1,"path":"frontend/vue.md","ref":"frontend/vue.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"frontend/engineering.md","mtime":"2026-03-31T12:30:26.829Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    <noscript>
-        <style>
-            .honkit-cloak {
-                display: block !important;
-            }
-        </style>
-    </noscript>
-    <script>
-        // Restore sidebar state as critical path for prevent layout shift
-        function __init__getSidebarState(defaultValue){
-            var baseKey = "";
-            var key = baseKey + ":sidebar";
-            try {
-                var value = localStorage[key];
-                if (value === undefined) {
-                    return defaultValue;
-                }
-                var parsed = JSON.parse(value);
-                return parsed == null ? defaultValue : parsed;
-            } catch (e) {
-                return defaultValue;
-            }
-        }
-        function __init__restoreLastSidebarState() {
-            var isMobile = window.matchMedia("(max-width: 600px)").matches;
-            if (isMobile) {
-                // Init last state if not mobile
-                return;
-            }
-            var sidebarState = __init__getSidebarState(true);
-            var book = document.querySelector(".book");
-            // Show sidebar if it enabled
-            if (sidebarState && book) {
-                book.classList.add("without-animation", "with-summary");
-            }
-        }
-
-        try {
-            __init__restoreLastSidebarState();
-        } finally {
-            var book = document.querySelector(".book");
-            book.classList.remove("honkit-cloak");
-        }
-    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

@@ -1,0 +1,3261 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>微前端与微模块 · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="mobile-dev.html" />
+    
+    
+    <link rel="prev" href="security.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="html-css.html">
+            
+                <a href="html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="javascript.html">
+            
+                <a href="javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="typescript.html">
+            
+                <a href="typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="browser.html">
+            
+                <a href="browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="network.html">
+            
+                <a href="network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="react.html">
+            
+                <a href="react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="vue.html">
+            
+                <a href="vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="engineering.html">
+            
+                <a href="engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="performance.html">
+            
+                <a href="performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="security.html">
+            
+                <a href="security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.11" data-path="micro-frontend.html">
+            
+                <a href="micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="mobile-dev.html">
+            
+                <a href="mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="state-management.html">
+            
+                <a href="state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="design-patterns.html">
+            
+                <a href="design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../nodejs/basics.html">
+            
+                <a href="../nodejs/basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../nodejs/event-loop.html">
+            
+                <a href="../nodejs/event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../nodejs/stream.html">
+            
+                <a href="../nodejs/stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../nodejs/frameworks.html">
+            
+                <a href="../nodejs/frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../nodejs/database.html">
+            
+                <a href="../nodejs/database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../nodejs/practice.html">
+            
+                <a href="../nodejs/practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../nodejs/serverless.html">
+            
+                <a href="../nodejs/serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../golang/basics.html">
+            
+                <a href="../golang/basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../golang/concurrency.html">
+            
+                <a href="../golang/concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../golang/memory.html">
+            
+                <a href="../golang/memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../golang/web-framework.html">
+            
+                <a href="../golang/web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../golang/database-design.html">
+            
+                <a href="../golang/database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../golang/testing-practice.html">
+            
+                <a href="../golang/testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../golang/cloud-native.html">
+            
+                <a href="../golang/cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../agent/llm-basics.html">
+            
+                <a href="../agent/llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../agent/prompt-engineering.html">
+            
+                <a href="../agent/prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../agent/rag.html">
+            
+                <a href="../agent/rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../agent/agent-architecture.html">
+            
+                <a href="../agent/agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../agent/tool-calling.html">
+            
+                <a href="../agent/tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../agent/practice.html">
+            
+                <a href="../agent/practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../agent/evaluation.html">
+            
+                <a href="../agent/evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../algorithm/system-design.html">
+            
+                <a href="../algorithm/system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >微前端与微模块</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="微前端与微模块">微前端与微模块</h1>
+<blockquote>
+<p>本文系统梳理微前端架构的核心概念、主流方案、底层原理与高频面试题，适合中高级前端工程师面试备战与架构选型参考。</p>
+</blockquote>
+<hr></hr>
+<h2 id="一、微前端概述">一、微前端概述</h2>
+<h3 id="11-什么是微前端">1.1 什么是微前端</h3>
+<p>微前端（Micro Frontends）是一种将前端应用拆解为多个<strong>独立交付</strong>的小型应用，再通过一个<strong>主应用（基座）</strong>在运行时将它们组合成一个完整产品的架构模式。其核心思想借鉴了后端微服务：</p>
+<ul>
+<li><strong>技术栈无关</strong>：各子应用可以使用 React、Vue、Angular 等不同框架</li>
+<li><strong>独立开发、独立部署</strong>：团队自治，子应用拥有自己的仓库和 CI/CD</li>
+<li><strong>运行时集成</strong>：在浏览器中按需加载和组合子应用</li>
+<li><strong>增量升级</strong>：可以逐步对遗留系统进行现代化改造</li>
+</ul>
+<h3 id="12-微前端解决的问题">1.2 微前端解决的问题</h3>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>巨石应用膨胀</td>
+<td>单体前端项目代码量巨大，构建慢、协作难</td>
+</tr>
+<tr>
+<td>技术栈锁定</td>
+<td>无法在同一产品中使用不同框架</td>
+</tr>
+<tr>
+<td>团队耦合</td>
+<td>多个团队改同一个仓库，频繁冲突</td>
+</tr>
+<tr>
+<td>遗留系统升级</td>
+<td>老系统不能一次性重写，需要渐进迁移</td>
+</tr>
+<tr>
+<td>独立部署需求</td>
+<td>子业务希望独立发布，不影响其他模块</td>
+</tr>
+</tbody>
+</table>
+<h3 id="13-适用场景">1.3 适用场景</h3>
+<ul>
+<li><strong>大型企业级中后台系统</strong>：如 CRM、ERP、运营平台，多个业务模块由不同团队负责</li>
+<li><strong>遗留系统渐进式迁移</strong>：将 jQuery / AngularJS 老项目逐步替换为 React / Vue</li>
+<li><strong>跨团队协作的平台型产品</strong>：各团队独立迭代，通过基座统一聚合</li>
+<li><strong>SaaS 多租户可插拔架构</strong>：不同租户启用不同功能模块</li>
+</ul>
+<h3 id="14-微前端-vs-monorepo-vs-iframe">1.4 微前端 vs Monorepo vs iframe</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>微前端</th>
+<th>Monorepo</th>
+<th>iframe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>技术栈独立</td>
+<td>✅ 完全独立</td>
+<td>❌ 通常统一</td>
+<td>✅ 完全独立</td>
+</tr>
+<tr>
+<td>独立部署</td>
+<td>✅</td>
+<td>❌ 通常整体构建</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>共享运行时</td>
+<td>✅ 可共享依赖</td>
+<td>✅ 天然共享</td>
+<td>❌ 完全隔离</td>
+</tr>
+<tr>
+<td>用户体验</td>
+<td>✅ 单页体验</td>
+<td>✅ 单页体验</td>
+<td>❌ 白屏、性能差</td>
+</tr>
+<tr>
+<td>通信便捷性</td>
+<td>中等</td>
+<td>✅ 直接引用</td>
+<td>❌ postMessage</td>
+</tr>
+<tr>
+<td>路由管理</td>
+<td>需要方案支持</td>
+<td>✅ 天然统一</td>
+<td>❌ 双滚动条</td>
+</tr>
+<tr>
+<td>CSS 隔离</td>
+<td>需要方案支持</td>
+<td>需要规范</td>
+<td>✅ 天然隔离</td>
+</tr>
+<tr>
+<td>JS 隔离</td>
+<td>需要沙箱</td>
+<td>无需隔离</td>
+<td>✅ 天然隔离</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>大型多团队</td>
+<td>中型统一技术栈</td>
+<td>简单集成</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>面试要点</strong>：iframe 看似"完美隔离"，但存在白屏、性能差、URL 不同步、弹窗无法全局居中、Cookie 共享受限（SameSite）等问题，实际项目中很少直接作为微前端方案使用。</p>
+</blockquote>
+<hr></hr>
+<h2 id="二、主流方案对比">二、主流方案对比</h2>
+<h3 id="21-single-spa：路由劫持与生命周期">2.1 single-spa：路由劫持与生命周期</h3>
+<p><strong>single-spa</strong> 是微前端领域的开山之作，提供了应用注册与生命周期管理的基础能力。</p>
+<h4 id="核心原理：路由劫持">核心原理：路由劫持</h4>
+<p>single-spa 通过劫持浏览器路由事件来决定激活哪个子应用：</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// single-spa 路由劫持核心原理（简化）</span>
+<span class="hljs-keyword">const</span> originalPushState = <span class="hljs-built_in">window</span>.history.pushState;
+<span class="hljs-keyword">const</span> originalReplaceState = <span class="hljs-built_in">window</span>.history.replaceState;
+
+<span class="hljs-built_in">window</span>.history.pushState = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">...args</span>) </span>{
+  <span class="hljs-keyword">const</span> result = originalPushState.apply(<span class="hljs-keyword">this</span>, args);
+  <span class="hljs-comment">// 路由变化后，重新检查哪些子应用需要挂载/卸载</span>
+  reroute();
+  <span class="hljs-keyword">return</span> result;
+};
+
+<span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'popstate'</span>, () =&gt; {
+  reroute();
+});
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reroute</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> appsThatShouldBeActive = registeredApps.filter(<span class="hljs-function"><span class="hljs-params">app</span> =&gt;</span>
+    app.activeWhen(<span class="hljs-built_in">window</span>.location)
+  );
+  <span class="hljs-comment">// 挂载需要激活的应用，卸载不再激活的应用</span>
+  appsToMount.forEach(<span class="hljs-function"><span class="hljs-params">app</span> =&gt;</span> app.mount());
+  appsToUnmount.forEach(<span class="hljs-function"><span class="hljs-params">app</span> =&gt;</span> app.unmount());
+}
+</code></pre>
+<h4 id="子应用生命周期">子应用生命周期</h4>
+<p>每个 single-spa 子应用必须导出三个生命周期钩子：</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 子应用入口 - React 示例</span>
+<span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>;
+<span class="hljs-keyword">import</span> singleSpaReact <span class="hljs-keyword">from</span> <span class="hljs-string">'single-spa-react'</span>;
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">'./App'</span>;
+
+<span class="hljs-keyword">const</span> lifecycles = singleSpaReact({
+  React,
+  ReactDOM,
+  <span class="hljs-attr">rootComponent</span>: App,
+  errorBoundary(err, info, props) {
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>子应用加载出错: {err.message}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  },
+});
+
+<span class="hljs-comment">// 必须导出这三个生命周期</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> bootstrap = lifecycles.bootstrap; <span class="hljs-comment">// 初始化，只执行一次</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> mount = lifecycles.mount;         <span class="hljs-comment">// 挂载，路由激活时执行</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> unmount = lifecycles.unmount;     <span class="hljs-comment">// 卸载，路由离开时执行</span>
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 主应用注册子应用</span>
+<span class="hljs-keyword">import</span> { registerApplication, start } <span class="hljs-keyword">from</span> <span class="hljs-string">'single-spa'</span>;
+
+registerApplication({
+  <span class="hljs-attr">name</span>: <span class="hljs-string">'app-react'</span>,
+  <span class="hljs-attr">app</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> System.import(<span class="hljs-string">'http://localhost:3001/main.js'</span>),
+  <span class="hljs-attr">activeWhen</span>: <span class="hljs-function">(<span class="hljs-params">location</span>) =&gt;</span> location.pathname.startsWith(<span class="hljs-string">'/react'</span>),
+  <span class="hljs-attr">customProps</span>: { <span class="hljs-attr">authToken</span>: <span class="hljs-string">'xxx'</span> },
+});
+
+registerApplication({
+  <span class="hljs-attr">name</span>: <span class="hljs-string">'app-vue'</span>,
+  <span class="hljs-attr">app</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> System.import(<span class="hljs-string">'http://localhost:3002/main.js'</span>),
+  <span class="hljs-attr">activeWhen</span>: <span class="hljs-string">'/vue'</span>,
+});
+
+start(); <span class="hljs-comment">// 启动 single-spa</span>
+</code></pre>
+<p><strong>single-spa 的局限性</strong>：</p>
+<ul>
+<li>没有内置 JS 沙箱和 CSS 隔离</li>
+<li>没有提供子应用加载策略（需要配合 SystemJS 等）</li>
+<li>通信机制需要自行实现</li>
+</ul>
+<hr></hr>
+<h3 id="22-qiankun：阿里巴巴微前端方案">2.2 qiankun：阿里巴巴微前端方案</h3>
+<p>qiankun 基于 single-spa 封装，补齐了沙箱隔离、样式隔离、预加载等关键能力，是国内使用最广泛的微前端方案。</p>
+<h4 id="221-js-沙箱机制">2.2.1 JS 沙箱机制</h4>
+<p>qiankun 提供了三种沙箱实现：</p>
+<p><strong>（1）快照沙箱（SnapshotSandbox）</strong></p>
+<p>适用于不支持 Proxy 的环境（如 IE11）。原理是在子应用挂载前<strong>拍摄 window 快照</strong>，卸载时<strong>恢复快照</strong>：</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 手写快照沙箱</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SnapshotSandbox</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.windowSnapshot = {};
+    <span class="hljs-keyword">this</span>.modifyProps = {};
+    <span class="hljs-keyword">this</span>.active = <span class="hljs-literal">false</span>;
+  }
+
+  <span class="hljs-comment">// 激活沙箱：保存当前 window 快照，恢复上次的修改</span>
+  activate() {
+    <span class="hljs-comment">// 1. 拍摄当前 window 快照</span>
+    <span class="hljs-keyword">this</span>.windowSnapshot = {};
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> key <span class="hljs-keyword">in</span> <span class="hljs-built_in">window</span>) {
+      <span class="hljs-keyword">this</span>.windowSnapshot[key] = <span class="hljs-built_in">window</span>[key];
+    }
+    <span class="hljs-comment">// 2. 恢复上次运行时的修改</span>
+    <span class="hljs-built_in">Object</span>.keys(<span class="hljs-keyword">this</span>.modifyProps).forEach(<span class="hljs-function"><span class="hljs-params">key</span> =&gt;</span> {
+      <span class="hljs-built_in">window</span>[key] = <span class="hljs-keyword">this</span>.modifyProps[key];
+    });
+    <span class="hljs-keyword">this</span>.active = <span class="hljs-literal">true</span>;
+  }
+
+  <span class="hljs-comment">// 停用沙箱：记录修改，恢复 window 到快照状态</span>
+  deactivate() {
+    <span class="hljs-keyword">this</span>.modifyProps = {};
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> key <span class="hljs-keyword">in</span> <span class="hljs-built_in">window</span>) {
+      <span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>[key] !== <span class="hljs-keyword">this</span>.windowSnapshot[key]) {
+        <span class="hljs-comment">// 记录变更</span>
+        <span class="hljs-keyword">this</span>.modifyProps[key] = <span class="hljs-built_in">window</span>[key];
+        <span class="hljs-comment">// 恢复原值</span>
+        <span class="hljs-built_in">window</span>[key] = <span class="hljs-keyword">this</span>.windowSnapshot[key];
+      }
+    }
+    <span class="hljs-keyword">this</span>.active = <span class="hljs-literal">false</span>;
+  }
+}
+
+<span class="hljs-comment">// 使用示例</span>
+<span class="hljs-keyword">const</span> sandbox = <span class="hljs-keyword">new</span> SnapshotSandbox();
+sandbox.activate();
+<span class="hljs-built_in">window</span>.testVar = <span class="hljs-string">'hello from micro app'</span>;
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">window</span>.testVar); <span class="hljs-comment">// 'hello from micro app'</span>
+sandbox.deactivate();
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">window</span>.testVar); <span class="hljs-comment">// undefined（已恢复）</span>
+sandbox.activate();
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">window</span>.testVar); <span class="hljs-comment">// 'hello from micro app'（恢复修改）</span>
+</code></pre>
+<blockquote>
+<p><strong>缺点</strong>：快照沙箱无法支持多个子应用同时激活（因为直接修改 window 对象），且遍历 window 性能较差。</p>
+</blockquote>
+<p><strong>（2）Legacy Proxy 沙箱（LegacySandbox）</strong></p>
+<p>使用 Proxy 代理 window 对象，记录子应用对 window 的新增和修改：</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Legacy Proxy 沙箱（简化实现）</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LegacySandbox</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.addedKeys = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>();    <span class="hljs-comment">// 新增的属性</span>
+    <span class="hljs-keyword">this</span>.modifiedMap = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();   <span class="hljs-comment">// 修改的属性（原始值）</span>
+    <span class="hljs-keyword">this</span>.currentMap = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();    <span class="hljs-comment">// 当前沙箱内的值</span>
+
+    <span class="hljs-keyword">const</span> rawWindow = <span class="hljs-built_in">window</span>;
+    <span class="hljs-keyword">const</span> self = <span class="hljs-keyword">this</span>;
+
+    <span class="hljs-keyword">this</span>.proxyWindow = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Proxy</span>(rawWindow, {
+      set(target, key, value) {
+        <span class="hljs-keyword">if</span> (!rawWindow.hasOwnProperty(key)) {
+          self.addedKeys.add(key);
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (!self.modifiedMap.has(key)) {
+          self.modifiedMap.set(key, rawWindow[key]);
+        }
+        self.currentMap.set(key, value);
+        rawWindow[key] = value;
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+      },
+      get(target, key) {
+        <span class="hljs-keyword">return</span> rawWindow[key];
+      },
+    });
+  }
+
+  activate() {
+    <span class="hljs-keyword">this</span>.currentMap.forEach(<span class="hljs-function">(<span class="hljs-params">value, key</span>) =&gt;</span> {
+      <span class="hljs-built_in">window</span>[key] = value;
+    });
+  }
+
+  deactivate() {
+    <span class="hljs-keyword">this</span>.modifiedMap.forEach(<span class="hljs-function">(<span class="hljs-params">value, key</span>) =&gt;</span> {
+      <span class="hljs-built_in">window</span>[key] = value;
+    });
+    <span class="hljs-keyword">this</span>.addedKeys.forEach(<span class="hljs-function"><span class="hljs-params">key</span> =&gt;</span> {
+      <span class="hljs-keyword">delete</span> <span class="hljs-built_in">window</span>[key];
+    });
+  }
+}
+</code></pre>
+<p><strong>（3）Proxy 沙箱（ProxySandbox）— 推荐</strong></p>
+<p>每个子应用拥有独立的 fakeWindow，不直接修改全局 window，<strong>支持多实例并行</strong>：</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Proxy 沙箱核心实现（简化版）</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ProxySandbox</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.isRunning = <span class="hljs-literal">false</span>;
+    <span class="hljs-keyword">const</span> rawWindow = <span class="hljs-built_in">window</span>;
+    <span class="hljs-keyword">const</span> fakeWindow = <span class="hljs-built_in">Object</span>.create(<span class="hljs-literal">null</span>);
+
+    <span class="hljs-keyword">this</span>.proxyWindow = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Proxy</span>(fakeWindow, {
+      set(target, key, value) {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.isRunning) {
+          target[key] = value;
+          <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+      }.bind(<span class="hljs-keyword">this</span>),
+
+      get(target, key) {
+        <span class="hljs-comment">// 优先从 fakeWindow 取值，取不到再从 rawWindow 取</span>
+        <span class="hljs-keyword">if</span> (key <span class="hljs-keyword">in</span> target) {
+          <span class="hljs-keyword">return</span> target[key];
+        }
+        <span class="hljs-keyword">const</span> rawValue = rawWindow[key];
+        <span class="hljs-comment">// 对于函数需要绑定正确的 this</span>
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> rawValue === <span class="hljs-string">'function'</span> &amp;&amp; !rawValue.prototype) {
+          <span class="hljs-keyword">return</span> rawValue.bind(rawWindow);
+        }
+        <span class="hljs-keyword">return</span> rawValue;
+      },
+
+      has(target, key) {
+        <span class="hljs-keyword">return</span> key <span class="hljs-keyword">in</span> target || key <span class="hljs-keyword">in</span> rawWindow;
+      },
+    });
+  }
+
+  activate() {
+    <span class="hljs-keyword">this</span>.isRunning = <span class="hljs-literal">true</span>;
+  }
+
+  deactivate() {
+    <span class="hljs-keyword">this</span>.isRunning = <span class="hljs-literal">false</span>;
+  }
+}
+
+<span class="hljs-comment">// 多实例互不干扰</span>
+<span class="hljs-keyword">const</span> sandbox1 = <span class="hljs-keyword">new</span> ProxySandbox();
+<span class="hljs-keyword">const</span> sandbox2 = <span class="hljs-keyword">new</span> ProxySandbox();
+sandbox1.activate();
+sandbox2.activate();
+sandbox1.proxyWindow.name = <span class="hljs-string">'app1'</span>;
+sandbox2.proxyWindow.name = <span class="hljs-string">'app2'</span>;
+<span class="hljs-built_in">console</span>.log(sandbox1.proxyWindow.name); <span class="hljs-comment">// 'app1'</span>
+<span class="hljs-built_in">console</span>.log(sandbox2.proxyWindow.name); <span class="hljs-comment">// 'app2'</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">window</span>.name); <span class="hljs-comment">// ''（原始 window 未被修改）</span>
+</code></pre>
+<h4 id="222-样式隔离">2.2.2 样式隔离</h4>
+<p>qiankun 提供两种样式隔离方案：</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 注册子应用时开启样式隔离</span>
+registerMicroApps([
+  {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'app1'</span>,
+    <span class="hljs-attr">entry</span>: <span class="hljs-string">'//localhost:8081'</span>,
+    <span class="hljs-attr">container</span>: <span class="hljs-string">'#container'</span>,
+    <span class="hljs-attr">activeRule</span>: <span class="hljs-string">'/app1'</span>,
+    <span class="hljs-attr">props</span>: { <span class="hljs-attr">shared</span>: sharedState },
+  },
+], {
+  <span class="hljs-attr">sandbox</span>: {
+    <span class="hljs-attr">strictStyleIsolation</span>: <span class="hljs-literal">true</span>,    <span class="hljs-comment">// 方案一：Shadow DOM 隔离</span>
+    <span class="hljs-comment">// experimentalStyleIsolation: true, // 方案二：scoped CSS 隔离</span>
+  },
+});
+</code></pre>
+<p><strong>strictStyleIsolation（Shadow DOM）</strong>：</p>
+<ul>
+<li>将子应用的 DOM 包裹在 Shadow DOM 中</li>
+<li>优点：样式完全隔离</li>
+<li>缺点：一些弹窗组件（如 antd Modal）会挂载到 document.body，逃逸出 Shadow DOM</li>
+</ul>
+<p><strong>experimentalStyleIsolation（Scoped CSS）</strong>：</p>
+<ul>
+<li>给子应用的所有样式规则增加特殊选择器前缀</li>
+<li>例如 <code>.btn { color: red; }</code> 变成 <code>div[data-qiankun="app1"] .btn { color: red; }</code></li>
+</ul>
+<h4 id="223-应用间通信">2.2.3 应用间通信</h4>
+<p>qiankun 提供了 <code>initGlobalState</code> API 来实现应用间通信：</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 主应用 - 初始化全局状态</span>
+<span class="hljs-keyword">import</span> { initGlobalState, MicroAppStateActions } <span class="hljs-keyword">from</span> <span class="hljs-string">'qiankun'</span>;
+
+<span class="hljs-keyword">const</span> state = {
+  <span class="hljs-attr">user</span>: { <span class="hljs-attr">name</span>: <span class="hljs-string">'张三'</span>, <span class="hljs-attr">role</span>: <span class="hljs-string">'admin'</span> },
+  <span class="hljs-attr">theme</span>: <span class="hljs-string">'dark'</span>,
+};
+
+<span class="hljs-keyword">const</span> actions: MicroAppStateActions = initGlobalState(state);
+
+<span class="hljs-comment">// 主应用监听变化</span>
+actions.onGlobalStateChange(<span class="hljs-function">(<span class="hljs-params">newState, prevState</span>) =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'主应用监听到状态变化:'</span>, newState);
+});
+
+<span class="hljs-comment">// 主应用修改状态</span>
+actions.setGlobalState({ <span class="hljs-attr">theme</span>: <span class="hljs-string">'light'</span> });
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 子应用 - 在 mount 生命周期中获取通信方法</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mount</span>(<span class="hljs-params">props</span>) </span>{
+  <span class="hljs-comment">// props 中会注入 onGlobalStateChange 和 setGlobalState</span>
+  props.onGlobalStateChange(<span class="hljs-function">(<span class="hljs-params">state, prev</span>) =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'子应用接收到状态:'</span>, state);
+    <span class="hljs-comment">// 更新子应用内部状态</span>
+    store.commit(<span class="hljs-string">'updateUser'</span>, state.user);
+  });
+
+  <span class="hljs-comment">// 子应用修改全局状态</span>
+  props.setGlobalState({ <span class="hljs-attr">theme</span>: <span class="hljs-string">'compact'</span> });
+
+  <span class="hljs-comment">// 挂载子应用</span>
+  renderApp(props.container);
+}
+</code></pre>
+<h4 id="224-loadmicroapp-手动加载">2.2.4 loadMicroApp 手动加载</h4>
+<p>除了路由自动激活，qiankun 还提供了 <code>loadMicroApp</code> API 来手动加载子应用，适合在页面内嵌入组件级子应用：</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> { loadMicroApp } <span class="hljs-keyword">from</span> <span class="hljs-string">'qiankun'</span>;
+
+<span class="hljs-comment">// 在某个 React 组件中手动加载子应用</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Dashboard</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> containerRef = useRef(<span class="hljs-literal">null</span>);
+  <span class="hljs-keyword">const</span> microAppRef = useRef(<span class="hljs-literal">null</span>);
+
+  useEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    microAppRef.current = loadMicroApp({
+      <span class="hljs-attr">name</span>: <span class="hljs-string">'widget-chart'</span>,
+      <span class="hljs-attr">entry</span>: <span class="hljs-string">'//localhost:8082'</span>,
+      <span class="hljs-attr">container</span>: containerRef.current,
+      <span class="hljs-attr">props</span>: { <span class="hljs-attr">chartType</span>: <span class="hljs-string">'bar'</span>, <span class="hljs-attr">data</span>: chartData },
+    });
+
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+      <span class="hljs-comment">// 组件卸载时，卸载子应用</span>
+      microAppRef.current.unmount();
+    };
+  }, []);
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">{containerRef}</span> /&gt;</span>;
+}
+</span></code></pre>
+<hr></hr>
+<h3 id="23-module-federation（webpack-5）">2.3 Module Federation（Webpack 5）</h3>
+<p>Module Federation（模块联邦）是 Webpack 5 内置的模块共享方案，允许多个独立构建的应用在运行时共享模块。</p>
+<h4 id="231-核心原理">2.3.1 核心原理</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Remote 应用 - webpack.config.js（提供模块的一方）</span>
+<span class="hljs-keyword">const</span> { ModuleFederationPlugin } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'webpack'</span>).container;
+
+<span class="hljs-built_in">module</span>.exports = {
+  <span class="hljs-attr">plugins</span>: [
+    <span class="hljs-keyword">new</span> ModuleFederationPlugin({
+      <span class="hljs-attr">name</span>: <span class="hljs-string">'remoteApp'</span>,               <span class="hljs-comment">// 模块名</span>
+      filename: <span class="hljs-string">'remoteEntry.js'</span>,       <span class="hljs-comment">// 入口文件名</span>
+      exposes: {
+        <span class="hljs-string">'./Button'</span>: <span class="hljs-string">'./src/components/Button'</span>,  <span class="hljs-comment">// 暴露的模块</span>
+        <span class="hljs-string">'./utils'</span>: <span class="hljs-string">'./src/utils/index'</span>,
+      },
+      <span class="hljs-attr">shared</span>: {
+        <span class="hljs-attr">react</span>: { <span class="hljs-attr">singleton</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">requiredVersion</span>: <span class="hljs-string">'^18.0.0'</span> },
+        <span class="hljs-string">'react-dom'</span>: { <span class="hljs-attr">singleton</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">requiredVersion</span>: <span class="hljs-string">'^18.0.0'</span> },
+      },
+    }),
+  ],
+};
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Host 应用 - webpack.config.js（消费模块的一方）</span>
+<span class="hljs-keyword">const</span> { ModuleFederationPlugin } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'webpack'</span>).container;
+
+<span class="hljs-built_in">module</span>.exports = {
+  <span class="hljs-attr">plugins</span>: [
+    <span class="hljs-keyword">new</span> ModuleFederationPlugin({
+      <span class="hljs-attr">name</span>: <span class="hljs-string">'hostApp'</span>,
+      <span class="hljs-attr">remotes</span>: {
+        <span class="hljs-attr">remoteApp</span>: <span class="hljs-string">'remoteApp@http://localhost:3001/remoteEntry.js'</span>,
+      },
+      <span class="hljs-attr">shared</span>: {
+        <span class="hljs-attr">react</span>: { <span class="hljs-attr">singleton</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">requiredVersion</span>: <span class="hljs-string">'^18.0.0'</span> },
+        <span class="hljs-string">'react-dom'</span>: { <span class="hljs-attr">singleton</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">requiredVersion</span>: <span class="hljs-string">'^18.0.0'</span> },
+      },
+    }),
+  ],
+};
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Host 应用中使用远程模块</span>
+<span class="hljs-keyword">const</span> RemoteButton = React.lazy(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">'remoteApp/Button'</span>));
+<span class="hljs-keyword">const</span> { formatDate } = <span class="hljs-keyword">await</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">'remoteApp/utils'</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    &lt;React.Suspense fallback={&lt;div&gt;加载中...&lt;/div&gt;}&gt;
+      &lt;RemoteButton onClick={() =&gt; alert('来自远程的按钮！')} /&gt;
+    &lt;/React.Suspense&gt;
+  );
+}
+</code></pre>
+<h4 id="232-shared-依赖机制">2.3.2 Shared 依赖机制</h4>
+<p>shared 配置是 Module Federation 最重要的优化手段：</p>
+<pre><code class="lang-javascript">shared: {
+  <span class="hljs-attr">react</span>: {
+    <span class="hljs-attr">singleton</span>: <span class="hljs-literal">true</span>,          <span class="hljs-comment">// 全局只加载一份</span>
+    requiredVersion: <span class="hljs-string">'^18.0.0'</span>,
+    <span class="hljs-attr">eager</span>: <span class="hljs-literal">false</span>,             <span class="hljs-comment">// 是否立即加载（而非异步）</span>
+    strictVersion: <span class="hljs-literal">false</span>,     <span class="hljs-comment">// 版本不匹配时是否报错</span>
+  },
+  <span class="hljs-attr">lodash</span>: {
+    <span class="hljs-attr">singleton</span>: <span class="hljs-literal">false</span>,         <span class="hljs-comment">// 允许多版本共存</span>
+    requiredVersion: <span class="hljs-string">'^4.17.0'</span>,
+  },
+  <span class="hljs-string">'@company/design-system'</span>: {
+    <span class="hljs-attr">singleton</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">version</span>: <span class="hljs-string">'2.0.0'</span>,
+    <span class="hljs-attr">eager</span>: <span class="hljs-literal">true</span>,              <span class="hljs-comment">// 设为 eager 避免异步加载闪烁</span>
+  },
+}
+</code></pre>
+<h4 id="233-动态远程加载">2.3.3 动态远程加载</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 运行时动态加载远程模块（不写死在配置中）</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">loadRemoteModule</span>(<span class="hljs-params">scope, module</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">async</span> () =&gt; {
+    <span class="hljs-keyword">await</span> __webpack_init_sharing__(<span class="hljs-string">'default'</span>);
+    <span class="hljs-keyword">const</span> container = <span class="hljs-built_in">window</span>[scope];
+    <span class="hljs-keyword">await</span> container.init(__webpack_share_scopes__.default);
+    <span class="hljs-keyword">const</span> factory = <span class="hljs-keyword">await</span> container.get(<span class="hljs-built_in">module</span>);
+    <span class="hljs-keyword">return</span> factory();
+  };
+}
+
+<span class="hljs-comment">// 使用示例 - 动态决定加载哪个远程应用</span>
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">loadDynamicRemote</span>(<span class="hljs-params">remoteUrl, scopeName, moduleName</span>) </span>{
+  <span class="hljs-comment">// 1. 动态加载远程入口文件</span>
+  <span class="hljs-keyword">const</span> script = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'script'</span>);
+  script.src = remoteUrl;
+  script.type = <span class="hljs-string">'text/javascript'</span>;
+  script.async = <span class="hljs-literal">true</span>;
+
+  <span class="hljs-keyword">await</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    script.onload = resolve;
+    script.onerror = reject;
+    <span class="hljs-built_in">document</span>.head.appendChild(script);
+  });
+
+  <span class="hljs-comment">// 2. 初始化共享作用域</span>
+  <span class="hljs-keyword">await</span> __webpack_init_sharing__(<span class="hljs-string">'default'</span>);
+  <span class="hljs-keyword">const</span> container = <span class="hljs-built_in">window</span>[scopeName];
+  <span class="hljs-keyword">await</span> container.init(__webpack_share_scopes__.default);
+
+  <span class="hljs-comment">// 3. 获取模块</span>
+  <span class="hljs-keyword">const</span> factory = <span class="hljs-keyword">await</span> container.get(moduleName);
+  <span class="hljs-keyword">return</span> factory();
+}
+
+<span class="hljs-comment">// 从配置中心获取远程地址并加载</span>
+<span class="hljs-keyword">const</span> remoteConfig = <span class="hljs-keyword">await</span> fetch(<span class="hljs-string">'/api/remote-config'</span>).then(<span class="hljs-function"><span class="hljs-params">r</span> =&gt;</span> r.json());
+<span class="hljs-keyword">const</span> RemoteWidget = React.lazy(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span>
+  loadDynamicRemote(
+    remoteConfig.widgetUrl,   <span class="hljs-comment">// 'http://cdn.example.com/widget/remoteEntry.js'</span>
+    <span class="hljs-string">'widgetApp'</span>,
+    <span class="hljs-string">'./Widget'</span>
+  )
+);
+</code></pre>
+<hr></hr>
+<h3 id="24-micro-app（京东）">2.4 micro-app（京东）</h3>
+<p>micro-app 基于 <strong>Web Components</strong> 实现，通过自定义元素 <code>&lt;micro-app&gt;</code> 来加载子应用，使用更加简洁。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 主应用 - 安装和注册</span>
+<span class="hljs-keyword">import</span> microApp <span class="hljs-keyword">from</span> <span class="hljs-string">'@micro-zoe/micro-app'</span>;
+
+microApp.start({
+  <span class="hljs-attr">plugins</span>: {
+    <span class="hljs-attr">modules</span>: {
+      <span class="hljs-string">'app-vue'</span>: [{
+        loader(code) {
+          <span class="hljs-comment">// 可以对子应用代码进行处理</span>
+          <span class="hljs-keyword">return</span> code.replace(<span class="hljs-string">'http://localhost:3001'</span>, <span class="hljs-string">'https://cdn.example.com'</span>);
+        },
+      }],
+    },
+  },
+});
+</code></pre>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- 主应用模板 - 通过 Web Component 标签使用 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>主应用<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">micro-app</span>
+      <span class="hljs-attr">name</span>=<span class="hljs-string">"app-vue"</span>
+      <span class="hljs-attr">url</span>=<span class="hljs-string">"http://localhost:8081/"</span>
+      <span class="hljs-attr">baseroute</span>=<span class="hljs-string">"/app-vue"</span>
+      <span class="hljs-attr">:data</span>=<span class="hljs-string">"dataForChild"</span>
+      @<span class="hljs-attr">datachange</span>=<span class="hljs-string">"handleDataChange"</span>
+      <span class="hljs-attr">iframe</span>
+      <span class="hljs-attr">keep-alive</span>
+    &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">micro-app</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  data() {
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">dataForChild</span>: { <span class="hljs-attr">user</span>: { <span class="hljs-attr">name</span>: <span class="hljs-string">'张三'</span> } },
+    };
+  },
+  <span class="hljs-attr">methods</span>: {
+    handleDataChange(event) {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'子应用发送的数据:'</span>, event.detail.data);
+    },
+  },
+};
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 子应用 - 通信（发送数据给主应用）</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.__MICRO_APP_ENVIRONMENT__) {
+  <span class="hljs-comment">// 向主应用发送数据</span>
+  <span class="hljs-built_in">window</span>.microApp.dispatch({ <span class="hljs-attr">type</span>: <span class="hljs-string">'UPDATE_CART'</span>, <span class="hljs-attr">payload</span>: { <span class="hljs-attr">count</span>: <span class="hljs-number">5</span> } });
+
+  <span class="hljs-comment">// 监听主应用发来的数据</span>
+  <span class="hljs-built_in">window</span>.microApp.addDataListener(<span class="hljs-function">(<span class="hljs-params">data</span>) =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'收到主应用数据:'</span>, data);
+  });
+}
+</code></pre>
+<p><strong>micro-app 特点</strong>：</p>
+<ul>
+<li>零依赖，基于 Web Components，使用 <code>&lt;micro-app&gt;</code> 标签</li>
+<li>侵入性低，子应用几乎无需改造</li>
+<li>支持 iframe 沙箱模式（v1.0+）</li>
+<li>支持 keep-alive 缓存、预加载</li>
+</ul>
+<hr></hr>
+<h3 id="25-wujie（腾讯）">2.5 wujie（腾讯）</h3>
+<p>wujie 采用 <strong>iframe + Web Components</strong> 的独特方案：用 iframe 来提供天然的 JS 沙箱，用 Web Components（Shadow DOM）来渲染 UI：</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 主应用 - React 中使用 wujie</span>
+<span class="hljs-keyword">import</span> WujieReact <span class="hljs-keyword">from</span> <span class="hljs-string">'wujie-react'</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">WujieReact</span>
+        <span class="hljs-attr">width</span>=<span class="hljs-string">"100%"</span>
+        <span class="hljs-attr">height</span>=<span class="hljs-string">"100%"</span>
+        <span class="hljs-attr">name</span>=<span class="hljs-string">"vue-child"</span>
+        <span class="hljs-attr">url</span>=<span class="hljs-string">"http://localhost:8082/"</span>
+        <span class="hljs-attr">sync</span>=<span class="hljs-string">{true}</span>
+        <span class="hljs-attr">alive</span>=<span class="hljs-string">{true}</span>
+        <span class="hljs-attr">props</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">token:</span> '<span class="hljs-attr">xxx</span>', <span class="hljs-attr">userInfo:</span> <span class="hljs-attr">currentUser</span> }}
+        <span class="hljs-attr">beforeLoad</span>=<span class="hljs-string">{(appWindow)</span> =&gt;</span> {
+          console.log('子应用即将加载', appWindow);
+        }}
+        afterMount={() =&gt; {
+          console.log('子应用挂载完成');
+        }}
+      /&gt;
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  );
+}
+</span></code></pre>
+<p><strong>wujie 核心架构</strong>：</p>
+<pre><code>┌──────────────────────────────────────────────┐
+│                   主应用                       │
+│  ┌────────────────────────────────────────┐   │
+│  │  Shadow DOM (Web Component)            │   │
+│  │  ┌──────────────────────────────────┐  │   │
+│  │  │       子应用 DOM 渲染区域         │  │   │
+│  │  │    （样式隔离 by Shadow DOM）     │  │   │
+│  │  └──────────────────────────────────┘  │   │
+│  └────────────────────────────────────────┘   │
+│                                               │
+│  ┌────────────────────────────────────────┐   │
+│  │  隐藏的 iframe                         │   │
+│  │  ┌──────────────────────────────────┐  │   │
+│  │  │   子应用 JS 运行在 iframe 中      │  │   │
+│  │  │   （JS 隔离 by iframe sandbox）   │  │   │
+│  │  └──────────────────────────────────┘  │   │
+│  └────────────────────────────────────────┘   │
+└──────────────────────────────────────────────┘
+</code></pre><p><strong>优点</strong>：</p>
+<ul>
+<li>天然的 JS 隔离（iframe），不存在沙箱逃逸问题</li>
+<li>天然的 CSS 隔离（Shadow DOM）</li>
+<li>iframe 中的 document.body 被代理到 Shadow DOM，保证 DOM 操作正确</li>
+<li>支持 vite 构建的子应用</li>
+</ul>
+<hr></hr>
+<h3 id="26-garfish（字节跳动）">2.6 garfish（字节跳动）</h3>
+<p>garfish 是字节跳动开源的微前端框架，强调<strong>高性能</strong>和<strong>可扩展的插件体系</strong>：</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 主应用配置</span>
+<span class="hljs-keyword">import</span> Garfish <span class="hljs-keyword">from</span> <span class="hljs-string">'garfish'</span>;
+
+Garfish.run({
+  <span class="hljs-attr">basename</span>: <span class="hljs-string">'/'</span>,
+  <span class="hljs-attr">domGetter</span>: <span class="hljs-string">'#container'</span>,
+  <span class="hljs-attr">apps</span>: [
+    {
+      <span class="hljs-attr">name</span>: <span class="hljs-string">'react-app'</span>,
+      <span class="hljs-attr">activeWhen</span>: <span class="hljs-string">'/react'</span>,
+      <span class="hljs-attr">entry</span>: <span class="hljs-string">'http://localhost:3001'</span>,
+    },
+    {
+      <span class="hljs-attr">name</span>: <span class="hljs-string">'vue-app'</span>,
+      <span class="hljs-attr">activeWhen</span>: <span class="hljs-string">'/vue'</span>,
+      <span class="hljs-attr">entry</span>: <span class="hljs-string">'http://localhost:3002'</span>,
+    },
+  ],
+  <span class="hljs-comment">// 全局生命周期钩子</span>
+  beforeLoad(appInfo) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`准备加载子应用: <span class="hljs-subst">${appInfo.name}</span>`</span>);
+  },
+  afterMount(appInfo) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`子应用挂载完成: <span class="hljs-subst">${appInfo.name}</span>`</span>);
+  },
+  <span class="hljs-comment">// 错误处理</span>
+  onNotMatchRouter(path) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'未匹配到子应用路由:'</span>, path);
+  },
+});
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// garfish 子应用入口 - Vue 3 示例</span>
+<span class="hljs-keyword">import</span> { createApp } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">'./App.vue'</span>;
+<span class="hljs-keyword">import</span> { vueBridge } <span class="hljs-keyword">from</span> <span class="hljs-string">'@garfish/bridge-vue-v3'</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> provider = vueBridge({
+  <span class="hljs-attr">rootComponent</span>: App,
+  <span class="hljs-comment">// 可自定义创建 app 实例的逻辑</span>
+  handleInstance(vueApp, garfishProps) {
+    <span class="hljs-comment">// 注入路由 basename</span>
+    vueApp.use(router(garfishProps.basename));
+    vueApp.use(store);
+  },
+});
+
+<span class="hljs-comment">// 独立运行支持</span>
+<span class="hljs-keyword">if</span> (!<span class="hljs-built_in">window</span>.__GARFISH__) {
+  <span class="hljs-keyword">const</span> app = createApp(App);
+  app.use(router(<span class="hljs-string">'/'</span>));
+  app.mount(<span class="hljs-string">'#app'</span>);
+}
+</code></pre>
+<p><strong>garfish 特点</strong>：</p>
+<ul>
+<li>插件化架构，核心能力（路由、沙箱、加载器）均可通过插件扩展</li>
+<li>支持 Snapshot 和 VM 两种沙箱</li>
+<li>提供官方 bridge 包简化子应用接入</li>
+<li>内置资源预加载与缓存策略</li>
+</ul>
+<hr></hr>
+<h3 id="主流方案全面对比">主流方案全面对比</h3>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>single-spa</th>
+<th>qiankun</th>
+<th>Module Federation</th>
+<th>micro-app</th>
+<th>wujie</th>
+<th>garfish</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基础原理</td>
+<td>路由劫持</td>
+<td>路由劫持+沙箱</td>
+<td>模块共享</td>
+<td>Web Components</td>
+<td>iframe+WC</td>
+<td>路由劫持+插件</td>
+</tr>
+<tr>
+<td>JS 沙箱</td>
+<td>❌</td>
+<td>✅ Proxy/快照</td>
+<td>❌</td>
+<td>✅ iframe可选</td>
+<td>✅ iframe</td>
+<td>✅ Proxy/快照</td>
+</tr>
+<tr>
+<td>CSS 隔离</td>
+<td>❌</td>
+<td>✅ Shadow/Scoped</td>
+<td>❌</td>
+<td>✅ Shadow DOM</td>
+<td>✅ Shadow DOM</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>子应用改造</td>
+<td>多</td>
+<td>中等</td>
+<td>少</td>
+<td>极少</td>
+<td>极少</td>
+<td>中等</td>
+</tr>
+<tr>
+<td>多实例</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>预加载</td>
+<td>❌</td>
+<td>✅</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Vite 支持</td>
+<td>差</td>
+<td>差</td>
+<td>需插件</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="三、核心技术深度解析">三、核心技术深度解析</h2>
+<h3 id="31-js-沙箱实现">3.1 JS 沙箱实现</h3>
+<h4 id="311-with--proxy-沙箱">3.1.1 with + Proxy 沙箱</h4>
+<p>这是一种在 qiankun 中使用的巧妙手段——通过 <code>with</code> 语句改变作用域链，配合 <code>Proxy</code> 拦截属性访问：</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// with + Proxy 实现沙箱（手写完整版）</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createSandbox</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> fakeWindow = {};
+  <span class="hljs-keyword">const</span> rawWindow = <span class="hljs-built_in">window</span>;
+
+  <span class="hljs-keyword">const</span> proxy = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Proxy</span>(fakeWindow, {
+    get(target, key) {
+      <span class="hljs-comment">// 拦截 window 和 self 的访问，返回 proxy 自身</span>
+      <span class="hljs-keyword">if</span> (key === <span class="hljs-string">'window'</span> || key === <span class="hljs-string">'self'</span> || key === <span class="hljs-string">'globalThis'</span>) {
+        <span class="hljs-keyword">return</span> proxy;
+      }
+      <span class="hljs-comment">// 优先从沙箱中读取</span>
+      <span class="hljs-keyword">if</span> (<span class="hljs-built_in">Reflect</span>.has(target, key)) {
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">Reflect</span>.get(target, key);
+      }
+      <span class="hljs-comment">// 回退到真实 window</span>
+      <span class="hljs-keyword">const</span> rawValue = <span class="hljs-built_in">Reflect</span>.get(rawWindow, key);
+      <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> rawValue === <span class="hljs-string">'function'</span>) {
+        <span class="hljs-comment">// 原生方法需要绑定到原始 window</span>
+        <span class="hljs-keyword">const</span> bindMethods = [<span class="hljs-string">'alert'</span>, <span class="hljs-string">'addEventListener'</span>, <span class="hljs-string">'setTimeout'</span>, <span class="hljs-string">'setInterval'</span>];
+        <span class="hljs-keyword">if</span> (bindMethods.includes(key)) {
+          <span class="hljs-keyword">return</span> rawValue.bind(rawWindow);
+        }
+      }
+      <span class="hljs-keyword">return</span> rawValue;
+    },
+
+    set(target, key, value) {
+      <span class="hljs-comment">// 所有写操作都写入沙箱</span>
+      <span class="hljs-built_in">Reflect</span>.set(target, key, value);
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    },
+
+    has(target, key) {
+      <span class="hljs-comment">// with 语句中的属性查找会触发 has 拦截</span>
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>; <span class="hljs-comment">// 让 with 语句将所有变量访问都拦截到 proxy 上</span>
+    },
+  });
+
+  <span class="hljs-keyword">return</span> proxy;
+}
+
+<span class="hljs-comment">// 在沙箱中执行子应用代码</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">execScriptInSandbox</span>(<span class="hljs-params">code, sandbox</span>) </span>{
+  <span class="hljs-keyword">const</span> wrappedCode = <span class="hljs-string">`
+    (function(window, self, globalThis) {
+      with(window) {
+        <span class="hljs-subst">${code}</span>
+      }
+    })
+  `</span>;
+  <span class="hljs-keyword">const</span> fn = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Function</span>(<span class="hljs-string">'window'</span>, <span class="hljs-string">'self'</span>, <span class="hljs-string">'globalThis'</span>, <span class="hljs-string">`with(window){ <span class="hljs-subst">${code}</span> }`</span>);
+  fn.call(sandbox, sandbox, sandbox, sandbox);
+}
+
+<span class="hljs-comment">// 使用示例</span>
+<span class="hljs-keyword">const</span> sandbox = createSandbox();
+execScriptInSandbox(<span class="hljs-string">`
+  var foo = 'bar';
+  window.customProp = 'hello';
+  console.log(foo);        // 'bar'
+  console.log(customProp); // 'hello'
+`</span>, sandbox);
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">window</span>.customProp); <span class="hljs-comment">// undefined（主应用 window 不受影响）</span>
+</code></pre>
+<h4 id="312-iframe-沙箱">3.1.2 iframe 沙箱</h4>
+<p>利用 iframe 的天然隔离能力实现沙箱：</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// iframe 沙箱实现</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IframeSandbox</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.iframe = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'iframe'</span>);
+    <span class="hljs-keyword">this</span>.iframe.setAttribute(<span class="hljs-string">'sandbox'</span>, <span class="hljs-string">'allow-scripts allow-same-origin'</span>);
+    <span class="hljs-keyword">this</span>.iframe.style.display = <span class="hljs-string">'none'</span>;
+    <span class="hljs-built_in">document</span>.body.appendChild(<span class="hljs-keyword">this</span>.iframe);
+    <span class="hljs-keyword">this</span>.sandboxWindow = <span class="hljs-keyword">this</span>.iframe.contentWindow;
+  }
+
+  execScript(code) {
+    <span class="hljs-keyword">const</span> scriptElement = <span class="hljs-keyword">this</span>.sandboxWindow.document.createElement(<span class="hljs-string">'script'</span>);
+    scriptElement.textContent = code;
+    <span class="hljs-keyword">this</span>.sandboxWindow.document.body.appendChild(scriptElement);
+  }
+
+  <span class="hljs-comment">// 代理 DOM 操作：将 iframe 中的 document.body 代理到主应用的容器</span>
+  patchDocument(containerElement) {
+    <span class="hljs-keyword">const</span> sandboxDoc = <span class="hljs-keyword">this</span>.sandboxWindow.document;
+
+    <span class="hljs-built_in">Object</span>.defineProperty(<span class="hljs-keyword">this</span>.sandboxWindow, <span class="hljs-string">'document'</span>, {
+      get() {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Proxy</span>(sandboxDoc, {
+          get(target, key) {
+            <span class="hljs-keyword">if</span> (key === <span class="hljs-string">'body'</span> || key === <span class="hljs-string">'documentElement'</span>) {
+              <span class="hljs-keyword">return</span> containerElement;
+            }
+            <span class="hljs-keyword">if</span> (key === <span class="hljs-string">'querySelector'</span> || key === <span class="hljs-string">'getElementById'</span>) {
+              <span class="hljs-keyword">return</span> <span class="hljs-function">(<span class="hljs-params">...args</span>) =&gt;</span> containerElement[key](...args);
+            }
+            <span class="hljs-keyword">const</span> value = target[key];
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">typeof</span> value === <span class="hljs-string">'function'</span> ? value.bind(target) : value;
+          },
+        });
+      },
+    });
+  }
+
+  destroy() {
+    <span class="hljs-built_in">document</span>.body.removeChild(<span class="hljs-keyword">this</span>.iframe);
+  }
+}
+</code></pre>
+<h4 id="313-三种沙箱对比">3.1.3 三种沙箱对比</h4>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>快照沙箱</th>
+<th>Proxy 沙箱</th>
+<th>iframe 沙箱</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>浏览器兼容</td>
+<td>IE11+</td>
+<td>Proxy 支持的浏览器</td>
+<td>全部</td>
+</tr>
+<tr>
+<td>多实例支持</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>性能</td>
+<td>差（遍历window）</td>
+<td>好</td>
+<td>好</td>
+</tr>
+<tr>
+<td>隔离程度</td>
+<td>弱</td>
+<td>中（需处理逃逸）</td>
+<td>强（天然隔离）</td>
+</tr>
+<tr>
+<td>实现复杂度</td>
+<td>低</td>
+<td>中</td>
+<td>高（DOM代理）</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h3 id="32-css-隔离方案">3.2 CSS 隔离方案</h3>
+<h4 id="321-shadow-dom-隔离">3.2.1 Shadow DOM 隔离</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Shadow DOM 隔离子应用样式</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MicroAppContainer</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">HTMLElement</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">super</span>();
+    <span class="hljs-comment">// 创建 Shadow DOM</span>
+    <span class="hljs-keyword">this</span>.shadow = <span class="hljs-keyword">this</span>.attachShadow({ <span class="hljs-attr">mode</span>: <span class="hljs-string">'open'</span> });
+  }
+
+  loadApp(htmlContent) {
+    <span class="hljs-comment">// 将子应用的 HTML 内容放入 Shadow DOM</span>
+    <span class="hljs-keyword">this</span>.shadow.innerHTML = htmlContent;
+
+    <span class="hljs-comment">// 处理子应用的 &lt;style&gt; 标签</span>
+    <span class="hljs-keyword">const</span> styles = <span class="hljs-keyword">this</span>.shadow.querySelectorAll(<span class="hljs-string">'style'</span>);
+    styles.forEach(<span class="hljs-function"><span class="hljs-params">style</span> =&gt;</span> {
+      <span class="hljs-comment">// 样式自动被 Shadow DOM 隔离，不会影响外部</span>
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'隔离的样式:'</span>, style.textContent);
+    });
+  }
+
+  <span class="hljs-comment">// 处理子应用通过 JS 动态创建的样式</span>
+  patchStyleInsertion() {
+    <span class="hljs-keyword">const</span> originalAppendChild = <span class="hljs-keyword">this</span>.shadow.appendChild.bind(<span class="hljs-keyword">this</span>.shadow);
+    <span class="hljs-keyword">const</span> originalInsertBefore = <span class="hljs-keyword">this</span>.shadow.insertBefore.bind(<span class="hljs-keyword">this</span>.shadow);
+
+    <span class="hljs-comment">// 拦截 document.head.appendChild(styleElement)</span>
+    <span class="hljs-comment">// 将其重定向到 Shadow DOM 内部</span>
+    <span class="hljs-keyword">return</span> { <span class="hljs-attr">appendChild</span>: originalAppendChild, <span class="hljs-attr">insertBefore</span>: originalInsertBefore };
+  }
+}
+
+customElements.define(<span class="hljs-string">'micro-app-container'</span>, MicroAppContainer);
+</code></pre>
+<h4 id="322-scoped-css（postcss-namespace）">3.2.2 Scoped CSS（PostCSS Namespace）</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">// PostCSS 插件 - 给所有选择器添加命名空间前缀</span>
+<span class="hljs-keyword">const</span> postcss = <span class="hljs-built_in">require</span>(<span class="hljs-string">'postcss'</span>);
+
+<span class="hljs-keyword">const</span> scopedPlugin = <span class="hljs-function">(<span class="hljs-params">appName</span>) =&gt;</span> {
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">postcssPlugin</span>: <span class="hljs-string">'postcss-micro-app-scope'</span>,
+    Rule(rule) {
+      <span class="hljs-comment">// 跳过 keyframes 内的规则</span>
+      <span class="hljs-keyword">if</span> (rule.parent &amp;&amp; rule.parent.type === <span class="hljs-string">'atrule'</span> &amp;&amp;
+          rule.parent.name === <span class="hljs-string">'keyframes'</span>) {
+        <span class="hljs-keyword">return</span>;
+      }
+
+      rule.selectors = rule.selectors.map(<span class="hljs-function"><span class="hljs-params">selector</span> =&gt;</span> {
+        <span class="hljs-comment">// 跳过已有前缀的选择器</span>
+        <span class="hljs-keyword">if</span> (selector.startsWith(<span class="hljs-string">`[data-app="<span class="hljs-subst">${appName}</span>"]`</span>)) {
+          <span class="hljs-keyword">return</span> selector;
+        }
+        <span class="hljs-comment">// :root 和 body 等特殊选择器处理</span>
+        <span class="hljs-keyword">if</span> (selector === <span class="hljs-string">':root'</span> || selector === <span class="hljs-string">'body'</span> || selector === <span class="hljs-string">'html'</span>) {
+          <span class="hljs-keyword">return</span> <span class="hljs-string">`[data-app="<span class="hljs-subst">${appName}</span>"]`</span>;
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-string">`[data-app="<span class="hljs-subst">${appName}</span>"] <span class="hljs-subst">${selector}</span>`</span>;
+      });
+    },
+  };
+};
+
+<span class="hljs-comment">// 使用示例</span>
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">scopeCSS</span>(<span class="hljs-params">cssCode, appName</span>) </span>{
+  <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> postcss([scopedPlugin(appName)]).process(cssCode, {
+    <span class="hljs-attr">from</span>: <span class="hljs-literal">undefined</span>,
+  });
+  <span class="hljs-keyword">return</span> result.css;
+}
+
+<span class="hljs-comment">// 转换示例</span>
+<span class="hljs-comment">// 输入: .btn { color: red; } h1 { font-size: 24px; }</span>
+<span class="hljs-comment">// 输出: [data-app="app1"] .btn { color: red; } [data-app="app1"] h1 { font-size: 24px; }</span>
+</code></pre>
+<h4 id="323-css-隔离方案对比">3.2.3 CSS 隔离方案对比</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 运行时动态 Scoped（qiankun experimentalStyleIsolation 原理）</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">scopeStyleElement</span>(<span class="hljs-params">styleElement, appName</span>) </span>{
+  <span class="hljs-keyword">const</span> prefix = <span class="hljs-string">`div[data-qiankun="<span class="hljs-subst">${appName}</span>"]`</span>;
+  <span class="hljs-keyword">const</span> sheet = styleElement.sheet;
+
+  <span class="hljs-keyword">if</span> (!sheet) <span class="hljs-keyword">return</span>;
+
+  <span class="hljs-keyword">const</span> rules = <span class="hljs-built_in">Array</span>.from(sheet.cssRules);
+  rules.forEach(<span class="hljs-function">(<span class="hljs-params">rule, index</span>) =&gt;</span> {
+    <span class="hljs-keyword">if</span> (rule <span class="hljs-keyword">instanceof</span> CSSStyleRule) {
+      <span class="hljs-keyword">const</span> newSelector = rule.selectorText
+        .split(<span class="hljs-string">','</span>)
+        .map(<span class="hljs-function"><span class="hljs-params">s</span> =&gt;</span> <span class="hljs-string">`<span class="hljs-subst">${prefix}</span> <span class="hljs-subst">${s.trim()}</span>`</span>)
+        .join(<span class="hljs-string">', '</span>);
+      <span class="hljs-keyword">const</span> newRule = <span class="hljs-string">`<span class="hljs-subst">${newSelector}</span> { <span class="hljs-subst">${rule.style.cssText}</span> }`</span>;
+      sheet.deleteRule(index);
+      sheet.insertRule(newRule, index);
+    }
+  });
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>方案</th>
+<th>隔离强度</th>
+<th>弹窗样式</th>
+<th>动态样式</th>
+<th>性能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shadow DOM</td>
+<td>强</td>
+<td>❌ 逃逸</td>
+<td>✅ 自动隔离</td>
+<td>好</td>
+</tr>
+<tr>
+<td>Scoped CSS</td>
+<td>中</td>
+<td>✅ 可处理</td>
+<td>需拦截</td>
+<td>中</td>
+</tr>
+<tr>
+<td>CSS Modules</td>
+<td>弱（仅类名）</td>
+<td>✅</td>
+<td>✅</td>
+<td>好</td>
+</tr>
+<tr>
+<td>BEM 约定</td>
+<td>弱</td>
+<td>✅</td>
+<td>✅</td>
+<td>好</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h3 id="33-应用间通信">3.3 应用间通信</h3>
+<h4 id="331-customevent-通信">3.3.1 CustomEvent 通信</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 基于 CustomEvent 实现发布-订阅通信</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MicroAppEventBus</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.eventTarget = <span class="hljs-keyword">new</span> EventTarget();
+  }
+
+  <span class="hljs-comment">// 发送事件</span>
+  emit(eventName, data) {
+    <span class="hljs-keyword">const</span> event = <span class="hljs-keyword">new</span> CustomEvent(eventName, {
+      <span class="hljs-attr">detail</span>: data,
+      <span class="hljs-attr">bubbles</span>: <span class="hljs-literal">false</span>,
+    });
+    <span class="hljs-keyword">this</span>.eventTarget.dispatchEvent(event);
+  }
+
+  <span class="hljs-comment">// 监听事件</span>
+  on(eventName, callback) {
+    <span class="hljs-keyword">const</span> handler = <span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> callback(e.detail);
+    <span class="hljs-keyword">this</span>.eventTarget.addEventListener(eventName, handler);
+    <span class="hljs-comment">// 返回取消订阅函数</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">this</span>.eventTarget.removeEventListener(eventName, handler);
+  }
+
+  <span class="hljs-comment">// 一次性监听</span>
+  once(eventName, callback) {
+    <span class="hljs-keyword">const</span> handler = <span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> callback(e.detail);
+    <span class="hljs-keyword">this</span>.eventTarget.addEventListener(eventName, handler, { <span class="hljs-attr">once</span>: <span class="hljs-literal">true</span> });
+  }
+}
+
+<span class="hljs-comment">// 挂载到全局，供所有子应用使用</span>
+<span class="hljs-built_in">window</span>.__MICRO_EVENT_BUS__ = <span class="hljs-keyword">new</span> MicroAppEventBus();
+
+<span class="hljs-comment">// 子应用 A - 发送消息</span>
+<span class="hljs-built_in">window</span>.__MICRO_EVENT_BUS__.emit(<span class="hljs-string">'cart:updated'</span>, { <span class="hljs-attr">count</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">total</span>: <span class="hljs-number">299</span> });
+
+<span class="hljs-comment">// 子应用 B - 接收消息</span>
+<span class="hljs-keyword">const</span> unsubscribe = <span class="hljs-built_in">window</span>.__MICRO_EVENT_BUS__.on(<span class="hljs-string">'cart:updated'</span>, (data) =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'购物车更新:'</span>, data); <span class="hljs-comment">// { count: 3, total: 299 }</span>
+});
+<span class="hljs-comment">// 组件卸载时取消订阅</span>
+unsubscribe();
+</code></pre>
+<h4 id="332-props-传递">3.3.2 Props 传递</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 主应用传递 props 给子应用（以 qiankun 为例）</span>
+<span class="hljs-keyword">const</span> sharedActions = {
+  <span class="hljs-comment">// 共享方法</span>
+  navigate: <span class="hljs-function">(<span class="hljs-params">path</span>) =&gt;</span> history.push(path),
+  <span class="hljs-attr">getToken</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> localStorage.getItem(<span class="hljs-string">'token'</span>),
+  <span class="hljs-attr">showGlobalLoading</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> store.dispatch(<span class="hljs-string">'setLoading'</span>, <span class="hljs-literal">true</span>),
+  <span class="hljs-attr">hideGlobalLoading</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> store.dispatch(<span class="hljs-string">'setLoading'</span>, <span class="hljs-literal">false</span>),
+  <span class="hljs-comment">// 共享数据</span>
+  userInfo: currentUser,
+  <span class="hljs-attr">permissions</span>: userPermissions,
+};
+
+registerMicroApps([
+  {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'sub-app'</span>,
+    <span class="hljs-attr">entry</span>: <span class="hljs-string">'//localhost:8081'</span>,
+    <span class="hljs-attr">container</span>: <span class="hljs-string">'#container'</span>,
+    <span class="hljs-attr">activeRule</span>: <span class="hljs-string">'/sub'</span>,
+    <span class="hljs-attr">props</span>: sharedActions, <span class="hljs-comment">// 通过 props 注入到子应用</span>
+  },
+]);
+</code></pre>
+<h4 id="333-全局-store-通信">3.3.3 全局 Store 通信</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 跨应用共享的响应式 Store（精简实现）</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SharedStore</span> </span>{
+  <span class="hljs-keyword">constructor</span>(initialState = {}) {
+    <span class="hljs-keyword">this</span>._state = initialState;
+    <span class="hljs-keyword">this</span>._listeners = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
+    <span class="hljs-keyword">this</span>._id = <span class="hljs-number">0</span>;
+  }
+
+  getState() {
+    <span class="hljs-keyword">return</span> { ...this._state };
+  }
+
+  setState(partialState) {
+    <span class="hljs-keyword">const</span> prevState = { ...this._state };
+    <span class="hljs-keyword">this</span>._state = { ...this._state, ...partialState };
+    <span class="hljs-comment">// 通知所有订阅者</span>
+    <span class="hljs-keyword">this</span>._listeners.forEach(<span class="hljs-function">(<span class="hljs-params">listener</span>) =&gt;</span> {
+      listener(<span class="hljs-keyword">this</span>._state, prevState);
+    });
+  }
+
+  subscribe(listener) {
+    <span class="hljs-keyword">const</span> id = ++<span class="hljs-keyword">this</span>._id;
+    <span class="hljs-keyword">this</span>._listeners.set(id, listener);
+    <span class="hljs-comment">// 立即发送当前状态</span>
+    listener(<span class="hljs-keyword">this</span>._state, <span class="hljs-keyword">this</span>._state);
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">this</span>._listeners.delete(id);
+  }
+
+  <span class="hljs-comment">// 提供给 React 的 hook</span>
+  useStore(selector = <span class="hljs-function">(<span class="hljs-params">s</span>) =&gt;</span> s) {
+    <span class="hljs-keyword">const</span> [state, setState] = React.useState(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> selector(<span class="hljs-keyword">this</span>._state));
+
+    React.useEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.subscribe(<span class="hljs-function">(<span class="hljs-params">newState</span>) =&gt;</span> {
+        <span class="hljs-keyword">const</span> selected = selector(newState);
+        setState(selected);
+      });
+    }, []);
+
+    <span class="hljs-keyword">return</span> state;
+  }
+}
+
+<span class="hljs-comment">// 全局唯一实例</span>
+<span class="hljs-built_in">window</span>.__SHARED_STORE__ = <span class="hljs-keyword">new</span> SharedStore({
+  <span class="hljs-attr">user</span>: <span class="hljs-literal">null</span>,
+  <span class="hljs-attr">theme</span>: <span class="hljs-string">'light'</span>,
+  <span class="hljs-attr">locale</span>: <span class="hljs-string">'zh-CN'</span>,
+  <span class="hljs-attr">notifications</span>: [],
+});
+
+<span class="hljs-comment">// 子应用中使用</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">UserAvatar</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> user = <span class="hljs-built_in">window</span>.__SHARED_STORE__.useStore(<span class="hljs-function"><span class="hljs-params">state</span> =&gt;</span> state.user);
+  <span class="hljs-keyword">return</span> user ? <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">{user.avatar}</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">{user.name}</span> /&gt;</span> : <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>未登录<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>;
+}
+</span></code></pre>
+<hr></hr>
+<h3 id="34-路由管理与资源加载">3.4 路由管理与资源加载</h3>
+<h4 id="341-路由同步">3.4.1 路由同步</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 主子应用路由同步方案</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MicroRouter</span> </span>{
+  <span class="hljs-keyword">constructor</span>(basePath) {
+    <span class="hljs-keyword">this</span>.basePath = basePath;
+    <span class="hljs-keyword">this</span>.apps = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
+  }
+
+  <span class="hljs-comment">// 注册子应用路由规则</span>
+  register(appName, activeRule) {
+    <span class="hljs-keyword">this</span>.apps.set(appName, {
+      activeRule,
+      <span class="hljs-attr">active</span>: <span class="hljs-literal">false</span>,
+    });
+  }
+
+  <span class="hljs-comment">// 匹配当前路由</span>
+  matchApps(pathname) {
+    <span class="hljs-keyword">const</span> matched = [];
+    <span class="hljs-keyword">this</span>.apps.forEach(<span class="hljs-function">(<span class="hljs-params">config, name</span>) =&gt;</span> {
+      <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> config.activeRule === <span class="hljs-string">'function'</span>) {
+        <span class="hljs-keyword">if</span> (config.activeRule(pathname)) matched.push(name);
+      } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (pathname.startsWith(config.activeRule)) {
+        matched.push(name);
+      }
+    });
+    <span class="hljs-keyword">return</span> matched;
+  }
+
+  <span class="hljs-comment">// 监听路由变化</span>
+  listen(callback) {
+    <span class="hljs-keyword">const</span> handleRouteChange = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+      <span class="hljs-keyword">const</span> matched = <span class="hljs-keyword">this</span>.matchApps(<span class="hljs-built_in">window</span>.location.pathname);
+      callback(matched, <span class="hljs-built_in">window</span>.location);
+    };
+
+    <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'popstate'</span>, handleRouteChange);
+    <span class="hljs-comment">// 拦截 pushState</span>
+    <span class="hljs-keyword">const</span> originalPushState = history.pushState;
+    history.pushState = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">...args</span>) </span>{
+      originalPushState.apply(<span class="hljs-keyword">this</span>, args);
+      handleRouteChange();
+    };
+  }
+}
+</code></pre>
+<h4 id="342-html-entry-资源加载">3.4.2 HTML Entry 资源加载</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">// HTML Entry 加载原理（qiankun 使用 import-html-entry）</span>
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">loadHTMLEntry</span>(<span class="hljs-params">entryUrl</span>) </span>{
+  <span class="hljs-comment">// 1. 获取 HTML 内容</span>
+  <span class="hljs-keyword">const</span> html = <span class="hljs-keyword">await</span> fetch(entryUrl).then(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> res.text());
+
+  <span class="hljs-comment">// 2. 解析 HTML，提取资源</span>
+  <span class="hljs-keyword">const</span> parser = <span class="hljs-keyword">new</span> DOMParser();
+  <span class="hljs-keyword">const</span> doc = parser.parseFromString(html, <span class="hljs-string">'text/html'</span>);
+
+  <span class="hljs-comment">// 3. 提取外部 CSS</span>
+  <span class="hljs-keyword">const</span> styles = [];
+  doc.querySelectorAll(<span class="hljs-string">'link[rel="stylesheet"]'</span>).forEach(<span class="hljs-function"><span class="hljs-params">link</span> =&gt;</span> {
+    <span class="hljs-keyword">const</span> href = <span class="hljs-keyword">new</span> URL(link.getAttribute(<span class="hljs-string">'href'</span>), entryUrl).href;
+    styles.push(fetch(href).then(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> res.text()));
+  });
+  doc.querySelectorAll(<span class="hljs-string">'style'</span>).forEach(<span class="hljs-function"><span class="hljs-params">style</span> =&gt;</span> {
+    styles.push(<span class="hljs-built_in">Promise</span>.resolve(style.textContent));
+  });
+
+  <span class="hljs-comment">// 4. 提取外部 JS</span>
+  <span class="hljs-keyword">const</span> scripts = [];
+  doc.querySelectorAll(<span class="hljs-string">'script'</span>).forEach(<span class="hljs-function"><span class="hljs-params">script</span> =&gt;</span> {
+    <span class="hljs-keyword">if</span> (script.src) {
+      <span class="hljs-keyword">const</span> src = <span class="hljs-keyword">new</span> URL(script.getAttribute(<span class="hljs-string">'src'</span>), entryUrl).href;
+      scripts.push({ <span class="hljs-attr">type</span>: <span class="hljs-string">'external'</span>, src });
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (script.textContent.trim()) {
+      scripts.push({ <span class="hljs-attr">type</span>: <span class="hljs-string">'inline'</span>, <span class="hljs-attr">content</span>: script.textContent });
+    }
+  });
+
+  <span class="hljs-comment">// 5. 提取模板（去掉 script 和 link 后的 HTML）</span>
+  doc.querySelectorAll(<span class="hljs-string">'script'</span>).forEach(<span class="hljs-function"><span class="hljs-params">s</span> =&gt;</span> s.remove());
+  doc.querySelectorAll(<span class="hljs-string">'link[rel="stylesheet"]'</span>).forEach(<span class="hljs-function"><span class="hljs-params">l</span> =&gt;</span> l.remove());
+  <span class="hljs-keyword">const</span> template = doc.body.innerHTML;
+
+  <span class="hljs-comment">// 6. 加载所有 CSS 内容</span>
+  <span class="hljs-keyword">const</span> styleContents = <span class="hljs-keyword">await</span> <span class="hljs-built_in">Promise</span>.all(styles);
+
+  <span class="hljs-keyword">return</span> {
+    template,
+    <span class="hljs-attr">styles</span>: styleContents,
+    scripts,
+    <span class="hljs-comment">// 执行子应用脚本的方法</span>
+    <span class="hljs-keyword">async</span> execScripts(sandbox) {
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> script <span class="hljs-keyword">of</span> scripts) {
+        <span class="hljs-keyword">const</span> code = script.type === <span class="hljs-string">'external'</span>
+          ? <span class="hljs-keyword">await</span> fetch(script.src).then(<span class="hljs-function"><span class="hljs-params">r</span> =&gt;</span> r.text())
+          : script.content;
+        execScriptInSandbox(code, sandbox);
+      }
+      <span class="hljs-comment">// 返回子应用导出的生命周期</span>
+      <span class="hljs-keyword">return</span> sandbox.__MICRO_APP_EXPORTS__;
+    },
+  };
+}
+</code></pre>
+<hr></hr>
+<h2 id="四、微模块（module-federation-深度）">四、微模块（Module Federation 深度）</h2>
+<h3 id="41-module-federation-20">4.1 Module Federation 2.0</h3>
+<p>Module Federation 2.0（由 <code>@module-federation/enhanced</code>）引入了更强大的运行时能力：</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Module Federation 2.0 配置示例</span>
+<span class="hljs-keyword">const</span> { ModuleFederationPlugin } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'@module-federation/enhanced/webpack'</span>);
+
+<span class="hljs-built_in">module</span>.exports = {
+  <span class="hljs-attr">plugins</span>: [
+    <span class="hljs-keyword">new</span> ModuleFederationPlugin({
+      <span class="hljs-attr">name</span>: <span class="hljs-string">'host'</span>,
+      <span class="hljs-attr">remotes</span>: {
+        <span class="hljs-attr">remote1</span>: <span class="hljs-string">'remote1@http://localhost:3001/mf-manifest.json'</span>,
+      },
+      <span class="hljs-attr">shared</span>: {
+        <span class="hljs-attr">react</span>: { <span class="hljs-attr">singleton</span>: <span class="hljs-literal">true</span> },
+        <span class="hljs-string">'react-dom'</span>: { <span class="hljs-attr">singleton</span>: <span class="hljs-literal">true</span> },
+      },
+      <span class="hljs-comment">// 2.0 新增：运行时插件</span>
+      runtimePlugins: [
+        <span class="hljs-built_in">require</span>.resolve(<span class="hljs-string">'./src/mf-plugins/fallback-plugin'</span>),
+        <span class="hljs-built_in">require</span>.resolve(<span class="hljs-string">'./src/mf-plugins/retry-plugin'</span>),
+      ],
+    }),
+  ],
+};
+</code></pre>
+<h4 id="运行时插件系统">运行时插件系统</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 自定义运行时插件 - 加载失败容错</span>
+<span class="hljs-comment">// src/mf-plugins/fallback-plugin.js</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fallbackPlugin</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'fallback-plugin'</span>,
+
+    <span class="hljs-comment">// 远程模块加载前的钩子</span>
+    beforeRequest(args) {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`准备加载远程模块: <span class="hljs-subst">${args.id}</span>`</span>);
+      <span class="hljs-keyword">return</span> args;
+    },
+
+    <span class="hljs-comment">// 加载错误时的容错处理</span>
+    errorLoadRemote({ id, error, <span class="hljs-keyword">from</span>, origin }) {
+      <span class="hljs-built_in">console</span>.error(<span class="hljs-string">`远程模块 <span class="hljs-subst">${id}</span> 加载失败:`</span>, error);
+
+      <span class="hljs-comment">// 返回降级模块</span>
+      <span class="hljs-keyword">const</span> FallbackComponent = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+        <span class="hljs-keyword">return</span> React.createElement(
+          <span class="hljs-string">'div'</span>,
+          { <span class="hljs-attr">className</span>: <span class="hljs-string">'fallback-container'</span> },
+          <span class="hljs-string">`模块 <span class="hljs-subst">${id}</span> 暂时不可用，请稍后重试`</span>
+        );
+      };
+      <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> ({ <span class="hljs-attr">default</span>: FallbackComponent });
+    },
+
+    <span class="hljs-comment">// 模块解析前的钩子</span>
+    beforeInit(args) {
+      <span class="hljs-comment">// 可以动态修改共享依赖配置</span>
+      <span class="hljs-keyword">return</span> args;
+    },
+
+    <span class="hljs-comment">// 共享依赖解析钩子</span>
+    resolveShare(args) {
+      <span class="hljs-comment">// 自定义共享依赖版本策略</span>
+      <span class="hljs-keyword">const</span> { shareScopeMap, scope, pkgName, version } = args;
+      <span class="hljs-keyword">return</span> args;
+    },
+  };
+}
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 自定义运行时插件 - 重试机制</span>
+<span class="hljs-comment">// src/mf-plugins/retry-plugin.js</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">retryPlugin</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'retry-plugin'</span>,
+    <span class="hljs-keyword">async</span> loadRemote(args) {
+      <span class="hljs-keyword">const</span> maxRetries = <span class="hljs-number">3</span>;
+      <span class="hljs-keyword">let</span> lastError;
+
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; maxRetries; i++) {
+        <span class="hljs-keyword">try</span> {
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> args.origin.loadRemote(args.id);
+        } <span class="hljs-keyword">catch</span> (error) {
+          lastError = error;
+          <span class="hljs-built_in">console</span>.warn(<span class="hljs-string">`加载重试 <span class="hljs-subst">${i + <span class="hljs-number">1</span>}</span>/<span class="hljs-subst">${maxRetries}</span>: <span class="hljs-subst">${args.id}</span>`</span>);
+          <span class="hljs-comment">// 指数退避</span>
+          <span class="hljs-keyword">await</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-params">r</span> =&gt;</span> setTimeout(r, <span class="hljs-built_in">Math</span>.pow(<span class="hljs-number">2</span>, i) * <span class="hljs-number">1000</span>));
+        }
+      }
+      <span class="hljs-keyword">throw</span> lastError;
+    },
+  };
+}
+</code></pre>
+<h3 id="42-vite-集成（vite-plugin-federation）">4.2 Vite 集成（vite-plugin-federation）</h3>
+<p>由于 Module Federation 最初是 Webpack 5 的功能，Vite 生态通过 <code>@originjs/vite-plugin-federation</code> 提供了支持：</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Remote 应用 - vite.config.js</span>
+<span class="hljs-keyword">import</span> { defineConfig } <span class="hljs-keyword">from</span> <span class="hljs-string">'vite'</span>;
+<span class="hljs-keyword">import</span> vue <span class="hljs-keyword">from</span> <span class="hljs-string">'@vitejs/plugin-vue'</span>;
+<span class="hljs-keyword">import</span> federation <span class="hljs-keyword">from</span> <span class="hljs-string">'@originjs/vite-plugin-federation'</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> defineConfig({
+  <span class="hljs-attr">plugins</span>: [
+    vue(),
+    federation({
+      <span class="hljs-attr">name</span>: <span class="hljs-string">'remote-app'</span>,
+      <span class="hljs-attr">filename</span>: <span class="hljs-string">'remoteEntry.js'</span>,
+      <span class="hljs-attr">exposes</span>: {
+        <span class="hljs-string">'./UserCard'</span>: <span class="hljs-string">'./src/components/UserCard.vue'</span>,
+        <span class="hljs-string">'./useAuth'</span>: <span class="hljs-string">'./src/composables/useAuth.ts'</span>,
+      },
+      <span class="hljs-attr">shared</span>: [<span class="hljs-string">'vue'</span>, <span class="hljs-string">'vue-router'</span>, <span class="hljs-string">'pinia'</span>],
+    }),
+  ],
+  <span class="hljs-attr">build</span>: {
+    <span class="hljs-attr">target</span>: <span class="hljs-string">'esnext'</span>,
+    <span class="hljs-attr">minify</span>: <span class="hljs-literal">false</span>,       <span class="hljs-comment">// 开发阶段建议关闭</span>
+    cssCodeSplit: <span class="hljs-literal">false</span>,  <span class="hljs-comment">// MF 要求关闭 CSS 代码分割</span>
+  },
+});
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Host 应用 - vite.config.js</span>
+<span class="hljs-keyword">import</span> { defineConfig } <span class="hljs-keyword">from</span> <span class="hljs-string">'vite'</span>;
+<span class="hljs-keyword">import</span> react <span class="hljs-keyword">from</span> <span class="hljs-string">'@vitejs/plugin-react'</span>;
+<span class="hljs-keyword">import</span> federation <span class="hljs-keyword">from</span> <span class="hljs-string">'@originjs/vite-plugin-federation'</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> defineConfig({
+  <span class="hljs-attr">plugins</span>: [
+    react(),
+    federation({
+      <span class="hljs-attr">name</span>: <span class="hljs-string">'host-app'</span>,
+      <span class="hljs-attr">remotes</span>: {
+        <span class="hljs-attr">remoteApp</span>: <span class="hljs-string">'http://localhost:5001/assets/remoteEntry.js'</span>,
+      },
+      <span class="hljs-attr">shared</span>: [<span class="hljs-string">'react'</span>, <span class="hljs-string">'react-dom'</span>],
+    }),
+  ],
+});
+</code></pre>
+<pre><code class="lang-vue">&lt;!-- Host 应用中使用远程 Vue 组件 --&gt;
+&lt;template&gt;
+  &lt;div class="dashboard"&gt;
+    &lt;h2&gt;仪表盘&lt;/h2&gt;
+    &lt;Suspense&gt;
+      &lt;template #default&gt;
+        &lt;RemoteUserCard :userId="currentUserId" /&gt;
+      &lt;/template&gt;
+      &lt;template #fallback&gt;
+        &lt;div class="skeleton"&gt;加载中...&lt;/div&gt;
+      &lt;/template&gt;
+    &lt;/Suspense&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+import { defineAsyncComponent, ref } from 'vue';
+
+const RemoteUserCard = defineAsyncComponent(
+  () =&gt; import('remoteApp/UserCard')
+);
+
+const currentUserId = ref('user-001');
+&lt;/script&gt;
+</code></pre>
+<h3 id="43-粒度设计：页面级-vs-组件级-vs-函数级">4.3 粒度设计：页面级 vs 组件级 vs 函数级</h3>
+<p>Module Federation 支持多种粒度的模块共享：</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// ===== 页面级共享 =====</span>
+<span class="hljs-comment">// 适合：独立的业务页面，如订单管理、用户中心</span>
+<span class="hljs-comment">// remote webpack.config.js</span>
+exposes: {
+  <span class="hljs-string">'./OrderPage'</span>: <span class="hljs-string">'./src/pages/OrderManagement'</span>,
+  <span class="hljs-string">'./UserCenter'</span>: <span class="hljs-string">'./src/pages/UserCenter'</span>,
+},
+
+<span class="hljs-comment">// host 使用</span>
+<span class="hljs-keyword">const</span> OrderPage = React.lazy(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">'orderApp/OrderPage'</span>));
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">"/orders"</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">OrderPage</span> /&gt;</span>} /&gt;
+</span></code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// ===== 组件级共享 =====</span>
+<span class="hljs-comment">// 适合：跨应用复用的 UI 组件，如通用表格、图表组件</span>
+<span class="hljs-comment">// remote webpack.config.js</span>
+exposes: {
+  <span class="hljs-string">'./DataTable'</span>: <span class="hljs-string">'./src/components/DataTable'</span>,
+  <span class="hljs-string">'./BarChart'</span>: <span class="hljs-string">'./src/components/BarChart'</span>,
+  <span class="hljs-string">'./UserAvatar'</span>: <span class="hljs-string">'./src/components/UserAvatar'</span>,
+},
+
+<span class="hljs-comment">// host 使用</span>
+<span class="hljs-keyword">const</span> DataTable = React.lazy(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">'sharedUI/DataTable'</span>));
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MyPage</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Spinner</span> /&gt;</span>}&gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">DataTable</span> <span class="hljs-attr">columns</span>=<span class="hljs-string">{columns}</span> <span class="hljs-attr">dataSource</span>=<span class="hljs-string">{data}</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Suspense</span>&gt;</span>
+  );
+}
+</span></code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// ===== 函数级共享 =====</span>
+<span class="hljs-comment">// 适合：工具函数、业务逻辑、hooks</span>
+<span class="hljs-comment">// remote webpack.config.js</span>
+exposes: {
+  <span class="hljs-string">'./utils'</span>: <span class="hljs-string">'./src/utils/index'</span>,
+  <span class="hljs-string">'./useAuth'</span>: <span class="hljs-string">'./src/hooks/useAuth'</span>,
+  <span class="hljs-string">'./validators'</span>: <span class="hljs-string">'./src/utils/validators'</span>,
+},
+
+<span class="hljs-comment">// host 使用</span>
+<span class="hljs-keyword">const</span> { formatCurrency, parseDate } = <span class="hljs-keyword">await</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">'sharedUtils/utils'</span>);
+<span class="hljs-keyword">const</span> { useAuth } = <span class="hljs-keyword">await</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">'authApp/useAuth'</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">CheckoutPage</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> { user, logout } = useAuth();
+  <span class="hljs-keyword">const</span> formattedPrice = formatCurrency(totalPrice);
+  <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+<pre><code>粒度设计决策树：
+
+┌─ 是否有独立路由？
+│  ├─ 是 → 页面级共享（子应用独立路由和状态管理）
+│  └─ 否 ─┐
+│          ├─ 是否有 UI 渲染？
+│          │  ├─ 是 → 组件级共享（暴露组件，接受 props）
+│          │  └─ 否 → 函数级共享（暴露纯函数/hooks）
+</code></pre><p><strong>各粒度对比</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>页面级</th>
+<th>组件级</th>
+<th>函数级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>独立性</td>
+<td>最强</td>
+<td>中</td>
+<td>最弱</td>
+</tr>
+<tr>
+<td>复用灵活度</td>
+<td>低</td>
+<td>高</td>
+<td>最高</td>
+</tr>
+<tr>
+<td>通信复杂度</td>
+<td>低（路由驱动）</td>
+<td>中（props/events）</td>
+<td>低（函数调用）</td>
+</tr>
+<tr>
+<td>加载粒度</td>
+<td>粗（整页）</td>
+<td>中</td>
+<td>细（单函数）</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>业务域拆分</td>
+<td>UI 复用</td>
+<td>逻辑复用</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="五、微前端中的-angular-模板处理">五、微前端中的 Angular 模板处理</h2>
+<p>在使用 Angular 子应用时，如果涉及模板插值语法，需要注意在文档和代码块中正确处理：</p>
+<pre><code class="lang-html">{% raw %}
+<span class="hljs-comment">&lt;!-- Angular 子应用中的模板 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"user-profile"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>{{ user.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>角色: {{ user.role }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> *<span class="hljs-attr">ngIf</span>=<span class="hljs-string">"user.isAdmin"</span>&gt;</span>{{ adminLabel }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+{% endraw %}
+</code></pre>
+<pre><code class="lang-typescript">{% raw %}
+<span class="hljs-comment">// Angular 子应用暴露为微前端</span>
+@Component({
+  selector: <span class="hljs-string">'app-widget'</span>,
+  template: <span class="hljs-string">`
+    &lt;div class="widget-container"&gt;
+      &lt;h3&gt;{{ title }}&lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li *ngFor="let item of items"&gt;
+          {{ item.name }} - {{ item.value | currency }}
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;p&gt;总计: {{ total | number:'1.2-2' }}&lt;/p&gt;
+    &lt;/div&gt;
+  `</span>,
+})
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> WidgetComponent {
+  @Input() title = <span class="hljs-string">'数据看板'</span>;
+  items = [];
+  <span class="hljs-keyword">get</span> total() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.items.reduce((sum, item) =&gt; sum + item.value, <span class="hljs-number">0</span>);
+  }
+}
+{% endraw %}
+</code></pre>
+<pre><code class="lang-html">{% raw %}
+<span class="hljs-comment">&lt;!-- Vue 中使用双花括号插值 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"micro-widget"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>用户名: {{ username }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>余额: {{ balance.toFixed(2) }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">"app in microApps"</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">"app.name"</span>&gt;</span>
+      {{ app.name }} - {{ app.status }}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+{% endraw %}
+</code></pre>
+<hr></hr>
+<h2 id="六、实践与高频面试题">六、实践与高频面试题</h2>
+<h3 id="面试题-1：什么是微前端？和-iframe-相比有什么优势？">面试题 1：什么是微前端？和 iframe 相比有什么优势？</h3>
+<p><strong>参考答案</strong>：</p>
+<p>微前端是将前端应用拆分成多个小型应用，由一个基座在运行时组合的架构模式。与 iframe 相比：</p>
+<ol>
+<li><strong>用户体验</strong>：微前端保持单页应用体验，无白屏；iframe 有加载延迟和白屏</li>
+<li><strong>URL 同步</strong>：微前端可统一管理路由；iframe 的 URL 与主应用不同步</li>
+<li><strong>弹窗定位</strong>：微前端弹窗可全屏居中；iframe 弹窗只能在 iframe 区域内</li>
+<li><strong>共享资源</strong>：微前端可共享依赖（如 React）；iframe 每个都独立加载</li>
+<li><strong>通信便捷</strong>：微前端可直接共享状态；iframe 只能用 postMessage</li>
+<li><strong>SEO</strong>：微前端对搜索引擎更友好；iframe 内容难以被爬虫抓取</li>
+</ol>
+<hr></hr>
+<h3 id="面试题-2：请解释-qiankun-的三种-js-沙箱及其区别">面试题 2：请解释 qiankun 的三种 JS 沙箱及其区别</h3>
+<p><strong>参考答案</strong>：</p>
+<ol>
+<li><strong>快照沙箱（SnapshotSandbox）</strong>：挂载前遍历 window 属性做快照，卸载时对比差异恢复。缺点：不支持多实例、性能差。</li>
+<li><strong>Legacy Proxy 沙箱（LegacySandbox）</strong>：用 Proxy 代理 window，记录新增和修改的属性。支持单实例，但仍然直接修改 window。</li>
+<li><strong>Proxy 沙箱（ProxySandbox）</strong>：每个子应用一个 fakeWindow，所有读写都在 fakeWindow 上，不修改原始 window。支持多实例并行，是推荐方案。</li>
+</ol>
+<hr></hr>
+<h3 id="面试题-3：手写一个简单的-proxy-沙箱">面试题 3：手写一个简单的 Proxy 沙箱</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 面试常考：手写 Proxy 沙箱</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createProxySandbox</span>(<span class="hljs-params">appName</span>) </span>{
+  <span class="hljs-keyword">const</span> fakeWindow = <span class="hljs-built_in">Object</span>.create(<span class="hljs-literal">null</span>);
+  <span class="hljs-keyword">let</span> isActive = <span class="hljs-literal">false</span>;
+
+  <span class="hljs-keyword">const</span> proxy = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Proxy</span>(fakeWindow, {
+    get(target, key) {
+      <span class="hljs-comment">// window 和 self 指向代理对象</span>
+      <span class="hljs-keyword">if</span> (key === <span class="hljs-string">'window'</span> || key === <span class="hljs-string">'self'</span> || key === <span class="hljs-string">'globalThis'</span>) {
+        <span class="hljs-keyword">return</span> proxy;
+      }
+      <span class="hljs-comment">// 优先从沙箱读取</span>
+      <span class="hljs-keyword">if</span> (key <span class="hljs-keyword">in</span> target) {
+        <span class="hljs-keyword">return</span> target[key];
+      }
+      <span class="hljs-comment">// 兜底到真实 window</span>
+      <span class="hljs-keyword">const</span> rawValue = <span class="hljs-built_in">window</span>[key];
+      <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> rawValue === <span class="hljs-string">'function'</span> &amp;&amp; !<span class="hljs-regexp">/^[A-Z]/</span>.test(key)) {
+        <span class="hljs-keyword">return</span> rawValue.bind(<span class="hljs-built_in">window</span>);
+      }
+      <span class="hljs-keyword">return</span> rawValue;
+    },
+
+    set(target, key, value) {
+      <span class="hljs-keyword">if</span> (isActive) {
+        target[key] = value;
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`[<span class="hljs-subst">${appName}</span>] 设置属性 <span class="hljs-subst">${<span class="hljs-built_in">String</span>(key)}</span>`</span>);
+      }
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    },
+
+    has(target, key) {
+      <span class="hljs-keyword">return</span> key <span class="hljs-keyword">in</span> target || key <span class="hljs-keyword">in</span> <span class="hljs-built_in">window</span>;
+    },
+
+    deleteProperty(target, key) {
+      <span class="hljs-keyword">if</span> (key <span class="hljs-keyword">in</span> target) {
+        <span class="hljs-keyword">delete</span> target[key];
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+      }
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    },
+  });
+
+  <span class="hljs-keyword">return</span> {
+    proxy,
+    activate() { isActive = <span class="hljs-literal">true</span>; },
+    deactivate() { isActive = <span class="hljs-literal">false</span>; },
+  };
+}
+</code></pre>
+<hr></hr>
+<h3 id="面试题-4：微前端中-css-隔离有哪些方案？各有什么优缺点？">面试题 4：微前端中 CSS 隔离有哪些方案？各有什么优缺点？</h3>
+<p><strong>参考答案</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>方案</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shadow DOM</td>
+<td>隔离彻底，自动生效</td>
+<td>弹窗挂载到 body 外逃逸、样式穿透困难</td>
+</tr>
+<tr>
+<td>Scoped CSS（属性选择器前缀）</td>
+<td>兼容性好、弹窗样式可处理</td>
+<td>需运行时处理、有性能开销</td>
+</tr>
+<tr>
+<td>CSS Modules</td>
+<td>构建时处理、性能好</td>
+<td>只处理 className，不处理标签选择器</td>
+</tr>
+<tr>
+<td>BEM 命名约定</td>
+<td>简单、无运行时开销</td>
+<td>依赖人工遵守、无法强制隔离</td>
+</tr>
+<tr>
+<td>PostCSS Namespace</td>
+<td>构建时自动添加前缀</td>
+<td>需要子应用接入构建插件</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h3 id="面试题-5：module-federation-和微前端有什么关系？它的-shared-机制是如何工作的？">面试题 5：Module Federation 和微前端有什么关系？它的 shared 机制是如何工作的？</h3>
+<p><strong>参考答案</strong>：</p>
+<p>Module Federation 是 Webpack 5 的模块联邦特性，它实现了跨应用的模块共享。它和传统微前端（如 qiankun）的关系是<strong>互补</strong>的——MF 解决的是模块级别的共享复用，传统微前端解决的是应用级别的隔离和集成。</p>
+<p>shared 工作机制：</p>
+<ol>
+<li>构建时，Webpack 将 shared 依赖标记为异步模块</li>
+<li>运行时，各应用通过 <code>__webpack_share_scopes__</code> 共享作用域协商版本</li>
+<li>如果配置了 <code>singleton: true</code>，全局只加载一份，使用语义化版本中满足所有要求的最高版本</li>
+<li>如果版本不匹配且 <code>strictVersion: true</code>，会抛出警告或错误</li>
+<li><code>eager: true</code> 会将 shared 模块打入入口 chunk 而非异步加载</li>
+</ol>
+<hr></hr>
+<h3 id="面试题-6：微前端如何处理子应用之间的路由冲突？">面试题 6：微前端如何处理子应用之间的路由冲突？</h3>
+<p><strong>参考答案</strong>：</p>
+<ol>
+<li><strong>路由前缀隔离</strong>：给每个子应用分配独立的路由前缀，如 <code>/app1/*</code>、<code>/app2/*</code></li>
+<li><strong>baseroute/basename 传递</strong>：主应用将路由前缀通过 props 传递给子应用，子应用在自己的 router 中使用此 basename</li>
+<li><strong>路由监听协调</strong>：主应用统一拦截 <code>pushState</code>/<code>replaceState</code>/<code>popstate</code>，根据路由规则决定激活哪个子应用</li>
+<li><strong>History 与 Hash 统一</strong>：建议所有子应用统一使用 History 模式或 Hash 模式，避免混用导致冲突</li>
+</ol>
+<hr></hr>
+<h3 id="面试题-7：qiankun-子应用的生命周期及执行顺序是什么？">面试题 7：qiankun 子应用的生命周期及执行顺序是什么？</h3>
+<p><strong>参考答案</strong>：</p>
+<pre><code>首次加载：bootstrap → mount
+路由切出：unmount
+再次进入：mount（不会再执行 bootstrap）
+应用更新：update（loadMicroApp 模式）
+</code></pre><ul>
+<li><code>bootstrap</code>：仅在首次加载时调用一次，做初始化</li>
+<li><code>mount</code>：每次子应用被激活时调用，渲染 DOM</li>
+<li><code>unmount</code>：每次子应用离开时调用，清理 DOM、解绑事件</li>
+<li><code>update</code>：<code>loadMicroApp</code> 模式下 props 更新时调用</li>
+</ul>
+<hr></hr>
+<h3 id="面试题-8：微前端中如何实现子应用预加载？">面试题 8：微前端中如何实现子应用预加载？</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// qiankun 预加载策略</span>
+<span class="hljs-keyword">import</span> { prefetchApps } <span class="hljs-keyword">from</span> <span class="hljs-string">'qiankun'</span>;
+
+<span class="hljs-comment">// 方式一：手动预加载</span>
+prefetchApps([
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">'app1'</span>, <span class="hljs-attr">entry</span>: <span class="hljs-string">'//localhost:8081'</span> },
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">'app2'</span>, <span class="hljs-attr">entry</span>: <span class="hljs-string">'//localhost:8082'</span> },
+]);
+
+<span class="hljs-comment">// 方式二：注册时配置预加载</span>
+start({
+  <span class="hljs-attr">prefetch</span>: <span class="hljs-string">'all'</span>,           <span class="hljs-comment">// 'all' | 'popstate' | string[] | function</span>
+  <span class="hljs-comment">// prefetch: ['app1'],     // 只预加载指定应用</span>
+  <span class="hljs-comment">// prefetch: (apps) =&gt; {   // 自定义策略</span>
+  <span class="hljs-comment">//   return { criticalApps: [apps[0]], minorApps: apps.slice(1) };</span>
+  <span class="hljs-comment">// },</span>
+});
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 手写预加载核心逻辑</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">prefetchApp</span>(<span class="hljs-params">entry</span>) </span>{
+  <span class="hljs-comment">// 利用 requestIdleCallback 在浏览器空闲时加载</span>
+  <span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.requestIdleCallback) {
+    requestIdleCallback(<span class="hljs-keyword">async</span> () =&gt; {
+      <span class="hljs-comment">// 1. 预加载 HTML</span>
+      <span class="hljs-keyword">const</span> html = <span class="hljs-keyword">await</span> fetch(entry).then(<span class="hljs-function"><span class="hljs-params">r</span> =&gt;</span> r.text());
+
+      <span class="hljs-comment">// 2. 解析并预加载 JS 和 CSS 资源</span>
+      <span class="hljs-keyword">const</span> parser = <span class="hljs-keyword">new</span> DOMParser();
+      <span class="hljs-keyword">const</span> doc = parser.parseFromString(html, <span class="hljs-string">'text/html'</span>);
+
+      <span class="hljs-comment">// 预加载 CSS</span>
+      doc.querySelectorAll(<span class="hljs-string">'link[rel="stylesheet"]'</span>).forEach(<span class="hljs-function"><span class="hljs-params">link</span> =&gt;</span> {
+        <span class="hljs-keyword">const</span> prefetchLink = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'link'</span>);
+        prefetchLink.rel = <span class="hljs-string">'prefetch'</span>;
+        prefetchLink.href = <span class="hljs-keyword">new</span> URL(link.getAttribute(<span class="hljs-string">'href'</span>), entry).href;
+        <span class="hljs-built_in">document</span>.head.appendChild(prefetchLink);
+      });
+
+      <span class="hljs-comment">// 预加载 JS</span>
+      doc.querySelectorAll(<span class="hljs-string">'script[src]'</span>).forEach(<span class="hljs-function"><span class="hljs-params">script</span> =&gt;</span> {
+        <span class="hljs-keyword">const</span> prefetchLink = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'link'</span>);
+        prefetchLink.rel = <span class="hljs-string">'prefetch'</span>;
+        prefetchLink.href = <span class="hljs-keyword">new</span> URL(script.getAttribute(<span class="hljs-string">'src'</span>), entry).href;
+        <span class="hljs-built_in">document</span>.head.appendChild(prefetchLink);
+      });
+    });
+  }
+}
+</code></pre>
+<hr></hr>
+<h3 id="面试题-9：微前端如何处理公共依赖？">面试题 9：微前端如何处理公共依赖？</h3>
+<p><strong>参考答案</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>方案</th>
+<th>实现方式</th>
+<th>优缺点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>externals + CDN</td>
+<td>子应用配置 externals，从 CDN 全局加载</td>
+<td>简单但灵活性差</td>
+</tr>
+<tr>
+<td>Module Federation shared</td>
+<td>构建配置 shared，运行时协商版本</td>
+<td>灵活，支持多版本</td>
+</tr>
+<tr>
+<td>主应用注入</td>
+<td>主应用加载公共库并挂到 window</td>
+<td>简单但强耦合</td>
+</tr>
+<tr>
+<td>Import Maps</td>
+<td>浏览器原生模块映射</td>
+<td>现代方案但兼容性有限</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h3 id="面试题-10：什么是沙箱逃逸？如何避免？">面试题 10：什么是沙箱逃逸？如何避免？</h3>
+<p><strong>参考答案</strong>：</p>
+<p>沙箱逃逸是指子应用绕过沙箱限制，直接修改了主应用的全局状态。常见的逃逸场景：</p>
+<ol>
+<li><strong>原型链污染</strong>：通过 <code>window.__proto__</code> 或 <code>Object.prototype</code> 修改全局原型</li>
+<li><strong>DOM 操作泄漏</strong>：<code>document.body.appendChild</code> 创建的元素脱离子应用容器</li>
+<li><strong>闭包引用</strong>：子应用在 unmount 后仍有定时器或事件监听持有引用</li>
+<li><strong>eval/new Function</strong>：动态代码执行可能逃逸沙箱作用域</li>
+</ol>
+<p><strong>防护措施</strong>：</p>
+<ul>
+<li>冻结关键原型对象（<code>Object.freeze(Object.prototype)</code> 需谨慎）</li>
+<li>拦截 DOM 操作，重写 <code>createElement</code>、<code>appendChild</code></li>
+<li>unmount 时自动清理定时器和事件监听</li>
+<li>使用 iframe 沙箱获得更强的隔离</li>
+</ul>
+<hr></hr>
+<h3 id="面试题-11：微前端中如何做灰度发布和版本管理？">面试题 11：微前端中如何做灰度发布和版本管理？</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 基于配置中心的灰度方案</span>
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getAppConfig</span>(<span class="hljs-params">appName, userId</span>) </span>{
+  <span class="hljs-keyword">const</span> config = <span class="hljs-keyword">await</span> fetch(<span class="hljs-string">'/api/micro-app-config'</span>, {
+    <span class="hljs-attr">headers</span>: { <span class="hljs-string">'X-User-Id'</span>: userId },
+  }).then(<span class="hljs-function"><span class="hljs-params">r</span> =&gt;</span> r.json());
+
+  <span class="hljs-comment">// 配置中心返回格式</span>
+  <span class="hljs-comment">// {</span>
+  <span class="hljs-comment">//   "app1": {</span>
+  <span class="hljs-comment">//     "stable": "https://cdn.com/app1/v1.2.0/",</span>
+  <span class="hljs-comment">//     "canary": "https://cdn.com/app1/v1.3.0-beta/",</span>
+  <span class="hljs-comment">//     "canaryRatio": 0.1,        // 10% 灰度</span>
+  <span class="hljs-comment">//     "canaryUsers": ["user001"]  // 白名单</span>
+  <span class="hljs-comment">//   }</span>
+  <span class="hljs-comment">// }</span>
+
+  <span class="hljs-keyword">const</span> appConfig = config[appName];
+  <span class="hljs-keyword">const</span> isCanaryUser =
+    appConfig.canaryUsers?.includes(userId) ||
+    hashToRatio(userId) &lt; appConfig.canaryRatio;
+
+  <span class="hljs-keyword">return</span> isCanaryUser ? appConfig.canary : appConfig.stable;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hashToRatio</span>(<span class="hljs-params">userId</span>) </span>{
+  <span class="hljs-keyword">let</span> hash = <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; userId.length; i++) {
+    hash = ((hash &lt;&lt; <span class="hljs-number">5</span>) - hash) + userId.charCodeAt(i);
+    hash |= <span class="hljs-number">0</span>;
+  }
+  <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.abs(hash % <span class="hljs-number">100</span>) / <span class="hljs-number">100</span>;
+}
+
+<span class="hljs-comment">// 动态注册子应用</span>
+<span class="hljs-keyword">const</span> entry = <span class="hljs-keyword">await</span> getAppConfig(<span class="hljs-string">'orderApp'</span>, currentUser.id);
+registerMicroApps([{
+  <span class="hljs-attr">name</span>: <span class="hljs-string">'orderApp'</span>,
+  entry,  <span class="hljs-comment">// 灰度版本 or 稳定版本</span>
+  container: <span class="hljs-string">'#container'</span>,
+  <span class="hljs-attr">activeRule</span>: <span class="hljs-string">'/orders'</span>,
+}]);
+</code></pre>
+<hr></hr>
+<h3 id="面试题-12：请比较-qiankun、micro-app、wujie-三种方案的隔离机制">面试题 12：请比较 qiankun、micro-app、wujie 三种方案的隔离机制</h3>
+<p><strong>参考答案</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>qiankun</th>
+<th>micro-app</th>
+<th>wujie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JS 隔离</td>
+<td>Proxy 代理 window</td>
+<td>iframe 沙箱（可选）</td>
+<td>iframe（天然隔离）</td>
+</tr>
+<tr>
+<td>CSS 隔离</td>
+<td>Shadow DOM / Scoped</td>
+<td>Shadow DOM</td>
+<td>Shadow DOM</td>
+</tr>
+<tr>
+<td>隔离强度</td>
+<td>中（有逃逸风险）</td>
+<td>中-强</td>
+<td>强（iframe 天然隔离）</td>
+</tr>
+<tr>
+<td>多实例</td>
+<td>ProxySandbox 支持</td>
+<td>支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>子应用改造</td>
+<td>需改造入口文件</td>
+<td>几乎零改造</td>
+<td>几乎零改造</td>
+</tr>
+<tr>
+<td>DOM 代理</td>
+<td>无</td>
+<td>无</td>
+<td>iframe document → Shadow DOM</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h3 id="面试题-13：module-federation-20-相比-10-有哪些改进？">面试题 13：Module Federation 2.0 相比 1.0 有哪些改进？</h3>
+<p><strong>参考答案</strong>：</p>
+<ol>
+<li><strong>运行时插件系统</strong>：可在模块加载的各阶段注入自定义逻辑（容错、重试、日志等）</li>
+<li><strong>Manifest 协议</strong>：用 <code>mf-manifest.json</code> 替代 <code>remoteEntry.js</code>，支持更丰富的元数据</li>
+<li><strong>类型提示</strong>：自动生成远程模块的 TypeScript 类型定义</li>
+<li><strong>Chrome DevTools</strong>：提供浏览器调试插件</li>
+<li><strong>框架无关</strong>：不再绑定 Webpack，支持 Rspack、Vite 等构建工具</li>
+<li><strong>动态路由</strong>：内置对远程路由的支持</li>
+</ol>
+<hr></hr>
+<h3 id="面试题-14：微前端项目中如何做性能优化？">面试题 14：微前端项目中如何做性能优化？</h3>
+<p><strong>参考答案</strong>：</p>
+<ol>
+<li><strong>资源预加载</strong>：利用 <code>requestIdleCallback</code> 或路由预测提前加载子应用资源</li>
+<li><strong>公共依赖共享</strong>：通过 MF shared 或 externals 避免重复加载 React、Vue 等</li>
+<li><strong>按需加载</strong>：子应用内部继续做路由懒加载和代码分割</li>
+<li><strong>缓存策略</strong>：合理设置子应用资源的 Cache-Control，使用 Content Hash</li>
+<li><strong>减少沙箱开销</strong>：评估是否真的需要 JS 沙箱，单实例场景可简化</li>
+<li><strong>HTML Entry 缓存</strong>：缓存解析后的模板和脚本列表</li>
+<li><strong>keep-alive</strong>：对频繁切换的子应用保持实例存活</li>
+<li><strong>SSR 支持</strong>：关键子应用使用服务端渲染减少白屏时间</li>
+</ol>
+<hr></hr>
+<h3 id="面试题-15：如何设计一个微前端的统一登录和鉴权方案？">面试题 15：如何设计一个微前端的统一登录和鉴权方案？</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 统一登录鉴权方案</span>
+<span class="hljs-comment">// 1. 主应用负责登录，将 token 存储在共享位置</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AuthManager</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.tokenKey = <span class="hljs-string">'__MICRO_AUTH_TOKEN__'</span>;
+    <span class="hljs-keyword">this</span>.userKey = <span class="hljs-string">'__MICRO_USER_INFO__'</span>;
+  }
+
+  <span class="hljs-comment">// 登录成功后存储</span>
+  setAuth(token, userInfo) {
+    <span class="hljs-comment">// 方案一：Cookie（推荐，子应用自动携带）</span>
+    <span class="hljs-built_in">document</span>.cookie = <span class="hljs-string">`token=<span class="hljs-subst">${token}</span>; path=/; SameSite=Lax; Secure`</span>;
+
+    <span class="hljs-comment">// 方案二：SharedStore</span>
+    <span class="hljs-built_in">window</span>.__SHARED_STORE__?.setState({ token, userInfo });
+
+    <span class="hljs-comment">// 方案三：localStorage（同域可共享）</span>
+    localStorage.setItem(<span class="hljs-keyword">this</span>.tokenKey, token);
+    localStorage.setItem(<span class="hljs-keyword">this</span>.userKey, <span class="hljs-built_in">JSON</span>.stringify(userInfo));
+  }
+
+  getToken() {
+    <span class="hljs-keyword">return</span> localStorage.getItem(<span class="hljs-keyword">this</span>.tokenKey);
+  }
+
+  getUserInfo() {
+    <span class="hljs-keyword">const</span> raw = localStorage.getItem(<span class="hljs-keyword">this</span>.userKey);
+    <span class="hljs-keyword">return</span> raw ? <span class="hljs-built_in">JSON</span>.parse(raw) : <span class="hljs-literal">null</span>;
+  }
+
+  <span class="hljs-comment">// 2. 注入 Axios 拦截器给子应用使用</span>
+  createAxiosInterceptor() {
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">request</span>: <span class="hljs-function">(<span class="hljs-params">config</span>) =&gt;</span> {
+        <span class="hljs-keyword">const</span> token = <span class="hljs-keyword">this</span>.getToken();
+        <span class="hljs-keyword">if</span> (token) {
+          config.headers.Authorization = <span class="hljs-string">`Bearer <span class="hljs-subst">${token}</span>`</span>;
+        }
+        <span class="hljs-keyword">return</span> config;
+      },
+      <span class="hljs-attr">responseError</span>: <span class="hljs-function">(<span class="hljs-params">error</span>) =&gt;</span> {
+        <span class="hljs-keyword">if</span> (error.response?.status === <span class="hljs-number">401</span>) {
+          <span class="hljs-comment">// token 过期，统一跳转到主应用的登录页</span>
+          <span class="hljs-built_in">window</span>.__MICRO_EVENT_BUS__?.emit(<span class="hljs-string">'auth:expired'</span>);
+          <span class="hljs-built_in">window</span>.location.href = <span class="hljs-string">'/login'</span>;
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">Promise</span>.reject(error);
+      },
+    };
+  }
+
+  <span class="hljs-comment">// 3. 权限校验</span>
+  hasPermission(permission) {
+    <span class="hljs-keyword">const</span> userInfo = <span class="hljs-keyword">this</span>.getUserInfo();
+    <span class="hljs-keyword">return</span> userInfo?.permissions?.includes(permission) ?? <span class="hljs-literal">false</span>;
+  }
+
+  <span class="hljs-comment">// 4. 路由守卫 - 子应用无权限时阻止加载</span>
+  checkAppPermission(appName) {
+    <span class="hljs-keyword">const</span> appPermissionMap = {
+      <span class="hljs-string">'admin-app'</span>: <span class="hljs-string">'system:admin'</span>,
+      <span class="hljs-string">'finance-app'</span>: <span class="hljs-string">'finance:read'</span>,
+      <span class="hljs-string">'hr-app'</span>: <span class="hljs-string">'hr:read'</span>,
+    };
+    <span class="hljs-keyword">const</span> requiredPermission = appPermissionMap[appName];
+    <span class="hljs-keyword">return</span> !requiredPermission || <span class="hljs-keyword">this</span>.hasPermission(requiredPermission);
+  }
+}
+
+<span class="hljs-comment">// 主应用中使用</span>
+<span class="hljs-keyword">const</span> authManager = <span class="hljs-keyword">new</span> AuthManager();
+
+<span class="hljs-comment">// qiankun 子应用注册时注入鉴权能力</span>
+registerMicroApps(
+  apps.filter(<span class="hljs-function"><span class="hljs-params">app</span> =&gt;</span> authManager.checkAppPermission(app.name)),
+  {
+    <span class="hljs-attr">beforeMount</span>: [
+      <span class="hljs-function">(<span class="hljs-params">app</span>) =&gt;</span> {
+        <span class="hljs-keyword">if</span> (!authManager.getToken()) {
+          <span class="hljs-built_in">window</span>.location.href = <span class="hljs-string">'/login'</span>;
+          <span class="hljs-keyword">return</span> <span class="hljs-built_in">Promise</span>.reject(<span class="hljs-string">'未登录'</span>);
+        }
+      },
+    ],
+  }
+);
+</code></pre>
+<hr></hr>
+<h3 id="面试题-16：手写一个简化版微前端框架的核心加载逻辑">面试题 16：手写一个简化版微前端框架的核心加载逻辑</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 简化版微前端框架核心</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MiniMicroFrontend</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.apps = [];
+    <span class="hljs-keyword">this</span>.currentApp = <span class="hljs-literal">null</span>;
+  }
+
+  <span class="hljs-comment">// 注册子应用</span>
+  registerApp(config) {
+    <span class="hljs-keyword">this</span>.apps.push({
+      ...config,
+      <span class="hljs-attr">status</span>: <span class="hljs-string">'NOT_LOADED'</span>,
+      <span class="hljs-attr">instance</span>: <span class="hljs-literal">null</span>,
+    });
+  }
+
+  <span class="hljs-comment">// 启动</span>
+  <span class="hljs-keyword">async</span> start() {
+    <span class="hljs-comment">// 监听路由变化</span>
+    <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'popstate'</span>, () =&gt; <span class="hljs-keyword">this</span>.reroute());
+    <span class="hljs-keyword">const</span> rawPush = history.pushState;
+    history.pushState = <span class="hljs-function">(<span class="hljs-params">...args</span>) =&gt;</span> {
+      rawPush.apply(history, args);
+      <span class="hljs-keyword">this</span>.reroute();
+    };
+    <span class="hljs-comment">// 初次路由匹配</span>
+    <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.reroute();
+  }
+
+  <span class="hljs-keyword">async</span> reroute() {
+    <span class="hljs-keyword">const</span> path = <span class="hljs-built_in">window</span>.location.pathname;
+
+    <span class="hljs-comment">// 找到需要激活的应用</span>
+    <span class="hljs-keyword">const</span> targetApp = <span class="hljs-keyword">this</span>.apps.find(<span class="hljs-function"><span class="hljs-params">app</span> =&gt;</span> {
+      <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> app.activeRule === <span class="hljs-string">'function'</span>) {
+        <span class="hljs-keyword">return</span> app.activeRule(path);
+      }
+      <span class="hljs-keyword">return</span> path.startsWith(app.activeRule);
+    });
+
+    <span class="hljs-comment">// 卸载当前应用</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.currentApp &amp;&amp; <span class="hljs-keyword">this</span>.currentApp !== targetApp) {
+      <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.unmountApp(<span class="hljs-keyword">this</span>.currentApp);
+    }
+
+    <span class="hljs-comment">// 加载并挂载新应用</span>
+    <span class="hljs-keyword">if</span> (targetApp) {
+      <span class="hljs-keyword">if</span> (targetApp.status === <span class="hljs-string">'NOT_LOADED'</span>) {
+        <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.loadApp(targetApp);
+      }
+      <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.mountApp(targetApp);
+    }
+  }
+
+  <span class="hljs-keyword">async</span> loadApp(app) {
+    <span class="hljs-comment">// 1. HTML Entry 加载</span>
+    <span class="hljs-keyword">const</span> html = <span class="hljs-keyword">await</span> fetch(app.entry).then(<span class="hljs-function"><span class="hljs-params">r</span> =&gt;</span> r.text());
+    <span class="hljs-keyword">const</span> parser = <span class="hljs-keyword">new</span> DOMParser();
+    <span class="hljs-keyword">const</span> doc = parser.parseFromString(html, <span class="hljs-string">'text/html'</span>);
+
+    <span class="hljs-comment">// 2. 创建沙箱</span>
+    app.sandbox = createProxySandbox(app.name);
+    app.sandbox.activate();
+
+    <span class="hljs-comment">// 3. 提取并执行脚本</span>
+    <span class="hljs-keyword">const</span> scripts = doc.querySelectorAll(<span class="hljs-string">'script[src]'</span>);
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> script <span class="hljs-keyword">of</span> scripts) {
+      <span class="hljs-keyword">const</span> src = <span class="hljs-keyword">new</span> URL(script.getAttribute(<span class="hljs-string">'src'</span>), app.entry).href;
+      <span class="hljs-keyword">const</span> code = <span class="hljs-keyword">await</span> fetch(src).then(<span class="hljs-function"><span class="hljs-params">r</span> =&gt;</span> r.text());
+      <span class="hljs-keyword">const</span> wrapped = <span class="hljs-string">`(function(window,self){<span class="hljs-subst">${code}</span>}).call(this,this,this)`</span>;
+      <span class="hljs-keyword">new</span> <span class="hljs-built_in">Function</span>(<span class="hljs-string">'window'</span>, <span class="hljs-string">'self'</span>, <span class="hljs-string">`with(window){<span class="hljs-subst">${code}</span>}`</span>).call(
+        app.sandbox.proxy,
+        app.sandbox.proxy,
+        app.sandbox.proxy
+      );
+    }
+
+    <span class="hljs-comment">// 4. 获取导出的生命周期</span>
+    app.instance = app.sandbox.proxy.__MICRO_APP_EXPORTS__;
+    app.status = <span class="hljs-string">'LOADED'</span>;
+
+    <span class="hljs-comment">// 5. bootstrap</span>
+    <span class="hljs-keyword">await</span> app.instance?.bootstrap?.();
+  }
+
+  <span class="hljs-keyword">async</span> mountApp(app) {
+    <span class="hljs-keyword">const</span> container = <span class="hljs-built_in">document</span>.querySelector(app.container);
+    <span class="hljs-keyword">await</span> app.instance?.mount?.({ container });
+    app.status = <span class="hljs-string">'MOUNTED'</span>;
+    <span class="hljs-keyword">this</span>.currentApp = app;
+  }
+
+  <span class="hljs-keyword">async</span> unmountApp(app) {
+    <span class="hljs-keyword">await</span> app.instance?.unmount?.();
+    <span class="hljs-keyword">const</span> container = <span class="hljs-built_in">document</span>.querySelector(app.container);
+    <span class="hljs-keyword">if</span> (container) container.innerHTML = <span class="hljs-string">''</span>;
+    app.status = <span class="hljs-string">'LOADED'</span>;
+    app.sandbox?.deactivate();
+    <span class="hljs-keyword">this</span>.currentApp = <span class="hljs-literal">null</span>;
+  }
+}
+
+<span class="hljs-comment">// 使用</span>
+<span class="hljs-keyword">const</span> microFE = <span class="hljs-keyword">new</span> MiniMicroFrontend();
+microFE.registerApp({
+  <span class="hljs-attr">name</span>: <span class="hljs-string">'app1'</span>,
+  <span class="hljs-attr">entry</span>: <span class="hljs-string">'http://localhost:8081'</span>,
+  <span class="hljs-attr">container</span>: <span class="hljs-string">'#micro-container'</span>,
+  <span class="hljs-attr">activeRule</span>: <span class="hljs-string">'/app1'</span>,
+});
+microFE.start();
+</code></pre>
+<hr></hr>
+<h3 id="面试题-17：微前端架构下如何做错误监控和异常处理？">面试题 17：微前端架构下如何做错误监控和异常处理？</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 全局错误监控方案</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MicroAppErrorMonitor</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.errorMap = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
+    <span class="hljs-keyword">this</span>.init();
+  }
+
+  init() {
+    <span class="hljs-comment">// 1. 捕获 JS 运行时错误</span>
+    <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'error'</span>, (event) =&gt; {
+      <span class="hljs-keyword">this</span>.report({
+        <span class="hljs-attr">type</span>: <span class="hljs-string">'runtime_error'</span>,
+        <span class="hljs-attr">appName</span>: <span class="hljs-keyword">this</span>.detectAppName(event.filename),
+        <span class="hljs-attr">message</span>: event.message,
+        <span class="hljs-attr">stack</span>: event.error?.stack,
+        <span class="hljs-attr">filename</span>: event.filename,
+        <span class="hljs-attr">lineno</span>: event.lineno,
+        <span class="hljs-attr">colno</span>: event.colno,
+      });
+    });
+
+    <span class="hljs-comment">// 2. 捕获 Promise 未处理异常</span>
+    <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'unhandledrejection'</span>, (event) =&gt; {
+      <span class="hljs-keyword">this</span>.report({
+        <span class="hljs-attr">type</span>: <span class="hljs-string">'unhandled_promise'</span>,
+        <span class="hljs-attr">appName</span>: <span class="hljs-keyword">this</span>.detectAppName(),
+        <span class="hljs-attr">message</span>: event.reason?.message || <span class="hljs-built_in">String</span>(event.reason),
+        <span class="hljs-attr">stack</span>: event.reason?.stack,
+      });
+    });
+
+    <span class="hljs-comment">// 3. 捕获资源加载失败</span>
+    <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'error'</span>, (event)=&gt; {
+      <span class="hljs-keyword">const</span> target = event.target;
+      <span class="hljs-keyword">if</span> (target <span class="hljs-keyword">instanceof</span> HTMLScriptElement || target <span class="hljs-keyword">instanceof</span> HTMLLinkElement) {
+        <span class="hljs-keyword">this</span>.report({
+          <span class="hljs-attr">type</span>: <span class="hljs-string">'resource_load_error'</span>,
+          <span class="hljs-attr">appName</span>: <span class="hljs-keyword">this</span>.detectAppName(target.src || target.href),
+          <span class="hljs-attr">resource</span>: target.src || target.href,
+          <span class="hljs-attr">tagName</span>: target.tagName,
+        });
+      }
+    }, <span class="hljs-literal">true</span>); <span class="hljs-comment">// 注意用捕获阶段</span>
+  }
+
+  detectAppName(url) {
+    <span class="hljs-comment">// 根据资源 URL 判断属于哪个子应用</span>
+    <span class="hljs-keyword">const</span> appMap = {
+      <span class="hljs-string">'localhost:8081'</span>: <span class="hljs-string">'app1'</span>,
+      <span class="hljs-string">'localhost:8082'</span>: <span class="hljs-string">'app2'</span>,
+      <span class="hljs-string">'cdn.example.com/app1'</span>: <span class="hljs-string">'app1'</span>,
+    };
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> [pattern, name] <span class="hljs-keyword">of</span> <span class="hljs-built_in">Object</span>.entries(appMap)) {
+      <span class="hljs-keyword">if</span> (url?.includes(pattern)) <span class="hljs-keyword">return</span> name;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'main-app'</span>;
+  }
+
+  report(errorInfo) {
+    <span class="hljs-built_in">console</span>.error(<span class="hljs-string">`[<span class="hljs-subst">${errorInfo.appName}</span>] <span class="hljs-subst">${errorInfo.type}</span>:`</span>, errorInfo);
+    <span class="hljs-comment">// 上报到监控平台</span>
+    navigator.sendBeacon(<span class="hljs-string">'/api/error-report'</span>, <span class="hljs-built_in">JSON</span>.stringify({
+      ...errorInfo,
+      <span class="hljs-attr">timestamp</span>: <span class="hljs-built_in">Date</span>.now(),
+      <span class="hljs-attr">url</span>: <span class="hljs-built_in">window</span>.location.href,
+      <span class="hljs-attr">userAgent</span>: navigator.userAgent,
+    }));
+  }
+}
+</code></pre>
+<hr></hr>
+<h3 id="面试题-18：微前端选型决策的核心考量因素有哪些？">面试题 18：微前端选型决策的核心考量因素有哪些？</h3>
+<p><strong>参考答案</strong>：</p>
+<ol>
+<li><strong>团队规模与分工</strong>：多团队独立交付选微前端，单团队选 Monorepo</li>
+<li><strong>技术栈一致性</strong>：技术栈统一时 MF 更轻量，多技术栈需要 qiankun/wujie 等完整方案</li>
+<li><strong>隔离需求强度</strong>：需要强隔离选 wujie（iframe），中等隔离选 qiankun</li>
+<li><strong>子应用改造成本</strong>：零改造需求选 micro-app/wujie，可接受适度改造选 qiankun/garfish</li>
+<li><strong>构建工具链</strong>：Webpack 项目首选 MF，Vite 项目优先考虑 micro-app/wujie</li>
+<li><strong>性能要求</strong>：高性能要求关注预加载、共享依赖、keep-alive 能力</li>
+<li><strong>社区生态与维护</strong>：qiankun 社区最大，MF 有 Webpack 官方支持</li>
+<li><strong>子应用粒度</strong>：页面级选传统微前端，组件级/函数级选 MF</li>
+</ol>
+<hr></hr>
+<h2 id="总结：微前端技术选型速查">总结：微前端技术选型速查</h2>
+<pre><code>场景分析决策树:
+
+是否需要技术栈无关？
+├─ 是 → 需要完整微前端方案
+│  ├─ 隔离要求强？ → wujie（iframe 沙箱）
+│  ├─ 子应用零改造？ → micro-app（Web Components）
+│  ├─ 生态成熟度要求高？ → qiankun（社区最大）
+│  └─ 字节技术栈？ → garfish（插件化架构）
+│
+└─ 否（技术栈统一）
+   ├─ 需要组件/函数级复用？ → Module Federation
+   ├─ 团队规模小？ → Monorepo（Turborepo/Nx）
+   └─ 简单集成需求？ → iframe（最简方案）
+</code></pre><blockquote>
+<p><strong>核心记忆点</strong>：微前端不是银弹。在技术栈统一、团队规模不大的场景下，Monorepo + 组件库可能是更好的选择。微前端的价值在于解决<strong>组织层面</strong>的协作问题，而非纯粹的技术问题。</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="security.html" class="navigation navigation-prev " aria-label="Previous page: 前端安全">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="mobile-dev.html" class="navigation navigation-next " aria-label="Next page: 移动端H5开发">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"微前端与微模块","level":"2.11","depth":1,"next":{"title":"移动端H5开发","level":"2.12","depth":1,"path":"frontend/mobile-dev.md","ref":"frontend/mobile-dev.md","articles":[]},"previous":{"title":"前端安全","level":"2.10","depth":1,"path":"frontend/security.md","ref":"frontend/security.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"frontend/micro-frontend.md","mtime":"2026-03-31T12:30:30.408Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

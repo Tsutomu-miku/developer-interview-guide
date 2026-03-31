@@ -3,10 +3,11 @@
 <html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>回溯与贪心 · 全栈开发面试指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="generator" content="GitBook 6.1.7">
         
         
         
@@ -16,19 +17,23 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -60,6 +65,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="system-design.html" />
+    
     
     <link rel="prev" href="sorting-searching.html" />
     
@@ -67,10 +74,14 @@
     </head>
     <body>
         
-<div class="book honkit-cloak">
+<div class="book">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -267,6 +278,66 @@
             
         </li>
     
+        <li class="chapter " data-level="2.11" data-path="../frontend/micro-frontend.html">
+            
+                <a href="../frontend/micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../frontend/mobile-dev.html">
+            
+                <a href="../frontend/mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../frontend/state-management.html">
+            
+                <a href="../frontend/state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../frontend/design-patterns.html">
+            
+                <a href="../frontend/design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -357,6 +428,21 @@
                         <b>3.6.</b>
                     
                     最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../nodejs/serverless.html">
+            
+                <a href="../nodejs/serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
             
                 </a>
             
@@ -461,6 +547,21 @@
             
         </li>
     
+        <li class="chapter " data-level="4.7" data-path="../golang/cloud-native.html">
+            
+                <a href="../golang/cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -551,6 +652,21 @@
                         <b>5.6.</b>
                     
                     实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../agent/evaluation.html">
+            
+                <a href="../agent/evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
             
                 </a>
             
@@ -655,14 +771,29 @@
             
         </li>
     
+        <li class="chapter " data-level="6.7" data-path="system-design.html">
+            
+                <a href="system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
     <li class="divider"></li>
 
     <li>
-        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
-            本书使用 HonKit 发布
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -695,6 +826,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="回溯与贪心算法">回溯与贪心算法</h1>
@@ -717,36 +851,36 @@
 <p>给定一个不含重复数字的数组 <code>nums</code>，返回其所有可能的全排列。</p>
 <h3 id="思路分析">思路分析</h3>
 <p>经典回溯：维护一个 <code>used</code> 数组标记哪些数字已被使用。每一层递归遍历所有未使用的数字加入路径，路径长度等于 <code>nums.length</code> 时收集结果。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">permute</span>(<span class="hljs-params">nums</span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">permute</span>(<span class="hljs-params">nums</span>) </span>{
   <span class="hljs-keyword">const</span> res = [];
-  <span class="hljs-keyword">const</span> used = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Array</span>(nums.<span class="hljs-property">length</span>).<span class="hljs-title function_">fill</span>(<span class="hljs-literal">false</span>);
+  <span class="hljs-keyword">const</span> used = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(nums.length).fill(<span class="hljs-literal">false</span>);
 
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">backtrack</span>(<span class="hljs-params">path</span>) {
-    <span class="hljs-keyword">if</span> (path.<span class="hljs-property">length</span> === nums.<span class="hljs-property">length</span>) {
-      res.<span class="hljs-title function_">push</span>([...path]);
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">backtrack</span>(<span class="hljs-params">path</span>) </span>{
+    <span class="hljs-keyword">if</span> (path.length === nums.length) {
+      res.push([...path]);
       <span class="hljs-keyword">return</span>;
     }
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; nums.<span class="hljs-property">length</span>; i++) {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; nums.length; i++) {
       <span class="hljs-keyword">if</span> (used[i]) <span class="hljs-keyword">continue</span>;
       used[i] = <span class="hljs-literal">true</span>;
-      path.<span class="hljs-title function_">push</span>(nums[i]);
-      <span class="hljs-title function_">backtrack</span>(path);
-      path.<span class="hljs-title function_">pop</span>();
+      path.push(nums[i]);
+      backtrack(path);
+      path.pop();
       used[i] = <span class="hljs-literal">false</span>;
     }
   }
 
-  <span class="hljs-title function_">backtrack</span>([]);
+  backtrack([]);
   <span class="hljs-keyword">return</span> res;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">permute</span><span class="hljs-params">(nums []<span class="hljs-type">int</span>)</span></span> [][]<span class="hljs-type">int</span> {
-    res := [][]<span class="hljs-type">int</span>{}
-    used := <span class="hljs-built_in">make</span>([]<span class="hljs-type">bool</span>, <span class="hljs-built_in">len</span>(nums))
-    <span class="hljs-keyword">var</span> backtrack <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(path []<span class="hljs-type">int</span>)</span></span>
-    backtrack = <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(path []<span class="hljs-type">int</span>)</span></span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">permute</span><span class="hljs-params">(nums []<span class="hljs-keyword">int</span>)</span> [][]<span class="hljs-title">int</span></span> {
+    res := [][]<span class="hljs-keyword">int</span>{}
+    used := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">bool</span>, <span class="hljs-built_in">len</span>(nums))
+    <span class="hljs-keyword">var</span> backtrack <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(path []<span class="hljs-keyword">int</span>)</span>
+    <span class="hljs-title">backtrack</span> = <span class="hljs-title">func</span><span class="hljs-params">(path []<span class="hljs-keyword">int</span>)</span></span> {
         <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(path) == <span class="hljs-built_in">len</span>(nums) {
-            tmp := <span class="hljs-built_in">make</span>([]<span class="hljs-type">int</span>, <span class="hljs-built_in">len</span>(path))
+            tmp := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int</span>, <span class="hljs-built_in">len</span>(path))
             <span class="hljs-built_in">copy</span>(tmp, path)
             res = <span class="hljs-built_in">append</span>(res, tmp)
             <span class="hljs-keyword">return</span>
@@ -762,7 +896,7 @@
             used[i] = <span class="hljs-literal">false</span>
         }
     }
-    backtrack([]<span class="hljs-type">int</span>{})
+    backtrack([]<span class="hljs-keyword">int</span>{})
     <span class="hljs-keyword">return</span> res
 }
 </code></pre>
@@ -772,39 +906,39 @@
 <p>给定一个<strong>可包含重复数字</strong>的序列 <code>nums</code>，返回所有不重复的全排列。</p>
 <h3 id="思路分析">思路分析</h3>
 <p>在全排列 I 的基础上增加去重：先排序，然后在同一层递归中，如果当前数字与前一个相同且前一个未被使用（即刚被撤销），则跳过，避免产生重复排列。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">permuteUnique</span>(<span class="hljs-params">nums</span>) {
-  nums.<span class="hljs-title function_">sort</span>(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a - b);
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">permuteUnique</span>(<span class="hljs-params">nums</span>) </span>{
+  nums.sort(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a - b);
   <span class="hljs-keyword">const</span> res = [];
-  <span class="hljs-keyword">const</span> used = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Array</span>(nums.<span class="hljs-property">length</span>).<span class="hljs-title function_">fill</span>(<span class="hljs-literal">false</span>);
+  <span class="hljs-keyword">const</span> used = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(nums.length).fill(<span class="hljs-literal">false</span>);
 
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">backtrack</span>(<span class="hljs-params">path</span>) {
-    <span class="hljs-keyword">if</span> (path.<span class="hljs-property">length</span> === nums.<span class="hljs-property">length</span>) {
-      res.<span class="hljs-title function_">push</span>([...path]);
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">backtrack</span>(<span class="hljs-params">path</span>) </span>{
+    <span class="hljs-keyword">if</span> (path.length === nums.length) {
+      res.push([...path]);
       <span class="hljs-keyword">return</span>;
     }
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; nums.<span class="hljs-property">length</span>; i++) {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; nums.length; i++) {
       <span class="hljs-keyword">if</span> (used[i]) <span class="hljs-keyword">continue</span>;
       <span class="hljs-keyword">if</span> (i &gt; <span class="hljs-number">0</span> &amp;&amp; nums[i] === nums[i - <span class="hljs-number">1</span>] &amp;&amp; !used[i - <span class="hljs-number">1</span>]) <span class="hljs-keyword">continue</span>;
       used[i] = <span class="hljs-literal">true</span>;
-      path.<span class="hljs-title function_">push</span>(nums[i]);
-      <span class="hljs-title function_">backtrack</span>(path);
-      path.<span class="hljs-title function_">pop</span>();
+      path.push(nums[i]);
+      backtrack(path);
+      path.pop();
       used[i] = <span class="hljs-literal">false</span>;
     }
   }
 
-  <span class="hljs-title function_">backtrack</span>([]);
+  backtrack([]);
   <span class="hljs-keyword">return</span> res;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">permuteUnique</span><span class="hljs-params">(nums []<span class="hljs-type">int</span>)</span></span> [][]<span class="hljs-type">int</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">permuteUnique</span><span class="hljs-params">(nums []<span class="hljs-keyword">int</span>)</span> [][]<span class="hljs-title">int</span></span> {
     sort.Ints(nums)
-    res := [][]<span class="hljs-type">int</span>{}
-    used := <span class="hljs-built_in">make</span>([]<span class="hljs-type">bool</span>, <span class="hljs-built_in">len</span>(nums))
-    <span class="hljs-keyword">var</span> backtrack <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(path []<span class="hljs-type">int</span>)</span></span>
-    backtrack = <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(path []<span class="hljs-type">int</span>)</span></span> {
+    res := [][]<span class="hljs-keyword">int</span>{}
+    used := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">bool</span>, <span class="hljs-built_in">len</span>(nums))
+    <span class="hljs-keyword">var</span> backtrack <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(path []<span class="hljs-keyword">int</span>)</span>
+    <span class="hljs-title">backtrack</span> = <span class="hljs-title">func</span><span class="hljs-params">(path []<span class="hljs-keyword">int</span>)</span></span> {
         <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(path) == <span class="hljs-built_in">len</span>(nums) {
-            tmp := <span class="hljs-built_in">make</span>([]<span class="hljs-type">int</span>, <span class="hljs-built_in">len</span>(path))
+            tmp := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int</span>, <span class="hljs-built_in">len</span>(path))
             <span class="hljs-built_in">copy</span>(tmp, path)
             res = <span class="hljs-built_in">append</span>(res, tmp)
             <span class="hljs-keyword">return</span>
@@ -823,7 +957,7 @@
             used[i] = <span class="hljs-literal">false</span>
         }
     }
-    backtrack([]<span class="hljs-type">int</span>{})
+    backtrack([]<span class="hljs-keyword">int</span>{})
     <span class="hljs-keyword">return</span> res
 }
 </code></pre>
@@ -833,34 +967,34 @@
 <p>给定一个无重复元素的正整数数组 <code>candidates</code> 和一个目标数 <code>target</code>，找出所有可以使数字和为 <code>target</code> 的组合。每个数字可以被<strong>无限制重复选取</strong>。</p>
 <h3 id="思路分析">思路分析</h3>
 <p>回溯 + 剪枝。为避免重复组合，每次从当前索引 <code>start</code> 开始选择（而非从 0 开始）。当剩余 <code>target &lt; 0</code> 时剪枝。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">combinationSum</span>(<span class="hljs-params">candidates, target</span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">combinationSum</span>(<span class="hljs-params">candidates, target</span>) </span>{
   <span class="hljs-keyword">const</span> res = [];
-  candidates.<span class="hljs-title function_">sort</span>(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a - b);
+  candidates.sort(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a - b);
 
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">backtrack</span>(<span class="hljs-params">start, path, remain</span>) {
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">backtrack</span>(<span class="hljs-params">start, path, remain</span>) </span>{
     <span class="hljs-keyword">if</span> (remain === <span class="hljs-number">0</span>) {
-      res.<span class="hljs-title function_">push</span>([...path]);
+      res.push([...path]);
       <span class="hljs-keyword">return</span>;
     }
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = start; i &lt; candidates.<span class="hljs-property">length</span>; i++) {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = start; i &lt; candidates.length; i++) {
       <span class="hljs-keyword">if</span> (candidates[i] &gt; remain) <span class="hljs-keyword">break</span>; <span class="hljs-comment">// 剪枝</span>
-      path.<span class="hljs-title function_">push</span>(candidates[i]);
-      <span class="hljs-title function_">backtrack</span>(i, path, remain - candidates[i]); <span class="hljs-comment">// 可重复选，所以传 i</span>
-      path.<span class="hljs-title function_">pop</span>();
+      path.push(candidates[i]);
+      backtrack(i, path, remain - candidates[i]); <span class="hljs-comment">// 可重复选，所以传 i</span>
+      path.pop();
     }
   }
 
-  <span class="hljs-title function_">backtrack</span>(<span class="hljs-number">0</span>, [], target);
+  backtrack(<span class="hljs-number">0</span>, [], target);
   <span class="hljs-keyword">return</span> res;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">combinationSum</span><span class="hljs-params">(candidates []<span class="hljs-type">int</span>, target <span class="hljs-type">int</span>)</span></span> [][]<span class="hljs-type">int</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">combinationSum</span><span class="hljs-params">(candidates []<span class="hljs-keyword">int</span>, target <span class="hljs-keyword">int</span>)</span> [][]<span class="hljs-title">int</span></span> {
     sort.Ints(candidates)
-    res := [][]<span class="hljs-type">int</span>{}
-    <span class="hljs-keyword">var</span> backtrack <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(start <span class="hljs-type">int</span>, path []<span class="hljs-type">int</span>, remain <span class="hljs-type">int</span>)</span></span>
-    backtrack = <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(start <span class="hljs-type">int</span>, path []<span class="hljs-type">int</span>, remain <span class="hljs-type">int</span>)</span></span> {
+    res := [][]<span class="hljs-keyword">int</span>{}
+    <span class="hljs-keyword">var</span> backtrack <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(start <span class="hljs-keyword">int</span>, path []<span class="hljs-keyword">int</span>, remain <span class="hljs-keyword">int</span>)</span>
+    <span class="hljs-title">backtrack</span> = <span class="hljs-title">func</span><span class="hljs-params">(start <span class="hljs-keyword">int</span>, path []<span class="hljs-keyword">int</span>, remain <span class="hljs-keyword">int</span>)</span></span> {
         <span class="hljs-keyword">if</span> remain == <span class="hljs-number">0</span> {
-            tmp := <span class="hljs-built_in">make</span>([]<span class="hljs-type">int</span>, <span class="hljs-built_in">len</span>(path))
+            tmp := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int</span>, <span class="hljs-built_in">len</span>(path))
             <span class="hljs-built_in">copy</span>(tmp, path)
             res = <span class="hljs-built_in">append</span>(res, tmp)
             <span class="hljs-keyword">return</span>
@@ -874,7 +1008,7 @@
             path = path[:<span class="hljs-built_in">len</span>(path)<span class="hljs-number">-1</span>]
         }
     }
-    backtrack(<span class="hljs-number">0</span>, []<span class="hljs-type">int</span>{}, target)
+    backtrack(<span class="hljs-number">0</span>, []<span class="hljs-keyword">int</span>{}, target)
     <span class="hljs-keyword">return</span> res
 }
 </code></pre>
@@ -884,35 +1018,35 @@
 <p><code>candidates</code> 中每个数字只能使用<strong>一次</strong>，且 <code>candidates</code> 中可能包含重复数字。找出所有和为 <code>target</code> 的不重复组合。</p>
 <h3 id="思路分析">思路分析</h3>
 <p>排序后回溯。与 I 的区别：递归时传 <code>i + 1</code>（每个元素只用一次），同一层中跳过重复元素（<code>i &gt; start &amp;&amp; candidates[i] === candidates[i-1]</code>）。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">combinationSum2</span>(<span class="hljs-params">candidates, target</span>) {
-  candidates.<span class="hljs-title function_">sort</span>(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a - b);
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">combinationSum2</span>(<span class="hljs-params">candidates, target</span>) </span>{
+  candidates.sort(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a - b);
   <span class="hljs-keyword">const</span> res = [];
 
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">backtrack</span>(<span class="hljs-params">start, path, remain</span>) {
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">backtrack</span>(<span class="hljs-params">start, path, remain</span>) </span>{
     <span class="hljs-keyword">if</span> (remain === <span class="hljs-number">0</span>) {
-      res.<span class="hljs-title function_">push</span>([...path]);
+      res.push([...path]);
       <span class="hljs-keyword">return</span>;
     }
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = start; i &lt; candidates.<span class="hljs-property">length</span>; i++) {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = start; i &lt; candidates.length; i++) {
       <span class="hljs-keyword">if</span> (candidates[i] &gt; remain) <span class="hljs-keyword">break</span>;
       <span class="hljs-keyword">if</span> (i &gt; start &amp;&amp; candidates[i] === candidates[i - <span class="hljs-number">1</span>]) <span class="hljs-keyword">continue</span>; <span class="hljs-comment">// 同层去重</span>
-      path.<span class="hljs-title function_">push</span>(candidates[i]);
-      <span class="hljs-title function_">backtrack</span>(i + <span class="hljs-number">1</span>, path, remain - candidates[i]);
-      path.<span class="hljs-title function_">pop</span>();
+      path.push(candidates[i]);
+      backtrack(i + <span class="hljs-number">1</span>, path, remain - candidates[i]);
+      path.pop();
     }
   }
 
-  <span class="hljs-title function_">backtrack</span>(<span class="hljs-number">0</span>, [], target);
+  backtrack(<span class="hljs-number">0</span>, [], target);
   <span class="hljs-keyword">return</span> res;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">combinationSum2</span><span class="hljs-params">(candidates []<span class="hljs-type">int</span>, target <span class="hljs-type">int</span>)</span></span> [][]<span class="hljs-type">int</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">combinationSum2</span><span class="hljs-params">(candidates []<span class="hljs-keyword">int</span>, target <span class="hljs-keyword">int</span>)</span> [][]<span class="hljs-title">int</span></span> {
     sort.Ints(candidates)
-    res := [][]<span class="hljs-type">int</span>{}
-    <span class="hljs-keyword">var</span> backtrack <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(start <span class="hljs-type">int</span>, path []<span class="hljs-type">int</span>, remain <span class="hljs-type">int</span>)</span></span>
-    backtrack = <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(start <span class="hljs-type">int</span>, path []<span class="hljs-type">int</span>, remain <span class="hljs-type">int</span>)</span></span> {
+    res := [][]<span class="hljs-keyword">int</span>{}
+    <span class="hljs-keyword">var</span> backtrack <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(start <span class="hljs-keyword">int</span>, path []<span class="hljs-keyword">int</span>, remain <span class="hljs-keyword">int</span>)</span>
+    <span class="hljs-title">backtrack</span> = <span class="hljs-title">func</span><span class="hljs-params">(start <span class="hljs-keyword">int</span>, path []<span class="hljs-keyword">int</span>, remain <span class="hljs-keyword">int</span>)</span></span> {
         <span class="hljs-keyword">if</span> remain == <span class="hljs-number">0</span> {
-            tmp := <span class="hljs-built_in">make</span>([]<span class="hljs-type">int</span>, <span class="hljs-built_in">len</span>(path))
+            tmp := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int</span>, <span class="hljs-built_in">len</span>(path))
             <span class="hljs-built_in">copy</span>(tmp, path)
             res = <span class="hljs-built_in">append</span>(res, tmp)
             <span class="hljs-keyword">return</span>
@@ -929,7 +1063,7 @@
             path = path[:<span class="hljs-built_in">len</span>(path)<span class="hljs-number">-1</span>]
         }
     }
-    backtrack(<span class="hljs-number">0</span>, []<span class="hljs-type">int</span>{}, target)
+    backtrack(<span class="hljs-number">0</span>, []<span class="hljs-keyword">int</span>{}, target)
     <span class="hljs-keyword">return</span> res
 }
 </code></pre>
@@ -939,33 +1073,33 @@
 <p>找出所有相加之和为 <code>n</code> 的 <code>k</code> 个数的组合，组合中只使用数字 1 到 9，每个数字最多使用一次。</p>
 <h3 id="思路分析">思路分析</h3>
 <p>从 1-9 中选 k 个不重复的数使得和为 n。回溯搜索，当 <code>path.length === k</code> 且 <code>remain === 0</code> 时收集结果。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">combinationSum3</span>(<span class="hljs-params">k, n</span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">combinationSum3</span>(<span class="hljs-params">k, n</span>) </span>{
   <span class="hljs-keyword">const</span> res = [];
 
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">backtrack</span>(<span class="hljs-params">start, path, remain</span>) {
-    <span class="hljs-keyword">if</span> (path.<span class="hljs-property">length</span> === k) {
-      <span class="hljs-keyword">if</span> (remain === <span class="hljs-number">0</span>) res.<span class="hljs-title function_">push</span>([...path]);
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">backtrack</span>(<span class="hljs-params">start, path, remain</span>) </span>{
+    <span class="hljs-keyword">if</span> (path.length === k) {
+      <span class="hljs-keyword">if</span> (remain === <span class="hljs-number">0</span>) res.push([...path]);
       <span class="hljs-keyword">return</span>;
     }
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = start; i &lt;= <span class="hljs-number">9</span>; i++) {
       <span class="hljs-keyword">if</span> (i &gt; remain) <span class="hljs-keyword">break</span>;
-      path.<span class="hljs-title function_">push</span>(i);
-      <span class="hljs-title function_">backtrack</span>(i + <span class="hljs-number">1</span>, path, remain - i);
-      path.<span class="hljs-title function_">pop</span>();
+      path.push(i);
+      backtrack(i + <span class="hljs-number">1</span>, path, remain - i);
+      path.pop();
     }
   }
 
-  <span class="hljs-title function_">backtrack</span>(<span class="hljs-number">1</span>, [], n);
+  backtrack(<span class="hljs-number">1</span>, [], n);
   <span class="hljs-keyword">return</span> res;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">combinationSum3</span><span class="hljs-params">(k <span class="hljs-type">int</span>, n <span class="hljs-type">int</span>)</span></span> [][]<span class="hljs-type">int</span> {
-    res := [][]<span class="hljs-type">int</span>{}
-    <span class="hljs-keyword">var</span> backtrack <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(start <span class="hljs-type">int</span>, path []<span class="hljs-type">int</span>, remain <span class="hljs-type">int</span>)</span></span>
-    backtrack = <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(start <span class="hljs-type">int</span>, path []<span class="hljs-type">int</span>, remain <span class="hljs-type">int</span>)</span></span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">combinationSum3</span><span class="hljs-params">(k <span class="hljs-keyword">int</span>, n <span class="hljs-keyword">int</span>)</span> [][]<span class="hljs-title">int</span></span> {
+    res := [][]<span class="hljs-keyword">int</span>{}
+    <span class="hljs-keyword">var</span> backtrack <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(start <span class="hljs-keyword">int</span>, path []<span class="hljs-keyword">int</span>, remain <span class="hljs-keyword">int</span>)</span>
+    <span class="hljs-title">backtrack</span> = <span class="hljs-title">func</span><span class="hljs-params">(start <span class="hljs-keyword">int</span>, path []<span class="hljs-keyword">int</span>, remain <span class="hljs-keyword">int</span>)</span></span> {
         <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(path) == k {
             <span class="hljs-keyword">if</span> remain == <span class="hljs-number">0</span> {
-                tmp := <span class="hljs-built_in">make</span>([]<span class="hljs-type">int</span>, <span class="hljs-built_in">len</span>(path))
+                tmp := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int</span>, <span class="hljs-built_in">len</span>(path))
                 <span class="hljs-built_in">copy</span>(tmp, path)
                 res = <span class="hljs-built_in">append</span>(res, tmp)
             }
@@ -980,7 +1114,7 @@
             path = path[:<span class="hljs-built_in">len</span>(path)<span class="hljs-number">-1</span>]
         }
     }
-    backtrack(<span class="hljs-number">1</span>, []<span class="hljs-type">int</span>{}, n)
+    backtrack(<span class="hljs-number">1</span>, []<span class="hljs-keyword">int</span>{}, n)
     <span class="hljs-keyword">return</span> res
 }
 </code></pre>
@@ -990,27 +1124,27 @@
 <p>给定一组不含重复元素的整数数组 <code>nums</code>，返回其所有可能的子集（幂集）。</p>
 <h3 id="思路分析">思路分析</h3>
 <p>回溯：对每个元素有"选"和"不选"两种选择。或者每一层从 <code>start</code> 开始遍历，每加入一个元素就收集一次结果。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">subsets</span>(<span class="hljs-params">nums</span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">subsets</span>(<span class="hljs-params">nums</span>) </span>{
   <span class="hljs-keyword">const</span> res = [];
 
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">backtrack</span>(<span class="hljs-params">start, path</span>) {
-    res.<span class="hljs-title function_">push</span>([...path]);
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = start; i &lt; nums.<span class="hljs-property">length</span>; i++) {
-      path.<span class="hljs-title function_">push</span>(nums[i]);
-      <span class="hljs-title function_">backtrack</span>(i + <span class="hljs-number">1</span>, path);
-      path.<span class="hljs-title function_">pop</span>();
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">backtrack</span>(<span class="hljs-params">start, path</span>) </span>{
+    res.push([...path]);
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = start; i &lt; nums.length; i++) {
+      path.push(nums[i]);
+      backtrack(i + <span class="hljs-number">1</span>, path);
+      path.pop();
     }
   }
 
-  <span class="hljs-title function_">backtrack</span>(<span class="hljs-number">0</span>, []);
+  backtrack(<span class="hljs-number">0</span>, []);
   <span class="hljs-keyword">return</span> res;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">subsets</span><span class="hljs-params">(nums []<span class="hljs-type">int</span>)</span></span> [][]<span class="hljs-type">int</span> {
-    res := [][]<span class="hljs-type">int</span>{}
-    <span class="hljs-keyword">var</span> backtrack <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(start <span class="hljs-type">int</span>, path []<span class="hljs-type">int</span>)</span></span>
-    backtrack = <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(start <span class="hljs-type">int</span>, path []<span class="hljs-type">int</span>)</span></span> {
-        tmp := <span class="hljs-built_in">make</span>([]<span class="hljs-type">int</span>, <span class="hljs-built_in">len</span>(path))
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">subsets</span><span class="hljs-params">(nums []<span class="hljs-keyword">int</span>)</span> [][]<span class="hljs-title">int</span></span> {
+    res := [][]<span class="hljs-keyword">int</span>{}
+    <span class="hljs-keyword">var</span> backtrack <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(start <span class="hljs-keyword">int</span>, path []<span class="hljs-keyword">int</span>)</span>
+    <span class="hljs-title">backtrack</span> = <span class="hljs-title">func</span><span class="hljs-params">(start <span class="hljs-keyword">int</span>, path []<span class="hljs-keyword">int</span>)</span></span> {
+        tmp := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int</span>, <span class="hljs-built_in">len</span>(path))
         <span class="hljs-built_in">copy</span>(tmp, path)
         res = <span class="hljs-built_in">append</span>(res, tmp)
         <span class="hljs-keyword">for</span> i := start; i &lt; <span class="hljs-built_in">len</span>(nums); i++ {
@@ -1019,7 +1153,7 @@
             path = path[:<span class="hljs-built_in">len</span>(path)<span class="hljs-number">-1</span>]
         }
     }
-    backtrack(<span class="hljs-number">0</span>, []<span class="hljs-type">int</span>{})
+    backtrack(<span class="hljs-number">0</span>, []<span class="hljs-keyword">int</span>{})
     <span class="hljs-keyword">return</span> res
 }
 </code></pre>
@@ -1029,30 +1163,30 @@
 <p>给定一个可能包含重复元素的整数数组 <code>nums</code>，返回其所有不重复的子集。</p>
 <h3 id="思路分析">思路分析</h3>
 <p>先排序，回溯时同一层跳过重复元素（<code>i &gt; start &amp;&amp; nums[i] === nums[i-1]</code>），与组合总和 II 的去重逻辑一致。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">subsetsWithDup</span>(<span class="hljs-params">nums</span>) {
-  nums.<span class="hljs-title function_">sort</span>(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a - b);
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">subsetsWithDup</span>(<span class="hljs-params">nums</span>) </span>{
+  nums.sort(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a - b);
   <span class="hljs-keyword">const</span> res = [];
 
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">backtrack</span>(<span class="hljs-params">start, path</span>) {
-    res.<span class="hljs-title function_">push</span>([...path]);
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = start; i &lt; nums.<span class="hljs-property">length</span>; i++) {
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">backtrack</span>(<span class="hljs-params">start, path</span>) </span>{
+    res.push([...path]);
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = start; i &lt; nums.length; i++) {
       <span class="hljs-keyword">if</span> (i &gt; start &amp;&amp; nums[i] === nums[i - <span class="hljs-number">1</span>]) <span class="hljs-keyword">continue</span>;
-      path.<span class="hljs-title function_">push</span>(nums[i]);
-      <span class="hljs-title function_">backtrack</span>(i + <span class="hljs-number">1</span>, path);
-      path.<span class="hljs-title function_">pop</span>();
+      path.push(nums[i]);
+      backtrack(i + <span class="hljs-number">1</span>, path);
+      path.pop();
     }
   }
 
-  <span class="hljs-title function_">backtrack</span>(<span class="hljs-number">0</span>, []);
+  backtrack(<span class="hljs-number">0</span>, []);
   <span class="hljs-keyword">return</span> res;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">subsetsWithDup</span><span class="hljs-params">(nums []<span class="hljs-type">int</span>)</span></span> [][]<span class="hljs-type">int</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">subsetsWithDup</span><span class="hljs-params">(nums []<span class="hljs-keyword">int</span>)</span> [][]<span class="hljs-title">int</span></span> {
     sort.Ints(nums)
-    res := [][]<span class="hljs-type">int</span>{}
-    <span class="hljs-keyword">var</span> backtrack <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(start <span class="hljs-type">int</span>, path []<span class="hljs-type">int</span>)</span></span>
-    backtrack = <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(start <span class="hljs-type">int</span>, path []<span class="hljs-type">int</span>)</span></span> {
-        tmp := <span class="hljs-built_in">make</span>([]<span class="hljs-type">int</span>, <span class="hljs-built_in">len</span>(path))
+    res := [][]<span class="hljs-keyword">int</span>{}
+    <span class="hljs-keyword">var</span> backtrack <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(start <span class="hljs-keyword">int</span>, path []<span class="hljs-keyword">int</span>)</span>
+    <span class="hljs-title">backtrack</span> = <span class="hljs-title">func</span><span class="hljs-params">(start <span class="hljs-keyword">int</span>, path []<span class="hljs-keyword">int</span>)</span></span> {
+        tmp := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int</span>, <span class="hljs-built_in">len</span>(path))
         <span class="hljs-built_in">copy</span>(tmp, path)
         res = <span class="hljs-built_in">append</span>(res, tmp)
         <span class="hljs-keyword">for</span> i := start; i &lt; <span class="hljs-built_in">len</span>(nums); i++ {
@@ -1064,7 +1198,7 @@
             path = path[:<span class="hljs-built_in">len</span>(path)<span class="hljs-number">-1</span>]
         }
     }
-    backtrack(<span class="hljs-number">0</span>, []<span class="hljs-type">int</span>{})
+    backtrack(<span class="hljs-number">0</span>, []<span class="hljs-keyword">int</span>{})
     <span class="hljs-keyword">return</span> res
 }
 </code></pre>
@@ -1074,53 +1208,53 @@
 <p>在 <code>n x n</code> 的棋盘上放置 <code>n</code> 个皇后，使得它们彼此不能互相攻击（同行、同列、同对角线）。返回所有不同的解。</p>
 <h3 id="思路分析">思路分析</h3>
 <p>逐行放置皇后。使用三个集合分别记录已占用的列、左对角线（<code>row - col</code>）和右对角线（<code>row + col</code>）。每行尝试每一列，若不冲突则放置并递归下一行。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">solveNQueens</span>(<span class="hljs-params">n</span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">solveNQueens</span>(<span class="hljs-params">n</span>) </span>{
   <span class="hljs-keyword">const</span> res = [];
-  <span class="hljs-keyword">const</span> board = <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>({ <span class="hljs-attr">length</span>: n }, <span class="hljs-function">() =&gt;</span> <span class="hljs-string">'.'</span>.<span class="hljs-title function_">repeat</span>(n));
-  <span class="hljs-keyword">const</span> cols = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Set</span>(), diag1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Set</span>(), diag2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Set</span>();
+  <span class="hljs-keyword">const</span> board = <span class="hljs-built_in">Array</span>.from({ <span class="hljs-attr">length</span>: n }, () =&gt; <span class="hljs-string">'.'</span>.repeat(n));
+  <span class="hljs-keyword">const</span> cols = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>(), diag1 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>(), diag2 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>();
 
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">backtrack</span>(<span class="hljs-params">row</span>) {
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">backtrack</span>(<span class="hljs-params">row</span>) </span>{
     <span class="hljs-keyword">if</span> (row === n) {
-      res.<span class="hljs-title function_">push</span>([...board]);
+      res.push([...board]);
       <span class="hljs-keyword">return</span>;
     }
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> col = <span class="hljs-number">0</span>; col &lt; n; col++) {
-      <span class="hljs-keyword">if</span> (cols.<span class="hljs-title function_">has</span>(col) || diag1.<span class="hljs-title function_">has</span>(row - col) || diag2.<span class="hljs-title function_">has</span>(row + col)) <span class="hljs-keyword">continue</span>;
-      cols.<span class="hljs-title function_">add</span>(col);
-      diag1.<span class="hljs-title function_">add</span>(row - col);
-      diag2.<span class="hljs-title function_">add</span>(row + col);
-      board[row] = board[row].<span class="hljs-title function_">substring</span>(<span class="hljs-number">0</span>, col) + <span class="hljs-string">'Q'</span> + board[row].<span class="hljs-title function_">substring</span>(col + <span class="hljs-number">1</span>);
-      <span class="hljs-title function_">backtrack</span>(row + <span class="hljs-number">1</span>);
-      board[row] = board[row].<span class="hljs-title function_">substring</span>(<span class="hljs-number">0</span>, col) + <span class="hljs-string">'.'</span> + board[row].<span class="hljs-title function_">substring</span>(col + <span class="hljs-number">1</span>);
-      cols.<span class="hljs-title function_">delete</span>(col);
-      diag1.<span class="hljs-title function_">delete</span>(row - col);
-      diag2.<span class="hljs-title function_">delete</span>(row + col);
+      <span class="hljs-keyword">if</span> (cols.has(col) || diag1.has(row - col) || diag2.has(row + col)) <span class="hljs-keyword">continue</span>;
+      cols.add(col);
+      diag1.add(row - col);
+      diag2.add(row + col);
+      board[row] = board[row].substring(<span class="hljs-number">0</span>, col) + <span class="hljs-string">'Q'</span> + board[row].substring(col + <span class="hljs-number">1</span>);
+      backtrack(row + <span class="hljs-number">1</span>);
+      board[row] = board[row].substring(<span class="hljs-number">0</span>, col) + <span class="hljs-string">'.'</span> + board[row].substring(col + <span class="hljs-number">1</span>);
+      cols.delete(col);
+      diag1.delete(row - col);
+      diag2.delete(row + col);
     }
   }
 
-  <span class="hljs-title function_">backtrack</span>(<span class="hljs-number">0</span>);
+  backtrack(<span class="hljs-number">0</span>);
   <span class="hljs-keyword">return</span> res;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">solveNQueens</span><span class="hljs-params">(n <span class="hljs-type">int</span>)</span></span> [][]<span class="hljs-type">string</span> {
-    res := [][]<span class="hljs-type">string</span>{}
-    board := <span class="hljs-built_in">make</span>([][]<span class="hljs-type">byte</span>, n)
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">solveNQueens</span><span class="hljs-params">(n <span class="hljs-keyword">int</span>)</span> [][]<span class="hljs-title">string</span></span> {
+    res := [][]<span class="hljs-keyword">string</span>{}
+    board := <span class="hljs-built_in">make</span>([][]<span class="hljs-keyword">byte</span>, n)
     <span class="hljs-keyword">for</span> i := <span class="hljs-keyword">range</span> board {
-        board[i] = <span class="hljs-built_in">make</span>([]<span class="hljs-type">byte</span>, n)
+        board[i] = <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">byte</span>, n)
         <span class="hljs-keyword">for</span> j := <span class="hljs-keyword">range</span> board[i] {
             board[i][j] = <span class="hljs-string">'.'</span>
         }
     }
-    cols := <span class="hljs-keyword">map</span>[<span class="hljs-type">int</span>]<span class="hljs-type">bool</span>{}
-    diag1 := <span class="hljs-keyword">map</span>[<span class="hljs-type">int</span>]<span class="hljs-type">bool</span>{}
-    diag2 := <span class="hljs-keyword">map</span>[<span class="hljs-type">int</span>]<span class="hljs-type">bool</span>{}
+    cols := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">int</span>]<span class="hljs-keyword">bool</span>{}
+    diag1 := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">int</span>]<span class="hljs-keyword">bool</span>{}
+    diag2 := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">int</span>]<span class="hljs-keyword">bool</span>{}
 
-    <span class="hljs-keyword">var</span> backtrack <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(row <span class="hljs-type">int</span>)</span></span>
-    backtrack = <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(row <span class="hljs-type">int</span>)</span></span> {
+    <span class="hljs-keyword">var</span> backtrack <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(row <span class="hljs-keyword">int</span>)</span>
+    <span class="hljs-title">backtrack</span> = <span class="hljs-title">func</span><span class="hljs-params">(row <span class="hljs-keyword">int</span>)</span></span> {
         <span class="hljs-keyword">if</span> row == n {
-            snapshot := <span class="hljs-built_in">make</span>([]<span class="hljs-type">string</span>, n)
+            snapshot := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">string</span>, n)
             <span class="hljs-keyword">for</span> i := <span class="hljs-keyword">range</span> board {
-                snapshot[i] = <span class="hljs-type">string</span>(board[i])
+                snapshot[i] = <span class="hljs-keyword">string</span>(board[i])
             }
             res = <span class="hljs-built_in">append</span>(res, snapshot)
             <span class="hljs-keyword">return</span>
@@ -1150,26 +1284,26 @@
 <p>给出 <code>n</code> 代表生成括号的对数，生成所有可能的并且有效的括号组合。</p>
 <h3 id="思路分析">思路分析</h3>
 <p>回溯：维护左括号和右括号的剩余数量 <code>open</code> 和 <code>close</code>。当 <code>open &gt; 0</code> 时可添加左括号；当 <code>close &gt; open</code> 时可添加右括号。两者均为 0 时收集结果。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">generateParenthesis</span>(<span class="hljs-params">n</span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">generateParenthesis</span>(<span class="hljs-params">n</span>) </span>{
   <span class="hljs-keyword">const</span> res = [];
 
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">backtrack</span>(<span class="hljs-params">path, open, close</span>) {
-    <span class="hljs-keyword">if</span> (path.<span class="hljs-property">length</span> === <span class="hljs-number">2</span> * n) {
-      res.<span class="hljs-title function_">push</span>(path);
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">backtrack</span>(<span class="hljs-params">path, open, close</span>) </span>{
+    <span class="hljs-keyword">if</span> (path.length === <span class="hljs-number">2</span> * n) {
+      res.push(path);
       <span class="hljs-keyword">return</span>;
     }
-    <span class="hljs-keyword">if</span> (open &lt; n) <span class="hljs-title function_">backtrack</span>(path + <span class="hljs-string">'('</span>, open + <span class="hljs-number">1</span>, close);
-    <span class="hljs-keyword">if</span> (close &lt; open) <span class="hljs-title function_">backtrack</span>(path + <span class="hljs-string">')'</span>, open, close + <span class="hljs-number">1</span>);
+    <span class="hljs-keyword">if</span> (open &lt; n) backtrack(path + <span class="hljs-string">'('</span>, open + <span class="hljs-number">1</span>, close);
+    <span class="hljs-keyword">if</span> (close &lt; open) backtrack(path + <span class="hljs-string">')'</span>, open, close + <span class="hljs-number">1</span>);
   }
 
-  <span class="hljs-title function_">backtrack</span>(<span class="hljs-string">''</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+  backtrack(<span class="hljs-string">''</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
   <span class="hljs-keyword">return</span> res;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">generateParenthesis</span><span class="hljs-params">(n <span class="hljs-type">int</span>)</span></span> []<span class="hljs-type">string</span> {
-    res := []<span class="hljs-type">string</span>{}
-    <span class="hljs-keyword">var</span> backtrack <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(path <span class="hljs-type">string</span>, open, <span class="hljs-built_in">close</span> <span class="hljs-type">int</span>)</span></span>
-    backtrack = <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(path <span class="hljs-type">string</span>, open, <span class="hljs-built_in">close</span> <span class="hljs-type">int</span>)</span></span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">generateParenthesis</span><span class="hljs-params">(n <span class="hljs-keyword">int</span>)</span> []<span class="hljs-title">string</span></span> {
+    res := []<span class="hljs-keyword">string</span>{}
+    <span class="hljs-keyword">var</span> backtrack <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(path <span class="hljs-keyword">string</span>, open, <span class="hljs-built_in">close</span> <span class="hljs-keyword">int</span>)</span>
+    <span class="hljs-title">backtrack</span> = <span class="hljs-title">func</span><span class="hljs-params">(path <span class="hljs-keyword">string</span>, open, <span class="hljs-built_in">close</span> <span class="hljs-keyword">int</span>)</span></span> {
         <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(path) == <span class="hljs-number">2</span>*n {
             res = <span class="hljs-built_in">append</span>(res, path)
             <span class="hljs-keyword">return</span>
@@ -1191,17 +1325,17 @@
 <p>给定一个 <code>m x n</code> 二维字符网格 <code>board</code> 和一个字符串单词 <code>word</code>，判断 <code>word</code> 是否存在于网格中。单词可由相邻单元格（水平或垂直）组成，同一个单元格不能重复使用。</p>
 <h3 id="思路分析">思路分析</h3>
 <p>对每个格子作为起点进行 DFS 回溯。在当前位置匹配字符后，标记已访问，向四个方向递归。若最终匹配完所有字符则返回 true，否则回退标记。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">exist</span>(<span class="hljs-params">board, word</span>) {
-  <span class="hljs-keyword">const</span> m = board.<span class="hljs-property">length</span>, n = board[<span class="hljs-number">0</span>].<span class="hljs-property">length</span>;
-  <span class="hljs-keyword">const</span> dirs = [[<span class="hljs-number">0</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">0</span>, -<span class="hljs-number">1</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>], [-<span class="hljs-number">1</span>, <span class="hljs-number">0</span>]];
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">exist</span>(<span class="hljs-params">board, word</span>) </span>{
+  <span class="hljs-keyword">const</span> m = board.length, n = board[<span class="hljs-number">0</span>].length;
+  <span class="hljs-keyword">const</span> dirs = [[<span class="hljs-number">0</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">0</span>, <span class="hljs-number">-1</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>], [<span class="hljs-number">-1</span>, <span class="hljs-number">0</span>]];
 
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">dfs</span>(<span class="hljs-params">i, j, k</span>) {
-    <span class="hljs-keyword">if</span> (k === word.<span class="hljs-property">length</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">dfs</span>(<span class="hljs-params">i, j, k</span>) </span>{
+    <span class="hljs-keyword">if</span> (k === word.length) <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
     <span class="hljs-keyword">if</span> (i &lt; <span class="hljs-number">0</span> || i &gt;= m || j &lt; <span class="hljs-number">0</span> || j &gt;= n || board[i][j] !== word[k]) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
     <span class="hljs-keyword">const</span> tmp = board[i][j];
     board[i][j] = <span class="hljs-string">'#'</span>; <span class="hljs-comment">// 标记已访问</span>
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> [di, dj] <span class="hljs-keyword">of</span> dirs) {
-      <span class="hljs-keyword">if</span> (<span class="hljs-title function_">dfs</span>(i + di, j + dj, k + <span class="hljs-number">1</span>)) <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+      <span class="hljs-keyword">if</span> (dfs(i + di, j + dj, k + <span class="hljs-number">1</span>)) <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
     }
     board[i][j] = tmp; <span class="hljs-comment">// 回退</span>
     <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
@@ -1209,18 +1343,18 @@
 
   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; m; i++) {
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = <span class="hljs-number">0</span>; j &lt; n; j++) {
-      <span class="hljs-keyword">if</span> (<span class="hljs-title function_">dfs</span>(i, j, <span class="hljs-number">0</span>)) <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+      <span class="hljs-keyword">if</span> (dfs(i, j, <span class="hljs-number">0</span>)) <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
     }
   }
   <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">exist</span><span class="hljs-params">(board [][]<span class="hljs-type">byte</span>, word <span class="hljs-type">string</span>)</span></span> <span class="hljs-type">bool</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">exist</span><span class="hljs-params">(board [][]<span class="hljs-keyword">byte</span>, word <span class="hljs-keyword">string</span>)</span> <span class="hljs-title">bool</span></span> {
     m, n := <span class="hljs-built_in">len</span>(board), <span class="hljs-built_in">len</span>(board[<span class="hljs-number">0</span>])
-    dirs := [][<span class="hljs-number">2</span>]<span class="hljs-type">int</span>{{<span class="hljs-number">0</span>, <span class="hljs-number">1</span>}, {<span class="hljs-number">0</span>, <span class="hljs-number">-1</span>}, {<span class="hljs-number">1</span>, <span class="hljs-number">0</span>}, {<span class="hljs-number">-1</span>, <span class="hljs-number">0</span>}}
+    dirs := [][<span class="hljs-number">2</span>]<span class="hljs-keyword">int</span>{{<span class="hljs-number">0</span>, <span class="hljs-number">1</span>}, {<span class="hljs-number">0</span>, <span class="hljs-number">-1</span>}, {<span class="hljs-number">1</span>, <span class="hljs-number">0</span>}, {<span class="hljs-number">-1</span>, <span class="hljs-number">0</span>}}
 
-    <span class="hljs-keyword">var</span> dfs <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(i, j, k <span class="hljs-type">int</span>)</span></span> <span class="hljs-type">bool</span>
-    dfs = <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(i, j, k <span class="hljs-type">int</span>)</span></span> <span class="hljs-type">bool</span> {
+    <span class="hljs-keyword">var</span> dfs <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(i, j, k <span class="hljs-keyword">int</span>)</span> <span class="hljs-title">bool</span>
+    <span class="hljs-title">dfs</span> = <span class="hljs-title">func</span><span class="hljs-params">(i, j, k <span class="hljs-keyword">int</span>)</span> <span class="hljs-title">bool</span></span> {
         <span class="hljs-keyword">if</span> k == <span class="hljs-built_in">len</span>(word) {
             <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
         }
@@ -1257,17 +1391,17 @@
 <p>给定一个非负整数数组 <code>nums</code>，你最初位于第一个位置。数组中的每个元素代表你在该位置可以跳跃的最大长度。判断你是否能够到达最后一个位置。</p>
 <h3 id="思路分析">思路分析</h3>
 <p>贪心：维护当前能到达的最远位置 <code>maxReach</code>。遍历每个位置 <code>i</code>，若 <code>i &gt; maxReach</code> 则无法到达，否则更新 <code>maxReach = max(maxReach, i + nums[i])</code>。若 <code>maxReach &gt;= n-1</code> 则可以到达。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">canJump</span>(<span class="hljs-params">nums</span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">canJump</span>(<span class="hljs-params">nums</span>) </span>{
   <span class="hljs-keyword">let</span> maxReach = <span class="hljs-number">0</span>;
-  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; nums.<span class="hljs-property">length</span>; i++) {
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; nums.length; i++) {
     <span class="hljs-keyword">if</span> (i &gt; maxReach) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
-    maxReach = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">max</span>(maxReach, i + nums[i]);
-    <span class="hljs-keyword">if</span> (maxReach &gt;= nums.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    maxReach = <span class="hljs-built_in">Math</span>.max(maxReach, i + nums[i]);
+    <span class="hljs-keyword">if</span> (maxReach &gt;= nums.length - <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
   }
   <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">canJump</span><span class="hljs-params">(nums []<span class="hljs-type">int</span>)</span></span> <span class="hljs-type">bool</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">canJump</span><span class="hljs-params">(nums []<span class="hljs-keyword">int</span>)</span> <span class="hljs-title">bool</span></span> {
     maxReach := <span class="hljs-number">0</span>
     <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; <span class="hljs-built_in">len</span>(nums); i++ {
         <span class="hljs-keyword">if</span> i &gt; maxReach {
@@ -1289,20 +1423,20 @@
 <p>同样的设定，假设你总是可以到达最后一个位置，求到达最后位置的最少跳跃次数。</p>
 <h3 id="思路分析">思路分析</h3>
 <p>贪心 BFS 思想：维护当前跳跃的边界 <code>end</code>，最远距离 <code>farthest</code>，跳跃次数 <code>jumps</code>。遍历时更新 <code>farthest</code>，到达 <code>end</code> 时必须跳跃一次并更新 <code>end = farthest</code>。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">jump</span>(<span class="hljs-params">nums</span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">jump</span>(<span class="hljs-params">nums</span>) </span>{
   <span class="hljs-keyword">let</span> jumps = <span class="hljs-number">0</span>, end = <span class="hljs-number">0</span>, farthest = <span class="hljs-number">0</span>;
-  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; nums.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>; i++) {
-    farthest = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">max</span>(farthest, i + nums[i]);
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; nums.length - <span class="hljs-number">1</span>; i++) {
+    farthest = <span class="hljs-built_in">Math</span>.max(farthest, i + nums[i]);
     <span class="hljs-keyword">if</span> (i === end) {
       jumps++;
       end = farthest;
-      <span class="hljs-keyword">if</span> (end &gt;= nums.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>) <span class="hljs-keyword">break</span>;
+      <span class="hljs-keyword">if</span> (end &gt;= nums.length - <span class="hljs-number">1</span>) <span class="hljs-keyword">break</span>;
     }
   }
   <span class="hljs-keyword">return</span> jumps;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">jump</span><span class="hljs-params">(nums []<span class="hljs-type">int</span>)</span></span> <span class="hljs-type">int</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">jump</span><span class="hljs-params">(nums []<span class="hljs-keyword">int</span>)</span> <span class="hljs-title">int</span></span> {
     jumps, end, farthest := <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>
     <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; <span class="hljs-built_in">len</span>(nums)<span class="hljs-number">-1</span>; i++ {
         <span class="hljs-keyword">if</span> i+nums[i] &gt; farthest {
@@ -1330,9 +1464,9 @@
 <li>从右到左：若 <code>ratings[i] &gt; ratings[i+1]</code>，则 <code>candy[i] = max(candy[i], candy[i+1] + 1)</code>。</li>
 </ol>
 <p>两次遍历确保同时满足左右两侧的约束。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">candy</span>(<span class="hljs-params">ratings</span>) {
-  <span class="hljs-keyword">const</span> n = ratings.<span class="hljs-property">length</span>;
-  <span class="hljs-keyword">const</span> candies = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Array</span>(n).<span class="hljs-title function_">fill</span>(<span class="hljs-number">1</span>);
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">candy</span>(<span class="hljs-params">ratings</span>) </span>{
+  <span class="hljs-keyword">const</span> n = ratings.length;
+  <span class="hljs-keyword">const</span> candies = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(n).fill(<span class="hljs-number">1</span>);
 
   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">1</span>; i &lt; n; i++) {
     <span class="hljs-keyword">if</span> (ratings[i] &gt; ratings[i - <span class="hljs-number">1</span>]) {
@@ -1341,15 +1475,15 @@
   }
   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = n - <span class="hljs-number">2</span>; i &gt;= <span class="hljs-number">0</span>; i--) {
     <span class="hljs-keyword">if</span> (ratings[i] &gt; ratings[i + <span class="hljs-number">1</span>]) {
-      candies[i] = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">max</span>(candies[i], candies[i + <span class="hljs-number">1</span>] + <span class="hljs-number">1</span>);
+      candies[i] = <span class="hljs-built_in">Math</span>.max(candies[i], candies[i + <span class="hljs-number">1</span>] + <span class="hljs-number">1</span>);
     }
   }
-  <span class="hljs-keyword">return</span> candies.<span class="hljs-title function_">reduce</span>(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a + b, <span class="hljs-number">0</span>);
+  <span class="hljs-keyword">return</span> candies.reduce(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a + b, <span class="hljs-number">0</span>);
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">candy</span><span class="hljs-params">(ratings []<span class="hljs-type">int</span>)</span></span> <span class="hljs-type">int</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">candy</span><span class="hljs-params">(ratings []<span class="hljs-keyword">int</span>)</span> <span class="hljs-title">int</span></span> {
     n := <span class="hljs-built_in">len</span>(ratings)
-    candies := <span class="hljs-built_in">make</span>([]<span class="hljs-type">int</span>, n)
+    candies := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int</span>, n)
     <span class="hljs-keyword">for</span> i := <span class="hljs-keyword">range</span> candies {
         candies[i] = <span class="hljs-number">1</span>
     }
@@ -1376,10 +1510,10 @@
 <p>给定一个区间的集合 <code>intervals</code>，其中 <code>intervals[i] = [start_i, end_i]</code>。返回需要移除的最少区间数量，使剩余区间互不重叠。</p>
 <h3 id="思路分析">思路分析</h3>
 <p>贪心：按区间结束时间排序。优先保留结束早的区间（给后续区间留更多空间）。遍历时，若当前区间起始 <code>&lt; prevEnd</code>，则需要移除（计数+1），否则更新 <code>prevEnd</code>。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">eraseOverlapIntervals</span>(<span class="hljs-params">intervals</span>) {
-  intervals.<span class="hljs-title function_">sort</span>(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a[<span class="hljs-number">1</span>] - b[<span class="hljs-number">1</span>]);
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">eraseOverlapIntervals</span>(<span class="hljs-params">intervals</span>) </span>{
+  intervals.sort(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a[<span class="hljs-number">1</span>] - b[<span class="hljs-number">1</span>]);
   <span class="hljs-keyword">let</span> count = <span class="hljs-number">0</span>;
-  <span class="hljs-keyword">let</span> prevEnd = -<span class="hljs-title class_">Infinity</span>;
+  <span class="hljs-keyword">let</span> prevEnd = -<span class="hljs-literal">Infinity</span>;
   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> [start, end] <span class="hljs-keyword">of</span> intervals) {
     <span class="hljs-keyword">if</span> (start &lt; prevEnd) {
       count++;
@@ -1390,8 +1524,8 @@
 <span class="hljs-keyword">return</span> count;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">eraseOverlapIntervals</span><span class="hljs-params">(intervals [][]<span class="hljs-type">int</span>)</span></span> <span class="hljs-type">int</span> {
-    sort.Slice(intervals, <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(i, j <span class="hljs-type">int</span>)</span></span> <span class="hljs-type">bool</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">eraseOverlapIntervals</span><span class="hljs-params">(intervals [][]<span class="hljs-keyword">int</span>)</span> <span class="hljs-title">int</span></span> {
+    sort.Slice(intervals, <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(i, j <span class="hljs-keyword">int</span>)</span> <span class="hljs-title">bool</span></span> {
         <span class="hljs-keyword">return</span> intervals[i][<span class="hljs-number">1</span>] &lt; intervals[j][<span class="hljs-number">1</span>]
     })
     count := <span class="hljs-number">0</span>
@@ -1410,6 +1544,22 @@
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -1417,10 +1567,14 @@
 
             
                 
-                <a href="sorting-searching.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 排序与搜索">
+                <a href="sorting-searching.html" class="navigation navigation-prev " aria-label="Previous page: 排序与搜索">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="system-design.html" class="navigation navigation-next " aria-label="Next page: 系统设计">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -1429,73 +1583,29 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"回溯与贪心","level":"6.6","depth":1,"previous":{"title":"排序与搜索","level":"6.5","depth":1,"path":"algorithm/sorting-searching.md","ref":"algorithm/sorting-searching.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"algorithm/backtracking-greedy.md","mtime":"2026-03-31T06:35:11.836Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"回溯与贪心","level":"6.6","depth":1,"next":{"title":"系统设计","level":"6.7","depth":1,"path":"algorithm/system-design.md","ref":"algorithm/system-design.md","articles":[]},"previous":{"title":"排序与搜索","level":"6.5","depth":1,"path":"algorithm/sorting-searching.md","ref":"algorithm/sorting-searching.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"algorithm/backtracking-greedy.md","mtime":"2026-03-31T12:30:30.393Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    <noscript>
-        <style>
-            .honkit-cloak {
-                display: block !important;
-            }
-        </style>
-    </noscript>
-    <script>
-        // Restore sidebar state as critical path for prevent layout shift
-        function __init__getSidebarState(defaultValue){
-            var baseKey = "";
-            var key = baseKey + ":sidebar";
-            try {
-                var value = localStorage[key];
-                if (value === undefined) {
-                    return defaultValue;
-                }
-                var parsed = JSON.parse(value);
-                return parsed == null ? defaultValue : parsed;
-            } catch (e) {
-                return defaultValue;
-            }
-        }
-        function __init__restoreLastSidebarState() {
-            var isMobile = window.matchMedia("(max-width: 600px)").matches;
-            if (isMobile) {
-                // Init last state if not mobile
-                return;
-            }
-            var sidebarState = __init__getSidebarState(true);
-            var book = document.querySelector(".book");
-            // Show sidebar if it enabled
-            if (sidebarState && book) {
-                book.classList.add("without-animation", "with-summary");
-            }
-        }
-
-        try {
-            __init__restoreLastSidebarState();
-        } finally {
-            var book = document.querySelector(".book");
-            book.classList.remove("honkit-cloak");
-        }
-    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

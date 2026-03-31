@@ -3,10 +3,11 @@
 <html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>树与图 · 全栈开发面试指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="generator" content="GitBook 6.1.7">
         
         
         
@@ -16,19 +17,23 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -69,10 +74,14 @@
     </head>
     <body>
         
-<div class="book honkit-cloak">
+<div class="book">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -269,6 +278,66 @@
             
         </li>
     
+        <li class="chapter " data-level="2.11" data-path="../frontend/micro-frontend.html">
+            
+                <a href="../frontend/micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../frontend/mobile-dev.html">
+            
+                <a href="../frontend/mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../frontend/state-management.html">
+            
+                <a href="../frontend/state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../frontend/design-patterns.html">
+            
+                <a href="../frontend/design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -359,6 +428,21 @@
                         <b>3.6.</b>
                     
                     最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../nodejs/serverless.html">
+            
+                <a href="../nodejs/serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
             
                 </a>
             
@@ -463,6 +547,21 @@
             
         </li>
     
+        <li class="chapter " data-level="4.7" data-path="../golang/cloud-native.html">
+            
+                <a href="../golang/cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -553,6 +652,21 @@
                         <b>5.6.</b>
                     
                     实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../agent/evaluation.html">
+            
+                <a href="../agent/evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
             
                 </a>
             
@@ -657,14 +771,29 @@
             
         </li>
     
+        <li class="chapter " data-level="6.7" data-path="system-design.html">
+            
+                <a href="system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
     <li class="divider"></li>
 
     <li>
-        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
-            本书使用 HonKit 发布
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -697,6 +826,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="树与图经典算法题">树与图经典算法题</h1>
@@ -711,91 +843,91 @@
 <p><strong>迭代法（后序）：</strong> 可以用前序遍历的变形（根-右-左）然后反转结果；也可以用标记法在栈中记录节点是否已处理过右子树。</p>
 <p><strong>时间复杂度：</strong> O(n)，空间复杂度 O(n)。</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 递归法 —— 前序</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">preorderTraversal</span>(<span class="hljs-params">root</span>) {
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">preorderTraversal</span>(<span class="hljs-params">root</span>) </span>{
   <span class="hljs-keyword">const</span> result = [];
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">dfs</span>(<span class="hljs-params">node</span>) {
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">dfs</span>(<span class="hljs-params">node</span>) </span>{
     <span class="hljs-keyword">if</span> (node === <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span>;
-    result.<span class="hljs-title function_">push</span>(node.<span class="hljs-property">val</span>);
-    <span class="hljs-title function_">dfs</span>(node.<span class="hljs-property">left</span>);
-    <span class="hljs-title function_">dfs</span>(node.<span class="hljs-property">right</span>);
+    result.push(node.val);
+    dfs(node.left);
+    dfs(node.right);
   }
-  <span class="hljs-title function_">dfs</span>(root);
+  dfs(root);
   <span class="hljs-keyword">return</span> result;
 }
 
 <span class="hljs-comment">// 递归法 —— 中序</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">inorderTraversal</span>(<span class="hljs-params">root</span>) {
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">inorderTraversal</span>(<span class="hljs-params">root</span>) </span>{
   <span class="hljs-keyword">const</span> result = [];
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">dfs</span>(<span class="hljs-params">node</span>) {
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">dfs</span>(<span class="hljs-params">node</span>) </span>{
     <span class="hljs-keyword">if</span> (node === <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span>;
-    <span class="hljs-title function_">dfs</span>(node.<span class="hljs-property">left</span>);
-    result.<span class="hljs-title function_">push</span>(node.<span class="hljs-property">val</span>);
-    <span class="hljs-title function_">dfs</span>(node.<span class="hljs-property">right</span>);
+    dfs(node.left);
+    result.push(node.val);
+    dfs(node.right);
   }
-  <span class="hljs-title function_">dfs</span>(root);
+  dfs(root);
   <span class="hljs-keyword">return</span> result;
 }
 
 <span class="hljs-comment">// 递归法 —— 后序</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">postorderTraversal</span>(<span class="hljs-params">root</span>) {
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">postorderTraversal</span>(<span class="hljs-params">root</span>) </span>{
   <span class="hljs-keyword">const</span> result = [];
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">dfs</span>(<span class="hljs-params">node</span>) {
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">dfs</span>(<span class="hljs-params">node</span>) </span>{
     <span class="hljs-keyword">if</span> (node === <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span>;
-    <span class="hljs-title function_">dfs</span>(node.<span class="hljs-property">left</span>);
-    <span class="hljs-title function_">dfs</span>(node.<span class="hljs-property">right</span>);
-    result.<span class="hljs-title function_">push</span>(node.<span class="hljs-property">val</span>);
+    dfs(node.left);
+    dfs(node.right);
+    result.push(node.val);
   }
-  <span class="hljs-title function_">dfs</span>(root);
+  dfs(root);
   <span class="hljs-keyword">return</span> result;
 }
 
 <span class="hljs-comment">// 迭代法 —— 前序</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">preorderIterative</span>(<span class="hljs-params">root</span>) {
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">preorderIterative</span>(<span class="hljs-params">root</span>) </span>{
   <span class="hljs-keyword">if</span> (root === <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> [];
   <span class="hljs-keyword">const</span> result = [], stack = [root];
-  <span class="hljs-keyword">while</span> (stack.<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span>) {
-    <span class="hljs-keyword">const</span> node = stack.<span class="hljs-title function_">pop</span>();
-    result.<span class="hljs-title function_">push</span>(node.<span class="hljs-property">val</span>);
-    <span class="hljs-keyword">if</span> (node.<span class="hljs-property">right</span>) stack.<span class="hljs-title function_">push</span>(node.<span class="hljs-property">right</span>);
-    <span class="hljs-keyword">if</span> (node.<span class="hljs-property">left</span>) stack.<span class="hljs-title function_">push</span>(node.<span class="hljs-property">left</span>);
+  <span class="hljs-keyword">while</span> (stack.length &gt; <span class="hljs-number">0</span>) {
+    <span class="hljs-keyword">const</span> node = stack.pop();
+    result.push(node.val);
+    <span class="hljs-keyword">if</span> (node.right) stack.push(node.right);
+    <span class="hljs-keyword">if</span> (node.left) stack.push(node.left);
   }
   <span class="hljs-keyword">return</span> result;
 }
 
 <span class="hljs-comment">// 迭代法 —— 中序</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">inorderIterative</span>(<span class="hljs-params">root</span>) {
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">inorderIterative</span>(<span class="hljs-params">root</span>) </span>{
   <span class="hljs-keyword">const</span> result = [], stack = [];
   <span class="hljs-keyword">let</span> curr = root;
-  <span class="hljs-keyword">while</span> (curr !== <span class="hljs-literal">null</span> || stack.<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span>) {
+  <span class="hljs-keyword">while</span> (curr !== <span class="hljs-literal">null</span> || stack.length &gt; <span class="hljs-number">0</span>) {
     <span class="hljs-keyword">while</span> (curr !== <span class="hljs-literal">null</span>) {
-      stack.<span class="hljs-title function_">push</span>(curr);
-      curr = curr.<span class="hljs-property">left</span>;
+      stack.push(curr);
+      curr = curr.left;
     }
-    curr = stack.<span class="hljs-title function_">pop</span>();
-    result.<span class="hljs-title function_">push</span>(curr.<span class="hljs-property">val</span>);
-    curr = curr.<span class="hljs-property">right</span>;
+    curr = stack.pop();
+    result.push(curr.val);
+    curr = curr.right;
   }
   <span class="hljs-keyword">return</span> result;
 }
 
 <span class="hljs-comment">// 迭代法 —— 后序（前序变形取反）</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">postorderIterative</span>(<span class="hljs-params">root</span>) {
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">postorderIterative</span>(<span class="hljs-params">root</span>) </span>{
   <span class="hljs-keyword">if</span> (root === <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> [];
   <span class="hljs-keyword">const</span> result = [], stack = [root];
-  <span class="hljs-keyword">while</span> (stack.<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span>) {
-    <span class="hljs-keyword">const</span> node = stack.<span class="hljs-title function_">pop</span>();
-    result.<span class="hljs-title function_">push</span>(node.<span class="hljs-property">val</span>);
-    <span class="hljs-keyword">if</span> (node.<span class="hljs-property">left</span>) stack.<span class="hljs-title function_">push</span>(node.<span class="hljs-property">left</span>);
-    <span class="hljs-keyword">if</span> (node.<span class="hljs-property">right</span>) stack.<span class="hljs-title function_">push</span>(node.<span class="hljs-property">right</span>);
+  <span class="hljs-keyword">while</span> (stack.length &gt; <span class="hljs-number">0</span>) {
+    <span class="hljs-keyword">const</span> node = stack.pop();
+    result.push(node.val);
+    <span class="hljs-keyword">if</span> (node.left) stack.push(node.left);
+    <span class="hljs-keyword">if</span> (node.right) stack.push(node.right);
   }
-  <span class="hljs-keyword">return</span> result.<span class="hljs-title function_">reverse</span>();
+  <span class="hljs-keyword">return</span> result.reverse();
 }
 </code></pre>
 <pre><code class="lang-go"><span class="hljs-comment">// 递归法 —— 前序</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">preorderTraversal</span><span class="hljs-params">(root *TreeNode)</span></span> []<span class="hljs-type">int</span> {
-    <span class="hljs-keyword">var</span> result []<span class="hljs-type">int</span>
-    <span class="hljs-keyword">var</span> dfs <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(*TreeNode)</span></span>
-    dfs = <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(node *TreeNode)</span></span> {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">preorderTraversal</span><span class="hljs-params">(root *TreeNode)</span> []<span class="hljs-title">int</span></span> {
+    <span class="hljs-keyword">var</span> result []<span class="hljs-keyword">int</span>
+    <span class="hljs-keyword">var</span> dfs <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(*TreeNode)</span>
+    <span class="hljs-title">dfs</span> = <span class="hljs-title">func</span><span class="hljs-params">(node *TreeNode)</span></span> {
         <span class="hljs-keyword">if</span> node == <span class="hljs-literal">nil</span> {
             <span class="hljs-keyword">return</span>
         }
@@ -808,10 +940,10 @@
 }
 
 <span class="hljs-comment">// 递归法 —— 中序</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">inorderTraversal</span><span class="hljs-params">(root *TreeNode)</span></span> []<span class="hljs-type">int</span> {
-    <span class="hljs-keyword">var</span> result []<span class="hljs-type">int</span>
-    <span class="hljs-keyword">var</span> dfs <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(*TreeNode)</span></span>
-    dfs = <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(node *TreeNode)</span></span> {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">inorderTraversal</span><span class="hljs-params">(root *TreeNode)</span> []<span class="hljs-title">int</span></span> {
+    <span class="hljs-keyword">var</span> result []<span class="hljs-keyword">int</span>
+    <span class="hljs-keyword">var</span> dfs <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(*TreeNode)</span>
+    <span class="hljs-title">dfs</span> = <span class="hljs-title">func</span><span class="hljs-params">(node *TreeNode)</span></span> {
         <span class="hljs-keyword">if</span> node == <span class="hljs-literal">nil</span> {
             <span class="hljs-keyword">return</span>
         }
@@ -824,10 +956,10 @@
 }
 
 <span class="hljs-comment">// 递归法 —— 后序</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">postorderTraversal</span><span class="hljs-params">(root *TreeNode)</span></span> []<span class="hljs-type">int</span> {
-    <span class="hljs-keyword">var</span> result []<span class="hljs-type">int</span>
-    <span class="hljs-keyword">var</span> dfs <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(*TreeNode)</span></span>
-    dfs = <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(node *TreeNode)</span></span> {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">postorderTraversal</span><span class="hljs-params">(root *TreeNode)</span> []<span class="hljs-title">int</span></span> {
+    <span class="hljs-keyword">var</span> result []<span class="hljs-keyword">int</span>
+    <span class="hljs-keyword">var</span> dfs <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(*TreeNode)</span>
+    <span class="hljs-title">dfs</span> = <span class="hljs-title">func</span><span class="hljs-params">(node *TreeNode)</span></span> {
         <span class="hljs-keyword">if</span> node == <span class="hljs-literal">nil</span> {
             <span class="hljs-keyword">return</span>
         }
@@ -840,8 +972,8 @@
 }
 
 <span class="hljs-comment">// 迭代法 —— 中序</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">inorderIterative</span><span class="hljs-params">(root *TreeNode)</span></span> []<span class="hljs-type">int</span> {
-    <span class="hljs-keyword">var</span> result []<span class="hljs-type">int</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">inorderIterative</span><span class="hljs-params">(root *TreeNode)</span> []<span class="hljs-title">int</span></span> {
+    <span class="hljs-keyword">var</span> result []<span class="hljs-keyword">int</span>
     <span class="hljs-keyword">var</span> stack []*TreeNode
     curr := root
     <span class="hljs-keyword">for</span> curr != <span class="hljs-literal">nil</span> || <span class="hljs-built_in">len</span>(stack) &gt; <span class="hljs-number">0</span> {
@@ -862,33 +994,33 @@
 <p><strong>题目描述：</strong> 给你二叉树的根节点 <code>root</code>，返回其节点值的层序遍历结果（即逐层地，从左到右访问所有节点）。</p>
 <p><strong>思路分析：</strong> 使用队列实现 BFS。初始将根节点入队，每次处理当前层的所有节点（记录当前队列长度），将它们的值加入当前层的结果数组，并将其子节点入队。循环直到队列为空。</p>
 <p><strong>时间复杂度：</strong> O(n)，空间复杂度 O(n)。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">levelOrder</span>(<span class="hljs-params">root</span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">levelOrder</span>(<span class="hljs-params">root</span>) </span>{
   <span class="hljs-keyword">if</span> (root === <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> [];
   <span class="hljs-keyword">const</span> result = [];
   <span class="hljs-keyword">const</span> queue = [root];
-  <span class="hljs-keyword">while</span> (queue.<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span>) {
-    <span class="hljs-keyword">const</span> levelSize = queue.<span class="hljs-property">length</span>;
+  <span class="hljs-keyword">while</span> (queue.length &gt; <span class="hljs-number">0</span>) {
+    <span class="hljs-keyword">const</span> levelSize = queue.length;
     <span class="hljs-keyword">const</span> level = [];
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; levelSize; i++) {
-      <span class="hljs-keyword">const</span> node = queue.<span class="hljs-title function_">shift</span>();
-      level.<span class="hljs-title function_">push</span>(node.<span class="hljs-property">val</span>);
-      <span class="hljs-keyword">if</span> (node.<span class="hljs-property">left</span>) queue.<span class="hljs-title function_">push</span>(node.<span class="hljs-property">left</span>);
-      <span class="hljs-keyword">if</span> (node.<span class="hljs-property">right</span>) queue.<span class="hljs-title function_">push</span>(node.<span class="hljs-property">right</span>);
+      <span class="hljs-keyword">const</span> node = queue.shift();
+      level.push(node.val);
+      <span class="hljs-keyword">if</span> (node.left) queue.push(node.left);
+      <span class="hljs-keyword">if</span> (node.right) queue.push(node.right);
     }
-    result.<span class="hljs-title function_">push</span>(level);
+    result.push(level);
   }
   <span class="hljs-keyword">return</span> result;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">levelOrder</span><span class="hljs-params">(root *TreeNode)</span></span> [][]<span class="hljs-type">int</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">levelOrder</span><span class="hljs-params">(root *TreeNode)</span> [][]<span class="hljs-title">int</span></span> {
     <span class="hljs-keyword">if</span> root == <span class="hljs-literal">nil</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
     }
-    <span class="hljs-keyword">var</span> result [][]<span class="hljs-type">int</span>
+    <span class="hljs-keyword">var</span> result [][]<span class="hljs-keyword">int</span>
     queue := []*TreeNode{root}
     <span class="hljs-keyword">for</span> <span class="hljs-built_in">len</span>(queue) &gt; <span class="hljs-number">0</span> {
         levelSize := <span class="hljs-built_in">len</span>(queue)
-        level := <span class="hljs-built_in">make</span>([]<span class="hljs-type">int</span>, <span class="hljs-number">0</span>, levelSize)
+        level := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int</span>, <span class="hljs-number">0</span>, levelSize)
         <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; levelSize; i++ {
             node := queue[<span class="hljs-number">0</span>]
             queue = queue[<span class="hljs-number">1</span>:]
@@ -914,19 +1046,19 @@
 </ul>
 <p><strong>思路分析：</strong> 最大深度使用递归：<code>maxDepth(root) = 1 + max(maxDepth(left), maxDepth(right))</code>。最小深度需要注意：当某个子树为空时不能取 0，因为空子树那一侧没有叶子节点。只有当左右子树都不为空时才取两者较小值；若一侧为空则取另一侧。</p>
 <p><strong>时间复杂度：</strong> O(n)，空间复杂度 O(h)，h 为树的高度。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">maxDepth</span>(<span class="hljs-params">root</span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">maxDepth</span>(<span class="hljs-params">root</span>) </span>{
   <span class="hljs-keyword">if</span> (root === <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-  <span class="hljs-keyword">return</span> <span class="hljs-number">1</span> + <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">max</span>(<span class="hljs-title function_">maxDepth</span>(root.<span class="hljs-property">left</span>), <span class="hljs-title function_">maxDepth</span>(root.<span class="hljs-property">right</span>));
+  <span class="hljs-keyword">return</span> <span class="hljs-number">1</span> + <span class="hljs-built_in">Math</span>.max(maxDepth(root.left), maxDepth(root.right));
 }
 
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">minDepth</span>(<span class="hljs-params">root</span>) {
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">minDepth</span>(<span class="hljs-params">root</span>) </span>{
   <span class="hljs-keyword">if</span> (root === <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-  <span class="hljs-keyword">if</span> (root.<span class="hljs-property">left</span> === <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">1</span> + <span class="hljs-title function_">minDepth</span>(root.<span class="hljs-property">right</span>);
-  <span class="hljs-keyword">if</span> (root.<span class="hljs-property">right</span> === <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">1</span> + <span class="hljs-title function_">minDepth</span>(root.<span class="hljs-property">left</span>);
-  <span class="hljs-keyword">return</span> <span class="hljs-number">1</span> + <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">min</span>(<span class="hljs-title function_">minDepth</span>(root.<span class="hljs-property">left</span>), <span class="hljs-title function_">minDepth</span>(root.<span class="hljs-property">right</span>));
+  <span class="hljs-keyword">if</span> (root.left === <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">1</span> + minDepth(root.right);
+  <span class="hljs-keyword">if</span> (root.right === <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">1</span> + minDepth(root.left);
+  <span class="hljs-keyword">return</span> <span class="hljs-number">1</span> + <span class="hljs-built_in">Math</span>.min(minDepth(root.left), minDepth(root.right));
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">maxDepth</span><span class="hljs-params">(root *TreeNode)</span></span> <span class="hljs-type">int</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">maxDepth</span><span class="hljs-params">(root *TreeNode)</span> <span class="hljs-title">int</span></span> {
     <span class="hljs-keyword">if</span> root == <span class="hljs-literal">nil</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>
     }
@@ -938,7 +1070,7 @@
     <span class="hljs-keyword">return</span> <span class="hljs-number">1</span> + right
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">minDepth</span><span class="hljs-params">(root *TreeNode)</span></span> <span class="hljs-type">int</span> {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">minDepth</span><span class="hljs-params">(root *TreeNode)</span> <span class="hljs-title">int</span></span> {
     <span class="hljs-keyword">if</span> root == <span class="hljs-literal">nil</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>
     }
@@ -961,21 +1093,21 @@
 <p><strong>题目描述：</strong> 给你一个二叉树的根节点 <code>root</code>，判断其是否是一个有效的二叉搜索树（BST）。有效 BST 的定义：左子树所有节点的值小于根节点，右子树所有节点的值大于根节点，且左右子树也都是 BST。</p>
 <p><strong>思路分析：</strong> 递归时传入当前节点允许的值范围 <code>(min, max)</code>。根节点范围为 <code>(-Infinity, +Infinity)</code>。左子节点的上界更新为父节点的值，右子节点的下界更新为父节点的值。也可以利用 BST 的中序遍历是严格递增序列这一性质来验证。</p>
 <p><strong>时间复杂度：</strong> O(n)，空间复杂度 O(h)。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">isValidBST</span>(<span class="hljs-params">root</span>) {
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">validate</span>(<span class="hljs-params">node, min, max</span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isValidBST</span>(<span class="hljs-params">root</span>) </span>{
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">validate</span>(<span class="hljs-params">node, min, max</span>) </span>{
     <span class="hljs-keyword">if</span> (node === <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
-    <span class="hljs-keyword">if</span> (node.<span class="hljs-property">val</span> &lt;= min || node.<span class="hljs-property">val</span> &gt;= max) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
-    <span class="hljs-keyword">return</span> <span class="hljs-title function_">validate</span>(node.<span class="hljs-property">left</span>, min, node.<span class="hljs-property">val</span>) &amp;&amp;
-           <span class="hljs-title function_">validate</span>(node.<span class="hljs-property">right</span>, node.<span class="hljs-property">val</span>, max);
+    <span class="hljs-keyword">if</span> (node.val &lt;= min || node.val &gt;= max) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+    <span class="hljs-keyword">return</span> validate(node.left, min, node.val) &amp;&amp;
+           validate(node.right, node.val, max);
   }
-  <span class="hljs-keyword">return</span> <span class="hljs-title function_">validate</span>(root, -<span class="hljs-title class_">Infinity</span>, <span class="hljs-title class_">Infinity</span>);
+  <span class="hljs-keyword">return</span> validate(root, -<span class="hljs-literal">Infinity</span>, <span class="hljs-literal">Infinity</span>);
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">isValidBST</span><span class="hljs-params">(root *TreeNode)</span></span> <span class="hljs-type">bool</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">isValidBST</span><span class="hljs-params">(root *TreeNode)</span> <span class="hljs-title">bool</span></span> {
     <span class="hljs-keyword">return</span> validate(root, math.MinInt64, math.MaxInt64)
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">validate</span><span class="hljs-params">(node *TreeNode, min, max <span class="hljs-type">int</span>)</span></span> <span class="hljs-type">bool</span> {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">validate</span><span class="hljs-params">(node *TreeNode, min, max <span class="hljs-keyword">int</span>)</span> <span class="hljs-title">bool</span></span> {
     <span class="hljs-keyword">if</span> node == <span class="hljs-literal">nil</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
     }
@@ -990,15 +1122,15 @@
 <p><strong>题目描述：</strong> 给定一棵二叉树的根节点 <code>root</code> 和两个节点 <code>p</code>、<code>q</code>，找到它们的最近公共祖先（LCA）。最近公共祖先是指在树中同时拥有 <code>p</code> 和 <code>q</code> 作为后代的最深节点（节点也可以是自身的后代）。</p>
 <p><strong>思路分析：</strong> 递归遍历整棵树。对于当前节点，如果为 null 或等于 p 或 q，则直接返回当前节点。递归地在左右子树中查找 p 和 q。如果左右子树的返回值都不为 null，说明 p 和 q 分别在当前节点的两侧，当前节点即为 LCA。如果只有一侧返回非 null，则 LCA 在那一侧。</p>
 <p><strong>时间复杂度：</strong> O(n)，空间复杂度 O(h)。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">lowestCommonAncestor</span>(<span class="hljs-params">root, p, q</span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">lowestCommonAncestor</span>(<span class="hljs-params">root, p, q</span>) </span>{
   <span class="hljs-keyword">if</span> (root === <span class="hljs-literal">null</span> || root === p || root === q) <span class="hljs-keyword">return</span> root;
-  <span class="hljs-keyword">const</span> left = <span class="hljs-title function_">lowestCommonAncestor</span>(root.<span class="hljs-property">left</span>, p, q);
-  <span class="hljs-keyword">const</span> right = <span class="hljs-title function_">lowestCommonAncestor</span>(root.<span class="hljs-property">right</span>, p, q);
+  <span class="hljs-keyword">const</span> left = lowestCommonAncestor(root.left, p, q);
+  <span class="hljs-keyword">const</span> right = lowestCommonAncestor(root.right, p, q);
   <span class="hljs-keyword">if</span> (left !== <span class="hljs-literal">null</span> &amp;&amp; right !== <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> root;
   <span class="hljs-keyword">return</span> left !== <span class="hljs-literal">null</span> ? left : right;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">lowestCommonAncestor</span><span class="hljs-params">(root, p, q *TreeNode)</span></span> *TreeNode {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">lowestCommonAncestor</span><span class="hljs-params">(root, p, q *TreeNode)</span> *<span class="hljs-title">TreeNode</span></span> {
     <span class="hljs-keyword">if</span> root == <span class="hljs-literal">nil</span> || root == p || root == q {
         <span class="hljs-keyword">return</span> root
     }
@@ -1018,16 +1150,16 @@
 <p><strong>题目描述：</strong> 给你一棵二叉树的根节点 <code>root</code>，翻转这棵二叉树（即将每个节点的左右子树交换），并返回其根节点。</p>
 <p><strong>思路分析：</strong> 递归地交换每个节点的左右子树。对于当前节点，先递归翻转左子树和右子树，然后交换左右子节点的引用。base case 是节点为 null 时返回 null。</p>
 <p><strong>时间复杂度：</strong> O(n)，空间复杂度 O(h)。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">invertTree</span>(<span class="hljs-params">root</span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">invertTree</span>(<span class="hljs-params">root</span>) </span>{
   <span class="hljs-keyword">if</span> (root === <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
-  <span class="hljs-keyword">const</span> left = <span class="hljs-title function_">invertTree</span>(root.<span class="hljs-property">left</span>);
-  <span class="hljs-keyword">const</span> right = <span class="hljs-title function_">invertTree</span>(root.<span class="hljs-property">right</span>);
-  root.<span class="hljs-property">left</span> = right;
-  root.<span class="hljs-property">right</span> = left;
+  <span class="hljs-keyword">const</span> left = invertTree(root.left);
+  <span class="hljs-keyword">const</span> right = invertTree(root.right);
+  root.left = right;
+  root.right = left;
   <span class="hljs-keyword">return</span> root;
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">invertTree</span><span class="hljs-params">(root *TreeNode)</span></span> *TreeNode {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">invertTree</span><span class="hljs-params">(root *TreeNode)</span> *<span class="hljs-title">TreeNode</span></span> {
     <span class="hljs-keyword">if</span> root == <span class="hljs-literal">nil</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
     }
@@ -1043,33 +1175,33 @@
 <p><strong>题目描述：</strong> 给定两个整数数组 <code>preorder</code> 和 <code>inorder</code>，其中 <code>preorder</code> 是二叉树的前序遍历，<code>inorder</code> 是同一棵树的中序遍历，请构造并返回这棵二叉树。</p>
 <p><strong>思路分析：</strong> 前序遍历的第一个元素是根节点。在中序遍历中找到根节点的位置，其左边是左子树的中序遍历，右边是右子树的中序遍历。由此可以确定左右子树的节点个数，进而在前序遍历中划分出左右子树的前序遍历。递归地构造左右子树。为了快速查找中序遍历中根节点的位置，预先建立值到下标的哈希映射。</p>
 <p><strong>时间复杂度：</strong> O(n)，空间复杂度 O(n)。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">buildTree</span>(<span class="hljs-params">preorder, inorder</span>) {
-  <span class="hljs-keyword">const</span> indexMap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>();
-  inorder.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">val, idx</span>) =&gt;</span> indexMap.<span class="hljs-title function_">set</span>(val, idx));
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">buildTree</span>(<span class="hljs-params">preorder, inorder</span>) </span>{
+  <span class="hljs-keyword">const</span> indexMap = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
+  inorder.forEach(<span class="hljs-function">(<span class="hljs-params">val, idx</span>) =&gt;</span> indexMap.set(val, idx));
 
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">build</span>(<span class="hljs-params">preStart, preEnd, inStart, inEnd</span>) {
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">build</span>(<span class="hljs-params">preStart, preEnd, inStart, inEnd</span>) </span>{
     <span class="hljs-keyword">if</span> (preStart &gt; preEnd) <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
     <span class="hljs-keyword">const</span> rootVal = preorder[preStart];
-    <span class="hljs-keyword">const</span> root = <span class="hljs-keyword">new</span> <span class="hljs-title class_">TreeNode</span>(rootVal);
-    <span class="hljs-keyword">const</span> inRootIdx = indexMap.<span class="hljs-title function_">get</span>(rootVal);
+    <span class="hljs-keyword">const</span> root = <span class="hljs-keyword">new</span> TreeNode(rootVal);
+    <span class="hljs-keyword">const</span> inRootIdx = indexMap.get(rootVal);
     <span class="hljs-keyword">const</span> leftSize = inRootIdx - inStart;
 
-    root.<span class="hljs-property">left</span> = <span class="hljs-title function_">build</span>(preStart + <span class="hljs-number">1</span>, preStart + leftSize, inStart, inRootIdx - <span class="hljs-number">1</span>);
-    root.<span class="hljs-property">right</span> = <span class="hljs-title function_">build</span>(preStart + leftSize + <span class="hljs-number">1</span>, preEnd, inRootIdx + <span class="hljs-number">1</span>, inEnd);
+    root.left = build(preStart + <span class="hljs-number">1</span>, preStart + leftSize, inStart, inRootIdx - <span class="hljs-number">1</span>);
+    root.right = build(preStart + leftSize + <span class="hljs-number">1</span>, preEnd, inRootIdx + <span class="hljs-number">1</span>, inEnd);
     <span class="hljs-keyword">return</span> root;
   }
 
-  <span class="hljs-keyword">return</span> <span class="hljs-title function_">build</span>(<span class="hljs-number">0</span>, preorder.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, inorder.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>);
+  <span class="hljs-keyword">return</span> build(<span class="hljs-number">0</span>, preorder.length - <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, inorder.length - <span class="hljs-number">1</span>);
 }
 </code></pre>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">buildTree</span><span class="hljs-params">(preorder []<span class="hljs-type">int</span>, inorder []<span class="hljs-type">int</span>)</span></span> *TreeNode {
-    indexMap := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-type">int</span>]<span class="hljs-type">int</span>)
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">buildTree</span><span class="hljs-params">(preorder []<span class="hljs-keyword">int</span>, inorder []<span class="hljs-keyword">int</span>)</span> *<span class="hljs-title">TreeNode</span></span> {
+    indexMap := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-keyword">int</span>]<span class="hljs-keyword">int</span>)
     <span class="hljs-keyword">for</span> i, v := <span class="hljs-keyword">range</span> inorder {
         indexMap[v] = i
     }
 
-    <span class="hljs-keyword">var</span> build <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(preStart, preEnd, inStart, inEnd <span class="hljs-type">int</span>)</span></span> *TreeNode
-    build = <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(preStart, preEnd, inStart, inEnd <span class="hljs-type">int</span>)</span></span> *TreeNode {
+    <span class="hljs-keyword">var</span> build <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(preStart, preEnd, inStart, inEnd <span class="hljs-keyword">int</span>)</span> *<span class="hljs-title">TreeNode</span>
+    <span class="hljs-title">build</span> = <span class="hljs-title">func</span><span class="hljs-params">(preStart, preEnd, inStart, inEnd <span class="hljs-keyword">int</span>)</span> *<span class="hljs-title">TreeNode</span></span> {
         <span class="hljs-keyword">if</span> preStart &gt; preEnd {
             <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
         }
@@ -1091,44 +1223,44 @@
 <p><strong>题目描述：</strong> 请设计一个算法来实现二叉树的序列化与反序列化。序列化是将一棵二叉树转换为某种字符串表示；反序列化是将字符串恢复为原始的二叉树结构。</p>
 <p><strong>思路分析：</strong> 使用前序遍历进行序列化，用特殊标记（如 <code>"null"</code>）表示空节点，节点之间用逗号分隔。反序列化时按前序顺序依次读取值，遇到 <code>"null"</code> 返回空节点，否则创建节点并递归构建左右子树。也可以使用层序遍历（BFS）方式实现。</p>
 <p><strong>时间复杂度：</strong> O(n)，空间复杂度 O(n)。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">serialize</span>(<span class="hljs-params">root</span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">serialize</span>(<span class="hljs-params">root</span>) </span>{
   <span class="hljs-keyword">const</span> parts = [];
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">dfs</span>(<span class="hljs-params">node</span>) {
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">dfs</span>(<span class="hljs-params">node</span>) </span>{
     <span class="hljs-keyword">if</span> (node === <span class="hljs-literal">null</span>) {
-      parts.<span class="hljs-title function_">push</span>(<span class="hljs-string">"null"</span>);
+      parts.push(<span class="hljs-string">"null"</span>);
       <span class="hljs-keyword">return</span>;
     }
-    parts.<span class="hljs-title function_">push</span>(<span class="hljs-title class_">String</span>(node.<span class="hljs-property">val</span>));
-    <span class="hljs-title function_">dfs</span>(node.<span class="hljs-property">left</span>);
-    <span class="hljs-title function_">dfs</span>(node.<span class="hljs-property">right</span>);
+    parts.push(<span class="hljs-built_in">String</span>(node.val));
+    dfs(node.left);
+    dfs(node.right);
   }
-  <span class="hljs-title function_">dfs</span>(root);
-  <span class="hljs-keyword">return</span> parts.<span class="hljs-title function_">join</span>(<span class="hljs-string">","</span>);
+  dfs(root);
+  <span class="hljs-keyword">return</span> parts.join(<span class="hljs-string">","</span>);
 }
 
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">deserialize</span>(<span class="hljs-params">data</span>) {
-  <span class="hljs-keyword">const</span> values = data.<span class="hljs-title function_">split</span>(<span class="hljs-string">","</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">deserialize</span>(<span class="hljs-params">data</span>) </span>{
+  <span class="hljs-keyword">const</span> values = data.split(<span class="hljs-string">","</span>);
   <span class="hljs-keyword">let</span> index = <span class="hljs-number">0</span>;
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">dfs</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">dfs</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">if</span> (values[index] === <span class="hljs-string">"null"</span>) {
       index++;
       <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
     }
-    <span class="hljs-keyword">const</span> node = <span class="hljs-keyword">new</span> <span class="hljs-title class_">TreeNode</span>(<span class="hljs-built_in">parseInt</span>(values[index]));
+    <span class="hljs-keyword">const</span> node = <span class="hljs-keyword">new</span> TreeNode(<span class="hljs-built_in">parseInt</span>(values[index]));
     index++;
-    node.<span class="hljs-property">left</span> = <span class="hljs-title function_">dfs</span>();
-    node.<span class="hljs-property">right</span> = <span class="hljs-title function_">dfs</span>();
+    node.left = dfs();
+    node.right = dfs();
     <span class="hljs-keyword">return</span> node;
   }
-  <span class="hljs-keyword">return</span> <span class="hljs-title function_">dfs</span>();
+  <span class="hljs-keyword">return</span> dfs();
 }
 </code></pre>
 <pre><code class="lang-go"><span class="hljs-keyword">type</span> Codec <span class="hljs-keyword">struct</span>{}
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c *Codec)</span></span> serialize(root *TreeNode) <span class="hljs-type">string</span> {
-    <span class="hljs-keyword">var</span> parts []<span class="hljs-type">string</span>
-    <span class="hljs-keyword">var</span> dfs <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(*TreeNode)</span></span>
-    dfs = <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(node *TreeNode)</span></span> {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c *Codec)</span> <span class="hljs-title">serialize</span><span class="hljs-params">(root *TreeNode)</span> <span class="hljs-title">string</span></span> {
+    <span class="hljs-keyword">var</span> parts []<span class="hljs-keyword">string</span>
+    <span class="hljs-keyword">var</span> dfs <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(*TreeNode)</span>
+    <span class="hljs-title">dfs</span> = <span class="hljs-title">func</span><span class="hljs-params">(node *TreeNode)</span></span> {
         <span class="hljs-keyword">if</span> node == <span class="hljs-literal">nil</span> {
             parts = <span class="hljs-built_in">append</span>(parts, <span class="hljs-string">"null"</span>)
             <span class="hljs-keyword">return</span>
@@ -1141,11 +1273,11 @@
     <span class="hljs-keyword">return</span> strings.Join(parts, <span class="hljs-string">","</span>)
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c *Codec)</span></span> deserialize(data <span class="hljs-type">string</span>) *TreeNode {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c *Codec)</span> <span class="hljs-title">deserialize</span><span class="hljs-params">(data <span class="hljs-keyword">string</span>)</span> *<span class="hljs-title">TreeNode</span></span> {
     values := strings.Split(data, <span class="hljs-string">","</span>)
     index := <span class="hljs-number">0</span>
-    <span class="hljs-keyword">var</span> dfs <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> *TreeNode
-    dfs = <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> *TreeNode {
+    <span class="hljs-keyword">var</span> dfs <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span> *<span class="hljs-title">TreeNode</span>
+    <span class="hljs-title">dfs</span> = <span class="hljs-title">func</span><span class="hljs-params">()</span> *<span class="hljs-title">TreeNode</span></span> {
         <span class="hljs-keyword">if</span> values[index] == <span class="hljs-string">"null"</span> {
             index++
             <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
@@ -1168,25 +1300,25 @@
 <p><strong>BFS 解法：</strong> 类似地，遇到 <code>'1'</code> 时用 BFS 将整个连通区域标记为已访问。</p>
 <p><strong>时间复杂度：</strong> O(m x n)，空间复杂度 O(m x n)（最坏情况下递归栈或队列）。</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// DFS</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">numIslands</span>(<span class="hljs-params">grid</span>) {
-  <span class="hljs-keyword">if</span> (grid.<span class="hljs-property">length</span> === <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-  <span class="hljs-keyword">const</span> m = grid.<span class="hljs-property">length</span>, n = grid[<span class="hljs-number">0</span>].<span class="hljs-property">length</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">numIslands</span>(<span class="hljs-params">grid</span>) </span>{
+  <span class="hljs-keyword">if</span> (grid.length === <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">const</span> m = grid.length, n = grid[<span class="hljs-number">0</span>].length;
   <span class="hljs-keyword">let</span> count = <span class="hljs-number">0</span>;
 
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">dfs</span>(<span class="hljs-params">i, j</span>) {
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">dfs</span>(<span class="hljs-params">i, j</span>) </span>{
     <span class="hljs-keyword">if</span> (i &lt; <span class="hljs-number">0</span> || i &gt;= m || j &lt; <span class="hljs-number">0</span> || j &gt;= n || grid[i][j] === <span class="hljs-string">'0'</span>) <span class="hljs-keyword">return</span>;
     grid[i][j] = <span class="hljs-string">'0'</span>;
-    <span class="hljs-title function_">dfs</span>(i + <span class="hljs-number">1</span>, j);
-    <span class="hljs-title function_">dfs</span>(i - <span class="hljs-number">1</span>, j);
-    <span class="hljs-title function_">dfs</span>(i, j + <span class="hljs-number">1</span>);
-    <span class="hljs-title function_">dfs</span>(i, j - <span class="hljs-number">1</span>);
+    dfs(i + <span class="hljs-number">1</span>, j);
+    dfs(i - <span class="hljs-number">1</span>, j);
+    dfs(i, j + <span class="hljs-number">1</span>);
+    dfs(i, j - <span class="hljs-number">1</span>);
   }
 
   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; m; i++) {
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = <span class="hljs-number">0</span>; j &lt; n; j++) {
       <span class="hljs-keyword">if</span> (grid[i][j] === <span class="hljs-string">'1'</span>) {
         count++;
-        <span class="hljs-title function_">dfs</span>(i, j);
+        dfs(i, j);
       }
     }
   }
@@ -1194,11 +1326,11 @@
 }
 
 <span class="hljs-comment">// BFS</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">numIslandsBFS</span>(<span class="hljs-params">grid</span>) {
-  <span class="hljs-keyword">if</span> (grid.<span class="hljs-property">length</span> === <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-  <span class="hljs-keyword">const</span> m = grid.<span class="hljs-property">length</span>, n = grid[<span class="hljs-number">0</span>].<span class="hljs-property">length</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">numIslandsBFS</span>(<span class="hljs-params">grid</span>) </span>{
+  <span class="hljs-keyword">if</span> (grid.length === <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">const</span> m = grid.length, n = grid[<span class="hljs-number">0</span>].length;
   <span class="hljs-keyword">let</span> count = <span class="hljs-number">0</span>;
-  <span class="hljs-keyword">const</span> dirs = [[<span class="hljs-number">1</span>,<span class="hljs-number">0</span>],[-<span class="hljs-number">1</span>,<span class="hljs-number">0</span>],[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>],[<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>]];
+  <span class="hljs-keyword">const</span> dirs = [[<span class="hljs-number">1</span>,<span class="hljs-number">0</span>],[<span class="hljs-number">-1</span>,<span class="hljs-number">0</span>],[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>],[<span class="hljs-number">0</span>,<span class="hljs-number">-1</span>]];
 
   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; m; i++) {
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = <span class="hljs-number">0</span>; j &lt; n; j++) {
@@ -1206,13 +1338,13 @@
         count++;
         grid[i][j] = <span class="hljs-string">'0'</span>;
         <span class="hljs-keyword">const</span> queue = [[i, j]];
-        <span class="hljs-keyword">while</span> (queue.<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span>) {
-          <span class="hljs-keyword">const</span> [x, y] = queue.<span class="hljs-title function_">shift</span>();
+        <span class="hljs-keyword">while</span> (queue.length &gt; <span class="hljs-number">0</span>) {
+          <span class="hljs-keyword">const</span> [x, y] = queue.shift();
           <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> [dx, dy] <span class="hljs-keyword">of</span> dirs) {
             <span class="hljs-keyword">const</span> nx = x + dx, ny = y + dy;
             <span class="hljs-keyword">if</span> (nx &gt;= <span class="hljs-number">0</span> &amp;&amp; nx &lt; m &amp;&amp; ny &gt;= <span class="hljs-number">0</span> &amp;&amp; ny &lt; n &amp;&amp; grid[nx][ny] === <span class="hljs-string">'1'</span>) {
               grid[nx][ny] = <span class="hljs-string">'0'</span>;
-              queue.<span class="hljs-title function_">push</span>([nx, ny]);
+              queue.push([nx, ny]);
             }
           }
         }
@@ -1223,15 +1355,15 @@
 }
 </code></pre>
 <pre><code class="lang-go"><span class="hljs-comment">// DFS</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">numIslands</span><span class="hljs-params">(grid [][]<span class="hljs-type">byte</span>)</span></span> <span class="hljs-type">int</span> {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">numIslands</span><span class="hljs-params">(grid [][]<span class="hljs-keyword">byte</span>)</span> <span class="hljs-title">int</span></span> {
     <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(grid) == <span class="hljs-number">0</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>
     }
     m, n := <span class="hljs-built_in">len</span>(grid), <span class="hljs-built_in">len</span>(grid[<span class="hljs-number">0</span>])
     count := <span class="hljs-number">0</span>
 
-    <span class="hljs-keyword">var</span> dfs <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(<span class="hljs-type">int</span>, <span class="hljs-type">int</span>)</span></span>
-    dfs = <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(i, j <span class="hljs-type">int</span>)</span></span> {
+    <span class="hljs-keyword">var</span> dfs <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(<span class="hljs-keyword">int</span>, <span class="hljs-keyword">int</span>)</span>
+    <span class="hljs-title">dfs</span> = <span class="hljs-title">func</span><span class="hljs-params">(i, j <span class="hljs-keyword">int</span>)</span></span> {
         <span class="hljs-keyword">if</span> i &lt; <span class="hljs-number">0</span> || i &gt;= m || j &lt; <span class="hljs-number">0</span> || j &gt;= n || grid[i][j] == <span class="hljs-string">'0'</span> {
             <span class="hljs-keyword">return</span>
         }
@@ -1254,20 +1386,20 @@
 }
 
 <span class="hljs-comment">// BFS</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">numIslandsBFS</span><span class="hljs-params">(grid [][]<span class="hljs-type">byte</span>)</span></span> <span class="hljs-type">int</span> {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">numIslandsBFS</span><span class="hljs-params">(grid [][]<span class="hljs-keyword">byte</span>)</span> <span class="hljs-title">int</span></span> {
     <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(grid) == <span class="hljs-number">0</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>
     }
     m, n := <span class="hljs-built_in">len</span>(grid), <span class="hljs-built_in">len</span>(grid[<span class="hljs-number">0</span>])
     count := <span class="hljs-number">0</span>
-    dirs := [][<span class="hljs-number">2</span>]<span class="hljs-type">int</span>{{<span class="hljs-number">1</span>, <span class="hljs-number">0</span>}, {<span class="hljs-number">-1</span>, <span class="hljs-number">0</span>}, {<span class="hljs-number">0</span>, <span class="hljs-number">1</span>}, {<span class="hljs-number">0</span>, <span class="hljs-number">-1</span>}}
+    dirs := [][<span class="hljs-number">2</span>]<span class="hljs-keyword">int</span>{{<span class="hljs-number">1</span>, <span class="hljs-number">0</span>}, {<span class="hljs-number">-1</span>, <span class="hljs-number">0</span>}, {<span class="hljs-number">0</span>, <span class="hljs-number">1</span>}, {<span class="hljs-number">0</span>, <span class="hljs-number">-1</span>}}
 
     <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; m; i++ {
         <span class="hljs-keyword">for</span> j := <span class="hljs-number">0</span>; j &lt; n; j++ {
             <span class="hljs-keyword">if</span> grid[i][j] == <span class="hljs-string">'1'</span> {
                 count++
                 grid[i][j] = <span class="hljs-string">'0'</span>
-                queue := [][<span class="hljs-number">2</span>]<span class="hljs-type">int</span>{{i, j}}
+                queue := [][<span class="hljs-number">2</span>]<span class="hljs-keyword">int</span>{{i, j}}
                 <span class="hljs-keyword">for</span> <span class="hljs-built_in">len</span>(queue) &gt; <span class="hljs-number">0</span> {
                     cell := queue[<span class="hljs-number">0</span>]
                     queue = queue[<span class="hljs-number">1</span>:]
@@ -1275,7 +1407,7 @@
                         nx, ny := cell[<span class="hljs-number">0</span>]+d[<span class="hljs-number">0</span>], cell[<span class="hljs-number">1</span>]+d[<span class="hljs-number">1</span>]
                         <span class="hljs-keyword">if</span> nx &gt;= <span class="hljs-number">0</span> &amp;&amp; nx &lt; m &amp;&amp; ny &gt;= <span class="hljs-number">0</span> &amp;&amp; ny &lt; n &amp;&amp; grid[nx][ny] == <span class="hljs-string">'1'</span> {
                             grid[nx][ny] = <span class="hljs-string">'0'</span>
-                            queue = <span class="hljs-built_in">append</span>(queue, [<span class="hljs-number">2</span>]<span class="hljs-type">int</span>{nx, ny})
+                            queue = <span class="hljs-built_in">append</span>(queue, [<span class="hljs-number">2</span>]<span class="hljs-keyword">int</span>{nx, ny})
                         }
                     }
                 }
@@ -1291,27 +1423,27 @@
 <p><strong>思路分析：</strong> 这是一个经典的拓扑排序问题。将课程关系建模为有向图，使用 BFS（Kahn 算法）：统计每个节点的入度，将入度为 0 的节点入队。每次出队一个节点，将其所有邻居的入度减一，若某邻居入度变为 0 则入队。最终如果处理的节点数等于总课程数，则没有环，可以完成所有课程。也可以用 DFS 检测环。</p>
 <p><strong>时间复杂度：</strong> O(V + E)，V 为课程数，E 为先修关系数。空间复杂度 O(V + E)。</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// BFS（Kahn 算法）</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">canFinish</span>(<span class="hljs-params">numCourses, prerequisites</span>) {
-  <span class="hljs-keyword">const</span> inDegree = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Array</span>(numCourses).<span class="hljs-title function_">fill</span>(<span class="hljs-number">0</span>);
-  <span class="hljs-keyword">const</span> graph = <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>({ <span class="hljs-attr">length</span>: numCourses }, <span class="hljs-function">() =&gt;</span> []);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">canFinish</span>(<span class="hljs-params">numCourses, prerequisites</span>) </span>{
+  <span class="hljs-keyword">const</span> inDegree = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(numCourses).fill(<span class="hljs-number">0</span>);
+  <span class="hljs-keyword">const</span> graph = <span class="hljs-built_in">Array</span>.from({ <span class="hljs-attr">length</span>: numCourses }, () =&gt; []);
 
   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> [course, pre] <span class="hljs-keyword">of</span> prerequisites) {
-    graph[pre].<span class="hljs-title function_">push</span>(course);
+    graph[pre].push(course);
     inDegree[course]++;
   }
 
   <span class="hljs-keyword">const</span> queue = [];
   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; numCourses; i++) {
-    <span class="hljs-keyword">if</span> (inDegree[i] === <span class="hljs-number">0</span>) queue.<span class="hljs-title function_">push</span>(i);
+    <span class="hljs-keyword">if</span> (inDegree[i] === <span class="hljs-number">0</span>) queue.push(i);
   }
 
   <span class="hljs-keyword">let</span> count = <span class="hljs-number">0</span>;
-  <span class="hljs-keyword">while</span> (queue.<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span>) {
-    <span class="hljs-keyword">const</span> node = queue.<span class="hljs-title function_">shift</span>();
+  <span class="hljs-keyword">while</span> (queue.length &gt; <span class="hljs-number">0</span>) {
+    <span class="hljs-keyword">const</span> node = queue.shift();
     count++;
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> neighbor <span class="hljs-keyword">of</span> graph[node]) {
       inDegree[neighbor]--;
-      <span class="hljs-keyword">if</span> (inDegree[neighbor] === <span class="hljs-number">0</span>) queue.<span class="hljs-title function_">push</span>(neighbor);
+      <span class="hljs-keyword">if</span> (inDegree[neighbor] === <span class="hljs-number">0</span>) queue.push(neighbor);
     }
   }
 
@@ -1319,39 +1451,39 @@
 }
 
 <span class="hljs-comment">// 课程表 II —— 返回拓扑排序顺序</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">findOrder</span>(<span class="hljs-params">numCourses, prerequisites</span>) {
-  <span class="hljs-keyword">const</span> inDegree = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Array</span>(numCourses).<span class="hljs-title function_">fill</span>(<span class="hljs-number">0</span>);
-  <span class="hljs-keyword">const</span> graph = <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>({ <span class="hljs-attr">length</span>: numCourses }, <span class="hljs-function">() =&gt;</span> []);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">findOrder</span>(<span class="hljs-params">numCourses, prerequisites</span>) </span>{
+  <span class="hljs-keyword">const</span> inDegree = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(numCourses).fill(<span class="hljs-number">0</span>);
+  <span class="hljs-keyword">const</span> graph = <span class="hljs-built_in">Array</span>.from({ <span class="hljs-attr">length</span>: numCourses }, () =&gt; []);
 
   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> [course, pre] <span class="hljs-keyword">of</span> prerequisites) {
-    graph[pre].<span class="hljs-title function_">push</span>(course);
+    graph[pre].push(course);
     inDegree[course]++;
   }
 
   <span class="hljs-keyword">const</span> queue = [];
   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; numCourses; i++) {
-    <span class="hljs-keyword">if</span> (inDegree[i] === <span class="hljs-number">0</span>) queue.<span class="hljs-title function_">push</span>(i);
+    <span class="hljs-keyword">if</span> (inDegree[i] === <span class="hljs-number">0</span>) queue.push(i);
   }
 
   <span class="hljs-keyword">const</span> order = [];
-  <span class="hljs-keyword">while</span> (queue.<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span>) {
-    <span class="hljs-keyword">const</span> node = queue.<span class="hljs-title function_">shift</span>();
-    order.<span class="hljs-title function_">push</span>(node);
+  <span class="hljs-keyword">while</span> (queue.length &gt; <span class="hljs-number">0</span>) {
+    <span class="hljs-keyword">const</span> node = queue.shift();
+    order.push(node);
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> neighbor <span class="hljs-keyword">of</span> graph[node]) {
       inDegree[neighbor]--;
-      <span class="hljs-keyword">if</span> (inDegree[neighbor] === <span class="hljs-number">0</span>) queue.<span class="hljs-title function_">push</span>(neighbor);
+      <span class="hljs-keyword">if</span> (inDegree[neighbor] === <span class="hljs-number">0</span>) queue.push(neighbor);
     }
   }
 
-  <span class="hljs-keyword">return</span> order.<span class="hljs-property">length</span> === numCourses ? order : [];
+  <span class="hljs-keyword">return</span> order.length === numCourses ? order : [];
 }
 </code></pre>
 <pre><code class="lang-go"><span class="hljs-comment">// BFS（Kahn 算法）</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">canFinish</span><span class="hljs-params">(numCourses <span class="hljs-type">int</span>, prerequisites [][]<span class="hljs-type">int</span>)</span></span> <span class="hljs-type">bool</span> {
-    inDegree := <span class="hljs-built_in">make</span>([]<span class="hljs-type">int</span>, numCourses)
-    graph := <span class="hljs-built_in">make</span>([][]<span class="hljs-type">int</span>, numCourses)
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">canFinish</span><span class="hljs-params">(numCourses <span class="hljs-keyword">int</span>, prerequisites [][]<span class="hljs-keyword">int</span>)</span> <span class="hljs-title">bool</span></span> {
+    inDegree := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int</span>, numCourses)
+    graph := <span class="hljs-built_in">make</span>([][]<span class="hljs-keyword">int</span>, numCourses)
     <span class="hljs-keyword">for</span> i := <span class="hljs-keyword">range</span> graph {
-        graph[i] = []<span class="hljs-type">int</span>{}
+        graph[i] = []<span class="hljs-keyword">int</span>{}
     }
 
     <span class="hljs-keyword">for</span> _, p := <span class="hljs-keyword">range</span> prerequisites {
@@ -1360,7 +1492,7 @@
         inDegree[course]++
     }
 
-    queue := []<span class="hljs-type">int</span>{}
+    queue := []<span class="hljs-keyword">int</span>{}
     <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; numCourses; i++ {
         <span class="hljs-keyword">if</span> inDegree[i] == <span class="hljs-number">0</span> {
             queue = <span class="hljs-built_in">append</span>(queue, i)
@@ -1384,11 +1516,11 @@
 }
 
 <span class="hljs-comment">// 课程表 II —— 返回拓扑排序顺序</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">findOrder</span><span class="hljs-params">(numCourses <span class="hljs-type">int</span>, prerequisites [][]<span class="hljs-type">int</span>)</span></span> []<span class="hljs-type">int</span> {
-    inDegree := <span class="hljs-built_in">make</span>([]<span class="hljs-type">int</span>, numCourses)
-    graph := <span class="hljs-built_in">make</span>([][]<span class="hljs-type">int</span>, numCourses)
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">findOrder</span><span class="hljs-params">(numCourses <span class="hljs-keyword">int</span>, prerequisites [][]<span class="hljs-keyword">int</span>)</span> []<span class="hljs-title">int</span></span> {
+    inDegree := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int</span>, numCourses)
+    graph := <span class="hljs-built_in">make</span>([][]<span class="hljs-keyword">int</span>, numCourses)
     <span class="hljs-keyword">for</span> i := <span class="hljs-keyword">range</span> graph {
-        graph[i] = []<span class="hljs-type">int</span>{}
+        graph[i] = []<span class="hljs-keyword">int</span>{}
     }
 
     <span class="hljs-keyword">for</span> _, p := <span class="hljs-keyword">range</span> prerequisites {
@@ -1397,14 +1529,14 @@
         inDegree[course]++
     }
 
-    queue := []<span class="hljs-type">int</span>{}
+    queue := []<span class="hljs-keyword">int</span>{}
     <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; numCourses; i++ {
         <span class="hljs-keyword">if</span> inDegree[i] == <span class="hljs-number">0</span> {
             queue = <span class="hljs-built_in">append</span>(queue, i)
         }
     }
 
-    order := []<span class="hljs-type">int</span>{}
+    order := []<span class="hljs-keyword">int</span>{}
     <span class="hljs-keyword">for</span> <span class="hljs-built_in">len</span>(queue) &gt; <span class="hljs-number">0</span> {
         node := queue[<span class="hljs-number">0</span>]
         queue = queue[<span class="hljs-number">1</span>:]
@@ -1420,7 +1552,7 @@
     <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(order) == numCourses {
         <span class="hljs-keyword">return</span> order
     }
-    <span class="hljs-keyword">return</span> []<span class="hljs-type">int</span>{}
+    <span class="hljs-keyword">return</span> []<span class="hljs-keyword">int</span>{}
 }
 </code></pre>
 <hr></hr>
@@ -1491,6 +1623,22 @@
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -1514,73 +1662,29 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"树与图","level":"6.3","depth":1,"next":{"title":"动态规划","level":"6.4","depth":1,"path":"algorithm/dp.md","ref":"algorithm/dp.md","articles":[]},"previous":{"title":"链表","level":"6.2","depth":1,"path":"algorithm/linked-list.md","ref":"algorithm/linked-list.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"algorithm/tree-graph.md","mtime":"2026-03-31T06:35:11.836Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"树与图","level":"6.3","depth":1,"next":{"title":"动态规划","level":"6.4","depth":1,"path":"algorithm/dp.md","ref":"algorithm/dp.md","articles":[]},"previous":{"title":"链表","level":"6.2","depth":1,"path":"algorithm/linked-list.md","ref":"algorithm/linked-list.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"algorithm/tree-graph.md","mtime":"2026-03-31T12:30:30.397Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    <noscript>
-        <style>
-            .honkit-cloak {
-                display: block !important;
-            }
-        </style>
-    </noscript>
-    <script>
-        // Restore sidebar state as critical path for prevent layout shift
-        function __init__getSidebarState(defaultValue){
-            var baseKey = "";
-            var key = baseKey + ":sidebar";
-            try {
-                var value = localStorage[key];
-                if (value === undefined) {
-                    return defaultValue;
-                }
-                var parsed = JSON.parse(value);
-                return parsed == null ? defaultValue : parsed;
-            } catch (e) {
-                return defaultValue;
-            }
-        }
-        function __init__restoreLastSidebarState() {
-            var isMobile = window.matchMedia("(max-width: 600px)").matches;
-            if (isMobile) {
-                // Init last state if not mobile
-                return;
-            }
-            var sidebarState = __init__getSidebarState(true);
-            var book = document.querySelector(".book");
-            // Show sidebar if it enabled
-            if (sidebarState && book) {
-                book.classList.add("without-animation", "with-summary");
-            }
-        }
-
-        try {
-            __init__restoreLastSidebarState();
-        } finally {
-            var book = document.querySelector(".book");
-            book.classList.remove("honkit-cloak");
-        }
-    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

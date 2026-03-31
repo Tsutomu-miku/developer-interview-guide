@@ -3,10 +3,11 @@
 <html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>内存管理与GC · 全栈开发面试指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="generator" content="GitBook 6.1.7">
         
         
         
@@ -16,19 +17,23 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -69,10 +74,14 @@
     </head>
     <body>
         
-<div class="book honkit-cloak">
+<div class="book">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -269,6 +278,66 @@
             
         </li>
     
+        <li class="chapter " data-level="2.11" data-path="../frontend/micro-frontend.html">
+            
+                <a href="../frontend/micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../frontend/mobile-dev.html">
+            
+                <a href="../frontend/mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../frontend/state-management.html">
+            
+                <a href="../frontend/state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../frontend/design-patterns.html">
+            
+                <a href="../frontend/design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -359,6 +428,21 @@
                         <b>3.6.</b>
                     
                     最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../nodejs/serverless.html">
+            
+                <a href="../nodejs/serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
             
                 </a>
             
@@ -463,6 +547,21 @@
             
         </li>
     
+        <li class="chapter " data-level="4.7" data-path="cloud-native.html">
+            
+                <a href="cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -553,6 +652,21 @@
                         <b>5.6.</b>
                     
                     实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../agent/evaluation.html">
+            
+                <a href="../agent/evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
             
                 </a>
             
@@ -657,14 +771,29 @@
             
         </li>
     
+        <li class="chapter " data-level="6.7" data-path="../algorithm/system-design.html">
+            
+                <a href="../algorithm/system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
     <li class="divider"></li>
 
     <li>
-        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
-            本书使用 HonKit 发布
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -697,6 +826,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="go内存管理与gc面试指南">Go内存管理与GC面试指南</h1>
@@ -724,10 +856,10 @@
 <pre><code class="lang-go"><span class="hljs-keyword">type</span> mspan <span class="hljs-keyword">struct</span> {
     next     *mspan     <span class="hljs-comment">// 链表下一个</span>
     prev     *mspan     <span class="hljs-comment">// 链表上一个</span>
-    startAddr <span class="hljs-type">uintptr</span>   <span class="hljs-comment">// 起始地址</span>
-    npages   <span class="hljs-type">uintptr</span>    <span class="hljs-comment">// 页数</span>
-    freeindex <span class="hljs-type">uintptr</span>   <span class="hljs-comment">// 下一个空闲对象的索引</span>
-    nelems   <span class="hljs-type">uintptr</span>    <span class="hljs-comment">// 对象总数</span>
+    startAddr <span class="hljs-keyword">uintptr</span>   <span class="hljs-comment">// 起始地址</span>
+    npages   <span class="hljs-keyword">uintptr</span>    <span class="hljs-comment">// 页数</span>
+    freeindex <span class="hljs-keyword">uintptr</span>   <span class="hljs-comment">// 下一个空闲对象的索引</span>
+    nelems   <span class="hljs-keyword">uintptr</span>    <span class="hljs-comment">// 对象总数</span>
     allocBits  *gcBits  <span class="hljs-comment">// 分配位图</span>
     gcmarkBits *gcBits  <span class="hljs-comment">// GC 标记位图</span>
     spanclass  spanClass <span class="hljs-comment">// size class + noscan 标记</span>
@@ -810,7 +942,7 @@
 </code></pre>
 <h3 id="33-常见逃逸场景">3.3 常见逃逸场景</h3>
 <p><strong>场景 1：返回局部变量的指针</strong></p>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">newUser</span><span class="hljs-params">()</span></span> *User {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">newUser</span><span class="hljs-params">()</span> *<span class="hljs-title">User</span></span> {
     u := User{Name: <span class="hljs-string">"Alice"</span>} <span class="hljs-comment">// u 逃逸到堆上</span>
     <span class="hljs-keyword">return</span> &amp;u
 }
@@ -821,9 +953,9 @@ u := &amp;User{Name: <span class="hljs-string">"Alice"</span>} <span class="hljs
 ch &lt;- u
 </code></pre>
 <p><strong>场景 3：闭包引用局部变量</strong></p>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">closure</span><span class="hljs-params">()</span></span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> <span class="hljs-type">int</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">closure</span><span class="hljs-params">()</span> <span class="hljs-title">func</span><span class="hljs-params">()</span> <span class="hljs-title">int</span></span> {
     x := <span class="hljs-number">0</span> <span class="hljs-comment">// x 逃逸</span>
-    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> <span class="hljs-type">int</span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span> <span class="hljs-title">int</span></span> {
         x++
         <span class="hljs-keyword">return</span> x
     }
@@ -840,14 +972,14 @@ u := &amp;User{} <span class="hljs-comment">// u 逃逸</span>
 s = <span class="hljs-built_in">append</span>(s, u)
 </code></pre>
 <p><strong>场景 6：slice append 导致扩容</strong></p>
-<pre><code class="lang-go">s := <span class="hljs-built_in">make</span>([]<span class="hljs-type">int</span>, <span class="hljs-number">0</span>)
+<pre><code class="lang-go">s := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int</span>, <span class="hljs-number">0</span>)
 <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10000</span>; i++ {
     s = <span class="hljs-built_in">append</span>(s, i) <span class="hljs-comment">// 编译器无法确定最终大小，可能逃逸</span>
 }
 </code></pre>
 <p><strong>场景 7：栈空间不足</strong></p>
 <pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">bigArray</span><span class="hljs-params">()</span></span> {
-    <span class="hljs-keyword">var</span> arr [<span class="hljs-number">1</span> &lt;&lt; <span class="hljs-number">20</span>]<span class="hljs-type">int</span> <span class="hljs-comment">// 大数组，超过栈帧限制，逃逸到堆</span>
+    <span class="hljs-keyword">var</span> arr [<span class="hljs-number">1</span> &lt;&lt; <span class="hljs-number">20</span>]<span class="hljs-keyword">int</span> <span class="hljs-comment">// 大数组，超过栈帧限制，逃逸到堆</span>
     _ = arr
 }
 </code></pre>
@@ -1022,7 +1154,7 @@ debug.SetGCPercent(<span class="hljs-number">200</span>)
 </ol>
 <pre><code class="lang-go"><span class="hljs-comment">// Ballast 技术（Go 1.19 之前的常用手段）</span>
 <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
-    ballast := <span class="hljs-built_in">make</span>([]<span class="hljs-type">byte</span>, <span class="hljs-number">1</span>&lt;&lt;<span class="hljs-number">30</span>) <span class="hljs-comment">// 1GB ballast</span>
+    ballast := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">byte</span>, <span class="hljs-number">1</span>&lt;&lt;<span class="hljs-number">30</span>) <span class="hljs-comment">// 1GB ballast</span>
     _ = ballast
     <span class="hljs-comment">// GC 目标堆 = 1GB * (1 + GOGC/100) = 2GB</span>
     <span class="hljs-comment">// 实际有效数据可以在较大范围内波动而不触发 GC</span>
@@ -1036,7 +1168,7 @@ debug.SetGCPercent(<span class="hljs-number">200</span>)
 <h3 id="61-常见内存泄漏场景">6.1 常见内存泄漏场景</h3>
 <p><strong>1. Goroutine 泄漏（最常见）：</strong></p>
 <pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">leak</span><span class="hljs-params">()</span></span> {
-    ch := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>)
+    ch := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>)
     <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> {
         val := &lt;-ch <span class="hljs-comment">// 永远阻塞，goroutine 泄漏</span>
         fmt.Println(val)
@@ -1054,37 +1186,37 @@ debug.SetGCPercent(<span class="hljs-number">200</span>)
 }
 </code></pre>
 <p><strong>3. 切片持有大底层数组：</strong></p>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">leak</span><span class="hljs-params">()</span></span> []<span class="hljs-type">byte</span> {
-    data := <span class="hljs-built_in">make</span>([]<span class="hljs-type">byte</span>, <span class="hljs-number">1</span>&lt;&lt;<span class="hljs-number">20</span>) <span class="hljs-comment">// 1MB</span>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">leak</span><span class="hljs-params">()</span> []<span class="hljs-title">byte</span></span> {
+    data := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">byte</span>, <span class="hljs-number">1</span>&lt;&lt;<span class="hljs-number">20</span>) <span class="hljs-comment">// 1MB</span>
     <span class="hljs-keyword">return</span> data[:<span class="hljs-number">10</span>] <span class="hljs-comment">// 返回的切片仍然持有 1MB 的底层数组</span>
 }
 
 <span class="hljs-comment">// 修正：复制需要的数据</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">noLeak</span><span class="hljs-params">()</span></span> []<span class="hljs-type">byte</span> {
-    data := <span class="hljs-built_in">make</span>([]<span class="hljs-type">byte</span>, <span class="hljs-number">1</span>&lt;&lt;<span class="hljs-number">20</span>)
-    result := <span class="hljs-built_in">make</span>([]<span class="hljs-type">byte</span>, <span class="hljs-number">10</span>)
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">noLeak</span><span class="hljs-params">()</span> []<span class="hljs-title">byte</span></span> {
+    data := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">byte</span>, <span class="hljs-number">1</span>&lt;&lt;<span class="hljs-number">20</span>)
+    result := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">byte</span>, <span class="hljs-number">10</span>)
     <span class="hljs-built_in">copy</span>(result, data[:<span class="hljs-number">10</span>])
     <span class="hljs-keyword">return</span> result
 }
 </code></pre>
 <p><strong>4. 全局变量/缓存无限增长：</strong></p>
-<pre><code class="lang-go"><span class="hljs-keyword">var</span> cache = <span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-type">string</span>]<span class="hljs-keyword">interface</span>{})
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">addToCache</span><span class="hljs-params">(key <span class="hljs-type">string</span>, val <span class="hljs-keyword">interface</span>{})</span></span> {
+<pre><code class="lang-go"><span class="hljs-keyword">var</span> cache = <span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">interface</span>{})
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">addToCache</span><span class="hljs-params">(key <span class="hljs-keyword">string</span>, val <span class="hljs-keyword">interface</span>{})</span></span> {
     cache[key] = val <span class="hljs-comment">// 只增不减</span>
 }
 </code></pre>
 <p><strong>5. string 与 []byte 的引用：</strong></p>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">leak</span><span class="hljs-params">(s <span class="hljs-type">string</span>)</span></span> <span class="hljs-type">string</span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">leak</span><span class="hljs-params">(s <span class="hljs-keyword">string</span>)</span> <span class="hljs-title">string</span></span> {
     <span class="hljs-comment">// s 可能是一个很长的字符串</span>
     <span class="hljs-keyword">return</span> s[:<span class="hljs-number">10</span>] <span class="hljs-comment">// 仍然持有原始字符串的内存</span>
 }
 
 <span class="hljs-comment">// 修正</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">noLeak</span><span class="hljs-params">(s <span class="hljs-type">string</span>)</span></span> <span class="hljs-type">string</span> {
-    <span class="hljs-keyword">return</span> <span class="hljs-type">string</span>([]<span class="hljs-type">byte</span>(s[:<span class="hljs-number">10</span>])) <span class="hljs-comment">// 复制一份</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">noLeak</span><span class="hljs-params">(s <span class="hljs-keyword">string</span>)</span> <span class="hljs-title">string</span></span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">string</span>([]<span class="hljs-keyword">byte</span>(s[:<span class="hljs-number">10</span>])) <span class="hljs-comment">// 复制一份</span>
 }
 <span class="hljs-comment">// 或者 Go 1.20+</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">noLeak</span><span class="hljs-params">(s <span class="hljs-type">string</span>)</span></span> <span class="hljs-type">string</span> {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">noLeak</span><span class="hljs-params">(s <span class="hljs-keyword">string</span>)</span> <span class="hljs-title">string</span></span> {
     <span class="hljs-keyword">return</span> strings.Clone(s[:<span class="hljs-number">10</span>])
 }
 </code></pre>
@@ -1139,12 +1271,12 @@ P2: private → [nil]    shared → [obj]
 </ul>
 <h3 id="73-使用示例">7.3 使用示例</h3>
 <pre><code class="lang-go"><span class="hljs-keyword">var</span> bufferPool = sync.Pool{
-    New: <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> <span class="hljs-keyword">interface</span>{} {
+    New: <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span> <span class="hljs-title">interface</span></span>{} {
         <span class="hljs-keyword">return</span> <span class="hljs-built_in">new</span>(bytes.Buffer)
     },
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">process</span><span class="hljs-params">(data []<span class="hljs-type">byte</span>)</span></span> <span class="hljs-type">string</span> {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">process</span><span class="hljs-params">(data []<span class="hljs-keyword">byte</span>)</span> <span class="hljs-title">string</span></span> {
     buf := bufferPool.Get().(*bytes.Buffer)
     <span class="hljs-keyword">defer</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> {
         buf.Reset() <span class="hljs-comment">// 重要：放回之前重置状态</span>
@@ -1186,17 +1318,17 @@ P2: private → [nil]    shared → [obj]
 <h3 id="83-结构体字段顺序优化">8.3 结构体字段顺序优化</h3>
 <pre><code class="lang-go"><span class="hljs-comment">// 未优化：占用 24 字节</span>
 <span class="hljs-keyword">type</span> Bad <span class="hljs-keyword">struct</span> {
-    a <span class="hljs-type">bool</span>   <span class="hljs-comment">// 1 byte + 7 padding</span>
-    b <span class="hljs-type">int64</span>  <span class="hljs-comment">// 8 bytes</span>
-    c <span class="hljs-type">bool</span>   <span class="hljs-comment">// 1 byte + 7 padding</span>
+    a <span class="hljs-keyword">bool</span>   <span class="hljs-comment">// 1 byte + 7 padding</span>
+    b <span class="hljs-keyword">int64</span>  <span class="hljs-comment">// 8 bytes</span>
+    c <span class="hljs-keyword">bool</span>   <span class="hljs-comment">// 1 byte + 7 padding</span>
 }
 <span class="hljs-comment">// sizeof = 24 bytes</span>
 
 <span class="hljs-comment">// 优化后：占用 16 字节</span>
 <span class="hljs-keyword">type</span> Good <span class="hljs-keyword">struct</span> {
-    b <span class="hljs-type">int64</span>  <span class="hljs-comment">// 8 bytes</span>
-    a <span class="hljs-type">bool</span>   <span class="hljs-comment">// 1 byte</span>
-    c <span class="hljs-type">bool</span>   <span class="hljs-comment">// 1 byte + 6 padding</span>
+    b <span class="hljs-keyword">int64</span>  <span class="hljs-comment">// 8 bytes</span>
+    a <span class="hljs-keyword">bool</span>   <span class="hljs-comment">// 1 byte</span>
+    c <span class="hljs-keyword">bool</span>   <span class="hljs-comment">// 1 byte + 6 padding</span>
 }
 <span class="hljs-comment">// sizeof = 16 bytes</span>
 </code></pre>
@@ -1219,7 +1351,7 @@ fieldalignment -fix ./...
 <li>嵌入空结构体实现标记接口</li>
 </ul>
 <pre><code class="lang-go"><span class="hljs-comment">// 空结构体作为 map 值，比 map[string]bool 更节省内存</span>
-set := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-type">string</span>]<span class="hljs-keyword">struct</span>{})
+set := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">struct</span>{})
 set[<span class="hljs-string">"key"</span>] = <span class="hljs-keyword">struct</span>{}{}
 _, exists := set[<span class="hljs-string">"key"</span>]
 </code></pre>
@@ -1277,6 +1409,22 @@ m.GCCPUFraction <span class="hljs-comment">// GC 使用的 CPU 占比</span>
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -1300,73 +1448,29 @@ m.GCCPUFraction <span class="hljs-comment">// GC 使用的 CPU 占比</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"内存管理与GC","level":"4.3","depth":1,"next":{"title":"Web框架与HTTP","level":"4.4","depth":1,"path":"golang/web-framework.md","ref":"golang/web-framework.md","articles":[]},"previous":{"title":"并发编程","level":"4.2","depth":1,"path":"golang/concurrency.md","ref":"golang/concurrency.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"golang/memory.md","mtime":"2026-03-31T06:35:11.838Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"内存管理与GC","level":"4.3","depth":1,"next":{"title":"Web框架与HTTP","level":"4.4","depth":1,"path":"golang/web-framework.md","ref":"golang/web-framework.md","articles":[]},"previous":{"title":"并发编程","level":"4.2","depth":1,"path":"golang/concurrency.md","ref":"golang/concurrency.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"golang/memory.md","mtime":"2026-03-31T12:30:26.832Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    <noscript>
-        <style>
-            .honkit-cloak {
-                display: block !important;
-            }
-        </style>
-    </noscript>
-    <script>
-        // Restore sidebar state as critical path for prevent layout shift
-        function __init__getSidebarState(defaultValue){
-            var baseKey = "";
-            var key = baseKey + ":sidebar";
-            try {
-                var value = localStorage[key];
-                if (value === undefined) {
-                    return defaultValue;
-                }
-                var parsed = JSON.parse(value);
-                return parsed == null ? defaultValue : parsed;
-            } catch (e) {
-                return defaultValue;
-            }
-        }
-        function __init__restoreLastSidebarState() {
-            var isMobile = window.matchMedia("(max-width: 600px)").matches;
-            if (isMobile) {
-                // Init last state if not mobile
-                return;
-            }
-            var sidebarState = __init__getSidebarState(true);
-            var book = document.querySelector(".book");
-            // Show sidebar if it enabled
-            if (sidebarState && book) {
-                book.classList.add("without-animation", "with-summary");
-            }
-        }
-
-        try {
-            __init__restoreLastSidebarState();
-        } finally {
-            var book = document.querySelector(".book");
-            book.classList.remove("honkit-cloak");
-        }
-    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

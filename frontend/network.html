@@ -3,10 +3,11 @@
 <html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>网络协议 · 全栈开发面试指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="generator" content="GitBook 6.1.7">
         
         
         
@@ -16,19 +17,23 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -69,10 +74,14 @@
     </head>
     <body>
         
-<div class="book honkit-cloak">
+<div class="book">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -269,6 +278,66 @@
             
         </li>
     
+        <li class="chapter " data-level="2.11" data-path="micro-frontend.html">
+            
+                <a href="micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="mobile-dev.html">
+            
+                <a href="mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="state-management.html">
+            
+                <a href="state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="design-patterns.html">
+            
+                <a href="design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -359,6 +428,21 @@
                         <b>3.6.</b>
                     
                     最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../nodejs/serverless.html">
+            
+                <a href="../nodejs/serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
             
                 </a>
             
@@ -463,6 +547,21 @@
             
         </li>
     
+        <li class="chapter " data-level="4.7" data-path="../golang/cloud-native.html">
+            
+                <a href="../golang/cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -553,6 +652,21 @@
                         <b>5.6.</b>
                     
                     实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../agent/evaluation.html">
+            
+                <a href="../agent/evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
             
                 </a>
             
@@ -657,14 +771,29 @@
             
         </li>
     
+        <li class="chapter " data-level="6.7" data-path="../algorithm/system-design.html">
+            
+                <a href="../algorithm/system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
     <li class="divider"></li>
 
     <li>
-        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
-            本书使用 HonKit 发布
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -697,6 +826,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="网络协议面试指南">网络协议面试指南</h1>
@@ -1307,25 +1439,25 @@ Sec-WebSocket-Accept: s3pPLMBiTxaQ9kYGzzhZRbK+xOo=
 <pre><code class="lang-javascript"><span class="hljs-comment">// 客户端心跳实现</span>
 <span class="hljs-keyword">let</span> heartbeatTimer = <span class="hljs-literal">null</span>;
 
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">startHeartbeat</span>(<span class="hljs-params">ws</span>) {
-  heartbeatTimer = <span class="hljs-built_in">setInterval</span>(<span class="hljs-function">() =&gt;</span> {
-    <span class="hljs-keyword">if</span> (ws.<span class="hljs-property">readyState</span> === <span class="hljs-title class_">WebSocket</span>.<span class="hljs-property">OPEN</span>) {
-      ws.<span class="hljs-title function_">send</span>(<span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>({ <span class="hljs-attr">type</span>: <span class="hljs-string">'ping'</span> }));
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">startHeartbeat</span>(<span class="hljs-params">ws</span>) </span>{
+  heartbeatTimer = setInterval(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-keyword">if</span> (ws.readyState === WebSocket.OPEN) {
+      ws.send(<span class="hljs-built_in">JSON</span>.stringify({ <span class="hljs-attr">type</span>: <span class="hljs-string">'ping'</span> }));
     }
   }, <span class="hljs-number">30000</span>); <span class="hljs-comment">// 30秒一次</span>
 }
 
-ws.<span class="hljs-property">onmessage</span> = <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
-  <span class="hljs-keyword">const</span> data = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(event.<span class="hljs-property">data</span>);
-  <span class="hljs-keyword">if</span> (data.<span class="hljs-property">type</span> === <span class="hljs-string">'pong'</span>) {
+ws.onmessage = <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> data = <span class="hljs-built_in">JSON</span>.parse(event.data);
+  <span class="hljs-keyword">if</span> (data.type === <span class="hljs-string">'pong'</span>) {
     <span class="hljs-comment">// 收到心跳响应，连接正常</span>
     <span class="hljs-keyword">return</span>;
   }
   <span class="hljs-comment">// 处理业务消息...</span>
 };
 
-ws.<span class="hljs-property">onclose</span> = <span class="hljs-function">() =&gt;</span> {
-  <span class="hljs-built_in">clearInterval</span>(heartbeatTimer);
+ws.onclose = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  clearInterval(heartbeatTimer);
   <span class="hljs-comment">// 重连逻辑...</span>
 };
 </code></pre>
@@ -1400,58 +1532,58 @@ GET /users?fields=id,name,email           // 字段选择
 </blockquote>
 <h3 id="91-核心概念">9.1 核心概念</h3>
 <p><strong>Query（查询）：</strong></p>
-<pre><code class="lang-graphql"><span class="hljs-keyword">query</span> <span class="hljs-punctuation">{</span>
-  user<span class="hljs-punctuation">(</span><span class="hljs-symbol">id</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"123"</span><span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
+<pre><code class="lang-graphql">query {
+  user(id: "123") {
     name
     email
-    posts<span class="hljs-punctuation">(</span><span class="hljs-symbol">first</span><span class="hljs-punctuation">:</span> <span class="hljs-number">5</span><span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
+    posts(first: 5) {
       title
       createdAt
-    <span class="hljs-punctuation">}</span>
-  <span class="hljs-punctuation">}</span>
-<span class="hljs-punctuation">}</span>
+    }
+  }
+}
 </code></pre>
 <p><strong>Mutation（变更）：</strong></p>
-<pre><code class="lang-graphql"><span class="hljs-keyword">mutation</span> <span class="hljs-punctuation">{</span>
-  createUser<span class="hljs-punctuation">(</span><span class="hljs-symbol">input</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span> <span class="hljs-symbol">name</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"张三"</span>, <span class="hljs-symbol">email</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"zhang@example.com"</span> <span class="hljs-punctuation">}</span><span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
+<pre><code class="lang-graphql">mutation {
+  createUser(input: { name: "张三", email: "zhang@example.com" }) {
     id
     name
-  <span class="hljs-punctuation">}</span>
-<span class="hljs-punctuation">}</span>
+  }
+}
 </code></pre>
 <p><strong>Subscription（订阅）：</strong></p>
-<pre><code class="lang-graphql"><span class="hljs-keyword">subscription</span> <span class="hljs-punctuation">{</span>
-  messageAdded<span class="hljs-punctuation">(</span><span class="hljs-symbol">channelId</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"123"</span><span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
+<pre><code class="lang-graphql">subscription {
+  messageAdded(channelId: "123") {
     content
-    sender <span class="hljs-punctuation">{</span>
+    sender {
       name
-    <span class="hljs-punctuation">}</span>
-  <span class="hljs-punctuation">}</span>
-<span class="hljs-punctuation">}</span>
+    }
+  }
+}
 </code></pre>
 <h3 id="92-schema定义">9.2 Schema定义</h3>
-<pre><code class="lang-graphql"><span class="hljs-keyword">type</span> User <span class="hljs-punctuation">{</span>
-  <span class="hljs-symbol">id</span><span class="hljs-punctuation">:</span> ID<span class="hljs-punctuation">!</span>
-  <span class="hljs-symbol">name</span><span class="hljs-punctuation">:</span> String<span class="hljs-punctuation">!</span>
-  <span class="hljs-symbol">email</span><span class="hljs-punctuation">:</span> String<span class="hljs-punctuation">!</span>
-  <span class="hljs-symbol">posts</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>Post<span class="hljs-punctuation">!</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">!</span>
-<span class="hljs-punctuation">}</span>
+<pre><code class="lang-graphql">type User {
+  id: ID!
+  name: String!
+  email: String!
+  posts: [Post!]!
+}
 
-<span class="hljs-keyword">type</span> Post <span class="hljs-punctuation">{</span>
-  <span class="hljs-symbol">id</span><span class="hljs-punctuation">:</span> ID<span class="hljs-punctuation">!</span>
-  <span class="hljs-symbol">title</span><span class="hljs-punctuation">:</span> String<span class="hljs-punctuation">!</span>
-  <span class="hljs-symbol">content</span><span class="hljs-punctuation">:</span> String<span class="hljs-punctuation">!</span>
-  <span class="hljs-symbol">author</span><span class="hljs-punctuation">:</span> User<span class="hljs-punctuation">!</span>
-<span class="hljs-punctuation">}</span>
+type Post {
+  id: ID!
+  title: String!
+  content: String!
+  author: User!
+}
 
-<span class="hljs-keyword">type</span> <span class="hljs-keyword">Query</span> <span class="hljs-punctuation">{</span>
-  user<span class="hljs-punctuation">(</span><span class="hljs-symbol">id</span><span class="hljs-punctuation">:</span> ID<span class="hljs-punctuation">!</span><span class="hljs-punctuation">)</span><span class="hljs-punctuation">:</span> User
-  users<span class="hljs-punctuation">(</span><span class="hljs-symbol">page</span><span class="hljs-punctuation">:</span> Int, <span class="hljs-symbol">perPage</span><span class="hljs-punctuation">:</span> Int<span class="hljs-punctuation">)</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>User<span class="hljs-punctuation">!</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">!</span>
-<span class="hljs-punctuation">}</span>
+type Query {
+  user(id: ID!): User
+  users(page: Int, perPage: Int): [User!]!
+}
 
-<span class="hljs-keyword">type</span> <span class="hljs-keyword">Mutation</span> <span class="hljs-punctuation">{</span>
-  createUser<span class="hljs-punctuation">(</span><span class="hljs-symbol">input</span><span class="hljs-punctuation">:</span> CreateUserInput<span class="hljs-punctuation">!</span><span class="hljs-punctuation">)</span><span class="hljs-punctuation">:</span> User<span class="hljs-punctuation">!</span>
-<span class="hljs-punctuation">}</span>
+type Mutation {
+  createUser(input: CreateUserInput!): User!
+}
 </code></pre>
 <h3 id="93-graphql-vs-rest">9.3 GraphQL vs REST</h3>
 <table>
@@ -1510,15 +1642,15 @@ GET /users?fields=id,name,email           // 字段选择
 <span class="hljs-comment">// 1次查询用户列表 + 10次查询每个用户的文章 = 11次查询</span>
 
 <span class="hljs-comment">// 使用DataLoader批量加载解决：</span>
-<span class="hljs-keyword">const</span> postLoader = <span class="hljs-keyword">new</span> <span class="hljs-title class_">DataLoader</span>(<span class="hljs-title function_">async</span> (userIds) =&gt; {
-  <span class="hljs-keyword">const</span> posts = <span class="hljs-keyword">await</span> db.<span class="hljs-property">posts</span>.<span class="hljs-title function_">find</span>({ <span class="hljs-attr">authorId</span>: { <span class="hljs-attr">$in</span>: userIds } });
-  <span class="hljs-keyword">return</span> userIds.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">id</span> =&gt;</span> posts.<span class="hljs-title function_">filter</span>(<span class="hljs-function"><span class="hljs-params">p</span> =&gt;</span> p.<span class="hljs-property">authorId</span> === id));
+<span class="hljs-keyword">const</span> postLoader = <span class="hljs-keyword">new</span> DataLoader(<span class="hljs-keyword">async</span> (userIds) =&gt; {
+  <span class="hljs-keyword">const</span> posts = <span class="hljs-keyword">await</span> db.posts.find({ <span class="hljs-attr">authorId</span>: { <span class="hljs-attr">$in</span>: userIds } });
+  <span class="hljs-keyword">return</span> userIds.map(<span class="hljs-function"><span class="hljs-params">id</span> =&gt;</span> posts.filter(<span class="hljs-function"><span class="hljs-params">p</span> =&gt;</span> p.authorId === id));
 });
 
 <span class="hljs-comment">// Resolver中使用</span>
 <span class="hljs-keyword">const</span> resolvers = {
-  <span class="hljs-title class_">User</span>: {
-    <span class="hljs-attr">posts</span>: <span class="hljs-function">(<span class="hljs-params">user</span>) =&gt;</span> postLoader.<span class="hljs-title function_">load</span>(user.<span class="hljs-property">id</span>) <span class="hljs-comment">// 自动批量</span>
+  <span class="hljs-attr">User</span>: {
+    <span class="hljs-attr">posts</span>: <span class="hljs-function">(<span class="hljs-params">user</span>) =&gt;</span> postLoader.load(user.id) <span class="hljs-comment">// 自动批量</span>
   }
 };
 </code></pre>
@@ -1555,6 +1687,22 @@ GET /users?fields=id,name,email           // 字段选择
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -1578,73 +1726,29 @@ GET /users?fields=id,name,email           // 字段选择
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"网络协议","level":"2.5","depth":1,"next":{"title":"React","level":"2.6","depth":1,"path":"frontend/react.md","ref":"frontend/react.md","articles":[]},"previous":{"title":"浏览器原理","level":"2.4","depth":1,"path":"frontend/browser.md","ref":"frontend/browser.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"frontend/network.md","mtime":"2026-03-31T06:35:11.837Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"网络协议","level":"2.5","depth":1,"next":{"title":"React","level":"2.6","depth":1,"path":"frontend/react.md","ref":"frontend/react.md","articles":[]},"previous":{"title":"浏览器原理","level":"2.4","depth":1,"path":"frontend/browser.md","ref":"frontend/browser.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"frontend/network.md","mtime":"2026-03-31T12:30:26.830Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    <noscript>
-        <style>
-            .honkit-cloak {
-                display: block !important;
-            }
-        </style>
-    </noscript>
-    <script>
-        // Restore sidebar state as critical path for prevent layout shift
-        function __init__getSidebarState(defaultValue){
-            var baseKey = "";
-            var key = baseKey + ":sidebar";
-            try {
-                var value = localStorage[key];
-                if (value === undefined) {
-                    return defaultValue;
-                }
-                var parsed = JSON.parse(value);
-                return parsed == null ? defaultValue : parsed;
-            } catch (e) {
-                return defaultValue;
-            }
-        }
-        function __init__restoreLastSidebarState() {
-            var isMobile = window.matchMedia("(max-width: 600px)").matches;
-            if (isMobile) {
-                // Init last state if not mobile
-                return;
-            }
-            var sidebarState = __init__getSidebarState(true);
-            var book = document.querySelector(".book");
-            // Show sidebar if it enabled
-            if (sidebarState && book) {
-                book.classList.add("without-animation", "with-summary");
-            }
-        }
-
-        try {
-            __init__restoreLastSidebarState();
-        } finally {
-            var book = document.querySelector(".book");
-            book.classList.remove("honkit-cloak");
-        }
-    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

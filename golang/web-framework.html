@@ -3,10 +3,11 @@
 <html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>Web框架与HTTP · 全栈开发面试指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="generator" content="GitBook 6.1.7">
         
         
         
@@ -16,19 +17,23 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -69,10 +74,14 @@
     </head>
     <body>
         
-<div class="book honkit-cloak">
+<div class="book">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -269,6 +278,66 @@
             
         </li>
     
+        <li class="chapter " data-level="2.11" data-path="../frontend/micro-frontend.html">
+            
+                <a href="../frontend/micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../frontend/mobile-dev.html">
+            
+                <a href="../frontend/mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../frontend/state-management.html">
+            
+                <a href="../frontend/state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../frontend/design-patterns.html">
+            
+                <a href="../frontend/design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -359,6 +428,21 @@
                         <b>3.6.</b>
                     
                     最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../nodejs/serverless.html">
+            
+                <a href="../nodejs/serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
             
                 </a>
             
@@ -463,6 +547,21 @@
             
         </li>
     
+        <li class="chapter " data-level="4.7" data-path="cloud-native.html">
+            
+                <a href="cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -553,6 +652,21 @@
                         <b>5.6.</b>
                     
                     实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../agent/evaluation.html">
+            
+                <a href="../agent/evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
             
                 </a>
             
@@ -657,14 +771,29 @@
             
         </li>
     
+        <li class="chapter " data-level="6.7" data-path="../algorithm/system-design.html">
+            
+                <a href="../algorithm/system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
     <li class="divider"></li>
 
     <li>
-        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
-            本书使用 HonKit 发布
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -697,6 +826,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="go-web框架与http面试指南">Go Web框架与HTTP面试指南</h1>
@@ -721,9 +853,9 @@
 </code></pre>
 <p>所有 HTTP 处理逻辑都围绕 <code>Handler</code> 接口展开。任何实现了 <code>ServeHTTP</code> 方法的类型都可以作为 HTTP 处理器。</p>
 <p><code>HandlerFunc</code> 是一个适配器，让普通函数满足 Handler 接口：</p>
-<pre><code class="lang-go"><span class="hljs-keyword">type</span> HandlerFunc <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(ResponseWriter, *Request)</span></span>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> HandlerFunc <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(ResponseWriter, *Request)</span>
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(f HandlerFunc)</span></span> ServeHTTP(w ResponseWriter, r *Request) {
+<span class="hljs-title">func</span> <span class="hljs-params">(f HandlerFunc)</span> <span class="hljs-title">ServeHTTP</span><span class="hljs-params">(w ResponseWriter, r *Request)</span></span> {
     f(w, r)
 }
 </code></pre>
@@ -825,9 +957,9 @@ io.Copy(io.Discard, resp.Body)
 </code></pre>
 <h3 id="23-参数绑定与验证">2.3 参数绑定与验证</h3>
 <pre><code class="lang-go"><span class="hljs-keyword">type</span> CreateUserReq <span class="hljs-keyword">struct</span> {
-    Name  <span class="hljs-type">string</span> <span class="hljs-string">`json:"name" binding:"required,min=2,max=50"`</span>
-    Email <span class="hljs-type">string</span> <span class="hljs-string">`json:"email" binding:"required,email"`</span>
-    Age   <span class="hljs-type">int</span>    <span class="hljs-string">`json:"age" binding:"gte=0,lte=150"`</span>
+    Name  <span class="hljs-keyword">string</span> <span class="hljs-string">`json:"name" binding:"required,min=2,max=50"`</span>
+    Email <span class="hljs-keyword">string</span> <span class="hljs-string">`json:"email" binding:"required,email"`</span>
+    Age   <span class="hljs-keyword">int</span>    <span class="hljs-string">`json:"age" binding:"gte=0,lte=150"`</span>
 }
 
 <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">createUser</span><span class="hljs-params">(c *gin.Context)</span></span> {
@@ -840,7 +972,7 @@ io.Copy(io.Discard, resp.Body)
 }
 </code></pre>
 <h3 id="24-gin-中间件">2.4 Gin 中间件</h3>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">LoggerMiddleware</span><span class="hljs-params">()</span></span> gin.HandlerFunc {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">LoggerMiddleware</span><span class="hljs-params">()</span> <span class="hljs-title">gin</span>.<span class="hljs-title">HandlerFunc</span></span> {
     <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(c *gin.Context)</span></span> {
         start := time.Now()
 
@@ -854,7 +986,7 @@ io.Copy(io.Discard, resp.Body)
     }
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">AuthMiddleware</span><span class="hljs-params">()</span></span> gin.HandlerFunc {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">AuthMiddleware</span><span class="hljs-params">()</span> <span class="hljs-title">gin</span>.<span class="hljs-title">HandlerFunc</span></span> {
     <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(c *gin.Context)</span></span> {
         token := c.GetHeader(<span class="hljs-string">"Authorization"</span>)
         <span class="hljs-keyword">if</span> token == <span class="hljs-string">""</span> {
@@ -909,32 +1041,32 @@ c.Abort()   <span class="hljs-comment">// 终止后续处理器</span>
 
 <span class="hljs-keyword">option</span> go_package = <span class="hljs-string">"pb/user"</span>;
 
-<span class="hljs-keyword">service </span><span class="hljs-title class_">UserService</span> {
+<span class="hljs-class"><span class="hljs-keyword">service</span> <span class="hljs-title">UserService</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">rpc</span> GetUser(GetUserRequest) <span class="hljs-keyword">returns</span> (GetUserResponse)</span>;
     <span class="hljs-function"><span class="hljs-keyword">rpc</span> ListUsers(ListUsersRequest) <span class="hljs-keyword">returns</span> (stream User)</span>;
     <span class="hljs-function"><span class="hljs-keyword">rpc</span> CreateUsers(stream CreateUserRequest) <span class="hljs-keyword">returns</span> (CreateUsersResponse)</span>;
     <span class="hljs-function"><span class="hljs-keyword">rpc</span> Chat(stream ChatMessage) <span class="hljs-keyword">returns</span> (stream ChatMessage)</span>;
 }
 
-<span class="hljs-keyword">message </span><span class="hljs-title class_">User</span> {
-    <span class="hljs-type">int64</span> id = <span class="hljs-number">1</span>;
-    <span class="hljs-type">string</span> name = <span class="hljs-number">2</span>;
-    <span class="hljs-type">string</span> email = <span class="hljs-number">3</span>;
-    <span class="hljs-keyword">repeated</span> <span class="hljs-type">string</span> tags = <span class="hljs-number">4</span>;
+<span class="hljs-class"><span class="hljs-keyword">message</span> <span class="hljs-title">User</span> </span>{
+    <span class="hljs-built_in">int64</span> id = <span class="hljs-number">1</span>;
+    <span class="hljs-built_in">string</span> name = <span class="hljs-number">2</span>;
+    <span class="hljs-built_in">string</span> email = <span class="hljs-number">3</span>;
+    <span class="hljs-keyword">repeated</span> <span class="hljs-built_in">string</span> tags = <span class="hljs-number">4</span>;
 }
 
-<span class="hljs-keyword">message </span><span class="hljs-title class_">GetUserRequest</span> {
-    <span class="hljs-type">int64</span> id = <span class="hljs-number">1</span>;
+<span class="hljs-class"><span class="hljs-keyword">message</span> <span class="hljs-title">GetUserRequest</span> </span>{
+    <span class="hljs-built_in">int64</span> id = <span class="hljs-number">1</span>;
 }
 
-<span class="hljs-keyword">message </span><span class="hljs-title class_">GetUserResponse</span> {
+<span class="hljs-class"><span class="hljs-keyword">message</span> <span class="hljs-title">GetUserResponse</span> </span>{
     User user = <span class="hljs-number">1</span>;
 }
 </code></pre>
 <h3 id="33-四种调用模式">3.3 四种调用模式</h3>
 <p><strong>1. Unary RPC（一元调用）：</strong> 最基本的请求-响应模式</p>
 <pre><code class="lang-go"><span class="hljs-comment">// 服务端</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *server)</span></span> GetUser(ctx context.Context, req *pb.GetUserRequest) (*pb.GetUserResponse, <span class="hljs-type">error</span>) {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *server)</span> <span class="hljs-title">GetUser</span><span class="hljs-params">(ctx context.Context, req *pb.GetUserRequest)</span> <span class="hljs-params">(*pb.GetUserResponse, error)</span></span> {
     user, err := s.db.FindUser(req.Id)
     <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, status.Errorf(codes.NotFound, <span class="hljs-string">"user not found: %v"</span>, err)
@@ -947,7 +1079,7 @@ resp, err := client.GetUser(ctx, &amp;pb.GetUserRequest{Id: <span class="hljs-nu
 </code></pre>
 <p><strong>2. Server Streaming（服务端流）：</strong> 客户端发一个请求，服务端返回一个流</p>
 <pre><code class="lang-go"><span class="hljs-comment">// 服务端</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *server)</span></span> ListUsers(req *pb.ListUsersRequest, stream pb.UserService_ListUsersServer) <span class="hljs-type">error</span> {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *server)</span> <span class="hljs-title">ListUsers</span><span class="hljs-params">(req *pb.ListUsersRequest, stream pb.UserService_ListUsersServer)</span> <span class="hljs-title">error</span></span> {
     <span class="hljs-keyword">for</span> _, user := <span class="hljs-keyword">range</span> users {
         <span class="hljs-keyword">if</span> err := stream.Send(user); err != <span class="hljs-literal">nil</span> {
             <span class="hljs-keyword">return</span> err
@@ -967,12 +1099,12 @@ stream, err := client.ListUsers(ctx, req)
 </code></pre>
 <p><strong>3. Client Streaming（客户端流）：</strong> 客户端发送流，服务端返回一个响应</p>
 <pre><code class="lang-go"><span class="hljs-comment">// 服务端</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *server)</span></span> CreateUsers(stream pb.UserService_CreateUsersServer) <span class="hljs-type">error</span> {
-    <span class="hljs-keyword">var</span> count <span class="hljs-type">int</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *server)</span> <span class="hljs-title">CreateUsers</span><span class="hljs-params">(stream pb.UserService_CreateUsersServer)</span> <span class="hljs-title">error</span></span> {
+    <span class="hljs-keyword">var</span> count <span class="hljs-keyword">int</span>
     <span class="hljs-keyword">for</span> {
         req, err := stream.Recv()
         <span class="hljs-keyword">if</span> err == io.EOF {
-            <span class="hljs-keyword">return</span> stream.SendAndClose(&amp;pb.CreateUsersResponse{Count: <span class="hljs-type">int32</span>(count)})
+            <span class="hljs-keyword">return</span> stream.SendAndClose(&amp;pb.CreateUsersResponse{Count: <span class="hljs-keyword">int32</span>(count)})
         }
         <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> { <span class="hljs-keyword">return</span> err }
         <span class="hljs-comment">// 处理 req</span>
@@ -982,7 +1114,7 @@ stream, err := client.ListUsers(ctx, req)
 </code></pre>
 <p><strong>4. Bidirectional Streaming（双向流）：</strong> 双方同时发送流</p>
 <pre><code class="lang-go"><span class="hljs-comment">// 服务端</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *server)</span></span> Chat(stream pb.UserService_ChatServer) <span class="hljs-type">error</span> {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *server)</span> <span class="hljs-title">Chat</span><span class="hljs-params">(stream pb.UserService_ChatServer)</span> <span class="hljs-title">error</span></span> {
     <span class="hljs-keyword">for</span> {
         msg, err := stream.Recv()
         <span class="hljs-keyword">if</span> err == io.EOF { <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span> }
@@ -999,7 +1131,7 @@ stream, err := client.ListUsers(ctx, req)
     req <span class="hljs-keyword">interface</span>{},
     info *grpc.UnaryServerInfo,
     handler grpc.UnaryHandler,
-)</span></span> (<span class="hljs-keyword">interface</span>{}, <span class="hljs-type">error</span>) {
+)</span> <span class="hljs-params">(<span class="hljs-keyword">interface</span>{}, error)</span></span> {
     start := time.Now()
     <span class="hljs-comment">// 前处理</span>
     log.Printf(<span class="hljs-string">"gRPC method: %s"</span>, info.FullMethod)
@@ -1048,7 +1180,7 @@ resp, err := client.GetUser(ctx, req)
 <p>中间件本质上是<strong>装饰器模式</strong>的应用，通过包装 Handler 在请求处理前后添加逻辑。</p>
 <h3 id="42-标准库中间件">4.2 标准库中间件</h3>
 <pre><code class="lang-go"><span class="hljs-comment">// 标准库中间件就是 Handler 的包装函数</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">loggingMiddleware</span><span class="hljs-params">(next http.Handler)</span></span> http.Handler {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">loggingMiddleware</span><span class="hljs-params">(next http.Handler)</span> <span class="hljs-title">http</span>.<span class="hljs-title">Handler</span></span> {
     <span class="hljs-keyword">return</span> http.HandlerFunc(<span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(w http.ResponseWriter, r *http.Request)</span></span> {
         start := time.Now()
         next.ServeHTTP(w, r)
@@ -1056,7 +1188,7 @@ resp, err := client.GetUser(ctx, req)
     })
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">authMiddleware</span><span class="hljs-params">(next http.Handler)</span></span> http.Handler {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">authMiddleware</span><span class="hljs-params">(next http.Handler)</span> <span class="hljs-title">http</span>.<span class="hljs-title">Handler</span></span> {
     <span class="hljs-keyword">return</span> http.HandlerFunc(<span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(w http.ResponseWriter, r *http.Request)</span></span> {
         token := r.Header.Get(<span class="hljs-string">"Authorization"</span>)
         <span class="hljs-keyword">if</span> token == <span class="hljs-string">""</span> {
@@ -1074,19 +1206,19 @@ handler := loggingMiddleware(authMiddleware(actualHandler))
 <p>Gin 使用<strong>洋葱模型</strong>，核心是 <code>HandlersChain</code>（Handler 切片）和 <code>index</code> 索引：</p>
 <pre><code class="lang-go"><span class="hljs-keyword">type</span> Context <span class="hljs-keyword">struct</span> {
     handlers HandlersChain  <span class="hljs-comment">// []HandlerFunc</span>
-    index    <span class="hljs-type">int8</span>           <span class="hljs-comment">// 当前执行到第几个 handler</span>
+    index    <span class="hljs-keyword">int8</span>           <span class="hljs-comment">// 当前执行到第几个 handler</span>
     <span class="hljs-comment">// ...</span>
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c *Context)</span></span> Next() {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c *Context)</span> <span class="hljs-title">Next</span><span class="hljs-params">()</span></span> {
     c.index++
-    <span class="hljs-keyword">for</span> c.index &lt; <span class="hljs-type">int8</span>(<span class="hljs-built_in">len</span>(c.handlers)) {
+    <span class="hljs-keyword">for</span> c.index &lt; <span class="hljs-keyword">int8</span>(<span class="hljs-built_in">len</span>(c.handlers)) {
         c.handlers[c.index](c)
         c.index++
     }
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c *Context)</span></span> Abort() {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c *Context)</span> <span class="hljs-title">Abort</span><span class="hljs-params">()</span></span> {
     c.index = abortIndex <span class="hljs-comment">// 设置为最大值，后续 handler 不再执行</span>
 }
 </code></pre>
@@ -1120,14 +1252,14 @@ handler := loggingMiddleware(authMiddleware(actualHandler))
 </ul>
 <h3 id="53-gin-路由树结构">5.3 Gin 路由树结构</h3>
 <pre><code class="lang-go"><span class="hljs-keyword">type</span> node <span class="hljs-keyword">struct</span> {
-    path      <span class="hljs-type">string</span>        <span class="hljs-comment">// 当前节点的路径片段</span>
-    indices   <span class="hljs-type">string</span>        <span class="hljs-comment">// 子节点首字符索引（加速查找）</span>
+    path      <span class="hljs-keyword">string</span>        <span class="hljs-comment">// 当前节点的路径片段</span>
+    indices   <span class="hljs-keyword">string</span>        <span class="hljs-comment">// 子节点首字符索引（加速查找）</span>
     children  []*node       <span class="hljs-comment">// 子节点</span>
     handlers  HandlersChain <span class="hljs-comment">// 该路由的处理器链</span>
-    priority  <span class="hljs-type">uint32</span>        <span class="hljs-comment">// 优先级（子路由数量）</span>
+    priority  <span class="hljs-keyword">uint32</span>        <span class="hljs-comment">// 优先级（子路由数量）</span>
     nType     nodeType      <span class="hljs-comment">// 节点类型：static/root/param/catchAll</span>
-    maxParams <span class="hljs-type">uint8</span>         <span class="hljs-comment">// 子树中最大参数数量</span>
-    wildChild <span class="hljs-type">bool</span>          <span class="hljs-comment">// 是否有通配符子节点</span>
+    maxParams <span class="hljs-keyword">uint8</span>         <span class="hljs-comment">// 子树中最大参数数量</span>
+    wildChild <span class="hljs-keyword">bool</span>          <span class="hljs-comment">// 是否有通配符子节点</span>
 }
 </code></pre>
 <p>每种 HTTP 方法（GET、POST 等）维护一棵独立的 Radix Tree。</p>
@@ -1264,9 +1396,9 @@ body, err := io.ReadAll(io.LimitReader(resp.Body, <span class="hljs-number">10</
 </code></pre>
 <h3 id="74-请求重试与熔断">7.4 请求重试与熔断</h3>
 <pre><code class="lang-go"><span class="hljs-comment">// 简单重试</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">doWithRetry</span><span class="hljs-params">(client *http.Client, req *http.Request, maxRetries <span class="hljs-type">int</span>)</span></span> (*http.Response, <span class="hljs-type">error</span>) {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">doWithRetry</span><span class="hljs-params">(client *http.Client, req *http.Request, maxRetries <span class="hljs-keyword">int</span>)</span> <span class="hljs-params">(*http.Response, error)</span></span> {
     <span class="hljs-keyword">var</span> resp *http.Response
-    <span class="hljs-keyword">var</span> err <span class="hljs-type">error</span>
+    <span class="hljs-keyword">var</span> err error
     <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt;= maxRetries; i++ {
         resp, err = client.Do(req)
         <span class="hljs-keyword">if</span> err == <span class="hljs-literal">nil</span> &amp;&amp; resp.StatusCode &lt; <span class="hljs-number">500</span> {
@@ -1277,7 +1409,7 @@ body, err := io.ReadAll(io.LimitReader(resp.Body, <span class="hljs-number">10</
             resp.Body.Close()
         }
         <span class="hljs-comment">// 指数退避</span>
-        time.Sleep(time.Duration(<span class="hljs-number">1</span>&lt;&lt;<span class="hljs-type">uint</span>(i)) * <span class="hljs-number">100</span> * time.Millisecond)
+        time.Sleep(time.Duration(<span class="hljs-number">1</span>&lt;&lt;<span class="hljs-keyword">uint</span>(i)) * <span class="hljs-number">100</span> * time.Millisecond)
     }
     <span class="hljs-keyword">return</span> resp, err
 }
@@ -1418,6 +1550,22 @@ client := &amp;http.Client{Transport: transport}
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -1441,73 +1589,29 @@ client := &amp;http.Client{Transport: transport}
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Web框架与HTTP","level":"4.4","depth":1,"next":{"title":"数据库与系统设计","level":"4.5","depth":1,"path":"golang/database-design.md","ref":"golang/database-design.md","articles":[]},"previous":{"title":"内存管理与GC","level":"4.3","depth":1,"path":"golang/memory.md","ref":"golang/memory.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"golang/web-framework.md","mtime":"2026-03-31T06:35:11.838Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Web框架与HTTP","level":"4.4","depth":1,"next":{"title":"数据库与系统设计","level":"4.5","depth":1,"path":"golang/database-design.md","ref":"golang/database-design.md","articles":[]},"previous":{"title":"内存管理与GC","level":"4.3","depth":1,"path":"golang/memory.md","ref":"golang/memory.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"golang/web-framework.md","mtime":"2026-03-31T12:30:26.832Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    <noscript>
-        <style>
-            .honkit-cloak {
-                display: block !important;
-            }
-        </style>
-    </noscript>
-    <script>
-        // Restore sidebar state as critical path for prevent layout shift
-        function __init__getSidebarState(defaultValue){
-            var baseKey = "";
-            var key = baseKey + ":sidebar";
-            try {
-                var value = localStorage[key];
-                if (value === undefined) {
-                    return defaultValue;
-                }
-                var parsed = JSON.parse(value);
-                return parsed == null ? defaultValue : parsed;
-            } catch (e) {
-                return defaultValue;
-            }
-        }
-        function __init__restoreLastSidebarState() {
-            var isMobile = window.matchMedia("(max-width: 600px)").matches;
-            if (isMobile) {
-                // Init last state if not mobile
-                return;
-            }
-            var sidebarState = __init__getSidebarState(true);
-            var book = document.querySelector(".book");
-            // Show sidebar if it enabled
-            if (sidebarState && book) {
-                book.classList.add("without-animation", "with-summary");
-            }
-        }
-
-        try {
-            __init__restoreLastSidebarState();
-        } finally {
-            var book = document.querySelector(".book");
-            book.classList.remove("honkit-cloak");
-        }
-    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

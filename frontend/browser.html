@@ -3,10 +3,11 @@
 <html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>浏览器原理 · 全栈开发面试指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="generator" content="GitBook 6.1.7">
         
         
         
@@ -16,19 +17,23 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -69,10 +74,14 @@
     </head>
     <body>
         
-<div class="book honkit-cloak">
+<div class="book">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -269,6 +278,66 @@
             
         </li>
     
+        <li class="chapter " data-level="2.11" data-path="micro-frontend.html">
+            
+                <a href="micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="mobile-dev.html">
+            
+                <a href="mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="state-management.html">
+            
+                <a href="state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="design-patterns.html">
+            
+                <a href="design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -359,6 +428,21 @@
                         <b>3.6.</b>
                     
                     最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../nodejs/serverless.html">
+            
+                <a href="../nodejs/serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
             
                 </a>
             
@@ -463,6 +547,21 @@
             
         </li>
     
+        <li class="chapter " data-level="4.7" data-path="../golang/cloud-native.html">
+            
+                <a href="../golang/cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -553,6 +652,21 @@
                         <b>5.6.</b>
                     
                     实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../agent/evaluation.html">
+            
+                <a href="../agent/evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
             
                 </a>
             
@@ -657,14 +771,29 @@
             
         </li>
     
+        <li class="chapter " data-level="6.7" data-path="../algorithm/system-design.html">
+            
+                <a href="../algorithm/system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
     <li class="divider"></li>
 
     <li>
-        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
-            本书使用 HonKit 发布
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -697,6 +826,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="浏览器原理面试指南">浏览器原理面试指南</h1>
@@ -918,30 +1050,30 @@ TurboFan（优化编译器）→ 高度优化的机器码
 <h3 id="hidden-class（隐藏类）">Hidden Class（隐藏类）</h3>
 <p>V8 为每个对象创建一个 Hidden Class（也叫 Map 或 Shape），记录对象的属性布局（每个属性的名称、偏移量、类型等）。</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 推荐：以相同顺序初始化属性，共享 Hidden Class</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">Point</span>(<span class="hljs-params">x, y</span>) {
-  <span class="hljs-variable language_">this</span>.<span class="hljs-property">x</span> = x; <span class="hljs-comment">// Hidden Class 0 → Hidden Class 1</span>
-  <span class="hljs-variable language_">this</span>.<span class="hljs-property">y</span> = y; <span class="hljs-comment">// Hidden Class 1 → Hidden Class 2</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Point</span>(<span class="hljs-params">x, y</span>) </span>{
+  <span class="hljs-keyword">this</span>.x = x; <span class="hljs-comment">// Hidden Class 0 → Hidden Class 1</span>
+  <span class="hljs-keyword">this</span>.y = y; <span class="hljs-comment">// Hidden Class 1 → Hidden Class 2</span>
 }
-<span class="hljs-keyword">const</span> p1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Point</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>); <span class="hljs-comment">// 使用 Hidden Class 2</span>
-<span class="hljs-keyword">const</span> p2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Point</span>(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>); <span class="hljs-comment">// 共享同一个 Hidden Class 2</span>
+<span class="hljs-keyword">const</span> p1 = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>); <span class="hljs-comment">// 使用 Hidden Class 2</span>
+<span class="hljs-keyword">const</span> p2 = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>); <span class="hljs-comment">// 共享同一个 Hidden Class 2</span>
 
 <span class="hljs-comment">// 不推荐：动态增删属性，导致 Hidden Class 分裂</span>
 <span class="hljs-keyword">const</span> obj = {};
-obj.<span class="hljs-property">a</span> = <span class="hljs-number">1</span>; <span class="hljs-comment">// Hidden Class 变化</span>
-obj.<span class="hljs-property">b</span> = <span class="hljs-number">2</span>; <span class="hljs-comment">// Hidden Class 再次变化</span>
-<span class="hljs-keyword">delete</span> obj.<span class="hljs-property">a</span>; <span class="hljs-comment">// 触发 Hidden Class 降级，V8 回退到慢速字典模式</span>
+obj.a = <span class="hljs-number">1</span>; <span class="hljs-comment">// Hidden Class 变化</span>
+obj.b = <span class="hljs-number">2</span>; <span class="hljs-comment">// Hidden Class 再次变化</span>
+<span class="hljs-keyword">delete</span> obj.a; <span class="hljs-comment">// 触发 Hidden Class 降级，V8 回退到慢速字典模式</span>
 </code></pre>
 <h3 id="反优化（deoptimization）">反优化（Deoptimization）</h3>
 <p>当 TurboFan 的优化假设被违反时（如类型发生变化），优化后的机器码会被丢弃，回退到 Ignition 字节码执行。这叫做<strong>反优化</strong>。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">add</span>(<span class="hljs-params">a, b</span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span>(<span class="hljs-params">a, b</span>) </span>{
   <span class="hljs-keyword">return</span> a + b;
 }
 
 <span class="hljs-comment">// 前 10000 次调用传入数字，TurboFan 优化为数字加法</span>
-<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10000</span>; i++) <span class="hljs-title function_">add</span>(i, i);
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10000</span>; i++) add(i, i);
 
 <span class="hljs-comment">// 突然传入字符串，类型假设被违反，触发反优化</span>
-<span class="hljs-title function_">add</span>(<span class="hljs-string">"hello"</span>, <span class="hljs-string">"world"</span>);
+add(<span class="hljs-string">"hello"</span>, <span class="hljs-string">"world"</span>);
 </code></pre>
 <blockquote>
 <p><strong>面试题：如何写出 V8 友好的代码？</strong></p>
@@ -1037,15 +1169,15 @@ Access-Control-Max-Age: 86400
 </code></pre><h4 id="2-jsonp（json-with-padding）">2. JSONP（JSON with Padding）</h4>
 <p>利用 <code>&lt;script&gt;</code> 标签不受同源策略限制的特性：</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 前端</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">handleResponse</span>(<span class="hljs-params">data</span>) {
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(data);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handleResponse</span>(<span class="hljs-params">data</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(data);
 }
-<span class="hljs-keyword">const</span> script = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">'script'</span>);
-script.<span class="hljs-property">src</span> = <span class="hljs-string">'https://api.example.com/data?callback=handleResponse'</span>;
-<span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">appendChild</span>(script);
+<span class="hljs-keyword">const</span> script = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'script'</span>);
+script.src = <span class="hljs-string">'https://api.example.com/data?callback=handleResponse'</span>;
+<span class="hljs-built_in">document</span>.body.appendChild(script);
 
 <span class="hljs-comment">// 服务端返回</span>
-<span class="hljs-title function_">handleResponse</span>({<span class="hljs-string">"name"</span>: <span class="hljs-string">"张三"</span>, <span class="hljs-string">"age"</span>: <span class="hljs-number">25</span>});
+handleResponse({<span class="hljs-string">"name"</span>: <span class="hljs-string">"张三"</span>, <span class="hljs-string">"age"</span>: <span class="hljs-number">25</span>});
 </code></pre>
 <p><strong>局限</strong>：只支持 GET 请求、有安全风险（XSS）、无法获取状态码。</p>
 <h4 id="3-反向代理">3. 反向代理</h4>
@@ -1054,7 +1186,7 @@ script.<span class="hljs-property">src</span> = <span class="hljs-string">'https
     <span class="hljs-attribute">listen</span> <span class="hljs-number">80</span>;
     <span class="hljs-attribute">server_name</span> www.example.com;
 
-    <span class="hljs-section">location</span> /api/ {
+    <span class="hljs-attribute">location</span> /api/ {
         <span class="hljs-attribute">proxy_pass</span> https://api.backend.com/;
         <span class="hljs-attribute">proxy_set_header</span> Host <span class="hljs-variable">$host</span>;
     }
@@ -1063,13 +1195,13 @@ script.<span class="hljs-property">src</span> = <span class="hljs-string">'https
 <p>开发环境中可使用 Webpack devServer proxy 或 Node.js 中间件（如 http-proxy-middleware）实现代理。</p>
 <h4 id="4-postmessage（跨窗口通信）">4. postMessage（跨窗口通信）</h4>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 发送方（父窗口）</span>
-<span class="hljs-keyword">const</span> iframe = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'myIframe'</span>);
-iframe.<span class="hljs-property">contentWindow</span>.<span class="hljs-title function_">postMessage</span>({ <span class="hljs-attr">type</span>: <span class="hljs-string">'greeting'</span>, <span class="hljs-attr">data</span>: <span class="hljs-string">'hello'</span> }, <span class="hljs-string">'https://other.com'</span>);
+<span class="hljs-keyword">const</span> iframe = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'myIframe'</span>);
+iframe.contentWindow.postMessage({ <span class="hljs-attr">type</span>: <span class="hljs-string">'greeting'</span>, <span class="hljs-attr">data</span>: <span class="hljs-string">'hello'</span> }, <span class="hljs-string">'https://other.com'</span>);
 
 <span class="hljs-comment">// 接收方（iframe 页面）</span>
-<span class="hljs-variable language_">window</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'message'</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
-  <span class="hljs-keyword">if</span> (event.<span class="hljs-property">origin</span> !== <span class="hljs-string">'https://parent.com'</span>) <span class="hljs-keyword">return</span>; <span class="hljs-comment">// 验证来源</span>
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(event.<span class="hljs-property">data</span>); <span class="hljs-comment">// { type: 'greeting', data: 'hello' }</span>
+<span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'message'</span>, (event) =&gt; {
+  <span class="hljs-keyword">if</span> (event.origin !== <span class="hljs-string">'https://parent.com'</span>) <span class="hljs-keyword">return</span>; <span class="hljs-comment">// 验证来源</span>
+  <span class="hljs-built_in">console</span>.log(event.data); <span class="hljs-comment">// { type: 'greeting', data: 'hello' }</span>
 });
 </code></pre>
 <h4 id="5-websocket">5. WebSocket</h4>
@@ -1283,18 +1415,18 @@ iframe.<span class="hljs-property">contentWindow</span>.<span class="hljs-title 
 </blockquote>
 <h3 id="dedicated-worker（专用-worker）">Dedicated Worker（专用 Worker）</h3>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 主线程</span>
-<span class="hljs-keyword">const</span> worker = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Worker</span>(<span class="hljs-string">'worker.js'</span>);
-worker.<span class="hljs-title function_">postMessage</span>({ <span class="hljs-attr">type</span>: <span class="hljs-string">'calculate'</span>, <span class="hljs-attr">data</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>] });
-worker.<span class="hljs-property">onmessage</span> = <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'结果:'</span>, event.<span class="hljs-property">data</span>);
+<span class="hljs-keyword">const</span> worker = <span class="hljs-keyword">new</span> Worker(<span class="hljs-string">'worker.js'</span>);
+worker.postMessage({ <span class="hljs-attr">type</span>: <span class="hljs-string">'calculate'</span>, <span class="hljs-attr">data</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>] });
+worker.onmessage = <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'结果:'</span>, event.data);
 };
 
 <span class="hljs-comment">// worker.js</span>
-self.<span class="hljs-property">onmessage</span> = <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
-  <span class="hljs-keyword">const</span> { type, data } = event.<span class="hljs-property">data</span>;
+self.onmessage = <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> { type, data } = event.data;
   <span class="hljs-keyword">if</span> (type === <span class="hljs-string">'calculate'</span>) {
-    <span class="hljs-keyword">const</span> sum = data.<span class="hljs-title function_">reduce</span>(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a + b, <span class="hljs-number">0</span>);
-    self.<span class="hljs-title function_">postMessage</span>(sum);
+    <span class="hljs-keyword">const</span> sum = data.reduce(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a + b, <span class="hljs-number">0</span>);
+    self.postMessage(sum);
   }
 };
 </code></pre>
@@ -1312,33 +1444,33 @@ self.<span class="hljs-property">onmessage</span> = <span class="hljs-function">
 </ol>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 注册 Service Worker</span>
 <span class="hljs-keyword">if</span> (<span class="hljs-string">'serviceWorker'</span> <span class="hljs-keyword">in</span> navigator) {
-  navigator.<span class="hljs-property">serviceWorker</span>.<span class="hljs-title function_">register</span>(<span class="hljs-string">'/sw.js'</span>)
-    .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">reg</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'SW 注册成功'</span>, reg.<span class="hljs-property">scope</span>))
-    .<span class="hljs-title function_">catch</span>(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'SW 注册失败'</span>, err));
+  navigator.serviceWorker.register(<span class="hljs-string">'/sw.js'</span>)
+    .then(<span class="hljs-function"><span class="hljs-params">reg</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'SW 注册成功'</span>, reg.scope))
+    .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> <span class="hljs-built_in">console</span>.error(<span class="hljs-string">'SW 注册失败'</span>, err));
 }
 
 <span class="hljs-comment">// sw.js</span>
-<span class="hljs-keyword">const</span> <span class="hljs-variable constant_">CACHE_NAME</span> = <span class="hljs-string">'v1'</span>;
+<span class="hljs-keyword">const</span> CACHE_NAME = <span class="hljs-string">'v1'</span>;
 
-self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'install'</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
-  event.<span class="hljs-title function_">waitUntil</span>(
-    caches.<span class="hljs-title function_">open</span>(<span class="hljs-variable constant_">CACHE_NAME</span>).<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">cache</span> =&gt;</span>
-      cache.<span class="hljs-title function_">addAll</span>([<span class="hljs-string">'/index.html'</span>, <span class="hljs-string">'/styles.css'</span>, <span class="hljs-string">'/app.js'</span>])
+self.addEventListener(<span class="hljs-string">'install'</span>, (event) =&gt; {
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(<span class="hljs-function"><span class="hljs-params">cache</span> =&gt;</span>
+      cache.addAll([<span class="hljs-string">'/index.html'</span>, <span class="hljs-string">'/styles.css'</span>, <span class="hljs-string">'/app.js'</span>])
     )
   );
 });
 
-self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'activate'</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
-  event.<span class="hljs-title function_">waitUntil</span>(
-    caches.<span class="hljs-title function_">keys</span>().<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">names</span> =&gt;</span>
-      <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">all</span>(names.<span class="hljs-title function_">filter</span>(<span class="hljs-function"><span class="hljs-params">n</span> =&gt;</span> n !== <span class="hljs-variable constant_">CACHE_NAME</span>).<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">n</span> =&gt;</span> caches.<span class="hljs-title function_">delete</span>(n)))
+self.addEventListener(<span class="hljs-string">'activate'</span>, (event) =&gt; {
+  event.waitUntil(
+    caches.keys().then(<span class="hljs-function"><span class="hljs-params">names</span> =&gt;</span>
+      <span class="hljs-built_in">Promise</span>.all(names.filter(<span class="hljs-function"><span class="hljs-params">n</span> =&gt;</span> n !== CACHE_NAME).map(<span class="hljs-function"><span class="hljs-params">n</span> =&gt;</span> caches.delete(n)))
     )
   );
 });
 
-self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'fetch'</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
-  event.<span class="hljs-title function_">respondWith</span>(
-    caches.<span class="hljs-title function_">match</span>(event.<span class="hljs-property">request</span>).<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">cached</span> =&gt;</span> cached || <span class="hljs-title function_">fetch</span>(event.<span class="hljs-property">request</span>))
+self.addEventListener(<span class="hljs-string">'fetch'</span>, (event) =&gt; {
+  event.respondWith(
+    caches.match(event.request).then(<span class="hljs-function"><span class="hljs-params">cached</span> =&gt;</span> cached || fetch(event.request))
   );
 });
 </code></pre>
@@ -1357,27 +1489,27 @@ Window ──────→ ... ──→ Target ──→ ... ─────�
 <li><strong>冒泡阶段（Bubbling Phase）</strong>：事件从目标元素逐级向上传播到 <code>window</code>。</li>
 </ol>
 <h3 id="addeventlistener">addEventListener</h3>
-<pre><code class="lang-javascript">element.<span class="hljs-title function_">addEventListener</span>(type, handler, options);
+<pre><code class="lang-javascript">element.addEventListener(type, handler, options);
 </code></pre>
 <p><code>options</code> 可以是布尔值（<code>useCapture</code>，默认 <code>false</code> 表示冒泡阶段触发），也可以是对象：</p>
 <pre><code class="lang-javascript">{
   <span class="hljs-attr">capture</span>: <span class="hljs-literal">false</span>,  <span class="hljs-comment">// 是否在捕获阶段触发</span>
-  <span class="hljs-attr">once</span>: <span class="hljs-literal">true</span>,      <span class="hljs-comment">// 是否只触发一次后自动移除</span>
-  <span class="hljs-attr">passive</span>: <span class="hljs-literal">true</span>    <span class="hljs-comment">// 是否永远不调用 preventDefault（提升滚动性能）</span>
+  once: <span class="hljs-literal">true</span>,      <span class="hljs-comment">// 是否只触发一次后自动移除</span>
+  passive: <span class="hljs-literal">true</span>    <span class="hljs-comment">// 是否永远不调用 preventDefault（提升滚动性能）</span>
 }
 </code></pre>
 <h3 id="事件委托">事件委托</h3>
 <p>利用事件冒泡机制，将子元素的事件监听器统一绑定到父元素上：</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 不推荐：为每个 li 绑定事件</span>
-<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">'li'</span>).<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">li</span> =&gt;</span> {
-  li.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'click'</span>, handleClick);
+<span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">'li'</span>).forEach(<span class="hljs-function"><span class="hljs-params">li</span> =&gt;</span> {
+  li.addEventListener(<span class="hljs-string">'click'</span>, handleClick);
 });
 
 <span class="hljs-comment">// 推荐：事件委托</span>
-<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">'ul'</span>).<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'click'</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
-  <span class="hljs-keyword">const</span> target = event.<span class="hljs-property">target</span>;
-  <span class="hljs-keyword">if</span> (target.<span class="hljs-property">tagName</span> === <span class="hljs-string">'LI'</span>) {
-    <span class="hljs-title function_">handleClick</span>(target);
+<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'ul'</span>).addEventListener(<span class="hljs-string">'click'</span>, (event) =&gt; {
+  <span class="hljs-keyword">const</span> target = event.target;
+  <span class="hljs-keyword">if</span> (target.tagName === <span class="hljs-string">'LI'</span>) {
+    handleClick(target);
   }
 });
 </code></pre>
@@ -1412,14 +1544,14 @@ Window ──────→ ... ──→ Target ──→ ... ─────�
 <p><strong>面试题：requestAnimationFrame 和 setTimeout 做动画有什么区别？requestIdleCallback 是什么？</strong></p>
 </blockquote>
 <h3 id="requestanimationframe（raf）">requestAnimationFrame（rAF）</h3>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">animate</span>(<span class="hljs-params"></span>) {
-  element.<span class="hljs-property">style</span>.<span class="hljs-property">transform</span> = <span class="hljs-string">`translateX(<span class="hljs-subst">${position}</span>px)`</span>;
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">animate</span>(<span class="hljs-params"></span>) </span>{
+  element.style.transform = <span class="hljs-string">`translateX(<span class="hljs-subst">${position}</span>px)`</span>;
   position += <span class="hljs-number">2</span>;
   <span class="hljs-keyword">if</span> (position &lt; <span class="hljs-number">300</span>) {
-    <span class="hljs-title function_">requestAnimationFrame</span>(animate);
+    requestAnimationFrame(animate);
   }
 }
-<span class="hljs-title function_">requestAnimationFrame</span>(animate);
+requestAnimationFrame(animate);
 </code></pre>
 <ul>
 <li>浏览器在<strong>下一次重绘之前</strong>调用回调函数。</li>
@@ -1428,12 +1560,12 @@ Window ──────→ ... ──→ Target ──→ ... ─────�
 <li>相比 <code>setTimeout(fn, 16)</code>，rAF 不会出现丢帧或过度绘制的问题。</li>
 </ul>
 <h3 id="requestidlecallback（ric）">requestIdleCallback（rIC）</h3>
-<pre><code class="lang-javascript"><span class="hljs-title function_">requestIdleCallback</span>(<span class="hljs-function">(<span class="hljs-params">deadline</span>) =&gt;</span> {
-  <span class="hljs-keyword">while</span> (deadline.<span class="hljs-title function_">timeRemaining</span>() &gt; <span class="hljs-number">0</span> &amp;&amp; tasks.<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span>) {
-    <span class="hljs-title function_">doTask</span>(tasks.<span class="hljs-title function_">pop</span>());
+<pre><code class="lang-javascript">requestIdleCallback(<span class="hljs-function">(<span class="hljs-params">deadline</span>) =&gt;</span> {
+  <span class="hljs-keyword">while</span> (deadline.timeRemaining() &gt; <span class="hljs-number">0</span> &amp;&amp; tasks.length &gt; <span class="hljs-number">0</span>) {
+    doTask(tasks.pop());
   }
-  <span class="hljs-keyword">if</span> (tasks.<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span>) {
-    <span class="hljs-title function_">requestIdleCallback</span>(doNextTasks);
+  <span class="hljs-keyword">if</span> (tasks.length &gt; <span class="hljs-number">0</span>) {
+    requestIdleCallback(doNextTasks);
   }
 }, { <span class="hljs-attr">timeout</span>: <span class="hljs-number">2000</span> }); <span class="hljs-comment">// 超过 2 秒强制执行</span>
 </code></pre>
@@ -1451,6 +1583,22 @@ Window ──────→ ... ──→ Target ──→ ... ─────�
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -1474,73 +1622,29 @@ Window ──────→ ... ──→ Target ──→ ... ─────�
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"浏览器原理","level":"2.4","depth":1,"next":{"title":"网络协议","level":"2.5","depth":1,"path":"frontend/network.md","ref":"frontend/network.md","articles":[]},"previous":{"title":"TypeScript","level":"2.3","depth":1,"path":"frontend/typescript.md","ref":"frontend/typescript.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"frontend/browser.md","mtime":"2026-03-31T06:35:11.836Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"浏览器原理","level":"2.4","depth":1,"next":{"title":"网络协议","level":"2.5","depth":1,"path":"frontend/network.md","ref":"frontend/network.md","articles":[]},"previous":{"title":"TypeScript","level":"2.3","depth":1,"path":"frontend/typescript.md","ref":"frontend/typescript.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"frontend/browser.md","mtime":"2026-03-31T12:30:26.828Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    <noscript>
-        <style>
-            .honkit-cloak {
-                display: block !important;
-            }
-        </style>
-    </noscript>
-    <script>
-        // Restore sidebar state as critical path for prevent layout shift
-        function __init__getSidebarState(defaultValue){
-            var baseKey = "";
-            var key = baseKey + ":sidebar";
-            try {
-                var value = localStorage[key];
-                if (value === undefined) {
-                    return defaultValue;
-                }
-                var parsed = JSON.parse(value);
-                return parsed == null ? defaultValue : parsed;
-            } catch (e) {
-                return defaultValue;
-            }
-        }
-        function __init__restoreLastSidebarState() {
-            var isMobile = window.matchMedia("(max-width: 600px)").matches;
-            if (isMobile) {
-                // Init last state if not mobile
-                return;
-            }
-            var sidebarState = __init__getSidebarState(true);
-            var book = document.querySelector(".book");
-            // Show sidebar if it enabled
-            if (sidebarState && book) {
-                book.classList.add("without-animation", "with-summary");
-            }
-        }
-
-        try {
-            __init__restoreLastSidebarState();
-        } finally {
-            var book = document.querySelector(".book");
-            book.classList.remove("honkit-cloak");
-        }
-    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

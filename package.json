@@ -1,5 +1,9 @@
 {
   "dependencies": {
+    "gitbook-plugin-fontsettings": "^2.0.0",
+    "gitbook-plugin-highlight": "^2.0.3",
+    "gitbook-plugin-search-pro": "^2.0.2",
+    "gitbook-plugin-theme-default": "^1.0.7",
     "honkit": "^6.1.7"
   }
 }

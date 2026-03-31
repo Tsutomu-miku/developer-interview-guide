@@ -3,10 +3,11 @@
 <html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>RAG检索增强生成 · 全栈开发面试指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="generator" content="GitBook 6.1.7">
         
         
         
@@ -16,19 +17,23 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -69,10 +74,14 @@
     </head>
     <body>
         
-<div class="book honkit-cloak">
+<div class="book">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -269,6 +278,66 @@
             
         </li>
     
+        <li class="chapter " data-level="2.11" data-path="../frontend/micro-frontend.html">
+            
+                <a href="../frontend/micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../frontend/mobile-dev.html">
+            
+                <a href="../frontend/mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../frontend/state-management.html">
+            
+                <a href="../frontend/state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../frontend/design-patterns.html">
+            
+                <a href="../frontend/design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -359,6 +428,21 @@
                         <b>3.6.</b>
                     
                     最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../nodejs/serverless.html">
+            
+                <a href="../nodejs/serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
             
                 </a>
             
@@ -463,6 +547,21 @@
             
         </li>
     
+        <li class="chapter " data-level="4.7" data-path="../golang/cloud-native.html">
+            
+                <a href="../golang/cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -553,6 +652,21 @@
                         <b>5.6.</b>
                     
                     实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="evaluation.html">
+            
+                <a href="evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
             
                 </a>
             
@@ -657,14 +771,29 @@
             
         </li>
     
+        <li class="chapter " data-level="6.7" data-path="../algorithm/system-design.html">
+            
+                <a href="../algorithm/system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
     <li class="divider"></li>
 
     <li>
-        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
-            本书使用 HonKit 发布
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -697,6 +826,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="rag（检索增强生成）面试指南">RAG（检索增强生成）面试指南</h1>
@@ -772,7 +904,7 @@
 </table>
 <h3 id="22-文档预处理">2.2 文档预处理</h3>
 <pre><code class="lang-python"><span class="hljs-comment"># 典型的文档处理流程</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">preprocess_document</span>(<span class="hljs-params">raw_text</span>):
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">preprocess_document</span><span class="hljs-params">(raw_text)</span>:</span>
     <span class="hljs-comment"># 1. 清洗：去除多余空白、特殊字符</span>
     text = re.sub(<span class="hljs-string">r'\s+'</span>, <span class="hljs-string">' '</span>, raw_text).strip()
     <span class="hljs-comment"># 2. 去噪：移除页眉页脚、水印等</span>
@@ -797,9 +929,9 @@
 <h2 id="3-文本分块策略">3. 文本分块策略</h2>
 <p>分块（Chunking）是 RAG 系统中对效果影响最大的环节之一。</p>
 <h3 id="31-fixed-size-chunking（固定大小分块）">3.1 Fixed-size Chunking（固定大小分块）</h3>
-<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">fixed_size_chunk</span>(<span class="hljs-params">text, chunk_size=<span class="hljs-number">500</span>, overlap=<span class="hljs-number">50</span></span>):
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fixed_size_chunk</span><span class="hljs-params">(text, chunk_size=<span class="hljs-number">500</span>, overlap=<span class="hljs-number">50</span>)</span>:</span>
     chunks = []
-    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, <span class="hljs-built_in">len</span>(text), chunk_size - overlap):
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>, len(text), chunk_size - overlap):
         chunks.append(text[i:i + chunk_size])
     <span class="hljs-keyword">return</span> chunks
 </code></pre>
@@ -823,9 +955,9 @@ chunks = splitter.split_text(document)
 sentences = split_into_sentences(text)
 embeddings = embed_model.encode(sentences)
 similarities = [cosine_similarity(embeddings[i], embeddings[i+<span class="hljs-number">1</span>]) 
-                <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(embeddings)-<span class="hljs-number">1</span>)]
+                <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(embeddings)<span class="hljs-number">-1</span>)]
 <span class="hljs-comment"># 在相似度低于阈值处分块</span>
-breakpoints = [i <span class="hljs-keyword">for</span> i, sim <span class="hljs-keyword">in</span> <span class="hljs-built_in">enumerate</span>(similarities) <span class="hljs-keyword">if</span> sim &lt; threshold]
+breakpoints = [i <span class="hljs-keyword">for</span> i, sim <span class="hljs-keyword">in</span> enumerate(similarities) <span class="hljs-keyword">if</span> sim &lt; threshold]
 </code></pre>
 <h3 id="34-agentic-chunking（智能体分块）">3.4 Agentic Chunking（智能体分块）</h3>
 <p>使用 LLM 来决定分块策略：</p>
@@ -1039,7 +1171,7 @@ results = collection.query(
 <h2 id="7-混合检索">7. 混合检索</h2>
 <h3 id="71-dense--sparse-检索">7.1 Dense + Sparse 检索</h3>
 <pre><code class="lang-python"><span class="hljs-comment"># 混合检索示例</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">hybrid_search</span>(<span class="hljs-params">query, alpha=<span class="hljs-number">0.7</span></span>):
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hybrid_search</span><span class="hljs-params">(query, alpha=<span class="hljs-number">0.7</span>)</span>:</span>
     <span class="hljs-comment"># Dense 检索（向量相似度）</span>
     dense_results = vector_db.search(
         query_embedding=embed(query), top_k=<span class="hljs-number">20</span>
@@ -1054,13 +1186,13 @@ results = collection.query(
     )
     <span class="hljs-keyword">return</span> fused[:<span class="hljs-number">10</span>]
 
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">reciprocal_rank_fusion</span>(<span class="hljs-params">result_lists, weights, k=<span class="hljs-number">60</span></span>):
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">reciprocal_rank_fusion</span><span class="hljs-params">(result_lists, weights, k=<span class="hljs-number">60</span>)</span>:</span>
     scores = {}
-    <span class="hljs-keyword">for</span> results, weight <span class="hljs-keyword">in</span> <span class="hljs-built_in">zip</span>(result_lists, weights):
-        <span class="hljs-keyword">for</span> rank, doc <span class="hljs-keyword">in</span> <span class="hljs-built_in">enumerate</span>(results):
-            doc_id = doc.<span class="hljs-built_in">id</span>
+    <span class="hljs-keyword">for</span> results, weight <span class="hljs-keyword">in</span> zip(result_lists, weights):
+        <span class="hljs-keyword">for</span> rank, doc <span class="hljs-keyword">in</span> enumerate(results):
+            doc_id = doc.id
             scores[doc_id] = scores.get(doc_id, <span class="hljs-number">0</span>) + weight / (k + rank + <span class="hljs-number">1</span>)
-    <span class="hljs-keyword">return</span> <span class="hljs-built_in">sorted</span>(scores.items(), key=<span class="hljs-keyword">lambda</span> x: x[<span class="hljs-number">1</span>], reverse=<span class="hljs-literal">True</span>)
+    <span class="hljs-keyword">return</span> sorted(scores.items(), key=<span class="hljs-keyword">lambda</span> x: x[<span class="hljs-number">1</span>], reverse=<span class="hljs-keyword">True</span>)
 </code></pre>
 <h3 id="72-为什么需要混合检索">7.2 为什么需要混合检索</h3>
 <ul>
@@ -1093,7 +1225,7 @@ pairs = [[query, doc] <span class="hljs-keyword">for</span> doc <span class="hlj
 scores = reranker.predict(pairs)
 
 <span class="hljs-comment"># 按分数排序</span>
-ranked = <span class="hljs-built_in">sorted</span>(<span class="hljs-built_in">zip</span>(documents, scores), key=<span class="hljs-keyword">lambda</span> x: x[<span class="hljs-number">1</span>], reverse=<span class="hljs-literal">True</span>)
+ranked = sorted(zip(documents, scores), key=<span class="hljs-keyword">lambda</span> x: x[<span class="hljs-number">1</span>], reverse=<span class="hljs-keyword">True</span>)
 </code></pre>
 <h3 id="82-常用-reranker">8.2 常用 Reranker</h3>
 <ul>
@@ -1122,10 +1254,10 @@ ranked = <span class="hljs-built_in">sorted</span>(<span class="hljs-built_in">z
 </code></pre>
 <h3 id="92-hyde（hypothetical-document-embeddings）">9.2 HyDE（Hypothetical Document Embeddings）</h3>
 <p>先让 LLM 生成一个"假设性回答"，然后用这个回答去检索：</p>
-<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">hyde_search</span>(<span class="hljs-params">query</span>):
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hyde_search</span><span class="hljs-params">(query)</span>:</span>
     <span class="hljs-comment"># 1. LLM 生成假设性回答</span>
     hypothetical_answer = llm.generate(
-        <span class="hljs-string">f"请回答以下问题（不需要准确，只需要大致合理）：\n<span class="hljs-subst">{query}</span>"</span>
+        f<span class="hljs-string">"请回答以下问题（不需要准确，只需要大致合理）：\n{query}"</span>
     )
     <span class="hljs-comment"># 2. 用假设性回答的 Embedding 去检索</span>
     results = vector_db.search(embed(hypothetical_answer), top_k=<span class="hljs-number">10</span>)
@@ -1134,11 +1266,11 @@ ranked = <span class="hljs-built_in">sorted</span>(<span class="hljs-built_in">z
 <p>HyDE 的原理是：假设性回答与真实文档在向量空间中更接近（因为它们都是 "回答" 的形式），从而提高检索效果。</p>
 <h3 id="93-multi-query（多查询）">9.3 Multi-Query（多查询）</h3>
 <p>将原始问题扩展为多个不同角度的子查询，分别检索后合并结果：</p>
-<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">multi_query_search</span>(<span class="hljs-params">query</span>):
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">multi_query_search</span><span class="hljs-params">(query)</span>:</span>
     <span class="hljs-comment"># LLM 生成多个角度的查询</span>
-    sub_queries = llm.generate(<span class="hljs-string">f"""
+    sub_queries = llm.generate(f<span class="hljs-string">"""
     请从3个不同角度重新表述以下问题：
-    原始问题：<span class="hljs-subst">{query}</span>
+    原始问题：{query}
     """</span>)
 
     all_results = []
@@ -1255,7 +1387,7 @@ result = evaluate(
     dataset,
     metrics=[faithfulness, answer_relevancy, context_precision, context_recall]
 )
-<span class="hljs-built_in">print</span>(result)
+print(result)
 </code></pre>
 <blockquote>
 <p><strong>面试题：如何构建 RAG 系统的评估体系？</strong></p>
@@ -1347,6 +1479,22 @@ result = evaluate(
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -1370,73 +1518,29 @@ result = evaluate(
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"RAG检索增强生成","level":"5.3","depth":1,"next":{"title":"Agent架构","level":"5.4","depth":1,"path":"agent/agent-architecture.md","ref":"agent/agent-architecture.md","articles":[]},"previous":{"title":"Prompt Engineering","level":"5.2","depth":1,"path":"agent/prompt-engineering.md","ref":"agent/prompt-engineering.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"agent/rag.md","mtime":"2026-03-31T06:35:11.835Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"RAG检索增强生成","level":"5.3","depth":1,"next":{"title":"Agent架构","level":"5.4","depth":1,"path":"agent/agent-architecture.md","ref":"agent/agent-architecture.md","articles":[]},"previous":{"title":"Prompt Engineering","level":"5.2","depth":1,"path":"agent/prompt-engineering.md","ref":"agent/prompt-engineering.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"agent/rag.md","mtime":"2026-03-31T12:30:26.827Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    <noscript>
-        <style>
-            .honkit-cloak {
-                display: block !important;
-            }
-        </style>
-    </noscript>
-    <script>
-        // Restore sidebar state as critical path for prevent layout shift
-        function __init__getSidebarState(defaultValue){
-            var baseKey = "";
-            var key = baseKey + ":sidebar";
-            try {
-                var value = localStorage[key];
-                if (value === undefined) {
-                    return defaultValue;
-                }
-                var parsed = JSON.parse(value);
-                return parsed == null ? defaultValue : parsed;
-            } catch (e) {
-                return defaultValue;
-            }
-        }
-        function __init__restoreLastSidebarState() {
-            var isMobile = window.matchMedia("(max-width: 600px)").matches;
-            if (isMobile) {
-                // Init last state if not mobile
-                return;
-            }
-            var sidebarState = __init__getSidebarState(true);
-            var book = document.querySelector(".book");
-            // Show sidebar if it enabled
-            if (sidebarState && book) {
-                book.classList.add("without-animation", "with-summary");
-            }
-        }
-
-        try {
-            __init__restoreLastSidebarState();
-        } finally {
-            var book = document.querySelector(".book");
-            book.classList.remove("honkit-cloak");
-        }
-    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

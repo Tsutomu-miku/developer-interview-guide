@@ -3,10 +3,11 @@
 <html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>Agent架构 · 全栈开发面试指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="generator" content="GitBook 6.1.7">
         
         
         
@@ -16,19 +17,23 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -69,10 +74,14 @@
     </head>
     <body>
         
-<div class="book honkit-cloak">
+<div class="book">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -269,6 +278,66 @@
             
         </li>
     
+        <li class="chapter " data-level="2.11" data-path="../frontend/micro-frontend.html">
+            
+                <a href="../frontend/micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../frontend/mobile-dev.html">
+            
+                <a href="../frontend/mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../frontend/state-management.html">
+            
+                <a href="../frontend/state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../frontend/design-patterns.html">
+            
+                <a href="../frontend/design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -359,6 +428,21 @@
                         <b>3.6.</b>
                     
                     最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../nodejs/serverless.html">
+            
+                <a href="../nodejs/serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
             
                 </a>
             
@@ -463,6 +547,21 @@
             
         </li>
     
+        <li class="chapter " data-level="4.7" data-path="../golang/cloud-native.html">
+            
+                <a href="../golang/cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -553,6 +652,21 @@
                         <b>5.6.</b>
                     
                     实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="evaluation.html">
+            
+                <a href="evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
             
                 </a>
             
@@ -657,14 +771,29 @@
             
         </li>
     
+        <li class="chapter " data-level="6.7" data-path="../algorithm/system-design.html">
+            
+                <a href="../algorithm/system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
     <li class="divider"></li>
 
     <li>
-        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
-            本书使用 HonKit 发布
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -697,6 +826,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="agent-架构面试指南">Agent 架构面试指南</h1>
@@ -758,32 +890,32 @@
 <hr></hr>
 <h2 id="2-agent-工作流程">2. Agent 工作流程</h2>
 <h3 id="21-核心循环：perception-→-planning-→-action-→-observation">2.1 核心循环：Perception → Planning → Action → Observation</h3>
-<pre><code class="lang-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">SimpleAgent</span>:
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, llm, tools, memory</span>):
-        <span class="hljs-variable language_">self</span>.llm = llm
-        <span class="hljs-variable language_">self</span>.tools = tools
-        <span class="hljs-variable language_">self</span>.memory = memory
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SimpleAgent</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, llm, tools, memory)</span>:</span>
+        self.llm = llm
+        self.tools = tools
+        self.memory = memory
 
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">run</span>(<span class="hljs-params">self, task</span>):
-        <span class="hljs-variable language_">self</span>.memory.add(<span class="hljs-string">"user"</span>, task)
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">run</span><span class="hljs-params">(self, task)</span>:</span>
+        self.memory.add(<span class="hljs-string">"user"</span>, task)
 
-        <span class="hljs-keyword">while</span> <span class="hljs-keyword">not</span> <span class="hljs-variable language_">self</span>.is_task_complete():
+        <span class="hljs-keyword">while</span> <span class="hljs-keyword">not</span> self.is_task_complete():
             <span class="hljs-comment"># 1. Perception - 感知当前状态</span>
-            context = <span class="hljs-variable language_">self</span>.memory.get_context()
+            context = self.memory.get_context()
 
             <span class="hljs-comment"># 2. Planning - 思考下一步行动</span>
-            thought = <span class="hljs-variable language_">self</span>.llm.think(context)
+            thought = self.llm.think(context)
 
             <span class="hljs-comment"># 3. Action - 执行行动</span>
             <span class="hljs-keyword">if</span> thought.requires_tool:
-                result = <span class="hljs-variable language_">self</span>.execute_tool(thought.tool_name, thought.tool_args)
+                result = self.execute_tool(thought.tool_name, thought.tool_args)
             <span class="hljs-keyword">else</span>:
                 result = thought.final_answer
 
             <span class="hljs-comment"># 4. Observation - 观察结果</span>
-            <span class="hljs-variable language_">self</span>.memory.add(<span class="hljs-string">"observation"</span>, result)
+            self.memory.add(<span class="hljs-string">"observation"</span>, result)
 
-        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">self</span>.memory.get_final_answer()
+        <span class="hljs-keyword">return</span> self.memory.get_final_answer()
 </code></pre>
 <h3 id="22-react-执行模式">2.2 ReAct 执行模式</h3>
 <p>ReAct 是当前最主流的 Agent 执行模式，交替进行推理（Thought）和行动（Action）：</p>
@@ -851,14 +983,14 @@ Execute: 按顺序执行每一步
 </ul>
 <h3 id="42-长期记忆（long-term-memory）">4.2 长期记忆（Long-term Memory）</h3>
 <p>存储跨对话/跨会话的持久信息：</p>
-<pre><code class="lang-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">LongTermMemory</span>:
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, vector_store</span>):
-        <span class="hljs-variable language_">self</span>.vector_store = vector_store
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LongTermMemory</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, vector_store)</span>:</span>
+        self.vector_store = vector_store
 
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">store</span>(<span class="hljs-params">self, content, metadata=<span class="hljs-literal">None</span></span>):
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">store</span><span class="hljs-params">(self, content, metadata=None)</span>:</span>
         <span class="hljs-string">"""将信息存入长期记忆"""</span>
         embedding = embed(content)
-        <span class="hljs-variable language_">self</span>.vector_store.add(
+        self.vector_store.add(
             embedding=embedding,
             text=content,
             metadata={
@@ -868,9 +1000,9 @@ Execute: 按顺序执行每一步
             }
         )
 
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">retrieve</span>(<span class="hljs-params">self, query, top_k=<span class="hljs-number">5</span>, filters=<span class="hljs-literal">None</span></span>):
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">retrieve</span><span class="hljs-params">(self, query, top_k=<span class="hljs-number">5</span>, filters=None)</span>:</span>
         <span class="hljs-string">"""从长期记忆中检索相关信息"""</span>
-        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">self</span>.vector_store.search(
+        <span class="hljs-keyword">return</span> self.vector_store.search(
             query_embedding=embed(query),
             top_k=top_k,
             filters=filters
@@ -882,7 +1014,7 @@ Execute: 按顺序执行每一步
 <pre><code class="lang-python"><span class="hljs-comment"># LangChain 对话缓冲记忆</span>
 <span class="hljs-keyword">from</span> langchain.memory <span class="hljs-keyword">import</span> ConversationBufferMemory
 
-memory = ConversationBufferMemory(return_messages=<span class="hljs-literal">True</span>)
+memory = ConversationBufferMemory(return_messages=<span class="hljs-keyword">True</span>)
 memory.save_context(
     {<span class="hljs-string">"input"</span>: <span class="hljs-string">"我叫张三"</span>},
     {<span class="hljs-string">"output"</span>: <span class="hljs-string">"你好，张三！有什么可以帮助你的？"</span>}
@@ -953,35 +1085,35 @@ Reflexion:
 <hr></hr>
 <h2 id="6-单-agent-架构设计">6. 单 Agent 架构设计</h2>
 <h3 id="61-基础架构">6.1 基础架构</h3>
-<pre><code class="lang-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Agent</span>:
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, llm, tools, memory, system_prompt</span>):
-        <span class="hljs-variable language_">self</span>.llm = llm
-        <span class="hljs-variable language_">self</span>.tools = {t.name: t <span class="hljs-keyword">for</span> t <span class="hljs-keyword">in</span> tools}
-        <span class="hljs-variable language_">self</span>.memory = memory
-        <span class="hljs-variable language_">self</span>.system_prompt = system_prompt
-        <span class="hljs-variable language_">self</span>.max_iterations = <span class="hljs-number">10</span>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Agent</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, llm, tools, memory, system_prompt)</span>:</span>
+        self.llm = llm
+        self.tools = {t.name: t <span class="hljs-keyword">for</span> t <span class="hljs-keyword">in</span> tools}
+        self.memory = memory
+        self.system_prompt = system_prompt
+        self.max_iterations = <span class="hljs-number">10</span>
 
-    <span class="hljs-keyword">def</span> <span class="hljs-title function_">run</span>(<span class="hljs-params">self, user_input</span>):
-        <span class="hljs-variable language_">self</span>.memory.add_message(<span class="hljs-string">"user"</span>, user_input)
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">run</span><span class="hljs-params">(self, user_input)</span>:</span>
+        self.memory.add_message(<span class="hljs-string">"user"</span>, user_input)
 
-        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-variable language_">self</span>.max_iterations):
+        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(self.max_iterations):
             <span class="hljs-comment"># 构造 prompt</span>
             messages = [
-                {<span class="hljs-string">"role"</span>: <span class="hljs-string">"system"</span>, <span class="hljs-string">"content"</span>: <span class="hljs-variable language_">self</span>.system_prompt},
-                *<span class="hljs-variable language_">self</span>.memory.get_messages()
+                {<span class="hljs-string">"role"</span>: <span class="hljs-string">"system"</span>, <span class="hljs-string">"content"</span>: self.system_prompt},
+                *self.memory.get_messages()
             ]
 
             <span class="hljs-comment"># LLM 推理</span>
-            response = <span class="hljs-variable language_">self</span>.llm.chat(messages, tools=<span class="hljs-variable language_">self</span>.get_tool_schemas())
+            response = self.llm.chat(messages, tools=self.get_tool_schemas())
 
             <span class="hljs-comment"># 判断是否调用工具</span>
             <span class="hljs-keyword">if</span> response.tool_calls:
                 <span class="hljs-keyword">for</span> tool_call <span class="hljs-keyword">in</span> response.tool_calls:
-                    result = <span class="hljs-variable language_">self</span>.tools[tool_call.name].execute(tool_call.args)
-                    <span class="hljs-variable language_">self</span>.memory.add_message(<span class="hljs-string">"tool"</span>, result, tool_call_id=tool_call.<span class="hljs-built_in">id</span>)
+                    result = self.tools[tool_call.name].execute(tool_call.args)
+                    self.memory.add_message(<span class="hljs-string">"tool"</span>, result, tool_call_id=tool_call.id)
             <span class="hljs-keyword">else</span>:
                 <span class="hljs-comment"># 最终回答</span>
-                <span class="hljs-variable language_">self</span>.memory.add_message(<span class="hljs-string">"assistant"</span>, response.content)
+                self.memory.add_message(<span class="hljs-string">"assistant"</span>, response.content)
                 <span class="hljs-keyword">return</span> response.content
 
         <span class="hljs-keyword">return</span> <span class="hljs-string">"达到最大迭代次数，任务未完成"</span>
@@ -1014,12 +1146,12 @@ Reflexion:
 <p>多个 Agent 对同一问题给出不同观点，通过辩论达成共识或由仲裁者决策。</p>
 <h3 id="72-通信协议">7.2 通信协议</h3>
 <pre><code class="lang-python"><span class="hljs-comment"># Agent 之间的消息格式</span>
-<span class="hljs-keyword">class</span> <span class="hljs-title class_">AgentMessage</span>:
-    sender: <span class="hljs-built_in">str</span>        <span class="hljs-comment"># 发送者Agent名称</span>
-    receiver: <span class="hljs-built_in">str</span>      <span class="hljs-comment"># 接收者Agent名称</span>
-    content: <span class="hljs-built_in">str</span>       <span class="hljs-comment"># 消息内容</span>
-    message_type: <span class="hljs-built_in">str</span>  <span class="hljs-comment"># 类型：task/result/question/feedback</span>
-    metadata: <span class="hljs-built_in">dict</span>     <span class="hljs-comment"># 附加信息</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AgentMessage</span>:</span>
+    sender: str        <span class="hljs-comment"># 发送者Agent名称</span>
+    receiver: str      <span class="hljs-comment"># 接收者Agent名称</span>
+    content: str       <span class="hljs-comment"># 消息内容</span>
+    message_type: str  <span class="hljs-comment"># 类型：task/result/question/feedback</span>
+    metadata: dict     <span class="hljs-comment"># 附加信息</span>
 </code></pre>
 <h3 id="73-冲突解决">7.3 冲突解决</h3>
 <p>当多个 Agent 意见不一致时：</p>
@@ -1054,7 +1186,7 @@ result = chain.invoke({<span class="hljs-string">"language"</span>: <span class=
 <pre><code class="lang-python"><span class="hljs-keyword">from</span> langchain.agents <span class="hljs-keyword">import</span> create_tool_calling_agent, AgentExecutor
 
 agent = create_tool_calling_agent(llm, tools, prompt)
-agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=<span class="hljs-literal">True</span>)
+agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=<span class="hljs-keyword">True</span>)
 result = agent_executor.invoke({<span class="hljs-string">"input"</span>: <span class="hljs-string">"北京今天天气怎么样？"</span>})
 </code></pre>
 <p><strong>Memory</strong>：管理对话历史和状态：</p>
@@ -1066,7 +1198,7 @@ memory = ConversationBufferWindowMemory(k=<span class="hljs-number">10</span>)  
 <pre><code class="lang-python"><span class="hljs-keyword">from</span> langchain.tools <span class="hljs-keyword">import</span> tool
 
 <span class="hljs-meta">@tool</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">search_web</span>(<span class="hljs-params">query: <span class="hljs-built_in">str</span></span>) -&gt; <span class="hljs-built_in">str</span>:
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">search_web</span><span class="hljs-params">(query: str)</span> -&gt; str:</span>
     <span class="hljs-string">"""搜索互联网获取最新信息"""</span>
     <span class="hljs-keyword">return</span> web_search_api(query)
 </code></pre>
@@ -1095,24 +1227,24 @@ agent_executor.invoke({<span class="hljs-string">"input"</span>: <span class="hl
 <span class="hljs-keyword">from</span> typing <span class="hljs-keyword">import</span> TypedDict, Annotated
 <span class="hljs-keyword">import</span> operator
 
-<span class="hljs-keyword">class</span> <span class="hljs-title class_">AgentState</span>(<span class="hljs-title class_ inherited__">TypedDict</span>):
-    messages: Annotated[<span class="hljs-built_in">list</span>, operator.add]
-    next_action: <span class="hljs-built_in">str</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AgentState</span><span class="hljs-params">(TypedDict)</span>:</span>
+    messages: Annotated[list, operator.add]
+    next_action: str
 
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">reasoning_node</span>(<span class="hljs-params">state: AgentState</span>) -&gt; AgentState:
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">reasoning_node</span><span class="hljs-params">(state: AgentState)</span> -&gt; AgentState:</span>
     <span class="hljs-string">"""推理节点：决定下一步行动"""</span>
     response = llm.invoke(state[<span class="hljs-string">"messages"</span>])
     <span class="hljs-keyword">if</span> response.tool_calls:
         <span class="hljs-keyword">return</span> {<span class="hljs-string">"messages"</span>: [response], <span class="hljs-string">"next_action"</span>: <span class="hljs-string">"tool"</span>}
     <span class="hljs-keyword">return</span> {<span class="hljs-string">"messages"</span>: [response], <span class="hljs-string">"next_action"</span>: <span class="hljs-string">"end"</span>}
 
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">tool_node</span>(<span class="hljs-params">state: AgentState</span>) -&gt; AgentState:
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">tool_node</span><span class="hljs-params">(state: AgentState)</span> -&gt; AgentState:</span>
     <span class="hljs-string">"""工具执行节点"""</span>
-    tool_calls = state[<span class="hljs-string">"messages"</span>][-<span class="hljs-number">1</span>].tool_calls
+    tool_calls = state[<span class="hljs-string">"messages"</span>][<span class="hljs-number">-1</span>].tool_calls
     results = [execute_tool(tc) <span class="hljs-keyword">for</span> tc <span class="hljs-keyword">in</span> tool_calls]
     <span class="hljs-keyword">return</span> {<span class="hljs-string">"messages"</span>: results, <span class="hljs-string">"next_action"</span>: <span class="hljs-string">"reason"</span>}
 
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">should_continue</span>(<span class="hljs-params">state: AgentState</span>) -&gt; <span class="hljs-built_in">str</span>:
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">should_continue</span><span class="hljs-params">(state: AgentState)</span> -&gt; str:</span>
     <span class="hljs-string">"""条件路由"""</span>
     <span class="hljs-keyword">if</span> state[<span class="hljs-string">"next_action"</span>] == <span class="hljs-string">"end"</span>:
         <span class="hljs-keyword">return</span> END
@@ -1126,7 +1258,7 @@ graph.set_entry_point(<span class="hljs-string">"reason"</span>)
 graph.add_conditional_edges(<span class="hljs-string">"reason"</span>, should_continue, {<span class="hljs-string">"tool"</span>: <span class="hljs-string">"tool"</span>, END: END})
 graph.add_edge(<span class="hljs-string">"tool"</span>, <span class="hljs-string">"reason"</span>)
 
-app = graph.<span class="hljs-built_in">compile</span>()
+app = graph.compile()
 result = app.invoke({<span class="hljs-string">"messages"</span>: [HumanMessage(content=<span class="hljs-string">"你好"</span>)]})
 </code></pre>
 <h3 id="92-langgraph-的优势">9.2 LangGraph 的优势</h3>
@@ -1181,7 +1313,7 @@ writing_task = Task(
 crew = Crew(
     agents=[researcher, writer],
     tasks=[research_task, writing_task],
-    verbose=<span class="hljs-literal">True</span>
+    verbose=<span class="hljs-keyword">True</span>
 )
 
 result = crew.kickoff()
@@ -1233,15 +1365,15 @@ thread = client.beta.threads.create()
 
 <span class="hljs-comment"># 添加消息</span>
 client.beta.threads.messages.create(
-    thread_id=thread.<span class="hljs-built_in">id</span>,
+    thread_id=thread.id,
     role=<span class="hljs-string">"user"</span>,
     content=<span class="hljs-string">"请分析这份销售数据"</span>
 )
 
 <span class="hljs-comment"># 运行 Assistant</span>
 run = client.beta.threads.runs.create(
-    thread_id=thread.<span class="hljs-built_in">id</span>,
-    assistant_id=assistant.<span class="hljs-built_in">id</span>
+    thread_id=thread.id,
+    assistant_id=assistant.id
 )
 </code></pre>
 <p>特点：托管式记忆管理、内置 Code Interpreter 和 File Search、支持 Function Calling。</p>
@@ -1320,6 +1452,22 @@ run = client.beta.threads.runs.create(
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -1343,73 +1491,29 @@ run = client.beta.threads.runs.create(
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Agent架构","level":"5.4","depth":1,"next":{"title":"工具调用与Function Calling","level":"5.5","depth":1,"path":"agent/tool-calling.md","ref":"agent/tool-calling.md","articles":[]},"previous":{"title":"RAG检索增强生成","level":"5.3","depth":1,"path":"agent/rag.md","ref":"agent/rag.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"agent/agent-architecture.md","mtime":"2026-03-31T06:35:11.835Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Agent架构","level":"5.4","depth":1,"next":{"title":"工具调用与Function Calling","level":"5.5","depth":1,"path":"agent/tool-calling.md","ref":"agent/tool-calling.md","articles":[]},"previous":{"title":"RAG检索增强生成","level":"5.3","depth":1,"path":"agent/rag.md","ref":"agent/rag.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"agent/agent-architecture.md","mtime":"2026-03-31T12:30:26.827Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    <noscript>
-        <style>
-            .honkit-cloak {
-                display: block !important;
-            }
-        </style>
-    </noscript>
-    <script>
-        // Restore sidebar state as critical path for prevent layout shift
-        function __init__getSidebarState(defaultValue){
-            var baseKey = "";
-            var key = baseKey + ":sidebar";
-            try {
-                var value = localStorage[key];
-                if (value === undefined) {
-                    return defaultValue;
-                }
-                var parsed = JSON.parse(value);
-                return parsed == null ? defaultValue : parsed;
-            } catch (e) {
-                return defaultValue;
-            }
-        }
-        function __init__restoreLastSidebarState() {
-            var isMobile = window.matchMedia("(max-width: 600px)").matches;
-            if (isMobile) {
-                // Init last state if not mobile
-                return;
-            }
-            var sidebarState = __init__getSidebarState(true);
-            var book = document.querySelector(".book");
-            // Show sidebar if it enabled
-            if (sidebarState && book) {
-                book.classList.add("without-animation", "with-summary");
-            }
-        }
-
-        try {
-            __init__restoreLastSidebarState();
-        } finally {
-            var book = document.querySelector(".book");
-            book.classList.remove("honkit-cloak");
-        }
-    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

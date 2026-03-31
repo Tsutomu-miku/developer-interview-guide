@@ -1,0 +1,1826 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>云原生与容器化 · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../agent/llm-basics.html" />
+    
+    
+    <link rel="prev" href="testing-practice.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../frontend/html-css.html">
+            
+                <a href="../frontend/html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../frontend/javascript.html">
+            
+                <a href="../frontend/javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../frontend/typescript.html">
+            
+                <a href="../frontend/typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../frontend/browser.html">
+            
+                <a href="../frontend/browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../frontend/network.html">
+            
+                <a href="../frontend/network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../frontend/react.html">
+            
+                <a href="../frontend/react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../frontend/vue.html">
+            
+                <a href="../frontend/vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../frontend/engineering.html">
+            
+                <a href="../frontend/engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../frontend/performance.html">
+            
+                <a href="../frontend/performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../frontend/security.html">
+            
+                <a href="../frontend/security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../frontend/micro-frontend.html">
+            
+                <a href="../frontend/micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../frontend/mobile-dev.html">
+            
+                <a href="../frontend/mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../frontend/state-management.html">
+            
+                <a href="../frontend/state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../frontend/design-patterns.html">
+            
+                <a href="../frontend/design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../nodejs/basics.html">
+            
+                <a href="../nodejs/basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../nodejs/event-loop.html">
+            
+                <a href="../nodejs/event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../nodejs/stream.html">
+            
+                <a href="../nodejs/stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../nodejs/frameworks.html">
+            
+                <a href="../nodejs/frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../nodejs/database.html">
+            
+                <a href="../nodejs/database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../nodejs/practice.html">
+            
+                <a href="../nodejs/practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../nodejs/serverless.html">
+            
+                <a href="../nodejs/serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="basics.html">
+            
+                <a href="basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="concurrency.html">
+            
+                <a href="concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="memory.html">
+            
+                <a href="memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="web-framework.html">
+            
+                <a href="web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="database-design.html">
+            
+                <a href="database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="testing-practice.html">
+            
+                <a href="testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.7" data-path="cloud-native.html">
+            
+                <a href="cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../agent/llm-basics.html">
+            
+                <a href="../agent/llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../agent/prompt-engineering.html">
+            
+                <a href="../agent/prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../agent/rag.html">
+            
+                <a href="../agent/rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../agent/agent-architecture.html">
+            
+                <a href="../agent/agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../agent/tool-calling.html">
+            
+                <a href="../agent/tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../agent/practice.html">
+            
+                <a href="../agent/practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../agent/evaluation.html">
+            
+                <a href="../agent/evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../algorithm/system-design.html">
+            
+                <a href="../algorithm/system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >云原生与容器化</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="云原生与容器化">云原生与容器化</h1>
+<blockquote>
+<p>优先级：⭐⭐（低优先级）| 适用于：后端开发、DevOps、SRE、云原生工程师</p>
+</blockquote>
+<p>云原生技术栈已成为现代后端开发的核心基础设施。本章涵盖Docker容器化、Kubernetes编排、Go与K8s生态整合、服务网格、CI/CD与可观测性等关键主题。</p>
+<hr></hr>
+<h2 id="1-docker基础">1. Docker基础</h2>
+<h3 id="11-容器-vs-虚拟机">1.1 容器 vs 虚拟机</h3>
+<table>
+<thead>
+<tr>
+<th>对比维度</th>
+<th>容器</th>
+<th>虚拟机</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>隔离级别</td>
+<td>进程级（共享宿主内核）</td>
+<td>硬件级（独立OS内核）</td>
+</tr>
+<tr>
+<td>启动速度</td>
+<td>毫秒级</td>
+<td>分钟级</td>
+</tr>
+<tr>
+<td>资源占用</td>
+<td>MB级</td>
+<td>GB级</td>
+</tr>
+<tr>
+<td>性能损耗</td>
+<td>接近原生</td>
+<td>5%-15%</td>
+</tr>
+<tr>
+<td>安全性</td>
+<td>较弱（共享内核）</td>
+<td>较强（完全隔离）</td>
+</tr>
+<tr>
+<td>典型技术</td>
+<td>Docker、containerd</td>
+<td>VMware、KVM、Hyper-V</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心原理：</strong> 容器基于Linux内核的三大特性实现隔离：</p>
+<ul>
+<li><strong>Namespace</strong>：隔离PID、Network、Mount、UTS、IPC、User</li>
+<li><strong>Cgroups</strong>：限制CPU、内存、IO等资源使用量</li>
+<li><strong>UnionFS</strong>：分层文件系统，实现镜像的高效存储和分发</li>
+</ul>
+<h3 id="12-dockerfile最佳实践（多阶段构建）">1.2 Dockerfile最佳实践（多阶段构建）</h3>
+<pre><code class="lang-dockerfile"><span class="hljs-comment"># ============ 阶段1：构建阶段 ============</span>
+<span class="hljs-keyword">FROM</span> golang:<span class="hljs-number">1.22</span>-alpine AS builder
+
+<span class="hljs-comment"># 设置工作目录</span>
+<span class="hljs-keyword">WORKDIR</span><span class="bash"> /app
+</span>
+<span class="hljs-comment"># 利用Docker缓存机制，先复制依赖文件</span>
+<span class="hljs-keyword">COPY</span><span class="bash"> go.mod go.sum ./
+</span><span class="hljs-keyword">RUN</span><span class="bash"> go mod download
+</span>
+<span class="hljs-comment"># 复制源代码并编译</span>
+<span class="hljs-keyword">COPY</span><span class="bash"> . .
+</span><span class="hljs-keyword">RUN</span><span class="bash"> CGO_ENABLED=0 GOOS=linux GOARCH=amd64 \
+    go build -ldflags=<span class="hljs-string">"-w -s"</span> -o /app/server ./cmd/server
+</span>
+<span class="hljs-comment"># ============ 阶段2：运行阶段 ============</span>
+<span class="hljs-keyword">FROM</span> alpine:<span class="hljs-number">3.19</span>
+
+<span class="hljs-comment"># 安装必要的CA证书（HTTPS请求需要）</span>
+<span class="hljs-keyword">RUN</span><span class="bash"> apk --no-cache add ca-certificates tzdata
+</span>
+<span class="hljs-comment"># 创建非root用户</span>
+<span class="hljs-keyword">RUN</span><span class="bash"> addgroup -S appgroup &amp;&amp; adduser -S appuser -G appgroup
+</span>
+<span class="hljs-keyword">WORKDIR</span><span class="bash"> /app
+</span><span class="hljs-keyword">COPY</span><span class="bash"> --from=builder /app/server .
+</span><span class="hljs-keyword">COPY</span><span class="bash"> --from=builder /app/configs ./configs
+</span>
+<span class="hljs-comment"># 使用非root用户运行</span>
+<span class="hljs-keyword">USER</span> appuser
+
+<span class="hljs-keyword">EXPOSE</span> <span class="hljs-number">8080</span>
+<span class="hljs-keyword">HEALTHCHECK</span><span class="bash"> --interval=30s --timeout=3s \
+    CMD wget --quiet --tries=1 --spider http://localhost:8080/health || <span class="hljs-built_in">exit</span> 1
+</span>
+<span class="hljs-keyword">ENTRYPOINT</span><span class="bash"> [<span class="hljs-string">"./server"</span>]
+</span></code></pre>
+<p><strong>关键优化点：</strong></p>
+<ul>
+<li><code>-ldflags="-w -s"</code>：去掉调试信息，减小二进制体积约30%</li>
+<li><code>CGO_ENABLED=0</code>：静态编译，无需glibc依赖</li>
+<li>分层COPY：先复制go.mod利用缓存，避免每次改代码都重新下载依赖</li>
+</ul>
+<h3 id="13-镜像优化策略">1.3 镜像优化策略</h3>
+<pre><code class="lang-dockerfile"><span class="hljs-comment"># 方案1：Alpine（~5MB基础镜像）</span>
+<span class="hljs-keyword">FROM</span> alpine:<span class="hljs-number">3.19</span>
+
+<span class="hljs-comment"># 方案2：scratch（0MB，最小镜像）</span>
+<span class="hljs-keyword">FROM</span> scratch
+<span class="hljs-keyword">COPY</span><span class="bash"> --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
+</span><span class="hljs-keyword">COPY</span><span class="bash"> --from=builder /app/server /server
+</span><span class="hljs-keyword">ENTRYPOINT</span><span class="bash"> [<span class="hljs-string">"/server"</span>]
+</span>
+<span class="hljs-comment"># 方案3：distroless（Google维护，含最小运行时）</span>
+<span class="hljs-keyword">FROM</span> gcr.io/distroless/static-debian12
+<span class="hljs-keyword">COPY</span><span class="bash"> --from=builder /app/server /server
+</span><span class="hljs-keyword">ENTRYPOINT</span><span class="bash"> [<span class="hljs-string">"/server"</span>]
+</span></code></pre>
+<p><strong>镜像大小对比：</strong>
+| 基础镜像 | 大小 | 适用场景 |
+|---------|------|---------|
+| golang:1.22 | ~800MB | 仅用于构建阶段 |
+| alpine:3.19 | ~5MB | 需要shell调试 |
+| distroless | ~2MB | 生产环境推荐 |
+| scratch | 0MB | 极致精简，静态二进制 |</p>
+<h3 id="14-docker网络模式">1.4 Docker网络模式</h3>
+<pre><code class="lang-bash"><span class="hljs-comment"># bridge模式（默认）：容器通过虚拟网桥通信</span>
+docker run --network bridge myapp
+
+<span class="hljs-comment"># host模式：直接使用宿主机网络栈，性能最好</span>
+docker run --network host myapp
+
+<span class="hljs-comment"># none模式：无网络，完全隔离</span>
+docker run --network none myapp
+
+<span class="hljs-comment"># 自定义网络：推荐用于多容器通信</span>
+docker network create mynet
+docker run --network mynet --name svc<span class="hljs-_">-a</span> myapp<span class="hljs-_">-a</span>
+docker run --network mynet --name svc-b myapp-b
+<span class="hljs-comment"># svc-b可以通过 svc-a:8080 直接访问</span>
+</code></pre>
+<h3 id="15-docker-compose编排">1.5 Docker Compose编排</h3>
+<pre><code class="lang-yaml"><span class="hljs-comment"># docker-compose.yml</span>
+<span class="hljs-attr">version:</span> <span class="hljs-string">"3.9"</span>
+<span class="hljs-attr">services:</span>
+<span class="hljs-attr">  api:</span>
+<span class="hljs-attr">    build:</span>
+<span class="hljs-attr">      context:</span> .
+<span class="hljs-attr">      dockerfile:</span> Dockerfile
+<span class="hljs-attr">    ports:</span>
+<span class="hljs-bullet">      -</span> <span class="hljs-string">"8080:8080"</span>
+<span class="hljs-attr">    environment:</span>
+<span class="hljs-bullet">      -</span> DB_HOST=postgres
+<span class="hljs-bullet">      -</span> REDIS_HOST=redis
+<span class="hljs-attr">    depends_on:</span>
+<span class="hljs-attr">      postgres:</span>
+<span class="hljs-attr">        condition:</span> service_healthy
+<span class="hljs-attr">      redis:</span>
+<span class="hljs-attr">        condition:</span> service_started
+<span class="hljs-attr">    deploy:</span>
+<span class="hljs-attr">      resources:</span>
+<span class="hljs-attr">        limits:</span>
+<span class="hljs-attr">          cpus:</span> <span class="hljs-string">"1.0"</span>
+<span class="hljs-attr">          memory:</span> <span class="hljs-number">512</span>M
+<span class="hljs-attr">    restart:</span> unless-stopped
+
+<span class="hljs-attr">  postgres:</span>
+<span class="hljs-attr">    image:</span> postgres:<span class="hljs-number">16</span>-alpine
+<span class="hljs-attr">    environment:</span>
+<span class="hljs-attr">      POSTGRES_DB:</span> myapp
+<span class="hljs-attr">      POSTGRES_USER:</span> admin
+<span class="hljs-attr">      POSTGRES_PASSWORD_FILE:</span> /run/secrets/db_password
+<span class="hljs-attr">    volumes:</span>
+<span class="hljs-attr">      - pg_data:</span>/var/lib/postgresql/data
+<span class="hljs-attr">    healthcheck:</span>
+<span class="hljs-attr">      test:</span> [<span class="hljs-string">"CMD-SHELL"</span>, <span class="hljs-string">"pg_isready -U admin"</span>]
+<span class="hljs-attr">      interval:</span> <span class="hljs-number">10</span>s
+<span class="hljs-attr">      timeout:</span> <span class="hljs-number">5</span>s
+<span class="hljs-attr">      retries:</span> <span class="hljs-number">5</span>
+<span class="hljs-attr">    secrets:</span>
+<span class="hljs-bullet">      -</span> db_password
+
+<span class="hljs-attr">  redis:</span>
+<span class="hljs-attr">    image:</span> redis:<span class="hljs-number">7</span>-alpine
+<span class="hljs-attr">    command:</span> redis-server --maxmemory <span class="hljs-number">256</span>mb --maxmemory-policy allkeys-lru
+<span class="hljs-attr">    volumes:</span>
+<span class="hljs-attr">      - redis_data:</span>/data
+
+<span class="hljs-attr">volumes:</span>
+<span class="hljs-attr">  pg_data:</span>
+<span class="hljs-attr">  redis_data:</span>
+
+<span class="hljs-attr">secrets:</span>
+<span class="hljs-attr">  db_password:</span>
+<span class="hljs-attr">    file:</span> ./secrets/db_password.txt
+</code></pre>
+<hr></hr>
+<h2 id="2-kubernetes核心概念">2. Kubernetes核心概念</h2>
+<h3 id="21-架构概述">2.1 架构概述</h3>
+<pre><code>┌─────────────────── Master Node ───────────────────┐
+│  kube-apiserver ── etcd（分布式KV存储）            │
+│  kube-scheduler（调度器）                          │
+│  kube-controller-manager（控制器管理器）            │
+│  cloud-controller-manager（云厂商控制器）           │
+└───────────────────────────────────────────────────┘
+              │ 通过 kubelet API 通信
+┌─────────────────── Worker Node ───────────────────┐
+│  kubelet（节点代理）                               │
+│  kube-proxy（网络代理，iptables/IPVS）             │
+│  Container Runtime（containerd/CRI-O）             │
+│  [Pod] [Pod] [Pod]                                │
+└───────────────────────────────────────────────────┘
+</code></pre><h3 id="22-核心资源对象">2.2 核心资源对象</h3>
+<pre><code class="lang-yaml"><span class="hljs-comment"># Deployment：无状态应用部署</span>
+<span class="hljs-attr">apiVersion:</span> apps/v1
+<span class="hljs-attr">kind:</span> Deployment
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  name:</span> go-api
+<span class="hljs-attr">  labels:</span>
+<span class="hljs-attr">    app:</span> go-api
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  replicas:</span> <span class="hljs-number">3</span>
+<span class="hljs-attr">  strategy:</span>
+<span class="hljs-attr">    type:</span> RollingUpdate
+<span class="hljs-attr">    rollingUpdate:</span>
+<span class="hljs-attr">      maxSurge:</span> <span class="hljs-number">1</span>        <span class="hljs-comment"># 滚动更新时最多多创建1个Pod</span>
+<span class="hljs-attr">      maxUnavailable:</span> <span class="hljs-number">0</span>  <span class="hljs-comment"># 更新过程中不允许有Pod不可用</span>
+<span class="hljs-attr">  selector:</span>
+<span class="hljs-attr">    matchLabels:</span>
+<span class="hljs-attr">      app:</span> go-api
+<span class="hljs-attr">  template:</span>
+<span class="hljs-attr">    metadata:</span>
+<span class="hljs-attr">      labels:</span>
+<span class="hljs-attr">        app:</span> go-api
+<span class="hljs-attr">    spec:</span>
+<span class="hljs-attr">      containers:</span>
+<span class="hljs-attr">        - name:</span> api
+<span class="hljs-attr">          image:</span> myregistry/go-api:v1<span class="hljs-number">.2</span><span class="hljs-number">.0</span>
+<span class="hljs-attr">          ports:</span>
+<span class="hljs-attr">            - containerPort:</span> <span class="hljs-number">8080</span>
+<span class="hljs-attr">          resources:</span>
+<span class="hljs-attr">            requests:</span>         <span class="hljs-comment"># 调度依据，保证最低资源</span>
+<span class="hljs-attr">              cpu:</span> <span class="hljs-string">"100m"</span>
+<span class="hljs-attr">              memory:</span> <span class="hljs-string">"128Mi"</span>
+<span class="hljs-attr">            limits:</span>           <span class="hljs-comment"># 硬上限，超出OOMKill</span>
+<span class="hljs-attr">              cpu:</span> <span class="hljs-string">"500m"</span>
+<span class="hljs-attr">              memory:</span> <span class="hljs-string">"512Mi"</span>
+<span class="hljs-attr">          livenessProbe:</span>      <span class="hljs-comment"># 存活探针：失败则重启容器</span>
+<span class="hljs-attr">            httpGet:</span>
+<span class="hljs-attr">              path:</span> /health
+<span class="hljs-attr">              port:</span> <span class="hljs-number">8080</span>
+<span class="hljs-attr">            initialDelaySeconds:</span> <span class="hljs-number">10</span>
+<span class="hljs-attr">            periodSeconds:</span> <span class="hljs-number">15</span>
+<span class="hljs-attr">          readinessProbe:</span>     <span class="hljs-comment"># 就绪探针：失败则摘除流量</span>
+<span class="hljs-attr">            httpGet:</span>
+<span class="hljs-attr">              path:</span> /ready
+<span class="hljs-attr">              port:</span> <span class="hljs-number">8080</span>
+<span class="hljs-attr">            initialDelaySeconds:</span> <span class="hljs-number">5</span>
+<span class="hljs-attr">            periodSeconds:</span> <span class="hljs-number">10</span>
+<span class="hljs-attr">          env:</span>
+<span class="hljs-attr">            - name:</span> DB_PASSWORD
+<span class="hljs-attr">              valueFrom:</span>
+<span class="hljs-attr">                secretKeyRef:</span>
+<span class="hljs-attr">                  name:</span> db-secret
+<span class="hljs-attr">                  key:</span> password
+<span class="hljs-meta">---</span>
+<span class="hljs-comment"># Service：服务发现和负载均衡</span>
+<span class="hljs-attr">apiVersion:</span> v1
+<span class="hljs-attr">kind:</span> Service
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  name:</span> go-api-svc
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  type:</span> ClusterIP
+<span class="hljs-attr">  selector:</span>
+<span class="hljs-attr">    app:</span> go-api
+<span class="hljs-attr">  ports:</span>
+<span class="hljs-attr">    - port:</span> <span class="hljs-number">80</span>
+<span class="hljs-attr">      targetPort:</span> <span class="hljs-number">8080</span>
+<span class="hljs-meta">---</span>
+<span class="hljs-comment"># Ingress：外部HTTP路由</span>
+<span class="hljs-attr">apiVersion:</span> networking.k8s.io/v1
+<span class="hljs-attr">kind:</span> Ingress
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  name:</span> go-api-ingress
+<span class="hljs-attr">  annotations:</span>
+    nginx.ingress.kubernetes.io/rate-limit: <span class="hljs-string">"100"</span>
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  ingressClassName:</span> nginx
+<span class="hljs-attr">  tls:</span>
+<span class="hljs-attr">    - hosts:</span> [api.example.com]
+<span class="hljs-attr">      secretName:</span> tls-secret
+<span class="hljs-attr">  rules:</span>
+<span class="hljs-attr">    - host:</span> api.example.com
+<span class="hljs-attr">      http:</span>
+<span class="hljs-attr">        paths:</span>
+<span class="hljs-attr">          - path:</span> /api/v1
+<span class="hljs-attr">            pathType:</span> Prefix
+<span class="hljs-attr">            backend:</span>
+<span class="hljs-attr">              service:</span>
+<span class="hljs-attr">                name:</span> go-api-svc
+<span class="hljs-attr">                port:</span>
+<span class="hljs-attr">                  number:</span> <span class="hljs-number">80</span>
+</code></pre>
+<h3 id="23-hpa自动扩缩容">2.3 HPA自动扩缩容</h3>
+<pre><code class="lang-yaml"><span class="hljs-attr">apiVersion:</span> autoscaling/v2
+<span class="hljs-attr">kind:</span> HorizontalPodAutoscaler
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  name:</span> go-api-hpa
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  scaleTargetRef:</span>
+<span class="hljs-attr">    apiVersion:</span> apps/v1
+<span class="hljs-attr">    kind:</span> Deployment
+<span class="hljs-attr">    name:</span> go-api
+<span class="hljs-attr">  minReplicas:</span> <span class="hljs-number">2</span>
+<span class="hljs-attr">  maxReplicas:</span> <span class="hljs-number">20</span>
+<span class="hljs-attr">  metrics:</span>
+<span class="hljs-attr">    - type:</span> Resource
+<span class="hljs-attr">      resource:</span>
+<span class="hljs-attr">        name:</span> cpu
+<span class="hljs-attr">        target:</span>
+<span class="hljs-attr">          type:</span> Utilization
+<span class="hljs-attr">          averageUtilization:</span> <span class="hljs-number">70</span>
+<span class="hljs-attr">    - type:</span> Resource
+<span class="hljs-attr">      resource:</span>
+<span class="hljs-attr">        name:</span> memory
+<span class="hljs-attr">        target:</span>
+<span class="hljs-attr">          type:</span> Utilization
+<span class="hljs-attr">          averageUtilization:</span> <span class="hljs-number">80</span>
+<span class="hljs-attr">  behavior:</span>
+<span class="hljs-attr">    scaleUp:</span>
+<span class="hljs-attr">      stabilizationWindowSeconds:</span> <span class="hljs-number">30</span>   <span class="hljs-comment"># 快速扩容</span>
+<span class="hljs-attr">      policies:</span>
+<span class="hljs-attr">        - type:</span> Percent
+<span class="hljs-attr">          value:</span> <span class="hljs-number">100</span>
+<span class="hljs-attr">          periodSeconds:</span> <span class="hljs-number">60</span>
+<span class="hljs-attr">    scaleDown:</span>
+<span class="hljs-attr">      stabilizationWindowSeconds:</span> <span class="hljs-number">300</span>  <span class="hljs-comment"># 缓慢缩容，防止抖动</span>
+<span class="hljs-attr">      policies:</span>
+<span class="hljs-attr">        - type:</span> Percent
+<span class="hljs-attr">          value:</span> <span class="hljs-number">10</span>
+<span class="hljs-attr">          periodSeconds:</span> <span class="hljs-number">60</span>
+</code></pre>
+<h3 id="24-调度策略">2.4 调度策略</h3>
+<pre><code class="lang-yaml"><span class="hljs-attr">spec:</span>
+  <span class="hljs-comment"># 节点亲和性：调度到特定标签的节点</span>
+<span class="hljs-attr">  affinity:</span>
+<span class="hljs-attr">    nodeAffinity:</span>
+<span class="hljs-attr">      requiredDuringSchedulingIgnoredDuringExecution:</span>
+<span class="hljs-attr">        nodeSelectorTerms:</span>
+<span class="hljs-attr">          - matchExpressions:</span>
+<span class="hljs-attr">              - key:</span> disktype
+<span class="hljs-attr">                operator:</span> In
+<span class="hljs-attr">                values:</span> [ssd]
+    <span class="hljs-comment"># Pod反亲和性：同一应用的Pod分散到不同节点</span>
+<span class="hljs-attr">    podAntiAffinity:</span>
+<span class="hljs-attr">      preferredDuringSchedulingIgnoredDuringExecution:</span>
+<span class="hljs-attr">        - weight:</span> <span class="hljs-number">100</span>
+<span class="hljs-attr">          podAffinityTerm:</span>
+<span class="hljs-attr">            labelSelector:</span>
+<span class="hljs-attr">              matchLabels:</span>
+<span class="hljs-attr">                app:</span> go-api
+<span class="hljs-attr">            topologyKey:</span> kubernetes.io/hostname
+  <span class="hljs-comment"># 容忍污点：允许调度到有特定污点的节点</span>
+<span class="hljs-attr">  tolerations:</span>
+<span class="hljs-attr">    - key:</span> <span class="hljs-string">"gpu"</span>
+<span class="hljs-attr">      operator:</span> <span class="hljs-string">"Equal"</span>
+<span class="hljs-attr">      value:</span> <span class="hljs-string">"true"</span>
+<span class="hljs-attr">      effect:</span> <span class="hljs-string">"NoSchedule"</span>
+</code></pre>
+<hr></hr>
+<h2 id="3-go与kubernetes">3. Go与Kubernetes</h2>
+<h3 id="31-client-go开发">3.1 client-go开发</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">"context"</span>
+    <span class="hljs-string">"fmt"</span>
+    <span class="hljs-string">"os"</span>
+    <span class="hljs-string">"path/filepath"</span>
+
+    metav1 <span class="hljs-string">"k8s.io/apimachinery/pkg/apis/meta/v1"</span>
+    <span class="hljs-string">"k8s.io/client-go/kubernetes"</span>
+    <span class="hljs-string">"k8s.io/client-go/tools/clientcmd"</span>
+)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+    <span class="hljs-comment">// 加载kubeconfig</span>
+    home, _ := os.UserHomeDir()
+    kubeconfig := filepath.Join(home, <span class="hljs-string">".kube"</span>, <span class="hljs-string">"config"</span>)
+    config, err := clientcmd.BuildConfigFromFlags(<span class="hljs-string">""</span>, kubeconfig)
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+        <span class="hljs-built_in">panic</span>(err)
+    }
+
+    <span class="hljs-comment">// 创建clientset</span>
+    clientset, err := kubernetes.NewForConfig(config)
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+        <span class="hljs-built_in">panic</span>(err)
+    }
+
+    <span class="hljs-comment">// 列出所有Pods</span>
+    pods, err := clientset.CoreV1().Pods(<span class="hljs-string">"default"</span>).List(
+        context.TODO(), metav1.ListOptions{},
+    )
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+        <span class="hljs-built_in">panic</span>(err)
+    }
+
+    <span class="hljs-keyword">for</span> _, pod := <span class="hljs-keyword">range</span> pods.Items {
+        fmt.Printf(<span class="hljs-string">"Pod: %s, Status: %s\n"</span>, pod.Name, pod.Status.Phase)
+    }
+
+    <span class="hljs-comment">// 动态扩缩Deployment</span>
+    scale, _ := clientset.AppsV1().Deployments(<span class="hljs-string">"default"</span>).GetScale(
+        context.TODO(), <span class="hljs-string">"go-api"</span>, metav1.GetOptions{},
+    )
+    scale.Spec.Replicas = <span class="hljs-number">5</span>
+    _, err = clientset.AppsV1().Deployments(<span class="hljs-string">"default"</span>).UpdateScale(
+        context.TODO(), <span class="hljs-string">"go-api"</span>, scale, metav1.UpdateOptions{},
+    )
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+        fmt.Printf(<span class="hljs-string">"扩容失败: %v\n"</span>, err)
+    }
+}
+</code></pre>
+<h3 id="32-informer机制与custom-controller">3.2 Informer机制与Custom Controller</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">"fmt"</span>
+    <span class="hljs-string">"time"</span>
+
+    v1 <span class="hljs-string">"k8s.io/api/core/v1"</span>
+    <span class="hljs-string">"k8s.io/apimachinery/pkg/util/wait"</span>
+    <span class="hljs-string">"k8s.io/client-go/informers"</span>
+    <span class="hljs-string">"k8s.io/client-go/kubernetes"</span>
+    <span class="hljs-string">"k8s.io/client-go/tools/cache"</span>
+    <span class="hljs-string">"k8s.io/client-go/tools/clientcmd"</span>
+    <span class="hljs-string">"k8s.io/client-go/util/workqueue"</span>
+)
+
+<span class="hljs-comment">// Informer核心架构：</span>
+<span class="hljs-comment">// API Server --&gt; Reflector(List/Watch) --&gt; DeltaFIFO --&gt; Indexer(本地缓存)</span>
+<span class="hljs-comment">//                                              |</span>
+<span class="hljs-comment">//                                         EventHandler --&gt; WorkQueue --&gt; Controller处理</span>
+
+<span class="hljs-keyword">type</span> PodController <span class="hljs-keyword">struct</span> {
+    informer  cache.SharedIndexInformer
+    workqueue workqueue.RateLimitingInterface
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">NewPodController</span><span class="hljs-params">(clientset *kubernetes.Clientset)</span> *<span class="hljs-title">PodController</span></span> {
+    <span class="hljs-comment">// 创建SharedInformerFactory（全局共享，避免重复List/Watch）</span>
+    factory := informers.NewSharedInformerFactory(clientset, <span class="hljs-number">30</span>*time.Second)
+    podInformer := factory.Core().V1().Pods().Informer()
+
+    queue := workqueue.NewRateLimitingQueue(
+        workqueue.DefaultControllerRateLimiter(),
+    )
+
+    controller := &amp;PodController{
+        informer:  podInformer,
+        workqueue: queue,
+    }
+
+    <span class="hljs-comment">// 注册事件处理函数</span>
+    podInformer.AddEventHandler(cache.ResourceEventHandlerFuncs{
+        AddFunc: <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(obj <span class="hljs-keyword">interface</span>{})</span></span> {
+            key, err := cache.MetaNamespaceKeyFunc(obj)
+            <span class="hljs-keyword">if</span> err == <span class="hljs-literal">nil</span> {
+                queue.Add(key)
+            }
+        },
+        UpdateFunc: <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(oldObj, newObj <span class="hljs-keyword">interface</span>{})</span></span> {
+            key, err := cache.MetaNamespaceKeyFunc(newObj)
+            <span class="hljs-keyword">if</span> err == <span class="hljs-literal">nil</span> {
+                queue.Add(key)
+            }
+        },
+        DeleteFunc: <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(obj <span class="hljs-keyword">interface</span>{})</span></span> {
+            key, err := cache.DeletionHandlingMetaNamespaceKeyFunc(obj)
+            <span class="hljs-keyword">if</span> err == <span class="hljs-literal">nil</span> {
+                queue.Add(key)
+            }
+        },
+    })
+
+    <span class="hljs-keyword">return</span> controller
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c *PodController)</span> <span class="hljs-title">Run</span><span class="hljs-params">(stopCh &lt;-<span class="hljs-keyword">chan</span> <span class="hljs-keyword">struct</span>{})</span></span> {
+    <span class="hljs-keyword">go</span> c.informer.Run(stopCh)
+
+    <span class="hljs-comment">// 等待缓存同步完成</span>
+    <span class="hljs-keyword">if</span> !cache.WaitForCacheSync(stopCh, c.informer.HasSynced) {
+        fmt.Println(<span class="hljs-string">"缓存同步超时"</span>)
+        <span class="hljs-keyword">return</span>
+    }
+
+    <span class="hljs-comment">// 启动worker处理队列中的事件</span>
+    <span class="hljs-keyword">go</span> wait.Until(c.runWorker, time.Second, stopCh)
+    &lt;-stopCh
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c *PodController)</span> <span class="hljs-title">runWorker</span><span class="hljs-params">()</span></span> {
+    <span class="hljs-keyword">for</span> c.processNextItem() {
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c *PodController)</span> <span class="hljs-title">processNextItem</span><span class="hljs-params">()</span> <span class="hljs-title">bool</span></span> {
+    key, quit := c.workqueue.Get()
+    <span class="hljs-keyword">if</span> quit {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
+    }
+    <span class="hljs-keyword">defer</span> c.workqueue.Done(key)
+
+    err := c.reconcile(key.(<span class="hljs-keyword">string</span>))
+    <span class="hljs-keyword">if</span> err == <span class="hljs-literal">nil</span> {
+        c.workqueue.Forget(key)
+    } <span class="hljs-keyword">else</span> {
+        c.workqueue.AddRateLimited(key) <span class="hljs-comment">// 失败重试</span>
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c *PodController)</span> <span class="hljs-title">reconcile</span><span class="hljs-params">(key <span class="hljs-keyword">string</span>)</span> <span class="hljs-title">error</span></span> {
+    namespace, name, _ := cache.SplitMetaNamespaceKey(key)
+    <span class="hljs-comment">// 从本地缓存读取（不直接访问API Server）</span>
+    obj, exists, err := c.informer.GetStore().GetByKey(key)
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> || !exists {
+        fmt.Printf(<span class="hljs-string">"Pod已删除: %s/%s\n"</span>, namespace, name)
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
+    }
+    pod := obj.(*v1.Pod)
+    fmt.Printf(<span class="hljs-string">"Reconcile Pod: %s/%s, Phase: %s\n"</span>,
+        namespace, name, pod.Status.Phase)
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
+}
+</code></pre>
+<h3 id="33-crd与operator模式">3.3 CRD与Operator模式</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 定义CRD结构体（api/v1/types.go）</span>
+<span class="hljs-comment">// +kubebuilder:object:root=true</span>
+<span class="hljs-comment">// +kubebuilder:subresource:status</span>
+<span class="hljs-comment">// +kubebuilder:printcolumn:name="Replicas",type=integer,JSONPath=`.spec.replicas`</span>
+<span class="hljs-keyword">type</span> MyApp <span class="hljs-keyword">struct</span> {
+    metav1.TypeMeta   <span class="hljs-string">`json:",inline"`</span>
+    metav1.ObjectMeta <span class="hljs-string">`json:"metadata,omitempty"`</span>
+    Spec   MyAppSpec   <span class="hljs-string">`json:"spec,omitempty"`</span>
+    Status MyAppStatus <span class="hljs-string">`json:"status,omitempty"`</span>
+}
+
+<span class="hljs-keyword">type</span> MyAppSpec <span class="hljs-keyword">struct</span> {
+    Image    <span class="hljs-keyword">string</span> <span class="hljs-string">`json:"image"`</span>
+    Replicas <span class="hljs-keyword">int32</span>  <span class="hljs-string">`json:"replicas"`</span>
+    Port     <span class="hljs-keyword">int32</span>  <span class="hljs-string">`json:"port"`</span>
+}
+
+<span class="hljs-keyword">type</span> MyAppStatus <span class="hljs-keyword">struct</span> {
+    AvailableReplicas <span class="hljs-keyword">int32</span>  <span class="hljs-string">`json:"availableReplicas"`</span>
+    Phase             <span class="hljs-keyword">string</span> <span class="hljs-string">`json:"phase"`</span> <span class="hljs-comment">// Pending/Running/Failed</span>
+}
+
+<span class="hljs-comment">// Operator Reconcile逻辑核心思想：</span>
+<span class="hljs-comment">// 期望状态(Spec) vs 实际状态(Status) --&gt; 驱动操作让实际趋近期望</span>
+</code></pre>
+<h3 id="34-admission-webhook">3.4 Admission Webhook</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// Validating Webhook：校验Pod必须设置资源限制</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">handleValidate</span><span class="hljs-params">(w http.ResponseWriter, r *http.Request)</span></span> {
+    <span class="hljs-keyword">var</span> admissionReview admissionv1.AdmissionReview
+    json.NewDecoder(r.Body).Decode(&amp;admissionReview)
+
+    pod := &amp;corev1.Pod{}
+    json.Unmarshal(admissionReview.Request.Object.Raw, pod)
+
+    allowed := <span class="hljs-literal">true</span>
+    message := <span class="hljs-string">"验证通过"</span>
+
+    <span class="hljs-keyword">for</span> _, container := <span class="hljs-keyword">range</span> pod.Spec.Containers {
+        <span class="hljs-keyword">if</span> container.Resources.Limits == <span class="hljs-literal">nil</span> {
+            allowed = <span class="hljs-literal">false</span>
+            message = fmt.Sprintf(<span class="hljs-string">"容器 %s 必须设置resources.limits"</span>, container.Name)
+            <span class="hljs-keyword">break</span>
+        }
+    }
+
+    resp := &amp;admissionv1.AdmissionResponse{
+        UID:     admissionReview.Request.UID,
+        Allowed: allowed,
+        Result:  &amp;metav1.Status{Message: message},
+    }
+
+    admissionReview.Response = resp
+    json.NewEncoder(w).Encode(admissionReview)
+}
+</code></pre>
+<hr></hr>
+<h2 id="4-服务网格">4. 服务网格</h2>
+<h3 id="41-istio架构">4.1 Istio架构</h3>
+<pre><code>┌─────── 控制平面（istiod） ───────┐
+│  Pilot（配置下发、服务发现）       │
+│  Citadel（证书管理、mTLS）        │
+│  Galley（配置验证）               │
+└──────────────────────────────────┘
+          │ xDS协议下发配置
+┌─────── 数据平面 ─────────────────┐
+│  Pod A                           │
+│  ┌───────────┐  ┌─────────────┐  │
+│  │ App容器    │←→│ Envoy Sidecar│  │
+│  └───────────┘  └─────────────┘  │
+│                       ↕ mTLS     │
+│  Pod B                           │
+│  ┌───────────┐  ┌─────────────┐  │
+│  │ App容器    │←→│ Envoy Sidecar│  │
+│  └───────────┘  └─────────────┘  │
+└──────────────────────────────────┘
+</code></pre><h3 id="42-流量管理">4.2 流量管理</h3>
+<pre><code class="lang-yaml"><span class="hljs-comment"># VirtualService：金丝雀发布，90%流量到v1，10%到v2</span>
+<span class="hljs-attr">apiVersion:</span> networking.istio.io/v1beta1
+<span class="hljs-attr">kind:</span> VirtualService
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  name:</span> go-api
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  hosts:</span>
+<span class="hljs-bullet">    -</span> go-api
+<span class="hljs-attr">  http:</span>
+<span class="hljs-attr">    - match:</span>
+<span class="hljs-attr">        - headers:</span>
+<span class="hljs-attr">            x-canary:</span>
+<span class="hljs-attr">              exact:</span> <span class="hljs-string">"true"</span>
+<span class="hljs-attr">      route:</span>
+<span class="hljs-attr">        - destination:</span>
+<span class="hljs-attr">            host:</span> go-api
+<span class="hljs-attr">            subset:</span> v2
+<span class="hljs-attr">    - route:</span>
+<span class="hljs-attr">        - destination:</span>
+<span class="hljs-attr">            host:</span> go-api
+<span class="hljs-attr">            subset:</span> v1
+<span class="hljs-attr">          weight:</span> <span class="hljs-number">90</span>
+<span class="hljs-attr">        - destination:</span>
+<span class="hljs-attr">            host:</span> go-api
+<span class="hljs-attr">            subset:</span> v2
+<span class="hljs-attr">          weight:</span> <span class="hljs-number">10</span>
+<span class="hljs-meta">---</span>
+<span class="hljs-comment"># DestinationRule：定义子集和负载均衡策略</span>
+<span class="hljs-attr">apiVersion:</span> networking.istio.io/v1beta1
+<span class="hljs-attr">kind:</span> DestinationRule
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  name:</span> go-api
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  host:</span> go-api
+<span class="hljs-attr">  trafficPolicy:</span>
+<span class="hljs-attr">    connectionPool:</span>
+<span class="hljs-attr">      tcp:</span>
+<span class="hljs-attr">        maxConnections:</span> <span class="hljs-number">100</span>
+<span class="hljs-attr">      http:</span>
+<span class="hljs-attr">        h2UpgradePolicy:</span> UPGRADE
+<span class="hljs-attr">    outlierDetection:</span>     <span class="hljs-comment"># 熔断配置</span>
+<span class="hljs-attr">      consecutive5xxErrors:</span> <span class="hljs-number">5</span>
+<span class="hljs-attr">      interval:</span> <span class="hljs-number">30</span>s
+<span class="hljs-attr">      baseEjectionTime:</span> <span class="hljs-number">30</span>s
+<span class="hljs-attr">  subsets:</span>
+<span class="hljs-attr">    - name:</span> v1
+<span class="hljs-attr">      labels:</span>
+<span class="hljs-attr">        version:</span> v1
+<span class="hljs-attr">    - name:</span> v2
+<span class="hljs-attr">      labels:</span>
+<span class="hljs-attr">        version:</span> v2
+</code></pre>
+<hr></hr>
+<h2 id="5-cicd与gitops">5. CI/CD与GitOps</h2>
+<h3 id="51-github-actions-pipeline">5.1 GitHub Actions Pipeline</h3>
+<pre><code class="lang-yaml"><span class="hljs-comment"># .github/workflows/deploy.yml</span>
+<span class="hljs-attr">name:</span> Build &amp; Deploy
+<span class="hljs-attr">on:</span>
+<span class="hljs-attr">  push:</span>
+<span class="hljs-attr">    branches:</span> [main]
+<span class="hljs-attr">    tags:</span> [<span class="hljs-string">"v*"</span>]
+
+<span class="hljs-attr">jobs:</span>
+<span class="hljs-attr">  test:</span>
+<span class="hljs-attr">    runs-on:</span> ubuntu-latest
+<span class="hljs-attr">    steps:</span>
+<span class="hljs-attr">      - uses:</span> actions/checkout@v4
+<span class="hljs-attr">      - uses:</span> actions/setup-go@v5
+<span class="hljs-attr">        with:</span>
+<span class="hljs-attr">          go-version:</span> <span class="hljs-string">"1.22"</span>
+<span class="hljs-attr">      - run:</span> go test -race -coverprofile=coverage.out ./...
+<span class="hljs-attr">      - run:</span> go vet ./...
+
+<span class="hljs-attr">  build-push:</span>
+<span class="hljs-attr">    needs:</span> test
+<span class="hljs-attr">    runs-on:</span> ubuntu-latest
+<span class="hljs-attr">    steps:</span>
+<span class="hljs-attr">      - uses:</span> actions/checkout@v4
+<span class="hljs-attr">      - uses:</span> docker/setup-buildx-action@v3
+<span class="hljs-attr">      - uses:</span> docker/login-action@v3
+<span class="hljs-attr">        with:</span>
+<span class="hljs-attr">          registry:</span> ghcr.io
+<span class="hljs-attr">          username:</span> ${{ github.actor }}
+<span class="hljs-attr">          password:</span> ${{ secrets.GITHUB_TOKEN }}
+<span class="hljs-attr">      - uses:</span> docker/build-push-action@v5
+<span class="hljs-attr">        with:</span>
+<span class="hljs-attr">          push:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">          tags:</span> ghcr.io/${{ github.repository }}:${{ github.sha }}
+<span class="hljs-attr">          cache-from:</span> type=gha
+<span class="hljs-attr">          cache-to:</span> type=gha,mode=max
+
+<span class="hljs-attr">  deploy:</span>
+<span class="hljs-attr">    needs:</span> build-push
+<span class="hljs-attr">    runs-on:</span> ubuntu-latest
+<span class="hljs-attr">    steps:</span>
+<span class="hljs-attr">      - uses:</span> actions/checkout@v4
+<span class="hljs-attr">      - name:</span> 更新Helm values中的镜像tag
+<span class="hljs-attr">        run:</span> <span class="hljs-string">|
+          sed -i "s/tag:.*/tag: $<span class="hljs-template-variable">{{ github.sha }}</span>/" helm/values.yaml
+</span><span class="hljs-attr">      - name:</span> 提交变更触发ArgoCD同步
+<span class="hljs-attr">        run:</span> <span class="hljs-string">|
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git commit -am "deploy: update image to $<span class="hljs-template-variable">{{ github.sha }}</span>"
+          git push
+</span></code></pre>
+<h3 id="52-helm-chart核心结构">5.2 Helm Chart核心结构</h3>
+<pre><code class="lang-yaml"><span class="hljs-comment"># helm/values.yaml</span>
+<span class="hljs-attr">replicaCount:</span> <span class="hljs-number">3</span>
+<span class="hljs-attr">image:</span>
+<span class="hljs-attr">  repository:</span> ghcr.io/myorg/go-api
+<span class="hljs-attr">  tag:</span> latest
+<span class="hljs-attr">  pullPolicy:</span> IfNotPresent
+<span class="hljs-attr">resources:</span>
+<span class="hljs-attr">  requests:</span>
+<span class="hljs-attr">    cpu:</span> <span class="hljs-number">100</span>m
+<span class="hljs-attr">    memory:</span> <span class="hljs-number">128</span>Mi
+<span class="hljs-attr">  limits:</span>
+<span class="hljs-attr">    cpu:</span> <span class="hljs-number">500</span>m
+<span class="hljs-attr">    memory:</span> <span class="hljs-number">512</span>Mi
+<span class="hljs-attr">autoscaling:</span>
+<span class="hljs-attr">  enabled:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">  minReplicas:</span> <span class="hljs-number">2</span>
+<span class="hljs-attr">  maxReplicas:</span> <span class="hljs-number">20</span>
+<span class="hljs-attr">  targetCPUUtilization:</span> <span class="hljs-number">70</span>
+<span class="hljs-attr">ingress:</span>
+<span class="hljs-attr">  enabled:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">  hostname:</span> api.example.com
+<span class="hljs-attr">  tls:</span> <span class="hljs-literal">true</span>
+</code></pre>
+<hr></hr>
+<h2 id="6-云原生可观测性">6. 云原生可观测性</h2>
+<h3 id="61-prometheus--go应用集成">6.1 Prometheus + Go应用集成</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">"net/http"</span>
+    <span class="hljs-string">"time"</span>
+
+    <span class="hljs-string">"github.com/prometheus/client_golang/prometheus"</span>
+    <span class="hljs-string">"github.com/prometheus/client_golang/prometheus/promhttp"</span>
+)
+
+<span class="hljs-keyword">var</span> (
+    httpRequestsTotal = prometheus.NewCounterVec(
+        prometheus.CounterOpts{
+            Name: <span class="hljs-string">"http_requests_total"</span>,
+            Help: <span class="hljs-string">"HTTP请求总数"</span>,
+        },
+        []<span class="hljs-keyword">string</span>{<span class="hljs-string">"method"</span>, <span class="hljs-string">"path"</span>, <span class="hljs-string">"status"</span>},
+    )
+
+    httpRequestDuration = prometheus.NewHistogramVec(
+        prometheus.HistogramOpts{
+            Name:    <span class="hljs-string">"http_request_duration_seconds"</span>,
+            Help:    <span class="hljs-string">"HTTP请求延迟分布"</span>,
+            Buckets: []<span class="hljs-keyword">float64</span>{<span class="hljs-number">0.01</span>, <span class="hljs-number">0.05</span>, <span class="hljs-number">0.1</span>, <span class="hljs-number">0.25</span>, <span class="hljs-number">0.5</span>, <span class="hljs-number">1.0</span>, <span class="hljs-number">2.5</span>},
+        },
+        []<span class="hljs-keyword">string</span>{<span class="hljs-string">"method"</span>, <span class="hljs-string">"path"</span>},
+    )
+
+    activeConnections = prometheus.NewGauge(
+        prometheus.GaugeOpts{
+            Name: <span class="hljs-string">"active_connections"</span>,
+            Help: <span class="hljs-string">"当前活跃连接数"</span>,
+        },
+    )
+)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">init</span><span class="hljs-params">()</span></span> {
+    prometheus.MustRegister(httpRequestsTotal, httpRequestDuration, activeConnections)
+}
+
+<span class="hljs-comment">// 中间件：自动采集请求指标</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">metricsMiddleware</span><span class="hljs-params">(next http.Handler)</span> <span class="hljs-title">http</span>.<span class="hljs-title">Handler</span></span> {
+    <span class="hljs-keyword">return</span> http.HandlerFunc(<span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(w http.ResponseWriter, r *http.Request)</span></span> {
+        start := time.Now()
+        activeConnections.Inc()
+        <span class="hljs-keyword">defer</span> activeConnections.Dec()
+
+        wrapped := &amp;statusWriter{ResponseWriter: w, status: <span class="hljs-number">200</span>}
+        next.ServeHTTP(wrapped, r)
+
+        duration := time.Since(start).Seconds()
+        httpRequestsTotal.WithLabelValues(
+            r.Method, r.URL.Path, fmt.Sprintf(<span class="hljs-string">"%d"</span>, wrapped.status),
+        ).Inc()
+        httpRequestDuration.WithLabelValues(r.Method, r.URL.Path).Observe(duration)
+    })
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+    mux := http.NewServeMux()
+    mux.Handle(<span class="hljs-string">"/metrics"</span>, promhttp.Handler())
+    mux.HandleFunc(<span class="hljs-string">"/api/users"</span>, handleUsers)
+    http.ListenAndServe(<span class="hljs-string">":8080"</span>, metricsMiddleware(mux))
+}
+</code></pre>
+<h3 id="62-opentelemetry集成">6.2 OpenTelemetry集成</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">"context"</span>
+    <span class="hljs-string">"go.opentelemetry.io/otel"</span>
+    <span class="hljs-string">"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp"</span>
+    <span class="hljs-string">"go.opentelemetry.io/otel/sdk/resource"</span>
+    sdktrace <span class="hljs-string">"go.opentelemetry.io/otel/sdk/trace"</span>
+    semconv <span class="hljs-string">"go.opentelemetry.io/otel/semconv/v1.21.0"</span>
+    <span class="hljs-string">"go.opentelemetry.io/otel/trace"</span>
+)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">initTracer</span><span class="hljs-params">()</span> <span class="hljs-params">(*sdktrace.TracerProvider, error)</span></span> {
+    exporter, err := otlptracehttp.New(context.Background(),
+        otlptracehttp.WithEndpoint(<span class="hljs-string">"otel-collector:4318"</span>),
+        otlptracehttp.WithInsecure(),
+    )
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, err
+    }
+
+    tp := sdktrace.NewTracerProvider(
+        sdktrace.WithBatcher(exporter),
+        sdktrace.WithResource(resource.NewWithAttributes(
+            semconv.SchemaURL,
+            semconv.ServiceName(<span class="hljs-string">"go-api"</span>),
+            semconv.ServiceVersion(<span class="hljs-string">"v1.2.0"</span>),
+            semconv.DeploymentEnvironment(<span class="hljs-string">"production"</span>),
+        )),
+        sdktrace.WithSampler(sdktrace.ParentBased(
+            sdktrace.TraceIDRatioBased(<span class="hljs-number">0.1</span>), <span class="hljs-comment">// 生产环境采样10%</span>
+        )),
+    )
+    otel.SetTracerProvider(tp)
+    <span class="hljs-keyword">return</span> tp, <span class="hljs-literal">nil</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">handleOrder</span><span class="hljs-params">(ctx context.Context)</span> <span class="hljs-title">error</span></span> {
+    tracer := otel.Tracer(<span class="hljs-string">"order-service"</span>)
+
+    ctx, span := tracer.Start(ctx, <span class="hljs-string">"handleOrder"</span>,
+        trace.WithAttributes(
+            attribute.String(<span class="hljs-string">"order.type"</span>, <span class="hljs-string">"standard"</span>),
+        ),
+    )
+    <span class="hljs-keyword">defer</span> span.End()
+
+    <span class="hljs-comment">// 子span：数据库查询</span>
+    ctx, dbSpan := tracer.Start(ctx, <span class="hljs-string">"db.query"</span>)
+    <span class="hljs-comment">// ... 数据库操作</span>
+    dbSpan.End()
+
+    <span class="hljs-comment">// 子span：调用外部服务</span>
+    ctx, rpcSpan := tracer.Start(ctx, <span class="hljs-string">"rpc.payment"</span>)
+    <span class="hljs-comment">// ... RPC调用</span>
+    rpcSpan.End()
+
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
+}
+</code></pre>
+<h3 id="63-日志与链路追踪最佳实践">6.3 日志与链路追踪最佳实践</h3>
+<p><strong>结构化日志（使用slog）：</strong></p>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> <span class="hljs-string">"log/slog"</span>
+
+logger := slog.New(slog.NewJSONHandler(os.Stdout, &amp;slog.HandlerOptions{
+    Level: slog.LevelInfo,
+}))
+
+<span class="hljs-comment">// 关联Trace ID实现日志与链路追踪联动</span>
+logger.Info(<span class="hljs-string">"订单创建成功"</span>,
+    slog.String(<span class="hljs-string">"trace_id"</span>, span.SpanContext().TraceID().String()),
+    slog.String(<span class="hljs-string">"order_id"</span>, orderID),
+    slog.Int(<span class="hljs-string">"amount"</span>, <span class="hljs-number">9900</span>),
+    slog.Duration(<span class="hljs-string">"latency"</span>, time.Since(start)),
+)
+<span class="hljs-comment">// 输出: {"time":"...","level":"INFO","msg":"订单创建成功","trace_id":"abc123","order_id":"ORD-001",...}</span>
+</code></pre>
+<p><strong>可观测性三支柱关联：</strong>
+| 支柱 | 工具 | 作用 |
+|------|------|------|
+| Metrics | Prometheus + Grafana | 发现异常（延迟升高/错误率飙升） |
+| Logging | Loki / ELK | 定位具体错误信息 |
+| Tracing | Jaeger / Tempo | 追踪请求在微服务间的完整链路 |</p>
+<p>通过Trace ID将三者关联，实现从告警到根因的快速定位。</p>
+<hr></hr>
+<h2 id="7-面试题精选">7. 面试题精选</h2>
+<h3 id="q1：docker镜像分层存储的原理是什么？如何优化镜像大小？">Q1：Docker镜像分层存储的原理是什么？如何优化镜像大小？</h3>
+<p><strong>答：</strong> Docker镜像采用UnionFS分层存储，每条Dockerfile指令生成一个只读层，容器运行时在最上层添加可写层。优化手段包括：使用多阶段构建将编译环境和运行环境分离；合并RUN指令减少层数；使用Alpine/scratch/distroless作为基础镜像；<code>.dockerignore</code>排除无关文件；Go应用使用<code>CGO_ENABLED=0</code>静态编译后可用scratch零基础镜像，最终镜像仅包含单个二进制文件。</p>
+<h3 id="q2：kubernetes中pod的生命周期有哪些阶段？">Q2：Kubernetes中Pod的生命周期有哪些阶段？</h3>
+<p><strong>答：</strong> Pod的Phase包括：Pending（已接受但未调度或镜像拉取中）、Running（至少一个容器在运行）、Succeeded（所有容器正常退出）、Failed（至少一个容器异常退出）、Unknown（节点通信失败）。关键机制包括：Init Container先于业务容器运行；PostStart/PreStop生命周期钩子；三种探针（Liveness/Readiness/Startup）控制容器健康状态和流量路由。</p>
+<h3 id="q3：kubernetes的调度流程是怎样的？">Q3：Kubernetes的调度流程是怎样的？</h3>
+<p><strong>答：</strong> kube-scheduler的调度分为两个阶段：(1)预选（Filtering）：根据资源需求、nodeSelector、亲和/反亲和规则、污点容忍等条件过滤不满足的节点；(2)优选（Scoring）：对候选节点打分，考虑资源均衡度、节点亲和性权重、Pod拓扑分散等因素，选择得分最高的节点。绑定后kubelet创建Pod。</p>
+<h3 id="q4：informer机制的工作原理和优势？">Q4：Informer机制的工作原理和优势？</h3>
+<p><strong>答：</strong> Informer通过List+Watch机制与API Server交互：首次List获取全量数据存入本地缓存（Indexer），之后Watch增量事件。事件经过DeltaFIFO队列分发到注册的EventHandler，再写入WorkQueue供Controller消费。优势：大幅减少API Server压力（读请求走本地缓存）；SharedInformer多个Controller共享同一份缓存；WorkQueue支持去重、限速重试。</p>
+<h3 id="q5：如何实现kubernetes的零停机部署？">Q5：如何实现Kubernetes的零停机部署？</h3>
+<p><strong>答：</strong> 综合方案包括：RollingUpdate策略配置<code>maxSurge=1, maxUnavailable=0</code>确保始终有足够Pod提供服务；Readiness Probe确保新Pod就绪后才接收流量；PreStop Hook中加入<code>sleep 5</code>等待Endpoint更新传播；PodDisruptionBudget限制同时不可用Pod数量；优雅关闭代码在收到SIGTERM后停止接收新请求、完成进行中的请求、释放资源。</p>
+<h3 id="q6：istio服务网格的sidecar注入原理是什么？">Q6：Istio服务网格的Sidecar注入原理是什么？</h3>
+<p><strong>答：</strong> Istio通过Mutating Admission Webhook在Pod创建时自动注入Envoy Sidecar容器和Init容器。Init容器通过iptables规则劫持所有入站/出站流量到Envoy。Envoy作为透明代理处理mTLS加密、负载均衡、熔断、重试、流量路由等功能，业务代码无需修改。控制平面istiod通过xDS协议向Envoy推送配置。</p>
+<h3 id="q7：prometheus的pull模式有什么优势？">Q7：Prometheus的Pull模式有什么优势？</h3>
+<p><strong>答：</strong> Pull模式（Prometheus主动抓取目标/metrics端点）的优势：服务端控制抓取频率和目标，灵活可靠；目标异常时能通过up指标快速发现；无需在应用中配置推送地址，解耦更彻底；配合ServiceMonitor可自动发现K8s中的监控目标。短生命周期任务可通过Pushgateway补充Push能力。</p>
+<h3 id="q8：如何设计kubernetes资源的requests和limits？">Q8：如何设计Kubernetes资源的requests和limits？</h3>
+<p><strong>答：</strong> requests是调度保证值，limits是硬上限。CPU超limits会被throttle（限流），内存超limits会OOMKill。最佳实践：通过VPA或实际监控数据确定基线；requests设为P95使用量，limits设为requests的2-3倍；QoS等级：Guaranteed（requests=limits）适合核心服务，Burstable适合一般服务，BestEffort（无设置）仅用于非关键任务。</p>
+<h3 id="q9：gitops的核心原则是什么？argocd如何实现？">Q9：GitOps的核心原则是什么？ArgoCD如何实现？</h3>
+<p><strong>答：</strong> GitOps核心原则：Git仓库作为唯一真实来源（Single Source of Truth）；所有变更通过Git提交驱动；系统自动将集群状态收敛至Git中的期望状态。ArgoCD实现：持续监控Git仓库与集群状态的差异（Drift Detection）；检测到差异后自动或手动触发同步；支持Helm、Kustomize、原生YAML等多种清单格式；提供完整的回滚能力和审计日志。</p>
+<h3 id="q10：如何实现kubernetes集群的多租户隔离？">Q10：如何实现Kubernetes集群的多租户隔离？</h3>
+<p><strong>答：</strong> 多层隔离策略：Namespace级别的逻辑隔离；RBAC精细权限控制（Role/ClusterRole）；ResourceQuota限制Namespace资源总量；LimitRange设置单个Pod默认资源配额；NetworkPolicy实现Pod间网络隔离；PodSecurityStandard限制容器权限（禁止root、只读文件系统等）；如需更强隔离可使用Virtual Cluster（vcluster）或Kata Container。</p>
+<h3 id="q11：opentelemetry在微服务可观测性中的作用？">Q11：OpenTelemetry在微服务可观测性中的作用？</h3>
+<p><strong>答：</strong> OpenTelemetry（OTel）是CNCF统一的可观测性框架，提供Traces、Metrics、Logs三种信号的标准化采集SDK和协议（OTLP）。优势：厂商中立，避免锁定；自动检测（Auto-Instrumentation）减少代码侵入；OTel Collector作为统一网关，支持多种后端（Jaeger、Prometheus、Loki等）。Go中通过<code>otel</code> SDK创建Tracer/Meter，结合Middleware自动注入到HTTP/gRPC调用链。</p>
+<h3 id="q12：容器安全的最佳实践有哪些？">Q12：容器安全的最佳实践有哪些？</h3>
+<p><strong>答：</strong> 镜像安全：使用distroless/scratch最小镜像、Trivy扫描CVE漏洞、签名验证（Cosign）；运行时安全：非root用户运行、只读根文件系统、禁止特权模式；K8s安全：PodSecurityStandard/OPA Gatekeeper策略执行、NetworkPolicy最小化网络暴露；供应链安全：SBOM（软件物料清单）、镜像来源可追溯、依赖自动更新（Dependabot/Renovate）。</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="testing-practice.html" class="navigation navigation-prev " aria-label="Previous page: 测试与最佳实践">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../agent/llm-basics.html" class="navigation navigation-next " aria-label="Next page: 大语言模型基础">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"云原生与容器化","level":"4.7","depth":1,"next":{"title":"大语言模型基础","level":"5.1","depth":1,"path":"agent/llm-basics.md","ref":"agent/llm-basics.md","articles":[]},"previous":{"title":"测试与最佳实践","level":"4.6","depth":1,"path":"golang/testing-practice.md","ref":"golang/testing-practice.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"golang/cloud-native.md","mtime":"2026-03-31T12:30:30.420Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

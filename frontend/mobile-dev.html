@@ -1,0 +1,3234 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>移动端H5开发 · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="state-management.html" />
+    
+    
+    <link rel="prev" href="micro-frontend.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="html-css.html">
+            
+                <a href="html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="javascript.html">
+            
+                <a href="javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="typescript.html">
+            
+                <a href="typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="browser.html">
+            
+                <a href="browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="network.html">
+            
+                <a href="network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="react.html">
+            
+                <a href="react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="vue.html">
+            
+                <a href="vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="engineering.html">
+            
+                <a href="engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="performance.html">
+            
+                <a href="performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="security.html">
+            
+                <a href="security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="micro-frontend.html">
+            
+                <a href="micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.12" data-path="mobile-dev.html">
+            
+                <a href="mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="state-management.html">
+            
+                <a href="state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="design-patterns.html">
+            
+                <a href="design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../nodejs/basics.html">
+            
+                <a href="../nodejs/basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../nodejs/event-loop.html">
+            
+                <a href="../nodejs/event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../nodejs/stream.html">
+            
+                <a href="../nodejs/stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../nodejs/frameworks.html">
+            
+                <a href="../nodejs/frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../nodejs/database.html">
+            
+                <a href="../nodejs/database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../nodejs/practice.html">
+            
+                <a href="../nodejs/practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../nodejs/serverless.html">
+            
+                <a href="../nodejs/serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../golang/basics.html">
+            
+                <a href="../golang/basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../golang/concurrency.html">
+            
+                <a href="../golang/concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../golang/memory.html">
+            
+                <a href="../golang/memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../golang/web-framework.html">
+            
+                <a href="../golang/web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../golang/database-design.html">
+            
+                <a href="../golang/database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../golang/testing-practice.html">
+            
+                <a href="../golang/testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../golang/cloud-native.html">
+            
+                <a href="../golang/cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../agent/llm-basics.html">
+            
+                <a href="../agent/llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../agent/prompt-engineering.html">
+            
+                <a href="../agent/prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../agent/rag.html">
+            
+                <a href="../agent/rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../agent/agent-architecture.html">
+            
+                <a href="../agent/agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../agent/tool-calling.html">
+            
+                <a href="../agent/tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../agent/practice.html">
+            
+                <a href="../agent/practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../agent/evaluation.html">
+            
+                <a href="../agent/evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../algorithm/system-design.html">
+            
+                <a href="../algorithm/system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >移动端H5开发</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="移动端h5开发">移动端H5开发</h1>
+<blockquote>
+<p>本指南系统覆盖移动端H5开发的核心知识体系，包含适配方案、事件交互、Hybrid开发、小程序、跨端框架、性能优化及高频面试题，适合中高级前端面试准备。</p>
+</blockquote>
+<hr></hr>
+<h2 id="一、移动端适配">一、移动端适配</h2>
+<h3 id="11-viewport-视口">1.1 Viewport 视口</h3>
+<p>移动端开发首先需要理解三个视口概念：</p>
+<ul>
+<li><strong>布局视口（Layout Viewport）</strong>：浏览器默认的视口宽度，通常为 980px</li>
+<li><strong>视觉视口（Visual Viewport）</strong>：用户当前看到的区域大小</li>
+<li><strong>理想视口（Ideal Viewport）</strong>：设备屏幕的宽度</li>
+</ul>
+<p>标准 viewport 设置：</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover"</span>&gt;</span>
+</code></pre>
+<p>各属性说明：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+<th>常用值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>width</code></td>
+<td>视口宽度</td>
+<td><code>device-width</code></td>
+</tr>
+<tr>
+<td><code>initial-scale</code></td>
+<td>初始缩放比例</td>
+<td><code>1.0</code></td>
+</tr>
+<tr>
+<td><code>maximum-scale</code></td>
+<td>最大缩放比例</td>
+<td><code>1.0</code></td>
+</tr>
+<tr>
+<td><code>minimum-scale</code></td>
+<td>最小缩放比例</td>
+<td><code>1.0</code></td>
+</tr>
+<tr>
+<td><code>user-scalable</code></td>
+<td>是否允许用户缩放</td>
+<td><code>no</code></td>
+</tr>
+<tr>
+<td><code>viewport-fit</code></td>
+<td>视口填充方式（刘海屏）</td>
+<td><code>cover</code></td>
+</tr>
+</tbody>
+</table>
+<p>动态设置 viewport 实现缩放适配：</p>
+<pre><code class="lang-javascript">(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> dpr = <span class="hljs-built_in">window</span>.devicePixelRatio || <span class="hljs-number">1</span>;
+  <span class="hljs-keyword">const</span> scale = <span class="hljs-number">1</span> / dpr;
+  <span class="hljs-keyword">const</span> metaEl = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'meta[name="viewport"]'</span>);
+
+  <span class="hljs-keyword">if</span> (!metaEl) {
+    <span class="hljs-keyword">const</span> meta = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'meta'</span>);
+    meta.setAttribute(<span class="hljs-string">'name'</span>, <span class="hljs-string">'viewport'</span>);
+    meta.setAttribute(<span class="hljs-string">'content'</span>,
+      <span class="hljs-string">`width=device-width, initial-scale=<span class="hljs-subst">${scale}</span>, maximum-scale=<span class="hljs-subst">${scale}</span>, minimum-scale=<span class="hljs-subst">${scale}</span>, user-scalable=no`</span>
+    );
+    <span class="hljs-built_in">document</span>.head.appendChild(meta);
+  }
+
+  <span class="hljs-comment">// 在 html 标签上设置 data-dpr 属性</span>
+  <span class="hljs-built_in">document</span>.documentElement.setAttribute(<span class="hljs-string">'data-dpr'</span>, dpr);
+})();
+</code></pre>
+<h3 id="12-rem-适配方案（flexiblejs）">1.2 rem 适配方案（flexible.js）</h3>
+<p>rem 方案的核心思想：根据屏幕宽度动态设置根元素 <code>font-size</code>，使所有使用 rem 单位的尺寸随之缩放。</p>
+<p><strong>flexible.js 核心原理：</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 简化版 flexible.js 实现</span>
+(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">flexible</span>(<span class="hljs-params">window, document</span>) </span>{
+  <span class="hljs-keyword">const</span> docEl = <span class="hljs-built_in">document</span>.documentElement;
+  <span class="hljs-keyword">const</span> dpr = <span class="hljs-built_in">window</span>.devicePixelRatio || <span class="hljs-number">1</span>;
+
+  <span class="hljs-comment">// 设置 body 字体大小</span>
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setBodyFontSize</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">document</span>.body) {
+      <span class="hljs-built_in">document</span>.body.style.fontSize = <span class="hljs-number">12</span> * dpr + <span class="hljs-string">'px'</span>;
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">'DOMContentLoaded'</span>, setBodyFontSize);
+    }
+  }
+  setBodyFontSize();
+
+  <span class="hljs-comment">// 设置 1rem = viewWidth / 10</span>
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setRemUnit</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">const</span> rem = docEl.clientWidth / <span class="hljs-number">10</span>;
+    docEl.style.fontSize = rem + <span class="hljs-string">'px'</span>;
+  }
+  setRemUnit();
+
+  <span class="hljs-comment">// 监听 resize 和 pageshow 事件</span>
+  <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'resize'</span>, setRemUnit);
+  <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'pageshow'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-keyword">if</span> (e.persisted) {
+      setRemUnit();
+    }
+  });
+
+  <span class="hljs-comment">// 检测是否支持 0.5px 边框</span>
+  <span class="hljs-keyword">if</span> (dpr &gt;= <span class="hljs-number">2</span>) {
+    <span class="hljs-keyword">const</span> fakeBody = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'body'</span>);
+    <span class="hljs-keyword">const</span> testElement = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+    testElement.style.border = <span class="hljs-string">'.5px solid transparent'</span>;
+    fakeBody.appendChild(testElement);
+    docEl.appendChild(fakeBody);
+    <span class="hljs-keyword">if</span> (testElement.offsetHeight === <span class="hljs-number">1</span>) {
+      docEl.classList.add(<span class="hljs-string">'hairlines'</span>);
+    }
+    docEl.removeChild(fakeBody);
+  }
+})(<span class="hljs-built_in">window</span>, <span class="hljs-built_in">document</span>);
+</code></pre>
+<p><strong>px 转 rem 的工具函数：</strong></p>
+<pre><code class="lang-scss"><span class="hljs-comment">// SCSS mixin - 设计稿宽度 750px</span>
+<span class="hljs-variable">$designWidth</span>: <span class="hljs-number">750</span>;
+
+@function px2rem(<span class="hljs-variable">$px</span>) {
+  @return (<span class="hljs-variable">$px</span> / <span class="hljs-variable">$designWidth</span> * 10) * 1rem;
+}
+
+<span class="hljs-comment">// 使用示例</span>
+<span class="hljs-selector-class">.header</span> {
+  <span class="hljs-attribute">height</span>: px2rem(<span class="hljs-number">88</span>);       <span class="hljs-comment">// 88px -&gt; 对应 rem 值</span>
+  <span class="hljs-attribute">font-size</span>: px2rem(<span class="hljs-number">28</span>);    <span class="hljs-comment">// 28px -&gt; 对应 rem 值</span>
+  <span class="hljs-attribute">padding</span>: px2rem(<span class="hljs-number">20</span>) px2rem(<span class="hljs-number">30</span>);
+}
+</code></pre>
+<h3 id="13-vwvh-适配方案">1.3 vw/vh 适配方案</h3>
+<p>vw/vh 方案相比 rem 方案无需 JavaScript，纯 CSS 即可实现：</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* 设计稿宽度 750px，1vw = 7.5px */</span>
+<span class="hljs-comment">/* 转换公式：目标值 / 7.5 = vw值 */</span>
+
+<span class="hljs-selector-class">.container</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100vw</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">2.667vw</span>;          <span class="hljs-comment">/* 20 / 7.5 */</span>
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">3.733vw</span>;        <span class="hljs-comment">/* 28 / 7.5 */</span>
+}
+
+<span class="hljs-selector-class">.banner</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100vw</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">26.667vw</span>;          <span class="hljs-comment">/* 200 / 7.5 */</span>
+}
+
+<span class="hljs-comment">/* 结合 calc() 实现更灵活的布局 */</span>
+<span class="hljs-selector-class">.content</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-built_in">calc</span>(100vw - 5.333vw);   <span class="hljs-comment">/* 100vw - 40px */</span>
+  <span class="hljs-attribute">min-height</span>: <span class="hljs-built_in">calc</span>(100vh - 13.333vw);
+}
+</code></pre>
+<p><strong>PostCSS 插件 postcss-px-to-viewport 配置：</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// postcss.config.js</span>
+<span class="hljs-built_in">module</span>.exports = {
+  <span class="hljs-attr">plugins</span>: {
+    <span class="hljs-string">'postcss-px-to-viewport'</span>: {
+      <span class="hljs-attr">unitToConvert</span>: <span class="hljs-string">'px'</span>,        <span class="hljs-comment">// 需要转换的单位</span>
+      viewportWidth: <span class="hljs-number">750</span>,         <span class="hljs-comment">// 设计稿宽度</span>
+      unitPrecision: <span class="hljs-number">5</span>,           <span class="hljs-comment">// 精确到小数点后几位</span>
+      propList: [<span class="hljs-string">'*'</span>],            <span class="hljs-comment">// 需要转换的属性列表</span>
+      viewportUnit: <span class="hljs-string">'vw'</span>,         <span class="hljs-comment">// 转换后的单位</span>
+      fontViewportUnit: <span class="hljs-string">'vw'</span>,     <span class="hljs-comment">// 字体使用的视口单位</span>
+      selectorBlackList: [<span class="hljs-string">'.ignore-'</span>], <span class="hljs-comment">// 不进行转换的选择器</span>
+      minPixelValue: <span class="hljs-number">1</span>,           <span class="hljs-comment">// 最小转换值</span>
+      mediaQuery: <span class="hljs-literal">false</span>,          <span class="hljs-comment">// 是否在媒体查询中也转换</span>
+      replace: <span class="hljs-literal">true</span>,              <span class="hljs-comment">// 是否直接替换属性值</span>
+      exclude: [<span class="hljs-regexp">/node_modules/</span>],  <span class="hljs-comment">// 排除的文件</span>
+      include: <span class="hljs-literal">undefined</span>,
+      <span class="hljs-attr">landscape</span>: <span class="hljs-literal">false</span>,           <span class="hljs-comment">// 是否添加横屏媒体查询</span>
+      landscapeUnit: <span class="hljs-string">'vw'</span>,
+      <span class="hljs-attr">landscapeWidth</span>: <span class="hljs-number">1334</span>
+    }
+  }
+};
+</code></pre>
+<h3 id="14-postcss-pxtorem-配置">1.4 postcss-pxtorem 配置</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// postcss.config.js</span>
+<span class="hljs-built_in">module</span>.exports = {
+  <span class="hljs-attr">plugins</span>: {
+    <span class="hljs-string">'postcss-pxtorem'</span>: {
+      <span class="hljs-attr">rootValue</span>: <span class="hljs-number">75</span>,               <span class="hljs-comment">// 根字体大小（设计稿750 / 10）</span>
+      unitPrecision: <span class="hljs-number">5</span>,            <span class="hljs-comment">// 精度</span>
+      propList: [
+        <span class="hljs-string">'*'</span>,                       <span class="hljs-comment">// 所有属性都转换</span>
+        <span class="hljs-string">'!border'</span>,                 <span class="hljs-comment">// 排除 border</span>
+        <span class="hljs-string">'!border-width'</span>            <span class="hljs-comment">// 排除 border-width</span>
+      ],
+      <span class="hljs-attr">selectorBlackList</span>: [
+        <span class="hljs-string">'.norem-'</span>,                 <span class="hljs-comment">// 以 .norem- 开头的选择器不转换</span>
+        <span class="hljs-string">':root'</span>
+      ],
+      <span class="hljs-attr">replace</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">mediaQuery</span>: <span class="hljs-literal">false</span>,
+      <span class="hljs-attr">minPixelValue</span>: <span class="hljs-number">2</span>,            <span class="hljs-comment">// 小于 2px 不转换</span>
+      exclude: <span class="hljs-regexp">/node_modules/i</span>
+    }
+  }
+};
+</code></pre>
+<p><strong>配合 amfe-flexible 使用的完整方案：</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// main.js</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">'amfe-flexible'</span>;
+
+<span class="hljs-comment">// 或者自定义设置</span>
+(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> baseSize = <span class="hljs-number">75</span>; <span class="hljs-comment">// 与 postcss-pxtorem 的 rootValue 保持一致</span>
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setRem</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">const</span> scale = <span class="hljs-built_in">document</span>.documentElement.clientWidth / <span class="hljs-number">750</span>;
+    <span class="hljs-built_in">document</span>.documentElement.style.fontSize =
+      baseSize * <span class="hljs-built_in">Math</span>.min(scale, <span class="hljs-number">2</span>) + <span class="hljs-string">'px'</span>;
+  }
+  setRem();
+  <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'resize'</span>, setRem);
+})();
+</code></pre>
+<h3 id="15-1px-问题（5种方案）">1.5 1px 问题（5种方案）</h3>
+<p>在 Retina 屏幕上，CSS 中的 1px 会被渲染成物理像素 2px 或 3px，导致边框看起来过粗。</p>
+<p><strong>方案一：伪元素 + transform（推荐）</strong></p>
+<pre><code class="lang-css"><span class="hljs-comment">/* 通用 1px 边框方案 */</span>
+<span class="hljs-selector-class">.border-1px</span> {
+  <span class="hljs-attribute">position</span>: relative;
+}
+
+<span class="hljs-selector-class">.border-1px</span><span class="hljs-selector-pseudo">::after</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">''</span>;
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">1px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#e5e5e5</span>;
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scaleY</span>(0.5);
+  <span class="hljs-attribute">transform-origin</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-comment">/* 四边边框 */</span>
+<span class="hljs-selector-class">.border-1px-all</span> {
+  <span class="hljs-attribute">position</span>: relative;
+}
+
+<span class="hljs-selector-class">.border-1px-all</span><span class="hljs-selector-pseudo">::after</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">''</span>;
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">200%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">200%</span>;
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#e5e5e5</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">8px</span>;
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scale</span>(0.5);
+  <span class="hljs-attribute">transform-origin</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">box-sizing</span>: border-box;
+  <span class="hljs-attribute">pointer-events</span>: none;
+}
+
+<span class="hljs-comment">/* 根据 DPR 动态调整 */</span>
+@<span class="hljs-keyword">media</span> (-webkit-min-device-pixel-ratio: <span class="hljs-number">2</span>), (min-resolution: <span class="hljs-number">2dppx</span>) {
+  <span class="hljs-selector-class">.border-1px</span><span class="hljs-selector-pseudo">::after</span> {
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scaleY</span>(0.5);
+  }
+}
+
+@<span class="hljs-keyword">media</span> (-webkit-min-device-pixel-ratio: <span class="hljs-number">3</span>), (min-resolution: <span class="hljs-number">3dppx</span>) {
+  <span class="hljs-selector-class">.border-1px</span><span class="hljs-selector-pseudo">::after</span> {
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scaleY</span>(0.333);
+  }
+}
+</code></pre>
+<p><strong>方案二：viewport + rem（动态缩放）</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 根据 dpr 设置 viewport 的 scale</span>
+<span class="hljs-keyword">const</span> dpr = <span class="hljs-built_in">window</span>.devicePixelRatio || <span class="hljs-number">1</span>;
+<span class="hljs-keyword">const</span> scale = <span class="hljs-number">1</span> / dpr;
+<span class="hljs-keyword">const</span> viewport = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'meta[name="viewport"]'</span>);
+viewport.setAttribute(<span class="hljs-string">'content'</span>,
+  <span class="hljs-string">`width=device-width, initial-scale=<span class="hljs-subst">${scale}</span>, maximum-scale=<span class="hljs-subst">${scale}</span>, minimum-scale=<span class="hljs-subst">${scale}</span>`</span>
+);
+
+<span class="hljs-comment">// 此方案下直接写 1px 即可</span>
+<span class="hljs-comment">// CSS 中的 1px 会被缩放到物理像素的 1px</span>
+</code></pre>
+<p><strong>方案三：border-image</strong></p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.border-image-1px</span> {
+  <span class="hljs-attribute">border-width</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">1px</span> <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">border-style</span>: solid;
+  <span class="hljs-attribute">border-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">"data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'&gt;&lt;rect width='1' height='0.5' fill='%23e5e5e5'/&gt;&lt;/svg&gt;"</span>) <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">1</span> <span class="hljs-number">0</span> stretch;
+}
+</code></pre>
+<p><strong>方案四：box-shadow 模拟</strong></p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.box-shadow-1px</span> {
+  <span class="hljs-attribute">box-shadow</span>: inset <span class="hljs-number">0px</span> -<span class="hljs-number">1px</span> <span class="hljs-number">1px</span> -<span class="hljs-number">1px</span> <span class="hljs-number">#e5e5e5</span>;
+}
+
+<span class="hljs-comment">/* 四边 */</span>
+<span class="hljs-selector-class">.box-shadow-1px-all</span> {
+  <span class="hljs-attribute">box-shadow</span>:
+    inset <span class="hljs-number">0</span> <span class="hljs-number">1px</span> <span class="hljs-number">1px</span> -<span class="hljs-number">1px</span> <span class="hljs-number">#e5e5e5</span>,
+    inset <span class="hljs-number">0</span> -<span class="hljs-number">1px</span> <span class="hljs-number">1px</span> -<span class="hljs-number">1px</span> <span class="hljs-number">#e5e5e5</span>,
+    inset <span class="hljs-number">1px</span> <span class="hljs-number">0</span> <span class="hljs-number">1px</span> -<span class="hljs-number">1px</span> <span class="hljs-number">#e5e5e5</span>,
+    inset -<span class="hljs-number">1px</span> <span class="hljs-number">0</span> <span class="hljs-number">1px</span> -<span class="hljs-number">1px</span> <span class="hljs-number">#e5e5e5</span>;
+}
+</code></pre>
+<p><strong>方案五：SVG 背景图</strong></p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.svg-1px</span> {
+  <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='1'%3E%3Crect width='100%25' height='0.5' fill='%23e5e5e5'/%3E%3C/svg%3E"</span>);
+  <span class="hljs-attribute">background-repeat</span>: no-repeat;
+  <span class="hljs-attribute">background-position</span>: bottom;
+}
+</code></pre>
+<h3 id="16-安全区域适配（env--constant）">1.6 安全区域适配（env() / constant()）</h3>
+<p>针对 iPhone X 及以上机型的刘海屏和底部 Home Indicator 区域适配：</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* 安全区域适配 - 必须设置 viewport-fit=cover */</span>
+
+<span class="hljs-comment">/* 底部固定导航栏适配 */</span>
+<span class="hljs-selector-class">.fixed-bottom-bar</span> {
+  <span class="hljs-attribute">position</span>: fixed;
+  <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;
+  <span class="hljs-attribute">background</span>: <span class="hljs-number">#fff</span>;
+
+  <span class="hljs-comment">/* 兼容 iOS 11.0-11.2 */</span>
+  <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-built_in">constant</span>(safe-area-inset-bottom);
+  <span class="hljs-comment">/* 兼容 iOS 11.2+ */</span>
+  <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-built_in">env</span>(safe-area-inset-bottom);
+}
+
+<span class="hljs-comment">/* 使用 calc() 结合安全区域 */</span>
+<span class="hljs-selector-class">.safe-area-container</span> {
+  <span class="hljs-attribute">padding-top</span>: <span class="hljs-built_in">calc</span>(12px + constant(safe-area-inset-top));
+  <span class="hljs-attribute">padding-top</span>: <span class="hljs-built_in">calc</span>(12px + env(safe-area-inset-top));
+  <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-built_in">calc</span>(12px + constant(safe-area-inset-bottom));
+  <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-built_in">calc</span>(12px + env(safe-area-inset-bottom));
+  <span class="hljs-attribute">padding-left</span>: <span class="hljs-built_in">calc</span>(12px + constant(safe-area-inset-left));
+  <span class="hljs-attribute">padding-left</span>: <span class="hljs-built_in">calc</span>(12px + env(safe-area-inset-left));
+  <span class="hljs-attribute">padding-right</span>: <span class="hljs-built_in">calc</span>(12px + constant(safe-area-inset-right));
+  <span class="hljs-attribute">padding-right</span>: <span class="hljs-built_in">calc</span>(12px + env(safe-area-inset-right));
+}
+
+<span class="hljs-comment">/* 底部安全区域占位 */</span>
+<span class="hljs-selector-class">.safe-area-placeholder</span> {
+  <span class="hljs-attribute">height</span>: <span class="hljs-built_in">constant</span>(safe-area-inset-bottom);
+  <span class="hljs-attribute">height</span>: <span class="hljs-built_in">env</span>(safe-area-inset-bottom);
+}
+
+<span class="hljs-comment">/* 全面屏适配的通用方案 */</span>
+@<span class="hljs-keyword">supports</span> (bottom: env(safe-area-inset-bottom)) {
+  <span class="hljs-selector-class">.fullscreen-adaptive</span> {
+    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-built_in">env</span>(safe-area-inset-bottom);
+  }
+}
+</code></pre>
+<p><strong>JavaScript 获取安全区域：</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 获取安全区域数值</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getSafeAreaInsets</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> div = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+  div.style.cssText = <span class="hljs-string">`
+    position: fixed;
+    top: env(safe-area-inset-top);
+    left: env(safe-area-inset-left);
+    right: env(safe-area-inset-right);
+    bottom: env(safe-area-inset-bottom);
+    pointer-events: none;
+    visibility: hidden;
+  `</span>;
+  <span class="hljs-built_in">document</span>.body.appendChild(div);
+  <span class="hljs-keyword">const</span> rect = div.getBoundingClientRect();
+  <span class="hljs-built_in">document</span>.body.removeChild(div);
+
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">top</span>: rect.top,
+    <span class="hljs-attr">left</span>: rect.left,
+    <span class="hljs-attr">right</span>: <span class="hljs-built_in">window</span>.innerWidth - rect.right,
+    <span class="hljs-attr">bottom</span>: <span class="hljs-built_in">window</span>.innerHeight - rect.bottom
+  };
+}
+</code></pre>
+<hr></hr>
+<h2 id="二、事件与交互">二、事件与交互</h2>
+<h3 id="21-touch-事件体系">2.1 Touch 事件体系</h3>
+<p>移动端 Touch 事件的完整生命周期：</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> el = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'touchArea'</span>);
+
+<span class="hljs-comment">// Touch 事件类型</span>
+el.addEventListener(<span class="hljs-string">'touchstart'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+  <span class="hljs-comment">// 手指按下</span>
+  <span class="hljs-keyword">const</span> touch = e.touches[<span class="hljs-number">0</span>];
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'起始坐标:'</span>, touch.clientX, touch.clientY);
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'触摸点数量:'</span>, e.touches.length);
+}, <span class="hljs-literal">false</span>);
+
+el.addEventListener(<span class="hljs-string">'touchmove'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+  <span class="hljs-comment">// 手指移动</span>
+  <span class="hljs-keyword">const</span> touch = e.touches[<span class="hljs-number">0</span>];
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'移动坐标:'</span>, touch.clientX, touch.clientY);
+
+  <span class="hljs-comment">// 阻止默认行为（如页面滚动）</span>
+  e.preventDefault();
+}, { <span class="hljs-attr">passive</span>: <span class="hljs-literal">false</span> });
+
+el.addEventListener(<span class="hljs-string">'touchend'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+  <span class="hljs-comment">// 手指抬起（此时 e.touches 为空，需要用 changedTouches）</span>
+  <span class="hljs-keyword">const</span> touch = e.changedTouches[<span class="hljs-number">0</span>];
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'结束坐标:'</span>, touch.clientX, touch.clientY);
+}, <span class="hljs-literal">false</span>);
+
+el.addEventListener(<span class="hljs-string">'touchcancel'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+  <span class="hljs-comment">// 触摸被中断（如来电、弹窗）</span>
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'触摸被取消'</span>);
+}, <span class="hljs-literal">false</span>);
+
+<span class="hljs-comment">// Touch 对象属性</span>
+<span class="hljs-comment">// e.touches        - 屏幕上所有触摸点</span>
+<span class="hljs-comment">// e.targetTouches  - 当前元素上的触摸点</span>
+<span class="hljs-comment">// e.changedTouches - 发生变化的触摸点</span>
+
+<span class="hljs-comment">// 每个 Touch 对象包含：</span>
+<span class="hljs-comment">// identifier  - 触摸点唯一标识</span>
+<span class="hljs-comment">// clientX/Y   - 相对于视口的坐标</span>
+<span class="hljs-comment">// pageX/Y     - 相对于页面的坐标</span>
+<span class="hljs-comment">// screenX/Y   - 相对于屏幕的坐标</span>
+<span class="hljs-comment">// target      - 触摸目标元素</span>
+</code></pre>
+<h3 id="22-300ms-延迟问题">2.2 300ms 延迟问题</h3>
+<p>浏览器为了判断用户是单击还是双击缩放，会在 <code>touchend</code> 后等待 300ms 才触发 <code>click</code> 事件。</p>
+<p><strong>解决方案一：FastClick 库</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 引入 FastClick</span>
+<span class="hljs-keyword">import</span> FastClick <span class="hljs-keyword">from</span> <span class="hljs-string">'fastclick'</span>;
+FastClick.attach(<span class="hljs-built_in">document</span>.body);
+
+<span class="hljs-comment">// FastClick 原理简析：</span>
+<span class="hljs-comment">// 1. 在 touchend 时立即触发一个模拟的 click 事件</span>
+<span class="hljs-comment">// 2. 取消浏览器在 300ms 后产生的原始 click 事件</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SimpleFastClick</span> </span>{
+  <span class="hljs-keyword">constructor</span>(el) {
+    <span class="hljs-keyword">this</span>.trackingClick = <span class="hljs-literal">false</span>;
+    <span class="hljs-keyword">this</span>.touchStartX = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">this</span>.touchStartY = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">this</span>.touchBoundary = <span class="hljs-number">10</span>; <span class="hljs-comment">// 触摸移动阈值</span>
+
+    el.addEventListener(<span class="hljs-string">'touchstart'</span>, <span class="hljs-keyword">this</span>.onTouchStart.bind(<span class="hljs-keyword">this</span>), <span class="hljs-literal">true</span>);
+    el.addEventListener(<span class="hljs-string">'touchend'</span>, <span class="hljs-keyword">this</span>.onTouchEnd.bind(<span class="hljs-keyword">this</span>), <span class="hljs-literal">true</span>);
+    el.addEventListener(<span class="hljs-string">'click'</span>, <span class="hljs-keyword">this</span>.onClick.bind(<span class="hljs-keyword">this</span>), <span class="hljs-literal">true</span>);
+  }
+
+  onTouchStart(e) {
+    <span class="hljs-keyword">this</span>.trackingClick = <span class="hljs-literal">true</span>;
+    <span class="hljs-keyword">this</span>.touchStartX = e.targetTouches[<span class="hljs-number">0</span>].pageX;
+    <span class="hljs-keyword">this</span>.touchStartY = e.targetTouches[<span class="hljs-number">0</span>].pageY;
+  }
+
+  onTouchEnd(e) {
+    <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.trackingClick) <span class="hljs-keyword">return</span>;
+
+    <span class="hljs-comment">// 检查是否移动超过阈值</span>
+    <span class="hljs-keyword">const</span> touch = e.changedTouches[<span class="hljs-number">0</span>];
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">Math</span>.abs(touch.pageX - <span class="hljs-keyword">this</span>.touchStartX) &gt; <span class="hljs-keyword">this</span>.touchBoundary ||
+        <span class="hljs-built_in">Math</span>.abs(touch.pageY - <span class="hljs-keyword">this</span>.touchStartY) &gt; <span class="hljs-keyword">this</span>.touchBoundary) {
+      <span class="hljs-keyword">this</span>.trackingClick = <span class="hljs-literal">false</span>;
+      <span class="hljs-keyword">return</span>;
+    }
+
+    <span class="hljs-comment">// 创建并分发模拟的 click 事件</span>
+    <span class="hljs-keyword">const</span> clickEvent = <span class="hljs-keyword">new</span> MouseEvent(<span class="hljs-string">'click'</span>, {
+      <span class="hljs-attr">bubbles</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">cancelable</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">view</span>: <span class="hljs-built_in">window</span>
+    });
+    e.target.dispatchEvent(clickEvent);
+
+    e.preventDefault();
+    <span class="hljs-keyword">this</span>.trackingClick = <span class="hljs-literal">false</span>;
+  }
+
+  onClick(e) {
+    <span class="hljs-comment">// 如果正在追踪，阻止原生 click</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.trackingClick) {
+      e.stopImmediatePropagation();
+      e.preventDefault();
+    }
+  }
+}
+</code></pre>
+<p><strong>解决方案二：touch-action CSS</strong></p>
+<pre><code class="lang-css"><span class="hljs-comment">/* 现代浏览器推荐方案 */</span>
+<span class="hljs-selector-tag">html</span> {
+  <span class="hljs-attribute">touch-action</span>: manipulation; <span class="hljs-comment">/* 禁用双击缩放，消除 300ms 延迟 */</span>
+}
+</code></pre>
+<h3 id="23-点击穿透问题">2.3 点击穿透问题</h3>
+<p>当上层元素使用 <code>touchstart</code> 或 <code>touchend</code> 关闭后，300ms 后触发的 <code>click</code> 事件会作用到下层元素。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 问题场景</span>
+<span class="hljs-keyword">const</span> mask = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'mask'</span>);
+<span class="hljs-keyword">const</span> link = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'link'</span>); <span class="hljs-comment">// 遮罩下方的链接</span>
+
+mask.addEventListener(<span class="hljs-string">'touchstart'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">this</span>.style.display = <span class="hljs-string">'none'</span>;
+  <span class="hljs-comment">// 300ms 后 click 事件会穿透到下层的 link</span>
+});
+
+<span class="hljs-comment">// 解决方案一：使用 click 事件代替 touchstart</span>
+mask.addEventListener(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">this</span>.style.display = <span class="hljs-string">'none'</span>;
+});
+
+<span class="hljs-comment">// 解决方案二：延迟隐藏</span>
+mask.addEventListener(<span class="hljs-string">'touchstart'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> self = <span class="hljs-keyword">this</span>;
+  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    self.style.display = <span class="hljs-string">'none'</span>;
+  }, <span class="hljs-number">350</span>); <span class="hljs-comment">// 超过 300ms</span>
+});
+
+<span class="hljs-comment">// 解决方案三：阻止默认事件</span>
+mask.addEventListener(<span class="hljs-string">'touchstart'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+  e.preventDefault();
+  <span class="hljs-keyword">this</span>.style.display = <span class="hljs-string">'none'</span>;
+});
+
+<span class="hljs-comment">// 解决方案四：CSS pointer-events</span>
+mask.addEventListener(<span class="hljs-string">'touchstart'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">this</span>.style.display = <span class="hljs-string">'none'</span>;
+  <span class="hljs-comment">// 临时禁止下层点击</span>
+  <span class="hljs-built_in">document</span>.body.style.pointerEvents = <span class="hljs-string">'none'</span>;
+  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">document</span>.body.style.pointerEvents = <span class="hljs-string">'auto'</span>;
+  }, <span class="hljs-number">350</span>);
+});
+</code></pre>
+<h3 id="24-手势识别">2.4 手势识别</h3>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GestureRecognizer</span> </span>{
+  <span class="hljs-keyword">constructor</span>(el) {
+    <span class="hljs-keyword">this</span>.el = el;
+    <span class="hljs-keyword">this</span>.startX = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">this</span>.startY = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">this</span>.startTime = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">this</span>.prevTouchTime = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">this</span>.callbacks = {};
+
+    <span class="hljs-keyword">this</span>._bindEvents();
+  }
+
+  on(event, callback) {
+    <span class="hljs-keyword">this</span>.callbacks[event] = callback;
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+  }
+
+  _emit(event, data) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.callbacks[event]) {
+      <span class="hljs-keyword">this</span>.callbacks[event](data);
+    }
+  }
+
+  _bindEvents() {
+    <span class="hljs-keyword">this</span>.el.addEventListener(<span class="hljs-string">'touchstart'</span>, (e) =&gt; {
+      <span class="hljs-keyword">const</span> touch = e.touches[<span class="hljs-number">0</span>];
+      <span class="hljs-keyword">this</span>.startX = touch.clientX;
+      <span class="hljs-keyword">this</span>.startY = touch.clientY;
+      <span class="hljs-keyword">this</span>.startTime = <span class="hljs-built_in">Date</span>.now();
+    });
+
+    <span class="hljs-keyword">this</span>.el.addEventListener(<span class="hljs-string">'touchend'</span>, (e) =&gt; {
+      <span class="hljs-keyword">const</span> touch = e.changedTouches[<span class="hljs-number">0</span>];
+      <span class="hljs-keyword">const</span> endX = touch.clientX;
+      <span class="hljs-keyword">const</span> endY = touch.clientY;
+      <span class="hljs-keyword">const</span> endTime = <span class="hljs-built_in">Date</span>.now();
+      <span class="hljs-keyword">const</span> deltaX = endX - <span class="hljs-keyword">this</span>.startX;
+      <span class="hljs-keyword">const</span> deltaY = endY - <span class="hljs-keyword">this</span>.startY;
+      <span class="hljs-keyword">const</span> duration = endTime - <span class="hljs-keyword">this</span>.startTime;
+      <span class="hljs-keyword">const</span> distance = <span class="hljs-built_in">Math</span>.sqrt(deltaX ** <span class="hljs-number">2</span> + deltaY ** <span class="hljs-number">2</span>);
+
+      <span class="hljs-comment">// 判断手势类型</span>
+      <span class="hljs-keyword">if</span> (distance &lt; <span class="hljs-number">10</span> &amp;&amp; duration &lt; <span class="hljs-number">300</span>) {
+        <span class="hljs-comment">// 检测双击（两次 tap 间隔 &lt; 300ms）</span>
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.startTime - <span class="hljs-keyword">this</span>.prevTouchTime &lt; <span class="hljs-number">300</span>) {
+          <span class="hljs-keyword">this</span>._emit(<span class="hljs-string">'doubleTap'</span>, { <span class="hljs-attr">x</span>: endX, <span class="hljs-attr">y</span>: endY });
+        } <span class="hljs-keyword">else</span> {
+          <span class="hljs-comment">// 延迟触发单击（等待可能的双击）</span>
+          setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+            <span class="hljs-keyword">this</span>._emit(<span class="hljs-string">'tap'</span>, { <span class="hljs-attr">x</span>: endX, <span class="hljs-attr">y</span>: endY });
+          }, <span class="hljs-number">300</span>);
+        }
+        <span class="hljs-keyword">this</span>.prevTouchTime = <span class="hljs-keyword">this</span>.startTime;
+      } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (duration &lt; <span class="hljs-number">500</span> &amp;&amp; distance &gt; <span class="hljs-number">30</span>) {
+        <span class="hljs-comment">// 滑动方向判断</span>
+        <span class="hljs-keyword">const</span> angle = <span class="hljs-built_in">Math</span>.atan2(deltaY, deltaX) * <span class="hljs-number">180</span> / <span class="hljs-built_in">Math</span>.PI;
+        <span class="hljs-keyword">let</span> direction;
+
+        <span class="hljs-keyword">if</span> (angle &gt;= <span class="hljs-number">-45</span> &amp;&amp; angle &lt; <span class="hljs-number">45</span>) direction = <span class="hljs-string">'right'</span>;
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (angle &gt;= <span class="hljs-number">45</span> &amp;&amp; angle &lt; <span class="hljs-number">135</span>) direction = <span class="hljs-string">'down'</span>;
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (angle &gt;= <span class="hljs-number">-135</span> &amp;&amp; angle &lt; <span class="hljs-number">-45</span>) direction = <span class="hljs-string">'up'</span>;
+        <span class="hljs-keyword">else</span> direction = <span class="hljs-string">'left'</span>;
+
+        <span class="hljs-keyword">this</span>._emit(<span class="hljs-string">'swipe'</span>, { direction, deltaX, deltaY, duration });
+        <span class="hljs-keyword">this</span>._emit(<span class="hljs-string">`swipe<span class="hljs-subst">${direction.charAt(<span class="hljs-number">0</span>).toUpperCase() + direction.slice(<span class="hljs-number">1</span>)}</span>`</span>, {
+          deltaX, deltaY, duration
+        });
+      } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (duration &gt;= <span class="hljs-number">750</span> &amp;&amp; distance &lt; <span class="hljs-number">10</span>) {
+        <span class="hljs-keyword">this</span>._emit(<span class="hljs-string">'longPress'</span>, { <span class="hljs-attr">x</span>: endX, <span class="hljs-attr">y</span>: endY });
+      }
+    });
+  }
+}
+
+<span class="hljs-comment">// 使用示例</span>
+<span class="hljs-keyword">const</span> gesture = <span class="hljs-keyword">new</span> GestureRecognizer(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'app'</span>));
+gesture
+  .on(<span class="hljs-string">'tap'</span>, (e) =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'单击'</span>, e))
+  .on(<span class="hljs-string">'doubleTap'</span>, (e) =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'双击'</span>, e))
+  .on(<span class="hljs-string">'swipeLeft'</span>, (e) =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'左滑'</span>, e))
+  .on(<span class="hljs-string">'swipeRight'</span>, (e) =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'右滑'</span>, e))
+  .on(<span class="hljs-string">'longPress'</span>, (e) =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'长按'</span>, e));
+</code></pre>
+<h3 id="25-滚动优化（passive-事件）">2.5 滚动优化（passive 事件）</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// passive: true 告诉浏览器不会调用 preventDefault()</span>
+<span class="hljs-comment">// 浏览器可以立即执行滚动，无需等待 JS 执行完毕</span>
+<span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">'touchmove'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+  <span class="hljs-comment">// 处理滚动逻辑（不能调用 e.preventDefault()）</span>
+}, { <span class="hljs-attr">passive</span>: <span class="hljs-literal">true</span> });
+
+<span class="hljs-comment">// 检测浏览器是否支持 passive</span>
+<span class="hljs-keyword">let</span> supportsPassive = <span class="hljs-literal">false</span>;
+<span class="hljs-keyword">try</span> {
+  <span class="hljs-keyword">const</span> opts = <span class="hljs-built_in">Object</span>.defineProperty({}, <span class="hljs-string">'passive'</span>, {
+    get() {
+      supportsPassive = <span class="hljs-literal">true</span>;
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    }
+  });
+  <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'testPassive'</span>, <span class="hljs-literal">null</span>, opts);
+  <span class="hljs-built_in">window</span>.removeEventListener(<span class="hljs-string">'testPassive'</span>, <span class="hljs-literal">null</span>, opts);
+} <span class="hljs-keyword">catch</span> (e) {}
+
+<span class="hljs-comment">// 兼容写法</span>
+<span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">'touchmove'</span>, handler,
+  supportsPassive ? { <span class="hljs-attr">passive</span>: <span class="hljs-literal">true</span> } : <span class="hljs-literal">false</span>
+);
+
+<span class="hljs-comment">// 滚动节流优化</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">scrollThrottle</span>(<span class="hljs-params">callback</span>) </span>{
+  <span class="hljs-keyword">let</span> ticking = <span class="hljs-literal">false</span>;
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">if</span> (!ticking) {
+      requestAnimationFrame(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        callback();
+        ticking = <span class="hljs-literal">false</span>;
+      });
+      ticking = <span class="hljs-literal">true</span>;
+    }
+  };
+}
+
+<span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'scroll'</span>, scrollThrottle(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-comment">// 执行滚动处理逻辑</span>
+  <span class="hljs-keyword">const</span> scrollTop = <span class="hljs-built_in">document</span>.documentElement.scrollTop || <span class="hljs-built_in">document</span>.body.scrollTop;
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'当前滚动位置:'</span>, scrollTop);
+}), { <span class="hljs-attr">passive</span>: <span class="hljs-literal">true</span> });
+
+<span class="hljs-comment">// iOS 弹性滚动优化</span>
+.scroll-container {
+  -webkit-overflow-scrolling: touch; <span class="hljs-comment">/* 开启惯性滚动 */</span>
+  overflow-y: auto;
+}
+</code></pre>
+<h3 id="26-键盘弹起适配">2.6 键盘弹起适配</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 键盘弹起检测</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">KeyboardHandler</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.originalHeight = <span class="hljs-built_in">window</span>.innerHeight;
+    <span class="hljs-keyword">this</span>.isKeyboardVisible = <span class="hljs-literal">false</span>;
+    <span class="hljs-keyword">this</span>._init();
+  }
+
+  _init() {
+    <span class="hljs-comment">// Android 通过 resize 事件检测</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-regexp">/Android/i</span>.test(navigator.userAgent)) {
+      <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'resize'</span>, () =&gt; {
+        <span class="hljs-keyword">const</span> currentHeight = <span class="hljs-built_in">window</span>.innerHeight;
+        <span class="hljs-keyword">if</span> (currentHeight &lt; <span class="hljs-keyword">this</span>.originalHeight * <span class="hljs-number">0.75</span>) {
+          <span class="hljs-keyword">this</span>._onKeyboardShow(<span class="hljs-keyword">this</span>.originalHeight - currentHeight);
+        } <span class="hljs-keyword">else</span> {
+          <span class="hljs-keyword">this</span>._onKeyboardHide();
+        }
+      });
+    }
+
+    <span class="hljs-comment">// iOS 通过 focus/blur 事件检测</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-regexp">/iPhone|iPad/i</span>.test(navigator.userAgent)) {
+      <span class="hljs-keyword">const</span> inputs = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">'input, textarea'</span>);
+      inputs.forEach(<span class="hljs-function"><span class="hljs-params">input</span> =&gt;</span> {
+        input.addEventListener(<span class="hljs-string">'focus'</span>, () =&gt; {
+          setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">this</span>._onKeyboardShow(<span class="hljs-number">300</span>), <span class="hljs-number">300</span>);
+        });
+        input.addEventListener(<span class="hljs-string">'blur'</span>, () =&gt; {
+          <span class="hljs-keyword">this</span>._onKeyboardHide();
+        });
+      });
+    }
+  }
+
+  _onKeyboardShow(keyboardHeight) {
+    <span class="hljs-keyword">this</span>.isKeyboardVisible = <span class="hljs-literal">true</span>;
+    <span class="hljs-built_in">document</span>.body.classList.add(<span class="hljs-string">'keyboard-visible'</span>);
+
+    <span class="hljs-comment">// 滚动到输入框可见位置</span>
+    <span class="hljs-keyword">const</span> activeElement = <span class="hljs-built_in">document</span>.activeElement;
+    <span class="hljs-keyword">if</span> (activeElement &amp;&amp; (activeElement.tagName === <span class="hljs-string">'INPUT'</span> || activeElement.tagName === <span class="hljs-string">'TEXTAREA'</span>)) {
+      setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+        activeElement.scrollIntoView({
+          <span class="hljs-attr">behavior</span>: <span class="hljs-string">'smooth'</span>,
+          <span class="hljs-attr">block</span>: <span class="hljs-string">'center'</span>
+        });
+      }, <span class="hljs-number">100</span>);
+    }
+  }
+
+  _onKeyboardHide() {
+    <span class="hljs-keyword">this</span>.isKeyboardVisible = <span class="hljs-literal">false</span>;
+    <span class="hljs-built_in">document</span>.body.classList.remove(<span class="hljs-string">'keyboard-visible'</span>);
+
+    <span class="hljs-comment">// iOS 键盘收起后页面可能不回弹，手动滚动修复</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-regexp">/iPhone|iPad/i</span>.test(navigator.userAgent)) {
+      <span class="hljs-built_in">window</span>.scrollTo(<span class="hljs-number">0</span>, <span class="hljs-built_in">document</span>.documentElement.scrollTop || <span class="hljs-built_in">document</span>.body.scrollTop);
+    }
+  }
+}
+
+<span class="hljs-comment">// 初始化</span>
+<span class="hljs-keyword">new</span> KeyboardHandler();
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-comment">/* 键盘弹起时固定底部栏的处理 */</span>
+<span class="hljs-selector-class">.keyboard-visible</span> <span class="hljs-selector-class">.fixed-bottom</span> {
+  <span class="hljs-attribute">position</span>: static; <span class="hljs-comment">/* 键盘弹起时取消固定定位 */</span>
+}
+
+<span class="hljs-comment">/* 或者调整位置 */</span>
+<span class="hljs-selector-class">.keyboard-visible</span> <span class="hljs-selector-class">.chat-input</span> {
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">bottom</span>: auto;
+}
+</code></pre>
+<hr></hr>
+<h2 id="三、hybrid-开发">三、Hybrid 开发</h2>
+<h3 id="31-jsbridge-原理">3.1 JSBridge 原理</h3>
+<p>JSBridge 是 Native 和 Web 之间的通信桥梁，主要有三种实现方式。</p>
+<p><strong>方式一：URL Scheme 拦截</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Web 端发送消息</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">callNative</span>(<span class="hljs-params">method, params, callback</span>) </span>{
+  <span class="hljs-keyword">const</span> callbackId = <span class="hljs-string">'cb_'</span> + <span class="hljs-built_in">Date</span>.now() + <span class="hljs-string">'_'</span> + <span class="hljs-built_in">Math</span>.random().toString(<span class="hljs-number">36</span>).substr(<span class="hljs-number">2</span>);
+
+  <span class="hljs-comment">// 注册回调</span>
+  <span class="hljs-built_in">window</span>.__nativeBridgeCallbacks = <span class="hljs-built_in">window</span>.__nativeBridgeCallbacks || {};
+  <span class="hljs-built_in">window</span>.__nativeBridgeCallbacks[callbackId] = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">response</span>) </span>{
+    callback &amp;&amp; callback(response);
+    <span class="hljs-keyword">delete</span> <span class="hljs-built_in">window</span>.__nativeBridgeCallbacks[callbackId];
+  };
+
+  <span class="hljs-comment">// 构建 URL Scheme</span>
+  <span class="hljs-keyword">const</span> url = <span class="hljs-string">`myapp://bridge/<span class="hljs-subst">${method}</span>?params=<span class="hljs-subst">${<span class="hljs-built_in">encodeURIComponent</span>(<span class="hljs-built_in">JSON</span>.stringify(params))}</span>&amp;callback=<span class="hljs-subst">${callbackId}</span>`</span>;
+
+  <span class="hljs-comment">// 方式1：通过 iframe 发送</span>
+  <span class="hljs-keyword">const</span> iframe = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'iframe'</span>);
+  iframe.style.display = <span class="hljs-string">'none'</span>;
+  iframe.src = url;
+  <span class="hljs-built_in">document</span>.body.appendChild(iframe);
+  setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-built_in">document</span>.body.removeChild(iframe);
+  }, <span class="hljs-number">200</span>);
+
+  <span class="hljs-comment">// 方式2：通过 location.href（不推荐，连续调用会被覆盖）</span>
+  <span class="hljs-comment">// window.location.href = url;</span>
+}
+
+<span class="hljs-comment">// Native 回调 Web</span>
+<span class="hljs-comment">// Native 端拦截到 URL Scheme 后执行原生方法，</span>
+<span class="hljs-comment">// 然后通过 evaluateJavaScript 调用回调：</span>
+<span class="hljs-comment">// webView.evaluateJavaScript(</span>
+<span class="hljs-comment">//   "window.__nativeBridgeCallbacks['cb_xxx']({code: 0, data: {...}})"</span>
+<span class="hljs-comment">// )</span>
+
+<span class="hljs-comment">// 使用示例</span>
+callNative(<span class="hljs-string">'getDeviceInfo'</span>, {}, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">result</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'设备信息:'</span>, result);
+});
+</code></pre>
+<p><strong>方式二：postMessage 通信（WKWebView）</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Web -&gt; Native（iOS WKWebView）</span>
+<span class="hljs-built_in">window</span>.webkit.messageHandlers.nativeBridge.postMessage({
+  <span class="hljs-attr">method</span>: <span class="hljs-string">'share'</span>,
+  <span class="hljs-attr">params</span>: {
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'分享标题'</span>,
+    <span class="hljs-attr">content</span>: <span class="hljs-string">'分享内容'</span>,
+    <span class="hljs-attr">url</span>: <span class="hljs-string">'https://example.com'</span>
+  }
+});
+
+<span class="hljs-comment">// Web -&gt; Native（Android）</span>
+<span class="hljs-built_in">window</span>.androidBridge.postMessage(<span class="hljs-built_in">JSON</span>.stringify({
+  <span class="hljs-attr">method</span>: <span class="hljs-string">'share'</span>,
+  <span class="hljs-attr">params</span>: { <span class="hljs-attr">title</span>: <span class="hljs-string">'分享标题'</span> }
+}));
+
+<span class="hljs-comment">// Native -&gt; Web（通用）</span>
+<span class="hljs-comment">// Native 调用 webView.evaluateJavaScript:</span>
+<span class="hljs-comment">// "window.dispatchEvent(new CustomEvent('nativeMessage', {detail: {...}}))"</span>
+<span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'nativeMessage'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'收到 Native 消息:'</span>, e.detail);
+});
+</code></pre>
+<p><strong>方式三：注入全局 API</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Native 向 WebView 注入全局对象</span>
+<span class="hljs-comment">// Android: webView.addJavascriptInterface(bridge, "NativeBridge")</span>
+<span class="hljs-comment">// iOS: WKUserContentController 注入</span>
+
+<span class="hljs-comment">// Web 端直接调用</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">callNativeMethod</span>(<span class="hljs-params">method, params</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> callbackName = <span class="hljs-string">`__bridge_cb_<span class="hljs-subst">${<span class="hljs-built_in">Date</span>.now()}</span>`</span>;
+
+    <span class="hljs-built_in">window</span>[callbackName] = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">result</span>) </span>{
+      <span class="hljs-keyword">delete</span> <span class="hljs-built_in">window</span>[callbackName];
+      <span class="hljs-keyword">if</span> (result.code === <span class="hljs-number">0</span>) {
+        resolve(result.data);
+      } <span class="hljs-keyword">else</span> {
+        reject(result.message);
+      }
+    };
+
+    <span class="hljs-comment">// 调用 Native 注入的方法</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.NativeBridge) {
+      <span class="hljs-built_in">window</span>.NativeBridge.invoke(method, <span class="hljs-built_in">JSON</span>.stringify(params), callbackName);
+    } <span class="hljs-keyword">else</span> {
+      reject(<span class="hljs-string">'NativeBridge not found'</span>);
+    }
+  });
+}
+
+<span class="hljs-comment">// 完整的 JSBridge 封装</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">JSBridge</span> </span>{
+  <span class="hljs-keyword">static</span> isReady = <span class="hljs-literal">false</span>;
+  <span class="hljs-keyword">static</span> readyCallbacks = [];
+  <span class="hljs-keyword">static</span> callbackId = <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">static</span> callbacks = {};
+
+  <span class="hljs-comment">// 等待 Bridge 就绪</span>
+  <span class="hljs-keyword">static</span> ready(fn) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.isReady) {
+      fn();
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">this</span>.readyCallbacks.push(fn);
+    }
+  }
+
+  <span class="hljs-comment">// 初始化（Native 调用）</span>
+  <span class="hljs-keyword">static</span> _init() {
+    <span class="hljs-keyword">this</span>.isReady = <span class="hljs-literal">true</span>;
+    <span class="hljs-keyword">this</span>.readyCallbacks.forEach(<span class="hljs-function"><span class="hljs-params">fn</span> =&gt;</span> fn());
+    <span class="hljs-keyword">this</span>.readyCallbacks = [];
+  }
+
+  <span class="hljs-comment">// 调用 Native 方法</span>
+  <span class="hljs-keyword">static</span> call(method, params = {}) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+      <span class="hljs-keyword">const</span> id = ++<span class="hljs-keyword">this</span>.callbackId;
+      <span class="hljs-keyword">this</span>.callbacks[id] = { resolve, reject };
+
+      <span class="hljs-keyword">const</span> message = { id, method, params };
+
+      <span class="hljs-comment">// 多平台兼容</span>
+      <span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.webkit?.messageHandlers?.bridge) {
+        <span class="hljs-built_in">window</span>.webkit.messageHandlers.bridge.postMessage(message);
+      } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.NativeBridge) {
+        <span class="hljs-built_in">window</span>.NativeBridge.invoke(<span class="hljs-built_in">JSON</span>.stringify(message));
+      } <span class="hljs-keyword">else</span> {
+        reject(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">'Bridge not available'</span>));
+      }
+    });
+  }
+
+  <span class="hljs-comment">// 处理 Native 回调</span>
+  <span class="hljs-keyword">static</span> _handleCallback(id, error, data) {
+    <span class="hljs-keyword">const</span> cb = <span class="hljs-keyword">this</span>.callbacks[id];
+    <span class="hljs-keyword">if</span> (cb) {
+      error ? cb.reject(error) : cb.resolve(data);
+      <span class="hljs-keyword">delete</span> <span class="hljs-keyword">this</span>.callbacks[id];
+    }
+  }
+
+  <span class="hljs-comment">// 注册供 Native 调用的方法</span>
+  <span class="hljs-keyword">static</span> register(name, handler) {
+    <span class="hljs-built_in">window</span>.__bridgeHandlers = <span class="hljs-built_in">window</span>.__bridgeHandlers || {};
+    <span class="hljs-built_in">window</span>.__bridgeHandlers[name] = handler;
+  }
+}
+
+<span class="hljs-comment">// 使用</span>
+JSBridge.ready(<span class="hljs-keyword">async</span> () =&gt; {
+  <span class="hljs-keyword">const</span> deviceInfo = <span class="hljs-keyword">await</span> JSBridge.call(<span class="hljs-string">'getDeviceInfo'</span>);
+  <span class="hljs-built_in">console</span>.log(deviceInfo);
+});
+</code></pre>
+<h3 id="32-webview-性能优化">3.2 WebView 性能优化</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 1. WebView 预创建（Native 侧）</span>
+<span class="hljs-comment">// 在 App 启动时预创建 WebView 实例，放入对象池</span>
+<span class="hljs-comment">// 打开 H5 页面时直接复用，减少 WebView 初始化耗时</span>
+
+<span class="hljs-comment">// 2. 资源预加载 - 离线包方案</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OfflineManager</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.cacheMap = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
+    <span class="hljs-keyword">this</span>.DB_NAME = <span class="hljs-string">'offline_resource'</span>;
+    <span class="hljs-keyword">this</span>.STORE_NAME = <span class="hljs-string">'resources'</span>;
+  }
+
+  <span class="hljs-comment">// 从 IndexedDB 加载缓存</span>
+  <span class="hljs-keyword">async</span> loadFromDB() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+      <span class="hljs-keyword">const</span> request = indexedDB.open(<span class="hljs-keyword">this</span>.DB_NAME, <span class="hljs-number">1</span>);
+      request.onupgradeneeded = <span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> {
+        <span class="hljs-keyword">const</span> db = e.target.result;
+        <span class="hljs-keyword">if</span> (!db.objectStoreNames.contains(<span class="hljs-keyword">this</span>.STORE_NAME)) {
+          db.createObjectStore(<span class="hljs-keyword">this</span>.STORE_NAME, { <span class="hljs-attr">keyPath</span>: <span class="hljs-string">'url'</span> });
+        }
+      };
+      request.onsuccess = <span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> {
+        <span class="hljs-keyword">this</span>.db = e.target.result;
+        resolve();
+      };
+      request.onerror = reject;
+    });
+  }
+
+  <span class="hljs-comment">// 拦截网络请求，优先从本地读取</span>
+  <span class="hljs-keyword">async</span> getResource(url) {
+    <span class="hljs-keyword">const</span> cached = <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>._readFromDB(url);
+    <span class="hljs-keyword">if</span> (cached &amp;&amp; !<span class="hljs-keyword">this</span>._isExpired(cached)) {
+      <span class="hljs-keyword">return</span> cached.content;
+    }
+    <span class="hljs-comment">// 缓存不存在或已过期，从网络获取</span>
+    <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> fetch(url);
+    <span class="hljs-keyword">const</span> content = <span class="hljs-keyword">await</span> response.text();
+    <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>._writeToDB(url, content);
+    <span class="hljs-keyword">return</span> content;
+  }
+
+  _isExpired(record) {
+    <span class="hljs-keyword">const</span> maxAge = <span class="hljs-number">24</span> * <span class="hljs-number">60</span> * <span class="hljs-number">60</span> * <span class="hljs-number">1000</span>; <span class="hljs-comment">// 24小时</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">Date</span>.now() - record.timestamp &gt; maxAge;
+  }
+
+  <span class="hljs-keyword">async</span> _readFromDB(url) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve</span>) =&gt;</span> {
+      <span class="hljs-keyword">const</span> tx = <span class="hljs-keyword">this</span>.db.transaction(<span class="hljs-keyword">this</span>.STORE_NAME, <span class="hljs-string">'readonly'</span>);
+      <span class="hljs-keyword">const</span> store = tx.objectStore(<span class="hljs-keyword">this</span>.STORE_NAME);
+      <span class="hljs-keyword">const</span> req = store.get(url);
+      req.onsuccess = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> resolve(req.result);
+      req.onerror = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> resolve(<span class="hljs-literal">null</span>);
+    });
+  }
+
+  <span class="hljs-keyword">async</span> _writeToDB(url, content) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve</span>) =&gt;</span> {
+      <span class="hljs-keyword">const</span> tx = <span class="hljs-keyword">this</span>.db.transaction(<span class="hljs-keyword">this</span>.STORE_NAME, <span class="hljs-string">'readwrite'</span>);
+      <span class="hljs-keyword">const</span> store = tx.objectStore(<span class="hljs-keyword">this</span>.STORE_NAME);
+      store.put({ url, content, <span class="hljs-attr">timestamp</span>: <span class="hljs-built_in">Date</span>.now() });
+      tx.oncomplete = resolve;
+    });
+  }
+}
+</code></pre>
+<h3 id="33-离线包方案">3.3 离线包方案</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 离线包更新流程</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OfflinePackageManager</span> </span>{
+  <span class="hljs-keyword">constructor</span>(config) {
+    <span class="hljs-keyword">this</span>.serverUrl = config.serverUrl;
+    <span class="hljs-keyword">this</span>.currentVersion = config.currentVersion || <span class="hljs-string">'0'</span>;
+    <span class="hljs-keyword">this</span>.packageDir = config.packageDir;
+  }
+
+  <span class="hljs-comment">// 检查更新</span>
+  <span class="hljs-keyword">async</span> checkUpdate() {
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> fetch(<span class="hljs-string">`<span class="hljs-subst">${<span class="hljs-keyword">this</span>.serverUrl}</span>/api/offline/check`</span>, {
+        <span class="hljs-attr">method</span>: <span class="hljs-string">'POST'</span>,
+        <span class="hljs-attr">headers</span>: { <span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/json'</span> },
+        <span class="hljs-attr">body</span>: <span class="hljs-built_in">JSON</span>.stringify({
+          <span class="hljs-attr">appVersion</span>: <span class="hljs-keyword">this</span>.getAppVersion(),
+          <span class="hljs-attr">packageVersion</span>: <span class="hljs-keyword">this</span>.currentVersion,
+          <span class="hljs-attr">platform</span>: <span class="hljs-keyword">this</span>.getPlatform()
+        })
+      });
+
+      <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> response.json();
+
+      <span class="hljs-keyword">if</span> (data.needUpdate) {
+        <span class="hljs-keyword">return</span> {
+          <span class="hljs-attr">version</span>: data.latestVersion,
+          <span class="hljs-attr">downloadUrl</span>: data.downloadUrl,
+          <span class="hljs-attr">md5</span>: data.md5,
+          <span class="hljs-attr">patchUrl</span>: data.patchUrl, <span class="hljs-comment">// 增量更新地址</span>
+          fullSize: data.fullSize,
+          <span class="hljs-attr">patchSize</span>: data.patchSize
+        };
+      }
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+    } <span class="hljs-keyword">catch</span> (err) {
+      <span class="hljs-built_in">console</span>.error(<span class="hljs-string">'检查离线包更新失败:'</span>, err);
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+    }
+  }
+
+  <span class="hljs-comment">// 下载并应用更新</span>
+  <span class="hljs-keyword">async</span> applyUpdate(updateInfo) {
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-comment">// 优先使用增量更新</span>
+      <span class="hljs-keyword">const</span> url = updateInfo.patchUrl || updateInfo.downloadUrl;
+      <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.download(url);
+
+      <span class="hljs-comment">// 验证 MD5</span>
+      <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.verifyMD5(data, updateInfo.md5)) {
+        <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>.unzipAndReplace(data);
+        <span class="hljs-keyword">this</span>.currentVersion = updateInfo.version;
+        <span class="hljs-keyword">this</span>.saveVersion(updateInfo.version);
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+      }
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+    } <span class="hljs-keyword">catch</span> (err) {
+      <span class="hljs-built_in">console</span>.error(<span class="hljs-string">'更新离线包失败:'</span>, err);
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+    }
+  }
+
+  <span class="hljs-comment">// Service Worker 拦截请求</span>
+  registerServiceWorker() {
+    <span class="hljs-keyword">if</span> (<span class="hljs-string">'serviceWorker'</span> <span class="hljs-keyword">in</span> navigator) {
+      navigator.serviceWorker.register(<span class="hljs-string">'/offline-sw.js'</span>)
+        .then(<span class="hljs-function"><span class="hljs-params">registration</span> =&gt;</span> {
+          <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'SW 注册成功:'</span>, registration.scope);
+        })
+        .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> {
+          <span class="hljs-built_in">console</span>.error(<span class="hljs-string">'SW 注册失败:'</span>, err);
+        });
+    }
+  }
+}
+
+<span class="hljs-comment">// offline-sw.js - Service Worker 离线缓存策略</span>
+<span class="hljs-keyword">const</span> CACHE_NAME = <span class="hljs-string">'offline-v1'</span>;
+<span class="hljs-keyword">const</span> OFFLINE_URLS = [
+  <span class="hljs-string">'/'</span>,
+  <span class="hljs-string">'/index.html'</span>,
+  <span class="hljs-string">'/static/js/main.js'</span>,
+  <span class="hljs-string">'/static/css/main.css'</span>
+];
+
+self.addEventListener(<span class="hljs-string">'install'</span>, (event) =&gt; {
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(<span class="hljs-function"><span class="hljs-params">cache</span> =&gt;</span> cache.addAll(OFFLINE_URLS))
+  );
+});
+
+self.addEventListener(<span class="hljs-string">'fetch'</span>, (event) =&gt; {
+  event.respondWith(
+    caches.match(event.request).then(<span class="hljs-function"><span class="hljs-params">cached</span> =&gt;</span> {
+      <span class="hljs-comment">// 缓存优先策略</span>
+      <span class="hljs-keyword">return</span> cached || fetch(event.request).then(<span class="hljs-function"><span class="hljs-params">response</span> =&gt;</span> {
+        <span class="hljs-keyword">const</span> clone = response.clone();
+        caches.open(CACHE_NAME).then(<span class="hljs-function"><span class="hljs-params">cache</span> =&gt;</span> cache.put(event.request, clone));
+        <span class="hljs-keyword">return</span> response;
+      });
+    })
+  );
+});
+</code></pre>
+<hr></hr>
+<h2 id="四、小程序">四、小程序</h2>
+<h3 id="41-双线程模型">4.1 双线程模型</h3>
+<p>小程序采用渲染层（Webview）+ 逻辑层（JSCore/V8）双线程架构：</p>
+<pre><code>┌──────────────────┐     ┌──────────────────┐
+│   渲染层 Webview  │     │  逻辑层 JSCore    │
+│                  │     │                  │
+│  WXML + WXSS    │     │   App / Page     │
+│  ↓              │     │   逻辑代码        │
+│  Virtual DOM    │     │                  │
+│  ↓              │     │                  │
+│  Real DOM       │     │                  │
+└────────┬─────────┘     └─────────┬────────┘
+         │       通过 Native 中转       │
+         └──────────┬──────────────┘
+                    │
+            ┌───────┴───────┐
+            │  Native 层    │
+            │  微信客户端    │
+            └───────────────┘
+</code></pre><p><strong>双线程通信流程：</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 逻辑层 -&gt; 渲染层（setData 过程）</span>
+<span class="hljs-comment">// 1. 逻辑层调用 setData({ text: 'hello' })</span>
+<span class="hljs-comment">// 2. 数据经过序列化（JSON.stringify）</span>
+<span class="hljs-comment">// 3. 通过 Native JSBridge 传输到渲染层</span>
+<span class="hljs-comment">// 4. 渲染层反序列化，进行 VDOM diff</span>
+<span class="hljs-comment">// 5. 更新真实 DOM</span>
+
+<span class="hljs-comment">// setData 性能优化原则：</span>
+Page({
+  <span class="hljs-attr">data</span>: {
+    <span class="hljs-attr">list</span>: [],
+    <span class="hljs-attr">userInfo</span>: {}
+  },
+
+  <span class="hljs-comment">// 反模式：频繁 setData 大量数据</span>
+  badExample() {
+    <span class="hljs-comment">// 每次都传递完整的 list</span>
+    <span class="hljs-keyword">this</span>.setData({ <span class="hljs-attr">list</span>: <span class="hljs-keyword">this</span>.data.list }); <span class="hljs-comment">// 差！</span>
+  },
+
+  <span class="hljs-comment">// 正确做法：路径更新</span>
+  goodExample() {
+    <span class="hljs-comment">// 只更新变化的部分</span>
+    <span class="hljs-keyword">this</span>.setData({
+      <span class="hljs-string">'list[2].name'</span>: <span class="hljs-string">'新名字'</span>,           <span class="hljs-comment">// 精确路径</span>
+      <span class="hljs-string">'userInfo.avatar'</span>: <span class="hljs-string">'new_url.jpg'</span>    <span class="hljs-comment">// 精确路径</span>
+    });
+  },
+
+  <span class="hljs-comment">// 批量更新</span>
+  batchUpdate() {
+    <span class="hljs-comment">// 合并多次 setData 为一次</span>
+    <span class="hljs-keyword">const</span> updates = {};
+    <span class="hljs-keyword">this</span>.data.list.forEach(<span class="hljs-function">(<span class="hljs-params">item, index</span>) =&gt;</span> {
+      <span class="hljs-keyword">if</span> (item.needUpdate) {
+        updates[<span class="hljs-string">`list[<span class="hljs-subst">${index}</span>].status`</span>] = <span class="hljs-string">'done'</span>;
+      }
+    });
+    <span class="hljs-keyword">this</span>.setData(updates); <span class="hljs-comment">// 一次 setData 解决</span>
+  }
+});
+</code></pre>
+<h3 id="42-小程序生命周期">4.2 小程序生命周期</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// App 生命周期</span>
+App({
+  onLaunch(options) {
+    <span class="hljs-comment">// 小程序初始化（全局只触发一次）</span>
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'启动场景值:'</span>, options.scene);
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'启动参数:'</span>, options.query);
+  },
+  onShow(options) {
+    <span class="hljs-comment">// 小程序启动或从后台进入前台</span>
+  },
+  onHide() {
+    <span class="hljs-comment">// 小程序从前台进入后台</span>
+  },
+  onError(msg) {
+    <span class="hljs-comment">// 脚本错误或 API 调用失败</span>
+    <span class="hljs-built_in">console</span>.error(<span class="hljs-string">'全局错误:'</span>, msg);
+  },
+  onUnhandledRejection(res) {
+    <span class="hljs-comment">// 未处理的 Promise rejection</span>
+    <span class="hljs-built_in">console</span>.error(<span class="hljs-string">'未处理的 Promise 错误:'</span>, res.reason);
+  }
+});
+
+<span class="hljs-comment">// Page 生命周期</span>
+Page({
+  onLoad(options) {
+    <span class="hljs-comment">// 页面加载（只触发一次）</span>
+    <span class="hljs-comment">// options 为页面路由参数</span>
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'页面参数:'</span>, options);
+  },
+  onShow() {
+    <span class="hljs-comment">// 页面显示/切入前台</span>
+  },
+  onReady() {
+    <span class="hljs-comment">// 页面初次渲染完成（只触发一次）</span>
+    <span class="hljs-comment">// 可以与视图层进行交互</span>
+  },
+  onHide() {
+    <span class="hljs-comment">// 页面隐藏/切入后台</span>
+  },
+  onUnload() {
+    <span class="hljs-comment">// 页面卸载</span>
+    <span class="hljs-comment">// 清除定时器、取消请求等</span>
+  }
+});
+
+<span class="hljs-comment">// Component 生命周期</span>
+Component({
+  <span class="hljs-attr">lifetimes</span>: {
+    created() {
+      <span class="hljs-comment">// 组件实例被创建（不能调用 setData）</span>
+    },
+    attached() {
+      <span class="hljs-comment">// 组件进入页面节点树（常用，类似 mounted）</span>
+    },
+    ready() {
+      <span class="hljs-comment">// 组件在视图层布局完成</span>
+    },
+    moved() {
+      <span class="hljs-comment">// 组件实例被移动到另一个位置</span>
+    },
+    detached() {
+      <span class="hljs-comment">// 组件从页面节点树移除</span>
+    },
+    error(err) {
+      <span class="hljs-comment">// 组件方法抛出错误</span>
+    }
+  },
+  <span class="hljs-comment">// 组件所在页面的生命周期</span>
+  pageLifetimes: {
+    show() {},
+    hide() {},
+    resize(size) {}
+  }
+});
+</code></pre>
+<h3 id="43-tarouni-app-跨端原理">4.3 Taro/uni-app 跨端原理</h3>
+<p><strong>Taro 3.x 编译原理：</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Taro 3 采用运行时适配方案</span>
+<span class="hljs-comment">// 核心思路：在小程序端实现一套类 DOM/BOM API</span>
+
+<span class="hljs-comment">// 1. 编译阶段：将 React/Vue 代码编译为可在小程序环境运行的代码</span>
+<span class="hljs-comment">// 2. 运行时：通过 taro-runtime 提供 DOM/BOM API 模拟层</span>
+
+<span class="hljs-comment">// Taro React 组件示例</span>
+<span class="hljs-keyword">import</span> { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> { View, Text, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tarojs/components'</span>;
+<span class="hljs-keyword">import</span> Taro <span class="hljs-keyword">from</span> <span class="hljs-string">'@tarojs/taro'</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Index</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  state = {
+    <span class="hljs-attr">count</span>: <span class="hljs-number">0</span>
+  };
+
+  componentDidMount() {
+    <span class="hljs-comment">// 等同于 onReady</span>
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'页面加载完成'</span>);
+  }
+
+  handleClick = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-keyword">this</span>.setState({ <span class="hljs-attr">count</span>: <span class="hljs-keyword">this</span>.state.count + <span class="hljs-number">1</span> });
+    <span class="hljs-comment">// Taro API 调用</span>
+    Taro.showToast({ <span class="hljs-attr">title</span>: <span class="hljs-string">'点击了按钮'</span> });
+  };
+
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">View</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"index"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>计数: {this.state.count}<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.handleClick}</span>&gt;</span>点击+1<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">View</span>&gt;</span></span>
+    );
+  }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Index;
+
+<span class="hljs-comment">// Taro 运行时核心 - 模拟 DOM 操作</span>
+<span class="hljs-comment">// taro-runtime 内部简化版：</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TaroNode</span> </span>{
+  <span class="hljs-keyword">constructor</span>(nodeType) {
+    <span class="hljs-keyword">this</span>.nodeType = nodeType;
+    <span class="hljs-keyword">this</span>.childNodes = [];
+    <span class="hljs-keyword">this</span>.parentNode = <span class="hljs-literal">null</span>;
+  }
+
+  appendChild(child) {
+    child.parentNode = <span class="hljs-keyword">this</span>;
+    <span class="hljs-keyword">this</span>.childNodes.push(child);
+    <span class="hljs-comment">// 触发小程序 setData 更新视图</span>
+    <span class="hljs-keyword">this</span>._enqueueUpdate();
+  }
+
+  _enqueueUpdate() {
+    <span class="hljs-comment">// 收集更新，批量调用 setData</span>
+    <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>._updateTimer) {
+      <span class="hljs-keyword">this</span>._updateTimer = setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+        <span class="hljs-keyword">const</span> page = getCurrentPages().pop();
+        <span class="hljs-keyword">if</span> (page) {
+          page.setData({
+            <span class="hljs-attr">root</span>: <span class="hljs-keyword">this</span>._serialize()
+          });
+        }
+        <span class="hljs-keyword">this</span>._updateTimer = <span class="hljs-literal">null</span>;
+      }, <span class="hljs-number">0</span>);
+    }
+  }
+}
+</code></pre>
+<p><strong>uni-app 跨端原理：</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// uni-app 采用编译时 + 运行时结合的方案</span>
+
+<span class="hljs-comment">// 编译时：将 Vue SFC 编译为各平台代码</span>
+<span class="hljs-comment">// - H5: 标准 Vue 项目</span>
+<span class="hljs-comment">// - 小程序: 转为 WXML/WXSS/JS</span>
+<span class="hljs-comment">// - App: 编译为 weex/nvue 渲染</span>
+
+<span class="hljs-comment">// 条件编译 - 平台差异处理</span>
+<span class="hljs-comment">// #ifdef H5</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'仅在 H5 平台编译'</span>);
+<span class="hljs-comment">// #endif</span>
+
+<span class="hljs-comment">// #ifdef MP-WEIXIN</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'仅在微信小程序编译'</span>);
+<span class="hljs-comment">// #endif</span>
+
+<span class="hljs-comment">// #ifndef APP-PLUS</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'除 App 之外的平台'</span>);
+<span class="hljs-comment">// #endif</span>
+
+<span class="hljs-comment">// uni-app 页面示例</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  data() {
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">list</span>: []
+    };
+  },
+  onLoad(options) {
+    <span class="hljs-comment">// 页面加载 - 小程序生命周期</span>
+    <span class="hljs-keyword">this</span>.loadData();
+  },
+  mounted() {
+    <span class="hljs-comment">// Vue 生命周期 - 也可以使用</span>
+  },
+  <span class="hljs-attr">methods</span>: {
+    <span class="hljs-keyword">async</span> loadData() {
+      <span class="hljs-keyword">const</span> res = <span class="hljs-keyword">await</span> uni.request({
+        <span class="hljs-attr">url</span>: <span class="hljs-string">'https://api.example.com/list'</span>,
+        <span class="hljs-attr">method</span>: <span class="hljs-string">'GET'</span>
+      });
+      <span class="hljs-keyword">this</span>.list = res.data;
+    }
+  }
+};
+</code></pre>
+<h3 id="44-小程序性能优化">4.4 小程序性能优化</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 1. 减少 setData 数据量</span>
+<span class="hljs-comment">// 2. 长列表优化 - 使用 recycle-view</span>
+<span class="hljs-comment">// 3. 图片懒加载</span>
+<span class="hljs-comment">// 4. 分包加载</span>
+
+<span class="hljs-comment">// app.json 分包配置</span>
+<span class="hljs-keyword">const</span> appConfig = {
+  <span class="hljs-string">"pages"</span>: [
+    <span class="hljs-string">"pages/index/index"</span>,    <span class="hljs-comment">// 主包</span>
+    <span class="hljs-string">"pages/user/user"</span>
+  ],
+  <span class="hljs-string">"subpackages"</span>: [
+    {
+      <span class="hljs-string">"root"</span>: <span class="hljs-string">"packageA"</span>,   <span class="hljs-comment">// 分包 A</span>
+      <span class="hljs-string">"pages"</span>: [
+        <span class="hljs-string">"pages/detail/detail"</span>,
+        <span class="hljs-string">"pages/list/list"</span>
+      ]
+    },
+    {
+      <span class="hljs-string">"root"</span>: <span class="hljs-string">"packageB"</span>,   <span class="hljs-comment">// 分包 B</span>
+      <span class="hljs-string">"pages"</span>: [
+        <span class="hljs-string">"pages/cart/cart"</span>
+      ]
+    }
+  ],
+  <span class="hljs-comment">// 独立分包（可以独立于主包运行）</span>
+  <span class="hljs-string">"subpackages"</span>: [
+    {
+      <span class="hljs-string">"root"</span>: <span class="hljs-string">"independent"</span>,
+      <span class="hljs-string">"pages"</span>: [<span class="hljs-string">"pages/landing/landing"</span>],
+      <span class="hljs-string">"independent"</span>: <span class="hljs-literal">true</span>
+    }
+  ],
+  <span class="hljs-comment">// 分包预下载</span>
+  <span class="hljs-string">"preloadRule"</span>: {
+    <span class="hljs-string">"pages/index/index"</span>: {
+      <span class="hljs-string">"network"</span>: <span class="hljs-string">"all"</span>,
+      <span class="hljs-string">"packages"</span>: [<span class="hljs-string">"packageA"</span>]
+    }
+  }
+};
+
+<span class="hljs-comment">// 5. 自定义组件优化</span>
+Component({
+  <span class="hljs-attr">options</span>: {
+    <span class="hljs-attr">pureDataPattern</span>: <span class="hljs-regexp">/^_/</span>  <span class="hljs-comment">// 以 _ 开头的数据不参与渲染</span>
+  },
+  <span class="hljs-attr">data</span>: {
+    <span class="hljs-attr">_rawData</span>: [],       <span class="hljs-comment">// 纯数据字段，不触发视图更新</span>
+    displayList: []     <span class="hljs-comment">// 用于渲染的数据</span>
+  },
+  <span class="hljs-attr">methods</span>: {
+    processData(rawData) {
+      <span class="hljs-keyword">this</span>.setData({
+        <span class="hljs-attr">_rawData</span>: rawData   <span class="hljs-comment">// 不会触发渲染</span>
+      });
+      <span class="hljs-comment">// 只更新需要渲染的数据</span>
+      <span class="hljs-keyword">this</span>.setData({
+        <span class="hljs-attr">displayList</span>: rawData.slice(<span class="hljs-number">0</span>, <span class="hljs-number">20</span>)
+      });
+    }
+  }
+});
+</code></pre>
+<hr></hr>
+<h2 id="五、跨端方案">五、跨端方案</h2>
+<h3 id="51-react-native-新架构">5.1 React Native 新架构</h3>
+<p>React Native 新架构（0.68+）引入了三大核心改进：</p>
+<pre><code>旧架构:
+  JS Thread ──── Bridge (JSON) ──── Native Thread
+
+新架构:
+  JS Thread ──── JSI ──── C++ Host Objects ──── Native Thread
+                  │
+                  ├── Fabric (新渲染引擎)
+                  └── TurboModules (新原生模块系统)
+</code></pre><p><strong>JSI（JavaScript Interface）：</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// JSI 允许 JS 直接调用 C++ 对象，无需 JSON 序列化</span>
+<span class="hljs-comment">// 旧架构：JS -&gt; JSON 序列化 -&gt; Bridge -&gt; JSON 反序列化 -&gt; Native</span>
+<span class="hljs-comment">// 新架构：JS -&gt; JSI -&gt; C++ Host Object -&gt; Native（同步调用）</span>
+
+<span class="hljs-comment">// 旧架构调用原生方法</span>
+<span class="hljs-comment">// NativeModules.DeviceInfo.getDeviceId((id) =&gt; {</span>
+<span class="hljs-comment">//   console.log(id); // 异步回调</span>
+<span class="hljs-comment">// });</span>
+
+<span class="hljs-comment">// 新架构通过 JSI 同步调用</span>
+<span class="hljs-comment">// const id = global.__DeviceInfo.getDeviceId(); // 同步返回</span>
+
+<span class="hljs-comment">// TurboModule 定义示例（TypeScript 接口）</span>
+<span class="hljs-comment">// NativeDeviceInfo.ts</span>
+<span class="hljs-keyword">import</span> type { TurboModule } <span class="hljs-keyword">from</span> <span class="hljs-string">'react-native'</span>;
+<span class="hljs-keyword">import</span> { TurboModuleRegistry } <span class="hljs-keyword">from</span> <span class="hljs-string">'react-native'</span>;
+
+<span class="hljs-keyword">export</span> interface Spec extends TurboModule {
+  getDeviceId(): string;                    <span class="hljs-comment">// 同步方法</span>
+  getBatteryLevel(): <span class="hljs-built_in">Promise</span>&lt;number&gt;;        <span class="hljs-comment">// 异步方法</span>
+  getConstants(): {
+    <span class="hljs-attr">platform</span>: string;
+    osVersion: string;
+  };
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> TurboModuleRegistry.getEnforcing&lt;Spec&gt;(<span class="hljs-string">'DeviceInfo'</span>);
+</code></pre>
+<p><strong>Fabric 渲染引擎：</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Fabric 的核心改进：</span>
+<span class="hljs-comment">// 1. 在 C++ 层创建 Shadow Tree（而非 Java/OC 层）</span>
+<span class="hljs-comment">// 2. 支持同步渲染（消除异步通信导致的 UI 跳跃）</span>
+<span class="hljs-comment">// 3. 支持多优先级渲染（与 React 18 的 Concurrent 特性对齐）</span>
+
+<span class="hljs-comment">// Fabric 渲染流程:</span>
+<span class="hljs-comment">// React Reconciler -&gt; 生成 React Element Tree</span>
+<span class="hljs-comment">// -&gt; Fabric C++ 创建 Shadow Node Tree</span>
+<span class="hljs-comment">// -&gt; Yoga 布局引擎计算布局</span>
+<span class="hljs-comment">// -&gt; 生成 View Flattening 优化后的视图结构</span>
+<span class="hljs-comment">// -&gt; 提交到 Native 主线程渲染</span>
+
+<span class="hljs-comment">// React Native 新架构组件写法</span>
+<span class="hljs-keyword">import</span> React, { useState } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> { View, Text, TouchableOpacity, StyleSheet, FlatList } <span class="hljs-keyword">from</span> <span class="hljs-string">'react-native'</span>;
+
+<span class="hljs-keyword">const</span> App = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  <span class="hljs-keyword">const</span> [items, setItems] = useState(
+    <span class="hljs-built_in">Array</span>.from({ <span class="hljs-attr">length</span>: <span class="hljs-number">100</span> }, (_, i) =&gt; ({
+      <span class="hljs-attr">id</span>: <span class="hljs-built_in">String</span>(i),
+      <span class="hljs-attr">title</span>: <span class="hljs-string">`Item <span class="hljs-subst">${i}</span>`</span>
+    }))
+  );
+
+  <span class="hljs-keyword">const</span> renderItem = <span class="hljs-function">(<span class="hljs-params">{ item }</span>) =&gt;</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">View</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{styles.item}</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{styles.title}</span>&gt;</span>{item.title}<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">View</span>&gt;</span></span>
+  );
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">View</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{styles.container}</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">FlatList</span>
+        <span class="hljs-attr">data</span>=<span class="hljs-string">{items}</span>
+        <span class="hljs-attr">renderItem</span>=<span class="hljs-string">{renderItem}</span>
+        <span class="hljs-attr">keyExtractor</span>=<span class="hljs-string">{item</span> =&gt;</span> item.id}
+        windowSize={5}
+        maxToRenderPerBatch={10}
+        removeClippedSubviews={true}
+        initialNumToRender={10}
+      /&gt;
+    <span class="hljs-tag">&lt;/<span class="hljs-name">View</span>&gt;</span>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: { flex: 1, backgroundColor: '#fff' },
+  item: { padding: 16, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: '#eee' },
+  title: { fontSize: 16, color: '#333' }
+});
+
+export default App;
+</span></code></pre>
+<h3 id="52-flutter-原理">5.2 Flutter 原理</h3>
+<pre><code>Flutter 架构分层:
+
+┌─────────────────────────────────┐
+│        Dart Framework           │
+│  ┌────────┐ ┌────────────────┐  │
+│  │Material│ │   Cupertino    │  │
+│  │Widgets │ │   Widgets      │  │
+│  └────────┘ └────────────────┘  │
+│  ┌───────────────────────────┐  │
+│  │      Widgets Layer        │  │
+│  └───────────────────────────┘  │
+│  ┌───────────────────────────┐  │
+│  │    Rendering Layer        │  │
+│  └───────────────────────────┘  │
+│  ┌───────────────────────────┐  │
+│  │     Dart:ui / Engine      │  │
+│  └───────────────────────────┘  │
+├─────────────────────────────────┤
+│        Engine (C++)             │
+│  ┌──────┐ ┌──────┐ ┌────────┐  │
+│  │Skia  │ │Dart  │ │Platform│  │
+│  │      │ │VM    │ │Channel │  │
+│  └──────┘ └──────┘ └────────┘  │
+├─────────────────────────────────┤
+│     Platform (iOS/Android)      │
+└─────────────────────────────────┘
+</code></pre><pre><code class="lang-dart"><span class="hljs-comment">// Flutter Widget 示例</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">'package:flutter/material.dart'</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CounterPage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">StatefulWidget</span> </span>{
+  <span class="hljs-meta">@override</span>
+  _CounterPageState createState() =&gt; _CounterPageState();
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">_CounterPageState</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">State</span>&lt;<span class="hljs-title">CounterPage</span>&gt; </span>{
+  <span class="hljs-built_in">int</span> _counter = <span class="hljs-number">0</span>;
+
+  <span class="hljs-keyword">void</span> _increment() {
+    <span class="hljs-comment">// setState 触发 Widget 重建</span>
+    <span class="hljs-comment">// Flutter 通过 Element Tree diff 最小化更新</span>
+    setState(() {
+      _counter++;
+    });
+  }
+
+  <span class="hljs-meta">@override</span>
+  Widget build(BuildContext context) {
+    <span class="hljs-keyword">return</span> Scaffold(
+      appBar: AppBar(title: Text(<span class="hljs-string">'Flutter Counter'</span>)),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(<span class="hljs-string">'计数:'</span>, style: TextStyle(fontSize: <span class="hljs-number">18</span>)),
+            Text(
+              <span class="hljs-string">'$_counter'</span>,
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _increment,
+        child: Icon(Icons.add),
+      ),
+    );
+  }
+}
+
+<span class="hljs-comment">// Flutter 三棵树:</span>
+<span class="hljs-comment">// Widget Tree -&gt; Element Tree -&gt; RenderObject Tree</span>
+<span class="hljs-comment">// Widget: 不可变的 UI 配置描述</span>
+<span class="hljs-comment">// Element: Widget 的实例化，管理生命周期</span>
+<span class="hljs-comment">// RenderObject: 负责布局和绘制</span>
+</code></pre>
+<h3 id="53-electron-原理">5.3 Electron 原理</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Electron = Chromium + Node.js + Native APIs</span>
+<span class="hljs-comment">// 主进程(Main Process): Node.js 运行环境，管理窗口</span>
+<span class="hljs-comment">// 渲染进程(Renderer Process): Chromium 运行 Web 页面</span>
+
+<span class="hljs-comment">// main.js - 主进程</span>
+<span class="hljs-keyword">const</span> { app, BrowserWindow, ipcMain } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'electron'</span>);
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+
+<span class="hljs-keyword">let</span> mainWindow;
+
+app.whenReady().then(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  mainWindow = <span class="hljs-keyword">new</span> BrowserWindow({
+    <span class="hljs-attr">width</span>: <span class="hljs-number">1200</span>,
+    <span class="hljs-attr">height</span>: <span class="hljs-number">800</span>,
+    <span class="hljs-attr">webPreferences</span>: {
+      <span class="hljs-attr">preload</span>: path.join(__dirname, <span class="hljs-string">'preload.js'</span>),
+      <span class="hljs-attr">contextIsolation</span>: <span class="hljs-literal">true</span>,  <span class="hljs-comment">// 上下文隔离</span>
+      nodeIntegration: <span class="hljs-literal">false</span>   <span class="hljs-comment">// 禁止渲染进程直接访问 Node</span>
+    }
+  });
+
+  mainWindow.loadFile(<span class="hljs-string">'index.html'</span>);
+});
+
+<span class="hljs-comment">// IPC 通信 - 主进程监听</span>
+ipcMain.handle(<span class="hljs-string">'read-file'</span>, <span class="hljs-keyword">async</span> (event, filePath) =&gt; {
+  <span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>).promises;
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> fs.readFile(filePath, <span class="hljs-string">'utf-8'</span>);
+});
+
+<span class="hljs-comment">// preload.js - 预加载脚本（桥接主进程和渲染进程）</span>
+<span class="hljs-keyword">const</span> { contextBridge, ipcRenderer } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'electron'</span>);
+
+contextBridge.exposeInMainWorld(<span class="hljs-string">'electronAPI'</span>, {
+  <span class="hljs-attr">readFile</span>: <span class="hljs-function">(<span class="hljs-params">path</span>) =&gt;</span> ipcRenderer.invoke(<span class="hljs-string">'read-file'</span>, path),
+  <span class="hljs-attr">onUpdateAvailable</span>: <span class="hljs-function">(<span class="hljs-params">callback</span>) =&gt;</span>
+    ipcRenderer.on(<span class="hljs-string">'update-available'</span>, callback)
+});
+
+<span class="hljs-comment">// renderer.js - 渲染进程</span>
+<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'openBtn'</span>).addEventListener(<span class="hljs-string">'click'</span>, <span class="hljs-keyword">async</span> () =&gt; {
+  <span class="hljs-keyword">const</span> content = <span class="hljs-keyword">await</span> <span class="hljs-built_in">window</span>.electronAPI.readFile(<span class="hljs-string">'./data.json'</span>);
+  <span class="hljs-built_in">console</span>.log(content);
+});
+</code></pre>
+<h3 id="54-跨端方案对比">5.4 跨端方案对比</h3>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>React Native</th>
+<th>Flutter</th>
+<th>小程序</th>
+<th>Electron</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>渲染方式</strong></td>
+<td>原生组件</td>
+<td>Skia 自绘</td>
+<td>WebView</td>
+<td>Chromium</td>
+</tr>
+<tr>
+<td><strong>开发语言</strong></td>
+<td>JavaScript/TS</td>
+<td>Dart</td>
+<td>JS/TS</td>
+<td>JS/TS</td>
+</tr>
+<tr>
+<td><strong>性能</strong></td>
+<td>接近原生</td>
+<td>接近原生</td>
+<td>一般</td>
+<td>较低</td>
+</tr>
+<tr>
+<td><strong>包体积</strong></td>
+<td>较大</td>
+<td>较大</td>
+<td>小</td>
+<td>很大(100MB+)</td>
+</tr>
+<tr>
+<td><strong>热更新</strong></td>
+<td>支持</td>
+<td>受限</td>
+<td>天然支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td><strong>生态</strong></td>
+<td>丰富(npm)</td>
+<td>增长中</td>
+<td>各平台私有</td>
+<td>丰富(npm+Node)</td>
+</tr>
+<tr>
+<td><strong>学习成本</strong></td>
+<td>中(React)</td>
+<td>高(Dart)</td>
+<td>低</td>
+<td>低(Web技术)</td>
+</tr>
+<tr>
+<td><strong>适用场景</strong></td>
+<td>移动App</td>
+<td>高性能App</td>
+<td>轻量应用</td>
+<td>桌面应用</td>
+</tr>
+<tr>
+<td><strong>动画性能</strong></td>
+<td>好</td>
+<td>极好</td>
+<td>一般</td>
+<td>好</td>
+</tr>
+<tr>
+<td><strong>代码共享</strong></td>
+<td>iOS/Android</td>
+<td>iOS/Android/Web/桌面</td>
+<td>多平台小程序</td>
+<td>Windows/Mac/Linux</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="六、性能优化">六、性能优化</h2>
+<h3 id="61-首屏优化">6.1 首屏优化</h3>
+<p><strong>SSR（服务端渲染）：</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Next.js SSR 示例</span>
+<span class="hljs-comment">// pages/index.js</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getServerSideProps</span>(<span class="hljs-params">context</span>) </span>{
+  <span class="hljs-keyword">const</span> res = <span class="hljs-keyword">await</span> fetch(<span class="hljs-string">'https://api.example.com/data'</span>);
+  <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> res.json();
+
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">props</span>: {
+      <span class="hljs-attr">initialData</span>: data,
+      <span class="hljs-attr">timestamp</span>: <span class="hljs-built_in">Date</span>.now()
+    }
+  };
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Home</span>(<span class="hljs-params">{ initialData }</span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>首屏数据<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+        {initialData.map(item =&gt; (
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{item.id}</span>&gt;</span>{item.name}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        ))}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-comment">// Vue 3 SSR 核心流程</span>
+<span class="hljs-comment">// server.js</span>
+<span class="hljs-keyword">import</span> { createSSRApp } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
+<span class="hljs-keyword">import</span> { renderToString } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue/server-renderer'</span>;
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">'./App.vue'</span>;
+
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params">url</span>) </span>{
+  <span class="hljs-keyword">const</span> app = createSSRApp(App);
+  <span class="hljs-comment">// 数据预取</span>
+  <span class="hljs-keyword">const</span> store = createStore();
+  <span class="hljs-keyword">await</span> store.dispatch(<span class="hljs-string">'fetchInitialData'</span>);
+  app.use(store);
+
+  <span class="hljs-keyword">const</span> html = <span class="hljs-keyword">await</span> renderToString(app);
+  <span class="hljs-keyword">const</span> state = store.state;
+
+  <span class="hljs-keyword">return</span> <span class="hljs-string">`
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;head&gt;&lt;title&gt;SSR Page&lt;/title&gt;&lt;/head&gt;
+      &lt;body&gt;
+        &lt;div id="app"&gt;<span class="hljs-subst">${html}</span>&lt;/div&gt;
+        &lt;script&gt;
+          window.__INITIAL_STATE__ = <span class="hljs-subst">${<span class="hljs-built_in">JSON</span>.stringify(state)}</span>
+        &lt;/script&gt;
+        &lt;script src="/client.js"&gt;&lt;/script&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+  `</span>;
+}
+</code></pre>
+<p><strong>骨架屏方案：</strong></p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- 骨架屏 HTML，内联在 index.html 中 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- 骨架屏内容，在 Vue/React 挂载后自动替换 --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"skeleton"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"skeleton-header"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"skeleton-avatar skeleton-animate"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"skeleton-title skeleton-animate"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"skeleton-content"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"skeleton-line skeleton-animate"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 100%"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"skeleton-line skeleton-animate"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 80%"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"skeleton-line skeleton-animate"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 60%"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-comment">/* 骨架屏样式 */</span>
+<span class="hljs-selector-class">.skeleton-animate</span> {
+  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">linear-gradient</span>(
+    90deg,
+    #f2f2f2 25%,
+    #e6e6e6 37%,
+    #f2f2f2 63%
+  );
+  <span class="hljs-attribute">background-size</span>: <span class="hljs-number">400%</span> <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">animation</span>: skeleton-loading <span class="hljs-number">1.4s</span> ease infinite;
+}
+
+@<span class="hljs-keyword">keyframes</span> skeleton-loading {
+  0% { <span class="hljs-attribute">background-position</span>: <span class="hljs-number">100%</span> <span class="hljs-number">50%</span>; }
+  100% { <span class="hljs-attribute">background-position</span>: <span class="hljs-number">0</span> <span class="hljs-number">50%</span>; }
+}
+
+<span class="hljs-selector-class">.skeleton-header</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">align-items</span>: center;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span>;
+}
+
+<span class="hljs-selector-class">.skeleton-avatar</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">48px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">48px</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">12px</span>;
+}
+
+<span class="hljs-selector-class">.skeleton-title</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">150px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span>;
+}
+
+<span class="hljs-selector-class">.skeleton-line</span> {
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">16px</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">12px</span> <span class="hljs-number">16px</span>;
+}
+</code></pre>
+<h3 id="62-图片优化">6.2 图片优化</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// WebP 检测与降级</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">checkWebpSupport</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> img = <span class="hljs-keyword">new</span> Image();
+    img.onload = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      resolve(img.width &gt; <span class="hljs-number">0</span> &amp;&amp; img.height &gt; <span class="hljs-number">0</span>);
+    };
+    img.onerror = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      resolve(<span class="hljs-literal">false</span>);
+    };
+    img.src = <span class="hljs-string">'data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA=='</span>;
+  });
+}
+
+<span class="hljs-comment">// 图片懒加载 - Intersection Observer 方案</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LazyImageLoader</span> </span>{
+  <span class="hljs-keyword">constructor</span>(options = {}) {
+    <span class="hljs-keyword">this</span>.options = {
+      <span class="hljs-attr">rootMargin</span>: <span class="hljs-string">'200px 0px'</span>, <span class="hljs-comment">// 提前 200px 开始加载</span>
+      threshold: <span class="hljs-number">0.01</span>,
+      ...options
+    };
+    <span class="hljs-keyword">this</span>._init();
+  }
+
+  _init() {
+    <span class="hljs-keyword">this</span>.observer = <span class="hljs-keyword">new</span> IntersectionObserver(<span class="hljs-function">(<span class="hljs-params">entries</span>) =&gt;</span> {
+      entries.forEach(<span class="hljs-function"><span class="hljs-params">entry</span> =&gt;</span> {
+        <span class="hljs-keyword">if</span> (entry.isIntersecting) {
+          <span class="hljs-keyword">this</span>._loadImage(entry.target);
+          <span class="hljs-keyword">this</span>.observer.unobserve(entry.target);
+        }
+      });
+    }, <span class="hljs-keyword">this</span>.options);
+
+    <span class="hljs-comment">// 观察所有懒加载图片</span>
+    <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">'img[data-src]'</span>).forEach(<span class="hljs-function"><span class="hljs-params">img</span> =&gt;</span> {
+      <span class="hljs-keyword">this</span>.observer.observe(img);
+    });
+  }
+
+  _loadImage(img) {
+    <span class="hljs-keyword">const</span> src = img.dataset.src;
+    <span class="hljs-keyword">const</span> srcset = img.dataset.srcset;
+
+    <span class="hljs-keyword">if</span> (src) {
+      img.src = src;
+      img.removeAttribute(<span class="hljs-string">'data-src'</span>);
+    }
+    <span class="hljs-keyword">if</span> (srcset) {
+      img.srcset = srcset;
+      img.removeAttribute(<span class="hljs-string">'data-srcset'</span>);
+    }
+
+    img.classList.add(<span class="hljs-string">'loaded'</span>);
+  }
+
+  destroy() {
+    <span class="hljs-keyword">this</span>.observer.disconnect();
+  }
+}
+
+<span class="hljs-comment">// 初始化</span>
+<span class="hljs-keyword">const</span> lazyLoader = <span class="hljs-keyword">new</span> LazyImageLoader();
+</code></pre>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- 响应式图片 + 懒加载 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">picture</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">source</span>
+    <span class="hljs-attr">data-srcset</span>=<span class="hljs-string">"image.webp"</span>
+    <span class="hljs-attr">type</span>=<span class="hljs-string">"image/webp"</span>
+  &gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">source</span>
+    <span class="hljs-attr">data-srcset</span>=<span class="hljs-string">"image.jpg"</span>
+    <span class="hljs-attr">type</span>=<span class="hljs-string">"image/jpeg"</span>
+  &gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+    <span class="hljs-attr">data-src</span>=<span class="hljs-string">"image.jpg"</span>
+    <span class="hljs-attr">alt</span>=<span class="hljs-string">"描述"</span>
+    <span class="hljs-attr">loading</span>=<span class="hljs-string">"lazy"</span>
+    <span class="hljs-attr">class</span>=<span class="hljs-string">"lazy"</span>
+    <span class="hljs-attr">width</span>=<span class="hljs-string">"300"</span>
+    <span class="hljs-attr">height</span>=<span class="hljs-string">"200"</span>
+  &gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">picture</span>&gt;</span>
+</code></pre>
+<h3 id="63-长列表虚拟滚动">6.3 长列表虚拟滚动</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 虚拟滚动核心实现</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">VirtualList</span> </span>{
+  <span class="hljs-keyword">constructor</span>(container, options) {
+    <span class="hljs-keyword">this</span>.container = container;
+    <span class="hljs-keyword">this</span>.itemHeight = options.itemHeight;
+    <span class="hljs-keyword">this</span>.totalItems = options.totalItems;
+    <span class="hljs-keyword">this</span>.renderItem = options.renderItem;
+    <span class="hljs-keyword">this</span>.bufferSize = options.bufferSize || <span class="hljs-number">5</span>;
+
+    <span class="hljs-keyword">this</span>.totalHeight = <span class="hljs-keyword">this</span>.itemHeight * <span class="hljs-keyword">this</span>.totalItems;
+    <span class="hljs-keyword">this</span>.visibleCount = <span class="hljs-built_in">Math</span>.ceil(container.clientHeight / <span class="hljs-keyword">this</span>.itemHeight);
+
+    <span class="hljs-keyword">this</span>._init();
+  }
+
+  _init() {
+    <span class="hljs-comment">// 创建滚动占位容器</span>
+    <span class="hljs-keyword">this</span>.phantom = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+    <span class="hljs-keyword">this</span>.phantom.style.height = <span class="hljs-string">`<span class="hljs-subst">${<span class="hljs-keyword">this</span>.totalHeight}</span>px`</span>;
+
+    <span class="hljs-comment">// 创建内容容器</span>
+    <span class="hljs-keyword">this</span>.content = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+    <span class="hljs-keyword">this</span>.content.style.position = <span class="hljs-string">'relative'</span>;
+
+    <span class="hljs-keyword">this</span>.container.style.overflow = <span class="hljs-string">'auto'</span>;
+    <span class="hljs-keyword">this</span>.container.appendChild(<span class="hljs-keyword">this</span>.phantom);
+    <span class="hljs-keyword">this</span>.container.appendChild(<span class="hljs-keyword">this</span>.content);
+
+    <span class="hljs-comment">// 绑定滚动事件</span>
+    <span class="hljs-keyword">this</span>.container.addEventListener(<span class="hljs-string">'scroll'</span>, <span class="hljs-keyword">this</span>._onScroll.bind(<span class="hljs-keyword">this</span>), { <span class="hljs-attr">passive</span>: <span class="hljs-literal">true</span> });
+
+    <span class="hljs-comment">// 首次渲染</span>
+    <span class="hljs-keyword">this</span>._render(<span class="hljs-number">0</span>);
+  }
+
+  _onScroll() {
+    <span class="hljs-keyword">const</span> scrollTop = <span class="hljs-keyword">this</span>.container.scrollTop;
+    <span class="hljs-keyword">const</span> startIndex = <span class="hljs-built_in">Math</span>.floor(scrollTop / <span class="hljs-keyword">this</span>.itemHeight);
+    <span class="hljs-keyword">this</span>._render(startIndex);
+  }
+
+  _render(startIndex) {
+    <span class="hljs-comment">// 计算可见范围（含缓冲区）</span>
+    <span class="hljs-keyword">const</span> start = <span class="hljs-built_in">Math</span>.max(<span class="hljs-number">0</span>, startIndex - <span class="hljs-keyword">this</span>.bufferSize);
+    <span class="hljs-keyword">const</span> end = <span class="hljs-built_in">Math</span>.min(
+      <span class="hljs-keyword">this</span>.totalItems,
+      startIndex + <span class="hljs-keyword">this</span>.visibleCount + <span class="hljs-keyword">this</span>.bufferSize
+    );
+
+    <span class="hljs-comment">// 清空并重新渲染</span>
+    <span class="hljs-keyword">this</span>.content.innerHTML = <span class="hljs-string">''</span>;
+    <span class="hljs-keyword">this</span>.content.style.transform = <span class="hljs-string">`translateY(<span class="hljs-subst">${start * <span class="hljs-keyword">this</span>.itemHeight}</span>px)`</span>;
+
+    <span class="hljs-keyword">const</span> fragment = <span class="hljs-built_in">document</span>.createDocumentFragment();
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = start; i &lt; end; i++) {
+      <span class="hljs-keyword">const</span> item = <span class="hljs-keyword">this</span>.renderItem(i);
+      item.style.height = <span class="hljs-string">`<span class="hljs-subst">${<span class="hljs-keyword">this</span>.itemHeight}</span>px`</span>;
+      fragment.appendChild(item);
+    }
+    <span class="hljs-keyword">this</span>.content.appendChild(fragment);
+  }
+}
+
+<span class="hljs-comment">// 使用示例</span>
+<span class="hljs-keyword">const</span> list = <span class="hljs-keyword">new</span> VirtualList(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'listContainer'</span>), {
+  <span class="hljs-attr">itemHeight</span>: <span class="hljs-number">60</span>,
+  <span class="hljs-attr">totalItems</span>: <span class="hljs-number">100000</span>,
+  <span class="hljs-attr">bufferSize</span>: <span class="hljs-number">5</span>,
+  renderItem(index) {
+    <span class="hljs-keyword">const</span> div = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+    div.className = <span class="hljs-string">'list-item'</span>;
+    div.textContent = <span class="hljs-string">`Item <span class="hljs-subst">${index}</span>`</span>;
+    <span class="hljs-keyword">return</span> div;
+  }
+});
+</code></pre>
+<p><strong>React 虚拟列表组件：</strong></p>
+<pre><code class="lang-jsx"><span class="hljs-keyword">import</span> React, { useState, useRef, useCallback, useMemo } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">VirtualList</span>(<span class="hljs-params">{ items, itemHeight, containerHeight, renderItem }</span>) </span>{
+  <span class="hljs-keyword">const</span> [scrollTop, setScrollTop] = useState(<span class="hljs-number">0</span>);
+  <span class="hljs-keyword">const</span> containerRef = useRef(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-keyword">const</span> visibleCount = <span class="hljs-built_in">Math</span>.ceil(containerHeight / itemHeight);
+  <span class="hljs-keyword">const</span> buffer = <span class="hljs-number">5</span>;
+  <span class="hljs-keyword">const</span> startIndex = <span class="hljs-built_in">Math</span>.max(<span class="hljs-number">0</span>, <span class="hljs-built_in">Math</span>.floor(scrollTop / itemHeight) - buffer);
+  <span class="hljs-keyword">const</span> endIndex = <span class="hljs-built_in">Math</span>.min(items.length, startIndex + visibleCount + <span class="hljs-number">2</span> * buffer);
+  <span class="hljs-keyword">const</span> totalHeight = items.length * itemHeight;
+  <span class="hljs-keyword">const</span> offsetY = startIndex * itemHeight;
+
+  <span class="hljs-keyword">const</span> visibleItems = useMemo(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span>
+    items.slice(startIndex, endIndex),
+    [items, startIndex, endIndex]
+  );
+
+  <span class="hljs-keyword">const</span> handleScroll = useCallback(<span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> {
+    setScrollTop(e.target.scrollTop);
+  }, []);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+      <span class="hljs-attr">ref</span>=<span class="hljs-string">{containerRef}</span>
+      <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">height:</span> <span class="hljs-attr">containerHeight</span>, <span class="hljs-attr">overflow:</span> '<span class="hljs-attr">auto</span>' }}
+      <span class="hljs-attr">onScroll</span>=<span class="hljs-string">{handleScroll}</span>
+    &gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">height:</span> <span class="hljs-attr">totalHeight</span>, <span class="hljs-attr">position:</span> '<span class="hljs-attr">relative</span>' }}&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">transform:</span> `<span class="hljs-attr">translateY</span>(${<span class="hljs-attr">offsetY</span>}<span class="hljs-attr">px</span>)` }}&gt;</span>
+          {visibleItems.map((item, i) =&gt; (
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{startIndex</span> + <span class="hljs-attr">i</span>} <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">height:</span> <span class="hljs-attr">itemHeight</span> }}&gt;</span>
+              {renderItem(item, startIndex + i)}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          ))}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> React.memo(VirtualList);
+</code></pre>
+<h3 id="64-弱网优化策略">6.4 弱网优化策略</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 网络状态检测</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NetworkMonitor</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.type = <span class="hljs-string">'unknown'</span>;
+    <span class="hljs-keyword">this</span>.effectiveType = <span class="hljs-string">'4g'</span>;
+    <span class="hljs-keyword">this</span>.onchange = <span class="hljs-literal">null</span>;
+    <span class="hljs-keyword">this</span>._init();
+  }
+
+  _init() {
+    <span class="hljs-keyword">const</span> connection = navigator.connection ||
+                       navigator.mozConnection ||
+                       navigator.webkitConnection;
+
+    <span class="hljs-keyword">if</span> (connection) {
+      <span class="hljs-keyword">this</span>.type = connection.type;               <span class="hljs-comment">// wifi, cellular 等</span>
+      <span class="hljs-keyword">this</span>.effectiveType = connection.effectiveType; <span class="hljs-comment">// slow-2g, 2g, 3g, 4g</span>
+      <span class="hljs-keyword">this</span>.downlink = connection.downlink;        <span class="hljs-comment">// 下行带宽 Mbps</span>
+      <span class="hljs-keyword">this</span>.rtt = connection.rtt;                  <span class="hljs-comment">// 往返时间 ms</span>
+
+      connection.addEventListener(<span class="hljs-string">'change'</span>, () =&gt; {
+        <span class="hljs-keyword">this</span>.type = connection.type;
+        <span class="hljs-keyword">this</span>.effectiveType = connection.effectiveType;
+        <span class="hljs-keyword">this</span>.onchange &amp;&amp; <span class="hljs-keyword">this</span>.onchange(<span class="hljs-keyword">this</span>);
+      });
+    }
+  }
+
+  isSlowNetwork() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.effectiveType === <span class="hljs-string">'slow-2g'</span> ||
+           <span class="hljs-keyword">this</span>.effectiveType === <span class="hljs-string">'2g'</span> ||
+           <span class="hljs-keyword">this</span>.rtt &gt; <span class="hljs-number">500</span>;
+  }
+}
+
+<span class="hljs-comment">// 弱网请求策略</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RequestManager</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.networkMonitor = <span class="hljs-keyword">new</span> NetworkMonitor();
+    <span class="hljs-keyword">this</span>.retryConfig = {
+      <span class="hljs-attr">maxRetries</span>: <span class="hljs-number">3</span>,
+      <span class="hljs-attr">baseDelay</span>: <span class="hljs-number">1000</span>,
+      <span class="hljs-attr">maxDelay</span>: <span class="hljs-number">10000</span>
+    };
+    <span class="hljs-keyword">this</span>.pendingRequests = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
+  }
+
+  <span class="hljs-comment">// 带重试的请求</span>
+  <span class="hljs-keyword">async</span> fetchWithRetry(url, options = {}, retryCount = <span class="hljs-number">0</span>) {
+    <span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> AbortController();
+    <span class="hljs-keyword">const</span> timeout = <span class="hljs-keyword">this</span>.networkMonitor.isSlowNetwork() ? <span class="hljs-number">15000</span> : <span class="hljs-number">8000</span>;
+
+    <span class="hljs-keyword">const</span> timeoutId = setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> controller.abort(), timeout);
+
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> fetch(url, {
+        ...options,
+        <span class="hljs-attr">signal</span>: controller.signal
+      });
+      clearTimeout(timeoutId);
+
+      <span class="hljs-keyword">if</span> (!response.ok &amp;&amp; retryCount &lt; <span class="hljs-keyword">this</span>.retryConfig.maxRetries) {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._retry(url, options, retryCount);
+      }
+      <span class="hljs-keyword">return</span> response;
+    } <span class="hljs-keyword">catch</span> (error) {
+      clearTimeout(timeoutId);
+
+      <span class="hljs-keyword">if</span> (retryCount &lt; <span class="hljs-keyword">this</span>.retryConfig.maxRetries) {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._retry(url, options, retryCount);
+      }
+
+      <span class="hljs-comment">// 尝试从缓存读取</span>
+      <span class="hljs-keyword">const</span> cached = <span class="hljs-keyword">await</span> <span class="hljs-keyword">this</span>._getFromCache(url);
+      <span class="hljs-keyword">if</span> (cached) {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'使用缓存数据:'</span>, url);
+        <span class="hljs-keyword">return</span> cached;
+      }
+
+      <span class="hljs-keyword">throw</span> error;
+    }
+  }
+
+  <span class="hljs-keyword">async</span> _retry(url, options, retryCount) {
+    <span class="hljs-comment">// 指数退避</span>
+    <span class="hljs-keyword">const</span> delay = <span class="hljs-built_in">Math</span>.min(
+      <span class="hljs-keyword">this</span>.retryConfig.baseDelay * <span class="hljs-built_in">Math</span>.pow(<span class="hljs-number">2</span>, retryCount),
+      <span class="hljs-keyword">this</span>.retryConfig.maxDelay
+    );
+    <span class="hljs-keyword">await</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-params">resolve</span> =&gt;</span> setTimeout(resolve, delay));
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.fetchWithRetry(url, options, retryCount + <span class="hljs-number">1</span>);
+  }
+
+  <span class="hljs-keyword">async</span> _getFromCache(url) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-string">'caches'</span> <span class="hljs-keyword">in</span> <span class="hljs-built_in">window</span>) {
+      <span class="hljs-keyword">const</span> cache = <span class="hljs-keyword">await</span> caches.open(<span class="hljs-string">'api-cache'</span>);
+      <span class="hljs-keyword">return</span> cache.match(url);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+  }
+
+  <span class="hljs-comment">// 弱网降级策略</span>
+  getImageQuality() {
+    <span class="hljs-keyword">switch</span> (<span class="hljs-keyword">this</span>.networkMonitor.effectiveType) {
+      <span class="hljs-keyword">case</span> <span class="hljs-string">'slow-2g'</span>:
+      <span class="hljs-keyword">case</span> <span class="hljs-string">'2g'</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'thumbnail'</span>;  <span class="hljs-comment">// 缩略图</span>
+      <span class="hljs-keyword">case</span> <span class="hljs-string">'3g'</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'medium'</span>;     <span class="hljs-comment">// 中等质量</span>
+      <span class="hljs-keyword">default</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'high'</span>;       <span class="hljs-comment">// 高质量</span>
+    }
+  }
+
+  <span class="hljs-comment">// 请求优先级队列</span>
+  enqueueRequest(url, options, priority = <span class="hljs-string">'normal'</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+      <span class="hljs-keyword">this</span>.pendingRequests.set(url, {
+        url, options, priority, resolve, reject
+      });
+      <span class="hljs-keyword">this</span>._processQueue();
+    });
+  }
+
+  _processQueue() {
+    <span class="hljs-keyword">const</span> sorted = [...this.pendingRequests.values()]
+      .sort(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> {
+        <span class="hljs-keyword">const</span> priorityMap = { <span class="hljs-attr">high</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">normal</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">low</span>: <span class="hljs-number">1</span> };
+        <span class="hljs-keyword">return</span> priorityMap[b.priority] - priorityMap[a.priority];
+      });
+
+    <span class="hljs-comment">// 弱网下限制并发数</span>
+    <span class="hljs-keyword">const</span> concurrency = <span class="hljs-keyword">this</span>.networkMonitor.isSlowNetwork() ? <span class="hljs-number">2</span> : <span class="hljs-number">6</span>;
+    <span class="hljs-keyword">const</span> batch = sorted.slice(<span class="hljs-number">0</span>, concurrency);
+
+    batch.forEach(<span class="hljs-function"><span class="hljs-params">req</span> =&gt;</span> {
+      <span class="hljs-keyword">this</span>.fetchWithRetry(req.url, req.options)
+        .then(req.resolve)
+        .catch(req.reject)
+        .finally(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+          <span class="hljs-keyword">this</span>.pendingRequests.delete(req.url);
+        });
+    });
+  }
+}
+
+<span class="hljs-comment">// 使用</span>
+<span class="hljs-keyword">const</span> reqManager = <span class="hljs-keyword">new</span> RequestManager();
+<span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> reqManager.fetchWithRetry(<span class="hljs-string">'/api/data'</span>);
+</code></pre>
+<hr></hr>
+<h2 id="七、高频面试题">七、高频面试题</h2>
+<h3 id="面试题-1：移动端-1px-问题的本质是什么？如何解决？">面试题 1：移动端 1px 问题的本质是什么？如何解决？</h3>
+<p><strong>答：</strong> 1px 问题的本质是 CSS 像素与物理像素的比值差异。在 DPR=2 的设备上，CSS 的 1px 会用 2 个物理像素渲染，导致视觉上线条偏粗。</p>
+<p>推荐方案是<strong>伪元素 + transform: scaleY(0.5)</strong>，兼容性好且不影响布局。</p>
+<hr></hr>
+<h3 id="面试题-2：rem-和-vw-方案各自的优缺点？">面试题 2：rem 和 vw 方案各自的优缺点？</h3>
+<p><strong>答：</strong></p>
+<ul>
+<li><strong>rem 方案</strong>：需要 JS 动态计算根字体大小；可以设置最大宽度限制；兼容性好（IE9+）；但存在 JS 未加载时的闪烁问题。</li>
+<li><strong>vw 方案</strong>：纯 CSS 实现，不依赖 JS；但无法方便地限制最大宽度；在 PC 端预览会过度放大；兼容性稍差（iOS 8+/Android 4.4+）。</li>
+</ul>
+<p>现代项目推荐 <strong>vw + rem</strong> 混合方案：用 vw 设置根字体大小，用 rem 编写样式。</p>
+<hr></hr>
+<h3 id="面试题-3：300ms-延迟的原因和最佳解决方案？">面试题 3：300ms 延迟的原因和最佳解决方案？</h3>
+<p><strong>答：</strong> 浏览器为判断用户是否双击缩放，在 touchend 后等待 300ms 才触发 click。现代浏览器推荐使用 CSS <code>touch-action: manipulation</code> 解决，无需引入 FastClick。</p>
+<hr></hr>
+<h3 id="面试题-4：什么是点击穿透？如何解决？">面试题 4：什么是点击穿透？如何解决？</h3>
+<p><strong>答：</strong> 上层元素在 touchend 中消失后，300ms 后触发的 click 事件落在了下层元素上。解决方案：(1) 统一使用 click 事件；(2) 使用 <code>e.preventDefault()</code>；(3) 延迟 350ms 隐藏上层元素；(4) 使用 <code>pointer-events: none</code> 临时禁用下层点击。</p>
+<hr></hr>
+<h3 id="面试题-5：jsbridge-的三种实现方式及优缺点？">面试题 5：JSBridge 的三种实现方式及优缺点？</h3>
+<p><strong>答：</strong></p>
+<ol>
+<li><strong>URL Scheme 拦截</strong>：兼容性最好，但长度有限制，且调用有延迟（需创建 iframe）。</li>
+<li><strong>postMessage</strong>：WKWebView 原生支持，性能好，但仅 iOS 支持原生 API。</li>
+<li><strong>注入全局 API</strong>：通过 Native 向 WebView 注入全局对象，调用直接且支持同步，是目前最推荐的方案。</li>
+</ol>
+<hr></hr>
+<h3 id="面试题-6：小程序双线程模型的优缺点？">面试题 6：小程序双线程模型的优缺点？</h3>
+<p><strong>答：</strong></p>
+<ul>
+<li><strong>优点</strong>：逻辑层和渲染层隔离，防止开发者直接操作 DOM（安全性）；渲染不受 JS 执行阻塞（渲染性能）。</li>
+<li><strong>缺点</strong>：线程间通信需要序列化，setData 数据量大时性能差；无法直接操作 DOM，灵活性受限；不支持同步 DOM API（如 getBoundingClientRect 需异步查询）。</li>
+</ul>
+<hr></hr>
+<h3 id="面试题-7：小程序-setdata-的性能优化技巧？">面试题 7：小程序 setData 的性能优化技巧？</h3>
+<p><strong>答：</strong></p>
+<ol>
+<li><strong>减少数据量</strong>：只传递变更的数据，使用路径更新 <code>this.setData({ 'list[0].name': 'xxx' })</code></li>
+<li><strong>减少频率</strong>：合并多次 setData 为一次</li>
+<li><strong>使用纯数据字段</strong>：<code>pureDataPattern</code> 标记不参与渲染的数据</li>
+<li><strong>避免后台页面 setData</strong>：页面不可见时暂存数据，onShow 时再更新</li>
+<li><strong>列表场景</strong>：使用 recycle-view 组件实现虚拟列表</li>
+</ol>
+<hr></hr>
+<h3 id="面试题-8：taro-3-和-uni-app-的跨端原理有何区别？">面试题 8：Taro 3 和 uni-app 的跨端原理有何区别？</h3>
+<p><strong>答：</strong></p>
+<ul>
+<li><strong>Taro 3</strong> 采用<strong>运行时适配</strong>方案，在小程序端实现了一套类 DOM/BOM API（taro-runtime），React/Vue 代码通过这层运行时间接操作小程序视图。优点是框架兼容性好，缺点是运行时开销较大。</li>
+<li><strong>uni-app</strong> 采用<strong>编译时+运行时</strong>混合方案，在编译阶段将 Vue SFC 转换为各平台原生代码（WXML/WXSS），运行时补充条件编译。编译产物更接近原生，性能更好，但框架绑定为 Vue。</li>
+</ul>
+<hr></hr>
+<h3 id="面试题-9：react-native-新架构中-jsi-解决了什么问题？">面试题 9：React Native 新架构中 JSI 解决了什么问题？</h3>
+<p><strong>答：</strong> 旧架构中 JS和 Native 通过 Bridge 通信，需要 JSON 序列化/反序列化，存在三个问题：(1) 序列化开销大；(2) 所有调用都是异步的；(3) 数据拷贝导致内存浪费。JSI 让 JS 直接持有 C++ Host Object 引用，可以同步调用 Native 方法，消除了序列化开销，是新架构的核心基础。</p>
+<hr></hr>
+<h3 id="面试题-10：flutter-为什么性能好？和-rn-有何本质区别？">面试题 10：Flutter 为什么性能好？和 RN 有何本质区别？</h3>
+<p><strong>答：</strong> Flutter 通过 Skia 引擎自绘 UI，不依赖平台原生组件，渲染链路更短且统一。RN 需要将 Virtual DOM 映射为原生组件，中间经过 Bridge/JSI 通信。Flutter 的 Dart AOT 编译为机器码，RN 的 JS 需要 JIT/解释执行。Flutter 的三棵树（Widget/Element/RenderObject）对应更直接的渲染流水线，而 RN 需要跨线程协调。</p>
+<hr></hr>
+<h3 id="面试题-11：如何实现移动端首屏优化？">面试题 11：如何实现移动端首屏优化？</h3>
+<p><strong>答：</strong> 多维度优化：</p>
+<ol>
+<li><strong>网络层</strong>：CDN、HTTP/2、资源预加载（preload/prefetch）、DNS 预解析</li>
+<li><strong>资源层</strong>：代码分割、Tree Shaking、图片 WebP、字体子集化</li>
+<li><strong>渲染层</strong>：SSR/SSG、骨架屏、关键 CSS 内联、异步加载非关键资源</li>
+<li><strong>缓存层</strong>：Service Worker、HTTP 强缓存/协商缓存、接口数据缓存</li>
+<li><strong>体验层</strong>：骨架屏过渡、渐进式加载、离线包方案</li>
+</ol>
+<hr></hr>
+<h3 id="面试题-12：虚拟列表的原理是什么？">面试题 12：虚拟列表的原理是什么？</h3>
+<p><strong>答：</strong> 虚拟列表的核心思想是<strong>只渲染可视区域内的元素</strong>。通过一个占位容器撑开滚动高度，监听 scroll 事件计算当前可见的起止索引，仅渲染该范围（加上缓冲区）内的 DOM 元素。当用户滚动时，动态替换渲染内容。这样无论数据量多大，DOM 节点数始终保持在常量级别。</p>
+<hr></hr>
+<h3 id="面试题-13：移动端如何检测和优化弱网体验？">面试题 13：移动端如何检测和优化弱网体验？</h3>
+<p><strong>答：</strong></p>
+<ol>
+<li><strong>检测</strong>：通过 <code>navigator.connection.effectiveType</code> 和 <code>rtt</code> 判断网络质量</li>
+<li><strong>请求优化</strong>：超时控制、指数退避重试、请求优先级队列、并发数限制</li>
+<li><strong>资源降级</strong>：弱网下加载低质量图片、简化动画、关闭非关键功能</li>
+<li><strong>离线支持</strong>：Service Worker 缓存关键资源、接口数据本地缓存</li>
+<li><strong>用户反馈</strong>：加载状态提示、离线状态提醒、手动重试入口</li>
+</ol>
+<hr></hr>
+<h3 id="面试题-14：envsafe-area-inset-bottom-和-constant-有什么区别？">面试题 14：env(safe-area-inset-bottom) 和 constant() 有什么区别？</h3>
+<p><strong>答：</strong> 两者功能相同，都是获取安全区域的间距值。<code>constant()</code> 是 iOS 11.0-11.2 的语法，<code>env()</code> 是 iOS 11.2+ 的标准语法。为了兼容，应同时书写两行，且 <code>constant()</code> 写在前面（CSS 后声明覆盖）。使用前必须设置 <code>viewport-fit=cover</code>。</p>
+<hr></hr>
+<h3 id="面试题-15：passive-事件监听器的作用是什么？">面试题 15：passive 事件监听器的作用是什么？</h3>
+<p><strong>答：</strong> 当添加 <code>{ passive: true }</code> 时，告知浏览器该事件处理器不会调用 <code>preventDefault()</code>。这样浏览器在等待 JS 执行的同时就可以开始滚动渲染，不需要等 JS 执行完毕确认是否阻止默认行为。对 touchmove/wheel 等高频事件，能显著提升滚动流畅度。Chrome 56+ 默认 <code>touchstart</code> 和 <code>touchmove</code> 为 passive。</p>
+<hr></hr>
+<h3 id="面试题-16：hybrid-app-离线包方案的完整流程是什么？">面试题 16：Hybrid App 离线包方案的完整流程是什么？</h3>
+<p><strong>答：</strong></p>
+<ol>
+<li><strong>构建阶段</strong>：前端打包生成静态资源，按业务模块拆分，生成版本号和 MD5 校验</li>
+<li><strong>发布阶段</strong>：上传离线包到 CDN，下发配置（包含版本号、下载地址、增量/全量包）</li>
+<li><strong>下载阶段</strong>：App 启动时/定期检查更新，WiFi 下预下载，支持增量更新（bsdiff）</li>
+<li><strong>加载阶段</strong>：WebView 拦截请求，优先从本地离线包读取资源，miss 则走网络</li>
+<li><strong>回退机制</strong>：离线包校验失败或加载异常时，降级走线上 CDN</li>
+</ol>
+<hr></hr>
+<h3 id="面试题-17：移动端-h5-如何处理键盘弹起导致的页面布局问题？">面试题 17：移动端 H5 如何处理键盘弹起导致的页面布局问题？</h3>
+<p><strong>答：</strong></p>
+<ul>
+<li><strong>Android</strong>：键盘弹起会触发 <code>resize</code> 事件并改变 <code>window.innerHeight</code>，通过对比高度变化判断键盘状态，动态调整固定定位元素</li>
+<li><strong>iOS</strong>：键盘弹起不改变视口高度，而是将页面整体上推。需要监听 <code>focus/blur</code> 事件，使用 <code>scrollIntoView</code> 确保输入框可见，键盘收起后手动触发 <code>window.scrollTo</code> 修复页面不回弹的问题</li>
+<li><strong>通用方案</strong>：键盘弹起时将固定底部栏改为 <code>position: static</code>，使用 <code>visualViewport API</code> 精确获取可视区域</li>
+</ul>
+<hr></hr>
+<h3 id="面试题-18：vuereact-模板中的双花括号和-liquidjekyll-模板冲突如何处理？">面试题 18：Vue/React 模板中的双花括号和 Liquid/Jekyll 模板冲突如何处理？</h3>
+<p><strong>答：</strong> 使用 raw 标签包裹即可避免模板引擎解析冲突：</p>
+<pre><code class="lang-html">{% raw %}
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>{{ message }}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{{ count + 1 }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+{% endraw %}
+</code></pre>
+<p>在 Vue 组件中示例：</p>
+<pre><code class="lang-vue">{% raw %}
+&lt;template&gt;
+  &lt;div class="app"&gt;
+    &lt;h1&gt;{{ title }}&lt;/h1&gt;
+    &lt;p&gt;计数: {{ count }}&lt;/p&gt;
+    &lt;button @click="count++"&gt;+1&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+{% endraw %}
+</code></pre>
+<p>React JSX 中使用花括号：</p>
+<pre><code class="lang-jsx">{% raw %}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> [count, setCount] = useState(<span class="hljs-number">0</span>);
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Count: {count}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Double: {count * 2}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+{% endraw %}
+</code></pre>
+<hr></hr>
+<blockquote>
+<p><strong>总结</strong>：移动端 H5 开发涉及适配、交互、通信、跨端、性能等多个维度。面试中需要深入理解每个方案的原理、优缺点和适用场景，并能结合实际项目经验给出最佳实践。建议重点掌握：(1) 适配方案的选型依据；(2) JSBridge 的通信原理；(3) 跨端框架的本质区别；(4) 性能优化的系统方法论。</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="micro-frontend.html" class="navigation navigation-prev " aria-label="Previous page: 微前端与微模块">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="state-management.html" class="navigation navigation-next " aria-label="Next page: 状态管理深度解析">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"移动端H5开发","level":"2.12","depth":1,"next":{"title":"状态管理深度解析","level":"2.13","depth":1,"path":"frontend/state-management.md","ref":"frontend/state-management.md","articles":[]},"previous":{"title":"微前端与微模块","level":"2.11","depth":1,"path":"frontend/micro-frontend.md","ref":"frontend/micro-frontend.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"frontend/mobile-dev.md","mtime":"2026-03-31T12:30:30.417Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

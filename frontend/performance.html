@@ -3,10 +3,11 @@
 <html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>性能优化 · 全栈开发面试指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="generator" content="GitBook 6.1.7">
         
         
         
@@ -16,19 +17,23 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -69,10 +74,14 @@
     </head>
     <body>
         
-<div class="book honkit-cloak">
+<div class="book">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -269,6 +278,66 @@
             
         </li>
     
+        <li class="chapter " data-level="2.11" data-path="micro-frontend.html">
+            
+                <a href="micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="mobile-dev.html">
+            
+                <a href="mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="state-management.html">
+            
+                <a href="state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="design-patterns.html">
+            
+                <a href="design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -359,6 +428,21 @@
                         <b>3.6.</b>
                     
                     最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../nodejs/serverless.html">
+            
+                <a href="../nodejs/serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
             
                 </a>
             
@@ -463,6 +547,21 @@
             
         </li>
     
+        <li class="chapter " data-level="4.7" data-path="../golang/cloud-native.html">
+            
+                <a href="../golang/cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -553,6 +652,21 @@
                         <b>5.6.</b>
                     
                     实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../agent/evaluation.html">
+            
+                <a href="../agent/evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
             
                 </a>
             
@@ -657,14 +771,29 @@
             
         </li>
     
+        <li class="chapter " data-level="6.7" data-path="../algorithm/system-design.html">
+            
+                <a href="../algorithm/system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
     <li class="divider"></li>
 
     <li>
-        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
-            本书使用 HonKit 发布
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -697,6 +826,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="前端性能优化面试指南">前端性能优化面试指南</h1>
@@ -792,26 +924,26 @@
 <pre><code class="lang-javascript"><span class="hljs-comment">// 使用 web-vitals 库采集</span>
 <span class="hljs-keyword">import</span> { onLCP, onFID, onCLS, onINP, onFCP, onTTFB } <span class="hljs-keyword">from</span> <span class="hljs-string">'web-vitals'</span>;
 
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">reportMetric</span>(<span class="hljs-params">metric</span>) {
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(metric.<span class="hljs-property">name</span>, metric.<span class="hljs-property">value</span>, metric.<span class="hljs-property">rating</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reportMetric</span>(<span class="hljs-params">metric</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(metric.name, metric.value, metric.rating);
   <span class="hljs-comment">// 上报到监控平台</span>
-  navigator.<span class="hljs-title function_">sendBeacon</span>(<span class="hljs-string">'/analytics'</span>, <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(metric));
+  navigator.sendBeacon(<span class="hljs-string">'/analytics'</span>, <span class="hljs-built_in">JSON</span>.stringify(metric));
 }
 
-<span class="hljs-title function_">onLCP</span>(reportMetric);
-<span class="hljs-title function_">onFID</span>(reportMetric);
-<span class="hljs-title function_">onCLS</span>(reportMetric);
-<span class="hljs-title function_">onINP</span>(reportMetric);
-<span class="hljs-title function_">onFCP</span>(reportMetric);
-<span class="hljs-title function_">onTTFB</span>(reportMetric);
+onLCP(reportMetric);
+onFID(reportMetric);
+onCLS(reportMetric);
+onINP(reportMetric);
+onFCP(reportMetric);
+onTTFB(reportMetric);
 </code></pre>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 使用 PerformanceObserver 原生采集 LCP</span>
-<span class="hljs-keyword">const</span> observer = <span class="hljs-keyword">new</span> <span class="hljs-title class_">PerformanceObserver</span>(<span class="hljs-function">(<span class="hljs-params">entryList</span>) =&gt;</span> {
-  <span class="hljs-keyword">const</span> entries = entryList.<span class="hljs-title function_">getEntries</span>();
-  <span class="hljs-keyword">const</span> lastEntry = entries[entries.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>];
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'LCP:'</span>, lastEntry.<span class="hljs-property">startTime</span>);
+<span class="hljs-keyword">const</span> observer = <span class="hljs-keyword">new</span> PerformanceObserver(<span class="hljs-function">(<span class="hljs-params">entryList</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> entries = entryList.getEntries();
+  <span class="hljs-keyword">const</span> lastEntry = entries[entries.length - <span class="hljs-number">1</span>];
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'LCP:'</span>, lastEntry.startTime);
 });
-observer.<span class="hljs-title function_">observe</span>({ <span class="hljs-attr">type</span>: <span class="hljs-string">'largest-contentful-paint'</span>, <span class="hljs-attr">buffered</span>: <span class="hljs-literal">true</span> });
+observer.observe({ <span class="hljs-attr">type</span>: <span class="hljs-string">'largest-contentful-paint'</span>, <span class="hljs-attr">buffered</span>: <span class="hljs-literal">true</span> });
 </code></pre>
 <hr></hr>
 <h2 id="2-lighthouse-性能审计">2. Lighthouse 性能审计</h2>
@@ -875,17 +1007,17 @@ observer.<span class="hljs-title function_">observe</span>({ <span class="hljs-a
 <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"prefetch"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/next-page.js"</span>&gt;</span>
 
 <span class="hljs-comment">&lt;!-- 脚本加载策略 --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"critical.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>                    <span class="hljs-comment">&lt;!-- 同步，阻塞渲染 --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"non-critical.js"</span> <span class="hljs-attr">defer</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>          <span class="hljs-comment">&lt;!-- 延迟，DOMContentLoaded 前执行 --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"analytics.js"</span> <span class="hljs-attr">async</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>             <span class="hljs-comment">&lt;!-- 异步，下载完立即执行 --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"module"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"app.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>           <span class="hljs-comment">&lt;!-- 模块，天然 defer --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"critical.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>                    <span class="hljs-comment">&lt;!-- 同步，阻塞渲染 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"non-critical.js"</span> <span class="hljs-attr">defer</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>          <span class="hljs-comment">&lt;!-- 延迟，DOMContentLoaded 前执行 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"analytics.js"</span> <span class="hljs-attr">async</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>             <span class="hljs-comment">&lt;!-- 异步，下载完立即执行 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"module"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"app.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>           <span class="hljs-comment">&lt;!-- 模块，天然 defer --&gt;</span>
 </code></pre>
 <p><strong>代码分割</strong></p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 路由懒加载</span>
 <span class="hljs-keyword">const</span> routes = [
   {
     <span class="hljs-attr">path</span>: <span class="hljs-string">'/dashboard'</span>,
-    <span class="hljs-attr">component</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(
+    <span class="hljs-attr">component</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">import</span>(
       <span class="hljs-comment">/* webpackChunkName: "dashboard" */</span>
       <span class="hljs-comment">/* webpackPrefetch: true */</span>
       <span class="hljs-string">'./views/Dashboard.vue'</span>
@@ -895,9 +1027,9 @@ observer.<span class="hljs-title function_">observe</span>({ <span class="hljs-a
 
 <span class="hljs-comment">// 组件懒加载</span>
 <span class="hljs-keyword">import</span> { defineAsyncComponent } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
-<span class="hljs-keyword">const</span> <span class="hljs-title class_">HeavyChart</span> = <span class="hljs-title function_">defineAsyncComponent</span>({
-  <span class="hljs-attr">loader</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">'./components/HeavyChart.vue'</span>),
-  <span class="hljs-attr">loadingComponent</span>: <span class="hljs-title class_">LoadingSpinner</span>,
+<span class="hljs-keyword">const</span> HeavyChart = defineAsyncComponent({
+  <span class="hljs-attr">loader</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">'./components/HeavyChart.vue'</span>),
+  <span class="hljs-attr">loadingComponent</span>: LoadingSpinner,
   <span class="hljs-attr">delay</span>: <span class="hljs-number">200</span>,
   <span class="hljs-attr">timeout</span>: <span class="hljs-number">10000</span>,
 });
@@ -907,21 +1039,21 @@ observer.<span class="hljs-title function_">observe</span>({ <span class="hljs-a
 <span class="hljs-comment">// &lt;img src="photo.jpg" loading="lazy" alt="描述"&gt;</span>
 
 <span class="hljs-comment">// IntersectionObserver 实现</span>
-<span class="hljs-keyword">const</span> observer = <span class="hljs-keyword">new</span> <span class="hljs-title class_">IntersectionObserver</span>(<span class="hljs-function">(<span class="hljs-params">entries</span>) =&gt;</span> {
-  entries.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">entry</span>) =&gt;</span> {
-    <span class="hljs-keyword">if</span> (entry.<span class="hljs-property">isIntersecting</span>) {
-      <span class="hljs-keyword">const</span> img = entry.<span class="hljs-property">target</span>;
-      img.<span class="hljs-property">src</span> = img.<span class="hljs-property">dataset</span>.<span class="hljs-property">src</span>;
-      img.<span class="hljs-title function_">removeAttribute</span>(<span class="hljs-string">'data-src'</span>);
-      observer.<span class="hljs-title function_">unobserve</span>(img);
+<span class="hljs-keyword">const</span> observer = <span class="hljs-keyword">new</span> IntersectionObserver(<span class="hljs-function">(<span class="hljs-params">entries</span>) =&gt;</span> {
+  entries.forEach(<span class="hljs-function">(<span class="hljs-params">entry</span>) =&gt;</span> {
+    <span class="hljs-keyword">if</span> (entry.isIntersecting) {
+      <span class="hljs-keyword">const</span> img = entry.target;
+      img.src = img.dataset.src;
+      img.removeAttribute(<span class="hljs-string">'data-src'</span>);
+      observer.unobserve(img);
     }
   });
 }, {
   <span class="hljs-attr">rootMargin</span>: <span class="hljs-string">'200px 0px'</span>, <span class="hljs-comment">// 提前 200px 开始加载</span>
 });
 
-<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">'img[data-src]'</span>).<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">img</span>) =&gt;</span> {
-  observer.<span class="hljs-title function_">observe</span>(img);
+<span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">'img[data-src]'</span>).forEach(<span class="hljs-function">(<span class="hljs-params">img</span>) =&gt;</span> {
+  observer.observe(img);
 });
 </code></pre>
 <hr></hr>
@@ -958,51 +1090,51 @@ CSS  → CSSOM
 <p><strong>回流一定会触发重绘，重绘不一定触发回流。</strong></p>
 <p><strong>优化策略</strong></p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 1. 批量 DOM 操作 — 使用 DocumentFragment</span>
-<span class="hljs-keyword">const</span> fragment = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createDocumentFragment</span>();
+<span class="hljs-keyword">const</span> fragment = <span class="hljs-built_in">document</span>.createDocumentFragment();
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">1000</span>; i++) {
-  <span class="hljs-keyword">const</span> li = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">'li'</span>);
-  li.<span class="hljs-property">textContent</span> = <span class="hljs-string">`Item <span class="hljs-subst">${i}</span>`</span>;
-  fragment.<span class="hljs-title function_">appendChild</span>(li);
+  <span class="hljs-keyword">const</span> li = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'li'</span>);
+  li.textContent = <span class="hljs-string">`Item <span class="hljs-subst">${i}</span>`</span>;
+  fragment.appendChild(li);
 }
-<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'list'</span>).<span class="hljs-title function_">appendChild</span>(fragment);
+<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'list'</span>).appendChild(fragment);
 
 <span class="hljs-comment">// 2. 批量样式修改 — 使用 class 或 cssText</span>
-element.<span class="hljs-property">className</span> = <span class="hljs-string">'new-class'</span>; <span class="hljs-comment">// 好：一次回流</span>
+element.className = <span class="hljs-string">'new-class'</span>; <span class="hljs-comment">// 好：一次回流</span>
 <span class="hljs-comment">// 避免逐条修改样式属性</span>
 
 <span class="hljs-comment">// 3. 读写分离 — 避免强制同步布局</span>
 <span class="hljs-comment">// 不好：读写交替导致多次回流</span>
-<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; items.<span class="hljs-property">length</span>; i++) {
-  items[i].<span class="hljs-property">style</span>.<span class="hljs-property">width</span> = container.<span class="hljs-property">offsetWidth</span> + <span class="hljs-string">'px'</span>; <span class="hljs-comment">// 每次读都触发回流</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; items.length; i++) {
+  items[i].style.width = container.offsetWidth + <span class="hljs-string">'px'</span>; <span class="hljs-comment">// 每次读都触发回流</span>
 }
 <span class="hljs-comment">// 好：先读后写</span>
-<span class="hljs-keyword">const</span> width = container.<span class="hljs-property">offsetWidth</span>; <span class="hljs-comment">// 读一次</span>
-<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; items.<span class="hljs-property">length</span>; i++) {
-  items[i].<span class="hljs-property">style</span>.<span class="hljs-property">width</span> = width + <span class="hljs-string">'px'</span>; <span class="hljs-comment">// 只写</span>
+<span class="hljs-keyword">const</span> width = container.offsetWidth; <span class="hljs-comment">// 读一次</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; items.length; i++) {
+  items[i].style.width = width + <span class="hljs-string">'px'</span>; <span class="hljs-comment">// 只写</span>
 }
 
 <span class="hljs-comment">// 4. 使用 transform 替代 top/left（触发合成，跳过布局和绘制）</span>
 <span class="hljs-comment">// 不好</span>
-element.<span class="hljs-property">style</span>.<span class="hljs-property">left</span> = newX + <span class="hljs-string">'px'</span>;
+element.style.left = newX + <span class="hljs-string">'px'</span>;
 <span class="hljs-comment">// 好</span>
-element.<span class="hljs-property">style</span>.<span class="hljs-property">transform</span> = <span class="hljs-string">`translateX(<span class="hljs-subst">${newX}</span>px)`</span>;
+element.style.transform = <span class="hljs-string">`translateX(<span class="hljs-subst">${newX}</span>px)`</span>;
 
 <span class="hljs-comment">// 5. 使用 will-change 提示浏览器优化</span>
-.<span class="hljs-property">animated</span>-element {
-  will-<span class="hljs-attr">change</span>: transform, opacity;
+.animated-element {
+  will-change: transform, opacity;
 }
 </code></pre>
 <p><strong>使用 requestAnimationFrame 优化动画</strong></p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">animate</span>(<span class="hljs-params"></span>) {
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">animate</span>(<span class="hljs-params"></span>) </span>{
   <span class="hljs-comment">// 在下一帧执行动画</span>
-  element.<span class="hljs-property">style</span>.<span class="hljs-property">transform</span> = <span class="hljs-string">`translateX(<span class="hljs-subst">${position}</span>px)`</span>;
+  element.style.transform = <span class="hljs-string">`translateX(<span class="hljs-subst">${position}</span>px)`</span>;
   position += speed;
 
   <span class="hljs-keyword">if</span> (position &lt; target) {
-    <span class="hljs-title function_">requestAnimationFrame</span>(animate);
+    requestAnimationFrame(animate);
   }
 }
-<span class="hljs-title function_">requestAnimationFrame</span>(animate);
+requestAnimationFrame(animate);
 </code></pre>
 <hr></hr>
 <h2 id="5-图片优化">5. 图片优化</h2>
@@ -1143,8 +1275,8 @@ API 数据         → Cache-Control: no-cache 或 max-age=0
 图片（带hash）   → Cache-Control: max-age=31536000
 </code></pre><p><strong>Service Worker 缓存</strong></p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// sw.js</span>
-<span class="hljs-keyword">const</span> <span class="hljs-variable constant_">CACHE_NAME</span> = <span class="hljs-string">'app-v1'</span>;
-<span class="hljs-keyword">const</span> <span class="hljs-variable constant_">STATIC_ASSETS</span> = [
+<span class="hljs-keyword">const</span> CACHE_NAME = <span class="hljs-string">'app-v1'</span>;
+<span class="hljs-keyword">const</span> STATIC_ASSETS = [
   <span class="hljs-string">'/'</span>,
   <span class="hljs-string">'/index.html'</span>,
   <span class="hljs-string">'/css/main.css'</span>,
@@ -1152,30 +1284,30 @@ API 数据         → Cache-Control: no-cache 或 max-age=0
 ];
 
 <span class="hljs-comment">// 安装：预缓存静态资源</span>
-self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'install'</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
-  event.<span class="hljs-title function_">waitUntil</span>(
-    caches.<span class="hljs-title function_">open</span>(<span class="hljs-variable constant_">CACHE_NAME</span>).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">cache</span>) =&gt;</span> cache.<span class="hljs-title function_">addAll</span>(<span class="hljs-variable constant_">STATIC_ASSETS</span>))
+self.addEventListener(<span class="hljs-string">'install'</span>, (event) =&gt; {
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(<span class="hljs-function">(<span class="hljs-params">cache</span>) =&gt;</span> cache.addAll(STATIC_ASSETS))
   );
 });
 
 <span class="hljs-comment">// 激活：清理旧缓存</span>
-self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'activate'</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
-  event.<span class="hljs-title function_">waitUntil</span>(
-    caches.<span class="hljs-title function_">keys</span>().<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">keys</span>) =&gt;</span> {
-      <span class="hljs-keyword">return</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">all</span>(
-        keys.<span class="hljs-title function_">filter</span>(<span class="hljs-function">(<span class="hljs-params">key</span>) =&gt;</span> key !== <span class="hljs-variable constant_">CACHE_NAME</span>).<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">key</span>) =&gt;</span> caches.<span class="hljs-title function_">delete</span>(key))
+self.addEventListener(<span class="hljs-string">'activate'</span>, (event) =&gt; {
+  event.waitUntil(
+    caches.keys().then(<span class="hljs-function">(<span class="hljs-params">keys</span>) =&gt;</span> {
+      <span class="hljs-keyword">return</span> <span class="hljs-built_in">Promise</span>.all(
+        keys.filter(<span class="hljs-function">(<span class="hljs-params">key</span>) =&gt;</span> key !== CACHE_NAME).map(<span class="hljs-function">(<span class="hljs-params">key</span>) =&gt;</span> caches.delete(key))
       );
     })
   );
 });
 
 <span class="hljs-comment">// 拦截请求：Cache First 策略</span>
-self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'fetch'</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
-  event.<span class="hljs-title function_">respondWith</span>(
-    caches.<span class="hljs-title function_">match</span>(event.<span class="hljs-property">request</span>).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">cached</span>) =&gt;</span> {
-      <span class="hljs-keyword">return</span> cached || <span class="hljs-title function_">fetch</span>(event.<span class="hljs-property">request</span>).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">response</span>) =&gt;</span> {
-        <span class="hljs-keyword">const</span> clone = response.<span class="hljs-title function_">clone</span>();
-        caches.<span class="hljs-title function_">open</span>(<span class="hljs-variable constant_">CACHE_NAME</span>).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">cache</span>) =&gt;</span> cache.<span class="hljs-title function_">put</span>(event.<span class="hljs-property">request</span>, clone));
+self.addEventListener(<span class="hljs-string">'fetch'</span>, (event) =&gt; {
+  event.respondWith(
+    caches.match(event.request).then(<span class="hljs-function">(<span class="hljs-params">cached</span>) =&gt;</span> {
+      <span class="hljs-keyword">return</span> cached || fetch(event.request).then(<span class="hljs-function">(<span class="hljs-params">response</span>) =&gt;</span> {
+        <span class="hljs-keyword">const</span> clone = response.clone();
+        caches.open(CACHE_NAME).then(<span class="hljs-function">(<span class="hljs-params">cache</span>) =&gt;</span> cache.put(event.request, clone));
         <span class="hljs-keyword">return</span> response;
       });
     })
@@ -1259,7 +1391,7 @@ self.<span class="hljs-title function_">addEventListener</span>(<span class="hlj
 </li>
 </ol>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!-- 关键 CSS 内联 + 非关键 CSS 异步 --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css">
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
   <span class="hljs-comment">/* 首屏关键样式内联 */</span>
   <span class="hljs-selector-tag">body</span> { <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>; <span class="hljs-attribute">font-family</span>: sans-serif; }
   <span class="hljs-selector-class">.header</span> { <span class="hljs-attribute">height</span>: <span class="hljs-number">64px</span>; <span class="hljs-attribute">background</span>: <span class="hljs-number">#1a1a2e</span>; }
@@ -1286,45 +1418,45 @@ self.<span class="hljs-title function_">addEventListener</span>(<span class="hlj
 <p><strong>虚拟滚动原理</strong></p>
 <p>虚拟滚动的核心思想是只渲染可视区域内的列表项，而不是渲染全部数据。通过监听滚动事件，动态计算当前应该渲染哪些数据项。</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 虚拟滚动核心实现</span>
-<span class="hljs-keyword">class</span> <span class="hljs-title class_">VirtualScroller</span> {
-  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">{ container, itemHeight, totalItems, renderItem }</span>) {
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">container</span> = container;
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">itemHeight</span> = itemHeight;
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">totalItems</span> = totalItems;
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">renderItem</span> = renderItem;
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">visibleCount</span> = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">ceil</span>(container.<span class="hljs-property">clientHeight</span> / itemHeight);
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">bufferSize</span> = <span class="hljs-number">5</span>; <span class="hljs-comment">// 上下缓冲区</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">VirtualScroller</span> </span>{
+  <span class="hljs-keyword">constructor</span>({ container, itemHeight, totalItems, renderItem }) {
+    <span class="hljs-keyword">this</span>.container = container;
+    <span class="hljs-keyword">this</span>.itemHeight = itemHeight;
+    <span class="hljs-keyword">this</span>.totalItems = totalItems;
+    <span class="hljs-keyword">this</span>.renderItem = renderItem;
+    <span class="hljs-keyword">this</span>.visibleCount = <span class="hljs-built_in">Math</span>.ceil(container.clientHeight / itemHeight);
+    <span class="hljs-keyword">this</span>.bufferSize = <span class="hljs-number">5</span>; <span class="hljs-comment">// 上下缓冲区</span>
 
     <span class="hljs-comment">// 总高度占位</span>
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">phantom</span> = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">'div'</span>);
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">phantom</span>.<span class="hljs-property">style</span>.<span class="hljs-property">height</span> = <span class="hljs-string">`<span class="hljs-subst">${totalItems * itemHeight}</span>px`</span>;
-    container.<span class="hljs-title function_">appendChild</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">phantom</span>);
+    <span class="hljs-keyword">this</span>.phantom = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+    <span class="hljs-keyword">this</span>.phantom.style.height = <span class="hljs-string">`<span class="hljs-subst">${totalItems * itemHeight}</span>px`</span>;
+    container.appendChild(<span class="hljs-keyword">this</span>.phantom);
 
     <span class="hljs-comment">// 内容容器</span>
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">content</span> = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">'div'</span>);
-    container.<span class="hljs-title function_">appendChild</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">content</span>);
+    <span class="hljs-keyword">this</span>.content = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+    container.appendChild(<span class="hljs-keyword">this</span>.content);
 
-    container.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'scroll'</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">onScroll</span>());
-    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">onScroll</span>();
+    container.addEventListener(<span class="hljs-string">'scroll'</span>, () =&gt; <span class="hljs-keyword">this</span>.onScroll());
+    <span class="hljs-keyword">this</span>.onScroll();
   }
 
-  <span class="hljs-title function_">onScroll</span>(<span class="hljs-params"></span>) {
-    <span class="hljs-keyword">const</span> scrollTop = <span class="hljs-variable language_">this</span>.<span class="hljs-property">container</span>.<span class="hljs-property">scrollTop</span>;
-    <span class="hljs-keyword">const</span> startIndex = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">max</span>(<span class="hljs-number">0</span>, <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>(scrollTop / <span class="hljs-variable language_">this</span>.<span class="hljs-property">itemHeight</span>) - <span class="hljs-variable language_">this</span>.<span class="hljs-property">bufferSize</span>);
-    <span class="hljs-keyword">const</span> endIndex = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">min</span>(
-      <span class="hljs-variable language_">this</span>.<span class="hljs-property">totalItems</span>,
-      startIndex + <span class="hljs-variable language_">this</span>.<span class="hljs-property">visibleCount</span> + <span class="hljs-number">2</span> * <span class="hljs-variable language_">this</span>.<span class="hljs-property">bufferSize</span>
+  onScroll() {
+    <span class="hljs-keyword">const</span> scrollTop = <span class="hljs-keyword">this</span>.container.scrollTop;
+    <span class="hljs-keyword">const</span> startIndex = <span class="hljs-built_in">Math</span>.max(<span class="hljs-number">0</span>, <span class="hljs-built_in">Math</span>.floor(scrollTop / <span class="hljs-keyword">this</span>.itemHeight) - <span class="hljs-keyword">this</span>.bufferSize);
+    <span class="hljs-keyword">const</span> endIndex = <span class="hljs-built_in">Math</span>.min(
+      <span class="hljs-keyword">this</span>.totalItems,
+      startIndex + <span class="hljs-keyword">this</span>.visibleCount + <span class="hljs-number">2</span> * <span class="hljs-keyword">this</span>.bufferSize
     );
 
     <span class="hljs-comment">// 偏移内容容器</span>
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">content</span>.<span class="hljs-property">style</span>.<span class="hljs-property">transform</span> = <span class="hljs-string">`translateY(<span class="hljs-subst">${startIndex * <span class="hljs-variable language_">this</span>.itemHeight}</span>px)`</span>;
+    <span class="hljs-keyword">this</span>.content.style.transform = <span class="hljs-string">`translateY(<span class="hljs-subst">${startIndex * <span class="hljs-keyword">this</span>.itemHeight}</span>px)`</span>;
 
     <span class="hljs-comment">// 只渲染可视区域 + 缓冲区的项目</span>
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">content</span>.<span class="hljs-property">innerHTML</span> = <span class="hljs-string">''</span>;
+    <span class="hljs-keyword">this</span>.content.innerHTML = <span class="hljs-string">''</span>;
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = startIndex; i &lt; endIndex; i++) {
-      <span class="hljs-keyword">const</span> item = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">renderItem</span>(i);
-      item.<span class="hljs-property">style</span>.<span class="hljs-property">height</span> = <span class="hljs-string">`<span class="hljs-subst">${<span class="hljs-variable language_">this</span>.itemHeight}</span>px`</span>;
-      <span class="hljs-variable language_">this</span>.<span class="hljs-property">content</span>.<span class="hljs-title function_">appendChild</span>(item);
+      <span class="hljs-keyword">const</span> item = <span class="hljs-keyword">this</span>.renderItem(i);
+      item.style.height = <span class="hljs-string">`<span class="hljs-subst">${<span class="hljs-keyword">this</span>.itemHeight}</span>px`</span>;
+      <span class="hljs-keyword">this</span>.content.appendChild(item);
     }
   }
 }
@@ -1359,68 +1491,68 @@ self.<span class="hljs-title function_">addEventListener</span>(<span class="hlj
 <p><strong>常见内存泄漏场景</strong></p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 1. 未清除的定时器</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
-  <span class="hljs-title function_">mounted</span>(<span class="hljs-params"></span>) {
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">timer</span> = <span class="hljs-built_in">setInterval</span>(<span class="hljs-function">() =&gt;</span> {
-      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">fetchData</span>();
+  mounted() {
+    <span class="hljs-keyword">this</span>.timer = setInterval(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+      <span class="hljs-keyword">this</span>.fetchData();
     }, <span class="hljs-number">5000</span>);
   },
   <span class="hljs-comment">// 修复：组件卸载时清除</span>
-  <span class="hljs-title function_">unmounted</span>(<span class="hljs-params"></span>) {
-    <span class="hljs-built_in">clearInterval</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">timer</span>);
+  unmounted() {
+    clearInterval(<span class="hljs-keyword">this</span>.timer);
   }
 };
 
 <span class="hljs-comment">// 2. 未移除的事件监听</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">setupListener</span>(<span class="hljs-params"></span>) {
-  <span class="hljs-keyword">const</span> <span class="hljs-title function_">handler</span> = (<span class="hljs-params"></span>) =&gt; { <span class="hljs-comment">/* 处理逻辑 */</span> };
-  <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'resize'</span>, handler);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setupListener</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> handler = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> { <span class="hljs-comment">/* 处理逻辑 */</span> };
+  <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'resize'</span>, handler);
 
   <span class="hljs-comment">// 修复：返回清理函数</span>
-  <span class="hljs-keyword">return</span> <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-string">'resize'</span>, handler);
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">window</span>.removeEventListener(<span class="hljs-string">'resize'</span>, handler);
 }
 
 <span class="hljs-comment">// 3. 闭包引用 DOM</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">setupClickHandler</span>(<span class="hljs-params"></span>) {
-  <span class="hljs-keyword">const</span> element = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'huge-data'</span>);
-  <span class="hljs-keyword">const</span> data = element.<span class="hljs-property">innerHTML</span>; <span class="hljs-comment">// 大量数据</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setupClickHandler</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> element = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'huge-data'</span>);
+  <span class="hljs-keyword">const</span> data = element.innerHTML; <span class="hljs-comment">// 大量数据</span>
 
-  element.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'click'</span>, <span class="hljs-function">() =&gt;</span> {
+  element.addEventListener(<span class="hljs-string">'click'</span>, () =&gt; {
     <span class="hljs-comment">// 闭包引用了 element 和 data，即使 element 从 DOM 移除也不会被回收</span>
-    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(data.<span class="hljs-property">length</span>);
+    <span class="hljs-built_in">console</span>.log(data.length);
   });
 }
 
 <span class="hljs-comment">// 4. 未清理的全局变量和 Map/Set</span>
-<span class="hljs-keyword">const</span> cache = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>();
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">processData</span>(<span class="hljs-params">key, value</span>) {
-  cache.<span class="hljs-title function_">set</span>(key, value); <span class="hljs-comment">// 只增不减，内存不断增长</span>
+<span class="hljs-keyword">const</span> cache = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">processData</span>(<span class="hljs-params">key, value</span>) </span>{
+  cache.set(key, value); <span class="hljs-comment">// 只增不减，内存不断增长</span>
 }
 <span class="hljs-comment">// 修复：使用 WeakMap 或设置清理策略</span>
-<span class="hljs-keyword">const</span> cache2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">WeakMap</span>(); <span class="hljs-comment">// key 被回收时自动清理</span>
+<span class="hljs-keyword">const</span> cache2 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">WeakMap</span>(); <span class="hljs-comment">// key 被回收时自动清理</span>
 
 <span class="hljs-comment">// 5. console.log 保留对象引用（开发环境）</span>
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(largeObject); <span class="hljs-comment">// DevTools 保持引用，对象无法被 GC</span>
+<span class="hljs-built_in">console</span>.log(largeObject); <span class="hljs-comment">// DevTools 保持引用，对象无法被 GC</span>
 
 <span class="hljs-comment">// 6. 未取消的 AbortController</span>
-<span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> <span class="hljs-title class_">AbortController</span>();
-<span class="hljs-title function_">fetch</span>(<span class="hljs-string">'/api/data'</span>, { <span class="hljs-attr">signal</span>: controller.<span class="hljs-property">signal</span> });
+<span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> AbortController();
+fetch(<span class="hljs-string">'/api/data'</span>, { <span class="hljs-attr">signal</span>: controller.signal });
 <span class="hljs-comment">// 组件卸载时应调用 controller.abort()</span>
 </code></pre>
 <p><strong>Vue3 中的最佳实践</strong></p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">import</span> { onMounted, onUnmounted, ref } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
 
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">useEventListener</span>(<span class="hljs-params">target, event, handler</span>) {
-  <span class="hljs-title function_">onMounted</span>(<span class="hljs-function">() =&gt;</span> target.<span class="hljs-title function_">addEventListener</span>(event, handler));
-  <span class="hljs-title function_">onUnmounted</span>(<span class="hljs-function">() =&gt;</span> target.<span class="hljs-title function_">removeEventListener</span>(event, handler));
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">useEventListener</span>(<span class="hljs-params">target, event, handler</span>) </span>{
+  onMounted(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> target.addEventListener(event, handler));
+  onUnmounted(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> target.removeEventListener(event, handler));
 }
 
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">useInterval</span>(<span class="hljs-params">callback, delay</span>) {
-  <span class="hljs-keyword">const</span> id = <span class="hljs-title function_">ref</span>(<span class="hljs-literal">null</span>);
-  <span class="hljs-title function_">onMounted</span>(<span class="hljs-function">() =&gt;</span> {
-    id.<span class="hljs-property">value</span> = <span class="hljs-built_in">setInterval</span>(callback, delay);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">useInterval</span>(<span class="hljs-params">callback, delay</span>) </span>{
+  <span class="hljs-keyword">const</span> id = ref(<span class="hljs-literal">null</span>);
+  onMounted(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    id.value = setInterval(callback, delay);
   });
-  <span class="hljs-title function_">onUnmounted</span>(<span class="hljs-function">() =&gt;</span> {
-    <span class="hljs-keyword">if</span> (id.<span class="hljs-property">value</span>) <span class="hljs-built_in">clearInterval</span>(id.<span class="hljs-property">value</span>);
+  onUnmounted(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-keyword">if</span> (id.value) clearInterval(id.value);
   });
 }
 </code></pre>
@@ -1474,55 +1606,55 @@ self.<span class="hljs-title function_">addEventListener</span>(<span class="hlj
 </ul>
 <p><strong>请求优化策略</strong></p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 1. 请求去重 — 相同请求只发一次</span>
-<span class="hljs-keyword">const</span> pendingRequests = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>();
+<span class="hljs-keyword">const</span> pendingRequests = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
 
-<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">dedupedFetch</span>(<span class="hljs-params">url, options</span>) {
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">dedupedFetch</span>(<span class="hljs-params">url, options</span>) </span>{
   <span class="hljs-keyword">const</span> key = <span class="hljs-string">`<span class="hljs-subst">${url}</span>-<span class="hljs-subst">${<span class="hljs-built_in">JSON</span>.stringify(options)}</span>`</span>;
-  <span class="hljs-keyword">if</span> (pendingRequests.<span class="hljs-title function_">has</span>(key)) {
-    <span class="hljs-keyword">return</span> pendingRequests.<span class="hljs-title function_">get</span>(key);
+  <span class="hljs-keyword">if</span> (pendingRequests.has(key)) {
+    <span class="hljs-keyword">return</span> pendingRequests.get(key);
   }
-  <span class="hljs-keyword">const</span> promise = <span class="hljs-title function_">fetch</span>(url, options).<span class="hljs-title function_">finally</span>(<span class="hljs-function">() =&gt;</span> {
-    pendingRequests.<span class="hljs-title function_">delete</span>(key);
+  <span class="hljs-keyword">const</span> promise = fetch(url, options).finally(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    pendingRequests.delete(key);
   });
-  pendingRequests.<span class="hljs-title function_">set</span>(key, promise);
+  pendingRequests.set(key, promise);
   <span class="hljs-keyword">return</span> promise;
 }
 
 <span class="hljs-comment">// 2. 请求取消</span>
-<span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> <span class="hljs-title class_">AbortController</span>();
-<span class="hljs-title function_">fetch</span>(<span class="hljs-string">'/api/search?q=keyword'</span>, { <span class="hljs-attr">signal</span>: controller.<span class="hljs-property">signal</span> });
+<span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> AbortController();
+fetch(<span class="hljs-string">'/api/search?q=keyword'</span>, { <span class="hljs-attr">signal</span>: controller.signal });
 <span class="hljs-comment">// 用户输入变化时取消上一次请求</span>
-controller.<span class="hljs-title function_">abort</span>();
+controller.abort();
 
 <span class="hljs-comment">// 3. 请求并发控制</span>
-<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">concurrentFetch</span>(<span class="hljs-params">urls, maxConcurrency = <span class="hljs-number">5</span></span>) {
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">concurrentFetch</span>(<span class="hljs-params">urls, maxConcurrency = <span class="hljs-number">5</span></span>) </span>{
   <span class="hljs-keyword">const</span> results = [];
-  <span class="hljs-keyword">const</span> executing = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Set</span>();
+  <span class="hljs-keyword">const</span> executing = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>();
 
   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> url <span class="hljs-keyword">of</span> urls) {
-    <span class="hljs-keyword">const</span> promise = <span class="hljs-title function_">fetch</span>(url).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> res.<span class="hljs-title function_">json</span>());
-    results.<span class="hljs-title function_">push</span>(promise);
-    executing.<span class="hljs-title function_">add</span>(promise);
-    promise.<span class="hljs-title function_">finally</span>(<span class="hljs-function">() =&gt;</span> executing.<span class="hljs-title function_">delete</span>(promise));
+    <span class="hljs-keyword">const</span> promise = fetch(url).then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> res.json());
+    results.push(promise);
+    executing.add(promise);
+    promise.finally(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> executing.delete(promise));
 
-    <span class="hljs-keyword">if</span> (executing.<span class="hljs-property">size</span> &gt;= maxConcurrency) {
-      <span class="hljs-keyword">await</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">race</span>(executing);
+    <span class="hljs-keyword">if</span> (executing.size &gt;= maxConcurrency) {
+      <span class="hljs-keyword">await</span> <span class="hljs-built_in">Promise</span>.race(executing);
     }
   }
-  <span class="hljs-keyword">return</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">all</span>(results);
+  <span class="hljs-keyword">return</span> <span class="hljs-built_in">Promise</span>.all(results);
 }
 
 <span class="hljs-comment">// 4. 接口数据缓存</span>
-<span class="hljs-keyword">const</span> apiCache = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>();
-<span class="hljs-keyword">const</span> <span class="hljs-variable constant_">CACHE_TTL</span> = <span class="hljs-number">5</span> * <span class="hljs-number">60</span> * <span class="hljs-number">1000</span>; <span class="hljs-comment">// 5 分钟</span>
+<span class="hljs-keyword">const</span> apiCache = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
+<span class="hljs-keyword">const</span> CACHE_TTL = <span class="hljs-number">5</span> * <span class="hljs-number">60</span> * <span class="hljs-number">1000</span>; <span class="hljs-comment">// 5 分钟</span>
 
-<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">cachedFetch</span>(<span class="hljs-params">url</span>) {
-  <span class="hljs-keyword">const</span> cached = apiCache.<span class="hljs-title function_">get</span>(url);
-  <span class="hljs-keyword">if</span> (cached &amp;&amp; <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>() - cached.<span class="hljs-property">timestamp</span> &lt; <span class="hljs-variable constant_">CACHE_TTL</span>) {
-    <span class="hljs-keyword">return</span> cached.<span class="hljs-property">data</span>;
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">cachedFetch</span>(<span class="hljs-params">url</span>) </span>{
+  <span class="hljs-keyword">const</span> cached = apiCache.get(url);
+  <span class="hljs-keyword">if</span> (cached &amp;&amp; <span class="hljs-built_in">Date</span>.now() - cached.timestamp &lt; CACHE_TTL) {
+    <span class="hljs-keyword">return</span> cached.data;
   }
-  <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(url).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">r</span>) =&gt;</span> r.<span class="hljs-title function_">json</span>());
-  apiCache.<span class="hljs-title function_">set</span>(url, { data, <span class="hljs-attr">timestamp</span>: <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>() });
+  <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> fetch(url).then(<span class="hljs-function">(<span class="hljs-params">r</span>) =&gt;</span> r.json());
+  apiCache.set(url, { data, <span class="hljs-attr">timestamp</span>: <span class="hljs-built_in">Date</span>.now() });
   <span class="hljs-keyword">return</span> data;
 }
 </code></pre>
@@ -1538,6 +1670,22 @@ controller.<span class="hljs-title function_">abort</span>();
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -1561,73 +1709,29 @@ controller.<span class="hljs-title function_">abort</span>();
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"性能优化","level":"2.9","depth":1,"next":{"title":"前端安全","level":"2.10","depth":1,"path":"frontend/security.md","ref":"frontend/security.md","articles":[]},"previous":{"title":"前端工程化","level":"2.8","depth":1,"path":"frontend/engineering.md","ref":"frontend/engineering.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"frontend/performance.md","mtime":"2026-03-31T06:35:11.837Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"性能优化","level":"2.9","depth":1,"next":{"title":"前端安全","level":"2.10","depth":1,"path":"frontend/security.md","ref":"frontend/security.md","articles":[]},"previous":{"title":"前端工程化","level":"2.8","depth":1,"path":"frontend/engineering.md","ref":"frontend/engineering.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"frontend/performance.md","mtime":"2026-03-31T12:30:30.404Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    <noscript>
-        <style>
-            .honkit-cloak {
-                display: block !important;
-            }
-        </style>
-    </noscript>
-    <script>
-        // Restore sidebar state as critical path for prevent layout shift
-        function __init__getSidebarState(defaultValue){
-            var baseKey = "";
-            var key = baseKey + ":sidebar";
-            try {
-                var value = localStorage[key];
-                if (value === undefined) {
-                    return defaultValue;
-                }
-                var parsed = JSON.parse(value);
-                return parsed == null ? defaultValue : parsed;
-            } catch (e) {
-                return defaultValue;
-            }
-        }
-        function __init__restoreLastSidebarState() {
-            var isMobile = window.matchMedia("(max-width: 600px)").matches;
-            if (isMobile) {
-                // Init last state if not mobile
-                return;
-            }
-            var sidebarState = __init__getSidebarState(true);
-            var book = document.querySelector(".book");
-            // Show sidebar if it enabled
-            if (sidebarState && book) {
-                book.classList.add("without-animation", "with-summary");
-            }
-        }
-
-        try {
-            __init__restoreLastSidebarState();
-        } finally {
-            var book = document.querySelector(".book");
-            book.classList.remove("honkit-cloak");
-        }
-    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

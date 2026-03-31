@@ -1,0 +1,2642 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>设计模式与架构 · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../nodejs/basics.html" />
+    
+    
+    <link rel="prev" href="state-management.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="html-css.html">
+            
+                <a href="html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="javascript.html">
+            
+                <a href="javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="typescript.html">
+            
+                <a href="typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="browser.html">
+            
+                <a href="browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="network.html">
+            
+                <a href="network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="react.html">
+            
+                <a href="react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="vue.html">
+            
+                <a href="vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="engineering.html">
+            
+                <a href="engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="performance.html">
+            
+                <a href="performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="security.html">
+            
+                <a href="security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="micro-frontend.html">
+            
+                <a href="micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="mobile-dev.html">
+            
+                <a href="mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="state-management.html">
+            
+                <a href="state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.14" data-path="design-patterns.html">
+            
+                <a href="design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../nodejs/basics.html">
+            
+                <a href="../nodejs/basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../nodejs/event-loop.html">
+            
+                <a href="../nodejs/event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../nodejs/stream.html">
+            
+                <a href="../nodejs/stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../nodejs/frameworks.html">
+            
+                <a href="../nodejs/frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../nodejs/database.html">
+            
+                <a href="../nodejs/database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../nodejs/practice.html">
+            
+                <a href="../nodejs/practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../nodejs/serverless.html">
+            
+                <a href="../nodejs/serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../golang/basics.html">
+            
+                <a href="../golang/basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../golang/concurrency.html">
+            
+                <a href="../golang/concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../golang/memory.html">
+            
+                <a href="../golang/memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../golang/web-framework.html">
+            
+                <a href="../golang/web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../golang/database-design.html">
+            
+                <a href="../golang/database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../golang/testing-practice.html">
+            
+                <a href="../golang/testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../golang/cloud-native.html">
+            
+                <a href="../golang/cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../agent/llm-basics.html">
+            
+                <a href="../agent/llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../agent/prompt-engineering.html">
+            
+                <a href="../agent/prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../agent/rag.html">
+            
+                <a href="../agent/rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../agent/agent-architecture.html">
+            
+                <a href="../agent/agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../agent/tool-calling.html">
+            
+                <a href="../agent/tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../agent/practice.html">
+            
+                <a href="../agent/practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../agent/evaluation.html">
+            
+                <a href="../agent/evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../algorithm/system-design.html">
+            
+                <a href="../algorithm/system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >设计模式与架构</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="前端设计模式与架构">前端设计模式与架构</h1>
+<blockquote>
+<p><strong>面试优先级</strong>: ⭐⭐⭐ (LOW PRIORITY — 中大厂中高级岗位常考，但频率低于框架原理和工程化)</p>
+<p>本章覆盖：经典设计模式在前端的落地、主流架构模式对比、React 高级设计模式、组件设计原则（SOLID）、以及 10+ 道高频面试题。</p>
+</blockquote>
+<hr></hr>
+<h2 id="一、设计模式在前端的应用">一、设计模式在前端的应用</h2>
+<h3 id="11-单例模式（singleton）">1.1 单例模式（Singleton）</h3>
+<blockquote>
+<p><strong>核心思想</strong>：保证一个类只有一个实例，并提供全局访问点。</p>
+</blockquote>
+<p><strong>典型场景</strong>：全局状态管理（Store）、全局弹窗/Toast、全局 Loading 遮罩。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// ========== 通用单例工厂 ==========</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Singleton</span> </span>{
+  <span class="hljs-keyword">static</span> getInstance(...args) {
+    <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>._instance) {
+      <span class="hljs-keyword">this</span>._instance = <span class="hljs-keyword">new</span> <span class="hljs-keyword">this</span>(...args);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._instance;
+  }
+}
+
+<span class="hljs-comment">// ========== 全局弹窗单例 ==========</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Modal</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Singleton</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">super</span>();
+    <span class="hljs-keyword">this</span>.visible = <span class="hljs-literal">false</span>;
+    <span class="hljs-keyword">this</span>.el = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+    <span class="hljs-keyword">this</span>.el.className = <span class="hljs-string">'global-modal'</span>;
+    <span class="hljs-built_in">document</span>.body.appendChild(<span class="hljs-keyword">this</span>.el);
+  }
+
+  show(content) {
+    <span class="hljs-keyword">this</span>.visible = <span class="hljs-literal">true</span>;
+    <span class="hljs-keyword">this</span>.el.innerHTML = content;
+    <span class="hljs-keyword">this</span>.el.style.display = <span class="hljs-string">'block'</span>;
+  }
+
+  hide() {
+    <span class="hljs-keyword">this</span>.visible = <span class="hljs-literal">false</span>;
+    <span class="hljs-keyword">this</span>.el.style.display = <span class="hljs-string">'none'</span>;
+  }
+}
+
+<span class="hljs-comment">// 无论调用多少次，都返回同一个实例</span>
+<span class="hljs-keyword">const</span> m1 = Modal.getInstance();
+<span class="hljs-keyword">const</span> m2 = Modal.getInstance();
+<span class="hljs-built_in">console</span>.log(m1 === m2); <span class="hljs-comment">// true</span>
+
+<span class="hljs-comment">// ========== 全局状态单例（简化版 Store） ==========</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Store</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Singleton</span> </span>{
+  <span class="hljs-keyword">constructor</span>(initialState = {}) {
+    <span class="hljs-keyword">super</span>();
+    <span class="hljs-keyword">this</span>._state = initialState;
+    <span class="hljs-keyword">this</span>._listeners = [];
+  }
+
+  getState() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._state;
+  }
+
+  setState(partial) {
+    <span class="hljs-keyword">this</span>._state = { ...this._state, ...partial };
+    <span class="hljs-keyword">this</span>._listeners.forEach(<span class="hljs-function">(<span class="hljs-params">fn</span>) =&gt;</span> fn(<span class="hljs-keyword">this</span>._state));
+  }
+
+  subscribe(fn) {
+    <span class="hljs-keyword">this</span>._listeners.push(fn);
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+      <span class="hljs-keyword">this</span>._listeners = <span class="hljs-keyword">this</span>._listeners.filter(<span class="hljs-function">(<span class="hljs-params">l</span>) =&gt;</span> l !== fn);
+    };
+  }
+}
+</code></pre>
+<p><strong>面试要点</strong>：</p>
+<ul>
+<li>ES Module 天然单例（模块只执行一次）；</li>
+<li><code>new Vuex.Store()</code> / <code>createStore()</code> 本质是单例思想；</li>
+<li>注意惰性初始化与线程安全（JS 单线程无此问题）。</li>
+</ul>
+<hr></hr>
+<h3 id="12-观察者模式--发布订阅模式">1.2 观察者模式 / 发布订阅模式</h3>
+<blockquote>
+<p><strong>观察者模式</strong>：Subject（被观察者）直接通知 Observer（观察者），二者紧耦合。</p>
+<p><strong>发布/订阅模式</strong>：通过中间的「事件通道（EventBus）」解耦，发布者和订阅者互不感知。</p>
+</blockquote>
+<h4 id="手写-eventemitter（高频面试题）">手写 EventEmitter（高频面试题）</h4>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EventEmitter</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>._events = <span class="hljs-built_in">Object</span>.create(<span class="hljs-literal">null</span>); <span class="hljs-comment">// 无原型链，更纯净</span>
+  }
+
+  <span class="hljs-comment">// 订阅事件</span>
+  on(event, fn) {
+    (<span class="hljs-keyword">this</span>._events[event] || (<span class="hljs-keyword">this</span>._events[event] = [])).push(fn);
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>; <span class="hljs-comment">// 支持链式调用</span>
+  }
+
+  <span class="hljs-comment">// 只订阅一次</span>
+  once(event, fn) {
+    <span class="hljs-keyword">const</span> wrapper = <span class="hljs-function">(<span class="hljs-params">...args</span>) =&gt;</span> {
+      fn.apply(<span class="hljs-keyword">this</span>, args);
+      <span class="hljs-keyword">this</span>.off(event, wrapper);
+    };
+    wrapper._original = fn; <span class="hljs-comment">// 保留引用，方便 off 时也能移除</span>
+    <span class="hljs-keyword">this</span>.on(event, wrapper);
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+  }
+
+  <span class="hljs-comment">// 触发事件</span>
+  emit(event, ...args) {
+    <span class="hljs-keyword">const</span> fns = <span class="hljs-keyword">this</span>._events[event];
+    <span class="hljs-keyword">if</span> (!fns || fns.length === <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+    <span class="hljs-comment">// 拷贝一份防止在回调中 off 导致数组塌陷</span>
+    fns.slice().forEach(<span class="hljs-function">(<span class="hljs-params">fn</span>) =&gt;</span> fn.apply(<span class="hljs-keyword">this</span>, args));
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+  }
+
+  <span class="hljs-comment">// 取消订阅</span>
+  off(event, fn) {
+    <span class="hljs-keyword">if</span> (!fn) {
+      <span class="hljs-comment">// 不传 fn 则移除该事件所有监听</span>
+      <span class="hljs-keyword">delete</span> <span class="hljs-keyword">this</span>._events[event];
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+    <span class="hljs-keyword">const</span> fns = <span class="hljs-keyword">this</span>._events[event];
+    <span class="hljs-keyword">if</span> (!fns) <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    <span class="hljs-keyword">this</span>._events[event] = fns.filter(
+      <span class="hljs-function">(<span class="hljs-params">f</span>) =&gt;</span> f !== fn &amp;&amp; f._original !== fn
+    );
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+  }
+
+  <span class="hljs-comment">// 获取监听器数量</span>
+  listenerCount(event) {
+    <span class="hljs-keyword">return</span> (<span class="hljs-keyword">this</span>._events[event] || []).length;
+  }
+
+  <span class="hljs-comment">// 移除所有事件</span>
+  removeAllListeners() {
+    <span class="hljs-keyword">this</span>._events = <span class="hljs-built_in">Object</span>.create(<span class="hljs-literal">null</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+  }
+}
+
+<span class="hljs-comment">// ---------- 使用示例 ----------</span>
+<span class="hljs-keyword">const</span> bus = <span class="hljs-keyword">new</span> EventEmitter();
+<span class="hljs-keyword">const</span> handler = <span class="hljs-function">(<span class="hljs-params">data</span>) =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'收到:'</span>, data);
+
+bus.on(<span class="hljs-string">'login'</span>, handler);
+bus.once(<span class="hljs-string">'init'</span>, () =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'初始化仅执行一次'</span>));
+
+bus.emit(<span class="hljs-string">'login'</span>, { <span class="hljs-attr">user</span>: <span class="hljs-string">'Tom'</span> }); <span class="hljs-comment">// 收到: { user: 'Tom' }</span>
+bus.emit(<span class="hljs-string">'init'</span>);                    <span class="hljs-comment">// 初始化仅执行一次</span>
+bus.emit(<span class="hljs-string">'init'</span>);                    <span class="hljs-comment">// 无输出</span>
+
+bus.off(<span class="hljs-string">'login'</span>, handler);
+bus.emit(<span class="hljs-string">'login'</span>, { <span class="hljs-attr">user</span>: <span class="hljs-string">'Jerry'</span> }); <span class="hljs-comment">// 无输出</span>
+</code></pre>
+<p><strong>面试追问</strong>：</p>
+<ul>
+<li><code>on</code> 与 <code>addEventListener</code> 的区别？→ 后者在 DOM 上，支持 <code>capture / passive / once</code> 选项。</li>
+<li>如何避免内存泄漏？→ 组件卸载时 <code>off</code>；使用 WeakRef 存储回调。</li>
+<li><code>once</code> 为什么要保留 <code>_original</code>？→ 允许用户用原始函数 <code>off</code>。</li>
+</ul>
+<hr></hr>
+<h3 id="13-策略模式（strategy）">1.3 策略模式（Strategy）</h3>
+<blockquote>
+<p><strong>核心思想</strong>：定义一系列算法，把它们封装起来，并且使它们可以互相替换。</p>
+</blockquote>
+<p><strong>典型场景</strong>：表单校验、权限判断、价格计算。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// ========== 表单校验策略 ==========</span>
+<span class="hljs-keyword">const</span> strategies = {
+  required(value, errMsg) {
+    <span class="hljs-keyword">if</span> (value.trim() === <span class="hljs-string">''</span>) <span class="hljs-keyword">return</span> errMsg;
+  },
+  minLength(value, length, errMsg) {
+    <span class="hljs-keyword">if</span> (value.length &lt; length) <span class="hljs-keyword">return</span> errMsg;
+  },
+  maxLength(value, length, errMsg) {
+    <span class="hljs-keyword">if</span> (value.length &gt; length) <span class="hljs-keyword">return</span> errMsg;
+  },
+  isMobile(value, errMsg) {
+    <span class="hljs-keyword">if</span> (!<span class="hljs-regexp">/^1[3-9]\d{9}$/</span>.test(value)) <span class="hljs-keyword">return</span> errMsg;
+  },
+  isEmail(value, errMsg) {
+    <span class="hljs-keyword">if</span> (!<span class="hljs-regexp">/^\w+@\w+\.\w+$/</span>.test(value)) <span class="hljs-keyword">return</span> errMsg;
+  },
+};
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Validator</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.rules = [];
+  }
+
+  addRule(value, strategyArr) {
+    <span class="hljs-comment">// strategyArr: ['required:用户名不能为空', 'minLength:6:长度不少于6位']</span>
+    strategyArr.forEach(<span class="hljs-function">(<span class="hljs-params">rule</span>) =&gt;</span> {
+      <span class="hljs-keyword">const</span> parts = rule.split(<span class="hljs-string">':'</span>);
+      <span class="hljs-keyword">const</span> strategyName = parts.shift();
+      <span class="hljs-keyword">const</span> errMsg = parts.pop();
+      <span class="hljs-keyword">this</span>.rules.push(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> strategies[strategyName](value, ...parts, errMsg));
+    });
+  }
+
+  validate() {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> rule <span class="hljs-keyword">of</span> <span class="hljs-keyword">this</span>.rules) {
+      <span class="hljs-keyword">const</span> err = rule();
+      <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">return</span> err;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>; <span class="hljs-comment">// 校验通过</span>
+  }
+}
+
+<span class="hljs-comment">// ---------- 使用 ----------</span>
+<span class="hljs-keyword">const</span> validator = <span class="hljs-keyword">new</span> Validator();
+validator.addRule(<span class="hljs-string">''</span>, [<span class="hljs-string">'required:用户名不能为空'</span>]);
+validator.addRule(<span class="hljs-string">'123'</span>, [<span class="hljs-string">'minLength:6:密码不少于6位'</span>]);
+<span class="hljs-built_in">console</span>.log(validator.validate()); <span class="hljs-comment">// "用户名不能为空"</span>
+</code></pre>
+<hr></hr>
+<h3 id="14-装饰器模式（decorator）">1.4 装饰器模式（Decorator）</h3>
+<blockquote>
+<p><strong>核心思想</strong>：在不改变原对象的情况下，动态地给对象添加额外职责。</p>
+</blockquote>
+<p><strong>前端落地</strong>：React HOC、Class Decorators、函数包装。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// ========== 函数装饰器：日志 ==========</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">withLog</span>(<span class="hljs-params">fn</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">...args</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`[LOG] 调用 <span class="hljs-subst">${fn.name}</span>，参数:`</span>, args);
+    <span class="hljs-keyword">const</span> result = fn.apply(<span class="hljs-keyword">this</span>, args);
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`[LOG] 返回值:`</span>, result);
+    <span class="hljs-keyword">return</span> result;
+  };
+}
+
+<span class="hljs-keyword">const</span> add = <span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a + b;
+<span class="hljs-keyword">const</span> loggedAdd = withLog(add);
+loggedAdd(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>);
+<span class="hljs-comment">// [LOG] 调用 add，参数: [1, 2]</span>
+<span class="hljs-comment">// [LOG] 返回值: 3</span>
+
+<span class="hljs-comment">// ========== React HOC（装饰器思想） ==========</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">withAuth</span>(<span class="hljs-params">WrappedComponent</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">AuthComponent</span>(<span class="hljs-params">props</span>) </span>{
+    <span class="hljs-keyword">const</span> isLoggedIn = useAuth(); <span class="hljs-comment">// 自定义 Hook</span>
+    <span class="hljs-keyword">if</span> (!isLoggedIn) {
+      <span class="hljs-keyword">return</span> &lt;Redirect to="/login" /&gt;;
+    }
+    return &lt;WrappedComponent {...props} /&gt;;
+  };
+}
+
+// 使用
+const ProtectedPage = withAuth(DashboardPage);
+
+// ========== ES 装饰器提案（Stage 3） ==========
+function readonly(target, name, descriptor) {
+  descriptor.writable = false;
+  return descriptor;
+}
+
+class MathHelper {
+  @readonly
+  PI() {
+    return 3.14159;
+  }
+}
+</code></pre>
+<hr></hr>
+<h3 id="15-代理模式（proxy）">1.5 代理模式（Proxy）</h3>
+<blockquote>
+<p><strong>核心思想</strong>：为其他对象提供一种代理以控制对这个对象的访问。</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-comment">// ========== 数据响应式代理（Vue 3 原理简化） ==========</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reactive</span>(<span class="hljs-params">target</span>) </span>{
+  <span class="hljs-keyword">const</span> handler = {
+    get(obj, key, receiver) {
+      <span class="hljs-keyword">const</span> result = <span class="hljs-built_in">Reflect</span>.get(obj, key, receiver);
+      track(obj, key); <span class="hljs-comment">// 依赖收集</span>
+      <span class="hljs-comment">// 递归代理嵌套对象</span>
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">typeof</span> result === <span class="hljs-string">'object'</span> &amp;&amp; result !== <span class="hljs-literal">null</span>
+        ? reactive(result)
+        : result;
+    },
+    set(obj, key, value, receiver) {
+      <span class="hljs-keyword">const</span> oldVal = obj[key];
+      <span class="hljs-keyword">const</span> result = <span class="hljs-built_in">Reflect</span>.set(obj, key, value, receiver);
+      <span class="hljs-keyword">if</span> (oldVal !== value) {
+        trigger(obj, key); <span class="hljs-comment">// 触发更新</span>
+      }
+      <span class="hljs-keyword">return</span> result;
+    },
+    deleteProperty(obj, key) {
+      <span class="hljs-keyword">const</span> result = <span class="hljs-built_in">Reflect</span>.deleteProperty(obj, key);
+      trigger(obj, key);
+      <span class="hljs-keyword">return</span> result;
+    },
+  };
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Proxy</span>(target, handler);
+}
+
+<span class="hljs-comment">// ========== 虚拟滚动中的代理思想 ==========</span>
+<span class="hljs-comment">// 只渲染可视区域内的 DOM，对外暴露「全部数据」的接口</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">VirtualList</span> </span>{
+  <span class="hljs-keyword">constructor</span>(container, items, itemHeight) {
+    <span class="hljs-keyword">this</span>.container = container;
+    <span class="hljs-keyword">this</span>.allItems = items;
+    <span class="hljs-keyword">this</span>.itemHeight = itemHeight;
+    <span class="hljs-keyword">this</span>.visibleCount = <span class="hljs-built_in">Math</span>.ceil(container.clientHeight / itemHeight);
+    <span class="hljs-keyword">this</span>.startIndex = <span class="hljs-number">0</span>;
+
+    container.addEventListener(<span class="hljs-string">'scroll'</span>, () =&gt; <span class="hljs-keyword">this</span>._onScroll());
+    <span class="hljs-keyword">this</span>._render();
+  }
+
+  _onScroll() {
+    <span class="hljs-keyword">this</span>.startIndex = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-keyword">this</span>.container.scrollTop / <span class="hljs-keyword">this</span>.itemHeight);
+    <span class="hljs-keyword">this</span>._render();
+  }
+
+  _render() {
+    <span class="hljs-keyword">const</span> end = <span class="hljs-built_in">Math</span>.min(<span class="hljs-keyword">this</span>.startIndex + <span class="hljs-keyword">this</span>.visibleCount + <span class="hljs-number">1</span>, <span class="hljs-keyword">this</span>.allItems.length);
+    <span class="hljs-keyword">const</span> visibleItems = <span class="hljs-keyword">this</span>.allItems.slice(<span class="hljs-keyword">this</span>.startIndex, end);
+    <span class="hljs-comment">// ... 仅渲染 visibleItems 到 DOM</span>
+  }
+}
+
+<span class="hljs-comment">// ========== 缓存代理 ==========</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createCacheProxy</span>(<span class="hljs-params">fn</span>) </span>{
+  <span class="hljs-keyword">const</span> cache = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Proxy</span>(fn, {
+    apply(target, thisArg, args) {
+      <span class="hljs-keyword">const</span> key = <span class="hljs-built_in">JSON</span>.stringify(args);
+      <span class="hljs-keyword">if</span> (cache.has(key)) <span class="hljs-keyword">return</span> cache.get(key);
+      <span class="hljs-keyword">const</span> result = <span class="hljs-built_in">Reflect</span>.apply(target, thisArg, args);
+      cache.set(key, result);
+      <span class="hljs-keyword">return</span> result;
+    },
+  });
+}
+
+<span class="hljs-keyword">const</span> heavyCalc = <span class="hljs-function">(<span class="hljs-params">n</span>) =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'计算中...'</span>);
+  <span class="hljs-keyword">return</span> n * n;
+};
+
+<span class="hljs-keyword">const</span> cachedCalc = createCacheProxy(heavyCalc);
+cachedCalc(<span class="hljs-number">10</span>); <span class="hljs-comment">// 计算中... → 100</span>
+cachedCalc(<span class="hljs-number">10</span>); <span class="hljs-comment">// 直接返回 100（无 "计算中..."）</span>
+</code></pre>
+<hr></hr>
+<h3 id="16-工厂模式（factory）">1.6 工厂模式（Factory）</h3>
+<blockquote>
+<p><strong>核心思想</strong>：将对象的创建过程封装，调用者无需关心具体构造细节。</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-comment">// ========== 简单工厂 ==========</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Button</span> </span>{
+  <span class="hljs-keyword">constructor</span>(type) {
+    <span class="hljs-keyword">this</span>.type = type;
+  }
+  render() {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">`&lt;button class="btn-<span class="hljs-subst">${<span class="hljs-keyword">this</span>.type}</span>"&gt;<span class="hljs-subst">${<span class="hljs-keyword">this</span>.type}</span>&lt;/button&gt;`</span>;
+  }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createButton</span>(<span class="hljs-params">type</span>) </span>{
+  <span class="hljs-keyword">switch</span> (type) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'primary'</span>: <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Button(<span class="hljs-string">'primary'</span>);
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'danger'</span>:  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Button(<span class="hljs-string">'danger'</span>);
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'link'</span>:    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Button(<span class="hljs-string">'link'</span>);
+    <span class="hljs-keyword">default</span>:        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Button(<span class="hljs-string">'default'</span>);
+  }
+}
+
+<span class="hljs-comment">// ========== React.createElement 即工厂模式 ==========</span>
+<span class="hljs-comment">// JSX 编译后：React.createElement(type, props, ...children)</span>
+<span class="hljs-comment">// 根据 type 是字符串/函数/类 来创建不同的 Fiber 节点</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createElement</span>(<span class="hljs-params">type, config, ...children</span>) </span>{
+  <span class="hljs-keyword">const</span> props = { ...config, children };
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">$$typeof</span>: <span class="hljs-built_in">Symbol</span>.for(<span class="hljs-string">'react.element'</span>),
+    type,
+    props,
+    <span class="hljs-attr">key</span>: config?.key ?? <span class="hljs-literal">null</span>,
+    <span class="hljs-attr">ref</span>: config?.ref ?? <span class="hljs-literal">null</span>,
+  };
+}
+
+<span class="hljs-comment">// ========== 抽象工厂：跨平台 UI ==========</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WebUIFactory</span> </span>{
+  createButton(text)  { <span class="hljs-keyword">return</span> <span class="hljs-string">`&lt;button&gt;<span class="hljs-subst">${text}</span>&lt;/button&gt;`</span>; }
+  createInput(placeholder) { <span class="hljs-keyword">return</span> <span class="hljs-string">`&lt;input placeholder="<span class="hljs-subst">${placeholder}</span>" /&gt;`</span>; }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MobileUIFactory</span> </span>{
+  createButton(text)  { <span class="hljs-keyword">return</span> <span class="hljs-string">`&lt;View&gt;&lt;Text&gt;<span class="hljs-subst">${text}</span>&lt;/Text&gt;&lt;/View&gt;`</span>; }
+  createInput(placeholder) { <span class="hljs-keyword">return</span> <span class="hljs-string">`&lt;TextInput placeholder="<span class="hljs-subst">${placeholder}</span>" /&gt;`</span>; }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getUIFactory</span>(<span class="hljs-params">platform</span>) </span>{
+  <span class="hljs-keyword">return</span> platform === <span class="hljs-string">'web'</span> ? <span class="hljs-keyword">new</span> WebUIFactory() : <span class="hljs-keyword">new</span> MobileUIFactory();
+}
+</code></pre>
+<hr></hr>
+<h3 id="17-适配器模式（adapter）">1.7 适配器模式（Adapter）</h3>
+<blockquote>
+<p><strong>核心思想</strong>：将一个接口转换为客户端期望的另一个接口。</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-comment">// ========== API 兼容层 ==========</span>
+<span class="hljs-comment">// 旧接口返回 { code: 0, result: [...] }</span>
+<span class="hljs-comment">// 新接口返回 { code: 200, data: { list: [...], total: 100 } }</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">APIAdapter</span> </span>{
+  <span class="hljs-keyword">static</span> normalize(response, isLegacy = <span class="hljs-literal">false</span>) {
+    <span class="hljs-keyword">if</span> (isLegacy) {
+      <span class="hljs-keyword">return</span> {
+        <span class="hljs-attr">success</span>: response.code === <span class="hljs-number">0</span>,
+        <span class="hljs-attr">data</span>: response.result || [],
+        <span class="hljs-attr">total</span>: response.result?.length || <span class="hljs-number">0</span>,
+      };
+    }
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">success</span>: response.code === <span class="hljs-number">200</span>,
+      <span class="hljs-attr">data</span>: response.data?.list || [],
+      <span class="hljs-attr">total</span>: response.data?.total || <span class="hljs-number">0</span>,
+    };
+  }
+}
+
+<span class="hljs-comment">// 业务层统一使用</span>
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fetchList</span>(<span class="hljs-params">url, isLegacy</span>) </span>{
+  <span class="hljs-keyword">const</span> raw = <span class="hljs-keyword">await</span> fetch(url).then(<span class="hljs-function">(<span class="hljs-params">r</span>) =&gt;</span> r.json());
+  <span class="hljs-keyword">return</span> APIAdapter.normalize(raw, isLegacy);
+}
+
+<span class="hljs-comment">// ========== 第三方库适配 ==========</span>
+<span class="hljs-comment">// 适配 axios 和 fetch 的统一请求层</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HttpAdapter</span> </span>{
+  <span class="hljs-keyword">constructor</span>(engine = 'fetch') {
+    <span class="hljs-keyword">this</span>.engine = engine;
+  }
+
+  <span class="hljs-keyword">async</span> get(url, config = {}) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.engine === <span class="hljs-string">'axios'</span>) {
+      <span class="hljs-keyword">const</span> res = <span class="hljs-keyword">await</span> axios.get(url, config);
+      <span class="hljs-keyword">return</span> res.data;
+    }
+    <span class="hljs-keyword">const</span> res = <span class="hljs-keyword">await</span> fetch(url, config);
+    <span class="hljs-keyword">return</span> res.json();
+  }
+
+  <span class="hljs-keyword">async</span> post(url, data, config = {}) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.engine === <span class="hljs-string">'axios'</span>) {
+      <span class="hljs-keyword">const</span> res = <span class="hljs-keyword">await</span> axios.post(url, data, config);
+      <span class="hljs-keyword">return</span> res.data;
+    }
+    <span class="hljs-keyword">const</span> res = <span class="hljs-keyword">await</span> fetch(url, {
+      <span class="hljs-attr">method</span>: <span class="hljs-string">'POST'</span>,
+      <span class="hljs-attr">headers</span>: { <span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/json'</span> },
+      <span class="hljs-attr">body</span>: <span class="hljs-built_in">JSON</span>.stringify(data),
+      ...config,
+    });
+    <span class="hljs-keyword">return</span> res.json();
+  }
+}
+</code></pre>
+<hr></hr>
+<h3 id="18-组合模式（composite）">1.8 组合模式（Composite）</h3>
+<blockquote>
+<p><strong>核心思想</strong>：将对象组合成树形结构以表示"部分—整体"关系，使得单个对象和组合对象的使用具有一致性。</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-comment">// ========== 文件/文件夹统一操作 ==========</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileNode</span> </span>{
+  <span class="hljs-keyword">constructor</span>(name) {
+    <span class="hljs-keyword">this</span>.name = name;
+  }
+  getSize() { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._size || <span class="hljs-number">0</span>; }
+  display(indent = <span class="hljs-number">0</span>) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">' '</span>.repeat(indent) + <span class="hljs-keyword">this</span>.name);
+  }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FolderNode</span> </span>{
+  <span class="hljs-keyword">constructor</span>(name) {
+    <span class="hljs-keyword">this</span>.name = name;
+    <span class="hljs-keyword">this</span>.children = [];
+  }
+  add(node)    { <span class="hljs-keyword">this</span>.children.push(node); <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>; }
+  remove(node) { <span class="hljs-keyword">this</span>.children = <span class="hljs-keyword">this</span>.children.filter(<span class="hljs-function">(<span class="hljs-params">c</span>) =&gt;</span> c !== node); }
+  getSize()    { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.children.reduce(<span class="hljs-function">(<span class="hljs-params">sum, c</span>) =&gt;</span> sum + c.getSize(), <span class="hljs-number">0</span>); }
+  display(indent = <span class="hljs-number">0</span>) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">' '</span>.repeat(indent) + <span class="hljs-string">`[<span class="hljs-subst">${<span class="hljs-keyword">this</span>.name}</span>]`</span>);
+    <span class="hljs-keyword">this</span>.children.forEach(<span class="hljs-function">(<span class="hljs-params">c</span>) =&gt;</span> c.display(indent + <span class="hljs-number">2</span>));
+  }
+}
+
+<span class="hljs-comment">// ========== React 组件树本质就是组合模式 ==========</span>
+<span class="hljs-comment">// &lt;App&gt;</span>
+<span class="hljs-comment">//   &lt;Header /&gt;</span>
+<span class="hljs-comment">//   &lt;Main&gt;</span>
+<span class="hljs-comment">//     &lt;Sidebar /&gt;</span>
+<span class="hljs-comment">//     &lt;Content /&gt;</span>
+<span class="hljs-comment">//   &lt;/Main&gt;</span>
+<span class="hljs-comment">//   &lt;Footer /&gt;</span>
+<span class="hljs-comment">// &lt;/App&gt;</span>
+<span class="hljs-comment">// React 递归处理 children，对叶子节点和容器节点统一调用 render。</span>
+</code></pre>
+<hr></hr>
+<h3 id="19-迭代器模式（iterator）">1.9 迭代器模式（Iterator）</h3>
+<blockquote>
+<p><strong>核心思想</strong>：提供一种方法顺序访问聚合对象中的各个元素，而不暴露该对象的内部表示。</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-comment">// ========== 自定义可迭代对象 ==========</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Range</span> </span>{
+  <span class="hljs-keyword">constructor</span>(start, end) {
+    <span class="hljs-keyword">this</span>.start = start;
+    <span class="hljs-keyword">this</span>.end = end;
+  }
+
+  [<span class="hljs-built_in">Symbol</span>.iterator]() {
+    <span class="hljs-keyword">let</span> current = <span class="hljs-keyword">this</span>.start;
+    <span class="hljs-keyword">const</span> end = <span class="hljs-keyword">this</span>.end;
+    <span class="hljs-keyword">return</span> {
+      next() {
+        <span class="hljs-keyword">if</span> (current &lt;= end) {
+          <span class="hljs-keyword">return</span> { <span class="hljs-attr">value</span>: current++, <span class="hljs-attr">done</span>: <span class="hljs-literal">false</span> };
+        }
+        <span class="hljs-keyword">return</span> { <span class="hljs-attr">done</span>: <span class="hljs-literal">true</span> };
+      },
+    };
+  }
+}
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> num <span class="hljs-keyword">of</span> <span class="hljs-keyword">new</span> Range(<span class="hljs-number">1</span>, <span class="hljs-number">5</span>)) {
+  <span class="hljs-built_in">console</span>.log(num); <span class="hljs-comment">// 1, 2, 3, 4, 5</span>
+}
+
+<span class="hljs-built_in">console</span>.log([...new Range(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>)]); <span class="hljs-comment">// [1, 2, 3]</span>
+
+<span class="hljs-comment">// ========== 生成器实现无限序列 ==========</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">fibonacci</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">let</span> [a, b] = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>];
+  <span class="hljs-keyword">while</span> (<span class="hljs-literal">true</span>) {
+    <span class="hljs-keyword">yield</span> a;
+    [a, b] = [b, a + b];
+  }
+}
+
+<span class="hljs-comment">// 取前 10 个</span>
+<span class="hljs-keyword">const</span> fib = fibonacci();
+<span class="hljs-keyword">const</span> first10 = <span class="hljs-built_in">Array</span>.from({ <span class="hljs-attr">length</span>: <span class="hljs-number">10</span> }, () =&gt; fib.next().value);
+<span class="hljs-built_in">console</span>.log(first10); <span class="hljs-comment">// [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]</span>
+
+<span class="hljs-comment">// ========== DOM 树迭代器 ==========</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">walkDOM</span>(<span class="hljs-params">node</span>) </span>{
+  <span class="hljs-keyword">yield</span> node;
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> child <span class="hljs-keyword">of</span> node.children) {
+    <span class="hljs-keyword">yield</span>* walkDOM(child);
+  }
+}
+
+<span class="hljs-comment">// 使用: for (const el of walkDOM(document.body)) { ... }</span>
+</code></pre>
+<hr></hr>
+<h3 id="110-中介者模式（mediator）">1.10 中介者模式（Mediator）</h3>
+<blockquote>
+<p><strong>核心思想</strong>：用一个中介对象封装一系列对象的交互，使各对象不需要显式地互相引用。</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-comment">// ========== 状态管理作为中介者 ==========</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StoreMediator</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.state = {};
+    <span class="hljs-keyword">this</span>.components = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
+  }
+
+  register(name, component) {
+    <span class="hljs-keyword">this</span>.components.set(name, component);
+  }
+
+  setState(key, value, source) {
+    <span class="hljs-keyword">this</span>.state[key] = value;
+    <span class="hljs-comment">// 通知除来源以外的所有已注册组件</span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> [name, comp] <span class="hljs-keyword">of</span> <span class="hljs-keyword">this</span>.components) {
+      <span class="hljs-keyword">if</span> (name !== source) {
+        comp.onStateChange(key, value);
+      }
+    }
+  }
+
+  getState(key) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.state[key];
+  }
+}
+
+<span class="hljs-comment">// 组件无需互相引用，只和中介者通信</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SearchBox</span> </span>{
+  <span class="hljs-keyword">constructor</span>(mediator) {
+    <span class="hljs-keyword">this</span>.mediator = mediator;
+    mediator.register(<span class="hljs-string">'search'</span>, <span class="hljs-keyword">this</span>);
+  }
+  onChange(keyword) {
+    <span class="hljs-keyword">this</span>.mediator.setState(<span class="hljs-string">'keyword'</span>, keyword, <span class="hljs-string">'search'</span>);
+  }
+  onStateChange(key, value) {
+    <span class="hljs-keyword">if</span> (key === <span class="hljs-string">'keyword'</span>) <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'[SearchBox] 同步关键字:'</span>, value);
+  }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ResultList</span> </span>{
+  <span class="hljs-keyword">constructor</span>(mediator) {
+    <span class="hljs-keyword">this</span>.mediator = mediator;
+    mediator.register(<span class="hljs-string">'result'</span>, <span class="hljs-keyword">this</span>);
+  }
+  onStateChange(key, value) {
+    <span class="hljs-keyword">if</span> (key === <span class="hljs-string">'keyword'</span>) <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'[ResultList] 按关键字过滤:'</span>, value);
+  }
+}
+
+<span class="hljs-comment">// Redux / Vuex 本质是中介者模式的变体</span>
+</code></pre>
+<hr></hr>
+<h2 id="二、架构模式">二、架构模式</h2>
+<h3 id="21-mvc--mvp--mvvm-对比">2.1 MVC / MVP / MVVM 对比</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>MVC</th>
+<th>MVP</th>
+<th>MVVM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>全称</strong></td>
+<td>Model-View-Controller</td>
+<td>Model-View-Presenter</td>
+<td>Model-View-ViewModel</td>
+</tr>
+<tr>
+<td><strong>数据流</strong></td>
+<td>双向（View ↔ Model 可直接交互）</td>
+<td>单向（View ↔ Presenter ↔ Model）</td>
+<td>双向绑定（View ↔ ViewModel）</td>
+</tr>
+<tr>
+<td><strong>View 与 Model 关系</strong></td>
+<td>View 知道 Model</td>
+<td>完全隔离</td>
+<td>通过 ViewModel 绑定</td>
+</tr>
+<tr>
+<td><strong>典型代表</strong></td>
+<td>Backbone.js</td>
+<td>Android MVP</td>
+<td>Vue.js / Angular</td>
+</tr>
+<tr>
+<td><strong>Controller/Presenter 角色</strong></td>
+<td>路由转发、薄逻辑</td>
+<td>厚逻辑、处理所有交互</td>
+<td>ViewModel 自动同步</td>
+</tr>
+<tr>
+<td><strong>测试难度</strong></td>
+<td>Controller 依赖 View，较难</td>
+<td>Presenter 纯逻辑，易测试</td>
+<td>ViewModel 易测试</td>
+</tr>
+</tbody>
+</table>
+<pre><code>MVC:   User → Controller → Model → View
+                  ↑___________|
+
+MVP:   User → View → Presenter → Model
+                  ↑        ↓
+                  ←————————←
+
+MVVM:  User → View ⟷ ViewModel ⟷ Model
+                 (双向绑定)
+</code></pre><hr></hr>
+<h3 id="22-flux--redux-单向数据流">2.2 Flux / Redux 单向数据流</h3>
+<pre><code>          ┌──── Action ────┐
+          │                │
+          ▼                │
+      Dispatcher      ←  View
+          │
+          ▼
+        Store ──→ View(re-render)
+</code></pre><p><strong>Redux 三大原则</strong>：</p>
+<ol>
+<li><strong>单一数据源</strong>（Single Source of Truth）：整个应用只有一个 Store。</li>
+<li><strong>State 只读</strong>：唯一改变 State 的方式是 dispatch Action。</li>
+<li><strong>纯函数修改</strong>：Reducer 是纯函数 <code>(prevState, action) =&gt; newState</code>。</li>
+</ol>
+<pre><code class="lang-javascript"><span class="hljs-comment">// ========== 极简 Redux 实现 ==========</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createStore</span>(<span class="hljs-params">reducer, initialState</span>) </span>{
+  <span class="hljs-keyword">let</span> state = initialState;
+  <span class="hljs-keyword">let</span> listeners = [];
+
+  <span class="hljs-keyword">const</span> getState = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> state;
+
+  <span class="hljs-keyword">const</span> dispatch = <span class="hljs-function">(<span class="hljs-params">action</span>) =&gt;</span> {
+    state = reducer(state, action);
+    listeners.forEach(<span class="hljs-function">(<span class="hljs-params">fn</span>) =&gt;</span> fn());
+    <span class="hljs-keyword">return</span> action;
+  };
+
+  <span class="hljs-keyword">const</span> subscribe = <span class="hljs-function">(<span class="hljs-params">fn</span>) =&gt;</span> {
+    listeners.push(fn);
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+      listeners = listeners.filter(<span class="hljs-function">(<span class="hljs-params">l</span>) =&gt;</span> l !== fn);
+    };
+  };
+
+  <span class="hljs-comment">// 初始化</span>
+  dispatch({ <span class="hljs-attr">type</span>: <span class="hljs-string">'@@INIT'</span> });
+
+  <span class="hljs-keyword">return</span> { getState, dispatch, subscribe };
+}
+
+<span class="hljs-comment">// 中间件机制</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">applyMiddleware</span>(<span class="hljs-params">...middlewares</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function">(<span class="hljs-params">createStore</span>) =&gt;</span> (reducer, initialState) =&gt; {
+    <span class="hljs-keyword">const</span> store = createStore(reducer, initialState);
+    <span class="hljs-keyword">let</span> dispatch = store.dispatch;
+
+    <span class="hljs-keyword">const</span> api = {
+      <span class="hljs-attr">getState</span>: store.getState,
+      <span class="hljs-attr">dispatch</span>: <span class="hljs-function">(<span class="hljs-params">action</span>) =&gt;</span> dispatch(action),
+    };
+
+    <span class="hljs-keyword">const</span> chain = middlewares.map(<span class="hljs-function">(<span class="hljs-params">mw</span>) =&gt;</span> mw(api));
+    dispatch = compose(...chain)(store.dispatch);
+
+    <span class="hljs-keyword">return</span> { ...store, dispatch };
+  };
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compose</span>(<span class="hljs-params">...fns</span>) </span>{
+  <span class="hljs-keyword">if</span> (fns.length === <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-function">(<span class="hljs-params">arg</span>) =&gt;</span> arg;
+  <span class="hljs-keyword">if</span> (fns.length === <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> fns[<span class="hljs-number">0</span>];
+  <span class="hljs-keyword">return</span> fns.reduce(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> (...args) =&gt; a(b(...args)));
+}
+</code></pre>
+<hr></hr>
+<h3 id="23-组件化架构">2.3 组件化架构</h3>
+<pre><code>应用
+├── 基础组件层（Button / Input / Modal）
+├── 业务组件层（UserCard / OrderTable）
+├── 页面组件层（HomePage / DetailPage）
+└── 布局组件层（Header / Sidebar / Footer）
+</code></pre><p><strong>组件化核心原则</strong>：</p>
+<ul>
+<li><strong>高内聚低耦合</strong>：组件内部逻辑自洽，对外依赖最小化。</li>
+<li><strong>单向数据流</strong>：props 向下，events 向上。</li>
+<li><strong>可组合性</strong>：通过 <code>children</code> / <code>slots</code> / <code>render props</code> 实现灵活组合。</li>
+<li><strong>可复用性</strong>：抽离通用逻辑到 Hooks / Mixins / HOC。</li>
+</ul>
+<hr></hr>
+<h3 id="24-插件化架构">2.4 插件化架构</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// ========== 插件系统设计 ==========</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.hooks = {
+      <span class="hljs-attr">beforeInit</span>: <span class="hljs-keyword">new</span> SyncHook(),
+      <span class="hljs-attr">afterInit</span>:  <span class="hljs-keyword">new</span> SyncHook(),
+      <span class="hljs-attr">beforeRequest</span>: <span class="hljs-keyword">new</span> AsyncSeriesHook(),
+      <span class="hljs-attr">afterResponse</span>: <span class="hljs-keyword">new</span> AsyncSeriesHook(),
+    };
+    <span class="hljs-keyword">this</span>.plugins = [];
+  }
+
+  use(plugin) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> plugin.install === <span class="hljs-string">'function'</span>) {
+      plugin.install(<span class="hljs-keyword">this</span>);
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> plugin === <span class="hljs-string">'function'</span>) {
+      plugin(<span class="hljs-keyword">this</span>);
+    }
+    <span class="hljs-keyword">this</span>.plugins.push(plugin);
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>; <span class="hljs-comment">// 链式调用</span>
+  }
+
+  <span class="hljs-keyword">async</span> init() {
+    <span class="hljs-keyword">this</span>.hooks.beforeInit.call();
+    <span class="hljs-comment">// ... 初始化逻辑</span>
+    <span class="hljs-keyword">this</span>.hooks.afterInit.call();
+  }
+}
+
+<span class="hljs-comment">// 插件示例</span>
+<span class="hljs-keyword">const</span> loggerPlugin = {
+  install(app) {
+    app.hooks.beforeRequest.tapAsync(<span class="hljs-string">'Logger'</span>, <span class="hljs-keyword">async</span> (ctx) =&gt; {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`[<span class="hljs-subst">${<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().toISOString()}</span>] <span class="hljs-subst">${ctx.method}</span> <span class="hljs-subst">${ctx.url}</span>`</span>);
+    });
+  },
+};
+
+<span class="hljs-comment">// Webpack / Vite / Babel / ESLint 都基于插件化架构</span>
+</code></pre>
+<hr></hr>
+<h3 id="25-ddd（领域驱动设计）在前端">2.5 DDD（领域驱动设计）在前端</h3>
+<table>
+<thead>
+<tr>
+<th>概念</th>
+<th>前端映射</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>领域（Domain）</strong></td>
+<td>业务模块（订单、用户、商品）</td>
+</tr>
+<tr>
+<td><strong>实体（Entity）</strong></td>
+<td>带 ID 的业务对象（User, Order）</td>
+</tr>
+<tr>
+<td><strong>值对象（Value Object）</strong></td>
+<td>无 ID 的纯数据（Address, Money）</td>
+</tr>
+<tr>
+<td><strong>聚合根（Aggregate Root）</strong></td>
+<td>模块入口组件/Store</td>
+</tr>
+<tr>
+<td><strong>领域服务（Domain Service）</strong></td>
+<td>纯业务逻辑函数（calculateDiscount）</td>
+</tr>
+<tr>
+<td><strong>应用服务（Application Service）</strong></td>
+<td>页面级 useCase / Controller</td>
+</tr>
+<tr>
+<td><strong>仓储（Repository）</strong></td>
+<td>API 层 / 数据访问层</td>
+</tr>
+</tbody>
+</table>
+<pre><code>src/
+├── domains/
+│   ├── order/
+│   │   ├── entities/       # Order, OrderItem
+│   │   ├── valueObjects/   # Money, Address
+│   │   ├── services/       # calculateTotal, applyDiscount
+│   │   ├── repository.ts   # API 调用
+│   │   └── store.ts        # 状态管理
+│   ├── user/
+│   └── product/
+├── application/            # 页面级编排
+├── infrastructure/         # 基础设施（HTTP、Storage、Router）
+└── presentation/           # UI 组件
+</code></pre><hr></hr>
+<h2 id="三、react-设计模式">三、React 设计模式</h2>
+<h3 id="31-compound-components（复合组件）">3.1 Compound Components（复合组件）</h3>
+<blockquote>
+<p>多个组件协作完成一个完整功能，通过隐式共享状态。</p>
+</blockquote>
+<pre><code class="lang-jsx"><span class="hljs-comment">// ========== Select 复合组件 ==========</span>
+<span class="hljs-keyword">const</span> SelectContext = React.createContext();
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Select</span>(<span class="hljs-params">{ children, value, onChange }</span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    &lt;SelectContext.Provider value={{ value, onChange }}&gt;
+      &lt;div className="custom-select"&gt;{children}&lt;/div&gt;
+    &lt;/SelectContext.Provider&gt;
+  );
+}
+
+function Option({ value: optionValue, children }) {
+  const { value, onChange } = React.useContext(SelectContext);
+  const isSelected = value === optionValue;
+
+  return (
+    &lt;div
+      className={`option ${isSelected ? 'selected' : ''}`}
+      onClick={() =&gt; onChange(optionValue)}
+    &gt;
+      {children}
+    &lt;/div&gt;
+  );
+}
+
+Select.Option = Option;
+
+// ---------- 使用 ----------
+function App() {
+  const [value, setValue] = useState('apple');
+  return (
+    &lt;Select value={value} onChange={setValue}&gt;
+      &lt;Select.Option value="apple"&gt;苹果&lt;/Select.Option&gt;
+      &lt;Select.Option value="banana"&gt;香蕉&lt;/Select.Option&gt;
+      &lt;Select.Option value="cherry"&gt;樱桃&lt;/Select.Option&gt;
+    &lt;/Select&gt;
+  );
+}
+</code></pre>
+<hr></hr>
+<h3 id="32-render-props">3.2 Render Props</h3>
+<blockquote>
+<p>通过一个值为函数的 prop 来共享代码逻辑。</p>
+</blockquote>
+<pre><code class="lang-jsx"><span class="hljs-comment">// ========== 鼠标位置追踪 ==========</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MouseTracker</span>(<span class="hljs-params">{ render }</span>) </span>{
+  <span class="hljs-keyword">const</span> [position, setPosition] = useState({ <span class="hljs-attr">x</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">0</span> });
+
+  useEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-keyword">const</span> handler = <span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> setPosition({ <span class="hljs-attr">x</span>: e.clientX, <span class="hljs-attr">y</span>: e.clientY });
+    <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'mousemove'</span>, handler);
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">window</span>.removeEventListener(<span class="hljs-string">'mousemove'</span>, handler);
+  }, []);
+
+  <span class="hljs-keyword">return</span> render(position);
+}
+
+<span class="hljs-comment">// 使用</span>
+&lt;MouseTracker
+  render={({ x, y }) =&gt; (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>鼠标位置: ({x}, {y})<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span>
+  )}
+/&gt;
+
+<span class="hljs-comment">// ========== 通用数据获取 ==========</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">DataFetcher</span>(<span class="hljs-params">{ url, render }</span>) </span>{
+  <span class="hljs-keyword">const</span> [state, setState] = useState({ <span class="hljs-attr">loading</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">data</span>: <span class="hljs-literal">null</span>, <span class="hljs-attr">error</span>: <span class="hljs-literal">null</span> });
+
+  useEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    setState({ <span class="hljs-attr">loading</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">data</span>: <span class="hljs-literal">null</span>, <span class="hljs-attr">error</span>: <span class="hljs-literal">null</span> });
+    fetch(url)
+      .then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> res.json())
+      .then(<span class="hljs-function">(<span class="hljs-params">data</span>) =&gt;</span> setState({ <span class="hljs-attr">loading</span>: <span class="hljs-literal">false</span>, data, <span class="hljs-attr">error</span>: <span class="hljs-literal">null</span> }))
+      .catch(<span class="hljs-function">(<span class="hljs-params">error</span>) =&gt;</span> setState({ <span class="hljs-attr">loading</span>: <span class="hljs-literal">false</span>, <span class="hljs-attr">data</span>: <span class="hljs-literal">null</span>, error }));
+  }, [url]);
+
+  <span class="hljs-keyword">return</span> render(state);
+}
+
+&lt;DataFetcher
+  url=<span class="hljs-string">"/api/users"</span>
+  render={({ loading, data, error }) =&gt; {
+    <span class="hljs-keyword">if</span> (loading) <span class="hljs-keyword">return</span> &lt;Spinner /&gt;;
+    if (error) return &lt;ErrorMessage error={error} /&gt;;
+    return &lt;UserList users={data} /&gt;;
+  }}
+/&gt;
+</code></pre>
+<hr></hr>
+<h3 id="33-custom-hooks（自定义-hook）">3.3 Custom Hooks（自定义 Hook）</h3>
+<blockquote>
+<p>当代 React 最推荐的逻辑复用方式，替代 HOC / Render Props 大部分场景。</p>
+</blockquote>
+<pre><code class="lang-jsx"><span class="hljs-comment">// ========== useDebounce ==========</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">useDebounce</span>(<span class="hljs-params">value, delay = <span class="hljs-number">300</span></span>) </span>{
+  <span class="hljs-keyword">const</span> [debouncedValue, setDebouncedValue] = useState(value);
+
+  useEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-keyword">const</span> timer = setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> setDebouncedValue(value), delay);
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> clearTimeout(timer);
+  }, [value, delay]);
+
+  <span class="hljs-keyword">return</span> debouncedValue;
+}
+
+<span class="hljs-comment">// ========== useLocalStorage ==========</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">useLocalStorage</span>(<span class="hljs-params">key, initialValue</span>) </span>{
+  <span class="hljs-keyword">const</span> [stored, setStored] = useState(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">const</span> item = <span class="hljs-built_in">window</span>.localStorage.getItem(key);
+      <span class="hljs-keyword">return</span> item ? <span class="hljs-built_in">JSON</span>.parse(item) : initialValue;
+    } <span class="hljs-keyword">catch</span> {
+      <span class="hljs-keyword">return</span> initialValue;
+    }
+  });
+
+  <span class="hljs-keyword">const</span> setValue = <span class="hljs-function">(<span class="hljs-params">value</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> valueToStore = value <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Function</span> ? value(stored) : value;
+    setStored(valueToStore);
+    <span class="hljs-built_in">window</span>.localStorage.setItem(key, <span class="hljs-built_in">JSON</span>.stringify(valueToStore));
+  };
+
+  <span class="hljs-keyword">return</span> [stored, setValue];
+}
+
+<span class="hljs-comment">// ========== useFetch ==========</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">useFetch</span>(<span class="hljs-params">url, options = {}</span>) </span>{
+  <span class="hljs-keyword">const</span> [state, setState] = useState({
+    <span class="hljs-attr">loading</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">data</span>: <span class="hljs-literal">null</span>,
+    <span class="hljs-attr">error</span>: <span class="hljs-literal">null</span>,
+  });
+
+  <span class="hljs-keyword">const</span> abortRef = useRef(<span class="hljs-literal">null</span>);
+
+  useEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    abortRef.current?.abort();
+    abortRef.current = <span class="hljs-keyword">new</span> AbortController();
+
+    setState(<span class="hljs-function">(<span class="hljs-params">prev</span>) =&gt;</span> ({ ...prev, <span class="hljs-attr">loading</span>: <span class="hljs-literal">true</span> }));
+
+    fetch(url, { ...options, <span class="hljs-attr">signal</span>: abortRef.current.signal })
+      .then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
+        <span class="hljs-keyword">if</span> (!res.ok) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">`HTTP <span class="hljs-subst">${res.status}</span>`</span>);
+        <span class="hljs-keyword">return</span> res.json();
+      })
+      .then(<span class="hljs-function">(<span class="hljs-params">data</span>) =&gt;</span> setState({ <span class="hljs-attr">loading</span>: <span class="hljs-literal">false</span>, data, <span class="hljs-attr">error</span>: <span class="hljs-literal">null</span> }))
+      .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+        <span class="hljs-keyword">if</span> (err.name !== <span class="hljs-string">'AbortError'</span>) {
+          setState({ <span class="hljs-attr">loading</span>: <span class="hljs-literal">false</span>, <span class="hljs-attr">data</span>: <span class="hljs-literal">null</span>, <span class="hljs-attr">error</span>: err });
+        }
+      });
+
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> abortRef.current?.abort();
+  }, [url]);
+
+  <span class="hljs-keyword">return</span> state;
+}
+
+<span class="hljs-comment">// ========== useClickOutside ==========</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">useClickOutside</span>(<span class="hljs-params">ref, handler</span>) </span>{
+  useEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-keyword">const</span> listener = <span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> {
+      <span class="hljs-keyword">if</span> (!ref.current || ref.current.contains(e.target)) <span class="hljs-keyword">return</span>;
+      handler(e);
+    };
+    <span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">'mousedown'</span>, listener);
+    <span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">'touchstart'</span>, listener);
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+      <span class="hljs-built_in">document</span>.removeEventListener(<span class="hljs-string">'mousedown'</span>, listener);
+      <span class="hljs-built_in">document</span>.removeEventListener(<span class="hljs-string">'touchstart'</span>, listener);
+    };
+  }, [ref, handler]);
+}
+</code></pre>
+<hr></hr>
+<h3 id="34-provider-pattern">3.4 Provider Pattern</h3>
+<blockquote>
+<p>使用 Context 提供全局或局部共享状态，避免 props drilling。</p>
+</blockquote>
+<pre><code class="lang-jsx"><span class="hljs-comment">// ========== 主题 Provider ==========</span>
+<span class="hljs-keyword">const</span> ThemeContext = React.createContext({
+  <span class="hljs-attr">theme</span>: <span class="hljs-string">'light'</span>,
+  <span class="hljs-attr">toggle</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {},
+});
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ThemeProvider</span>(<span class="hljs-params">{ children }</span>) </span>{
+  <span class="hljs-keyword">const</span> [theme, setTheme] = useState(<span class="hljs-string">'light'</span>);
+
+  <span class="hljs-keyword">const</span> toggle = useCallback(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    setTheme(<span class="hljs-function">(<span class="hljs-params">prev</span>) =&gt;</span> (prev === <span class="hljs-string">'light'</span> ? <span class="hljs-string">'dark'</span> : <span class="hljs-string">'light'</span>));
+  }, []);
+
+  <span class="hljs-keyword">const</span> value = useMemo(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> ({ theme, toggle }), [theme, toggle]);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ThemeContext.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{value}</span>&gt;</span>
+      {children}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ThemeContext.Provider</span>&gt;</span>
+  );
+}
+
+function useTheme() {
+  const ctx = useContext(ThemeContext);
+  if (!ctx) throw new Error('useTheme must be used within ThemeProvider');
+  return ctx;
+}
+
+// ---------- 使用 ----------
+function App() {
+  return (
+    <span class="hljs-tag">&lt;<span class="hljs-name">ThemeProvider</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Main</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ThemeProvider</span>&gt;</span>
+  );
+}
+
+function Header() {
+  const { theme, toggle } = useTheme();
+  return (
+    <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{theme}</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{toggle}</span>&gt;</span>切换主题<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+  );
+}
+</span></code></pre>
+<hr></hr>
+<h3 id="35-container--presentational">3.5 Container / Presentational</h3>
+<blockquote>
+<p>将<strong>数据逻辑</strong>与<strong>UI 渲染</strong>分离。</p>
+</blockquote>
+<pre><code class="lang-jsx"><span class="hljs-comment">// ========== Presentational（纯展示） ==========</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">UserCard</span>(<span class="hljs-params">{ name, avatar, role, onFollow }</span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    &lt;div className="user-card"&gt;
+      &lt;img src={avatar} alt={name} /&gt;
+      &lt;h3&gt;{name}&lt;/h3&gt;
+      &lt;span&gt;{role}&lt;/span&gt;
+      &lt;button onClick={onFollow}&gt;关注&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+
+// ========== Container（数据逻辑） ==========
+function UserCardContainer({ userId }) {
+  const { data: user, loading } = useFetch(`/api/users/${userId}`);
+  const [isFollowed, setIsFollowed] = useState(false);
+
+  const handleFollow = async () =&gt; {
+    await fetch(`/api/follow/${userId}`, { method: 'POST' });
+    setIsFollowed(true);
+  };
+
+  if (loading) return &lt;Skeleton /&gt;;
+
+  return (
+    &lt;UserCard
+      name={user.name}
+      avatar={user.avatar}
+      role={user.role}
+      onFollow={handleFollow}
+    /&gt;
+  );
+}
+</code></pre>
+<blockquote>
+<p><strong>现代趋势</strong>：Custom Hooks 已大量取代 Container 组件的角色。数据逻辑封装在 Hook 中，组件本身既获取数据又渲染 UI。</p>
+</blockquote>
+<hr></hr>
+<h3 id="36-state-reducer-pattern">3.6 State Reducer Pattern</h3>
+<blockquote>
+<p>将组件的状态更新逻辑通过 reducer 暴露给使用者，实现高度可控。</p>
+</blockquote>
+<pre><code class="lang-jsx"><span class="hljs-comment">// ========== 可自定义状态逻辑的 Toggle ==========</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">useToggle</span>(<span class="hljs-params">{ initialOn = false, reducer = toggleReducer } = {}</span>) </span>{
+  <span class="hljs-keyword">const</span> [{ on }, dispatch] = useReducer(reducer, { <span class="hljs-attr">on</span>: initialOn });
+
+  <span class="hljs-keyword">const</span> toggle = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> dispatch({ <span class="hljs-attr">type</span>: <span class="hljs-string">'TOGGLE'</span> });
+  <span class="hljs-keyword">const</span> setOn   = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> dispatch({ <span class="hljs-attr">type</span>: <span class="hljs-string">'ON'</span> });
+  <span class="hljs-keyword">const</span> setOff  = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> dispatch({ <span class="hljs-attr">type</span>: <span class="hljs-string">'OFF'</span> });
+
+  <span class="hljs-keyword">return</span> { on, toggle, setOn, setOff };
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">toggleReducer</span>(<span class="hljs-params">state, action</span>) </span>{
+  <span class="hljs-keyword">switch</span> (action.type) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'TOGGLE'</span>: <span class="hljs-keyword">return</span> { <span class="hljs-attr">on</span>: !state.on };
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'ON'</span>:     <span class="hljs-keyword">return</span> { <span class="hljs-attr">on</span>: <span class="hljs-literal">true</span> };
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'OFF'</span>:    <span class="hljs-keyword">return</span> { <span class="hljs-attr">on</span>: <span class="hljs-literal">false</span> };
+    <span class="hljs-keyword">default</span>:       <span class="hljs-keyword">return</span> state;
+  }
+}
+
+<span class="hljs-comment">// ---------- 使用者自定义 reducer ----------</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">customReducer</span>(<span class="hljs-params">state, action</span>) </span>{
+  <span class="hljs-comment">// 限制：最多只能切换 4 次</span>
+  <span class="hljs-keyword">if</span> (action.type === <span class="hljs-string">'TOGGLE'</span> &amp;&amp; state.count &gt;= <span class="hljs-number">4</span>) {
+    <span class="hljs-keyword">return</span> state; <span class="hljs-comment">// 忽略</span>
+  }
+  <span class="hljs-keyword">const</span> newState = toggleReducer(state, action);
+  <span class="hljs-keyword">return</span> action.type === <span class="hljs-string">'TOGGLE'</span>
+    ? { ...newState, <span class="hljs-attr">count</span>: (state.count || <span class="hljs-number">0</span>) + <span class="hljs-number">1</span> }
+    : newState;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> { on, toggle } = useToggle({ <span class="hljs-attr">reducer</span>: customReducer });
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{toggle}</span>&gt;</span>{on ? '开' : '关'}<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>;
+}
+</code></pre>
+<hr></hr>
+<h2 id="四、组件设计原则（solid-在前端）">四、组件设计原则（SOLID 在前端）</h2>
+<h3 id="41-单一职责原则（srp）">4.1 单一职责原则（SRP）</h3>
+<pre><code class="lang-jsx"><span class="hljs-comment">// ❌ 职责混杂</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">UserDashboard</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> [user, setUser] = useState(<span class="hljs-literal">null</span>);
+  <span class="hljs-keyword">const</span> [orders, setOrders] = useState([]);
+  <span class="hljs-keyword">const</span> [notifications, setNotifications] = useState([]);
+
+  useEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> { <span class="hljs-comment">/* 获取用户 */</span> }, []);
+  useEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> { <span class="hljs-comment">/* 获取订单 */</span> }, []);
+  useEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> { <span class="hljs-comment">/* 获取通知 */</span> }, []);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      {/* 用户信息渲染 */}
+      {/* 订单列表渲染 */}
+      {/* 通知列表渲染 */}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-comment">// ✅ 拆分职责</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">UserDashboard</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">UserProfile</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">OrderList</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">NotificationPanel</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="42-开闭原则（ocp）">4.2 开闭原则（OCP）</h3>
+<pre><code class="lang-jsx"><span class="hljs-comment">// ❌ 每次新增类型都要修改组件</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Alert</span>(<span class="hljs-params">{ type, message }</span>) </span>{
+  <span class="hljs-keyword">if</span> (type === <span class="hljs-string">'success'</span>) <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"green"</span>&gt;</span>{message}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  <span class="hljs-keyword">if</span> (type === <span class="hljs-string">'error'</span>)   <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"red"</span>&gt;</span>{message}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  <span class="hljs-keyword">if</span> (type === <span class="hljs-string">'warning'</span>) <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"yellow"</span>&gt;</span>{message}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  <span class="hljs-comment">// 新增类型需要改这里...</span>
+}
+
+<span class="hljs-comment">// ✅ 对扩展开放，对修改关闭</span>
+<span class="hljs-keyword">const</span> ALERT_STYLES = {
+  <span class="hljs-attr">success</span>: { <span class="hljs-attr">className</span>: <span class="hljs-string">'green'</span>, <span class="hljs-attr">icon</span>: <span class="hljs-string">'✓'</span> },
+  <span class="hljs-attr">error</span>:   { <span class="hljs-attr">className</span>: <span class="hljs-string">'red'</span>,   <span class="hljs-attr">icon</span>: <span class="hljs-string">'✗'</span> },
+  <span class="hljs-attr">warning</span>: { <span class="hljs-attr">className</span>: <span class="hljs-string">'yellow'</span>, <span class="hljs-attr">icon</span>: <span class="hljs-string">'⚠'</span> },
+};
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Alert</span>(<span class="hljs-params">{ type, message }</span>) </span>{
+  <span class="hljs-keyword">const</span> style = ALERT_STYLES[type] || ALERT_STYLES.success;
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{style.className}</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{style.icon}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> {message}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-comment">// 新增类型只需扩展配置</span>
+ALERT_STYLES.info = { <span class="hljs-attr">className</span>: <span class="hljs-string">'blue'</span>, <span class="hljs-attr">icon</span>: <span class="hljs-string">'ℹ'</span> };
+</code></pre>
+<h3 id="43-里氏替换原则（lsp）">4.3 里氏替换原则（LSP）</h3>
+<pre><code class="lang-jsx"><span class="hljs-comment">// 子组件应能替换父组件而不影响正确性</span>
+<span class="hljs-comment">// ✅ 所有 Button 变体共享同一 Props 接口</span>
+interface ButtonProps {
+  <span class="hljs-attr">onClick</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">void</span>;
+  disabled?: boolean;
+  children: React.ReactNode;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">PrimaryButton</span>(<span class="hljs-params">props: ButtonProps</span>) </span>{
+  <span class="hljs-keyword">return</span> &lt;button className="btn-primary" {...props} /&gt;;
+}
+
+function DangerButton(props: ButtonProps) {
+  return &lt;button className="btn-danger" {...props} /&gt;;
+}
+
+// 可在任何需要 Button 的地方互换使用
+function Toolbar({ ActionButton = PrimaryButton }) {
+  return &lt;ActionButton onClick={handleSave}&gt;保存&lt;/ActionButton&gt;;
+}
+</code></pre>
+<h3 id="44-接口隔离原则（isp）">4.4 接口隔离原则（ISP）</h3>
+<pre><code class="lang-jsx"><span class="hljs-comment">// ❌ Props 过于庞大</span>
+interface UserComponentProps {
+  <span class="hljs-attr">name</span>: string;
+  email: string;
+  avatar: string;
+  orders: Order[];
+  notifications: Notification[];
+  onFollow: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">void</span>;
+  onMessage: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">void</span>;
+  onBlock: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">void</span>;
+}
+
+<span class="hljs-comment">// ✅ 按职责拆分 Props</span>
+interface UserBasicProps {
+  <span class="hljs-attr">name</span>: string;
+  email: string;
+  avatar: string;
+}
+
+interface UserActionsProps {
+  <span class="hljs-attr">onFollow</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">void</span>;
+  onMessage: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">void</span>;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">UserAvatar</span>(<span class="hljs-params">{ name, avatar }: Pick&lt;UserBasicProps, <span class="hljs-string">'name'</span> | <span class="hljs-string">'avatar'</span>&gt;</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">{avatar}</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">{name}</span> /&gt;</span>;
+}
+</span></code></pre>
+<h3 id="45-依赖倒置原则（dip）">4.5 依赖倒置原则（DIP）</h3>
+<pre><code class="lang-jsx"><span class="hljs-comment">// ❌ 高层模块直接依赖低层实现</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">UserList</span>(<span class="hljs-params"></span>) </span>{
+  useEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    axios.get(<span class="hljs-string">'/api/users'</span>).then(<span class="hljs-comment">/* ... */</span>); <span class="hljs-comment">// 直接依赖 axios</span>
+  }, []);
+}
+
+<span class="hljs-comment">// ✅ 依赖抽象接口</span>
+<span class="hljs-comment">// api.ts</span>
+<span class="hljs-keyword">export</span> interface IHttpClient {
+  get&lt;T&gt;(url: string): <span class="hljs-built_in">Promise</span>&lt;T&gt;;
+  post&lt;T&gt;(url: string, <span class="hljs-attr">data</span>: unknown): <span class="hljs-built_in">Promise</span>&lt;T&gt;;
+}
+
+<span class="hljs-comment">// 注入实现</span>
+<span class="hljs-keyword">const</span> HttpContext = React.createContext&lt;IHttpClient&gt;(<span class="hljs-literal">null</span>!);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">UserList</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> http = useContext(HttpContext);
+  useEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    http.get(<span class="hljs-string">'/api/users'</span>).then(<span class="hljs-comment">/* ... */</span>);
+  }, [http]);
+}
+
+<span class="hljs-comment">// 测试时注入 mock</span>
+&lt;HttpContext.Provider value={mockHttp}&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">UserList</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">HttpContext.Provider</span>&gt;</span>
+</span></code></pre>
+<h3 id="46-props-设计最佳实践">4.6 Props 设计最佳实践</h3>
+<table>
+<thead>
+<tr>
+<th>原则</th>
+<th>说明</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>最小必要</strong></td>
+<td>只暴露必需的 props</td>
+<td>不要把整个 <code>user</code> 对象传入只需要 <code>name</code> 的组件</td>
+</tr>
+<tr>
+<td><strong>合理默认值</strong></td>
+<td>减少调用方负担</td>
+<td><code>size = 'medium'</code></td>
+</tr>
+<tr>
+<td><strong>语义化命名</strong></td>
+<td>props 名应体现意图</td>
+<td><code>onSubmit</code> 而非 <code>handler</code></td>
+</tr>
+<tr>
+<td><strong>受控 + 非受控兼容</strong></td>
+<td>同时支持两种模式</td>
+<td><code>value</code> + <code>defaultValue</code></td>
+</tr>
+<tr>
+<td><strong>回调约定</strong></td>
+<td><code>on</code> + 动词</td>
+<td><code>onChange</code>, <code>onSelect</code>, <code>onClose</code></td>
+</tr>
+<tr>
+<td><strong>枚举优于布尔</strong></td>
+<td>避免多个互斥 boolean</td>
+<td><code>variant="primary"</code> 而非 <code>isPrimary</code></td>
+</tr>
+<tr>
+<td><strong>组合优于配置</strong></td>
+<td>children &gt; renderXxx &gt; config</td>
+<td><code>&lt;Tabs&gt;&lt;Tab&gt;</code> 而非 <code>&lt;Tabs items={[...]}</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="47-可测试性设计">4.7 可测试性设计</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// ========== 纯函数易测试 ==========</span>
+<span class="hljs-comment">// utils/price.js</span>
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateTotal</span>(<span class="hljs-params">items, discount = <span class="hljs-number">0</span></span>) </span>{
+  <span class="hljs-keyword">const</span> subtotal = items.reduce(<span class="hljs-function">(<span class="hljs-params">sum, item</span>) =&gt;</span> sum + item.price * item.qty, <span class="hljs-number">0</span>);
+  <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.max(<span class="hljs-number">0</span>, subtotal * (<span class="hljs-number">1</span> - discount));
+}
+
+<span class="hljs-comment">// __tests__/price.test.js</span>
+describe(<span class="hljs-string">'calculateTotal'</span>, () =&gt; {
+  it(<span class="hljs-string">'无折扣'</span>, () =&gt; {
+    expect(calculateTotal([{ <span class="hljs-attr">price</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">qty</span>: <span class="hljs-number">2</span> }])).toBe(<span class="hljs-number">20</span>);
+  });
+  it(<span class="hljs-string">'八折'</span>, () =&gt; {
+    expect(calculateTotal([{ <span class="hljs-attr">price</span>: <span class="hljs-number">100</span>, <span class="hljs-attr">qty</span>: <span class="hljs-number">1</span> }], <span class="hljs-number">0.2</span>)).toBe(<span class="hljs-number">80</span>);
+  });
+  it(<span class="hljs-string">'空列表'</span>, () =&gt; {
+    expect(calculateTotal([])).toBe(<span class="hljs-number">0</span>);
+  });
+});
+
+<span class="hljs-comment">// ========== 依赖注入易 Mock ==========</span>
+<span class="hljs-comment">// 组件接收 fetcher 函数，测试时替换为 mock</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ProductList</span>(<span class="hljs-params">{ fetchProducts = defaultFetch }</span>) </span>{
+  <span class="hljs-keyword">const</span> [products, setProducts] = useState([]);
+  useEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    fetchProducts().then(setProducts);
+  }, [fetchProducts]);
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      {products.map((p) =&gt; <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{p.id}</span>&gt;</span>{p.name}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>)}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-comment">// 测试</span>
+<span class="hljs-keyword">const</span> mockFetch = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">Promise</span>.resolve([{ <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">'测试商品'</span> }]);
+render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ProductList</span> <span class="hljs-attr">fetchProducts</span>=<span class="hljs-string">{mockFetch}</span> /&gt;</span>);
+</span></code></pre>
+<hr></hr>
+<h2 id="五、高频面试题精选（10-道）">五、高频面试题精选（10+ 道）</h2>
+<h3 id="题目-1：手写发布订阅模式（eventemitter）">题目 1：手写发布订阅模式（EventEmitter）</h3>
+<blockquote>
+<p>见 1.2 节完整实现。要求：<code>on / off / once / emit</code>，注意 <code>once</code> 的 <code>_original</code> 引用、<code>emit</code> 时的数组拷贝。</p>
+</blockquote>
+<hr></hr>
+<h3 id="题目-2：单例模式有哪些应用场景？es-module-为什么天然是单例？">题目 2：单例模式有哪些应用场景？ES Module 为什么天然是单例？</h3>
+<p><strong>答</strong>：</p>
+<ul>
+<li>场景：全局弹窗、Vuex/Redux Store、日志系统、WebSocket 连接管理。</li>
+<li>ES Module 只会在首次 <code>import</code> 时执行并缓存导出值，后续 <code>import</code> 直接读缓存，等价于单例。</li>
+</ul>
+<hr></hr>
+<h3 id="题目-3：观察者模式和发布订阅的区别？">题目 3：观察者模式和发布订阅的区别？</h3>
+<p><strong>答</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>观察者模式</th>
+<th>发布订阅模式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>耦合度</td>
+<td>Subject 直接持有 Observer 引用</td>
+<td>通过事件中心解耦，双方互不感知</td>
+</tr>
+<tr>
+<td>通信方式</td>
+<td>同步调用 <code>observer.update()</code></td>
+<td>可异步，通过事件名匹配</td>
+</tr>
+<tr>
+<td>前端例子</td>
+<td><code>Object.defineProperty</code> 的 setter</td>
+<td>EventBus、Node.js EventEmitter</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h3 id="题目-4：手写一个简易-redux（createstore）">题目 4：手写一个简易 Redux（createStore）</h3>
+<blockquote>
+<p>见 2.2 节实现。关键：<code>getState</code>、<code>dispatch</code>（调用 reducer 并通知 listeners）、<code>subscribe</code>（返回 unsubscribe）。</p>
+</blockquote>
+<hr></hr>
+<h3 id="题目-5：策略模式如何优化大量-ifelse？">题目 5：策略模式如何优化大量 if/else？</h3>
+<p><strong>答</strong>：</p>
+<ol>
+<li>把每个分支逻辑封装为一个策略函数。</li>
+<li>用 Map/对象映射 <code>strategyName → handler</code>。</li>
+<li>调用时 <code>strategies[name](params)</code>，新增策略只需添加映射，无需修改调用方。</li>
+</ol>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 优化前</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getPrice</span>(<span class="hljs-params">userType, price</span>) </span>{
+  <span class="hljs-keyword">if</span> (userType === <span class="hljs-string">'vip'</span>)      <span class="hljs-keyword">return</span> price * <span class="hljs-number">0.8</span>;
+  <span class="hljs-keyword">if</span> (userType === <span class="hljs-string">'svip'</span>)     <span class="hljs-keyword">return</span> price * <span class="hljs-number">0.6</span>;
+  <span class="hljs-keyword">if</span> (userType === <span class="hljs-string">'employee'</span>) <span class="hljs-keyword">return</span> price * <span class="hljs-number">0.5</span>;
+  <span class="hljs-keyword">return</span> price;
+}
+
+<span class="hljs-comment">// 优化后</span>
+<span class="hljs-keyword">const</span> priceStrategies = {
+  <span class="hljs-attr">vip</span>:      <span class="hljs-function">(<span class="hljs-params">price</span>) =&gt;</span> price * <span class="hljs-number">0.8</span>,
+  <span class="hljs-attr">svip</span>:     <span class="hljs-function">(<span class="hljs-params">price</span>) =&gt;</span> price * <span class="hljs-number">0.6</span>,
+  <span class="hljs-attr">employee</span>: <span class="hljs-function">(<span class="hljs-params">price</span>) =&gt;</span> price * <span class="hljs-number">0.5</span>,
+  <span class="hljs-attr">default</span>:  <span class="hljs-function">(<span class="hljs-params">price</span>) =&gt;</span> price,
+};
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getPrice</span>(<span class="hljs-params">userType, price</span>) </span>{
+  <span class="hljs-keyword">return</span> (priceStrategies[userType] || priceStrategies.default)(price);
+}
+</code></pre>
+<hr></hr>
+<h3 id="题目-6：react-中-hoc、render-props、custom-hooks-的对比和选择？">题目 6：React 中 HOC、Render Props、Custom Hooks 的对比和选择？</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>HOC</th>
+<th>Render Props</th>
+<th>Custom Hooks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>形式</strong></td>
+<td>函数包裹组件</td>
+<td>组件接收 render 函数</td>
+<td>函数调用</td>
+</tr>
+<tr>
+<td><strong>类型推断</strong></td>
+<td>较难（props 来源不透明）</td>
+<td>一般</td>
+<td>最好</td>
+</tr>
+<tr>
+<td><strong>嵌套地狱</strong></td>
+<td>易出现多层包裹</td>
+<td>回调嵌套</td>
+<td>无嵌套</td>
+</tr>
+<tr>
+<td><strong>调试</strong></td>
+<td>组件名层层包裹</td>
+<td>尚可</td>
+<td>清晰</td>
+</tr>
+<tr>
+<td><strong>推荐场景</strong></td>
+<td>需要操作生命周期/Props 注入</td>
+<td>需要动态决定渲染内容</td>
+<td><strong>默认首选</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>现代 React 项目优先 Custom Hooks，HOC 用于需要包裹组件的场景（如路由守卫），Render Props 几乎被 Hooks 替代。</p>
+</blockquote>
+<hr></hr>
+<h3 id="题目-7：mvvm-的双向绑定原理？">题目 7：MVVM 的双向绑定原理？</h3>
+<p><strong>答</strong>：</p>
+<ul>
+<li><strong>Vue 2</strong>：<code>Object.defineProperty</code> 劫持 getter/setter → 依赖收集（Dep + Watcher）→ 视图更新。</li>
+<li><strong>Vue 3</strong>：<code>Proxy</code> 代理 → <code>ReactiveEffect</code> → 触发 <code>trigger</code> → 调度更新。</li>
+<li><strong>Angular</strong>：脏检查（Zone.js 拦截异步事件 → 触发 <code>$digest</code> 循环对比）。</li>
+</ul>
+<p>核心流程：<code>数据变化 → 拦截 → 通知依赖 → 更新 DOM</code>。</p>
+<hr></hr>
+<h3 id="题目-8：什么是-compound-components？解决什么问题？">题目 8：什么是 Compound Components？解决什么问题？</h3>
+<p><strong>答</strong>：</p>
+<ul>
+<li>多个子组件通过共享的 Context 隐式通信，对外提供统一的 API。</li>
+<li>解决<strong>配置式组件 props 过多</strong>的问题，让使用者以声明式的 JSX 结构来组合功能。</li>
+<li>典型例子：<code>&lt;Select&gt;&lt;Select.Option&gt;</code> / <code>&lt;Tabs&gt;&lt;Tab&gt;</code> / <code>&lt;Accordion&gt;&lt;Panel&gt;</code>。</li>
+</ul>
+<hr></hr>
+<h3 id="题目-9：如何设计一个可扩展的组件库？">题目 9：如何设计一个可扩展的组件库？</h3>
+<p><strong>答</strong>：</p>
+<ol>
+<li><strong>分层架构</strong>：原子组件 → 分子组件 → 有机组件（Atomic Design）。</li>
+<li><strong>样式方案</strong>：CSS Variables + Design Token，支持主题切换。</li>
+<li><strong>TypeScript</strong>：严格类型约束，导出完整类型定义。</li>
+<li><strong>按需加载</strong>：Tree-shaking 友好（ESM 导出），支持 <code>babel-plugin-import</code>。</li>
+<li><strong>测试策略</strong>：单元测试（Jest + Testing Library）+ 视觉回归（Storybook + Chromatic）。</li>
+<li><strong>文档驱动</strong>：每个组件有 Playground + API 文档 + 最佳实践。</li>
+<li><strong>版本管理</strong>：遵循 SemVer，CHANGELOG 自动生成。</li>
+</ol>
+<hr></hr>
+<h3 id="题目-10：代理模式在前端有哪些应用？">题目 10：代理模式在前端有哪些应用？</h3>
+<p><strong>答</strong>：</p>
+<ul>
+<li><strong>Vue 3 响应式</strong>：<code>Proxy</code> 拦截读写实现依赖收集与触发更新。</li>
+<li><strong>虚拟滚动</strong>：代理全量数据列表，实际只渲染可视区域。</li>
+<li><strong>缓存代理</strong>：对昂贵计算/API 请求结果做缓存。</li>
+<li><strong>图片懒加载</strong>：先加载占位图，进入可视区再替换真实 src。</li>
+<li><strong>Axios 拦截器</strong>：在请求/响应前后插入统一逻辑（本质是代理）。</li>
+<li><strong>ES Proxy 验证</strong>：用 <code>set</code> trap 做属性赋值校验。</li>
+</ul>
+<hr></hr>
+<h3 id="题目-11：mvcmvpmvvm-的核心区别？前端框架分别属于哪种？">题目 11：MVC/MVP/MVVM 的核心区别？前端框架分别属于哪种？</h3>
+<p><strong>答</strong>（见 2.1 节对比表）：</p>
+<ul>
+<li><strong>MVC</strong>：View 可直接访问 Model，Controller 薄 → Backbone。</li>
+<li><strong>MVP</strong>：View 与 Model 完全隔离，Presenter 厚 → 传统 Android。</li>
+<li><strong>MVVM</strong>：ViewModel 通过数据绑定自动同步 View 与 Model → Vue / Angular。</li>
+<li><strong>React</strong> 更接近 <strong>View 层库 + 单向数据流（Flux）</strong>，非典型 MVC/MVVM。</li>
+</ul>
+<hr></hr>
+<h3 id="题目-12：装饰器模式和代理模式有什么区别？">题目 12：装饰器模式和代理模式有什么区别？</h3>
+<p><strong>答</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>装饰器</th>
+<th>代理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>意图</strong></td>
+<td>增强/扩展功能</td>
+<td>控制访问</td>
+</tr>
+<tr>
+<td><strong>对象关系</strong></td>
+<td>多层嵌套包装</td>
+<td>一对一替代</td>
+</tr>
+<tr>
+<td><strong>生命周期</strong></td>
+<td>动态组合</td>
+<td>通常在创建时确定</td>
+</tr>
+<tr>
+<td><strong>前端举例</strong></td>
+<td>HOC、AOP 日志</td>
+<td>Proxy 响应式、缓存代理</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h3 id="题目-13：如何用迭代器模式实现一个树结构的深度优先遍历？">题目 13：如何用迭代器模式实现一个树结构的深度优先遍历？</h3>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TreeNode</span> </span>{
+  <span class="hljs-keyword">constructor</span>(value, children = []) {
+    <span class="hljs-keyword">this</span>.value = value;
+    <span class="hljs-keyword">this</span>.children = children;
+  }
+
+  <span class="hljs-comment">// 深度优先</span>
+  *[<span class="hljs-built_in">Symbol</span>.iterator]() {
+    <span class="hljs-keyword">yield</span> <span class="hljs-keyword">this</span>.value;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> child <span class="hljs-keyword">of</span> <span class="hljs-keyword">this</span>.children) {
+      <span class="hljs-keyword">yield</span>* child;
+    }
+  }
+}
+
+<span class="hljs-keyword">const</span> tree = <span class="hljs-keyword">new</span> TreeNode(<span class="hljs-string">'root'</span>, [
+  <span class="hljs-keyword">new</span> TreeNode(<span class="hljs-string">'A'</span>, [
+    <span class="hljs-keyword">new</span> TreeNode(<span class="hljs-string">'A1'</span>),
+    <span class="hljs-keyword">new</span> TreeNode(<span class="hljs-string">'A2'</span>),
+  ]),
+  <span class="hljs-keyword">new</span> TreeNode(<span class="hljs-string">'B'</span>, [
+    <span class="hljs-keyword">new</span> TreeNode(<span class="hljs-string">'B1'</span>),
+  ]),
+]);
+
+<span class="hljs-built_in">console</span>.log([...tree]); <span class="hljs-comment">// ['root', 'A', 'A1', 'A2', 'B', 'B1']</span>
+</code></pre>
+<hr></hr>
+<h3 id="题目-14：中介者模式和发布订阅模式有什么区别？">题目 14：中介者模式和发布订阅模式有什么区别？</h3>
+<p><strong>答</strong>：</p>
+<ul>
+<li><strong>中介者</strong>：各组件显式注册到中介者，中介者了解每个组件的存在，负责<strong>编排协调</strong>。</li>
+<li><strong>发布订阅</strong>：发布者和订阅者互不知道对方存在，只通过<strong>事件名</strong>通信，更松散。</li>
+<li>前端状态管理（Redux/Vuex）兼具两者特征：Store 既是中介者（了解所有 reducer），也是事件中心（dispatch action）。</li>
+</ul>
+<hr></hr>
+<h2 id="六、设计模式选择速查表">六、设计模式选择速查表</h2>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>推荐模式</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全局唯一实例</td>
+<td>单例</td>
+<td>Store、弹窗、WebSocket</td>
+</tr>
+<tr>
+<td>组件间通信</td>
+<td>发布订阅 / 中介者</td>
+<td>EventBus / Store</td>
+</tr>
+<tr>
+<td>消除 if/else</td>
+<td>策略</td>
+<td>表单校验、价格策略</td>
+</tr>
+<tr>
+<td>增强组件能力</td>
+<td>装饰器</td>
+<td>HOC、日志、权限</td>
+</tr>
+<tr>
+<td>控制访问</td>
+<td>代理</td>
+<td>响应式、缓存、懒加载</td>
+</tr>
+<tr>
+<td>对象创建封装</td>
+<td>工厂</td>
+<td>createElement、跨平台 UI</td>
+</tr>
+<tr>
+<td>接口不兼容</td>
+<td>适配器</td>
+<td>API 版本兼容、三方库封装</td>
+</tr>
+<tr>
+<td>树形结构操作</td>
+<td>组合</td>
+<td>组件树、文件系统</td>
+</tr>
+<tr>
+<td>遍历集合</td>
+<td>迭代器</td>
+<td>自定义序列、Tree Walker</td>
+</tr>
+<tr>
+<td>状态逻辑复用</td>
+<td>Custom Hook</td>
+<td>替代 HOC / Render Props</td>
+</tr>
+<tr>
+<td>复杂组件 API</td>
+<td>Compound Components</td>
+<td>Select、Tabs、Accordion</td>
+</tr>
+<tr>
+<td>外部控制内部状态</td>
+<td>State Reducer</td>
+<td>高度可定制组件</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="七、总结与学习路线">七、总结与学习路线</h2>
+<pre><code>入门期：理解单例 → 观察者 → 策略 → 工厂
+           ↓
+进阶期：装饰器 → 代理 → 适配器 → 组合 → 迭代器
+           ↓
+框架期：Compound Components → Render Props → Custom Hooks
+           ↓
+架构期：MVC/MVVM 对比 → Flux/Redux → 插件化 → DDD
+           ↓
+高级期：SOLID 原则 → 可测试性设计 → 组件库架构
+</code></pre><p><strong>面试建议</strong>：</p>
+<ol>
+<li>手写能力：<code>EventEmitter</code>、<code>createStore</code>、<code>策略模式优化 if/else</code> 必须滚瓜烂熟。</li>
+<li>模式识别：能说出所用框架/库背后的设计模式（Vue → 观察者 + 代理、React → 工厂 + 组合）。</li>
+<li>取舍能力：不是所有场景都需要设计模式，过度设计比没有设计更糟糕。</li>
+<li>SOLID 原则：结合实际组件设计来阐述，不要背概念。</li>
+</ol>
+<hr></hr>
+<blockquote>
+<p><strong>下一章推荐</strong>：TypeScript 高级类型与类型体操 / 前端工程化与构建工具</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="state-management.html" class="navigation navigation-prev " aria-label="Previous page: 状态管理深度解析">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../nodejs/basics.html" class="navigation navigation-next " aria-label="Next page: Node.js基础">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"设计模式与架构","level":"2.14","depth":1,"next":{"title":"Node.js基础","level":"3.1","depth":1,"path":"nodejs/basics.md","ref":"nodejs/basics.md","articles":[]},"previous":{"title":"状态管理深度解析","level":"2.13","depth":1,"path":"frontend/state-management.md","ref":"frontend/state-management.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"frontend/design-patterns.md","mtime":"2026-03-31T12:30:30.409Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -3,10 +3,11 @@
 <html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>常用框架 · 全栈开发面试指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="generator" content="GitBook 6.1.7">
         
         
         
@@ -16,19 +17,23 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -69,10 +74,14 @@
     </head>
     <body>
         
-<div class="book honkit-cloak">
+<div class="book">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -269,6 +278,66 @@
             
         </li>
     
+        <li class="chapter " data-level="2.11" data-path="../frontend/micro-frontend.html">
+            
+                <a href="../frontend/micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../frontend/mobile-dev.html">
+            
+                <a href="../frontend/mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../frontend/state-management.html">
+            
+                <a href="../frontend/state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../frontend/design-patterns.html">
+            
+                <a href="../frontend/design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -359,6 +428,21 @@
                         <b>3.6.</b>
                     
                     最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="serverless.html">
+            
+                <a href="serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
             
                 </a>
             
@@ -463,6 +547,21 @@
             
         </li>
     
+        <li class="chapter " data-level="4.7" data-path="../golang/cloud-native.html">
+            
+                <a href="../golang/cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -553,6 +652,21 @@
                         <b>5.6.</b>
                     
                     实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../agent/evaluation.html">
+            
+                <a href="../agent/evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
             
                 </a>
             
@@ -657,14 +771,29 @@
             
         </li>
     
+        <li class="chapter " data-level="6.7" data-path="../algorithm/system-design.html">
+            
+                <a href="../algorithm/system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
     <li class="divider"></li>
 
     <li>
-        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
-            本书使用 HonKit 发布
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -697,6 +826,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="nodejs-常用框架面试指南">Node.js 常用框架面试指南</h1>
@@ -711,110 +843,110 @@
 </blockquote>
 <p>Express 的中间件采用的是<strong>线性模型</strong>（非洋葱模型）。中间件按照注册顺序依次执行，通过 <code>next()</code> 函数将控制权传递给下一个中间件。</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
-<span class="hljs-keyword">const</span> app = <span class="hljs-title function_">express</span>();
+<span class="hljs-keyword">const</span> app = express();
 
 <span class="hljs-comment">// 中间件的本质是一个函数：(req, res, next) =&gt; {}</span>
 <span class="hljs-comment">// 按照注册顺序依次执行</span>
 
 <span class="hljs-comment">// 中间件1：日志</span>
-app.<span class="hljs-title function_">use</span>(<span class="hljs-function">(<span class="hljs-params">req, res, next</span>) =&gt;</span> {
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`[<span class="hljs-subst">${<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().toISOString()}</span>] <span class="hljs-subst">${req.method}</span> <span class="hljs-subst">${req.url}</span>`</span>);
-  <span class="hljs-keyword">const</span> start = <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>();
+app.use(<span class="hljs-function">(<span class="hljs-params">req, res, next</span>) =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`[<span class="hljs-subst">${<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().toISOString()}</span>] <span class="hljs-subst">${req.method}</span> <span class="hljs-subst">${req.url}</span>`</span>);
+  <span class="hljs-keyword">const</span> start = <span class="hljs-built_in">Date</span>.now();
 
   <span class="hljs-comment">// 注意：Express 的线性模型中，这里的“后续代码”在 next() 调用后继续执行</span>
   <span class="hljs-comment">// 但无法保证下游中间件是否已经完成（可能是异步的）</span>
-  <span class="hljs-title function_">next</span>();
+  next();
 
   <span class="hljs-comment">// 这行会在 next() 同步返回后立即执行</span>
   <span class="hljs-comment">// 但响应可能还没有完成（如果下游有异步操作）</span>
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`耗时: <span class="hljs-subst">${<span class="hljs-built_in">Date</span>.now() - start}</span>ms`</span>);
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`耗时: <span class="hljs-subst">${<span class="hljs-built_in">Date</span>.now() - start}</span>ms`</span>);
 });
 
 <span class="hljs-comment">// 中间件2：设置公共头</span>
-app.<span class="hljs-title function_">use</span>(<span class="hljs-function">(<span class="hljs-params">req, res, next</span>) =&gt;</span> {
-  res.<span class="hljs-title function_">set</span>(<span class="hljs-string">'X-Powered-By'</span>, <span class="hljs-string">'MyApp'</span>);
-  <span class="hljs-title function_">next</span>();
+app.use(<span class="hljs-function">(<span class="hljs-params">req, res, next</span>) =&gt;</span> {
+  res.set(<span class="hljs-string">'X-Powered-By'</span>, <span class="hljs-string">'MyApp'</span>);
+  next();
 });
 
 <span class="hljs-comment">// 路由处理</span>
-app.<span class="hljs-title function_">get</span>(<span class="hljs-string">'/api/users'</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> {
-  res.<span class="hljs-title function_">json</span>([{ <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span> }]);
+app.get(<span class="hljs-string">'/api/users'</span>, (req, res) =&gt; {
+  res.json([{ <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span> }]);
 });
 
 <span class="hljs-comment">// 执行流程：中间件1 → next() → 中间件2 → next() → 路由处理</span>
 </code></pre>
 <p>中间件的类型：</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 1. 应用级中间件</span>
-app.<span class="hljs-title function_">use</span>(middleware);
-app.<span class="hljs-title function_">use</span>(<span class="hljs-string">'/api'</span>, middleware); <span class="hljs-comment">// 指定路径前缀</span>
+app.use(middleware);
+app.use(<span class="hljs-string">'/api'</span>, middleware); <span class="hljs-comment">// 指定路径前缀</span>
 
 <span class="hljs-comment">// 2. 路由级中间件</span>
-<span class="hljs-keyword">const</span> router = express.<span class="hljs-title class_">Router</span>();
-router.<span class="hljs-title function_">use</span>(middleware);
+<span class="hljs-keyword">const</span> router = express.Router();
+router.use(middleware);
 
 <span class="hljs-comment">// 3. 错误处理中间件（4个参数）</span>
-app.<span class="hljs-title function_">use</span>(<span class="hljs-function">(<span class="hljs-params">err, req, res, next</span>) =&gt;</span> { <span class="hljs-comment">/* ... */</span> });
+app.use(<span class="hljs-function">(<span class="hljs-params">err, req, res, next</span>) =&gt;</span> { <span class="hljs-comment">/* ... */</span> });
 
 <span class="hljs-comment">// 4. 内置中间件</span>
-app.<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">json</span>());           <span class="hljs-comment">// 解析 JSON body</span>
-app.<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">urlencoded</span>({ <span class="hljs-attr">extended</span>: <span class="hljs-literal">true</span> })); <span class="hljs-comment">// 解析 URL 编码 body</span>
-app.<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">static</span>(<span class="hljs-string">'public'</span>)); <span class="hljs-comment">// 静态文件服务</span>
+app.use(express.json());           <span class="hljs-comment">// 解析 JSON body</span>
+app.use(express.urlencoded({ <span class="hljs-attr">extended</span>: <span class="hljs-literal">true</span> })); <span class="hljs-comment">// 解析 URL 编码 body</span>
+app.use(express.static(<span class="hljs-string">'public'</span>)); <span class="hljs-comment">// 静态文件服务</span>
 
 <span class="hljs-comment">// 5. 第三方中间件</span>
 <span class="hljs-keyword">const</span> cors = <span class="hljs-built_in">require</span>(<span class="hljs-string">'cors'</span>);
-app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">cors</span>());
+app.use(cors());
 </code></pre>
 <h3 id="12-路由系统">1.2 路由系统</h3>
 <pre><code class="lang-javascript"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
-<span class="hljs-keyword">const</span> app = <span class="hljs-title function_">express</span>();
-<span class="hljs-keyword">const</span> router = express.<span class="hljs-title class_">Router</span>();
+<span class="hljs-keyword">const</span> app = express();
+<span class="hljs-keyword">const</span> router = express.Router();
 
 <span class="hljs-comment">// 基本路由</span>
-app.<span class="hljs-title function_">get</span>(<span class="hljs-string">'/'</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> res.<span class="hljs-title function_">send</span>(<span class="hljs-string">'Hello'</span>));
-app.<span class="hljs-title function_">post</span>(<span class="hljs-string">'/users'</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> res.<span class="hljs-title function_">json</span>(req.<span class="hljs-property">body</span>));
-app.<span class="hljs-title function_">put</span>(<span class="hljs-string">'/users/:id'</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> res.<span class="hljs-title function_">json</span>({ <span class="hljs-attr">id</span>: req.<span class="hljs-property">params</span>.<span class="hljs-property">id</span> }));
-app.<span class="hljs-title function_">delete</span>(<span class="hljs-string">'/users/:id'</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> res.<span class="hljs-title function_">sendStatus</span>(<span class="hljs-number">204</span>));
+app.get(<span class="hljs-string">'/'</span>, (req, res) =&gt; res.send(<span class="hljs-string">'Hello'</span>));
+app.post(<span class="hljs-string">'/users'</span>, (req, res) =&gt; res.json(req.body));
+app.put(<span class="hljs-string">'/users/:id'</span>, (req, res) =&gt; res.json({ <span class="hljs-attr">id</span>: req.params.id }));
+app.delete(<span class="hljs-string">'/users/:id'</span>, (req, res) =&gt; res.sendStatus(<span class="hljs-number">204</span>));
 
 <span class="hljs-comment">// 路由参数</span>
-app.<span class="hljs-title function_">get</span>(<span class="hljs-string">'/users/:userId/posts/:postId'</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> {
-  <span class="hljs-keyword">const</span> { userId, postId } = req.<span class="hljs-property">params</span>;
-  res.<span class="hljs-title function_">json</span>({ userId, postId });
+app.get(<span class="hljs-string">'/users/:userId/posts/:postId'</span>, (req, res) =&gt; {
+  <span class="hljs-keyword">const</span> { userId, postId } = req.params;
+  res.json({ userId, postId });
 });
 
 <span class="hljs-comment">// 路由参数验证（param 中间件）</span>
-app.<span class="hljs-title function_">param</span>(<span class="hljs-string">'userId'</span>, <span class="hljs-function">(<span class="hljs-params">req, res, next, id</span>) =&gt;</span> {
+app.param(<span class="hljs-string">'userId'</span>, (req, res, next, id) =&gt; {
   <span class="hljs-comment">// 预处理 userId 参数</span>
-  <span class="hljs-keyword">const</span> user = <span class="hljs-title function_">findUserById</span>(id);
-  <span class="hljs-keyword">if</span> (!user) <span class="hljs-keyword">return</span> res.<span class="hljs-title function_">status</span>(<span class="hljs-number">404</span>).<span class="hljs-title function_">json</span>({ <span class="hljs-attr">error</span>: <span class="hljs-string">'User not found'</span> });
-  req.<span class="hljs-property">user</span> = user;
-  <span class="hljs-title function_">next</span>();
+  <span class="hljs-keyword">const</span> user = findUserById(id);
+  <span class="hljs-keyword">if</span> (!user) <span class="hljs-keyword">return</span> res.status(<span class="hljs-number">404</span>).json({ <span class="hljs-attr">error</span>: <span class="hljs-string">'User not found'</span> });
+  req.user = user;
+  next();
 });
 
 <span class="hljs-comment">// 查询参数</span>
 <span class="hljs-comment">// GET /search?keyword=node&amp;page=1</span>
-app.<span class="hljs-title function_">get</span>(<span class="hljs-string">'/search'</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> {
-  <span class="hljs-keyword">const</span> { keyword, page } = req.<span class="hljs-property">query</span>;
-  res.<span class="hljs-title function_">json</span>({ keyword, page });
+app.get(<span class="hljs-string">'/search'</span>, (req, res) =&gt; {
+  <span class="hljs-keyword">const</span> { keyword, page } = req.query;
+  res.json({ keyword, page });
 });
 
 <span class="hljs-comment">// 路由分组（Router）</span>
-<span class="hljs-keyword">const</span> userRouter = express.<span class="hljs-title class_">Router</span>();
-userRouter.<span class="hljs-title function_">get</span>(<span class="hljs-string">'/'</span>, listUsers);
-userRouter.<span class="hljs-title function_">post</span>(<span class="hljs-string">'/'</span>, createUser);
-userRouter.<span class="hljs-title function_">get</span>(<span class="hljs-string">'/:id'</span>, getUser);
-userRouter.<span class="hljs-title function_">put</span>(<span class="hljs-string">'/:id'</span>, updateUser);
-userRouter.<span class="hljs-title function_">delete</span>(<span class="hljs-string">'/:id'</span>, deleteUser);
+<span class="hljs-keyword">const</span> userRouter = express.Router();
+userRouter.get(<span class="hljs-string">'/'</span>, listUsers);
+userRouter.post(<span class="hljs-string">'/'</span>, createUser);
+userRouter.get(<span class="hljs-string">'/:id'</span>, getUser);
+userRouter.put(<span class="hljs-string">'/:id'</span>, updateUser);
+userRouter.delete(<span class="hljs-string">'/:id'</span>, deleteUser);
 
-app.<span class="hljs-title function_">use</span>(<span class="hljs-string">'/api/users'</span>, userRouter);
+app.use(<span class="hljs-string">'/api/users'</span>, userRouter);
 
 <span class="hljs-comment">// 链式路由</span>
-app.<span class="hljs-title function_">route</span>(<span class="hljs-string">'/books'</span>)
-  .<span class="hljs-title function_">get</span>(<span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> { <span class="hljs-comment">/* 获取列表 */</span> })
-  .<span class="hljs-title function_">post</span>(<span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> { <span class="hljs-comment">/* 创建 */</span> });
+app.route(<span class="hljs-string">'/books'</span>)
+  .get(<span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> { <span class="hljs-comment">/* 获取列表 */</span> })
+  .post(<span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> { <span class="hljs-comment">/* 创建 */</span> });
 
 <span class="hljs-comment">// 正则匹配路由</span>
-app.<span class="hljs-title function_">get</span>(<span class="hljs-regexp">/.*fly$/</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> {
-  res.<span class="hljs-title function_">send</span>(<span class="hljs-string">'匹配以 fly 结尾的路径'</span>);
+app.get(<span class="hljs-regexp">/.*fly$/</span>, (req, res) =&gt; {
+  res.send(<span class="hljs-string">'匹配以 fly 结尾的路径'</span>);
 });
 </code></pre>
 <h3 id="13-错误处理中间件">1.3 错误处理中间件</h3>
@@ -822,72 +954,72 @@ app.<span class="hljs-title function_">get</span>(<span class="hljs-regexp">/.*f
 <p><strong>面试题：Express 中如何统一处理错误？</strong></p>
 </blockquote>
 <pre><code class="lang-javascript"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
-<span class="hljs-keyword">const</span> app = <span class="hljs-title function_">express</span>();
+<span class="hljs-keyword">const</span> app = express();
 
 <span class="hljs-comment">// 自定义错误类</span>
-<span class="hljs-keyword">class</span> <span class="hljs-title class_">AppError</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Error</span> {
-  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">message, statusCode</span>) {
-    <span class="hljs-variable language_">super</span>(message);
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">statusCode</span> = statusCode;
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">isOperational</span> = <span class="hljs-literal">true</span>;
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AppError</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Error</span> </span>{
+  <span class="hljs-keyword">constructor</span>(message, statusCode) {
+    <span class="hljs-keyword">super</span>(message);
+    <span class="hljs-keyword">this</span>.statusCode = statusCode;
+    <span class="hljs-keyword">this</span>.isOperational = <span class="hljs-literal">true</span>;
   }
 }
 
 <span class="hljs-comment">// 路由中抛出错误</span>
-app.<span class="hljs-title function_">get</span>(<span class="hljs-string">'/api/users/:id'</span>, <span class="hljs-title function_">async</span> (req, res, next) =&gt; {
+app.get(<span class="hljs-string">'/api/users/:id'</span>, <span class="hljs-keyword">async</span> (req, res, next) =&gt; {
   <span class="hljs-keyword">try</span> {
-    <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> <span class="hljs-title function_">findUser</span>(req.<span class="hljs-property">params</span>.<span class="hljs-property">id</span>);
+    <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> findUser(req.params.id);
     <span class="hljs-keyword">if</span> (!user) {
-      <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">AppError</span>(<span class="hljs-string">'用户不存在'</span>, <span class="hljs-number">404</span>);
+      <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> AppError(<span class="hljs-string">'用户不存在'</span>, <span class="hljs-number">404</span>);
     }
-    res.<span class="hljs-title function_">json</span>(user);
+    res.json(user);
   } <span class="hljs-keyword">catch</span> (err) {
-    <span class="hljs-title function_">next</span>(err); <span class="hljs-comment">// 传递给错误处理中间件</span>
+    next(err); <span class="hljs-comment">// 传递给错误处理中间件</span>
   }
 });
 
 <span class="hljs-comment">// 封装异步错误处理</span>
-<span class="hljs-keyword">const</span> <span class="hljs-title function_">asyncHandler</span> = (<span class="hljs-params">fn</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">req, res, next</span>) =&gt;</span> {
-  <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>(<span class="hljs-title function_">fn</span>(req, res, next)).<span class="hljs-title function_">catch</span>(next);
+<span class="hljs-keyword">const</span> asyncHandler = <span class="hljs-function">(<span class="hljs-params">fn</span>) =&gt;</span> (req, res, next) =&gt; {
+  <span class="hljs-built_in">Promise</span>.resolve(fn(req, res, next)).catch(next);
 };
 
-app.<span class="hljs-title function_">get</span>(<span class="hljs-string">'/api/posts'</span>, <span class="hljs-title function_">asyncHandler</span>(<span class="hljs-title function_">async</span> (req, res) =&gt; {
-  <span class="hljs-keyword">const</span> posts = <span class="hljs-keyword">await</span> <span class="hljs-title function_">getPosts</span>();
-  res.<span class="hljs-title function_">json</span>(posts);
+app.get(<span class="hljs-string">'/api/posts'</span>, asyncHandler(<span class="hljs-keyword">async</span> (req, res) =&gt; {
+  <span class="hljs-keyword">const</span> posts = <span class="hljs-keyword">await</span> getPosts();
+  res.json(posts);
   <span class="hljs-comment">// 如果 getPosts 抛出异常，会自动被 catch 并传递给 next</span>
 }));
 
 <span class="hljs-comment">// 404 处理（放在所有路由之后）</span>
-app.<span class="hljs-title function_">use</span>(<span class="hljs-function">(<span class="hljs-params">req, res, next</span>) =&gt;</span> {
-  <span class="hljs-title function_">next</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">AppError</span>(<span class="hljs-string">`找不到 <span class="hljs-subst">${req.originalUrl}</span>`</span>, <span class="hljs-number">404</span>));
+app.use(<span class="hljs-function">(<span class="hljs-params">req, res, next</span>) =&gt;</span> {
+  next(<span class="hljs-keyword">new</span> AppError(<span class="hljs-string">`找不到 <span class="hljs-subst">${req.originalUrl}</span>`</span>, <span class="hljs-number">404</span>));
 });
 
 <span class="hljs-comment">// 统一错误处理中间件（必须有4个参数）</span>
-app.<span class="hljs-title function_">use</span>(<span class="hljs-function">(<span class="hljs-params">err, req, res, next</span>) =&gt;</span> {
-  <span class="hljs-keyword">const</span> statusCode = err.<span class="hljs-property">statusCode</span> || <span class="hljs-number">500</span>;
-  <span class="hljs-keyword">const</span> message = err.<span class="hljs-property">isOperational</span> ? err.<span class="hljs-property">message</span> : <span class="hljs-string">'服务器内部错误'</span>;
+app.use(<span class="hljs-function">(<span class="hljs-params">err, req, res, next</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> statusCode = err.statusCode || <span class="hljs-number">500</span>;
+  <span class="hljs-keyword">const</span> message = err.isOperational ? err.message : <span class="hljs-string">'服务器内部错误'</span>;
 
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'Error:'</span>, err);
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">'Error:'</span>, err);
 
-  res.<span class="hljs-title function_">status</span>(statusCode).<span class="hljs-title function_">json</span>({
+  res.status(statusCode).json({
     <span class="hljs-attr">status</span>: <span class="hljs-string">'error'</span>,
     statusCode,
     message,
-    ...(process.<span class="hljs-property">env</span>.<span class="hljs-property">NODE_ENV</span> === <span class="hljs-string">'development'</span> &amp;&amp; { <span class="hljs-attr">stack</span>: err.<span class="hljs-property">stack</span> })
+    ...(process.env.NODE_ENV === <span class="hljs-string">'development'</span> &amp;&amp; { <span class="hljs-attr">stack</span>: err.stack })
   });
 });
 </code></pre>
 <h3 id="14-常用中间件">1.4 常用中间件</h3>
 <pre><code class="lang-javascript"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
-<span class="hljs-keyword">const</span> app = <span class="hljs-title function_">express</span>();
+<span class="hljs-keyword">const</span> app = express();
 
 <span class="hljs-comment">// body-parser（Express 4.16+ 已内置）</span>
-app.<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">json</span>({ <span class="hljs-attr">limit</span>: <span class="hljs-string">'10mb'</span> }));
-app.<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">urlencoded</span>({ <span class="hljs-attr">extended</span>: <span class="hljs-literal">true</span> }));
+app.use(express.json({ <span class="hljs-attr">limit</span>: <span class="hljs-string">'10mb'</span> }));
+app.use(express.urlencoded({ <span class="hljs-attr">extended</span>: <span class="hljs-literal">true</span> }));
 
 <span class="hljs-comment">// cors - 跨域资源共享</span>
 <span class="hljs-keyword">const</span> cors = <span class="hljs-built_in">require</span>(<span class="hljs-string">'cors'</span>);
-app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">cors</span>({
+app.use(cors({
   <span class="hljs-attr">origin</span>: [<span class="hljs-string">'http://localhost:3000'</span>, <span class="hljs-string">'https://myapp.com'</span>],
   <span class="hljs-attr">methods</span>: [<span class="hljs-string">'GET'</span>, <span class="hljs-string">'POST'</span>, <span class="hljs-string">'PUT'</span>, <span class="hljs-string">'DELETE'</span>],
   <span class="hljs-attr">allowedHeaders</span>: [<span class="hljs-string">'Content-Type'</span>, <span class="hljs-string">'Authorization'</span>],
@@ -897,35 +1029,35 @@ app.<span class="hljs-title function_">use</span>(<span class="hljs-title functi
 
 <span class="hljs-comment">// helmet - 安全 HTTP 头</span>
 <span class="hljs-keyword">const</span> helmet = <span class="hljs-built_in">require</span>(<span class="hljs-string">'helmet'</span>);
-app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">helmet</span>()); <span class="hljs-comment">// 设置多种安全相关的 HTTP 头</span>
+app.use(helmet()); <span class="hljs-comment">// 设置多种安全相关的 HTTP 头</span>
 
 <span class="hljs-comment">// morgan - HTTP 请求日志</span>
 <span class="hljs-keyword">const</span> morgan = <span class="hljs-built_in">require</span>(<span class="hljs-string">'morgan'</span>);
-app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">morgan</span>(<span class="hljs-string">'combined'</span>)); <span class="hljs-comment">// Apache 格式</span>
-app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">morgan</span>(<span class="hljs-string">'dev'</span>));       <span class="hljs-comment">// 开发格式（彩色）</span>
+app.use(morgan(<span class="hljs-string">'combined'</span>)); <span class="hljs-comment">// Apache 格式</span>
+app.use(morgan(<span class="hljs-string">'dev'</span>));       <span class="hljs-comment">// 开发格式（彩色）</span>
 <span class="hljs-comment">// 自定义格式</span>
-app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">morgan</span>(<span class="hljs-string">':method :url :status :response-time ms'</span>));
+app.use(morgan(<span class="hljs-string">':method :url :status :response-time ms'</span>));
 
 <span class="hljs-comment">// compression - 响应压缩</span>
 <span class="hljs-keyword">const</span> compression = <span class="hljs-built_in">require</span>(<span class="hljs-string">'compression'</span>);
-app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">compression</span>());
+app.use(compression());
 
 <span class="hljs-comment">// rate-limit - 请求限流</span>
 <span class="hljs-keyword">const</span> rateLimit = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express-rate-limit'</span>);
-<span class="hljs-keyword">const</span> limiter = <span class="hljs-title function_">rateLimit</span>({
+<span class="hljs-keyword">const</span> limiter = rateLimit({
   <span class="hljs-attr">windowMs</span>: <span class="hljs-number">15</span> * <span class="hljs-number">60</span> * <span class="hljs-number">1000</span>, <span class="hljs-comment">// 15 分钟</span>
-  <span class="hljs-attr">max</span>: <span class="hljs-number">100</span>,                  <span class="hljs-comment">// 每个 IP 最多 100 次请求</span>
-  <span class="hljs-attr">message</span>: <span class="hljs-string">'请求过于频繁，请稍后再试'</span>
+  max: <span class="hljs-number">100</span>,                  <span class="hljs-comment">// 每个 IP 最多 100 次请求</span>
+  message: <span class="hljs-string">'请求过于频繁，请稍后再试'</span>
 });
-app.<span class="hljs-title function_">use</span>(<span class="hljs-string">'/api/'</span>, limiter);
+app.use(<span class="hljs-string">'/api/'</span>, limiter);
 
 <span class="hljs-comment">// cookie-parser</span>
 <span class="hljs-keyword">const</span> cookieParser = <span class="hljs-built_in">require</span>(<span class="hljs-string">'cookie-parser'</span>);
-app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">cookieParser</span>(<span class="hljs-string">'secret'</span>));
+app.use(cookieParser(<span class="hljs-string">'secret'</span>));
 
 <span class="hljs-comment">// express-session</span>
 <span class="hljs-keyword">const</span> session = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express-session'</span>);
-app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">session</span>({
+app.use(session({
   <span class="hljs-attr">secret</span>: <span class="hljs-string">'my-secret'</span>,
   <span class="hljs-attr">resave</span>: <span class="hljs-literal">false</span>,
   <span class="hljs-attr">saveUninitialized</span>: <span class="hljs-literal">false</span>,
@@ -934,9 +1066,9 @@ app.<span class="hljs-title function_">use</span>(<span class="hljs-title functi
 
 <span class="hljs-comment">// multer - 文件上传</span>
 <span class="hljs-keyword">const</span> multer = <span class="hljs-built_in">require</span>(<span class="hljs-string">'multer'</span>);
-<span class="hljs-keyword">const</span> upload = <span class="hljs-title function_">multer</span>({ <span class="hljs-attr">dest</span>: <span class="hljs-string">'uploads/'</span> });
-app.<span class="hljs-title function_">post</span>(<span class="hljs-string">'/upload'</span>, upload.<span class="hljs-title function_">single</span>(<span class="hljs-string">'file'</span>), <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> {
-  res.<span class="hljs-title function_">json</span>({ <span class="hljs-attr">file</span>: req.<span class="hljs-property">file</span> });
+<span class="hljs-keyword">const</span> upload = multer({ <span class="hljs-attr">dest</span>: <span class="hljs-string">'uploads/'</span> });
+app.post(<span class="hljs-string">'/upload'</span>, upload.single(<span class="hljs-string">'file'</span>), (req, res) =&gt; {
+  res.json({ <span class="hljs-attr">file</span>: req.file });
 });
 </code></pre>
 <hr></hr>
@@ -1002,29 +1134,29 @@ app.<span class="hljs-title function_">post</span>(<span class="hljs-string">'/u
 <p><strong>面试题：请解释 Koa 的洋葱模型，它和 Express 的中间件模型有什么不同？</strong></p>
 </blockquote>
 <p>Koa 的洋葱模型意味着请求先从外向内穿过所有中间件（<code>await next()</code> 之前的代码），到达最内层后再从内向外返回（<code>await next()</code> 之后的代码）。这使得每个中间件都可以在请求处理前后执行逻辑。</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> <span class="hljs-title class_">Koa</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'koa'</span>);
-<span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Koa</span>();
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> Koa = <span class="hljs-built_in">require</span>(<span class="hljs-string">'koa'</span>);
+<span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Koa();
 
 <span class="hljs-comment">// 洋葱模型演示</span>
-app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">async</span> (ctx, next) =&gt; {
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'1 - 进入中间件 A'</span>);
-  <span class="hljs-keyword">await</span> <span class="hljs-title function_">next</span>();
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'6 - 离开中间件 A'</span>);
+app.use(<span class="hljs-keyword">async</span> (ctx, next) =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'1 - 进入中间件 A'</span>);
+  <span class="hljs-keyword">await</span> next();
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'6 - 离开中间件 A'</span>);
 });
 
-app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">async</span> (ctx, next) =&gt; {
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'2 - 进入中间件 B'</span>);
-  <span class="hljs-keyword">await</span> <span class="hljs-title function_">next</span>();
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'5 - 离开中间件 B'</span>);
+app.use(<span class="hljs-keyword">async</span> (ctx, next) =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'2 - 进入中间件 B'</span>);
+  <span class="hljs-keyword">await</span> next();
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'5 - 离开中间件 B'</span>);
 });
 
-app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">async</span> (ctx, next) =&gt; {
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'3 - 进入中间件 C'</span>);
-  ctx.<span class="hljs-property">body</span> = <span class="hljs-string">'Hello Koa'</span>;
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'4 - 离开中间件 C'</span>);
+app.use(<span class="hljs-keyword">async</span> (ctx, next) =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'3 - 进入中间件 C'</span>);
+  ctx.body = <span class="hljs-string">'Hello Koa'</span>;
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'4 - 离开中间件 C'</span>);
 });
 
-app.<span class="hljs-title function_">listen</span>(<span class="hljs-number">3000</span>);
+app.listen(<span class="hljs-number">3000</span>);
 
 <span class="hljs-comment">// 请求时输出顺序：</span>
 <span class="hljs-comment">// 1 - 进入中间件 A</span>
@@ -1036,12 +1168,12 @@ app.<span class="hljs-title function_">listen</span>(<span class="hljs-number">3
 </code></pre>
 <p>洋葱模型的实际应用 -- 精确的请求耗时统计：</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// Koa 的洋葱模型让这变得简单而准确</span>
-app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">async</span> (ctx, next) =&gt; {
-  <span class="hljs-keyword">const</span> start = <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>();
-  <span class="hljs-keyword">await</span> <span class="hljs-title function_">next</span>(); <span class="hljs-comment">// 等待所有下游中间件执行完毕</span>
-  <span class="hljs-keyword">const</span> ms = <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>() - start;
-  ctx.<span class="hljs-title function_">set</span>(<span class="hljs-string">'X-Response-Time'</span>, <span class="hljs-string">`<span class="hljs-subst">${ms}</span>ms`</span>);
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`<span class="hljs-subst">${ctx.method}</span> <span class="hljs-subst">${ctx.url}</span> - <span class="hljs-subst">${ms}</span>ms`</span>);
+app.use(<span class="hljs-keyword">async</span> (ctx, next) =&gt; {
+  <span class="hljs-keyword">const</span> start = <span class="hljs-built_in">Date</span>.now();
+  <span class="hljs-keyword">await</span> next(); <span class="hljs-comment">// 等待所有下游中间件执行完毕</span>
+  <span class="hljs-keyword">const</span> ms = <span class="hljs-built_in">Date</span>.now() - start;
+  ctx.set(<span class="hljs-string">'X-Response-Time'</span>, <span class="hljs-string">`<span class="hljs-subst">${ms}</span>ms`</span>);
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`<span class="hljs-subst">${ctx.method}</span> <span class="hljs-subst">${ctx.url}</span> - <span class="hljs-subst">${ms}</span>ms`</span>);
 });
 
 <span class="hljs-comment">// 对比 Express：由于是线性模型，next() 是同步返回的</span>
@@ -1050,99 +1182,99 @@ app.<span class="hljs-title function_">use</span>(<span class="hljs-title functi
 <h3 id="23-koa-compose-原理">2.3 koa-compose 原理</h3>
 <p>Koa 的中间件组合是通过 <code>koa-compose</code> 实现的，其核心代码非常精简：</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// koa-compose 简化实现</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">compose</span>(<span class="hljs-params">middlewares</span>) {
-  <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span>(<span class="hljs-params">ctx, next</span>) {
-    <span class="hljs-keyword">let</span> index = -<span class="hljs-number">1</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compose</span>(<span class="hljs-params">middlewares</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx, next</span>) </span>{
+    <span class="hljs-keyword">let</span> index = <span class="hljs-number">-1</span>;
 
-    <span class="hljs-keyword">function</span> <span class="hljs-title function_">dispatch</span>(<span class="hljs-params">i</span>) {
-      <span class="hljs-keyword">if</span> (i &lt;= index) <span class="hljs-keyword">return</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">reject</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'next() called multiple times'</span>));
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">dispatch</span>(<span class="hljs-params">i</span>) </span>{
+      <span class="hljs-keyword">if</span> (i &lt;= index) <span class="hljs-keyword">return</span> <span class="hljs-built_in">Promise</span>.reject(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">'next() called multiple times'</span>));
       index = i;
 
       <span class="hljs-keyword">let</span> fn = middlewares[i];
-      <span class="hljs-keyword">if</span> (i === middlewares.<span class="hljs-property">length</span>) fn = next;
-      <span class="hljs-keyword">if</span> (!fn) <span class="hljs-keyword">return</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>();
+      <span class="hljs-keyword">if</span> (i === middlewares.length) fn = next;
+      <span class="hljs-keyword">if</span> (!fn) <span class="hljs-keyword">return</span> <span class="hljs-built_in">Promise</span>.resolve();
 
       <span class="hljs-keyword">try</span> {
-        <span class="hljs-keyword">return</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>(<span class="hljs-title function_">fn</span>(ctx, <span class="hljs-keyword">function</span> <span class="hljs-title function_">next</span>(<span class="hljs-params"></span>) {
-          <span class="hljs-keyword">return</span> <span class="hljs-title function_">dispatch</span>(i + <span class="hljs-number">1</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">Promise</span>.resolve(fn(ctx, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">next</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> dispatch(i + <span class="hljs-number">1</span>);
         }));
       } <span class="hljs-keyword">catch</span> (err) {
-        <span class="hljs-keyword">return</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">reject</span>(err);
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">Promise</span>.reject(err);
       }
     }
 
-    <span class="hljs-keyword">return</span> <span class="hljs-title function_">dispatch</span>(<span class="hljs-number">0</span>);
+    <span class="hljs-keyword">return</span> dispatch(<span class="hljs-number">0</span>);
   };
 }
 </code></pre>
 <h3 id="24-context-对象">2.4 Context 对象</h3>
-<pre><code class="lang-javascript">app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">async</span> (ctx) =&gt; {
+<pre><code class="lang-javascript">app.use(<span class="hljs-keyword">async</span> (ctx) =&gt; {
   <span class="hljs-comment">// ctx.request - Koa 的 Request 对象</span>
   <span class="hljs-comment">// ctx.response - Koa 的 Response 对象</span>
   <span class="hljs-comment">// ctx.req - Node.js 原生 IncomingMessage</span>
   <span class="hljs-comment">// ctx.res - Node.js 原生 ServerResponse</span>
 
   <span class="hljs-comment">// 请求信息（ctx 上的别名，委托到 ctx.request）</span>
-  ctx.<span class="hljs-property">method</span>;       <span class="hljs-comment">// HTTP 方法</span>
-  ctx.<span class="hljs-property">url</span>;          <span class="hljs-comment">// 请求 URL</span>
-  ctx.<span class="hljs-property">path</span>;         <span class="hljs-comment">// 路径</span>
-  ctx.<span class="hljs-property">query</span>;        <span class="hljs-comment">// 解析后的查询参数对象</span>
-  ctx.<span class="hljs-property">headers</span>;      <span class="hljs-comment">// 请求头</span>
-  ctx.<span class="hljs-property">ip</span>;           <span class="hljs-comment">// 客户端 IP</span>
-  ctx.<span class="hljs-property">host</span>;         <span class="hljs-comment">// 主机名</span>
-  ctx.<span class="hljs-title function_">get</span>(<span class="hljs-string">'Content-Type'</span>); <span class="hljs-comment">// 获取请求头</span>
+  ctx.method;       <span class="hljs-comment">// HTTP 方法</span>
+  ctx.url;          <span class="hljs-comment">// 请求 URL</span>
+  ctx.path;         <span class="hljs-comment">// 路径</span>
+  ctx.query;        <span class="hljs-comment">// 解析后的查询参数对象</span>
+  ctx.headers;      <span class="hljs-comment">// 请求头</span>
+  ctx.ip;           <span class="hljs-comment">// 客户端 IP</span>
+  ctx.host;         <span class="hljs-comment">// 主机名</span>
+  ctx.get(<span class="hljs-string">'Content-Type'</span>); <span class="hljs-comment">// 获取请求头</span>
 
   <span class="hljs-comment">// 响应（ctx 上的别名，委托到 ctx.response）</span>
-  ctx.<span class="hljs-property">status</span> = <span class="hljs-number">200</span>;
-  ctx.<span class="hljs-property">body</span> = { <span class="hljs-attr">data</span>: <span class="hljs-string">'hello'</span> };   <span class="hljs-comment">// 自动设置 Content-Type</span>
-  ctx.<span class="hljs-title function_">set</span>(<span class="hljs-string">'Cache-Control'</span>, <span class="hljs-string">'no-cache'</span>);
-  ctx.<span class="hljs-title function_">redirect</span>(<span class="hljs-string">'/login'</span>);
-  ctx.<span class="hljs-property">type</span> = <span class="hljs-string">'application/json'</span>;
+  ctx.status = <span class="hljs-number">200</span>;
+  ctx.body = { <span class="hljs-attr">data</span>: <span class="hljs-string">'hello'</span> };   <span class="hljs-comment">// 自动设置 Content-Type</span>
+  ctx.set(<span class="hljs-string">'Cache-Control'</span>, <span class="hljs-string">'no-cache'</span>);
+  ctx.redirect(<span class="hljs-string">'/login'</span>);
+  ctx.type = <span class="hljs-string">'application/json'</span>;
 
   <span class="hljs-comment">// 状态管理（在中间件之间共享数据）</span>
-  ctx.<span class="hljs-property">state</span>.<span class="hljs-property">user</span> = { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span> };
+  ctx.state.user = { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span> };
 
   <span class="hljs-comment">// Cookie</span>
-  ctx.<span class="hljs-property">cookies</span>.<span class="hljs-title function_">set</span>(<span class="hljs-string">'token'</span>, <span class="hljs-string">'xxx'</span>, { <span class="hljs-attr">httpOnly</span>: <span class="hljs-literal">true</span> });
-  <span class="hljs-keyword">const</span> token = ctx.<span class="hljs-property">cookies</span>.<span class="hljs-title function_">get</span>(<span class="hljs-string">'token'</span>);
+  ctx.cookies.set(<span class="hljs-string">'token'</span>, <span class="hljs-string">'xxx'</span>, { <span class="hljs-attr">httpOnly</span>: <span class="hljs-literal">true</span> });
+  <span class="hljs-keyword">const</span> token = ctx.cookies.get(<span class="hljs-string">'token'</span>);
 
   <span class="hljs-comment">// 抛出 HTTP 错误</span>
-  ctx.<span class="hljs-keyword">throw</span>(<span class="hljs-number">403</span>, <span class="hljs-string">'禁止访问'</span>);
-  ctx.<span class="hljs-title function_">assert</span>(ctx.<span class="hljs-property">state</span>.<span class="hljs-property">user</span>, <span class="hljs-number">401</span>, <span class="hljs-string">'未登录'</span>);
+  ctx.throw(<span class="hljs-number">403</span>, <span class="hljs-string">'禁止访问'</span>);
+  ctx.assert(ctx.state.user, <span class="hljs-number">401</span>, <span class="hljs-string">'未登录'</span>);
 });
 </code></pre>
 <h3 id="25-koa-错误处理">2.5 Koa 错误处理</h3>
-<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> <span class="hljs-title class_">Koa</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'koa'</span>);
-<span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Koa</span>();
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> Koa = <span class="hljs-built_in">require</span>(<span class="hljs-string">'koa'</span>);
+<span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Koa();
 
 <span class="hljs-comment">// 全局错误处理中间件（放在最外层）</span>
-app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">async</span> (ctx, next) =&gt; {
+app.use(<span class="hljs-keyword">async</span> (ctx, next) =&gt; {
   <span class="hljs-keyword">try</span> {
-    <span class="hljs-keyword">await</span> <span class="hljs-title function_">next</span>();
+    <span class="hljs-keyword">await</span> next();
   } <span class="hljs-keyword">catch</span> (err) {
-    ctx.<span class="hljs-property">status</span> = err.<span class="hljs-property">status</span> || err.<span class="hljs-property">statusCode</span> || <span class="hljs-number">500</span>;
-    ctx.<span class="hljs-property">body</span> = {
+    ctx.status = err.status || err.statusCode || <span class="hljs-number">500</span>;
+    ctx.body = {
       <span class="hljs-attr">status</span>: <span class="hljs-string">'error'</span>,
-      <span class="hljs-attr">message</span>: err.<span class="hljs-property">message</span>,
-      ...(process.<span class="hljs-property">env</span>.<span class="hljs-property">NODE_ENV</span> === <span class="hljs-string">'development'</span> &amp;&amp; { <span class="hljs-attr">stack</span>: err.<span class="hljs-property">stack</span> })
+      <span class="hljs-attr">message</span>: err.message,
+      ...(process.env.NODE_ENV === <span class="hljs-string">'development'</span> &amp;&amp; { <span class="hljs-attr">stack</span>: err.stack })
     };
     <span class="hljs-comment">// 触发应用级错误事件</span>
-    ctx.<span class="hljs-property">app</span>.<span class="hljs-title function_">emit</span>(<span class="hljs-string">'error'</span>, err, ctx);
+    ctx.app.emit(<span class="hljs-string">'error'</span>, err, ctx);
   }
 });
 
 <span class="hljs-comment">// 应用级错误监听</span>
-app.<span class="hljs-title function_">on</span>(<span class="hljs-string">'error'</span>, <span class="hljs-function">(<span class="hljs-params">err, ctx</span>) =&gt;</span> {
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'服务器错误:'</span>, err);
+app.on(<span class="hljs-string">'error'</span>, (err, ctx) =&gt; {
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">'服务器错误:'</span>, err);
 });
 
 <span class="hljs-comment">// 在路由中抛出错误会被自动捕获</span>
-app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">async</span> (ctx) =&gt; {
-  <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> <span class="hljs-title function_">findUser</span>(ctx.<span class="hljs-property">params</span>.<span class="hljs-property">id</span>);
+app.use(<span class="hljs-keyword">async</span> (ctx) =&gt; {
+  <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> findUser(ctx.params.id);
   <span class="hljs-keyword">if</span> (!user) {
-    ctx.<span class="hljs-keyword">throw</span>(<span class="hljs-number">404</span>, <span class="hljs-string">'用户不存在'</span>);
+    ctx.throw(<span class="hljs-number">404</span>, <span class="hljs-string">'用户不存在'</span>);
   }
-  ctx.<span class="hljs-property">body</span> = user;
+  ctx.body = user;
 });
 </code></pre>
 <hr></hr>
@@ -1156,77 +1288,77 @@ app.<span class="hljs-title function_">use</span>(<span class="hljs-title functi
 <p><strong>面试题：NestJS 的模块系统是如何组织的？Module、Controller、Service、Provider 分别是什么？</strong></p>
 </blockquote>
 <pre><code class="lang-typescript"><span class="hljs-comment">// user.module.ts - 模块：组织和管理相关的功能</span>
-<span class="hljs-keyword">import</span> { <span class="hljs-title class_">Module</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'@nestjs/common'</span>;
-<span class="hljs-keyword">import</span> { <span class="hljs-title class_">UserController</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'./user.controller'</span>;
-<span class="hljs-keyword">import</span> { <span class="hljs-title class_">UserService</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'./user.service'</span>;
+<span class="hljs-keyword">import</span> { Module } from <span class="hljs-string">'@nestjs/common'</span>;
+<span class="hljs-keyword">import</span> { UserController } from <span class="hljs-string">'./user.controller'</span>;
+<span class="hljs-keyword">import</span> { UserService } from <span class="hljs-string">'./user.service'</span>;
 
-<span class="hljs-meta">@Module</span>({
-  <span class="hljs-attr">imports</span>: [],            <span class="hljs-comment">// 导入其他模块</span>
-  <span class="hljs-attr">controllers</span>: [<span class="hljs-title class_">UserController</span>],  <span class="hljs-comment">// 注册控制器</span>
-  <span class="hljs-attr">providers</span>: [<span class="hljs-title class_">UserService</span>],       <span class="hljs-comment">// 注册提供者（服务）</span>
-  <span class="hljs-attr">exports</span>: [<span class="hljs-title class_">UserService</span>],         <span class="hljs-comment">// 导出供其他模块使用</span>
+@Module({
+  imports: [],            <span class="hljs-comment">// 导入其他模块</span>
+  controllers: [UserController],  <span class="hljs-comment">// 注册控制器</span>
+  providers: [UserService],       <span class="hljs-comment">// 注册提供者（服务）</span>
+  exports: [UserService],         <span class="hljs-comment">// 导出供其他模块使用</span>
 })
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">UserModule</span> {}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> UserModule {}
 
 <span class="hljs-comment">// user.controller.ts - 控制器：处理 HTTP 请求路由</span>
-<span class="hljs-keyword">import</span> { <span class="hljs-title class_">Controller</span>, <span class="hljs-title class_">Get</span>, <span class="hljs-title class_">Post</span>, <span class="hljs-title class_">Body</span>, <span class="hljs-title class_">Param</span>, <span class="hljs-title class_">Query</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'@nestjs/common'</span>;
-<span class="hljs-keyword">import</span> { <span class="hljs-title class_">UserService</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'./user.service'</span>;
-<span class="hljs-keyword">import</span> { <span class="hljs-title class_">CreateUserDto</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'./dto/create-user.dto'</span>;
+<span class="hljs-keyword">import</span> { Controller, Get, Post, Body, Param, Query } from <span class="hljs-string">'@nestjs/common'</span>;
+<span class="hljs-keyword">import</span> { UserService } from <span class="hljs-string">'./user.service'</span>;
+<span class="hljs-keyword">import</span> { CreateUserDto } from <span class="hljs-string">'./dto/create-user.dto'</span>;
 
-<span class="hljs-meta">@Controller</span>(<span class="hljs-string">'users'</span>)  <span class="hljs-comment">// 路由前缀 /users</span>
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">UserController</span> {
-  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"><span class="hljs-keyword">private</span> <span class="hljs-keyword">readonly</span> <span class="hljs-attr">userService</span>: <span class="hljs-title class_">UserService</span></span>) {} <span class="hljs-comment">// 依赖注入</span>
+@Controller(<span class="hljs-string">'users'</span>)  <span class="hljs-comment">// 路由前缀 /users</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> UserController {
+  <span class="hljs-keyword">constructor</span>(private readonly userService: UserService) {} <span class="hljs-comment">// 依赖注入</span>
 
-  <span class="hljs-meta">@Get</span>()
-  <span class="hljs-title function_">findAll</span>(<span class="hljs-params"><span class="hljs-meta">@Query</span>(<span class="hljs-string">'page'</span>) <span class="hljs-attr">page</span>: <span class="hljs-built_in">number</span></span>) {
-    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">userService</span>.<span class="hljs-title function_">findAll</span>(page);
+  @Get()
+  findAll(@Query(<span class="hljs-string">'page'</span>) page: <span class="hljs-built_in">number</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.userService.findAll(page);
   }
 
-  <span class="hljs-meta">@Get</span>(<span class="hljs-string">':id'</span>)
-  <span class="hljs-title function_">findOne</span>(<span class="hljs-params"><span class="hljs-meta">@Param</span>(<span class="hljs-string">'id'</span>) <span class="hljs-attr">id</span>: <span class="hljs-built_in">string</span></span>) {
-    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">userService</span>.<span class="hljs-title function_">findOne</span>(id);
+  @Get(<span class="hljs-string">':id'</span>)
+  findOne(@Param(<span class="hljs-string">'id'</span>) id: <span class="hljs-built_in">string</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.userService.findOne(id);
   }
 
-  <span class="hljs-meta">@Post</span>()
-  <span class="hljs-title function_">create</span>(<span class="hljs-params"><span class="hljs-meta">@Body</span>() <span class="hljs-attr">createUserDto</span>: <span class="hljs-title class_">CreateUserDto</span></span>) {
-    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">userService</span>.<span class="hljs-title function_">create</span>(createUserDto);
+  @Post()
+  create(@Body() createUserDto: CreateUserDto) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.userService.create(createUserDto);
   }
 }
 
 <span class="hljs-comment">// user.service.ts - 服务：处理业务逻辑</span>
-<span class="hljs-keyword">import</span> { <span class="hljs-title class_">Injectable</span>, <span class="hljs-title class_">NotFoundException</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'@nestjs/common'</span>;
+<span class="hljs-keyword">import</span> { Injectable, NotFoundException } from <span class="hljs-string">'@nestjs/common'</span>;
 
-<span class="hljs-meta">@Injectable</span>()
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">UserService</span> {
+@Injectable()
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> UserService {
   <span class="hljs-keyword">private</span> users = [];
 
-  <span class="hljs-title function_">findAll</span>(<span class="hljs-params"><span class="hljs-attr">page</span>: <span class="hljs-built_in">number</span></span>) {
-    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">users</span>;
+  findAll(page: <span class="hljs-built_in">number</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.users;
   }
 
-  <span class="hljs-title function_">findOne</span>(<span class="hljs-params"><span class="hljs-attr">id</span>: <span class="hljs-built_in">string</span></span>) {
-    <span class="hljs-keyword">const</span> user = <span class="hljs-variable language_">this</span>.<span class="hljs-property">users</span>.<span class="hljs-title function_">find</span>(<span class="hljs-function"><span class="hljs-params">u</span> =&gt;</span> u.<span class="hljs-property">id</span> === id);
-    <span class="hljs-keyword">if</span> (!user) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">NotFoundException</span>(<span class="hljs-string">'用户不存在'</span>);
+  findOne(id: <span class="hljs-built_in">string</span>) {
+    <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">this</span>.users.find(u =&gt; u.id === id);
+    <span class="hljs-keyword">if</span> (!user) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> NotFoundException(<span class="hljs-string">'用户不存在'</span>);
     <span class="hljs-keyword">return</span> user;
   }
 
-  <span class="hljs-title function_">create</span>(<span class="hljs-params"><span class="hljs-attr">data</span>: <span class="hljs-title class_">CreateUserDto</span></span>) {
-    <span class="hljs-keyword">const</span> user = { <span class="hljs-attr">id</span>: <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>().<span class="hljs-title function_">toString</span>(), ...data };
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">users</span>.<span class="hljs-title function_">push</span>(user);
+  create(data: CreateUserDto) {
+    <span class="hljs-keyword">const</span> user = { id: <span class="hljs-built_in">Date</span>.now().toString(), ...data };
+    <span class="hljs-keyword">this</span>.users.push(user);
     <span class="hljs-keyword">return</span> user;
   }
 }
 
 <span class="hljs-comment">// create-user.dto.ts - DTO：数据传输对象</span>
-<span class="hljs-keyword">import</span> { <span class="hljs-title class_">IsString</span>, <span class="hljs-title class_">IsEmail</span>, <span class="hljs-title class_">MinLength</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'class-validator'</span>;
+<span class="hljs-keyword">import</span> { IsString, IsEmail, MinLength } from <span class="hljs-string">'class-validator'</span>;
 
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">CreateUserDto</span> {
-  <span class="hljs-meta">@IsString</span>()
-  <span class="hljs-meta">@MinLength</span>(<span class="hljs-number">2</span>)
-  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> CreateUserDto {
+  @IsString()
+  @MinLength(<span class="hljs-number">2</span>)
+  name: <span class="hljs-built_in">string</span>;
 
-  <span class="hljs-meta">@IsEmail</span>()
-  <span class="hljs-attr">email</span>: <span class="hljs-built_in">string</span>;
+  @IsEmail()
+  email: <span class="hljs-built_in">string</span>;
 }
 </code></pre>
 <h3 id="32-依赖注入（ioc-容器）">3.2 依赖注入（IoC 容器）</h3>
@@ -1235,107 +1367,107 @@ app.<span class="hljs-title function_">use</span>(<span class="hljs-title functi
 </blockquote>
 <p>IoC（Inversion of Control，控制反转）是一种设计原则，将对象的创建和管理权交给框架（IoC 容器），而不是由开发者手动创建。NestJS 的 IoC 容器负责实例化、管理和注入依赖。</p>
 <pre><code class="lang-typescript"><span class="hljs-comment">// 基本依赖注入</span>
-<span class="hljs-meta">@Injectable</span>()
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">DatabaseService</span> {
-  <span class="hljs-keyword">async</span> <span class="hljs-title function_">query</span>(<span class="hljs-params"><span class="hljs-attr">sql</span>: <span class="hljs-built_in">string</span></span>) { <span class="hljs-comment">/* ... */</span> }
+@Injectable()
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> DatabaseService {
+  async query(sql: <span class="hljs-built_in">string</span>) { <span class="hljs-comment">/* ... */</span> }
 }
 
-<span class="hljs-meta">@Injectable</span>()
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">UserService</span> {
+@Injectable()
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> UserService {
   <span class="hljs-comment">// NestJS 自动实例化 DatabaseService 并注入</span>
-  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"><span class="hljs-keyword">private</span> <span class="hljs-keyword">readonly</span> <span class="hljs-attr">db</span>: <span class="hljs-title class_">DatabaseService</span></span>) {}
+  <span class="hljs-keyword">constructor</span>(private readonly db: DatabaseService) {}
 
-  <span class="hljs-keyword">async</span> <span class="hljs-title function_">findAll</span>(<span class="hljs-params"></span>) {
-    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">db</span>.<span class="hljs-title function_">query</span>(<span class="hljs-string">'SELECT * FROM users'</span>);
+  async findAll() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.db.query(<span class="hljs-string">'SELECT * FROM users'</span>);
   }
 }
 
 <span class="hljs-comment">// 自定义 Provider</span>
-<span class="hljs-meta">@Module</span>({
-  <span class="hljs-attr">providers</span>: [
+@Module({
+  providers: [
     <span class="hljs-comment">// 标准注入</span>
-    <span class="hljs-title class_">UserService</span>,
+    UserService,
 
     <span class="hljs-comment">// 值 Provider</span>
-    { <span class="hljs-attr">provide</span>: <span class="hljs-string">'CONFIG'</span>, <span class="hljs-attr">useValue</span>: { <span class="hljs-attr">apiKey</span>: <span class="hljs-string">'xxx'</span> } },
+    { provide: <span class="hljs-string">'CONFIG'</span>, useValue: { apiKey: <span class="hljs-string">'xxx'</span> } },
 
     <span class="hljs-comment">// 工厂 Provider</span>
     {
-      <span class="hljs-attr">provide</span>: <span class="hljs-string">'ASYNC_CONNECTION'</span>,
-      <span class="hljs-attr">useFactory</span>: <span class="hljs-title function_">async</span> (<span class="hljs-attr">configService</span>: <span class="hljs-title class_">ConfigService</span>) =&gt; {
-        <span class="hljs-keyword">const</span> connection = <span class="hljs-keyword">await</span> <span class="hljs-title function_">createConnection</span>(configService.<span class="hljs-title function_">get</span>(<span class="hljs-string">'DB_URL'</span>));
+      provide: <span class="hljs-string">'ASYNC_CONNECTION'</span>,
+      useFactory: async (configService: ConfigService) =&gt; {
+        <span class="hljs-keyword">const</span> connection = await createConnection(configService.get(<span class="hljs-string">'DB_URL'</span>));
         <span class="hljs-keyword">return</span> connection;
       },
-      <span class="hljs-attr">inject</span>: [<span class="hljs-title class_">ConfigService</span>],
+      inject: [ConfigService],
     },
 
     <span class="hljs-comment">// 类 Provider（别名）</span>
-    { <span class="hljs-attr">provide</span>: <span class="hljs-string">'IUserService'</span>, <span class="hljs-attr">useClass</span>: <span class="hljs-title class_">UserService</span> },
+    { provide: <span class="hljs-string">'IUserService'</span>, useClass: UserService },
   ],
 })
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AppModule</span> {}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> AppModule {}
 
 <span class="hljs-comment">// 注入自定义 Provider</span>
-<span class="hljs-meta">@Injectable</span>()
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SomeService</span> {
-  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">
-    <span class="hljs-meta">@Inject</span>(<span class="hljs-string">'CONFIG'</span>) <span class="hljs-keyword">private</span> <span class="hljs-attr">config</span>: <span class="hljs-built_in">any</span>,
-    <span class="hljs-meta">@Inject</span>(<span class="hljs-string">'ASYNC_CONNECTION'</span>) <span class="hljs-keyword">private</span> <span class="hljs-attr">connection</span>: <span class="hljs-built_in">any</span>,
-  </span>) {}
+@Injectable()
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> SomeService {
+  <span class="hljs-keyword">constructor</span>(
+    @Inject('CONFIG') private config: any,
+    @Inject('ASYNC_CONNECTION') private connection: any,
+  ) {}
 }
 
 <span class="hljs-comment">// 作用域</span>
-<span class="hljs-meta">@Injectable</span>({ <span class="hljs-attr">scope</span>: <span class="hljs-title class_">Scope</span>.<span class="hljs-property">DEFAULT</span> })     <span class="hljs-comment">// 单例（默认）</span>
-<span class="hljs-meta">@Injectable</span>({ <span class="hljs-attr">scope</span>: <span class="hljs-title class_">Scope</span>.<span class="hljs-property">REQUEST</span> })     <span class="hljs-comment">// 每个请求创建新实例</span>
-<span class="hljs-meta">@Injectable</span>({ <span class="hljs-attr">scope</span>: <span class="hljs-title class_">Scope</span>.<span class="hljs-property">TRANSIENT</span> })   <span class="hljs-comment">// 每次注入创建新实例</span>
+@Injectable({ scope: Scope.DEFAULT })     <span class="hljs-comment">// 单例（默认）</span>
+@Injectable({ scope: Scope.REQUEST })     <span class="hljs-comment">// 每个请求创建新实例</span>
+@Injectable({ scope: Scope.TRANSIENT })   <span class="hljs-comment">// 每次注入创建新实例</span>
 </code></pre>
 <h3 id="33-装饰器">3.3 装饰器</h3>
 <pre><code class="lang-typescript"><span class="hljs-comment">// NestJS 中常用的装饰器</span>
 
 <span class="hljs-comment">// 类装饰器</span>
-<span class="hljs-meta">@Controller</span>(<span class="hljs-string">'users'</span>)       <span class="hljs-comment">// 控制器</span>
-<span class="hljs-meta">@Injectable</span>()              <span class="hljs-comment">// 可注入的服务</span>
-<span class="hljs-meta">@Module</span>({})                <span class="hljs-comment">// 模块</span>
+@Controller(<span class="hljs-string">'users'</span>)       <span class="hljs-comment">// 控制器</span>
+@Injectable()              <span class="hljs-comment">// 可注入的服务</span>
+@Module({})                <span class="hljs-comment">// 模块</span>
 
 <span class="hljs-comment">// 方法装饰器（HTTP 方法）</span>
-<span class="hljs-meta">@Get</span>(<span class="hljs-string">':id'</span>)
-<span class="hljs-meta">@Post</span>()
-<span class="hljs-meta">@Put</span>(<span class="hljs-string">':id'</span>)
-<span class="hljs-meta">@Delete</span>(<span class="hljs-string">':id'</span>)
-<span class="hljs-meta">@Patch</span>(<span class="hljs-string">':id'</span>)
+@Get(<span class="hljs-string">':id'</span>)
+@Post()
+@Put(<span class="hljs-string">':id'</span>)
+@Delete(<span class="hljs-string">':id'</span>)
+@Patch(<span class="hljs-string">':id'</span>)
 
 <span class="hljs-comment">// 参数装饰器</span>
-<span class="hljs-meta">@Body</span>()                    <span class="hljs-comment">// 请求体</span>
-<span class="hljs-meta">@Param</span>(<span class="hljs-string">'id'</span>)               <span class="hljs-comment">// 路由参数</span>
-<span class="hljs-meta">@Query</span>(<span class="hljs-string">'page'</span>)             <span class="hljs-comment">// 查询参数</span>
-<span class="hljs-meta">@Headers</span>(<span class="hljs-string">'authorization'</span>)  <span class="hljs-comment">// 请求头</span>
-<span class="hljs-meta">@Req</span>()                     <span class="hljs-comment">// 原始 Request 对象</span>
-<span class="hljs-meta">@Res</span>()                     <span class="hljs-comment">// 原始 Response 对象</span>
+@Body()                    <span class="hljs-comment">// 请求体</span>
+@Param(<span class="hljs-string">'id'</span>)               <span class="hljs-comment">// 路由参数</span>
+@Query(<span class="hljs-string">'page'</span>)             <span class="hljs-comment">// 查询参数</span>
+@Headers(<span class="hljs-string">'authorization'</span>)  <span class="hljs-comment">// 请求头</span>
+@Req()                     <span class="hljs-comment">// 原始 Request 对象</span>
+@Res()                     <span class="hljs-comment">// 原始 Response 对象</span>
 
 <span class="hljs-comment">// 自定义装饰器</span>
-<span class="hljs-keyword">import</span> { createParamDecorator, <span class="hljs-title class_">ExecutionContext</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'@nestjs/common'</span>;
+<span class="hljs-keyword">import</span> { createParamDecorator, ExecutionContext } from <span class="hljs-string">'@nestjs/common'</span>;
 
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title class_">CurrentUser</span> = <span class="hljs-title function_">createParamDecorator</span>(
-  <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">data</span>: <span class="hljs-built_in">unknown</span>, <span class="hljs-attr">ctx</span>: <span class="hljs-title class_">ExecutionContext</span></span>) =&gt;</span> {
-    <span class="hljs-keyword">const</span> request = ctx.<span class="hljs-title function_">switchToHttp</span>().<span class="hljs-title function_">getRequest</span>();
-    <span class="hljs-keyword">return</span> request.<span class="hljs-property">user</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> CurrentUser = createParamDecorator(
+  (data: unknown, ctx: ExecutionContext) =&gt; {
+    <span class="hljs-keyword">const</span> request = ctx.switchToHttp().getRequest();
+    <span class="hljs-keyword">return</span> request.user;
   },
 );
 
 <span class="hljs-comment">// 使用自定义装饰器</span>
-<span class="hljs-meta">@Get</span>(<span class="hljs-string">'profile'</span>)
-<span class="hljs-title function_">getProfile</span>(<span class="hljs-params"><span class="hljs-meta">@CurrentUser</span>() <span class="hljs-attr">user</span>: <span class="hljs-title class_">User</span></span>) {
+@Get(<span class="hljs-string">'profile'</span>)
+getProfile(@CurrentUser() user: User) {
   <span class="hljs-keyword">return</span> user;
 }
 
 <span class="hljs-comment">// 组合装饰器</span>
-<span class="hljs-keyword">import</span> { applyDecorators } <span class="hljs-keyword">from</span> <span class="hljs-string">'@nestjs/common'</span>;
+<span class="hljs-keyword">import</span> { applyDecorators } from <span class="hljs-string">'@nestjs/common'</span>;
 
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">Auth</span>(<span class="hljs-params">...<span class="hljs-attr">roles</span>: <span class="hljs-title class_">Role</span>[]</span>) {
-  <span class="hljs-keyword">return</span> <span class="hljs-title function_">applyDecorators</span>(
-    <span class="hljs-title class_">UseGuards</span>(<span class="hljs-title class_">AuthGuard</span>, <span class="hljs-title class_">RolesGuard</span>),
-    <span class="hljs-title class_">Roles</span>(...roles),
-    <span class="hljs-title class_">ApiBearerAuth</span>(),
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Auth</span>(<span class="hljs-params">...roles: Role[]</span>) </span>{
+  <span class="hljs-keyword">return</span> applyDecorators(
+    UseGuards(AuthGuard, RolesGuard),
+    Roles(...roles),
+    ApiBearerAuth(),
   );
 }
 </code></pre>
@@ -1346,45 +1478,45 @@ app.<span class="hljs-title function_">use</span>(<span class="hljs-title functi
 <p>请求生命周期执行顺序：</p>
 <pre><code>请求 → Guards → Interceptors(前) → Pipes → Controller → Interceptors(后) → ExceptionFilters（如果有异常）→ 响应
 </code></pre><pre><code class="lang-typescript"><span class="hljs-comment">// 1. 管道（Pipe）- 数据验证和转换</span>
-<span class="hljs-keyword">import</span> { <span class="hljs-title class_">PipeTransform</span>, <span class="hljs-title class_">Injectable</span>, <span class="hljs-title class_">BadRequestException</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'@nestjs/common'</span>;
+<span class="hljs-keyword">import</span> { PipeTransform, Injectable, BadRequestException } from <span class="hljs-string">'@nestjs/common'</span>;
 
-<span class="hljs-meta">@Injectable</span>()
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ParseIntPipe</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">PipeTransform</span>&lt;<span class="hljs-built_in">string</span>, <span class="hljs-built_in">number</span>&gt; {
-  <span class="hljs-title function_">transform</span>(<span class="hljs-attr">value</span>: <span class="hljs-built_in">string</span>): <span class="hljs-built_in">number</span> {
+@Injectable()
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> ParseIntPipe <span class="hljs-keyword">implements</span> PipeTransform&lt;<span class="hljs-built_in">string</span>, <span class="hljs-built_in">number</span>&gt; {
+  transform(value: <span class="hljs-built_in">string</span>): <span class="hljs-built_in">number</span> {
     <span class="hljs-keyword">const</span> val = <span class="hljs-built_in">parseInt</span>(value, <span class="hljs-number">10</span>);
     <span class="hljs-keyword">if</span> (<span class="hljs-built_in">isNaN</span>(val)) {
-      <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">BadRequestException</span>(<span class="hljs-string">'参数必须是整数'</span>);
+      <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> BadRequestException(<span class="hljs-string">'参数必须是整数'</span>);
     }
     <span class="hljs-keyword">return</span> val;
   }
 }
 
 <span class="hljs-comment">// 使用内置管道</span>
-<span class="hljs-meta">@Get</span>(<span class="hljs-string">':id'</span>)
-<span class="hljs-title function_">findOne</span>(<span class="hljs-params"><span class="hljs-meta">@Param</span>(<span class="hljs-string">'id'</span>, ParseIntPipe) <span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span></span>) {
-  <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">service</span>.<span class="hljs-title function_">findOne</span>(id);
+@Get(<span class="hljs-string">':id'</span>)
+findOne(@Param(<span class="hljs-string">'id'</span>, ParseIntPipe) id: <span class="hljs-built_in">number</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.service.findOne(id);
 }
 
 <span class="hljs-comment">// ValidationPipe（搭配 class-validator）</span>
-app.<span class="hljs-title function_">useGlobalPipes</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">ValidationPipe</span>({
-  <span class="hljs-attr">whitelist</span>: <span class="hljs-literal">true</span>,       <span class="hljs-comment">// 自动剥离未定义的属性</span>
-  <span class="hljs-attr">forbidNonWhitelisted</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">transform</span>: <span class="hljs-literal">true</span>,       <span class="hljs-comment">// 自动转换类型</span>
+app.useGlobalPipes(<span class="hljs-keyword">new</span> ValidationPipe({
+  whitelist: <span class="hljs-literal">true</span>,       <span class="hljs-comment">// 自动剥离未定义的属性</span>
+  forbidNonWhitelisted: <span class="hljs-literal">true</span>,
+  transform: <span class="hljs-literal">true</span>,       <span class="hljs-comment">// 自动转换类型</span>
 }));
 
 <span class="hljs-comment">// 2. 守卫（Guard）- 认证和授权</span>
-<span class="hljs-meta">@Injectable</span>()
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AuthGuard</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">CanActivate</span> {
-  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"><span class="hljs-keyword">private</span> <span class="hljs-attr">jwtService</span>: <span class="hljs-title class_">JwtService</span></span>) {}
+@Injectable()
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> AuthGuard <span class="hljs-keyword">implements</span> CanActivate {
+  <span class="hljs-keyword">constructor</span>(private jwtService: JwtService) {}
 
-  <span class="hljs-title function_">canActivate</span>(<span class="hljs-attr">context</span>: <span class="hljs-title class_">ExecutionContext</span>): <span class="hljs-built_in">boolean</span> {
-    <span class="hljs-keyword">const</span> request = context.<span class="hljs-title function_">switchToHttp</span>().<span class="hljs-title function_">getRequest</span>();
-    <span class="hljs-keyword">const</span> token = request.<span class="hljs-property">headers</span>.<span class="hljs-property">authorization</span>?.<span class="hljs-title function_">replace</span>(<span class="hljs-string">'Bearer '</span>, <span class="hljs-string">''</span>);
+  canActivate(context: ExecutionContext): <span class="hljs-built_in">boolean</span> {
+    <span class="hljs-keyword">const</span> request = context.switchToHttp().getRequest();
+    <span class="hljs-keyword">const</span> token = request.headers.authorization?.replace(<span class="hljs-string">'Bearer '</span>, <span class="hljs-string">''</span>);
     <span class="hljs-keyword">if</span> (!token) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
 
     <span class="hljs-keyword">try</span> {
-      <span class="hljs-keyword">const</span> payload = <span class="hljs-variable language_">this</span>.<span class="hljs-property">jwtService</span>.<span class="hljs-title function_">verify</span>(token);
-      request.<span class="hljs-property">user</span> = payload;
+      <span class="hljs-keyword">const</span> payload = <span class="hljs-keyword">this</span>.jwtService.verify(token);
+      request.user = payload;
       <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
     } <span class="hljs-keyword">catch</span> {
       <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
@@ -1392,94 +1524,94 @@ app.<span class="hljs-title function_">useGlobalPipes</span>(<span class="hljs-k
   }
 }
 
-<span class="hljs-meta">@UseGuards</span>(<span class="hljs-title class_">AuthGuard</span>)
-<span class="hljs-meta">@Get</span>(<span class="hljs-string">'profile'</span>)
-<span class="hljs-title function_">getProfile</span>(<span class="hljs-params"><span class="hljs-meta">@CurrentUser</span>() user</span>) {
+@UseGuards(AuthGuard)
+@Get(<span class="hljs-string">'profile'</span>)
+getProfile(@CurrentUser() user) {
   <span class="hljs-keyword">return</span> user;
 }
 
 <span class="hljs-comment">// 3. 拦截器（Interceptor）- 请求/响应转换、缓存、日志</span>
-<span class="hljs-meta">@Injectable</span>()
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TransformInterceptor</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">NestInterceptor</span> {
-  <span class="hljs-title function_">intercept</span>(<span class="hljs-attr">context</span>: <span class="hljs-title class_">ExecutionContext</span>, <span class="hljs-attr">next</span>: <span class="hljs-title class_">CallHandler</span>): <span class="hljs-title class_">Observable</span>&lt;<span class="hljs-built_in">any</span>&gt; {
-    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Before...'</span>);
-    <span class="hljs-keyword">const</span> now = <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>();
+@Injectable()
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> TransformInterceptor <span class="hljs-keyword">implements</span> NestInterceptor {
+  intercept(context: ExecutionContext, next: CallHandler): Observable&lt;<span class="hljs-built_in">any</span>&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Before...'</span>);
+    <span class="hljs-keyword">const</span> now = <span class="hljs-built_in">Date</span>.now();
 
-    <span class="hljs-keyword">return</span> next.<span class="hljs-title function_">handle</span>().<span class="hljs-title function_">pipe</span>(
-      <span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> ({
-        <span class="hljs-attr">code</span>: <span class="hljs-number">200</span>,
-        <span class="hljs-attr">message</span>: <span class="hljs-string">'success'</span>,
+    <span class="hljs-keyword">return</span> next.handle().pipe(
+      map(data =&gt; ({
+        code: <span class="hljs-number">200</span>,
+        message: <span class="hljs-string">'success'</span>,
         data,
-        <span class="hljs-attr">timestamp</span>: <span class="hljs-keyword">new</span> <span class="hljs-title class_">Date</span>().<span class="hljs-title function_">toISOString</span>(),
+        timestamp: <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().toISOString(),
       })),
-      <span class="hljs-title function_">tap</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`After... <span class="hljs-subst">${<span class="hljs-built_in">Date</span>.now() - now}</span>ms`</span>)),
+      tap(() =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`After... <span class="hljs-subst">${Date.now() - now}</span>ms`</span>)),
     );
   }
 }
 
 <span class="hljs-comment">// 4. 异常过滤器（ExceptionFilter）</span>
-<span class="hljs-meta">@Catch</span>(<span class="hljs-title class_">HttpException</span>)
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HttpExceptionFilter</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">ExceptionFilter</span> {
-  <span class="hljs-keyword">catch</span>(<span class="hljs-attr">exception</span>: <span class="hljs-title class_">HttpException</span>, <span class="hljs-attr">host</span>: <span class="hljs-title class_">ArgumentsHost</span>) {
-    <span class="hljs-keyword">const</span> ctx = host.<span class="hljs-title function_">switchToHttp</span>();
-    <span class="hljs-keyword">const</span> response = ctx.<span class="hljs-title function_">getResponse</span>();
-    <span class="hljs-keyword">const</span> request = ctx.<span class="hljs-title function_">getRequest</span>();
-    <span class="hljs-keyword">const</span> status = exception.<span class="hljs-title function_">getStatus</span>();
+@Catch(HttpException)
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> HttpExceptionFilter <span class="hljs-keyword">implements</span> ExceptionFilter {
+  <span class="hljs-keyword">catch</span>(exception: HttpException, host: ArgumentsHost) {
+    <span class="hljs-keyword">const</span> ctx = host.switchToHttp();
+    <span class="hljs-keyword">const</span> response = ctx.getResponse();
+    <span class="hljs-keyword">const</span> request = ctx.getRequest();
+    <span class="hljs-keyword">const</span> status = exception.getStatus();
 
-    response.<span class="hljs-title function_">status</span>(status).<span class="hljs-title function_">json</span>({
-      <span class="hljs-attr">statusCode</span>: status,
-      <span class="hljs-attr">message</span>: exception.<span class="hljs-property">message</span>,
-      <span class="hljs-attr">timestamp</span>: <span class="hljs-keyword">new</span> <span class="hljs-title class_">Date</span>().<span class="hljs-title function_">toISOString</span>(),
-      <span class="hljs-attr">path</span>: request.<span class="hljs-property">url</span>,
+    response.status(status).json({
+      statusCode: status,
+      message: exception.message,
+      timestamp: <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().toISOString(),
+      path: request.url,
     });
   }
 }
 </code></pre>
 <h3 id="35-微服务支持">3.5 微服务支持</h3>
 <pre><code class="lang-typescript"><span class="hljs-comment">// NestJS 支持多种微服务传输层</span>
-<span class="hljs-keyword">import</span> { <span class="hljs-title class_">Transport</span>, <span class="hljs-title class_">MicroserviceOptions</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'@nestjs/microservices'</span>;
+<span class="hljs-keyword">import</span> { Transport, MicroserviceOptions } from <span class="hljs-string">'@nestjs/microservices'</span>;
 
 <span class="hljs-comment">// TCP 微服务</span>
-<span class="hljs-keyword">const</span> app = <span class="hljs-keyword">await</span> <span class="hljs-title class_">NestFactory</span>.<span class="hljs-property">createMicroservice</span>&lt;<span class="hljs-title class_">MicroserviceOptions</span>&gt;(<span class="hljs-title class_">AppModule</span>, {
-  <span class="hljs-attr">transport</span>: <span class="hljs-title class_">Transport</span>.<span class="hljs-property">TCP</span>,
-  <span class="hljs-attr">options</span>: { <span class="hljs-attr">host</span>: <span class="hljs-string">'0.0.0.0'</span>, <span class="hljs-attr">port</span>: <span class="hljs-number">3001</span> },
+<span class="hljs-keyword">const</span> app = await NestFactory.createMicroservice&lt;MicroserviceOptions&gt;(AppModule, {
+  transport: Transport.TCP,
+  options: { host: <span class="hljs-string">'0.0.0.0'</span>, port: <span class="hljs-number">3001</span> },
 });
 
 <span class="hljs-comment">// Redis 微服务</span>
-<span class="hljs-keyword">const</span> app = <span class="hljs-keyword">await</span> <span class="hljs-title class_">NestFactory</span>.<span class="hljs-title function_">createMicroservice</span>(<span class="hljs-title class_">AppModule</span>, {
-  <span class="hljs-attr">transport</span>: <span class="hljs-title class_">Transport</span>.<span class="hljs-property">REDIS</span>,
-  <span class="hljs-attr">options</span>: { <span class="hljs-attr">host</span>: <span class="hljs-string">'localhost'</span>, <span class="hljs-attr">port</span>: <span class="hljs-number">6379</span> },
+<span class="hljs-keyword">const</span> app = await NestFactory.createMicroservice(AppModule, {
+  transport: Transport.REDIS,
+  options: { host: <span class="hljs-string">'localhost'</span>, port: <span class="hljs-number">6379</span> },
 });
 
 <span class="hljs-comment">// RabbitMQ 微服务</span>
-<span class="hljs-keyword">const</span> app = <span class="hljs-keyword">await</span> <span class="hljs-title class_">NestFactory</span>.<span class="hljs-title function_">createMicroservice</span>(<span class="hljs-title class_">AppModule</span>, {
-  <span class="hljs-attr">transport</span>: <span class="hljs-title class_">Transport</span>.<span class="hljs-property">RMQ</span>,
-  <span class="hljs-attr">options</span>: {
-    <span class="hljs-attr">urls</span>: [<span class="hljs-string">'amqp://localhost:5672'</span>],
-    <span class="hljs-attr">queue</span>: <span class="hljs-string">'my_queue'</span>,
+<span class="hljs-keyword">const</span> app = await NestFactory.createMicroservice(AppModule, {
+  transport: Transport.RMQ,
+  options: {
+    urls: [<span class="hljs-string">'amqp://localhost:5672'</span>],
+    queue: <span class="hljs-string">'my_queue'</span>,
   },
 });
 
 <span class="hljs-comment">// gRPC 微服务</span>
-<span class="hljs-keyword">const</span> app = <span class="hljs-keyword">await</span> <span class="hljs-title class_">NestFactory</span>.<span class="hljs-title function_">createMicroservice</span>(<span class="hljs-title class_">AppModule</span>, {
-  <span class="hljs-attr">transport</span>: <span class="hljs-title class_">Transport</span>.<span class="hljs-property">GRPC</span>,
-  <span class="hljs-attr">options</span>: {
-    <span class="hljs-attr">package</span>: <span class="hljs-string">'hero'</span>,
-    <span class="hljs-attr">protoPath</span>: <span class="hljs-title function_">join</span>(__dirname, <span class="hljs-string">'hero.proto'</span>),
+<span class="hljs-keyword">const</span> app = await NestFactory.createMicroservice(AppModule, {
+  transport: Transport.GRPC,
+  options: {
+    package: <span class="hljs-string">'hero'</span>,
+    protoPath: join(__dirname, <span class="hljs-string">'hero.proto'</span>),
   },
 });
 
 <span class="hljs-comment">// 消息模式</span>
-<span class="hljs-meta">@Controller</span>()
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MathController</span> {
-  <span class="hljs-meta">@MessagePattern</span>({ <span class="hljs-attr">cmd</span>: <span class="hljs-string">'sum'</span> })
-  <span class="hljs-title function_">sum</span>(<span class="hljs-attr">data</span>: <span class="hljs-built_in">number</span>[]): <span class="hljs-built_in">number</span> {
-    <span class="hljs-keyword">return</span> data.<span class="hljs-title function_">reduce</span>(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a + b, <span class="hljs-number">0</span>);
+@Controller()
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> MathController {
+  @MessagePattern({ cmd: <span class="hljs-string">'sum'</span> })
+  sum(data: <span class="hljs-built_in">number</span>[]): <span class="hljs-built_in">number</span> {
+    <span class="hljs-keyword">return</span> data.reduce((a, b) =&gt; a + b, <span class="hljs-number">0</span>);
   }
 
-  <span class="hljs-meta">@EventPattern</span>(<span class="hljs-string">'user_created'</span>)
-  <span class="hljs-title function_">handleUserCreated</span>(<span class="hljs-params"><span class="hljs-attr">data</span>: <span class="hljs-built_in">any</span></span>) {
-    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'用户创建事件:'</span>, data);
+  @EventPattern(<span class="hljs-string">'user_created'</span>)
+  handleUserCreated(data: <span class="hljs-built_in">any</span>) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'用户创建事件:'</span>, data);
   }
 }
 </code></pre>
@@ -1522,34 +1654,34 @@ app.<span class="hljs-title function_">useGlobalPipes</span>(<span class="hljs-k
   }
 };
 
-fastify.<span class="hljs-title function_">post</span>(<span class="hljs-string">'/users'</span>, opts, <span class="hljs-title function_">async</span> (request, reply) =&gt; {
-  <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> <span class="hljs-title function_">createUser</span>(request.<span class="hljs-property">body</span>);
+fastify.post(<span class="hljs-string">'/users'</span>, opts, <span class="hljs-keyword">async</span> (request, reply) =&gt; {
+  <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> createUser(request.body);
   <span class="hljs-keyword">return</span> user; <span class="hljs-comment">// 自动使用 Schema 进行序列化（更快）</span>
 });
 
 <span class="hljs-comment">// 插件系统</span>
-fastify.<span class="hljs-title function_">register</span>(<span class="hljs-built_in">require</span>(<span class="hljs-string">'@fastify/cors'</span>));
-fastify.<span class="hljs-title function_">register</span>(<span class="hljs-built_in">require</span>(<span class="hljs-string">'@fastify/helmet'</span>));
-fastify.<span class="hljs-title function_">register</span>(<span class="hljs-built_in">require</span>(<span class="hljs-string">'@fastify/rate-limit'</span>), {
+fastify.register(<span class="hljs-built_in">require</span>(<span class="hljs-string">'@fastify/cors'</span>));
+fastify.register(<span class="hljs-built_in">require</span>(<span class="hljs-string">'@fastify/helmet'</span>));
+fastify.register(<span class="hljs-built_in">require</span>(<span class="hljs-string">'@fastify/rate-limit'</span>), {
   <span class="hljs-attr">max</span>: <span class="hljs-number">100</span>,
   <span class="hljs-attr">timeWindow</span>: <span class="hljs-string">'1 minute'</span>
 });
 
 <span class="hljs-comment">// 装饰器</span>
-fastify.<span class="hljs-title function_">decorate</span>(<span class="hljs-string">'db'</span>, databaseConnection);
-fastify.<span class="hljs-title function_">decorateRequest</span>(<span class="hljs-string">'user'</span>, <span class="hljs-literal">null</span>);
+fastify.decorate(<span class="hljs-string">'db'</span>, databaseConnection);
+fastify.decorateRequest(<span class="hljs-string">'user'</span>, <span class="hljs-literal">null</span>);
 
 <span class="hljs-comment">// 钩子（生命周期）</span>
-fastify.<span class="hljs-title function_">addHook</span>(<span class="hljs-string">'onRequest'</span>, <span class="hljs-title function_">async</span> (request, reply) =&gt; {
+fastify.addHook(<span class="hljs-string">'onRequest'</span>, <span class="hljs-keyword">async</span> (request, reply) =&gt; {
   <span class="hljs-comment">// 认证检查</span>
 });
 
-fastify.<span class="hljs-title function_">addHook</span>(<span class="hljs-string">'preSerialization'</span>, <span class="hljs-title function_">async</span> (request, reply, payload) =&gt; {
+fastify.addHook(<span class="hljs-string">'preSerialization'</span>, <span class="hljs-keyword">async</span> (request, reply, payload) =&gt; {
   <span class="hljs-comment">// 在响应序列化之前修改 payload</span>
-  <span class="hljs-keyword">return</span> { <span class="hljs-attr">data</span>: payload, <span class="hljs-attr">timestamp</span>: <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>() };
+  <span class="hljs-keyword">return</span> { <span class="hljs-attr">data</span>: payload, <span class="hljs-attr">timestamp</span>: <span class="hljs-built_in">Date</span>.now() };
 });
 
-fastify.<span class="hljs-title function_">listen</span>({ <span class="hljs-attr">port</span>: <span class="hljs-number">3000</span> });
+fastify.listen({ <span class="hljs-attr">port</span>: <span class="hljs-number">3000</span> });
 </code></pre>
 <hr></hr>
 <h2 id="五、框架选型对比">五、框架选型对比</h2>
@@ -1660,6 +1792,22 @@ fastify.<span class="hljs-title function_">listen</span>({ <span class="hljs-att
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -1683,73 +1831,29 @@ fastify.<span class="hljs-title function_">listen</span>({ <span class="hljs-att
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"常用框架","level":"3.4","depth":1,"next":{"title":"数据库操作","level":"3.5","depth":1,"path":"nodejs/database.md","ref":"nodejs/database.md","articles":[]},"previous":{"title":"流与文件系统","level":"3.3","depth":1,"path":"nodejs/stream.md","ref":"nodejs/stream.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"nodejs/frameworks.md","mtime":"2026-03-31T06:35:11.839Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"常用框架","level":"3.4","depth":1,"next":{"title":"数据库操作","level":"3.5","depth":1,"path":"nodejs/database.md","ref":"nodejs/database.md","articles":[]},"previous":{"title":"流与文件系统","level":"3.3","depth":1,"path":"nodejs/stream.md","ref":"nodejs/stream.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"nodejs/frameworks.md","mtime":"2026-03-31T12:30:26.833Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    <noscript>
-        <style>
-            .honkit-cloak {
-                display: block !important;
-            }
-        </style>
-    </noscript>
-    <script>
-        // Restore sidebar state as critical path for prevent layout shift
-        function __init__getSidebarState(defaultValue){
-            var baseKey = "";
-            var key = baseKey + ":sidebar";
-            try {
-                var value = localStorage[key];
-                if (value === undefined) {
-                    return defaultValue;
-                }
-                var parsed = JSON.parse(value);
-                return parsed == null ? defaultValue : parsed;
-            } catch (e) {
-                return defaultValue;
-            }
-        }
-        function __init__restoreLastSidebarState() {
-            var isMobile = window.matchMedia("(max-width: 600px)").matches;
-            if (isMobile) {
-                // Init last state if not mobile
-                return;
-            }
-            var sidebarState = __init__getSidebarState(true);
-            var book = document.querySelector(".book");
-            // Show sidebar if it enabled
-            if (sidebarState && book) {
-                book.classList.add("without-animation", "with-summary");
-            }
-        }
-
-        try {
-            __init__restoreLastSidebarState();
-        } finally {
-            var book = document.querySelector(".book");
-            book.classList.remove("honkit-cloak");
-        }
-    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

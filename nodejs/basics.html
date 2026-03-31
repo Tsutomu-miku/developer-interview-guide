@@ -3,10 +3,11 @@
 <html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>Node.js基础 · 全栈开发面试指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="generator" content="GitBook 6.1.7">
         
         
         
@@ -16,19 +17,23 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -63,16 +68,20 @@
     <link rel="next" href="event-loop.html" />
     
     
-    <link rel="prev" href="../frontend/security.html" />
+    <link rel="prev" href="../frontend/design-patterns.html" />
     
 
     </head>
     <body>
         
-<div class="book honkit-cloak">
+<div class="book">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -269,6 +278,66 @@
             
         </li>
     
+        <li class="chapter " data-level="2.11" data-path="../frontend/micro-frontend.html">
+            
+                <a href="../frontend/micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../frontend/mobile-dev.html">
+            
+                <a href="../frontend/mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../frontend/state-management.html">
+            
+                <a href="../frontend/state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../frontend/design-patterns.html">
+            
+                <a href="../frontend/design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -359,6 +428,21 @@
                         <b>3.6.</b>
                     
                     最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="serverless.html">
+            
+                <a href="serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
             
                 </a>
             
@@ -463,6 +547,21 @@
             
         </li>
     
+        <li class="chapter " data-level="4.7" data-path="../golang/cloud-native.html">
+            
+                <a href="../golang/cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -553,6 +652,21 @@
                         <b>5.6.</b>
                     
                     实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../agent/evaluation.html">
+            
+                <a href="../agent/evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
             
                 </a>
             
@@ -657,14 +771,29 @@
             
         </li>
     
+        <li class="chapter " data-level="6.7" data-path="../algorithm/system-design.html">
+            
+                <a href="../algorithm/system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
     <li class="divider"></li>
 
     <li>
-        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
-            本书使用 HonKit 发布
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -697,6 +826,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="nodejs-基础面试指南">Node.js 基础面试指南</h1>
@@ -719,14 +851,14 @@
 <pre><code class="lang-javascript"><span class="hljs-comment">// 非阻塞 I/O 示例</span>
 <span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
 
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'开始读取文件'</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'开始读取文件'</span>);
 
-fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">'/path/to/file'</span>, <span class="hljs-string">'utf8'</span>, <span class="hljs-function">(<span class="hljs-params">err, data</span>) =&gt;</span> {
+fs.readFile(<span class="hljs-string">'/path/to/file'</span>, <span class="hljs-string">'utf8'</span>, (err, data) =&gt; {
   <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'文件读取完成'</span>);
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'文件读取完成'</span>);
 });
 
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'继续执行其他代码'</span>); <span class="hljs-comment">// 这行会先于"文件读取完成"打印</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'继续执行其他代码'</span>); <span class="hljs-comment">// 这行会先于"文件读取完成"打印</span>
 </code></pre>
 <hr></hr>
 <h2 id="二、nodejs-适用场景与不适用场景">二、Node.js 适用场景与不适用场景</h2>
@@ -831,11 +963,11 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 <p><code>global</code> 是 Node.js 的顶层全局对象，类似于浏览器中的 <code>window</code>。在 Node.js 中，在模块顶层用 <code>var</code> 声明的变量不会成为 <code>global</code> 的属性（与浏览器不同），因为每个模块都被包裹在一个函数作用域中。</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 浏览器中</span>
 <span class="hljs-keyword">var</span> a = <span class="hljs-number">10</span>;
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">window</span>.<span class="hljs-property">a</span>); <span class="hljs-comment">// 10</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">window</span>.a); <span class="hljs-comment">// 10</span>
 
 <span class="hljs-comment">// Node.js 中</span>
 <span class="hljs-keyword">var</span> a = <span class="hljs-number">10</span>;
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">global</span>.<span class="hljs-property">a</span>); <span class="hljs-comment">// undefined</span>
+<span class="hljs-built_in">console</span>.log(global.a); <span class="hljs-comment">// undefined</span>
 </code></pre>
 <p>从 Node.js 12 开始，推荐使用 <code>globalThis</code> 作为跨平台的全局对象引用。</p>
 <h3 id="42-process">4.2 process</h3>
@@ -843,15 +975,15 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 <h3 id="43-buffer">4.3 Buffer</h3>
 <p><code>Buffer</code> 类用于处理二进制数据，在文件操作、网络通信中经常使用。详见后续章节。</p>
 <h3 id="44-dirname-和-filename">4.4 <strong>dirname 和 </strong>filename</h3>
-<pre><code class="lang-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(__dirname);  <span class="hljs-comment">// 当前模块所在目录的绝对路径，如 /home/user/project/src</span>
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(__filename); <span class="hljs-comment">// 当前模块文件的绝对路径，如 /home/user/project/src/index.js</span>
+<pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(__dirname);  <span class="hljs-comment">// 当前模块所在目录的绝对路径，如 /home/user/project/src</span>
+<span class="hljs-built_in">console</span>.log(__filename); <span class="hljs-comment">// 当前模块文件的绝对路径，如 /home/user/project/src/index.js</span>
 </code></pre>
 <p><strong>注意</strong>：在 ESM 模块（<code>.mjs</code> 或 <code>"type": "module"</code>）中，<code>__dirname</code> 和 <code>__filename</code> 不可用，需要通过以下方式获取：</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">import</span> { fileURLToPath } <span class="hljs-keyword">from</span> <span class="hljs-string">'url'</span>;
 <span class="hljs-keyword">import</span> { dirname } <span class="hljs-keyword">from</span> <span class="hljs-string">'path'</span>;
 
-<span class="hljs-keyword">const</span> __filename = <span class="hljs-title function_">fileURLToPath</span>(<span class="hljs-keyword">import</span>.<span class="hljs-property">meta</span>.<span class="hljs-property">url</span>);
-<span class="hljs-keyword">const</span> __dirname = <span class="hljs-title function_">dirname</span>(__filename);
+<span class="hljs-keyword">const</span> __filename = fileURLToPath(<span class="hljs-keyword">import</span>.meta.url);
+<span class="hljs-keyword">const</span> __dirname = dirname(__filename);
 </code></pre>
 <h3 id="45-其他全局对象函数">4.5 其他全局对象/函数</h3>
 <ul>
@@ -873,17 +1005,17 @@ fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">
 <pre><code class="lang-javascript"><span class="hljs-comment">// 设置环境变量（通常在启动时）</span>
 <span class="hljs-comment">// NODE_ENV=production node app.js</span>
 
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(process.<span class="hljs-property">env</span>.<span class="hljs-property">NODE_ENV</span>); <span class="hljs-comment">// 'production'</span>
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(process.<span class="hljs-property">env</span>.<span class="hljs-property">PATH</span>);     <span class="hljs-comment">// 系统 PATH 环境变量</span>
+<span class="hljs-built_in">console</span>.log(process.env.NODE_ENV); <span class="hljs-comment">// 'production'</span>
+<span class="hljs-built_in">console</span>.log(process.env.PATH);     <span class="hljs-comment">// 系统 PATH 环境变量</span>
 
 <span class="hljs-comment">// 可以动态设置（仅在当前进程有效）</span>
-process.<span class="hljs-property">env</span>.<span class="hljs-property">MY_VAR</span> = <span class="hljs-string">'hello'</span>;
+process.env.MY_VAR = <span class="hljs-string">'hello'</span>;
 </code></pre>
 <h3 id="52-processargv">5.2 process.argv</h3>
 <p><code>process.argv</code> 返回一个数组，包含启动 Node.js 进程时传入的命令行参数：</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 运行命令: node app.js --port 3000 --env production</span>
 
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(process.<span class="hljs-property">argv</span>);
+<span class="hljs-built_in">console</span>.log(process.argv);
 <span class="hljs-comment">// [</span>
 <span class="hljs-comment">//   '/usr/local/bin/node',    // argv[0]: Node.js 可执行文件路径</span>
 <span class="hljs-comment">//   '/home/user/app.js',      // argv[1]: 被执行的脚本文件路径</span>
@@ -896,7 +1028,7 @@ process.<span class="hljs-property">env</span>.<span class="hljs-property">MY_VA
 <p>实际项目中通常使用 <code>yargs</code>、<code>commander</code> 或 <code>minimist</code> 等库来解析命令行参数。</p>
 <h3 id="53-processcwd">5.3 process.cwd()</h3>
 <p>返回 Node.js 进程的当前工作目录（即运行 <code>node</code> 命令时所在的目录）：</p>
-<pre><code class="lang-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(process.<span class="hljs-title function_">cwd</span>()); <span class="hljs-comment">// 如 /home/user/project</span>
+<pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(process.cwd()); <span class="hljs-comment">// 如 /home/user/project</span>
 
 <span class="hljs-comment">// 注意与 __dirname 的区别：</span>
 <span class="hljs-comment">// __dirname 是当前文件所在的目录，不受工作目录影响</span>
@@ -904,61 +1036,61 @@ process.<span class="hljs-property">env</span>.<span class="hljs-property">MY_VA
 </code></pre>
 <h3 id="54-processnexttickcallback">5.4 process.nextTick(callback)</h3>
 <p><code>process.nextTick</code> 将回调函数放入"nextTick 队列"，在当前操作完成后、事件循环继续之前执行。它的优先级高于所有微任务和宏任务：</p>
-<pre><code class="lang-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'1'</span>);
+<pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'1'</span>);
 
-process.<span class="hljs-title function_">nextTick</span>(<span class="hljs-function">() =&gt;</span> {
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'2 - nextTick'</span>);
+process.nextTick(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'2 - nextTick'</span>);
 });
 
-<span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>().<span class="hljs-title function_">then</span>(<span class="hljs-function">() =&gt;</span> {
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'3 - Promise'</span>);
+<span class="hljs-built_in">Promise</span>.resolve().then(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'3 - Promise'</span>);
 });
 
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'4'</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'4'</span>);
 
 <span class="hljs-comment">// 输出顺序: 1 → 4 → 2 - nextTick → 3 - Promise</span>
 </code></pre>
 <h3 id="55-processexitcode">5.5 process.exit([code])</h3>
 <p>强制终止 Node.js 进程。<code>code</code> 默认为 0（正常退出），非 0 表示异常退出：</p>
-<pre><code class="lang-javascript">process.<span class="hljs-title function_">exit</span>(<span class="hljs-number">0</span>); <span class="hljs-comment">// 正常退出</span>
-process.<span class="hljs-title function_">exit</span>(<span class="hljs-number">1</span>); <span class="hljs-comment">// 异常退出</span>
+<pre><code class="lang-javascript">process.exit(<span class="hljs-number">0</span>); <span class="hljs-comment">// 正常退出</span>
+process.exit(<span class="hljs-number">1</span>); <span class="hljs-comment">// 异常退出</span>
 
 <span class="hljs-comment">// 更推荐的方式是设置退出码后让进程自然退出</span>
-process.<span class="hljs-property">exitCode</span> = <span class="hljs-number">1</span>;
+process.exitCode = <span class="hljs-number">1</span>;
 </code></pre>
 <h3 id="56-其他常用属性和方法">5.6 其他常用属性和方法</h3>
-<pre><code class="lang-javascript">process.<span class="hljs-property">pid</span>;           <span class="hljs-comment">// 当前进程 ID</span>
-process.<span class="hljs-property">ppid</span>;          <span class="hljs-comment">// 父进程 ID</span>
-process.<span class="hljs-property">version</span>;       <span class="hljs-comment">// Node.js 版本，如 'v18.17.0'</span>
-process.<span class="hljs-property">versions</span>;      <span class="hljs-comment">// Node.js 及其依赖库的版本信息</span>
-process.<span class="hljs-property">platform</span>;      <span class="hljs-comment">// 操作系统平台，如 'linux', 'darwin', 'win32'</span>
-process.<span class="hljs-property">arch</span>;          <span class="hljs-comment">// CPU 架构，如 'x64', 'arm64'</span>
-process.<span class="hljs-title function_">memoryUsage</span>(); <span class="hljs-comment">// 内存使用情况</span>
-process.<span class="hljs-title function_">uptime</span>();      <span class="hljs-comment">// 进程运行时间（秒）</span>
-process.<span class="hljs-property">hrtime</span>.<span class="hljs-title function_">bigint</span>(); <span class="hljs-comment">// 高精度时间（纳秒）</span>
+<pre><code class="lang-javascript">process.pid;           <span class="hljs-comment">// 当前进程 ID</span>
+process.ppid;          <span class="hljs-comment">// 父进程 ID</span>
+process.version;       <span class="hljs-comment">// Node.js 版本，如 'v18.17.0'</span>
+process.versions;      <span class="hljs-comment">// Node.js 及其依赖库的版本信息</span>
+process.platform;      <span class="hljs-comment">// 操作系统平台，如 'linux', 'darwin', 'win32'</span>
+process.arch;          <span class="hljs-comment">// CPU 架构，如 'x64', 'arm64'</span>
+process.memoryUsage(); <span class="hljs-comment">// 内存使用情况</span>
+process.uptime();      <span class="hljs-comment">// 进程运行时间（秒）</span>
+process.hrtime.bigint(); <span class="hljs-comment">// 高精度时间（纳秒）</span>
 
 <span class="hljs-comment">// 标准输入输出</span>
-process.<span class="hljs-property">stdin</span>;   <span class="hljs-comment">// 可读流</span>
-process.<span class="hljs-property">stdout</span>;  <span class="hljs-comment">// 可写流</span>
-process.<span class="hljs-property">stderr</span>;  <span class="hljs-comment">// 可写流</span>
+process.stdin;   <span class="hljs-comment">// 可读流</span>
+process.stdout;  <span class="hljs-comment">// 可写流</span>
+process.stderr;  <span class="hljs-comment">// 可写流</span>
 
 <span class="hljs-comment">// 事件监听</span>
-process.<span class="hljs-title function_">on</span>(<span class="hljs-string">'uncaughtException'</span>, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'未捕获的异常:'</span>, err);
-  process.<span class="hljs-title function_">exit</span>(<span class="hljs-number">1</span>);
+process.on(<span class="hljs-string">'uncaughtException'</span>, (err) =&gt; {
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">'未捕获的异常:'</span>, err);
+  process.exit(<span class="hljs-number">1</span>);
 });
 
-process.<span class="hljs-title function_">on</span>(<span class="hljs-string">'unhandledRejection'</span>, <span class="hljs-function">(<span class="hljs-params">reason, promise</span>) =&gt;</span> {
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'未处理的 Promise 拒绝:'</span>, reason);
+process.on(<span class="hljs-string">'unhandledRejection'</span>, (reason, promise) =&gt; {
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">'未处理的 Promise 拒绝:'</span>, reason);
 });
 
-process.<span class="hljs-title function_">on</span>(<span class="hljs-string">'exit'</span>, <span class="hljs-function">(<span class="hljs-params">code</span>) =&gt;</span> {
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'进程即将退出，退出码:'</span>, code);
+process.on(<span class="hljs-string">'exit'</span>, (code) =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'进程即将退出，退出码:'</span>, code);
 });
 
-process.<span class="hljs-title function_">on</span>(<span class="hljs-string">'SIGINT'</span>, <span class="hljs-function">() =&gt;</span> {
-  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'收到 SIGINT 信号（Ctrl+C）'</span>);
-  process.<span class="hljs-title function_">exit</span>(<span class="hljs-number">0</span>);
+process.on(<span class="hljs-string">'SIGINT'</span>, () =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'收到 SIGINT 信号（Ctrl+C）'</span>);
+  process.exit(<span class="hljs-number">0</span>);
 });
 </code></pre>
 <hr></hr>
@@ -971,66 +1103,66 @@ process.<span class="hljs-title function_">on</span>(<span class="hljs-string">'
 <p>Buffer 在 V8 堆外分配内存（使用 C++ 层的内存），因此性能较高，不受 V8 垃圾回收的直接管理。</p>
 <h3 id="62-创建-buffer">6.2 创建 Buffer</h3>
 <pre><code class="lang-javascript"><span class="hljs-comment">// 1. Buffer.alloc(size) - 创建指定大小的 Buffer，初始化为 0</span>
-<span class="hljs-keyword">const</span> buf1 = <span class="hljs-title class_">Buffer</span>.<span class="hljs-title function_">alloc</span>(<span class="hljs-number">10</span>);
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(buf1); <span class="hljs-comment">// &lt;Buffer 00 00 00 00 00 00 00 00 00 00&gt;</span>
+<span class="hljs-keyword">const</span> buf1 = Buffer.alloc(<span class="hljs-number">10</span>);
+<span class="hljs-built_in">console</span>.log(buf1); <span class="hljs-comment">// &lt;Buffer 00 00 00 00 00 00 00 00 00 00&gt;</span>
 
 <span class="hljs-comment">// 2. Buffer.allocUnsafe(size) - 创建未初始化的 Buffer（更快但可能包含旧数据）</span>
-<span class="hljs-keyword">const</span> buf2 = <span class="hljs-title class_">Buffer</span>.<span class="hljs-title function_">allocUnsafe</span>(<span class="hljs-number">10</span>);
+<span class="hljs-keyword">const</span> buf2 = Buffer.allocUnsafe(<span class="hljs-number">10</span>);
 
 <span class="hljs-comment">// 3. Buffer.from(array) - 从数组创建</span>
-<span class="hljs-keyword">const</span> buf3 = <span class="hljs-title class_">Buffer</span>.<span class="hljs-title function_">from</span>([<span class="hljs-number">72</span>, <span class="hljs-number">101</span>, <span class="hljs-number">108</span>, <span class="hljs-number">108</span>, <span class="hljs-number">111</span>]);
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(buf3.<span class="hljs-title function_">toString</span>()); <span class="hljs-comment">// 'Hello'</span>
+<span class="hljs-keyword">const</span> buf3 = Buffer.from([<span class="hljs-number">72</span>, <span class="hljs-number">101</span>, <span class="hljs-number">108</span>, <span class="hljs-number">108</span>, <span class="hljs-number">111</span>]);
+<span class="hljs-built_in">console</span>.log(buf3.toString()); <span class="hljs-comment">// 'Hello'</span>
 
 <span class="hljs-comment">// 4. Buffer.from(string, encoding) - 从字符串创建</span>
-<span class="hljs-keyword">const</span> buf4 = <span class="hljs-title class_">Buffer</span>.<span class="hljs-title function_">from</span>(<span class="hljs-string">'你好世界'</span>, <span class="hljs-string">'utf8'</span>);
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(buf4); <span class="hljs-comment">// &lt;Buffer e4 bd a0 e5 a5 bd e4 b8 96 e7 95 8c&gt;</span>
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(buf4.<span class="hljs-property">length</span>); <span class="hljs-comment">// 12（UTF-8 中文占 3 字节）</span>
+<span class="hljs-keyword">const</span> buf4 = Buffer.from(<span class="hljs-string">'你好世界'</span>, <span class="hljs-string">'utf8'</span>);
+<span class="hljs-built_in">console</span>.log(buf4); <span class="hljs-comment">// &lt;Buffer e4 bd a0 e5 a5 bd e4 b8 96 e7 95 8c&gt;</span>
+<span class="hljs-built_in">console</span>.log(buf4.length); <span class="hljs-comment">// 12（UTF-8 中文占 3 字节）</span>
 
 <span class="hljs-comment">// 5. Buffer.from(buffer) - 从另一个 Buffer 复制</span>
-<span class="hljs-keyword">const</span> buf5 = <span class="hljs-title class_">Buffer</span>.<span class="hljs-title function_">from</span>(buf4);
+<span class="hljs-keyword">const</span> buf5 = Buffer.from(buf4);
 
 <span class="hljs-comment">// 注意：new Buffer() 已弃用，不要使用</span>
 </code></pre>
 <h3 id="63-读写操作">6.3 读写操作</h3>
-<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> buf = <span class="hljs-title class_">Buffer</span>.<span class="hljs-title function_">alloc</span>(<span class="hljs-number">4</span>);
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> buf = Buffer.alloc(<span class="hljs-number">4</span>);
 
 <span class="hljs-comment">// 写入</span>
-buf.<span class="hljs-title function_">writeUInt8</span>(<span class="hljs-number">0x48</span>, <span class="hljs-number">0</span>);  <span class="hljs-comment">// 写入单字节</span>
-buf.<span class="hljs-title function_">writeUInt8</span>(<span class="hljs-number">0x69</span>, <span class="hljs-number">1</span>);
-buf.<span class="hljs-title function_">write</span>(<span class="hljs-string">'Hi'</span>, <span class="hljs-number">0</span>, <span class="hljs-string">'utf8'</span>); <span class="hljs-comment">// 写入字符串</span>
+buf.writeUInt8(<span class="hljs-number">0x48</span>, <span class="hljs-number">0</span>);  <span class="hljs-comment">// 写入单字节</span>
+buf.writeUInt8(<span class="hljs-number">0x69</span>, <span class="hljs-number">1</span>);
+buf.write(<span class="hljs-string">'Hi'</span>, <span class="hljs-number">0</span>, <span class="hljs-string">'utf8'</span>); <span class="hljs-comment">// 写入字符串</span>
 
 <span class="hljs-comment">// 读取</span>
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(buf.<span class="hljs-title function_">readUInt8</span>(<span class="hljs-number">0</span>)); <span class="hljs-comment">// 72</span>
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(buf[<span class="hljs-number">0</span>]);           <span class="hljs-comment">// 72</span>
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(buf.<span class="hljs-title function_">toString</span>(<span class="hljs-string">'utf8'</span>, <span class="hljs-number">0</span>, <span class="hljs-number">2</span>)); <span class="hljs-comment">// 'Hi'</span>
+<span class="hljs-built_in">console</span>.log(buf.readUInt8(<span class="hljs-number">0</span>)); <span class="hljs-comment">// 72</span>
+<span class="hljs-built_in">console</span>.log(buf[<span class="hljs-number">0</span>]);           <span class="hljs-comment">// 72</span>
+<span class="hljs-built_in">console</span>.log(buf.toString(<span class="hljs-string">'utf8'</span>, <span class="hljs-number">0</span>, <span class="hljs-number">2</span>)); <span class="hljs-comment">// 'Hi'</span>
 
 <span class="hljs-comment">// 切片（共享内存）</span>
-<span class="hljs-keyword">const</span> slice = buf.<span class="hljs-title function_">slice</span>(<span class="hljs-number">0</span>, <span class="hljs-number">2</span>);
+<span class="hljs-keyword">const</span> slice = buf.slice(<span class="hljs-number">0</span>, <span class="hljs-number">2</span>);
 slice[<span class="hljs-number">0</span>] = <span class="hljs-number">0x41</span>; <span class="hljs-comment">// 修改 slice 也会影响原 buf</span>
 
 <span class="hljs-comment">// 复制（不共享内存）</span>
-<span class="hljs-keyword">const</span> copy = <span class="hljs-title class_">Buffer</span>.<span class="hljs-title function_">alloc</span>(<span class="hljs-number">2</span>);
-buf.<span class="hljs-title function_">copy</span>(copy, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">2</span>);
+<span class="hljs-keyword">const</span> copy = Buffer.alloc(<span class="hljs-number">2</span>);
+buf.copy(copy, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">2</span>);
 
 <span class="hljs-comment">// 拼接</span>
-<span class="hljs-keyword">const</span> combined = <span class="hljs-title class_">Buffer</span>.<span class="hljs-title function_">concat</span>([<span class="hljs-title class_">Buffer</span>.<span class="hljs-title function_">from</span>(<span class="hljs-string">'Hello'</span>), <span class="hljs-title class_">Buffer</span>.<span class="hljs-title function_">from</span>(<span class="hljs-string">' World'</span>)]);
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(combined.<span class="hljs-title function_">toString</span>()); <span class="hljs-comment">// 'Hello World'</span>
+<span class="hljs-keyword">const</span> combined = Buffer.concat([Buffer.from(<span class="hljs-string">'Hello'</span>), Buffer.from(<span class="hljs-string">' World'</span>)]);
+<span class="hljs-built_in">console</span>.log(combined.toString()); <span class="hljs-comment">// 'Hello World'</span>
 
 <span class="hljs-comment">// 比较</span>
-<span class="hljs-title class_">Buffer</span>.<span class="hljs-title function_">from</span>(<span class="hljs-string">'abc'</span>).<span class="hljs-title function_">compare</span>(<span class="hljs-title class_">Buffer</span>.<span class="hljs-title function_">from</span>(<span class="hljs-string">'abd'</span>)); <span class="hljs-comment">// -1</span>
-<span class="hljs-title class_">Buffer</span>.<span class="hljs-title function_">from</span>(<span class="hljs-string">'abc'</span>).<span class="hljs-title function_">equals</span>(<span class="hljs-title class_">Buffer</span>.<span class="hljs-title function_">from</span>(<span class="hljs-string">'abc'</span>));   <span class="hljs-comment">// true</span>
+Buffer.from(<span class="hljs-string">'abc'</span>).compare(Buffer.from(<span class="hljs-string">'abd'</span>)); <span class="hljs-comment">// -1</span>
+Buffer.from(<span class="hljs-string">'abc'</span>).equals(Buffer.from(<span class="hljs-string">'abc'</span>));   <span class="hljs-comment">// true</span>
 </code></pre>
 <h3 id="64-编码转换">6.4 编码转换</h3>
 <pre><code class="lang-javascript"><span class="hljs-keyword">const</span> str = <span class="hljs-string">'面试指南'</span>;
-<span class="hljs-keyword">const</span> buf = <span class="hljs-title class_">Buffer</span>.<span class="hljs-title function_">from</span>(str, <span class="hljs-string">'utf8'</span>);
+<span class="hljs-keyword">const</span> buf = Buffer.from(str, <span class="hljs-string">'utf8'</span>);
 
 <span class="hljs-comment">// 支持的编码: utf8, ascii, base64, base64url, hex, latin1, binary, ucs2/utf16le</span>
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(buf.<span class="hljs-title function_">toString</span>(<span class="hljs-string">'base64'</span>));  <span class="hljs-comment">// '6Z2i6K+V5oyH5Y2X'</span>
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(buf.<span class="hljs-title function_">toString</span>(<span class="hljs-string">'hex'</span>));     <span class="hljs-comment">// 'e99da2e8af95e68c87e58d97'</span>
+<span class="hljs-built_in">console</span>.log(buf.toString(<span class="hljs-string">'base64'</span>));  <span class="hljs-comment">// '6Z2i6K+V5oyH5Y2X'</span>
+<span class="hljs-built_in">console</span>.log(buf.toString(<span class="hljs-string">'hex'</span>));     <span class="hljs-comment">// 'e99da2e8af95e68c87e58d97'</span>
 
 <span class="hljs-comment">// Base64 解码</span>
-<span class="hljs-keyword">const</span> decoded = <span class="hljs-title class_">Buffer</span>.<span class="hljs-title function_">from</span>(<span class="hljs-string">'SGVsbG8='</span>, <span class="hljs-string">'base64'</span>);
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(decoded.<span class="hljs-title function_">toString</span>()); <span class="hljs-comment">// 'Hello'</span>
+<span class="hljs-keyword">const</span> decoded = Buffer.from(<span class="hljs-string">'SGVsbG8='</span>, <span class="hljs-string">'base64'</span>);
+<span class="hljs-built_in">console</span>.log(decoded.toString()); <span class="hljs-comment">// 'Hello'</span>
 </code></pre>
 <hr></hr>
 <h2 id="七、模块系统">七、模块系统</h2>
@@ -1039,7 +1171,7 @@ buf.<span class="hljs-title function_">copy</span>(copy, <span class="hljs-numbe
 </blockquote>
 <h3 id="71-commonjs-加载原理">7.1 CommonJS 加载原理</h3>
 <p>每个 Node.js 文件都被视为一个独立的模块。在执行时，Node.js 会将模块代码包裹在一个函数中：</p>
-<pre><code class="lang-javascript">(<span class="hljs-keyword">function</span>(<span class="hljs-params"><span class="hljs-built_in">exports</span>, <span class="hljs-built_in">require</span>, <span class="hljs-variable language_">module</span>, __filename, __dirname</span>) {
+<pre><code class="lang-javascript">(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">exports, require, module, __filename, __dirname</span>) </span>{
   <span class="hljs-comment">// 你的模块代码</span>
 });
 </code></pre>
@@ -1063,32 +1195,32 @@ buf.<span class="hljs-title function_">copy</span>(copy, <span class="hljs-numbe
 
 <span class="hljs-keyword">const</span> mod1 = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./myModule'</span>);
 <span class="hljs-keyword">const</span> mod2 = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./myModule'</span>);
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(mod1 === mod2); <span class="hljs-comment">// true（同一个引用）</span>
+<span class="hljs-built_in">console</span>.log(mod1 === mod2); <span class="hljs-comment">// true（同一个引用）</span>
 
 <span class="hljs-comment">// 查看缓存</span>
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-built_in">require</span>.<span class="hljs-property">cache</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">require</span>.cache);
 
 <span class="hljs-comment">// 清除缓存（谨慎使用）</span>
-<span class="hljs-keyword">delete</span> <span class="hljs-built_in">require</span>.<span class="hljs-property">cache</span>[<span class="hljs-built_in">require</span>.<span class="hljs-title function_">resolve</span>(<span class="hljs-string">'./myModule'</span>)];
+<span class="hljs-keyword">delete</span> <span class="hljs-built_in">require</span>.cache[<span class="hljs-built_in">require</span>.resolve(<span class="hljs-string">'./myModule'</span>)];
 </code></pre>
 <h3 id="73-moduleexports-vs-exports">7.3 module.exports vs exports</h3>
 <pre><code class="lang-javascript"><span class="hljs-comment">// module.exports 是模块真正的导出对象</span>
 <span class="hljs-comment">// exports 是 module.exports 的引用（快捷方式）</span>
 
 <span class="hljs-comment">// 正确用法</span>
-<span class="hljs-built_in">exports</span>.<span class="hljs-property">name</span> = <span class="hljs-string">'Alice'</span>;
-<span class="hljs-built_in">exports</span>.<span class="hljs-property">greet</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) { <span class="hljs-keyword">return</span> <span class="hljs-string">'Hello'</span>; };
+exports.name = <span class="hljs-string">'Alice'</span>;
+exports.greet = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-keyword">return</span> <span class="hljs-string">'Hello'</span>; };
 <span class="hljs-comment">// 等价于</span>
-<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span>.<span class="hljs-property">name</span> = <span class="hljs-string">'Alice'</span>;
-<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span>.<span class="hljs-property">greet</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) { <span class="hljs-keyword">return</span> <span class="hljs-string">'Hello'</span>; };
+<span class="hljs-built_in">module</span>.exports.name = <span class="hljs-string">'Alice'</span>;
+<span class="hljs-built_in">module</span>.exports.greet = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-keyword">return</span> <span class="hljs-string">'Hello'</span>; };
 
 <span class="hljs-comment">// 直接赋值必须用 module.exports</span>
-<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = <span class="hljs-keyword">class</span> <span class="hljs-title class_">User</span> {
-  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name</span>) { <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name; }
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> </span>{
+  <span class="hljs-keyword">constructor</span>(name) { <span class="hljs-keyword">this</span>.name = name; }
 };
 
 <span class="hljs-comment">// 错误用法！直接给 exports 赋值会切断引用</span>
-<span class="hljs-built_in">exports</span> = { <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span> }; <span class="hljs-comment">// 无效，不会改变 module.exports</span>
+exports = { <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span> }; <span class="hljs-comment">// 无效，不会改变 module.exports</span>
 </code></pre>
 <h3 id="74-循环依赖处理">7.4 循环依赖处理</h3>
 <blockquote>
@@ -1096,20 +1228,20 @@ buf.<span class="hljs-title function_">copy</span>(copy, <span class="hljs-numbe
 </blockquote>
 <p>当模块 A 和模块 B 相互 <code>require</code> 时，Node.js 不会死循环。它的处理策略是：返回未完成的导出对象（部分加载）。</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// a.js</span>
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'a.js 开始'</span>);
-<span class="hljs-built_in">exports</span>.<span class="hljs-property">done</span> = <span class="hljs-literal">false</span>;
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'a.js 开始'</span>);
+exports.done = <span class="hljs-literal">false</span>;
 <span class="hljs-keyword">const</span> b = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./b'</span>);
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'在 a.js 中, b.done ='</span>, b.<span class="hljs-property">done</span>);
-<span class="hljs-built_in">exports</span>.<span class="hljs-property">done</span> = <span class="hljs-literal">true</span>;
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'a.js 结束'</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'在 a.js 中, b.done ='</span>, b.done);
+exports.done = <span class="hljs-literal">true</span>;
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'a.js 结束'</span>);
 
 <span class="hljs-comment">// b.js</span>
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'b.js 开始'</span>);
-<span class="hljs-built_in">exports</span>.<span class="hljs-property">done</span> = <span class="hljs-literal">false</span>;
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'b.js 开始'</span>);
+exports.done = <span class="hljs-literal">false</span>;
 <span class="hljs-keyword">const</span> a = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./a'</span>);
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'在 b.js 中, a.done ='</span>, a.<span class="hljs-property">done</span>); <span class="hljs-comment">// false（a 尚未执行完）</span>
-<span class="hljs-built_in">exports</span>.<span class="hljs-property">done</span> = <span class="hljs-literal">true</span>;
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'b.js 结束'</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'在 b.js 中, a.done ='</span>, a.done); <span class="hljs-comment">// false（a 尚未执行完）</span>
+exports.done = <span class="hljs-literal">true</span>;
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'b.js 结束'</span>);
 
 <span class="hljs-comment">// main.js</span>
 <span class="hljs-keyword">const</span> a = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./a'</span>);
@@ -1189,18 +1321,18 @@ buf.<span class="hljs-title function_">copy</span>(copy, <span class="hljs-numbe
 </table>
 <pre><code class="lang-javascript"><span class="hljs-comment">// ESM 导出</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> name = <span class="hljs-string">'Alice'</span>;
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">greet</span>(<span class="hljs-params"></span>) { <span class="hljs-keyword">return</span> <span class="hljs-string">'Hello'</span>; }
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">greet</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-keyword">return</span> <span class="hljs-string">'Hello'</span>; }
 
 <span class="hljs-comment">// ESM 导入</span>
 <span class="hljs-keyword">import</span> greet, { name } <span class="hljs-keyword">from</span> <span class="hljs-string">'./module.mjs'</span>;
 
 <span class="hljs-comment">// 动态导入（CommonJS 和 ESM 都支持）</span>
-<span class="hljs-keyword">const</span> <span class="hljs-variable language_">module</span> = <span class="hljs-keyword">await</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">'./module.mjs'</span>);
+<span class="hljs-keyword">const</span> <span class="hljs-built_in">module</span> = <span class="hljs-keyword">await</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">'./module.mjs'</span>);
 
 <span class="hljs-comment">// ESM 中使用 CommonJS 模块</span>
 <span class="hljs-keyword">import</span> pkg <span class="hljs-keyword">from</span> <span class="hljs-string">'./cjs-module.cjs'</span>; <span class="hljs-comment">// 默认导入</span>
 <span class="hljs-keyword">import</span> { createRequire } <span class="hljs-keyword">from</span> <span class="hljs-string">'module'</span>;
-<span class="hljs-keyword">const</span> <span class="hljs-built_in">require</span> = <span class="hljs-title function_">createRequire</span>(<span class="hljs-keyword">import</span>.<span class="hljs-property">meta</span>.<span class="hljs-property">url</span>);
+<span class="hljs-keyword">const</span> <span class="hljs-built_in">require</span> = createRequire(<span class="hljs-keyword">import</span>.meta.url);
 <span class="hljs-keyword">const</span> cjsModule = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./cjs-module.cjs'</span>);
 </code></pre>
 <hr></hr>
@@ -1249,75 +1381,75 @@ npm uninstall xxx  / yarn remove xxx / pnpm remove xxx
 <blockquote>
 <p><strong>面试题：package.json 中有哪些重要字段？请分别介绍它们的作用。</strong></p>
 </blockquote>
-<pre><code class="lang-jsonc"><span class="hljs-punctuation">{</span>
-  <span class="hljs-comment">// 基本信息</span>
-  <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"my-project"</span><span class="hljs-punctuation">,</span>          <span class="hljs-comment">// 包名（必须唯一，小写，可含 - 和 _）</span>
-  <span class="hljs-attr">"version"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"1.0.0"</span><span class="hljs-punctuation">,</span>            <span class="hljs-comment">// 语义化版本号 (major.minor.patch)</span>
-  <span class="hljs-attr">"description"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"项目描述"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"keywords"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">"node"</span><span class="hljs-punctuation">,</span> <span class="hljs-string">"api"</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>   <span class="hljs-comment">// 搜索关键词</span>
-  <span class="hljs-attr">"license"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"MIT"</span><span class="hljs-punctuation">,</span>              <span class="hljs-comment">// 开源协议</span>
-  <span class="hljs-attr">"author"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Your Name &lt;email@example.com&gt;"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"repository"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span> <span class="hljs-attr">"type"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"git"</span><span class="hljs-punctuation">,</span> <span class="hljs-attr">"url"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"https://github.com/xxx/yyy"</span> <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+<pre><code class="lang-jsonc">{
+  // 基本信息
+  "name": "my-project",          // 包名（必须唯一，小写，可含 - 和 _）
+  "version": "1.0.0",            // 语义化版本号 (major.minor.patch)
+  "description": "项目描述",
+  "keywords": ["node", "api"],   // 搜索关键词
+  "license": "MIT",              // 开源协议
+  "author": "Your Name &lt;email@example.com&gt;",
+  "repository": { "type": "git", "url": "https://github.com/xxx/yyy" },
 
-  <span class="hljs-comment">// 入口文件</span>
-  <span class="hljs-attr">"main"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"dist/index.js"</span><span class="hljs-punctuation">,</span>       <span class="hljs-comment">// CommonJS 入口（require 时使用）</span>
-  <span class="hljs-attr">"module"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"dist/index.mjs"</span><span class="hljs-punctuation">,</span>    <span class="hljs-comment">// ESM 入口（构建工具优先使用）</span>
-  <span class="hljs-attr">"types"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"dist/index.d.ts"</span><span class="hljs-punctuation">,</span>    <span class="hljs-comment">// TypeScript 类型声明入口</span>
-  <span class="hljs-attr">"exports"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>                   <span class="hljs-comment">// 条件导出（Node.js 12.11+，优先级高于 main）</span>
-    <span class="hljs-attr">"."</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-      <span class="hljs-attr">"import"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"./dist/index.mjs"</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"require"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"./dist/index.cjs"</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"types"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"./dist/index.d.ts"</span>
-    <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"./utils"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"./dist/utils.js"</span>
-  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"type"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"module"</span><span class="hljs-punctuation">,</span>              <span class="hljs-comment">// 指定模块系统: "module"(ESM) 或 "commonjs"(默认)</span>
-  <span class="hljs-attr">"bin"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>                       <span class="hljs-comment">// 可执行命令</span>
-    <span class="hljs-attr">"my-cli"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"./bin/cli.js"</span>
-  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"files"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">"dist"</span><span class="hljs-punctuation">,</span> <span class="hljs-string">"README.md"</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// 发布到 npm 时包含的文件</span>
+  // 入口文件
+  "main": "dist/index.js",       // CommonJS 入口（require 时使用）
+  "module": "dist/index.mjs",    // ESM 入口（构建工具优先使用）
+  "types": "dist/index.d.ts",    // TypeScript 类型声明入口
+  "exports": {                   // 条件导出（Node.js 12.11+，优先级高于 main）
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./utils": "./dist/utils.js"
+  },
+  "type": "module",              // 指定模块系统: "module"(ESM) 或 "commonjs"(默认)
+  "bin": {                       // 可执行命令
+    "my-cli": "./bin/cli.js"
+  },
+  "files": ["dist", "README.md"], // 发布到 npm 时包含的文件
 
-  <span class="hljs-comment">// 脚本</span>
-  <span class="hljs-attr">"scripts"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-    <span class="hljs-attr">"dev"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"nodemon src/index.js"</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"build"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"tsc"</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"start"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"node dist/index.js"</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"test"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"jest"</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"lint"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"eslint src/"</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"prepare"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"husky install"</span><span class="hljs-punctuation">,</span>    <span class="hljs-comment">// 生命周期钩子</span>
-    <span class="hljs-attr">"prepublishOnly"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"npm run build"</span>
-  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+  // 脚本
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "lint": "eslint src/",
+    "prepare": "husky install",    // 生命周期钩子
+    "prepublishOnly": "npm run build"
+  },
 
-  <span class="hljs-comment">// 依赖</span>
-  <span class="hljs-attr">"dependencies"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>            <span class="hljs-comment">// 生产依赖</span>
-  <span class="hljs-attr">"devDependencies"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>         <span class="hljs-comment">// 开发依赖</span>
-  <span class="hljs-attr">"peerDependencies"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>        <span class="hljs-comment">// 同等依赖（插件系统常用）</span>
-  <span class="hljs-attr">"optionalDependencies"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>    <span class="hljs-comment">// 可选依赖（安装失败不会报错）</span>
-  <span class="hljs-attr">"bundledDependencies"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>     <span class="hljs-comment">// 打包时一起打包的依赖</span>
+  // 依赖
+  "dependencies": {},            // 生产依赖
+  "devDependencies": {},         // 开发依赖
+  "peerDependencies": {},        // 同等依赖（插件系统常用）
+  "optionalDependencies": {},    // 可选依赖（安装失败不会报错）
+  "bundledDependencies": [],     // 打包时一起打包的依赖
 
-  <span class="hljs-comment">// 引擎约束</span>
-  <span class="hljs-attr">"engines"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-    <span class="hljs-attr">"node"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"&gt;=16.0.0"</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"npm"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"&gt;=8.0.0"</span>
-  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"engineStrict"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+  // 引擎约束
+  "engines": {
+    "node": "&gt;=16.0.0",
+    "npm": "&gt;=8.0.0"
+  },
+  "engineStrict": true,
 
-  <span class="hljs-comment">// 私有包（防止误发布到 npm）</span>
-  <span class="hljs-attr">"private"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+  // 私有包（防止误发布到 npm）
+  "private": true,
 
-  <span class="hljs-comment">// Workspaces（monorepo）</span>
-  <span class="hljs-attr">"workspaces"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
-    <span class="hljs-string">"packages/*"</span>
-  <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+  // Workspaces（monorepo）
+  "workspaces": [
+    "packages/*"
+  ],
 
-  <span class="hljs-comment">// 浏览器兼容</span>
-  <span class="hljs-attr">"browserslist"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">"&gt; 1%"</span><span class="hljs-punctuation">,</span> <span class="hljs-string">"last 2 versions"</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+  // 浏览器兼容
+  "browserslist": ["&gt; 1%", "last 2 versions"],
 
-  <span class="hljs-comment">// 配置</span>
-  <span class="hljs-attr">"config"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-    <span class="hljs-attr">"port"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"3000"</span>               <span class="hljs-comment">// 可通过 process.env.npm_package_config_port 访问</span>
-  <span class="hljs-punctuation">}</span>
-<span class="hljs-punctuation">}</span>
+  // 配置
+  "config": {
+    "port": "3000"               // 可通过 process.env.npm_package_config_port 访问
+  }
+}
 </code></pre>
 <hr></hr>
 <h2 id="十一、npm-scripts-生命周期">十一、npm scripts 生命周期</h2>
@@ -1325,13 +1457,13 @@ npm uninstall xxx  / yarn remove xxx / pnpm remove xxx
 <p><strong>面试题：npm scripts 的生命周期钩子有哪些？执行顺序是怎样的？</strong></p>
 </blockquote>
 <p>npm 为某些脚本提供了 <code>pre</code> 和 <code>post</code> 钩子：</p>
-<pre><code class="lang-jsonc"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"scripts"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-    <span class="hljs-attr">"prebuild"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"echo 'build 前执行'"</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"build"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"tsc"</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"postbuild"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"echo 'build 后执行'"</span>
-  <span class="hljs-punctuation">}</span>
-<span class="hljs-punctuation">}</span>
+<pre><code class="lang-jsonc">{
+  "scripts": {
+    "prebuild": "echo 'build 前执行'",
+    "build": "tsc",
+    "postbuild": "echo 'build 后执行'"
+  }
+}
 </code></pre>
 <p>运行 <code>npm run build</code> 时，执行顺序为：<code>prebuild</code> → <code>build</code> → <code>postbuild</code>。</p>
 <h3 id="特殊的生命周期脚本">特殊的生命周期脚本</h3>
@@ -1452,6 +1584,22 @@ npx https://gist.github.com/xxx
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -1459,7 +1607,7 @@ npx https://gist.github.com/xxx
 
             
                 
-                <a href="../frontend/security.html" class="navigation navigation-prev " aria-label="Previous page: 前端安全">
+                <a href="../frontend/design-patterns.html" class="navigation navigation-prev " aria-label="Previous page: 设计模式与架构">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -1475,73 +1623,29 @@ npx https://gist.github.com/xxx
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Node.js基础","level":"3.1","depth":1,"next":{"title":"事件循环","level":"3.2","depth":1,"path":"nodejs/event-loop.md","ref":"nodejs/event-loop.md","articles":[]},"previous":{"title":"前端安全","level":"2.10","depth":1,"path":"frontend/security.md","ref":"frontend/security.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"nodejs/basics.md","mtime":"2026-03-31T06:35:11.839Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Node.js基础","level":"3.1","depth":1,"next":{"title":"事件循环","level":"3.2","depth":1,"path":"nodejs/event-loop.md","ref":"nodejs/event-loop.md","articles":[]},"previous":{"title":"设计模式与架构","level":"2.14","depth":1,"path":"frontend/design-patterns.md","ref":"frontend/design-patterns.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"nodejs/basics.md","mtime":"2026-03-31T12:30:26.832Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    <noscript>
-        <style>
-            .honkit-cloak {
-                display: block !important;
-            }
-        </style>
-    </noscript>
-    <script>
-        // Restore sidebar state as critical path for prevent layout shift
-        function __init__getSidebarState(defaultValue){
-            var baseKey = "";
-            var key = baseKey + ":sidebar";
-            try {
-                var value = localStorage[key];
-                if (value === undefined) {
-                    return defaultValue;
-                }
-                var parsed = JSON.parse(value);
-                return parsed == null ? defaultValue : parsed;
-            } catch (e) {
-                return defaultValue;
-            }
-        }
-        function __init__restoreLastSidebarState() {
-            var isMobile = window.matchMedia("(max-width: 600px)").matches;
-            if (isMobile) {
-                // Init last state if not mobile
-                return;
-            }
-            var sidebarState = __init__getSidebarState(true);
-            var book = document.querySelector(".book");
-            // Show sidebar if it enabled
-            if (sidebarState && book) {
-                book.classList.add("without-animation", "with-summary");
-            }
-        }
-
-        try {
-            __init__restoreLastSidebarState();
-        } finally {
-            var book = document.querySelector(".book");
-            book.classList.remove("honkit-cloak");
-        }
-    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

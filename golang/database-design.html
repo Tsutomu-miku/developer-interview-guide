@@ -3,10 +3,11 @@
 <html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>数据库与系统设计 · 全栈开发面试指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="generator" content="GitBook 6.1.7">
         
         
         
@@ -16,19 +17,23 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -69,10 +74,14 @@
     </head>
     <body>
         
-<div class="book honkit-cloak">
+<div class="book">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -269,6 +278,66 @@
             
         </li>
     
+        <li class="chapter " data-level="2.11" data-path="../frontend/micro-frontend.html">
+            
+                <a href="../frontend/micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../frontend/mobile-dev.html">
+            
+                <a href="../frontend/mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../frontend/state-management.html">
+            
+                <a href="../frontend/state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../frontend/design-patterns.html">
+            
+                <a href="../frontend/design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -359,6 +428,21 @@
                         <b>3.6.</b>
                     
                     最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../nodejs/serverless.html">
+            
+                <a href="../nodejs/serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
             
                 </a>
             
@@ -463,6 +547,21 @@
             
         </li>
     
+        <li class="chapter " data-level="4.7" data-path="cloud-native.html">
+            
+                <a href="cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -553,6 +652,21 @@
                         <b>5.6.</b>
                     
                     实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../agent/evaluation.html">
+            
+                <a href="../agent/evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
             
                 </a>
             
@@ -657,14 +771,29 @@
             
         </li>
     
+        <li class="chapter " data-level="6.7" data-path="../algorithm/system-design.html">
+            
+                <a href="../algorithm/system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
     <li class="divider"></li>
 
     <li>
-        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
-            本书使用 HonKit 发布
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -697,6 +826,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="go数据库与系统设计面试指南">Go数据库与系统设计面试指南</h1>
@@ -723,23 +855,23 @@ sqlDB.SetConnMaxLifetime(time.Hour)
 <h3 id="12-模型定义">1.2 模型定义</h3>
 <pre><code class="lang-go"><span class="hljs-keyword">type</span> User <span class="hljs-keyword">struct</span> {
     gorm.Model            <span class="hljs-comment">// 内嵌 ID, CreatedAt, UpdatedAt, DeletedAt</span>
-    Name     <span class="hljs-type">string</span>       <span class="hljs-string">`gorm:"type:varchar(100);not null;index"`</span>
-    Email    <span class="hljs-type">string</span>       <span class="hljs-string">`gorm:"type:varchar(200);uniqueIndex"`</span>
-    Age      <span class="hljs-type">int</span>          <span class="hljs-string">`gorm:"default:0"`</span>
+    Name     <span class="hljs-keyword">string</span>       <span class="hljs-string">`gorm:"type:varchar(100);not null;index"`</span>
+    Email    <span class="hljs-keyword">string</span>       <span class="hljs-string">`gorm:"type:varchar(200);uniqueIndex"`</span>
+    Age      <span class="hljs-keyword">int</span>          <span class="hljs-string">`gorm:"default:0"`</span>
     Profile  Profile      <span class="hljs-string">`gorm:"foreignKey:UserID"`</span> <span class="hljs-comment">// has one</span>
     Orders   []Order      <span class="hljs-string">`gorm:"foreignKey:UserID"`</span> <span class="hljs-comment">// has many</span>
 }
 
 <span class="hljs-keyword">type</span> Profile <span class="hljs-keyword">struct</span> {
-    ID     <span class="hljs-type">uint</span>
-    UserID <span class="hljs-type">uint</span>
-    Bio    <span class="hljs-type">string</span>
+    ID     <span class="hljs-keyword">uint</span>
+    UserID <span class="hljs-keyword">uint</span>
+    Bio    <span class="hljs-keyword">string</span>
 }
 
 <span class="hljs-keyword">type</span> Order <span class="hljs-keyword">struct</span> {
-    ID     <span class="hljs-type">uint</span>
-    UserID <span class="hljs-type">uint</span>
-    Amount <span class="hljs-type">float64</span>
+    ID     <span class="hljs-keyword">uint</span>
+    UserID <span class="hljs-keyword">uint</span>
+    Amount <span class="hljs-keyword">float64</span>
 }
 </code></pre>
 <h3 id="13-crud-操作">1.3 CRUD 操作</h3>
@@ -758,7 +890,7 @@ db.Where(<span class="hljs-string">"age &gt; ? AND name LIKE ?"</span>, <span cl
 <span class="hljs-comment">// Update</span>
 db.Model(&amp;user).Update(<span class="hljs-string">"name"</span>, <span class="hljs-string">"Bob"</span>)
 db.Model(&amp;user).Updates(User{Name: <span class="hljs-string">"Bob"</span>, Age: <span class="hljs-number">25</span>}) <span class="hljs-comment">// 零值不更新</span>
-db.Model(&amp;user).Updates(<span class="hljs-keyword">map</span>[<span class="hljs-type">string</span>]<span class="hljs-keyword">interface</span>{}{<span class="hljs-string">"name"</span>: <span class="hljs-string">"Bob"</span>, <span class="hljs-string">"age"</span>: <span class="hljs-number">0</span>}) <span class="hljs-comment">// 零值也更新</span>
+db.Model(&amp;user).Updates(<span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">interface</span>{}{<span class="hljs-string">"name"</span>: <span class="hljs-string">"Bob"</span>, <span class="hljs-string">"age"</span>: <span class="hljs-number">0</span>}) <span class="hljs-comment">// 零值也更新</span>
 
 <span class="hljs-comment">// Delete（软删除，设置 DeletedAt）</span>
 db.Delete(&amp;user, <span class="hljs-number">1</span>)
@@ -859,10 +991,10 @@ db.Raw(<span class="hljs-string">"SELECT * FROM users WHERE age &gt; ? AND delet
 <p>当查询所需的所有列都在索引中时，无需回表，称为<strong>覆盖索引</strong>：</p>
 <pre><code class="lang-sql"><span class="hljs-comment">-- 复合索引 (name, age)</span>
 <span class="hljs-comment">-- 覆盖索引查询（不需要回表）</span>
-<span class="hljs-keyword">SELECT</span> name, age <span class="hljs-keyword">FROM</span> users <span class="hljs-keyword">WHERE</span> name <span class="hljs-operator">=</span> <span class="hljs-string">'Alice'</span>;
+<span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">name</span>, age <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">users</span> <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">name</span> = <span class="hljs-string">'Alice'</span>;
 
 <span class="hljs-comment">-- 需要回表（email 不在索引中）</span>
-<span class="hljs-keyword">SELECT</span> name, age, email <span class="hljs-keyword">FROM</span> users <span class="hljs-keyword">WHERE</span> name <span class="hljs-operator">=</span> <span class="hljs-string">'Alice'</span>;
+<span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">name</span>, age, email <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">users</span> <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">name</span> = <span class="hljs-string">'Alice'</span>;
 </code></pre>
 <h3 id="24-索引优化原则">2.4 索引优化原则</h3>
 <ol>
@@ -879,7 +1011,7 @@ db.Raw(<span class="hljs-string">"SELECT * FROM users WHERE age &gt; ? AND delet
 <li><strong>避免冗余索引</strong>：<code>(a)</code> 和 <code>(a, b)</code> 同时存在时，<code>(a)</code> 是冗余的</li>
 </ol>
 <h3 id="25-explain-分析">2.5 Explain 分析</h3>
-<pre><code class="lang-sql">EXPLAIN <span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">FROM</span> users <span class="hljs-keyword">WHERE</span> name <span class="hljs-operator">=</span> <span class="hljs-string">'Alice'</span> <span class="hljs-keyword">AND</span> age <span class="hljs-operator">&gt;</span> <span class="hljs-number">20</span>;
+<pre><code class="lang-sql"><span class="hljs-keyword">EXPLAIN</span> <span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">users</span> <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">name</span> = <span class="hljs-string">'Alice'</span> <span class="hljs-keyword">AND</span> age &gt; <span class="hljs-number">20</span>;
 </code></pre>
 <p>关键字段：</p>
 <ul>
@@ -972,7 +1104,7 @@ db.Raw(<span class="hljs-string">"SELECT * FROM users WHERE age &gt; ? AND delet
 <li><strong>Next-Key Lock</strong>：Record Lock + Gap Lock</li>
 </ul>
 <pre><code class="lang-go"><span class="hljs-comment">// GORM 中使用事务</span>
-err := db.Transaction(<span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(tx *gorm.DB)</span></span> <span class="hljs-type">error</span> {
+err := db.Transaction(<span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(tx *gorm.DB)</span> <span class="hljs-title">error</span></span> {
     <span class="hljs-comment">// 悲观锁</span>
     <span class="hljs-keyword">var</span> user User
     <span class="hljs-keyword">if</span> err := tx.Clauses(clause.Locking{Strength: <span class="hljs-string">"UPDATE"</span>}).
@@ -1012,7 +1144,7 @@ val, err := rdb.Get(ctx, <span class="hljs-string">"key"</span>).Result()
 </code></pre>
 <h3 id="42-常见使用模式">4.2 常见使用模式</h3>
 <p><strong>缓存模式：</strong></p>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">GetUser</span><span class="hljs-params">(ctx context.Context, id <span class="hljs-type">int64</span>)</span></span> (*User, <span class="hljs-type">error</span>) {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">GetUser</span><span class="hljs-params">(ctx context.Context, id <span class="hljs-keyword">int64</span>)</span> <span class="hljs-params">(*User, error)</span></span> {
     cacheKey := fmt.Sprintf(<span class="hljs-string">"user:%d"</span>, id)
 
     <span class="hljs-comment">// 1. 查缓存</span>
@@ -1036,11 +1168,11 @@ val, err := rdb.Get(ctx, <span class="hljs-string">"key"</span>).Result()
 }
 </code></pre>
 <p><strong>分布式锁：</strong></p>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">acquireLock</span><span class="hljs-params">(ctx context.Context, key <span class="hljs-type">string</span>, ttl time.Duration)</span></span> (<span class="hljs-type">bool</span>, <span class="hljs-type">error</span>) {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">acquireLock</span><span class="hljs-params">(ctx context.Context, key <span class="hljs-keyword">string</span>, ttl time.Duration)</span> <span class="hljs-params">(<span class="hljs-keyword">bool</span>, error)</span></span> {
     <span class="hljs-keyword">return</span> rdb.SetNX(ctx, <span class="hljs-string">"lock:"</span>+key, <span class="hljs-string">"1"</span>, ttl).Result()
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">releaseLock</span><span class="hljs-params">(ctx context.Context, key <span class="hljs-type">string</span>)</span></span> <span class="hljs-type">error</span> {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">releaseLock</span><span class="hljs-params">(ctx context.Context, key <span class="hljs-keyword">string</span>)</span> <span class="hljs-title">error</span></span> {
     <span class="hljs-comment">// 使用 Lua 脚本保证原子性</span>
     script := redis.NewScript(<span class="hljs-string">`
         if redis.call("get", KEYS[1]) == ARGV[1] then
@@ -1049,7 +1181,7 @@ val, err := rdb.Get(ctx, <span class="hljs-string">"key"</span>).Result()
             return 0
         end
     `</span>)
-    <span class="hljs-keyword">return</span> script.Run(ctx, rdb, []<span class="hljs-type">string</span>{<span class="hljs-string">"lock:"</span> + key}, <span class="hljs-string">"1"</span>).Err()
+    <span class="hljs-keyword">return</span> script.Run(ctx, rdb, []<span class="hljs-keyword">string</span>{<span class="hljs-string">"lock:"</span> + key}, <span class="hljs-string">"1"</span>).Err()
 }
 </code></pre>
 <h3 id="43-缓存三大问题">4.3 缓存三大问题</h3>
@@ -1074,7 +1206,7 @@ val, err := rdb.Get(ctx, <span class="hljs-string">"key"</span>).Result()
 
 <span class="hljs-keyword">var</span> sf singleflight.Group
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">GetUserWithSingleFlight</span><span class="hljs-params">(ctx context.Context, id <span class="hljs-type">int64</span>)</span></span> (*User, <span class="hljs-type">error</span>) {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">GetUserWithSingleFlight</span><span class="hljs-params">(ctx context.Context, id <span class="hljs-keyword">int64</span>)</span> <span class="hljs-params">(*User, error)</span></span> {
     cacheKey := fmt.Sprintf(<span class="hljs-string">"user:%d"</span>, id)
     data, err := rdb.Get(ctx, cacheKey).Bytes()
     <span class="hljs-keyword">if</span> err == <span class="hljs-literal">nil</span> {
@@ -1084,7 +1216,7 @@ val, err := rdb.Get(ctx, <span class="hljs-string">"key"</span>).Result()
     }
 
     <span class="hljs-comment">// singleflight 合并并发请求</span>
-    v, err, _ := sf.Do(cacheKey, <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> (<span class="hljs-keyword">interface</span>{}, <span class="hljs-type">error</span>) {
+    v, err, _ := sf.Do(cacheKey, <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span> <span class="hljs-params">(<span class="hljs-keyword">interface</span>{}, error)</span></span> {
         user, err := db.GetUser(id)
         <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
             <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, err
@@ -1116,13 +1248,13 @@ writer := &amp;kafka.Writer{
 }
 
 err := writer.WriteMessages(ctx, kafka.Message{
-    Key:   []<span class="hljs-type">byte</span>(<span class="hljs-string">"user-123"</span>),
-    Value: []<span class="hljs-type">byte</span>(<span class="hljs-string">`{"event":"created"}`</span>),
+    Key:   []<span class="hljs-keyword">byte</span>(<span class="hljs-string">"user-123"</span>),
+    Value: []<span class="hljs-keyword">byte</span>(<span class="hljs-string">`{"event":"created"}`</span>),
 })
 
 <span class="hljs-comment">// 消费者</span>
 reader := kafka.NewReader(kafka.ReaderConfig{
-    Brokers:  []<span class="hljs-type">string</span>{<span class="hljs-string">"localhost:9092"</span>},
+    Brokers:  []<span class="hljs-keyword">string</span>{<span class="hljs-string">"localhost:9092"</span>},
     GroupID:  <span class="hljs-string">"my-group"</span>,
     Topic:    <span class="hljs-string">"user-events"</span>,
     MinBytes: <span class="hljs-number">1</span>,
@@ -1230,14 +1362,14 @@ reader := kafka.NewReader(kafka.ReaderConfig{
 </ol>
 <p><strong>虚拟节点：</strong> 解决节点分布不均匀的问题，每个物理节点对应多个虚拟节点。</p>
 <pre><code class="lang-go"><span class="hljs-keyword">type</span> ConsistentHash <span class="hljs-keyword">struct</span> {
-    ring     <span class="hljs-keyword">map</span>[<span class="hljs-type">uint32</span>]<span class="hljs-type">string</span> <span class="hljs-comment">// hash -&gt; node</span>
-    keys     []<span class="hljs-type">uint32</span>          <span class="hljs-comment">// sorted hashes</span>
-    replicas <span class="hljs-type">int</span>               <span class="hljs-comment">// 虚拟节点数</span>
+    ring     <span class="hljs-keyword">map</span>[<span class="hljs-keyword">uint32</span>]<span class="hljs-keyword">string</span> <span class="hljs-comment">// hash -&gt; node</span>
+    keys     []<span class="hljs-keyword">uint32</span>          <span class="hljs-comment">// sorted hashes</span>
+    replicas <span class="hljs-keyword">int</span>               <span class="hljs-comment">// 虚拟节点数</span>
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c *ConsistentHash)</span></span> Get(key <span class="hljs-type">string</span>) <span class="hljs-type">string</span> {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c *ConsistentHash)</span> <span class="hljs-title">Get</span><span class="hljs-params">(key <span class="hljs-keyword">string</span>)</span> <span class="hljs-title">string</span></span> {
     hash := c.hash(key)
-    idx := sort.Search(<span class="hljs-built_in">len</span>(c.keys), <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(i <span class="hljs-type">int</span>)</span></span> <span class="hljs-type">bool</span> {
+    idx := sort.Search(<span class="hljs-built_in">len</span>(c.keys), <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(i <span class="hljs-keyword">int</span>)</span> <span class="hljs-title">bool</span></span> {
         <span class="hljs-keyword">return</span> c.keys[i] &gt;= hash
     })
     <span class="hljs-keyword">if</span> idx == <span class="hljs-built_in">len</span>(c.keys) {
@@ -1263,7 +1395,7 @@ reader := kafka.NewReader(kafka.ReaderConfig{
 <pre><code class="lang-go"><span class="hljs-keyword">import</span> clientv3 <span class="hljs-string">"go.etcd.io/etcd/client/v3"</span>
 <span class="hljs-keyword">import</span> <span class="hljs-string">"go.etcd.io/etcd/client/v3/concurrency"</span>
 
-cli, _ := clientv3.New(clientv3.Config{Endpoints: []<span class="hljs-type">string</span>{<span class="hljs-string">"localhost:2379"</span>}})
+cli, _ := clientv3.New(clientv3.Config{Endpoints: []<span class="hljs-keyword">string</span>{<span class="hljs-string">"localhost:2379"</span>}})
 session, _ := concurrency.NewSession(cli, concurrency.WithTTL(<span class="hljs-number">10</span>))
 mutex := concurrency.NewMutex(session, <span class="hljs-string">"/my-lock/"</span>)
 
@@ -1321,7 +1453,7 @@ mutex.Unlock(ctx)
                         └─────────────┘
 </code></pre><h3 id="72-服务注册与发现">7.2 服务注册与发现</h3>
 <pre><code class="lang-go"><span class="hljs-comment">// 使用 etcd 做服务注册</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">registerService</span><span class="hljs-params">(cli *clientv3.Client, name, addr <span class="hljs-type">string</span>)</span></span> <span class="hljs-type">error</span> {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">registerService</span><span class="hljs-params">(cli *clientv3.Client, name, addr <span class="hljs-keyword">string</span>)</span> <span class="hljs-title">error</span></span> {
     lease, _ := cli.Grant(context.Background(), <span class="hljs-number">10</span>) <span class="hljs-comment">// 10秒租约</span>
     _, err := cli.Put(context.Background(),
         fmt.Sprintf(<span class="hljs-string">"/services/%s/%s"</span>, name, addr),
@@ -1337,15 +1469,15 @@ mutex.Unlock(ctx)
 }
 
 <span class="hljs-comment">// 服务发现</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">discoverService</span><span class="hljs-params">(cli *clientv3.Client, name <span class="hljs-type">string</span>)</span></span> ([]<span class="hljs-type">string</span>, <span class="hljs-type">error</span>) {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">discoverService</span><span class="hljs-params">(cli *clientv3.Client, name <span class="hljs-keyword">string</span>)</span> <span class="hljs-params">([]<span class="hljs-keyword">string</span>, error)</span></span> {
     resp, err := cli.Get(context.Background(),
         fmt.Sprintf(<span class="hljs-string">"/services/%s/"</span>, name),
         clientv3.WithPrefix(),
     )
     <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> { <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, err }
-    <span class="hljs-keyword">var</span> addrs []<span class="hljs-type">string</span>
+    <span class="hljs-keyword">var</span> addrs []<span class="hljs-keyword">string</span>
     <span class="hljs-keyword">for</span> _, kv := <span class="hljs-keyword">range</span> resp.Kvs {
-        addrs = <span class="hljs-built_in">append</span>(addrs, <span class="hljs-type">string</span>(kv.Value))
+        addrs = <span class="hljs-built_in">append</span>(addrs, <span class="hljs-keyword">string</span>(kv.Value))
     }
     <span class="hljs-keyword">return</span> addrs, <span class="hljs-literal">nil</span>
 }
@@ -1368,12 +1500,12 @@ cb := gobreaker.NewCircuitBreaker(gobreaker.Settings{
     MaxRequests: <span class="hljs-number">3</span>,                <span class="hljs-comment">// 半开状态最大请求数</span>
     Interval:    <span class="hljs-number">10</span> * time.Second, <span class="hljs-comment">// 统计窗口</span>
     Timeout:     <span class="hljs-number">30</span> * time.Second, <span class="hljs-comment">// 熔断后恢复时间</span>
-    ReadyToTrip: <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(counts gobreaker.Counts)</span></span> <span class="hljs-type">bool</span> {
+    ReadyToTrip: <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(counts gobreaker.Counts)</span> <span class="hljs-title">bool</span></span> {
         <span class="hljs-keyword">return</span> counts.ConsecutiveFailures &gt; <span class="hljs-number">5</span> <span class="hljs-comment">// 连续失败5次熔断</span>
     },
 })
 
-result, err := cb.Execute(<span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> (<span class="hljs-keyword">interface</span>{}, <span class="hljs-type">error</span>) {
+result, err := cb.Execute(<span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span> <span class="hljs-params">(<span class="hljs-keyword">interface</span>{}, error)</span></span> {
     <span class="hljs-keyword">return</span> callRemoteService()
 })
 </code></pre>
@@ -1383,7 +1515,7 @@ result, err := cb.Execute(<span class="hljs-function"><span class="hljs-keyword"
 
 limiter := rate.NewLimiter(rate.Limit(<span class="hljs-number">100</span>), <span class="hljs-number">200</span>) <span class="hljs-comment">// 每秒100个请求，突发200</span>
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">rateLimitMiddleware</span><span class="hljs-params">()</span></span> gin.HandlerFunc {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">rateLimitMiddleware</span><span class="hljs-params">()</span> <span class="hljs-title">gin</span>.<span class="hljs-title">HandlerFunc</span></span> {
     <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(c *gin.Context)</span></span> {
         <span class="hljs-keyword">if</span> !limiter.Allow() {
             c.AbortWithStatusJSON(<span class="hljs-number">429</span>, gin.H{<span class="hljs-string">"error"</span>: <span class="hljs-string">"too many requests"</span>})
@@ -1402,7 +1534,7 @@ limiter := rate.NewLimiter(rate.Limit(<span class="hljs-number">100</span>), <sp
 
 tracer := otel.Tracer(<span class="hljs-string">"my-service"</span>)
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">handleRequest</span><span class="hljs-params">(ctx context.Context)</span></span> <span class="hljs-type">error</span> {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">handleRequest</span><span class="hljs-params">(ctx context.Context)</span> <span class="hljs-title">error</span></span> {
     ctx, span := tracer.Start(ctx, <span class="hljs-string">"handleRequest"</span>)
     <span class="hljs-keyword">defer</span> span.End()
 
@@ -1456,6 +1588,22 @@ tracer := otel.Tracer(<span class="hljs-string">"my-service"</span>)
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -1479,73 +1627,29 @@ tracer := otel.Tracer(<span class="hljs-string">"my-service"</span>)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"数据库与系统设计","level":"4.5","depth":1,"next":{"title":"测试与最佳实践","level":"4.6","depth":1,"path":"golang/testing-practice.md","ref":"golang/testing-practice.md","articles":[]},"previous":{"title":"Web框架与HTTP","level":"4.4","depth":1,"path":"golang/web-framework.md","ref":"golang/web-framework.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"golang/database-design.md","mtime":"2026-03-31T06:35:11.838Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"数据库与系统设计","level":"4.5","depth":1,"next":{"title":"测试与最佳实践","level":"4.6","depth":1,"path":"golang/testing-practice.md","ref":"golang/testing-practice.md","articles":[]},"previous":{"title":"Web框架与HTTP","level":"4.4","depth":1,"path":"golang/web-framework.md","ref":"golang/web-framework.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"golang/database-design.md","mtime":"2026-03-31T12:30:26.832Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    <noscript>
-        <style>
-            .honkit-cloak {
-                display: block !important;
-            }
-        </style>
-    </noscript>
-    <script>
-        // Restore sidebar state as critical path for prevent layout shift
-        function __init__getSidebarState(defaultValue){
-            var baseKey = "";
-            var key = baseKey + ":sidebar";
-            try {
-                var value = localStorage[key];
-                if (value === undefined) {
-                    return defaultValue;
-                }
-                var parsed = JSON.parse(value);
-                return parsed == null ? defaultValue : parsed;
-            } catch (e) {
-                return defaultValue;
-            }
-        }
-        function __init__restoreLastSidebarState() {
-            var isMobile = window.matchMedia("(max-width: 600px)").matches;
-            if (isMobile) {
-                // Init last state if not mobile
-                return;
-            }
-            var sidebarState = __init__getSidebarState(true);
-            var book = document.querySelector(".book");
-            // Show sidebar if it enabled
-            if (sidebarState && book) {
-                book.classList.add("without-animation", "with-summary");
-            }
-        }
-
-        try {
-            __init__restoreLastSidebarState();
-        } finally {
-            var book = document.querySelector(".book");
-            book.classList.remove("honkit-cloak");
-        }
-    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

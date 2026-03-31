@@ -3,10 +3,11 @@
 <html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>并发编程 · 全栈开发面试指南</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="generator" content="GitBook 6.1.7">
         
         
         
@@ -16,19 +17,23 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -69,10 +74,14 @@
     </head>
     <body>
         
-<div class="book honkit-cloak">
+<div class="book">
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -269,6 +278,66 @@
             
         </li>
     
+        <li class="chapter " data-level="2.11" data-path="../frontend/micro-frontend.html">
+            
+                <a href="../frontend/micro-frontend.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    微前端与微模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../frontend/mobile-dev.html">
+            
+                <a href="../frontend/mobile-dev.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    移动端H5开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../frontend/state-management.html">
+            
+                <a href="../frontend/state-management.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    状态管理深度解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../frontend/design-patterns.html">
+            
+                <a href="../frontend/design-patterns.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    设计模式与架构
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -359,6 +428,21 @@
                         <b>3.6.</b>
                     
                     最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../nodejs/serverless.html">
+            
+                <a href="../nodejs/serverless.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    Serverless与边缘计算
             
                 </a>
             
@@ -463,6 +547,21 @@
             
         </li>
     
+        <li class="chapter " data-level="4.7" data-path="cloud-native.html">
+            
+                <a href="cloud-native.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    云原生与容器化
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -553,6 +652,21 @@
                         <b>5.6.</b>
                     
                     实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../agent/evaluation.html">
+            
+                <a href="../agent/evaluation.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    评估与可观测性
             
                 </a>
             
@@ -657,14 +771,29 @@
             
         </li>
     
+        <li class="chapter " data-level="6.7" data-path="../algorithm/system-design.html">
+            
+                <a href="../algorithm/system-design.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
     <li class="divider"></li>
 
     <li>
-        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
-            本书使用 HonKit 发布
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -697,6 +826,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="go并发编程面试指南">Go并发编程面试指南</h1>
@@ -822,14 +954,14 @@
 </blockquote>
 <h3 id="31-底层结构">3.1 底层结构</h3>
 <pre><code class="lang-go"><span class="hljs-keyword">type</span> hchan <span class="hljs-keyword">struct</span> {
-    qcount   <span class="hljs-type">uint</span>           <span class="hljs-comment">// 队列中的元素个数</span>
-    dataqsiz <span class="hljs-type">uint</span>           <span class="hljs-comment">// 环形缓冲区大小</span>
+    qcount   <span class="hljs-keyword">uint</span>           <span class="hljs-comment">// 队列中的元素个数</span>
+    dataqsiz <span class="hljs-keyword">uint</span>           <span class="hljs-comment">// 环形缓冲区大小</span>
     buf      unsafe.Pointer <span class="hljs-comment">// 环形缓冲区指针</span>
-    elemsize <span class="hljs-type">uint16</span>         <span class="hljs-comment">// 元素大小</span>
-    closed   <span class="hljs-type">uint32</span>         <span class="hljs-comment">// 是否已关闭</span>
+    elemsize <span class="hljs-keyword">uint16</span>         <span class="hljs-comment">// 元素大小</span>
+    closed   <span class="hljs-keyword">uint32</span>         <span class="hljs-comment">// 是否已关闭</span>
     elemtype *_type         <span class="hljs-comment">// 元素类型</span>
-    sendx    <span class="hljs-type">uint</span>           <span class="hljs-comment">// 发送索引</span>
-    recvx    <span class="hljs-type">uint</span>           <span class="hljs-comment">// 接收索引</span>
+    sendx    <span class="hljs-keyword">uint</span>           <span class="hljs-comment">// 发送索引</span>
+    recvx    <span class="hljs-keyword">uint</span>           <span class="hljs-comment">// 接收索引</span>
     recvq    waitq          <span class="hljs-comment">// 等待接收的 goroutine 队列</span>
     sendq    waitq          <span class="hljs-comment">// 等待发送的 goroutine 队列</span>
     lock     mutex          <span class="hljs-comment">// 互斥锁</span>
@@ -837,8 +969,8 @@
 </code></pre>
 <p>Channel 内部使用<strong>环形缓冲区</strong>存储数据，<code>recvq</code> 和 <code>sendq</code> 是等待队列（sudog 链表）。</p>
 <h3 id="32-无缓冲-vs-有缓冲">3.2 无缓冲 vs 有缓冲</h3>
-<pre><code class="lang-go">ch1 := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>)     <span class="hljs-comment">// 无缓冲：发送和接收必须同步</span>
-ch2 := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>, <span class="hljs-number">10</span>) <span class="hljs-comment">// 有缓冲：缓冲区满之前发送不阻塞</span>
+<pre><code class="lang-go">ch1 := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>)     <span class="hljs-comment">// 无缓冲：发送和接收必须同步</span>
+ch2 := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>, <span class="hljs-number">10</span>) <span class="hljs-comment">// 有缓冲：缓冲区满之前发送不阻塞</span>
 </code></pre>
 <p><strong>无缓冲 channel：</strong> 发送操作会阻塞直到有接收者准备好，反之亦然。适用于 goroutine 间的同步。</p>
 <p><strong>有缓冲 channel：</strong> 缓冲区未满时发送不阻塞，缓冲区非空时接收不阻塞。适用于异步通信。</p>
@@ -865,11 +997,11 @@ ch2 := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</
 }
 </code></pre>
 <h3 id="35-单向-channel">3.5 单向 Channel</h3>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">producer</span><span class="hljs-params">(ch <span class="hljs-keyword">chan</span>&lt;- <span class="hljs-type">int</span>)</span></span> { <span class="hljs-comment">// 只能发送</span>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">producer</span><span class="hljs-params">(ch <span class="hljs-keyword">chan</span>&lt;- <span class="hljs-keyword">int</span>)</span></span> { <span class="hljs-comment">// 只能发送</span>
     ch &lt;- <span class="hljs-number">42</span>
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">consumer</span><span class="hljs-params">(ch &lt;-<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>)</span></span> { <span class="hljs-comment">// 只能接收</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">consumer</span><span class="hljs-params">(ch &lt;-<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>)</span></span> { <span class="hljs-comment">// 只能接收</span>
     val := &lt;-ch
 }
 </code></pre>
@@ -879,7 +1011,7 @@ ch2 := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</
 <p>遵循原则：<strong>由发送者关闭 channel，不要由接收者关闭</strong>。多个发送者的场景可以通过额外的 done channel 或 sync.Once 来协调：</p>
 <pre><code class="lang-go"><span class="hljs-comment">// 多发送者模式</span>
 <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
-    ch := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>)
+    ch := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>)
     done := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-keyword">struct</span>{})
     <span class="hljs-keyword">var</span> once sync.Once
 
@@ -889,7 +1021,7 @@ ch2 := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</
 
     <span class="hljs-comment">// 多个发送者</span>
     <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">3</span>; i++ {
-        <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(id <span class="hljs-type">int</span>)</span></span> {
+        <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(id <span class="hljs-keyword">int</span>)</span></span> {
             <span class="hljs-keyword">defer</span> closeCh()
             ch &lt;- id
         }(i)
@@ -954,7 +1086,7 @@ rw.Unlock()
 <pre><code class="lang-go"><span class="hljs-keyword">var</span> wg sync.WaitGroup
 <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++ {
     wg.Add(<span class="hljs-number">1</span>)
-    <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(id <span class="hljs-type">int</span>)</span></span> {
+    <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(id <span class="hljs-keyword">int</span>)</span></span> {
         <span class="hljs-keyword">defer</span> wg.Done()
         <span class="hljs-comment">// 工作</span>
     }(i)
@@ -966,7 +1098,7 @@ wg.Wait()
 <pre><code class="lang-go"><span class="hljs-keyword">var</span> once sync.Once
 <span class="hljs-keyword">var</span> instance *Singleton
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">GetInstance</span><span class="hljs-params">()</span></span> *Singleton {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">GetInstance</span><span class="hljs-params">()</span> *<span class="hljs-title">Singleton</span></span> {
     once.Do(<span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> {
         instance = &amp;Singleton{}
     })
@@ -979,7 +1111,7 @@ wg.Wait()
 m.Store(<span class="hljs-string">"key"</span>, <span class="hljs-string">"value"</span>)
 val, ok := m.Load(<span class="hljs-string">"key"</span>)
 m.Delete(<span class="hljs-string">"key"</span>)
-m.Range(<span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(key, value <span class="hljs-keyword">interface</span>{})</span></span> <span class="hljs-type">bool</span> {
+m.Range(<span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(key, value <span class="hljs-keyword">interface</span>{})</span> <span class="hljs-title">bool</span></span> {
     fmt.Println(key, value)
     <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span> <span class="hljs-comment">// 返回 false 停止遍历</span>
 })
@@ -992,7 +1124,7 @@ m.Range(<span class="hljs-function"><span class="hljs-keyword">func</span><span 
 <p>适用场景：key 相对稳定、读多写少、或各 goroutine 操作不同 key 的场景。</p>
 <h3 id="56-syncpool">5.6 sync.Pool</h3>
 <pre><code class="lang-go"><span class="hljs-keyword">var</span> pool = sync.Pool{
-    New: <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> <span class="hljs-keyword">interface</span>{} {
+    New: <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span> <span class="hljs-title">interface</span></span>{} {
         <span class="hljs-keyword">return</span> <span class="hljs-built_in">new</span>(bytes.Buffer)
     },
 }
@@ -1024,7 +1156,7 @@ mu.Unlock()
 </code></pre>
 <hr></hr>
 <h2 id="六、原子操作（syncatomic）">六、原子操作（sync/atomic）</h2>
-<pre><code class="lang-go"><span class="hljs-keyword">var</span> counter <span class="hljs-type">int64</span>
+<pre><code class="lang-go"><span class="hljs-keyword">var</span> counter <span class="hljs-keyword">int64</span>
 
 <span class="hljs-comment">// 原子增减</span>
 atomic.AddInt64(&amp;counter, <span class="hljs-number">1</span>)
@@ -1086,7 +1218,7 @@ ctx := context.WithValue(context.Background(), <span class="hljs-string">"reques
     }
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">doWork</span><span class="hljs-params">(ctx context.Context)</span></span> (<span class="hljs-type">string</span>, <span class="hljs-type">error</span>) {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">doWork</span><span class="hljs-params">(ctx context.Context)</span> <span class="hljs-params">(<span class="hljs-keyword">string</span>, error)</span></span> {
     <span class="hljs-keyword">select</span> {
     <span class="hljs-keyword">case</span> &lt;-ctx.Done():
         <span class="hljs-keyword">return</span> <span class="hljs-string">""</span>, ctx.Err()
@@ -1099,8 +1231,8 @@ ctx := context.WithValue(context.Background(), <span class="hljs-string">"reques
 <h2 id="八、并发模式">八、并发模式</h2>
 <h3 id="81-fan-out--fan-in">8.1 Fan-out / Fan-in</h3>
 <pre><code class="lang-go"><span class="hljs-comment">// Fan-out: 多个 goroutine 从同一个 channel 读取</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">fanOut</span><span class="hljs-params">(ch &lt;-<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>, workers <span class="hljs-type">int</span>)</span></span> []&lt;-<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span> {
-    channels := <span class="hljs-built_in">make</span>([]&lt;-<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>, workers)
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">fanOut</span><span class="hljs-params">(ch &lt;-<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>, workers <span class="hljs-keyword">int</span>)</span> []&lt;-<span class="hljs-title">chan</span> <span class="hljs-title">int</span></span> {
+    channels := <span class="hljs-built_in">make</span>([]&lt;-<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>, workers)
     <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; workers; i++ {
         channels[i] = worker(ch)
     }
@@ -1108,12 +1240,12 @@ ctx := context.WithValue(context.Background(), <span class="hljs-string">"reques
 }
 
 <span class="hljs-comment">// Fan-in: 将多个 channel 合并为一个</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">fanIn</span><span class="hljs-params">(channels ...&lt;-<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>)</span></span> &lt;-<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span> {
-    out := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>)
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">fanIn</span><span class="hljs-params">(channels ...&lt;-<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>)</span> &lt;-<span class="hljs-title">chan</span> <span class="hljs-title">int</span></span> {
+    out := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>)
     <span class="hljs-keyword">var</span> wg sync.WaitGroup
     <span class="hljs-keyword">for</span> _, ch := <span class="hljs-keyword">range</span> channels {
         wg.Add(<span class="hljs-number">1</span>)
-        <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(c &lt;-<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>)</span></span> {
+        <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(c &lt;-<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>)</span></span> {
             <span class="hljs-keyword">defer</span> wg.Done()
             <span class="hljs-keyword">for</span> v := <span class="hljs-keyword">range</span> c {
                 out &lt;- v
@@ -1128,8 +1260,8 @@ ctx := context.WithValue(context.Background(), <span class="hljs-string">"reques
 }
 </code></pre>
 <h3 id="82-pipeline（流水线）">8.2 Pipeline（流水线）</h3>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">generate</span><span class="hljs-params">(nums ...<span class="hljs-type">int</span>)</span></span> &lt;-<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span> {
-    out := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>)
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">generate</span><span class="hljs-params">(nums ...<span class="hljs-keyword">int</span>)</span> &lt;-<span class="hljs-title">chan</span> <span class="hljs-title">int</span></span> {
+    out := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>)
     <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> {
         <span class="hljs-keyword">defer</span> <span class="hljs-built_in">close</span>(out)
         <span class="hljs-keyword">for</span> _, n := <span class="hljs-keyword">range</span> nums {
@@ -1139,8 +1271,8 @@ ctx := context.WithValue(context.Background(), <span class="hljs-string">"reques
     <span class="hljs-keyword">return</span> out
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">square</span><span class="hljs-params">(in &lt;-<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>)</span></span> &lt;-<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span> {
-    out := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>)
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">square</span><span class="hljs-params">(in &lt;-<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>)</span> &lt;-<span class="hljs-title">chan</span> <span class="hljs-title">int</span></span> {
+    out := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>)
     <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> {
         <span class="hljs-keyword">defer</span> <span class="hljs-built_in">close</span>(out)
         <span class="hljs-keyword">for</span> n := <span class="hljs-keyword">range</span> in {
@@ -1157,11 +1289,11 @@ ch := square(square(generate(<span class="hljs-number">2</span>, <span class="hl
 }
 </code></pre>
 <h3 id="83-worker-pool">8.3 Worker Pool</h3>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">workerPool</span><span class="hljs-params">(jobs &lt;-<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>, results <span class="hljs-keyword">chan</span>&lt;- <span class="hljs-type">int</span>, numWorkers <span class="hljs-type">int</span>)</span></span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">workerPool</span><span class="hljs-params">(jobs &lt;-<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>, results <span class="hljs-keyword">chan</span>&lt;- <span class="hljs-keyword">int</span>, numWorkers <span class="hljs-keyword">int</span>)</span></span> {
     <span class="hljs-keyword">var</span> wg sync.WaitGroup
     <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; numWorkers; i++ {
         wg.Add(<span class="hljs-number">1</span>)
-        <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(id <span class="hljs-type">int</span>)</span></span> {
+        <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(id <span class="hljs-keyword">int</span>)</span></span> {
             <span class="hljs-keyword">defer</span> wg.Done()
             <span class="hljs-keyword">for</span> job := <span class="hljs-keyword">range</span> jobs {
                 results &lt;- process(job)
@@ -1186,12 +1318,12 @@ go <span class="hljs-built_in">test</span> -race ./...
 <p>Go 运行时能检测所有 goroutine 都阻塞的情况，输出 <code>fatal error: all goroutines are asleep - deadlock!</code>。但<strong>部分死锁</strong>（只有部分 goroutine 死锁）无法被自动检测。</p>
 <p>常见死锁场景：</p>
 <pre><code class="lang-go"><span class="hljs-comment">// 1. 单个 goroutine 在无缓冲 channel 上自发自收</span>
-ch := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>)
+ch := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>)
 ch &lt;- <span class="hljs-number">1</span> <span class="hljs-comment">// 死锁</span>
 
 <span class="hljs-comment">// 2. 互相等待</span>
-chA := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>)
-chB := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>)
+chA := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>)
+chB := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>)
 <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> { &lt;-chA; chB &lt;- <span class="hljs-number">1</span> }()
 <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> { &lt;-chB; chA &lt;- <span class="hljs-number">1</span> }()
 
@@ -1213,7 +1345,7 @@ chB := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</
 </ol>
 <pre><code class="lang-go"><span class="hljs-comment">// 泄漏示例：生产者不关闭 channel</span>
 <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">leak</span><span class="hljs-params">()</span></span> {
-    ch := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>)
+    ch := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>)
     <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> {
         <span class="hljs-keyword">for</span> val := <span class="hljs-keyword">range</span> ch { <span class="hljs-comment">// 永远不会退出</span>
             fmt.Println(val)
@@ -1284,13 +1416,13 @@ fmt.Println(runtime.NumGoroutine())
 <p><strong>面试题：如何限制最多同时运行 N 个 goroutine？</strong></p>
 </blockquote>
 <pre><code class="lang-go"><span class="hljs-comment">// 方法1：使用带缓冲 channel 作为信号量</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">limitedConcurrency</span><span class="hljs-params">(tasks []<span class="hljs-keyword">func</span>()</span></span>, maxConcurrency <span class="hljs-type">int</span>) {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">limitedConcurrency</span><span class="hljs-params">(tasks []<span class="hljs-keyword">func</span>()</span>, <span class="hljs-title">maxConcurrency</span> <span class="hljs-title">int</span>)</span> {
     sem := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-keyword">struct</span>{}, maxConcurrency)
     <span class="hljs-keyword">var</span> wg sync.WaitGroup
     <span class="hljs-keyword">for</span> _, task := <span class="hljs-keyword">range</span> tasks {
         wg.Add(<span class="hljs-number">1</span>)
         sem &lt;- <span class="hljs-keyword">struct</span>{}{} <span class="hljs-comment">// 获取信号量</span>
-        <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(t <span class="hljs-keyword">func</span>()</span></span>) {
+        <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(t <span class="hljs-keyword">func</span>()</span>)</span> {
             <span class="hljs-keyword">defer</span> wg.Done()
             <span class="hljs-keyword">defer</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> { &lt;-sem }() <span class="hljs-comment">// 释放信号量</span>
             t()
@@ -1300,12 +1432,12 @@ fmt.Println(runtime.NumGoroutine())
 }
 
 <span class="hljs-comment">// 方法2：使用 errgroup</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">limitedWithErrgroup</span><span class="hljs-params">(tasks []<span class="hljs-keyword">func</span>()</span></span> <span class="hljs-type">error</span>, maxConcurrency <span class="hljs-type">int</span>) <span class="hljs-type">error</span> {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">limitedWithErrgroup</span><span class="hljs-params">(tasks []<span class="hljs-keyword">func</span>()</span> <span class="hljs-title">error</span>, <span class="hljs-title">maxConcurrency</span> <span class="hljs-title">int</span>) <span class="hljs-title">error</span></span> {
     g, _ := errgroup.WithContext(context.Background())
     g.SetLimit(maxConcurrency)
     <span class="hljs-keyword">for</span> _, task := <span class="hljs-keyword">range</span> tasks {
         t := task
-        g.Go(<span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> <span class="hljs-type">error</span> { <span class="hljs-keyword">return</span> t() })
+        g.Go(<span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span> <span class="hljs-title">error</span></span> { <span class="hljs-keyword">return</span> t() })
     }
     <span class="hljs-keyword">return</span> g.Wait()
 }
@@ -1318,17 +1450,17 @@ fmt.Println(runtime.NumGoroutine())
     ch <span class="hljs-keyword">chan</span> <span class="hljs-keyword">struct</span>{}
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">NewChanMutex</span><span class="hljs-params">()</span></span> *ChanMutex {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">NewChanMutex</span><span class="hljs-params">()</span> *<span class="hljs-title">ChanMutex</span></span> {
     mu := &amp;ChanMutex{ch: <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-keyword">struct</span>{}, <span class="hljs-number">1</span>)}
     mu.ch &lt;- <span class="hljs-keyword">struct</span>{}{} <span class="hljs-comment">// 初始状态：可获取</span>
     <span class="hljs-keyword">return</span> mu
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *ChanMutex)</span></span> Lock() {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *ChanMutex)</span> <span class="hljs-title">Lock</span><span class="hljs-params">()</span></span> {
     &lt;-m.ch
 }
 
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *ChanMutex)</span></span> Unlock() {
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *ChanMutex)</span> <span class="hljs-title">Unlock</span><span class="hljs-params">()</span></span> {
     m.ch &lt;- <span class="hljs-keyword">struct</span>{}{}
 }
 </code></pre>
@@ -1336,12 +1468,12 @@ fmt.Println(runtime.NumGoroutine())
 <blockquote>
 <p><strong>面试题：如何实现一个带超时的 goroutine？</strong></p>
 </blockquote>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">doWithTimeout</span><span class="hljs-params">(ctx context.Context, timeout time.Duration, fn <span class="hljs-keyword">func</span>()</span></span> (<span class="hljs-keyword">interface</span>{}, <span class="hljs-type">error</span>)) (<span class="hljs-keyword">interface</span>{}, <span class="hljs-type">error</span>) {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">doWithTimeout</span><span class="hljs-params">(ctx context.Context, timeout time.Duration, fn <span class="hljs-keyword">func</span>()</span> <span class="hljs-params">(<span class="hljs-keyword">interface</span>{}, error)</span>) <span class="hljs-params">(<span class="hljs-keyword">interface</span>{}, error)</span></span> {
     ctx, cancel := context.WithTimeout(ctx, timeout)
     <span class="hljs-keyword">defer</span> cancel()
 
     resultCh := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-keyword">interface</span>{}, <span class="hljs-number">1</span>)
-    errCh := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-type">error</span>, <span class="hljs-number">1</span>)
+    errCh := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> error, <span class="hljs-number">1</span>)
 
     <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> {
         result, err := fn()
@@ -1370,7 +1502,7 @@ fmt.Println(runtime.NumGoroutine())
     ctx, cancel := context.WithCancel(context.Background())
     <span class="hljs-keyword">defer</span> cancel()
 
-    ch := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>, <span class="hljs-number">10</span>)
+    ch := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>, <span class="hljs-number">10</span>)
     <span class="hljs-keyword">var</span> wg sync.WaitGroup
 
     <span class="hljs-comment">// 生产者</span>
@@ -1391,7 +1523,7 @@ fmt.Println(runtime.NumGoroutine())
     <span class="hljs-comment">// 消费者</span>
     <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">3</span>; i++ {
         wg.Add(<span class="hljs-number">1</span>)
-        <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(id <span class="hljs-type">int</span>)</span></span> {
+        <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(id <span class="hljs-keyword">int</span>)</span></span> {
             <span class="hljs-keyword">defer</span> wg.Done()
             <span class="hljs-keyword">for</span> val := <span class="hljs-keyword">range</span> ch {
                 fmt.Printf(<span class="hljs-string">"consumer %d: %d\n"</span>, id, val)
@@ -1409,7 +1541,7 @@ fmt.Println(runtime.NumGoroutine())
 <blockquote>
 <p><strong>面试题：用 N 个 goroutine 轮流按顺序打印 1 到 100。</strong></p>
 </blockquote>
-<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">sequentialPrint</span><span class="hljs-params">(n <span class="hljs-type">int</span>)</span></span> {
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">sequentialPrint</span><span class="hljs-params">(n <span class="hljs-keyword">int</span>)</span></span> {
     chs := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">chan</span> <span class="hljs-keyword">struct</span>{}, n)
     <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; n; i++ {
         chs[i] = <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-keyword">struct</span>{})
@@ -1420,7 +1552,7 @@ fmt.Println(runtime.NumGoroutine())
 
     <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; n; i++ {
         wg.Add(<span class="hljs-number">1</span>)
-        <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(id <span class="hljs-type">int</span>)</span></span> {
+        <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(id <span class="hljs-keyword">int</span>)</span></span> {
             <span class="hljs-keyword">defer</span> wg.Done()
             <span class="hljs-keyword">for</span> {
                 &lt;-chs[id]
@@ -1457,6 +1589,22 @@ fmt.Println(runtime.NumGoroutine())
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -1480,73 +1628,29 @@ fmt.Println(runtime.NumGoroutine())
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"并发编程","level":"4.2","depth":1,"next":{"title":"内存管理与GC","level":"4.3","depth":1,"path":"golang/memory.md","ref":"golang/memory.md","articles":[]},"previous":{"title":"Go语言基础","level":"4.1","depth":1,"path":"golang/basics.md","ref":"golang/basics.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"golang/concurrency.md","mtime":"2026-03-31T06:35:11.838Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"并发编程","level":"4.2","depth":1,"next":{"title":"内存管理与GC","level":"4.3","depth":1,"path":"golang/memory.md","ref":"golang/memory.md","articles":[]},"previous":{"title":"Go语言基础","level":"4.1","depth":1,"path":"golang/basics.md","ref":"golang/basics.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","search-pro","-search","-lunr","highlight","-sharing","fontsettings","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-pro":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"golang/concurrency.md","mtime":"2026-03-31T12:30:26.832Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T12:30:38.855Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    <noscript>
-        <style>
-            .honkit-cloak {
-                display: block !important;
-            }
-        </style>
-    </noscript>
-    <script>
-        // Restore sidebar state as critical path for prevent layout shift
-        function __init__getSidebarState(defaultValue){
-            var baseKey = "";
-            var key = baseKey + ":sidebar";
-            try {
-                var value = localStorage[key];
-                if (value === undefined) {
-                    return defaultValue;
-                }
-                var parsed = JSON.parse(value);
-                return parsed == null ? defaultValue : parsed;
-            } catch (e) {
-                return defaultValue;
-            }
-        }
-        function __init__restoreLastSidebarState() {
-            var isMobile = window.matchMedia("(max-width: 600px)").matches;
-            if (isMobile) {
-                // Init last state if not mobile
-                return;
-            }
-            var sidebarState = __init__getSidebarState(true);
-            var book = document.querySelector(".book");
-            // Show sidebar if it enabled
-            if (sidebarState && book) {
-                book.classList.add("without-animation", "with-summary");
-            }
-        }
-
-        try {
-            __init__restoreLastSidebarState();
-        } finally {
-            var book = document.querySelector(".book");
-            book.classList.remove("honkit-cloak");
-        }
-    </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 
