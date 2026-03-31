@@ -14,6 +14,10 @@
 * [前端工程化](frontend/engineering.md)
 * [性能优化](frontend/performance.md)
 * [前端安全](frontend/security.md)
+* [微前端与微模块](frontend/micro-frontend.md)
+* [移动端H5开发](frontend/mobile-dev.md)
+* [状态管理深度解析](frontend/state-management.md)
+* [设计模式与架构](frontend/design-patterns.md)
 
 ## 第二部分：Node.js开发 <a href="#nodejs" id="nodejs"></a>
 
@@ -23,6 +27,7 @@
 * [常用框架](nodejs/frameworks.md)
 * [数据库操作](nodejs/database.md)
 * [最佳实践与进阶](nodejs/practice.md)
+* [Serverless与边缘计算](nodejs/serverless.md)
 
 ## 第三部分：Go后端开发 <a href="#golang" id="golang"></a>
 
@@ -32,6 +37,7 @@
 * [Web框架与HTTP](golang/web-framework.md)
 * [数据库与系统设计](golang/database-design.md)
 * [测试与最佳实践](golang/testing-practice.md)
+* [云原生与容器化](golang/cloud-native.md)
 
 ## 第四部分：AI Agent开发 <a href="#agent" id="agent"></a>
 
@@ -41,6 +47,7 @@
 * [Agent架构](agent/agent-architecture.md)
 * [工具调用与Function Calling](agent/tool-calling.md)
 * [实战与进阶](agent/practice.md)
+* [评估与可观测性](agent/evaluation.md)
 
 ## 第五部分：经典算法题 <a href="#algorithm" id="algorithm"></a>
 
@@ -50,3 +57,4 @@
 * [动态规划](algorithm/dp.md)
 * [排序与搜索](algorithm/sorting-searching.md)
 * [回溯与贪心](algorithm/backtracking-greedy.md)
+* [系统设计](algorithm/system-design.md)
