@@ -1,0 +1,1239 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>大语言模型基础 · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="prompt-engineering.html" />
+    
+    
+    <link rel="prev" href="../golang/testing-practice.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../frontend/html-css.html">
+            
+                <a href="../frontend/html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../frontend/javascript.html">
+            
+                <a href="../frontend/javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../frontend/typescript.html">
+            
+                <a href="../frontend/typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../frontend/browser.html">
+            
+                <a href="../frontend/browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../frontend/network.html">
+            
+                <a href="../frontend/network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../frontend/react.html">
+            
+                <a href="../frontend/react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../frontend/vue.html">
+            
+                <a href="../frontend/vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../frontend/engineering.html">
+            
+                <a href="../frontend/engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../frontend/performance.html">
+            
+                <a href="../frontend/performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../frontend/security.html">
+            
+                <a href="../frontend/security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../nodejs/basics.html">
+            
+                <a href="../nodejs/basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../nodejs/event-loop.html">
+            
+                <a href="../nodejs/event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../nodejs/stream.html">
+            
+                <a href="../nodejs/stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../nodejs/frameworks.html">
+            
+                <a href="../nodejs/frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../nodejs/database.html">
+            
+                <a href="../nodejs/database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../nodejs/practice.html">
+            
+                <a href="../nodejs/practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../golang/basics.html">
+            
+                <a href="../golang/basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../golang/concurrency.html">
+            
+                <a href="../golang/concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../golang/memory.html">
+            
+                <a href="../golang/memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../golang/web-framework.html">
+            
+                <a href="../golang/web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../golang/database-design.html">
+            
+                <a href="../golang/database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../golang/testing-practice.html">
+            
+                <a href="../golang/testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter active" data-level="5.1" data-path="llm-basics.html">
+            
+                <a href="llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="prompt-engineering.html">
+            
+                <a href="prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="rag.html">
+            
+                <a href="rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="agent-architecture.html">
+            
+                <a href="agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="tool-calling.html">
+            
+                <a href="tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="practice.html">
+            
+                <a href="practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >大语言模型基础</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="大语言模型基础面试指南">大语言模型基础面试指南</h1>
+<p>本章系统梳理大语言模型（Large Language Model, LLM）的核心基础知识，涵盖 Transformer 架构、预训练与微调、主流模型演进、Tokenizer 原理、推理参数、上下文窗口、模型量化与部署、多模态模型及评估方法，是 AI Agent 开发面试中最重要的底层知识体系。</p>
+<hr></hr>
+<h2 id="1-transformer-架构详解">1. Transformer 架构详解</h2>
+<p>Transformer 是当今几乎所有大语言模型的基石架构，由 Vaswani 等人在 2017 年论文《Attention Is All You Need》中提出，彻底替代了 RNN/LSTM 在序列建模上的主导地位。</p>
+<h3 id="11-self-attention（自注意力）">1.1 Self-Attention（自注意力）</h3>
+<p>Self-Attention 的核心思想是：对于输入序列中的每个 token，计算它与序列中所有其他 token 的关联权重，从而获得全局上下文信息。</p>
+<p>计算公式：</p>
+<pre><code>Attention(Q, K, V) = softmax(Q·K^T / √d_k) · V
+</code></pre><p>其中：</p>
+<ul>
+<li><strong>Q（Query）</strong>：查询矩阵，代表当前 token "想要查找什么"</li>
+<li><strong>K（Key）</strong>：键矩阵，代表每个 token "包含什么信息"</li>
+<li><strong>V（Value）</strong>：值矩阵，代表每个 token "实际输出的信息"</li>
+<li><strong>d_k</strong>：Key 向量的维度，用于缩放，防止点积过大导致 softmax 梯度消失</li>
+</ul>
+<blockquote>
+<p><strong>面试题：为什么 Self-Attention 要除以 √d_k？</strong></p>
+<p>当 d_k 较大时，Q 和 K 的点积结果的方差也会随之增大（方差约为 d_k），导致 softmax 的输入值过大，使得梯度集中在极小的区域（softmax 饱和），反向传播时梯度接近于零。除以 √d_k 将方差重新归一化为 1，使 softmax 的梯度分布更合理，训练更稳定。</p>
+<p><strong>面试题：Self-Attention 的时间复杂度是多少？为什么这是长文本处理的瓶颈？</strong></p>
+<p>Self-Attention 的时间和空间复杂度均为 O(n²·d)，其中 n 为序列长度，d 为隐藏维度。当序列长度从 4K 扩展到 128K 时，计算量增长 1024 倍。这就是为什么长文本处理需要诸如 Sliding Window Attention、Flash Attention、Ring Attention 等优化技术。</p>
+</blockquote>
+<h3 id="12-multi-head-attention（多头注意力）">1.2 Multi-Head Attention（多头注意力）</h3>
+<p>多头注意力将输入分别投影到 h 个不同的子空间中，并行计算 h 组注意力，最后将结果拼接并通过线性变换输出：</p>
+<pre><code>MultiHead(Q, K, V) = Concat(head_1, ..., head_h) · W^O
+head_i = Attention(Q·W_i^Q, K·W_i^K, V·W_i^V)
+</code></pre><blockquote>
+<p><strong>面试题：Multi-Head Attention 为什么比 Single-Head Attention 效果好？</strong></p>
+<p>不同的注意力头可以学习到不同类型的关注模式。例如，某些头关注语法依赖关系（主谓一致），某些头关注语义关系（指代消解），某些头关注位置邻近关系。这种多样化的注意力模式使模型能够在同一层中捕获多种层次的特征，显著提升表达能力。实践中，通常设置 h=8 到 h=128 不等，每个头的维度为 d_model / h。</p>
+</blockquote>
+<h3 id="13-position-encoding（位置编码）">1.3 Position Encoding（位置编码）</h3>
+<p>Transformer 的注意力机制是排列不变的（Permutation Invariant），即不考虑 token 的顺序。因此需要额外引入位置信息。</p>
+<p><strong>绝对位置编码（Sinusoidal）</strong>：原始 Transformer 使用正弦余弦函数生成位置编码，不需要学习参数：</p>
+<pre><code>PE(pos, 2i)   = sin(pos / 10000^(2i/d_model))
+PE(pos, 2i+1) = cos(pos / 10000^(2i/d_model))
+</code></pre><p><strong>可学习位置编码</strong>：GPT 系列使用可学习的绝对位置 Embedding，将每个位置映射为一个可训练向量。</p>
+<p><strong>旋转位置编码（RoPE）</strong>：LLaMA、Qwen 等模型采用 RoPE，通过旋转矩阵将位置信息注入到 Q 和 K 中，具有更好的外推性和相对位置建模能力。其核心思想是：将 Q 和 K 按维度对分组，在每对维度上施加一个与位置相关的旋转角度。</p>
+<p><strong>ALiBi（Attention with Linear Biases）</strong>：不添加位置编码，而是在注意力分数上添加与距离成线性关系的偏置项，具有良好的长度外推能力。</p>
+<blockquote>
+<p><strong>面试题：RoPE 相比传统位置编码有什么优势？</strong></p>
+<ol>
+<li><strong>相对位置建模</strong>：RoPE 天然编码了相对位置信息——两个 token 的注意力分数只依赖于它们的相对距离，而非绝对位置。</li>
+<li><strong>长度外推</strong>：结合 NTK-aware 缩放或 YaRN 等方法，RoPE 可以较好地外推到训练时未见过的更长序列。</li>
+<li><strong>效率</strong>：不需要额外的可学习参数，计算开销小。</li>
+<li><strong>理论优雅</strong>：基于复数旋转的数学框架清晰，便于分析。</li>
+</ol>
+</blockquote>
+<h3 id="14-ffn（前馈神经网络）">1.4 FFN（前馈神经网络）</h3>
+<p>每个 Transformer 层中的 FFN 通常是一个两层全连接网络，带有非线性激活：</p>
+<pre><code>FFN(x) = W_2 · activation(W_1 · x + b_1) + b_2
+</code></pre><p>现代模型（如 LLaMA）常使用 <strong>SwiGLU</strong> 激活函数替代 ReLU/GELU：</p>
+<pre><code>SwiGLU(x) = (x · W_1) ⊙ SiLU(x · W_3)
+</code></pre><p>FFN 的隐藏维度通常是模型维度的 4 倍（或使用 SwiGLU 时为 8/3 倍）。FFN 被认为是模型存储事实性知识的主要模块。</p>
+<h3 id="15-layer-normalization">1.5 Layer Normalization</h3>
+<p>Layer Norm 对同一个样本的所有特征维度进行归一化，稳定训练过程。</p>
+<p><strong>Post-Norm</strong>：原始 Transformer 在残差连接之后做 LayerNorm（<code>LayerNorm(x + Sublayer(x))</code>）。
+<strong>Pre-Norm</strong>：现代模型更常用 Pre-Norm（<code>x + Sublayer(LayerNorm(x))</code>），训练更稳定。</p>
+<p><strong>RMSNorm</strong>：LLaMA 系列使用 RMSNorm（Root Mean Square Normalization），去除了均值中心化步骤，只做缩放，计算更高效：</p>
+<pre><code>RMSNorm(x) = x / RMS(x) · γ，其中 RMS(x) = √(mean(x²))
+</code></pre><blockquote>
+<p><strong>面试题：Pre-Norm 和 Post-Norm 有什么区别？为什么现代模型倾向用 Pre-Norm？</strong></p>
+<p>Post-Norm 在深层网络中容易出现梯度消失或训练不稳定问题，需要仔细的学习率 warmup。Pre-Norm 将归一化放在子层之前，使得残差路径上的梯度更加稳定，即使在非常深的网络（100+ 层）中也能顺利训练。代价是 Pre-Norm 在相同模型规模下的最终性能可能略低于精心调优的 Post-Norm，但训练的鲁棒性显著提升。</p>
+</blockquote>
+<hr></hr>
+<h2 id="2-预训练与微调">2. 预训练与微调</h2>
+<h3 id="21-pre-training（预训练）">2.1 Pre-training（预训练）</h3>
+<p>预训练是在大规模无标注文本上，通过自监督学习任务训练模型的基础能力。</p>
+<p><strong>Causal Language Modeling（自回归，GPT 系列）</strong>：预测下一个 token，使用因果注意力掩码（只看左边）。</p>
+<pre><code>目标函数：L = -∑ log P(x_t | x_1, ..., x_{t-1})
+</code></pre><p><strong>Masked Language Modeling（掩码，BERT 系列）</strong>：随机遮盖 15% 的 token，预测被遮盖的 token。</p>
+<p><strong>Seq2Seq（T5/BART）</strong>：编码器-解码器架构，适合翻译、摘要等任务。</p>
+<blockquote>
+<p><strong>面试题：为什么 GPT 用自回归预训练而 BERT 用掩码预训练？各有什么优缺点？</strong></p>
+<p>自回归（GPT）天然适合文本生成任务——模型从左到右逐 token 生成，与推理时的使用方式一致。但它只能利用左侧上下文。掩码（BERT）可以利用双向上下文理解语义，在分类、NER 等理解任务上效果更好，但不擅长开放式生成。当前大模型主流采用自回归方式，因为生成能力的通用性更强，且 Scaling Law 在自回归模型上表现最优。</p>
+</blockquote>
+<h3 id="22-sft（supervised-fine-tuning，监督微调）">2.2 SFT（Supervised Fine-Tuning，监督微调）</h3>
+<p>在预训练模型基础上，使用人工标注的（指令, 回答）数据对进行有监督微调，使模型学会遵循指令。</p>
+<p>关键要素：</p>
+<ul>
+<li><strong>数据质量远比数量重要</strong>：LIMA 论文证明 1000 条高质量数据就能获得优秀效果</li>
+<li><strong>数据格式</strong>：通常采用 instruction-input-output 三元组</li>
+<li><strong>LoRA/QLoRA</strong>：高效微调方法，只训练小部分参数</li>
+</ul>
+<h3 id="23-rlhf（reinforcement-learning-from-human-feedback）">2.3 RLHF（Reinforcement Learning from Human Feedback）</h3>
+<p>RLHF 是 ChatGPT 成功的关键技术之一，通过人类偏好数据训练奖励模型，再用强化学习（PPO）优化语言模型。</p>
+<p>流程：</p>
+<ol>
+<li><strong>收集偏好数据</strong>：人类标注者对模型的多个回答进行排序</li>
+<li><strong>训练奖励模型（Reward Model）</strong>：学习人类偏好打分</li>
+<li><strong>PPO 优化</strong>：使用奖励模型的分数作为奖励信号，通过 PPO 算法优化语言模型，同时加入 KL 散度约束防止模型偏离太远</li>
+</ol>
+<blockquote>
+<p><strong>面试题：RLHF 的主要挑战和局限是什么？</strong></p>
+<ol>
+<li><strong>奖励模型不完美</strong>：奖励模型可能被 "hack"——模型学会生成奖励模型给高分但实际质量不高的输出（Reward Hacking）。</li>
+<li><strong>训练不稳定</strong>：PPO 算法超参数敏感，训练过程容易崩溃。</li>
+<li><strong>标注成本高</strong>：需要大量人类偏好标注数据。</li>
+<li><strong>人类偏好的主观性</strong>：不同标注者对同一回答的评价可能大相径庭。</li>
+<li><strong>多目标权衡</strong>：安全性、有用性、真实性之间常存在冲突。</li>
+</ol>
+</blockquote>
+<h3 id="24-dpo（direct-preference-optimization）">2.4 DPO（Direct Preference Optimization）</h3>
+<p>DPO 是 RLHF 的简化替代方案，直接从偏好数据中优化模型，无需训练奖励模型和使用 PPO。</p>
+<pre><code>L_DPO = -E[log σ(β · (log π_θ(y_w|x)/π_ref(y_w|x) - log π_θ(y_l|x)/π_ref(y_l|x)))]
+</code></pre><p>其中 y_w 是偏好回答，y_l 是非偏好回答，π_ref 是参考策略。</p>
+<p>DPO 的优势是训练更稳定、实现更简单、计算更高效。其变体包括 IPO、KTO、ORPO 等。</p>
+<hr></hr>
+<h2 id="3-gpt-系列模型演进">3. GPT 系列模型演进</h2>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th>时间</th>
+<th>参数量</th>
+<th>核心创新</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPT-1</td>
+<td>2018.06</td>
+<td>1.17 亿</td>
+<td>预训练+微调范式，12 层 Transformer Decoder</td>
+</tr>
+<tr>
+<td>GPT-2</td>
+<td>2019.02</td>
+<td>15 亿</td>
+<td>Zero-shot 能力，证明 Scaling 的重要性</td>
+</tr>
+<tr>
+<td>GPT-3</td>
+<td>2020.05</td>
+<td>1750 亿</td>
+<td>In-context Learning，Few-shot 涌现</td>
+</tr>
+<tr>
+<td>GPT-3.5</td>
+<td>2022.03</td>
+<td>~1750 亿</td>
+<td>InstructGPT，RLHF 对齐</td>
+</tr>
+<tr>
+<td>GPT-4</td>
+<td>2023.03</td>
+<td>未公开（传闻 MoE）</td>
+<td>多模态，推理能力飞跃</td>
+</tr>
+<tr>
+<td>GPT-4o</td>
+<td>2024.05</td>
+<td>未公开</td>
+<td>原生多模态（文本/音频/视觉融合）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>面试题：什么是 In-context Learning？为什么 GPT-3 级别的模型才展现出这种能力？</strong></p>
+<p>In-context Learning 是指模型无需更新参数，仅通过在 Prompt 中给出少量示例就能学会新任务。GPT-3 展现这一能力的原因包括：(1) 规模效应——1750 亿参数使模型有足够容量存储 "元学习" 能力；(2) 训练数据多样性——大规模语料中隐含了大量"格式模式"；(3) 涌现现象——某些能力在模型规模超过临界点后突然出现。研究表明，In-context Learning 的内在机制可能类似于隐式的梯度下降。</p>
+</blockquote>
+<hr></hr>
+<h2 id="4-llamamistralqwen-等开源模型">4. LLaMA/Mistral/Qwen 等开源模型</h2>
+<h3 id="llama-系列">LLaMA 系列</h3>
+<ul>
+<li><strong>LLaMA-1</strong>（2023.02）：7B/13B/33B/65B，使用 RoPE + SwiGLU + RMSNorm + Pre-Norm</li>
+<li><strong>LLaMA-2</strong>（2023.07）：增加到 70B，加入 GQA（Grouped Query Attention），40K context</li>
+<li><strong>LLaMA-3</strong>（2024.04）：8B/70B，128K 词表，使用 tiktoken tokenizer</li>
+<li><strong>LLaMA-3.1</strong>（2024.07）：支持 128K context，405B 旗舰模型</li>
+</ul>
+<h3 id="mistral-系列">Mistral 系列</h3>
+<ul>
+<li><strong>Mistral-7B</strong>：Sliding Window Attention + GQA，7B 参数超越 LLaMA-2-13B</li>
+<li><strong>Mixtral-8x7B</strong>：MoE 架构，8 个专家中每次激活 2 个，总参数 46.7B，激活参数 12.9B</li>
+</ul>
+<h3 id="qwen-系列">Qwen 系列</h3>
+<ul>
+<li>阿里云开发，支持中英双语</li>
+<li>Qwen-2.5 系列提供 0.5B 到 72B 多个规格</li>
+<li>在中文任务上表现优异</li>
+</ul>
+<blockquote>
+<p><strong>面试题：GQA（Grouped Query Attention）相比 MHA 和 MQA 有什么优势？</strong></p>
+<p><strong>MHA</strong>（Multi-Head Attention）：每个头有独立的 Q/K/V，参数量和 KV Cache 都较大。<strong>MQA</strong>（Multi-Query Attention）：所有头共享同一组 K/V，显著减少 KV Cache 但可能损失精度。<strong>GQA</strong> 是两者的折中——将 Q 头分成若干组，每组共享一组 K/V。例如 32 个 Q 头分 8 组，使用 8 组 K/V。GQA 在几乎不损失精度的情况下，将 KV Cache 减小为 MHA 的 1/4（8/32），推理速度显著提升。</p>
+</blockquote>
+<hr></hr>
+<h2 id="5-tokenizer-原理">5. Tokenizer 原理</h2>
+<p>Tokenizer 负责将原始文本切分为模型可处理的 token 序列。</p>
+<h3 id="bpe（byte-pair-encoding）">BPE（Byte Pair Encoding）</h3>
+<ol>
+<li>初始化：将文本拆分为字符级别的 token</li>
+<li>统计相邻 token 对的频率</li>
+<li>合并频率最高的 token 对，创建新 token</li>
+<li>重复步骤 2-3 直到达到目标词表大小</li>
+</ol>
+<p>GPT 系列使用 BPE（基于 byte-level 的变体 BBPE）。</p>
+<h3 id="wordpiece">WordPiece</h3>
+<p>与 BPE 类似，但选择合并的依据不是频率最高，而是使语言模型似然度提升最大的 token 对。BERT 使用 WordPiece。</p>
+<h3 id="sentencepiece">SentencePiece</h3>
+<p>一个独立的分词工具库，支持 BPE 和 Unigram 算法。特点是直接在原始文本（包括空格）上训练，不依赖预分词，适合多语言场景。LLaMA 使用 SentencePiece。</p>
+<blockquote>
+<p><strong>面试题：Tokenizer 的设计会如何影响模型性能？</strong></p>
+<ol>
+<li><strong>词表大小</strong>：词表越大，每个文本对应的 token 数越少（压缩率越高），但 Embedding 层参数量增大。LLaMA-1 词表 32K，LLaMA-3 扩大到 128K。</li>
+<li><strong>多语言覆盖</strong>：如果 tokenizer 训练数据中某语言占比低，该语言的文本会被拆分为更多 token，导致效率低下和性能下降。</li>
+<li><strong>特殊 token</strong>：<code>&lt;bos&gt;</code>、<code>&lt;eos&gt;</code>、<code>&lt;pad&gt;</code>、<code>&lt;unk&gt;</code> 等特殊 token 的处理影响模型行为。</li>
+<li><strong>数字和代码</strong>：数字按位拆分还是整体编码、代码缩进的处理方式都会影响相关任务的性能。</li>
+</ol>
+</blockquote>
+<hr></hr>
+<h2 id="6-推理参数">6. 推理参数</h2>
+<h3 id="temperature（温度）">Temperature（温度）</h3>
+<p>控制输出概率分布的 "锐利度"。将 logits 除以 temperature 后再做 softmax：</p>
+<pre><code>P(x_i) = exp(z_i / T) / Σ exp(z_j / T)
+</code></pre><ul>
+<li>T=0（贪心解码）：始终选择概率最高的 token，输出确定性最高</li>
+<li>T=0.1~0.5：低创造性，适合事实性问答</li>
+<li>T=0.7~1.0：中等创造性，适合一般对话</li>
+<li>T&gt;1.0：高创造性但可能不连贯，适合创意写作</li>
+</ul>
+<h3 id="top-p（nucleus-sampling）">Top-p（Nucleus Sampling）</h3>
+<p>从概率从高到低排序的 token 中，选择累积概率刚好超过 p 的最小集合，然后在这个集合中采样。例如 Top-p=0.9 表示只从概率总和达到 90% 的 token 中采样。</p>
+<h3 id="top-k">Top-k</h3>
+<p>只从概率最高的 k 个 token 中采样。Top-k=1 等价于贪心解码。</p>
+<h3 id="frequency-penalty-与-presence-penalty">Frequency Penalty 与 Presence Penalty</h3>
+<ul>
+<li><strong>Frequency Penalty</strong>：根据 token 在已生成文本中出现的<strong>次数</strong>减少其 logit，出现越多惩罚越大</li>
+<li><strong>Presence Penalty</strong>：只要 token 在已生成文本中<strong>出现过</strong>就减少其 logit，不论次数</li>
+</ul>
+<p>两者都用于减少重复。Frequency Penalty 对高频 token 惩罚更强，Presence Penalty 更均匀地鼓励多样性。</p>
+<blockquote>
+<p><strong>面试题：在生产环境中，你会如何设置推理参数？</strong></p>
+<p>取决于应用场景：</p>
+<ul>
+<li><strong>客服/问答</strong>：Temperature=0，确保回答准确一致</li>
+<li><strong>代码生成</strong>：Temperature=0~0.2，Top-p=0.95</li>
+<li><strong>创意写作</strong>：Temperature=0.7~1.0，Top-p=0.9</li>
+<li><strong>数据抽取/JSON输出</strong>：Temperature=0，确保格式一致</li>
+<li>一般不同时使用 Top-p 和 Top-k，选择其一即可</li>
+<li>Frequency Penalty 设为 0.3~0.5 可有效减少重复</li>
+</ul>
+</blockquote>
+<hr></hr>
+<h2 id="7-上下文窗口与长文本处理">7. 上下文窗口与长文本处理</h2>
+<p>上下文窗口（Context Window）是模型能处理的最大 token 数量。</p>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th>上下文窗口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPT-3</td>
+<td>4K</td>
+</tr>
+<tr>
+<td>GPT-4</td>
+<td>8K / 32K</td>
+</tr>
+<tr>
+<td>GPT-4 Turbo</td>
+<td>128K</td>
+</tr>
+<tr>
+<td>Claude 3.5</td>
+<td>200K</td>
+</tr>
+<tr>
+<td>LLaMA-3.1</td>
+<td>128K</td>
+</tr>
+<tr>
+<td>Gemini 1.5 Pro</td>
+<td>1M / 2M</td>
+</tr>
+</tbody>
+</table>
+<h3 id="长文本处理技术">长文本处理技术</h3>
+<ol>
+<li><strong>位置编码外推</strong>：NTK-aware Scaling、YaRN、Dynamic NTK 等方法扩展 RoPE 的有效长度</li>
+<li><strong>Flash Attention</strong>：通过分块计算和利用 GPU SRAM，将注意力的内存复杂度从 O(n²) 降低到 O(n)，同时加速计算</li>
+<li><strong>Sliding Window Attention</strong>：只关注局部窗口内的 token，降低计算量</li>
+<li><strong>Ring Attention</strong>：分布式长序列注意力计算</li>
+<li><strong>文本分块 + 检索</strong>：将长文本分块存储，使用 RAG 检索相关片段</li>
+</ol>
+<blockquote>
+<p><strong>面试题：如果输入文本超过了模型的上下文窗口怎么办？</strong></p>
+<p>几种策略：(1) <strong>截断</strong>：保留最新的或最重要的内容，简单但丢失信息。(2) <strong>分块摘要</strong>：对长文本分段摘要后再处理，适合摘要类任务。(3) <strong>RAG</strong>：将文本分块建索引，查询时只检索相关片段。(4) <strong>Map-Reduce</strong>：对每个分块并行处理后合并结果。(5) <strong>滑动窗口</strong>：重叠分块逐步处理。(6) <strong>更换更大上下文窗口的模型</strong>。实际生产中最常用的是 RAG 方式。</p>
+</blockquote>
+<hr></hr>
+<h2 id="8-模型量化">8. 模型量化</h2>
+<p>量化是将模型权重从高精度（FP32/FP16）压缩到低精度（INT8/INT4）的技术，显著减少显存占用和加速推理。</p>
+<h3 id="量化类型">量化类型</h3>
+<ul>
+<li><strong>INT8 量化</strong>：权重用 8 位整数表示，显存减半，精度损失小</li>
+<li><strong>INT4 量化</strong>：权重用 4 位整数表示，显存减为 1/4，有一定精度损失</li>
+<li><strong>FP8 量化</strong>：使用 8 位浮点数，兼顾精度和效率</li>
+</ul>
+<h3 id="量化方法">量化方法</h3>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPTQ</td>
+<td>基于 OBS（Optimal Brain Surgeon），逐层量化，需要校准数据</td>
+</tr>
+<tr>
+<td>AWQ</td>
+<td>Activation-aware Weight Quantization，保护重要权重通道</td>
+</tr>
+<tr>
+<td>GGUF</td>
+<td>GGML 的改进格式，支持 CPU 推理，多种量化级别（Q4_K_M 等）</td>
+</tr>
+<tr>
+<td>bitsandbytes</td>
+<td>HuggingFace 集成，支持 NF4（Normal Float 4-bit）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>面试题：量化后的模型精度损失如何评估和控制？</strong></p>
+<ol>
+<li><strong>评估方法</strong>：在基准测试上比较量化前后的 Perplexity 变化、下游任务精度等。通常 INT8 量化精度损失 &lt;1%，INT4 损失在 1-5%。</li>
+<li><strong>控制方法</strong>：(a) AWQ 通过分析激活分布保护重要权重；(b) GPTQ 使用校准数据集最小化量化误差；(c) 混合精度——对敏感层（如注意力层）保持更高精度；(d) QLoRA 的 NF4 + Double Quantization 方案能在 4-bit 下保持较好精度。</li>
+</ol>
+</blockquote>
+<hr></hr>
+<h2 id="9-模型部署">9. 模型部署</h2>
+<h3 id="vllm">vLLM</h3>
+<ul>
+<li>开源高性能推理引擎</li>
+<li><strong>PagedAttention</strong>：借鉴操作系统虚拟内存的分页机制管理 KV Cache，显著提高 GPU 显存利用率</li>
+<li>支持连续批处理（Continuous Batching），吞吐量比 HuggingFace 原生推理高 24 倍以上</li>
+<li>支持 Tensor Parallelism 多卡部署</li>
+</ul>
+<h3 id="tgi（text-generation-inference）">TGI（Text Generation Inference）</h3>
+<ul>
+<li>HuggingFace 官方推理框架</li>
+<li>支持 Flash Attention、量化、水印等</li>
+<li>内置 Token Streaming 和 gRPC/REST API</li>
+<li>适合 HuggingFace 生态</li>
+</ul>
+<h3 id="ollama">Ollama</h3>
+<ul>
+<li>本地模型运行工具</li>
+<li>类似 Docker 的模型管理体验（<code>ollama pull</code>、<code>ollama run</code>）</li>
+<li>支持 GGUF 格式，CPU/GPU 推理</li>
+<li>适合开发调试和个人使用</li>
+</ul>
+<h3 id="ggml--llamacpp">GGML / llama.cpp</h3>
+<ul>
+<li>纯 C/C++ 实现的推理引擎</li>
+<li>支持 CPU 推理，对 Apple Silicon 优化良好</li>
+<li>GGUF 格式是当前标准</li>
+<li>资源需求低，适合边缘设备</li>
+</ul>
+<blockquote>
+<p><strong>面试题：如何选择模型部署方案？</strong></p>
+<ul>
+<li><strong>高吞吐量生产环境</strong>：vLLM（PagedAttention + Continuous Batching）</li>
+<li><strong>HuggingFace 生态</strong>：TGI，方便集成 HF 模型</li>
+<li><strong>本地开发/个人使用</strong>：Ollama（简单易用）</li>
+<li><strong>边缘设备/CPU 推理</strong>：llama.cpp / GGUF</li>
+<li><strong>多模型切换</strong>：考虑 vLLM 或 Triton Inference Server</li>
+<li><strong>成本敏感</strong>：使用量化模型（GPTQ/AWQ）+ vLLM</li>
+</ul>
+</blockquote>
+<hr></hr>
+<h2 id="10-多模态模型">10. 多模态模型</h2>
+<p>多模态模型能够处理文本、图像、音频、视频等多种输入模态。</p>
+<h3 id="gpt-4v--gpt-4o">GPT-4V / GPT-4o</h3>
+<ul>
+<li>GPT-4V：支持图像+文本输入</li>
+<li>GPT-4o：原生多模态，文本/图像/音频统一处理，延迟极低</li>
+</ul>
+<h3 id="llava（large-language-and-vision-assistant）">LLaVA（Large Language and Vision Assistant）</h3>
+<ul>
+<li>开源视觉语言模型</li>
+<li>架构：Vision Encoder（CLIP ViT）+ Projection Layer + LLM</li>
+<li>两阶段训练：先预训练视觉-语言对齐，再指令微调</li>
+</ul>
+<h3 id="gemini">Gemini</h3>
+<ul>
+<li>Google 的原生多模态模型</li>
+<li>从训练开始就在多模态数据上联合训练</li>
+<li>Gemini 1.5 Pro 支持 1M+ context</li>
+</ul>
+<blockquote>
+<p><strong>面试题：多模态模型如何对齐不同模态的表示？</strong></p>
+<p>主要有三种方法：(1) <strong>投影层对齐</strong>：用简单 MLP 或 Cross-Attention 将视觉特征映射到语言模型的输入空间（LLaVA 方式）。(2) <strong>统一 tokenization</strong>：将图像也转换为离散 token（如 DALL-E 的 dVAE），与文本 token 一起处理。(3) <strong>原生多模态训练</strong>：从预训练阶段就在混合模态数据上训练（Gemini 方式），模型内部学习对齐。方法 (3) 理论上最优但训练成本最高，方法 (1) 最灵活且实现简单。</p>
+</blockquote>
+<hr></hr>
+<h2 id="11-模型评估">11. 模型评估</h2>
+<h3 id="perplexity（困惑度）">Perplexity（困惑度）</h3>
+<p>衡量语言模型对文本的 "困惑" 程度，值越低表示模型对文本的预测能力越强：</p>
+<pre><code>PPL = exp(-1/N · Σ log P(x_i | x_{&lt;i}))
+</code></pre><h3 id="bleu--rouge">BLEU / ROUGE</h3>
+<ul>
+<li><strong>BLEU</strong>：衡量生成文本与参考文本的 n-gram 匹配度，常用于机器翻译</li>
+<li><strong>ROUGE</strong>：基于召回率的文本相似度指标，常用于摘要评估（ROUGE-1/ROUGE-2/ROUGE-L）</li>
+</ul>
+<h3 id="human-eval">Human Eval</h3>
+<p>OpenAI 提出的代码生成评估基准，包含 164 个 Python 编程题，衡量 pass@k 指标。</p>
+<h3 id="mmlu（massive-multitask-language-understanding）">MMLU（Massive Multitask Language Understanding）</h3>
+<p>包含 57 个学科的多选题，涵盖 STEM、人文、社会科学等，是衡量模型知识广度的标准基准。</p>
+<h3 id="其他重要基准">其他重要基准</h3>
+<ul>
+<li><strong>GSM8K</strong>：数学推理</li>
+<li><strong>HumanEval / MBPP</strong>：代码生成</li>
+<li><strong>HellaSwag</strong>：常识推理</li>
+<li><strong>TruthfulQA</strong>：真实性评估</li>
+<li><strong>MT-Bench</strong>：多轮对话能力（GPT-4 评分）</li>
+<li><strong>AlpacaEval</strong>：指令遵循能力</li>
+<li><strong>Arena Elo</strong>：人类偏好排名（LMSYS Chatbot Arena）</li>
+</ul>
+<blockquote>
+<p><strong>面试题：如何评估一个大语言模型是否适合你的业务场景？</strong></p>
+<ol>
+<li><strong>基准测试先行</strong>：在通用基准上了解模型的基本能力水平</li>
+<li><strong>构建领域评估集</strong>：收集业务相关的真实问题和标准答案</li>
+<li><strong>多维度评估</strong>：准确性、响应速度、成本、安全性、鲁棒性</li>
+<li><strong>A/B 测试</strong>：在真实用户流量上比较不同模型</li>
+<li><strong>人工评估</strong>：对关键场景进行人工打分</li>
+<li><strong>LLM-as-Judge</strong>：使用 GPT-4 等强模型作为自动评估器</li>
+<li><strong>关注边界情况</strong>：测试模型在对抗性输入、罕见场景下的表现</li>
+<li><strong>持续监控</strong>：部署后持续跟踪模型输出质量</li>
+</ol>
+</blockquote>
+<hr></hr>
+<h2 id="总结">总结</h2>
+<p>大语言模型的基础知识是 AI Agent 开发的根基。面试中，需要深入理解 Transformer 的每个组件、预训练到对齐的完整训练流程、推理优化和部署方案。同时要关注最新进展——模型架构不断演进，新的训练技术、量化方法和部署工具层出不穷。掌握这些基础，才能在 Agent 开发中做出正确的技术选型和优化决策。</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../golang/testing-practice.html" class="navigation navigation-prev " aria-label="Previous page: 测试与最佳实践">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="prompt-engineering.html" class="navigation navigation-next " aria-label="Next page: Prompt Engineering">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"大语言模型基础","level":"5.1","depth":1,"next":{"title":"Prompt Engineering","level":"5.2","depth":1,"path":"agent/prompt-engineering.md","ref":"agent/prompt-engineering.md","articles":[]},"previous":{"title":"测试与最佳实践","level":"4.6","depth":1,"path":"golang/testing-practice.md","ref":"golang/testing-practice.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"agent/llm-basics.md","mtime":"2026-03-31T06:35:11.835Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

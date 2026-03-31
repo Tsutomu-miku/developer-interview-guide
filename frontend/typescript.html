@@ -1,0 +1,1919 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>TypeScript · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="browser.html" />
+    
+    
+    <link rel="prev" href="javascript.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="html-css.html">
+            
+                <a href="html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="javascript.html">
+            
+                <a href="javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="typescript.html">
+            
+                <a href="typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="browser.html">
+            
+                <a href="browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="network.html">
+            
+                <a href="network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="react.html">
+            
+                <a href="react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="vue.html">
+            
+                <a href="vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="engineering.html">
+            
+                <a href="engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="performance.html">
+            
+                <a href="performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="security.html">
+            
+                <a href="security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../nodejs/basics.html">
+            
+                <a href="../nodejs/basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../nodejs/event-loop.html">
+            
+                <a href="../nodejs/event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../nodejs/stream.html">
+            
+                <a href="../nodejs/stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../nodejs/frameworks.html">
+            
+                <a href="../nodejs/frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../nodejs/database.html">
+            
+                <a href="../nodejs/database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../nodejs/practice.html">
+            
+                <a href="../nodejs/practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../golang/basics.html">
+            
+                <a href="../golang/basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../golang/concurrency.html">
+            
+                <a href="../golang/concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../golang/memory.html">
+            
+                <a href="../golang/memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../golang/web-framework.html">
+            
+                <a href="../golang/web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../golang/database-design.html">
+            
+                <a href="../golang/database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../golang/testing-practice.html">
+            
+                <a href="../golang/testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../agent/llm-basics.html">
+            
+                <a href="../agent/llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../agent/prompt-engineering.html">
+            
+                <a href="../agent/prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../agent/rag.html">
+            
+                <a href="../agent/rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../agent/agent-architecture.html">
+            
+                <a href="../agent/agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../agent/tool-calling.html">
+            
+                <a href="../agent/tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../agent/practice.html">
+            
+                <a href="../agent/practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >TypeScript</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="typescript-面试指南">TypeScript 面试指南</h1>
+<h2 id="一、基础类型">一、基础类型</h2>
+<h3 id="11-typescript-常见基础类型">1.1 TypeScript 常见基础类型</h3>
+<blockquote>
+<p>面试题：TypeScript 有哪些基础类型？请列举并简要说明。</p>
+</blockquote>
+<p>TypeScript 在 JavaScript 的基础上增加了静态类型系统，常见的基础类型包括：</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">// 基本类型</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">str</span>: <span class="hljs-built_in">string</span> = <span class="hljs-string">"hello"</span>;
+<span class="hljs-keyword">let</span> <span class="hljs-attr">num</span>: <span class="hljs-built_in">number</span> = <span class="hljs-number">42</span>;
+<span class="hljs-keyword">let</span> <span class="hljs-attr">bool</span>: <span class="hljs-built_in">boolean</span> = <span class="hljs-literal">true</span>;
+<span class="hljs-keyword">let</span> <span class="hljs-attr">n</span>: <span class="hljs-literal">null</span> = <span class="hljs-literal">null</span>;
+<span class="hljs-keyword">let</span> <span class="hljs-attr">u</span>: <span class="hljs-literal">undefined</span> = <span class="hljs-literal">undefined</span>;
+
+<span class="hljs-comment">// 数组</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">arr1</span>: <span class="hljs-built_in">number</span>[] = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
+<span class="hljs-keyword">let</span> <span class="hljs-attr">arr2</span>: <span class="hljs-title class_">Array</span>&lt;<span class="hljs-built_in">string</span>&gt; = [<span class="hljs-string">"a"</span>, <span class="hljs-string">"b"</span>, <span class="hljs-string">"c"</span>];
+
+<span class="hljs-comment">// 元组（Tuple）：固定长度和类型的数组</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">tuple</span>: [<span class="hljs-built_in">string</span>, <span class="hljs-built_in">number</span>] = [<span class="hljs-string">"hello"</span>, <span class="hljs-number">42</span>];
+
+<span class="hljs-comment">// 枚举（Enum）</span>
+<span class="hljs-keyword">enum</span> <span class="hljs-title class_">Direction</span> {
+  <span class="hljs-title class_">Up</span>,      <span class="hljs-comment">// 默认从 0 开始</span>
+  <span class="hljs-title class_">Down</span>,    <span class="hljs-comment">// 1</span>
+  <span class="hljs-title class_">Left</span>,    <span class="hljs-comment">// 2</span>
+  <span class="hljs-title class_">Right</span>    <span class="hljs-comment">// 3</span>
+}
+
+<span class="hljs-comment">// 字符串枚举</span>
+<span class="hljs-keyword">enum</span> <span class="hljs-title class_">Color</span> {
+  <span class="hljs-title class_">Red</span> = <span class="hljs-string">"RED"</span>,
+  <span class="hljs-title class_">Green</span> = <span class="hljs-string">"GREEN"</span>,
+  <span class="hljs-title class_">Blue</span> = <span class="hljs-string">"BLUE"</span>
+}
+
+<span class="hljs-comment">// void：通常用于函数无返回值</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">log</span>(<span class="hljs-params"><span class="hljs-attr">msg</span>: <span class="hljs-built_in">string</span></span>): <span class="hljs-built_in">void</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(msg);
+}
+
+<span class="hljs-comment">// bigint 和 symbol</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">big</span>: <span class="hljs-built_in">bigint</span> = <span class="hljs-number">100n</span>;
+<span class="hljs-keyword">let</span> <span class="hljs-attr">sym</span>: <span class="hljs-built_in">symbol</span> = <span class="hljs-title class_">Symbol</span>(<span class="hljs-string">"key"</span>);
+</code></pre>
+<h3 id="12-any、unknown-和-never-的区别">1.2 any、unknown 和 never 的区别</h3>
+<blockquote>
+<p>面试题：请详细说明 any、unknown 和 never 三者的区别及使用场景。</p>
+</blockquote>
+<p><strong>any</strong> 类型：</p>
+<ul>
+<li>放弃了类型检查，允许赋值为任意类型</li>
+<li>可以访问任意属性和调用任意方法，编译器不会报错</li>
+<li>应尽量避免使用，使用 any 会丧失 TypeScript 的类型安全优势</li>
+</ul>
+<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> <span class="hljs-attr">a</span>: <span class="hljs-built_in">any</span> = <span class="hljs-number">42</span>;
+a = <span class="hljs-string">"hello"</span>;       <span class="hljs-comment">// OK</span>
+a.<span class="hljs-property">foo</span>.<span class="hljs-property">bar</span>;          <span class="hljs-comment">// OK，编译器不报错（运行时可能出错）</span>
+<span class="hljs-title function_">a</span>();                <span class="hljs-comment">// OK</span>
+</code></pre>
+<p><strong>unknown</strong> 类型：</p>
+<ul>
+<li>类型安全的 any，可以赋任意值，但在使用前必须进行类型收窄</li>
+<li>不能直接访问属性或调用方法，需要先进行类型断言或类型守卫</li>
+<li>推荐在不确定类型时使用 unknown 代替 any</li>
+</ul>
+<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> <span class="hljs-attr">b</span>: <span class="hljs-built_in">unknown</span> = <span class="hljs-number">42</span>;
+b = <span class="hljs-string">"hello"</span>;        <span class="hljs-comment">// OK，可以赋任意值</span>
+
+<span class="hljs-comment">// b.toUpperCase(); // Error! 不能直接调用方法</span>
+<span class="hljs-comment">// 必须先收窄类型</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> b === <span class="hljs-string">"string"</span>) {
+  b.<span class="hljs-title function_">toUpperCase</span>();  <span class="hljs-comment">// OK</span>
+}
+
+<span class="hljs-comment">// 或使用类型断言</span>
+(b <span class="hljs-keyword">as</span> <span class="hljs-built_in">string</span>).<span class="hljs-title function_">toUpperCase</span>();
+</code></pre>
+<p><strong>never</strong> 类型：</p>
+<ul>
+<li>表示永远不会出现的值的类型，是所有类型的子类型</li>
+<li>常见于：抛出异常的函数、永远不会返回的函数（死循环）、穷尽检查（exhaustive check）</li>
+</ul>
+<pre><code class="lang-typescript"><span class="hljs-comment">// 抛出异常</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">throwError</span>(<span class="hljs-params"><span class="hljs-attr">msg</span>: <span class="hljs-built_in">string</span></span>): <span class="hljs-built_in">never</span> {
+  <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(msg);
+}
+
+<span class="hljs-comment">// 死循环</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">infiniteLoop</span>(<span class="hljs-params"></span>): <span class="hljs-built_in">never</span> {
+  <span class="hljs-keyword">while</span> (<span class="hljs-literal">true</span>) {}
+}
+
+<span class="hljs-comment">// 穷尽检查</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Shape</span> = <span class="hljs-string">"circle"</span> | <span class="hljs-string">"square"</span> | <span class="hljs-string">"triangle"</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">getArea</span>(<span class="hljs-params"><span class="hljs-attr">shape</span>: <span class="hljs-title class_">Shape</span></span>) {
+  <span class="hljs-keyword">switch</span> (shape) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">"circle"</span>:
+      <span class="hljs-keyword">return</span> <span class="hljs-title class_">Math</span>.<span class="hljs-property">PI</span> * <span class="hljs-number">10</span> * <span class="hljs-number">10</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">"square"</span>:
+      <span class="hljs-keyword">return</span> <span class="hljs-number">10</span> * <span class="hljs-number">10</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">"triangle"</span>:
+      <span class="hljs-keyword">return</span> (<span class="hljs-number">10</span> * <span class="hljs-number">10</span>) / <span class="hljs-number">2</span>;
+    <span class="hljs-attr">default</span>:
+      <span class="hljs-comment">// 如果所有 case 都已处理，shape 此时为 never</span>
+      <span class="hljs-keyword">const</span> <span class="hljs-attr">_exhaustiveCheck</span>: <span class="hljs-built_in">never</span> = shape;
+      <span class="hljs-keyword">return</span> _exhaustiveCheck;
+  }
+}
+</code></pre>
+<p><strong>三者对比总结：</strong></p>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>any</th>
+<th>unknown</th>
+<th>never</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>赋值给其他类型</td>
+<td>可以</td>
+<td>需要类型收窄</td>
+<td>可以（是所有类型子类型）</td>
+</tr>
+<tr>
+<td>被其他类型赋值</td>
+<td>可以</td>
+<td>可以</td>
+<td>不可以（除了 never 本身）</td>
+</tr>
+<tr>
+<td>访问属性/方法</td>
+<td>可以</td>
+<td>不可以（需收窄）</td>
+<td>不可以</td>
+</tr>
+<tr>
+<td>类型安全性</td>
+<td>无</td>
+<td>有</td>
+<td>有</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="二、interface-与-type-的区别">二、interface 与 type 的区别</h2>
+<blockquote>
+<p>面试题：interface 和 type 有什么区别？什么时候用 interface，什么时候用 type？</p>
+</blockquote>
+<h3 id="21-相同点">2.1 相同点</h3>
+<p>两者都可以用来描述对象的形状或函数签名：</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">// interface 定义对象</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">IUser</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-comment">// type 定义对象</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">TUser</span> = {
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span>;
+};
+
+<span class="hljs-comment">// interface 定义函数</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">IAdd</span> {
+  (<span class="hljs-attr">a</span>: <span class="hljs-built_in">number</span>, <span class="hljs-attr">b</span>: <span class="hljs-built_in">number</span>): <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-comment">// type 定义函数</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">TAdd</span> = <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">a</span>: <span class="hljs-built_in">number</span>, <span class="hljs-attr">b</span>: <span class="hljs-built_in">number</span></span>) =&gt;</span> <span class="hljs-built_in">number</span>;
+</code></pre>
+<h3 id="22-不同点">2.2 不同点</h3>
+<p><strong>1. 声明合并（Declaration Merging）：</strong></p>
+<p>interface 支持声明合并，同名 interface 会自动合并；type 不支持，重复定义会报错。</p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">IUser</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+}
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">IUser</span> {
+  <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span>;
+}
+<span class="hljs-comment">// 合并为 { name: string; age: number }</span>
+
+<span class="hljs-comment">// type TUser = { name: string; };</span>
+<span class="hljs-comment">// type TUser = { age: number; }; // Error! 重复定义</span>
+</code></pre>
+<p><strong>2. 扩展方式不同：</strong></p>
+<p>interface 使用 <code>extends</code> 继承，type 使用 <code>&amp;</code>（交叉类型）扩展。</p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">IAnimal</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+}
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">IDog</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">IAnimal</span> {
+  <span class="hljs-attr">breed</span>: <span class="hljs-built_in">string</span>;
+}
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">TAnimal</span> = { <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span> };
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">TDog</span> = <span class="hljs-title class_">TAnimal</span> &amp; { <span class="hljs-attr">breed</span>: <span class="hljs-built_in">string</span> };
+</code></pre>
+<p><strong>3. type 可以表示更多类型：</strong></p>
+<p>type 可以定义联合类型、元组、基本类型别名、映射类型等，interface 不能。</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">// 联合类型</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">StringOrNumber</span> = <span class="hljs-built_in">string</span> | <span class="hljs-built_in">number</span>;
+
+<span class="hljs-comment">// 元组</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Pair</span> = [<span class="hljs-built_in">string</span>, <span class="hljs-built_in">number</span>];
+
+<span class="hljs-comment">// 基本类型别名</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Name</span> = <span class="hljs-built_in">string</span>;
+
+<span class="hljs-comment">// 映射类型</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Readonly</span>&lt;T&gt; = { <span class="hljs-keyword">readonly</span> [P <span class="hljs-keyword">in</span> keyof T]: T[P] };
+
+<span class="hljs-comment">// 条件类型</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">IsString</span>&lt;T&gt; = T <span class="hljs-keyword">extends</span> <span class="hljs-built_in">string</span> ? <span class="hljs-literal">true</span> : <span class="hljs-literal">false</span>;
+</code></pre>
+<p><strong>4. interface 可以被类实现（implements）：</strong></p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">ICloneable</span> {
+  <span class="hljs-title function_">clone</span>(): <span class="hljs-variable language_">this</span>;
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">MyClass</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">ICloneable</span> {
+  <span class="hljs-title function_">clone</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">create</span>(<span class="hljs-variable language_">this</span>);
+  }
+}
+</code></pre>
+<p><strong>使用建议：</strong></p>
+<ul>
+<li>定义对象结构、类的契约时优先使用 interface</li>
+<li>需要联合类型、交叉类型、条件类型、映射类型等高级特性时使用 type</li>
+<li>需要声明合并（如第三方库类型扩展）时使用 interface</li>
+</ul>
+<hr></hr>
+<h2 id="三、泛型（generics）">三、泛型（Generics）</h2>
+<blockquote>
+<p>面试题：什么是泛型？请举例说明泛型的常见使用场景。</p>
+</blockquote>
+<p>泛型是 TypeScript 中实现代码复用和类型安全的核心机制，允许在定义函数、接口或类时使用类型参数，在使用时再指定具体类型。</p>
+<h3 id="31-泛型函数">3.1 泛型函数</h3>
+<pre><code class="lang-typescript"><span class="hljs-comment">// 不使用泛型 —— 缺乏类型信息</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">identity</span>(<span class="hljs-params"><span class="hljs-attr">arg</span>: <span class="hljs-built_in">any</span></span>): <span class="hljs-built_in">any</span> {
+  <span class="hljs-keyword">return</span> arg;
+}
+
+<span class="hljs-comment">// 使用泛型 —— 保留类型信息</span>
+<span class="hljs-keyword">function</span> identity&lt;T&gt;(<span class="hljs-attr">arg</span>: T): T {
+  <span class="hljs-keyword">return</span> arg;
+}
+
+<span class="hljs-keyword">const</span> result = identity&lt;<span class="hljs-built_in">string</span>&gt;(<span class="hljs-string">"hello"</span>); <span class="hljs-comment">// result: string</span>
+<span class="hljs-keyword">const</span> result2 = <span class="hljs-title function_">identity</span>(<span class="hljs-number">42</span>);            <span class="hljs-comment">// 类型推断：result2: number</span>
+</code></pre>
+<h3 id="32-泛型约束">3.2 泛型约束</h3>
+<pre><code class="lang-typescript"><span class="hljs-comment">// 使用 extends 约束泛型</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">HasLength</span> {
+  <span class="hljs-attr">length</span>: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-keyword">function</span> logLength&lt;T <span class="hljs-keyword">extends</span> <span class="hljs-title class_">HasLength</span>&gt;(<span class="hljs-attr">arg</span>: T): <span class="hljs-built_in">number</span> {
+  <span class="hljs-keyword">return</span> arg.<span class="hljs-property">length</span>;
+}
+
+<span class="hljs-title function_">logLength</span>(<span class="hljs-string">"hello"</span>);     <span class="hljs-comment">// OK</span>
+<span class="hljs-title function_">logLength</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);   <span class="hljs-comment">// OK</span>
+<span class="hljs-comment">// logLength(42);        // Error! number 没有 length 属性</span>
+</code></pre>
+<h3 id="33-泛型接口与泛型类">3.3 泛型接口与泛型类</h3>
+<pre><code class="lang-typescript"><span class="hljs-comment">// 泛型接口</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">IRepository</span>&lt;T&gt; {
+  <span class="hljs-title function_">findById</span>(<span class="hljs-attr">id</span>: <span class="hljs-built_in">string</span>): T;
+  <span class="hljs-title function_">save</span>(<span class="hljs-attr">entity</span>: T): <span class="hljs-built_in">void</span>;
+}
+
+<span class="hljs-comment">// 泛型类</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Stack</span>&lt;T&gt; {
+  <span class="hljs-keyword">private</span> <span class="hljs-attr">items</span>: T[] = [];
+
+  <span class="hljs-title function_">push</span>(<span class="hljs-attr">item</span>: T): <span class="hljs-built_in">void</span> {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">items</span>.<span class="hljs-title function_">push</span>(item);
+  }
+
+  <span class="hljs-title function_">pop</span>(): T | <span class="hljs-literal">undefined</span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">items</span>.<span class="hljs-title function_">pop</span>();
+  }
+}
+
+<span class="hljs-keyword">const</span> numStack = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Stack</span>&lt;<span class="hljs-built_in">number</span>&gt;();
+numStack.<span class="hljs-title function_">push</span>(<span class="hljs-number">1</span>);
+numStack.<span class="hljs-title function_">push</span>(<span class="hljs-number">2</span>);
+<span class="hljs-keyword">const</span> top = numStack.<span class="hljs-title function_">pop</span>(); <span class="hljs-comment">// top: number | undefined</span>
+</code></pre>
+<h3 id="34-泛型中的-keyof-与索引访问">3.4 泛型中的 keyof 与索引访问</h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">function</span> getProperty&lt;T, K <span class="hljs-keyword">extends</span> keyof T&gt;(<span class="hljs-attr">obj</span>: T, <span class="hljs-attr">key</span>: K): T[K] {
+  <span class="hljs-keyword">return</span> obj[key];
+}
+
+<span class="hljs-keyword">const</span> user = { <span class="hljs-attr">name</span>: <span class="hljs-string">"Alice"</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">25</span> };
+<span class="hljs-keyword">const</span> name = <span class="hljs-title function_">getProperty</span>(user, <span class="hljs-string">"name"</span>); <span class="hljs-comment">// string</span>
+<span class="hljs-keyword">const</span> age = <span class="hljs-title function_">getProperty</span>(user, <span class="hljs-string">"age"</span>);   <span class="hljs-comment">// number</span>
+<span class="hljs-comment">// getProperty(user, "email");           // Error! "email" 不在 keyof typeof user 中</span>
+</code></pre>
+<h3 id="35-泛型默认值">3.5 泛型默认值</h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">IPagination</span>&lt;T = <span class="hljs-built_in">any</span>&gt; {
+  <span class="hljs-attr">data</span>: T[];
+  <span class="hljs-attr">page</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">pageSize</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">total</span>: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-comment">// 不传类型参数时使用默认值 any</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">page1</span>: <span class="hljs-title class_">IPagination</span> = { <span class="hljs-attr">data</span>: [<span class="hljs-number">1</span>, <span class="hljs-string">"2"</span>], <span class="hljs-attr">page</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">pageSize</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">total</span>: <span class="hljs-number">100</span> };
+<span class="hljs-comment">// 传入具体类型</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">page2</span>: <span class="hljs-title class_">IPagination</span>&lt;<span class="hljs-built_in">string</span>&gt; = { <span class="hljs-attr">data</span>: [<span class="hljs-string">"a"</span>, <span class="hljs-string">"b"</span>], <span class="hljs-attr">page</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">pageSize</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">total</span>: <span class="hljs-number">50</span> };
+</code></pre>
+<hr></hr>
+<h2 id="四、内置工具类型及实现原理">四、内置工具类型及实现原理</h2>
+<blockquote>
+<p>面试题：请列举 TypeScript 常用的内置工具类型，并手写其实现原理。</p>
+</blockquote>
+<h3 id="41-partial-—-将所有属性变为可选">4.1 Partial\<t\> — 将所有属性变为可选</t\></h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">type</span> <span class="hljs-title class_">MyPartial</span>&lt;T&gt; = {
+  [P <span class="hljs-keyword">in</span> keyof T]?: T[P];
+};
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">IUser</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span>;
+}
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">PartialUser</span> = <span class="hljs-title class_">MyPartial</span>&lt;<span class="hljs-title class_">IUser</span>&gt;;
+<span class="hljs-comment">// { name?: string; age?: number }</span>
+</code></pre>
+<h3 id="42-required-—-将所有属性变为必选">4.2 Required\<t\> — 将所有属性变为必选</t\></h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">type</span> <span class="hljs-title class_">MyRequired</span>&lt;T&gt; = {
+  [P <span class="hljs-keyword">in</span> keyof T]-?: T[P];
+};
+
+<span class="hljs-comment">// -? 表示移除可选修饰符</span>
+</code></pre>
+<h3 id="43-readonly-—-将所有属性变为只读">4.3 Readonly\<t\> — 将所有属性变为只读</t\></h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">type</span> <span class="hljs-title class_">MyReadonly</span>&lt;T&gt; = {
+  <span class="hljs-keyword">readonly</span> [P <span class="hljs-keyword">in</span> keyof T]: T[P];
+};
+</code></pre>
+<h3 id="44-record-—-构造键为-k、值为-t-的对象类型">4.4 Record\<k, t\=""> — 构造键为 K、值为 T 的对象类型</k,></h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">type</span> <span class="hljs-title class_">MyRecord</span>&lt;K <span class="hljs-keyword">extends</span> keyof <span class="hljs-built_in">any</span>, T&gt; = {
+  [P <span class="hljs-keyword">in</span> K]: T;
+};
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">PageInfo</span> = <span class="hljs-title class_">Record</span>&lt;<span class="hljs-string">"home"</span> | <span class="hljs-string">"about"</span> | <span class="hljs-string">"contact"</span>, { <span class="hljs-attr">title</span>: <span class="hljs-built_in">string</span> }&gt;;
+</code></pre>
+<h3 id="45-pick-—-从-t-中选取部分属性">4.5 Pick\<t, k\=""> — 从 T 中选取部分属性</t,></h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">type</span> <span class="hljs-title class_">MyPick</span>&lt;T, K <span class="hljs-keyword">extends</span> keyof T&gt; = {
+  [P <span class="hljs-keyword">in</span> K]: T[P];
+};
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">NameOnly</span> = <span class="hljs-title class_">Pick</span>&lt;<span class="hljs-title class_">IUser</span>, <span class="hljs-string">"name"</span>&gt;;
+<span class="hljs-comment">// { name: string }</span>
+</code></pre>
+<h3 id="46-omit-—-从-t-中排除部分属性">4.6 Omit\<t, k\=""> — 从 T 中排除部分属性</t,></h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">type</span> <span class="hljs-title class_">MyOmit</span>&lt;T, K <span class="hljs-keyword">extends</span> keyof <span class="hljs-built_in">any</span>&gt; = <span class="hljs-title class_">Pick</span>&lt;T, <span class="hljs-title class_">Exclude</span>&lt;keyof T, K&gt;&gt;;
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">WithoutAge</span> = <span class="hljs-title class_">Omit</span>&lt;<span class="hljs-title class_">IUser</span>, <span class="hljs-string">"age"</span>&gt;;
+<span class="hljs-comment">// { name: string }</span>
+</code></pre>
+<h3 id="47-exclude-—-从联合类型-t-中排除可以赋值给-u-的类型">4.7 Exclude\<t, u\=""> — 从联合类型 T 中排除可以赋值给 U 的类型</t,></h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">type</span> <span class="hljs-title class_">MyExclude</span>&lt;T, U&gt; = T <span class="hljs-keyword">extends</span> U ? <span class="hljs-built_in">never</span> : T;
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Result</span> = <span class="hljs-title class_">Exclude</span>&lt;<span class="hljs-string">"a"</span> | <span class="hljs-string">"b"</span> | <span class="hljs-string">"c"</span>, <span class="hljs-string">"a"</span> | <span class="hljs-string">"b"</span>&gt;;
+<span class="hljs-comment">// "c"</span>
+</code></pre>
+<h3 id="48-extract-—-从联合类型-t-中提取可以赋值给-u-的类型">4.8 Extract\<t, u\=""> — 从联合类型 T 中提取可以赋值给 U 的类型</t,></h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">type</span> <span class="hljs-title class_">MyExtract</span>&lt;T, U&gt; = T <span class="hljs-keyword">extends</span> U ? T : <span class="hljs-built_in">never</span>;
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Result</span> = <span class="hljs-title class_">Extract</span>&lt;<span class="hljs-string">"a"</span> | <span class="hljs-string">"b"</span> | <span class="hljs-string">"c"</span>, <span class="hljs-string">"a"</span> | <span class="hljs-string">"b"</span>&gt;;
+<span class="hljs-comment">// "a" | "b"</span>
+</code></pre>
+<h3 id="49-returntype-—-获取函数返回值类型">4.9 ReturnType\<t\> — 获取函数返回值类型</t\></h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">type</span> <span class="hljs-title class_">MyReturnType</span>&lt;T <span class="hljs-title function_">extends</span> (...<span class="hljs-attr">args</span>: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">any</span>&gt; = T <span class="hljs-title function_">extends</span> (...<span class="hljs-attr">args</span>: <span class="hljs-built_in">any</span>) =&gt; infer R
+  ? R
+  : <span class="hljs-built_in">any</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">fn</span>(<span class="hljs-params"></span>) { <span class="hljs-keyword">return</span> { <span class="hljs-attr">x</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">y</span>: <span class="hljs-string">"hello"</span> }; }
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">FnReturn</span> = <span class="hljs-title class_">MyReturnType</span>&lt;<span class="hljs-keyword">typeof</span> fn&gt;;
+<span class="hljs-comment">// { x: number; y: string }</span>
+</code></pre>
+<h3 id="410-parameters-—-获取函数参数类型（元组）">4.10 Parameters\<t\> — 获取函数参数类型（元组）</t\></h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">type</span> <span class="hljs-title class_">MyParameters</span>&lt;T <span class="hljs-title function_">extends</span> (...<span class="hljs-attr">args</span>: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">any</span>&gt; = T <span class="hljs-title function_">extends</span> (...<span class="hljs-attr">args</span>: infer P) =&gt; <span class="hljs-built_in">any</span>
+  ? P
+  : <span class="hljs-built_in">never</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">greet</span>(<span class="hljs-params"><span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span></span>): <span class="hljs-built_in">void</span> {}
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">GreetParams</span> = <span class="hljs-title class_">MyParameters</span>&lt;<span class="hljs-keyword">typeof</span> greet&gt;;
+<span class="hljs-comment">// [name: string, age: number]</span>
+</code></pre>
+<h3 id="411-instancetype-—-获取构造函数的实例类型">4.11 InstanceType\<t\> — 获取构造函数的实例类型</t\></h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">type</span> <span class="hljs-title class_">MyInstanceType</span>&lt;T <span class="hljs-keyword">extends</span> <span class="hljs-keyword">abstract</span> <span class="hljs-title function_">new</span> (...<span class="hljs-attr">args</span>: <span class="hljs-built_in">any</span>) =&gt; <span class="hljs-built_in">any</span>&gt; = T <span class="hljs-keyword">extends</span> <span class="hljs-keyword">abstract</span> <span class="hljs-title function_">new</span> (
+  ...<span class="hljs-attr">args</span>: <span class="hljs-built_in">any</span>
+) =&gt; infer R
+  ? R
+  : <span class="hljs-built_in">any</span>;
+</code></pre>
+<h3 id="412-nonnullable-—-从-t-中排除-null-和-undefined">4.12 NonNullable\<t\> — 从 T 中排除 null 和 undefined</t\></h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">type</span> <span class="hljs-title class_">MyNonNullable</span>&lt;T&gt; = T <span class="hljs-keyword">extends</span> <span class="hljs-literal">null</span> | <span class="hljs-literal">undefined</span> ? <span class="hljs-built_in">never</span> : T;
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Result</span> = <span class="hljs-title class_">NonNullable</span>&lt;<span class="hljs-built_in">string</span> | <span class="hljs-literal">null</span> | <span class="hljs-literal">undefined</span>&gt;;
+<span class="hljs-comment">// string</span>
+</code></pre>
+<hr></hr>
+<h2 id="五、条件类型与-infer">五、条件类型与 infer</h2>
+<blockquote>
+<p>面试题：什么是条件类型？请解释分布式条件类型和 infer 关键字的作用。</p>
+</blockquote>
+<h3 id="51-条件类型基本语法">5.1 条件类型基本语法</h3>
+<p>条件类型的形式为 <code>T extends U ? X : Y</code>，类似于三元表达式，根据 T 是否可以赋值给 U 来决定类型。</p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">type</span> <span class="hljs-title class_">IsString</span>&lt;T&gt; = T <span class="hljs-keyword">extends</span> <span class="hljs-built_in">string</span> ? <span class="hljs-string">"yes"</span> : <span class="hljs-string">"no"</span>;
+
+<span class="hljs-keyword">type</span> A = <span class="hljs-title class_">IsString</span>&lt;<span class="hljs-built_in">string</span>&gt;;  <span class="hljs-comment">// "yes"</span>
+<span class="hljs-keyword">type</span> B = <span class="hljs-title class_">IsString</span>&lt;<span class="hljs-built_in">number</span>&gt;;  <span class="hljs-comment">// "no"</span>
+</code></pre>
+<h3 id="52-分布式条件类型（distributive-conditional-types）">5.2 分布式条件类型（Distributive Conditional Types）</h3>
+<p>当条件类型的 T 是裸类型参数（即没有被包裹在其他类型中），且传入联合类型时，条件类型会对联合类型的每个成员分别进行计算，最终合并结果。</p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">type</span> <span class="hljs-title class_">ToArray</span>&lt;T&gt; = T <span class="hljs-keyword">extends</span> <span class="hljs-built_in">any</span> ? T[] : <span class="hljs-built_in">never</span>;
+
+<span class="hljs-comment">// 分布式：联合类型的每个成员分别应用</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Result</span> = <span class="hljs-title class_">ToArray</span>&lt;<span class="hljs-built_in">string</span> | <span class="hljs-built_in">number</span>&gt;;
+<span class="hljs-comment">// string[] | number[]    而不是 (string | number)[]</span>
+
+<span class="hljs-comment">// 如果想避免分布式行为，用元组包裹</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">ToArrayNonDist</span>&lt;T&gt; = [T] <span class="hljs-keyword">extends</span> [<span class="hljs-built_in">any</span>] ? T[] : <span class="hljs-built_in">never</span>;
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Result2</span> = <span class="hljs-title class_">ToArrayNonDist</span>&lt;<span class="hljs-built_in">string</span> | <span class="hljs-built_in">number</span>&gt;;
+<span class="hljs-comment">// (string | number)[]</span>
+</code></pre>
+<p><strong>分布式条件类型在 Exclude 和 Extract 中的应用：</strong></p>
+<pre><code class="lang-typescript"><span class="hljs-comment">// Exclude 利用分布式特性逐个过滤</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Exclude</span>&lt;T, U&gt; = T <span class="hljs-keyword">extends</span> U ? <span class="hljs-built_in">never</span> : T;
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Result</span> = <span class="hljs-title class_">Exclude</span>&lt;<span class="hljs-string">"a"</span> | <span class="hljs-string">"b"</span> | <span class="hljs-string">"c"</span>, <span class="hljs-string">"a"</span>&gt;;
+<span class="hljs-comment">// 展开过程：</span>
+<span class="hljs-comment">// ("a" extends "a" ? never : "a") | ("b" extends "a" ? never : "b") | ("c" extends "a" ? never : "c")</span>
+<span class="hljs-comment">// = never | "b" | "c"</span>
+<span class="hljs-comment">// = "b" | "c"</span>
+</code></pre>
+<h3 id="53-infer-关键字">5.3 infer 关键字</h3>
+<p><code>infer</code> 用于在条件类型中声明一个待推断的类型变量，TypeScript 会根据实际传入的类型自动推断该变量的值。</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">// 推断函数返回值类型</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">GetReturnType</span>&lt;T&gt; = T <span class="hljs-title function_">extends</span> (...<span class="hljs-attr">args</span>: <span class="hljs-built_in">any</span>[]) =&gt; infer R ? R : <span class="hljs-built_in">never</span>;
+
+<span class="hljs-keyword">type</span> <span class="hljs-variable constant_">R1</span> = <span class="hljs-title class_">GetReturnType</span>&lt;<span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">string</span>&gt;;      <span class="hljs-comment">// string</span>
+<span class="hljs-keyword">type</span> <span class="hljs-variable constant_">R2</span> = <span class="hljs-title class_">GetReturnType</span>&lt;<span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">x</span>: <span class="hljs-built_in">number</span></span>) =&gt;</span> <span class="hljs-built_in">boolean</span>&gt;; <span class="hljs-comment">// boolean</span>
+
+<span class="hljs-comment">// 推断数组元素类型</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">ElementType</span>&lt;T&gt; = T <span class="hljs-title function_">extends</span> (infer E)[] ? E : <span class="hljs-built_in">never</span>;
+
+<span class="hljs-keyword">type</span> <span class="hljs-variable constant_">E1</span> = <span class="hljs-title class_">ElementType</span>&lt;<span class="hljs-built_in">number</span>[]&gt;;    <span class="hljs-comment">// number</span>
+<span class="hljs-keyword">type</span> <span class="hljs-variable constant_">E2</span> = <span class="hljs-title class_">ElementType</span>&lt;<span class="hljs-built_in">string</span>[]&gt;;    <span class="hljs-comment">// string</span>
+
+<span class="hljs-comment">// 推断 Promise 解包类型</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">UnpackPromise</span>&lt;T&gt; = T <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Promise</span>&lt;infer U&gt; ? U : T;
+
+<span class="hljs-keyword">type</span> <span class="hljs-variable constant_">P1</span> = <span class="hljs-title class_">UnpackPromise</span>&lt;<span class="hljs-title class_">Promise</span>&lt;<span class="hljs-built_in">string</span>&gt;&gt;;  <span class="hljs-comment">// string</span>
+<span class="hljs-keyword">type</span> <span class="hljs-variable constant_">P2</span> = <span class="hljs-title class_">UnpackPromise</span>&lt;<span class="hljs-built_in">number</span>&gt;;           <span class="hljs-comment">// number</span>
+
+<span class="hljs-comment">// 递归解包嵌套 Promise</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">DeepUnpackPromise</span>&lt;T&gt; = T <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Promise</span>&lt;infer U&gt; ? <span class="hljs-title class_">DeepUnpackPromise</span>&lt;U&gt; : T;
+
+<span class="hljs-keyword">type</span> <span class="hljs-variable constant_">P3</span> = <span class="hljs-title class_">DeepUnpackPromise</span>&lt;<span class="hljs-title class_">Promise</span>&lt;<span class="hljs-title class_">Promise</span>&lt;<span class="hljs-built_in">string</span>&gt;&gt;&gt;;  <span class="hljs-comment">// string</span>
+
+<span class="hljs-comment">// 推断元组第一个元素</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">First</span>&lt;T <span class="hljs-keyword">extends</span> <span class="hljs-built_in">any</span>[]&gt; = T <span class="hljs-keyword">extends</span> [infer F, ...<span class="hljs-built_in">any</span>[]] ? F : <span class="hljs-built_in">never</span>;
+
+<span class="hljs-keyword">type</span> <span class="hljs-variable constant_">F1</span> = <span class="hljs-title class_">First</span>&lt;[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]&gt;;   <span class="hljs-comment">// 1</span>
+<span class="hljs-keyword">type</span> <span class="hljs-variable constant_">F2</span> = <span class="hljs-title class_">First</span>&lt;[<span class="hljs-built_in">string</span>]&gt;;    <span class="hljs-comment">// string</span>
+
+<span class="hljs-comment">// 推断元组最后一个元素</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Last</span>&lt;T <span class="hljs-keyword">extends</span> <span class="hljs-built_in">any</span>[]&gt; = T <span class="hljs-keyword">extends</span> [...<span class="hljs-built_in">any</span>[], infer L] ? L : <span class="hljs-built_in">never</span>;
+
+<span class="hljs-keyword">type</span> <span class="hljs-variable constant_">L1</span> = <span class="hljs-title class_">Last</span>&lt;[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]&gt;;    <span class="hljs-comment">// 3</span>
+</code></pre>
+<hr></hr>
+<h2 id="六、映射类型（mapped-types）">六、映射类型（Mapped Types）</h2>
+<blockquote>
+<p>面试题：什么是映射类型？如何使用映射类型实现类型转换？</p>
+</blockquote>
+<p>映射类型通过遍历已有类型的键来创建新类型，语法为 <code>[P in K]: T</code>。</p>
+<h3 id="61-基本映射类型">6.1 基本映射类型</h3>
+<pre><code class="lang-typescript"><span class="hljs-comment">// 将所有属性变为可选</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Optional</span>&lt;T&gt; = {
+  [P <span class="hljs-keyword">in</span> keyof T]?: T[P];
+};
+
+<span class="hljs-comment">// 将所有属性变为只读</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Immutable</span>&lt;T&gt; = {
+  <span class="hljs-keyword">readonly</span> [P <span class="hljs-keyword">in</span> keyof T]: T[P];
+};
+
+<span class="hljs-comment">// 将所有属性类型变为 boolean</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Flags</span>&lt;T&gt; = {
+  [P <span class="hljs-keyword">in</span> keyof T]: <span class="hljs-built_in">boolean</span>;
+};
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">IUser</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">email</span>: <span class="hljs-built_in">string</span>;
+}
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">UserFlags</span> = <span class="hljs-title class_">Flags</span>&lt;<span class="hljs-title class_">IUser</span>&gt;;
+<span class="hljs-comment">// { name: boolean; age: boolean; email: boolean }</span>
+</code></pre>
+<h3 id="62-映射修饰符（--修饰符）">6.2 映射修饰符（+/- 修饰符）</h3>
+<p>可以通过 <code>+</code> 或 <code>-</code> 前缀来添加或移除 <code>readonly</code> 和 <code>?</code> 修饰符。</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">// 移除只读</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Mutable</span>&lt;T&gt; = {
+  -<span class="hljs-keyword">readonly</span> [P <span class="hljs-keyword">in</span> keyof T]: T[P];
+};
+
+<span class="hljs-comment">// 移除可选（即变为必选）</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Concrete</span>&lt;T&gt; = {
+  [P <span class="hljs-keyword">in</span> keyof T]-?: T[P];
+};
+</code></pre>
+<h3 id="63-key-remapping（键重映射，typescript-41）">6.3 Key Remapping（键重映射，TypeScript 4.1+）</h3>
+<p>使用 <code>as</code> 子句在映射类型中重命名键。</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">// 给所有属性名加前缀</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Getters</span>&lt;T&gt; = {
+  [P <span class="hljs-keyword">in</span> keyof T <span class="hljs-keyword">as</span> <span class="hljs-string">`get<span class="hljs-subst">${Capitalize&lt;<span class="hljs-built_in">string</span> &amp; P&gt;}</span>`</span>]: <span class="hljs-function">() =&gt;</span> T[P];
+};
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">IPerson</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">PersonGetters</span> = <span class="hljs-title class_">Getters</span>&lt;<span class="hljs-title class_">IPerson</span>&gt;;
+<span class="hljs-comment">// {</span>
+<span class="hljs-comment">//   getName: () =&gt; string;</span>
+<span class="hljs-comment">//   getAge: () =&gt; number;</span>
+<span class="hljs-comment">// }</span>
+
+<span class="hljs-comment">// 过滤属性：通过 as never 移除键</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">RemoveMethods</span>&lt;T&gt; = {
+  [P <span class="hljs-keyword">in</span> keyof T <span class="hljs-keyword">as</span> T[P] <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Function</span> ? <span class="hljs-built_in">never</span> : P]: T[P];
+};
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">IMixed</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-title function_">greet</span>(): <span class="hljs-built_in">void</span>;
+}
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">DataOnly</span> = <span class="hljs-title class_">RemoveMethods</span>&lt;<span class="hljs-title class_">IMixed</span>&gt;;
+<span class="hljs-comment">// { name: string; age: number }</span>
+</code></pre>
+<hr></hr>
+<h2 id="七、模板字面量类型（template-literal-types）">七、模板字面量类型（Template Literal Types）</h2>
+<blockquote>
+<p>面试题：什么是模板字面量类型？有哪些内置的字符串操作类型？</p>
+</blockquote>
+<p>TypeScript 4.1 引入了模板字面量类型，可以在类型系统中使用模板字符串语法，基于已有的字符串字面量类型生成新的字符串字面量类型。</p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">type</span> <span class="hljs-title class_">World</span> = <span class="hljs-string">"world"</span>;
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Greeting</span> = <span class="hljs-string">`hello <span class="hljs-subst">${World}</span>`</span>; <span class="hljs-comment">// "hello world"</span>
+
+<span class="hljs-comment">// 联合类型会自动分布</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Color</span> = <span class="hljs-string">"red"</span> | <span class="hljs-string">"blue"</span>;
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Size</span> = <span class="hljs-string">"small"</span> | <span class="hljs-string">"large"</span>;
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Style</span> = <span class="hljs-string">`<span class="hljs-subst">${Size}</span>-<span class="hljs-subst">${Color}</span>`</span>;
+<span class="hljs-comment">// "small-red" | "small-blue" | "large-red" | "large-blue"</span>
+</code></pre>
+<h3 id="71-内置字符串操作类型">7.1 内置字符串操作类型</h3>
+<pre><code class="lang-typescript"><span class="hljs-comment">// Uppercase —— 转大写</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Upper</span> = <span class="hljs-title class_">Uppercase</span>&lt;<span class="hljs-string">"hello"</span>&gt;; <span class="hljs-comment">// "HELLO"</span>
+
+<span class="hljs-comment">// Lowercase —— 转小写</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Lower</span> = <span class="hljs-title class_">Lowercase</span>&lt;<span class="hljs-string">"HELLO"</span>&gt;; <span class="hljs-comment">// "hello"</span>
+
+<span class="hljs-comment">// Capitalize —— 首字母大写</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Cap</span> = <span class="hljs-title class_">Capitalize</span>&lt;<span class="hljs-string">"hello"</span>&gt;;  <span class="hljs-comment">// "Hello"</span>
+
+<span class="hljs-comment">// Uncapitalize —— 首字母小写</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Uncap</span> = <span class="hljs-title class_">Uncapitalize</span>&lt;<span class="hljs-string">"Hello"</span>&gt;; <span class="hljs-comment">// "hello"</span>
+</code></pre>
+<h3 id="72-实际应用：事件系统类型">7.2 实际应用：事件系统类型</h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">type</span> <span class="hljs-title class_">EventName</span>&lt;T <span class="hljs-keyword">extends</span> <span class="hljs-built_in">string</span>&gt; = <span class="hljs-string">`on<span class="hljs-subst">${Capitalize&lt;T&gt;}</span>`</span>;
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">ClickEvent</span> = <span class="hljs-title class_">EventName</span>&lt;<span class="hljs-string">"click"</span>&gt;;     <span class="hljs-comment">// "onClick"</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">ChangeEvent</span> = <span class="hljs-title class_">EventName</span>&lt;<span class="hljs-string">"change"</span>&gt;;   <span class="hljs-comment">// "onChange"</span>
+
+<span class="hljs-comment">// 完整的事件监听器类型</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">EventHandlers</span>&lt;<span class="hljs-title class_">Events</span> <span class="hljs-keyword">extends</span> <span class="hljs-built_in">string</span>&gt; = {
+  [E <span class="hljs-keyword">in</span> <span class="hljs-title class_">Events</span> <span class="hljs-keyword">as</span> <span class="hljs-string">`on<span class="hljs-subst">${Capitalize&lt;E&gt;}</span>`</span>]: <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">event</span>: <span class="hljs-title class_">Event</span></span>) =&gt;</span> <span class="hljs-built_in">void</span>;
+};
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">MouseEvents</span> = <span class="hljs-title class_">EventHandlers</span>&lt;<span class="hljs-string">"click"</span> | <span class="hljs-string">"mouseenter"</span> | <span class="hljs-string">"mouseleave"</span>&gt;;
+<span class="hljs-comment">// {</span>
+<span class="hljs-comment">//   onClick: (event: Event) =&gt; void;</span>
+<span class="hljs-comment">//   onMouseenter: (event: Event) =&gt; void;</span>
+<span class="hljs-comment">//   onMouseleave: (event: Event) =&gt; void;</span>
+<span class="hljs-comment">// }</span>
+</code></pre>
+<h3 id="73-模式匹配提取">7.3 模式匹配提取</h3>
+<pre><code class="lang-typescript"><span class="hljs-comment">// 提取路由参数</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">ExtractParams</span>&lt;T <span class="hljs-keyword">extends</span> <span class="hljs-built_in">string</span>&gt; = T <span class="hljs-keyword">extends</span> <span class="hljs-string">`<span class="hljs-subst">${<span class="hljs-built_in">string</span>}</span>:<span class="hljs-subst">${infer Param}</span>/<span class="hljs-subst">${infer Rest}</span>`</span>
+  ? <span class="hljs-title class_">Param</span> | <span class="hljs-title class_">ExtractParams</span>&lt;<span class="hljs-title class_">Rest</span>&gt;
+  : T <span class="hljs-keyword">extends</span> <span class="hljs-string">`<span class="hljs-subst">${<span class="hljs-built_in">string</span>}</span>:<span class="hljs-subst">${infer Param}</span>`</span>
+  ? <span class="hljs-title class_">Param</span>
+  : <span class="hljs-built_in">never</span>;
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Params</span> = <span class="hljs-title class_">ExtractParams</span>&lt;<span class="hljs-string">"/user/:id/post/:postId"</span>&gt;;
+<span class="hljs-comment">// "id" | "postId"</span>
+</code></pre>
+<hr></hr>
+<h2 id="八、装饰器（decorators）">八、装饰器（Decorators）</h2>
+<blockquote>
+<p>面试题：TypeScript 中有哪几种装饰器？装饰器的执行顺序是什么？</p>
+</blockquote>
+<p>装饰器是一种特殊声明，可以附加到类声明、方法、访问符、属性或参数上。使用 <code>@expression</code> 语法，<code>expression</code> 必须求值为一个函数。</p>
+<h3 id="81-四种装饰器">8.1 四种装饰器</h3>
+<p><strong>1. 类装饰器：</strong></p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">sealed</span>(<span class="hljs-params"><span class="hljs-attr">constructor</span>: <span class="hljs-title class_">Function</span></span>) {
+  <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">seal</span>(constructor);
+  <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">seal</span>(constructor.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>);
+}
+
+<span class="hljs-meta">@sealed</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Greeter</span> {
+  <span class="hljs-attr">greeting</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"><span class="hljs-attr">message</span>: <span class="hljs-built_in">string</span></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">greeting</span> = message;
+  }
+}
+</code></pre>
+<p><strong>2. 方法装饰器：</strong></p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">log</span>(<span class="hljs-params"><span class="hljs-attr">target</span>: <span class="hljs-built_in">any</span>, <span class="hljs-attr">propertyKey</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">descriptor</span>: <span class="hljs-title class_">PropertyDescriptor</span></span>) {
+  <span class="hljs-keyword">const</span> originalMethod = descriptor.<span class="hljs-property">value</span>;
+  descriptor.<span class="hljs-property">value</span> = <span class="hljs-keyword">function</span> (<span class="hljs-params">...<span class="hljs-attr">args</span>: <span class="hljs-built_in">any</span>[]</span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`调用 <span class="hljs-subst">${propertyKey}</span>，参数：<span class="hljs-subst">${<span class="hljs-built_in">JSON</span>.stringify(args)}</span>`</span>);
+    <span class="hljs-keyword">const</span> result = originalMethod.<span class="hljs-title function_">apply</span>(<span class="hljs-variable language_">this</span>, args);
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`返回值：<span class="hljs-subst">${result}</span>`</span>);
+    <span class="hljs-keyword">return</span> result;
+  };
+  <span class="hljs-keyword">return</span> descriptor;
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Calculator</span> {
+  <span class="hljs-meta">@log</span>
+  <span class="hljs-title function_">add</span>(<span class="hljs-attr">a</span>: <span class="hljs-built_in">number</span>, <span class="hljs-attr">b</span>: <span class="hljs-built_in">number</span>): <span class="hljs-built_in">number</span> {
+    <span class="hljs-keyword">return</span> a + b;
+  }
+}
+</code></pre>
+<p><strong>3. 属性装饰器：</strong></p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">defaultValue</span>(<span class="hljs-params"><span class="hljs-attr">value</span>: <span class="hljs-built_in">any</span></span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span> (<span class="hljs-params"><span class="hljs-attr">target</span>: <span class="hljs-built_in">any</span>, <span class="hljs-attr">propertyKey</span>: <span class="hljs-built_in">string</span></span>) {
+    target[propertyKey] = value;
+  };
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Settings</span> {
+  <span class="hljs-meta">@defaultValue</span>(<span class="hljs-string">"zh-CN"</span>)
+  language!: <span class="hljs-built_in">string</span>;
+}
+</code></pre>
+<p><strong>4. 参数装饰器：</strong></p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">required</span>(<span class="hljs-params"><span class="hljs-attr">target</span>: <span class="hljs-built_in">any</span>, <span class="hljs-attr">propertyKey</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">parameterIndex</span>: <span class="hljs-built_in">number</span></span>) {
+  <span class="hljs-keyword">const</span> <span class="hljs-attr">requiredParams</span>: <span class="hljs-built_in">number</span>[] = <span class="hljs-title class_">Reflect</span>.<span class="hljs-title function_">getOwnMetadata</span>(<span class="hljs-string">"required"</span>, target, propertyKey) || [];
+  requiredParams.<span class="hljs-title function_">push</span>(parameterIndex);
+  <span class="hljs-title class_">Reflect</span>.<span class="hljs-title function_">defineMetadata</span>(<span class="hljs-string">"required"</span>, requiredParams, target, propertyKey);
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">UserService</span> {
+  <span class="hljs-title function_">getUser</span>(<span class="hljs-params"><span class="hljs-meta">@required</span> <span class="hljs-attr">id</span>: <span class="hljs-built_in">string</span></span>) {
+    <span class="hljs-comment">// ...</span>
+  }
+}
+</code></pre>
+<h3 id="82-装饰器工厂">8.2 装饰器工厂</h3>
+<p>装饰器工厂是一个返回装饰器函数的函数，允许传入参数自定义装饰器行为。</p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">enumerable</span>(<span class="hljs-params"><span class="hljs-attr">value</span>: <span class="hljs-built_in">boolean</span></span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span> (<span class="hljs-params"><span class="hljs-attr">target</span>: <span class="hljs-built_in">any</span>, <span class="hljs-attr">propertyKey</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">descriptor</span>: <span class="hljs-title class_">PropertyDescriptor</span></span>) {
+    descriptor.<span class="hljs-property">enumerable</span> = value;
+  };
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> {
+  <span class="hljs-meta">@enumerable</span>(<span class="hljs-literal">false</span>)
+  <span class="hljs-title function_">greet</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello!"</span>;
+  }
+}
+</code></pre>
+<h3 id="83-装饰器执行顺序">8.3 装饰器执行顺序</h3>
+<p>多个装饰器应用到同一声明时，执行顺序如下：</p>
+<ol>
+<li><strong>参数装饰器</strong> → <strong>方法/访问器/属性装饰器</strong> → <strong>类装饰器</strong></li>
+<li>同一类型的多个装饰器：<strong>从下往上</strong>（从内到外）执行</li>
+<li>具体规则：<ul>
+<li>实例成员：参数装饰器 → 方法装饰器（每个成员依次执行）</li>
+<li>静态成员：参数装饰器 → 方法装饰器</li>
+<li>构造函数：参数装饰器</li>
+<li>类装饰器：最后执行</li>
+</ul>
+</li>
+</ol>
+<pre><code class="lang-typescript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">classDecorator</span>(<span class="hljs-params"><span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`类装饰器 <span class="hljs-subst">${name}</span> 求值`</span>);
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span> (<span class="hljs-params"><span class="hljs-attr">constructor</span>: <span class="hljs-title class_">Function</span></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`类装饰器 <span class="hljs-subst">${name}</span> 执行`</span>);
+  };
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">methodDecorator</span>(<span class="hljs-params"><span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`方法装饰器 <span class="hljs-subst">${name}</span> 求值`</span>);
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span> (<span class="hljs-params"><span class="hljs-attr">target</span>: <span class="hljs-built_in">any</span>, <span class="hljs-attr">key</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">descriptor</span>: <span class="hljs-title class_">PropertyDescriptor</span></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`方法装饰器 <span class="hljs-subst">${name}</span> 执行`</span>);
+  };
+}
+
+<span class="hljs-meta">@classDecorator</span>(<span class="hljs-string">"A"</span>)
+<span class="hljs-meta">@classDecorator</span>(<span class="hljs-string">"B"</span>)
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Example</span> {
+  <span class="hljs-meta">@methodDecorator</span>(<span class="hljs-string">"C"</span>)
+  <span class="hljs-meta">@methodDecorator</span>(<span class="hljs-string">"D"</span>)
+  <span class="hljs-title function_">method</span>(<span class="hljs-params"></span>) {}
+}
+
+<span class="hljs-comment">// 输出顺序：</span>
+<span class="hljs-comment">// 方法装饰器 C 求值</span>
+<span class="hljs-comment">// 方法装饰器 D 求值</span>
+<span class="hljs-comment">// 方法装饰器 D 执行（从下往上）</span>
+<span class="hljs-comment">// 方法装饰器 C 执行</span>
+<span class="hljs-comment">// 类装饰器 A 求值</span>
+<span class="hljs-comment">// 类装饰器 B 求值</span>
+<span class="hljs-comment">// 类装饰器 B 执行（从下往上）</span>
+<span class="hljs-comment">// 类装饰器 A 执行</span>
+</code></pre>
+<hr></hr>
+<h2 id="九、类型守卫（type-guards）">九、类型守卫（Type Guards）</h2>
+<blockquote>
+<p>面试题：TypeScript 中有哪些类型守卫方式？</p>
+</blockquote>
+<p>类型守卫用于在运行时缩小（收窄）类型范围，使 TypeScript 编译器在特定代码块中获得更精确的类型信息。</p>
+<h3 id="91-typeof-类型守卫">9.1 typeof 类型守卫</h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">padLeft</span>(<span class="hljs-params"><span class="hljs-attr">value</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">padding</span>: <span class="hljs-built_in">string</span> | <span class="hljs-built_in">number</span></span>): <span class="hljs-built_in">string</span> {
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> padding === <span class="hljs-string">"number"</span>) {
+    <span class="hljs-comment">// 此处 padding 被收窄为 number</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">" "</span>.<span class="hljs-title function_">repeat</span>(padding) + value;
+  }
+  <span class="hljs-comment">// 此处 padding 被收窄为 string</span>
+  <span class="hljs-keyword">return</span> padding + value;
+}
+</code></pre>
+<h3 id="92-instanceof-类型守卫">9.2 instanceof 类型守卫</h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Bird</span> {
+  <span class="hljs-title function_">fly</span>(<span class="hljs-params"></span>) { <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"flying"</span>); }
+}
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Fish</span> {
+  <span class="hljs-title function_">swim</span>(<span class="hljs-params"></span>) { <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"swimming"</span>); }
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">move</span>(<span class="hljs-params"><span class="hljs-attr">pet</span>: <span class="hljs-title class_">Bird</span> | <span class="hljs-title class_">Fish</span></span>) {
+  <span class="hljs-keyword">if</span> (pet <span class="hljs-keyword">instanceof</span> <span class="hljs-title class_">Bird</span>) {
+    pet.<span class="hljs-title function_">fly</span>();   <span class="hljs-comment">// OK</span>
+  } <span class="hljs-keyword">else</span> {
+    pet.<span class="hljs-title function_">swim</span>();  <span class="hljs-comment">// OK</span>
+  }
+}
+</code></pre>
+<h3 id="93-in-操作符类型守卫">9.3 in 操作符类型守卫</h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">IAdmin</span> {
+  <span class="hljs-attr">role</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">permissions</span>: <span class="hljs-built_in">string</span>[];
+}
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">IUser</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">email</span>: <span class="hljs-built_in">string</span>;
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">handlePerson</span>(<span class="hljs-params"><span class="hljs-attr">person</span>: <span class="hljs-title class_">IAdmin</span> | <span class="hljs-title class_">IUser</span></span>) {
+  <span class="hljs-keyword">if</span> (<span class="hljs-string">"role"</span> <span class="hljs-keyword">in</span> person) {
+    <span class="hljs-comment">// person 被收窄为 IAdmin</span>
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(person.<span class="hljs-property">permissions</span>);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// person 被收窄为 IUser</span>
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(person.<span class="hljs-property">email</span>);
+  }
+}
+</code></pre>
+<h3 id="94-自定义类型守卫（is-关键字）">9.4 自定义类型守卫（is 关键字）</h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">ICat</span> {
+  <span class="hljs-title function_">meow</span>(): <span class="hljs-built_in">void</span>;
+}
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">IDog</span> {
+  <span class="hljs-title function_">bark</span>(): <span class="hljs-built_in">void</span>;
+}
+
+<span class="hljs-comment">// 自定义类型守卫函数</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">isCat</span>(<span class="hljs-params"><span class="hljs-attr">animal</span>: <span class="hljs-title class_">ICat</span> | <span class="hljs-title class_">IDog</span></span>): animal is <span class="hljs-title class_">ICat</span> {
+  <span class="hljs-keyword">return</span> (animal <span class="hljs-keyword">as</span> <span class="hljs-title class_">ICat</span>).<span class="hljs-property">meow</span> !== <span class="hljs-literal">undefined</span>;
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">handleAnimal</span>(<span class="hljs-params"><span class="hljs-attr">animal</span>: <span class="hljs-title class_">ICat</span> | <span class="hljs-title class_">IDog</span></span>) {
+  <span class="hljs-keyword">if</span> (<span class="hljs-title function_">isCat</span>(animal)) {
+    animal.<span class="hljs-title function_">meow</span>();  <span class="hljs-comment">// OK</span>
+  } <span class="hljs-keyword">else</span> {
+    animal.<span class="hljs-title function_">bark</span>();  <span class="hljs-comment">// OK</span>
+  }
+}
+</code></pre>
+<h3 id="95-可辨识联合（discriminated-unions）">9.5 可辨识联合（Discriminated Unions）</h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">ICircle</span> {
+  <span class="hljs-attr">kind</span>: <span class="hljs-string">"circle"</span>;
+  <span class="hljs-attr">radius</span>: <span class="hljs-built_in">number</span>;
+}
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">ISquare</span> {
+  <span class="hljs-attr">kind</span>: <span class="hljs-string">"square"</span>;
+  <span class="hljs-attr">sideLength</span>: <span class="hljs-built_in">number</span>;
+}
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">ITriangle</span> {
+  <span class="hljs-attr">kind</span>: <span class="hljs-string">"triangle"</span>;
+  <span class="hljs-attr">base</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">height</span>: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Shape</span> = <span class="hljs-title class_">ICircle</span> | <span class="hljs-title class_">ISquare</span> | <span class="hljs-title class_">ITriangle</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">getArea</span>(<span class="hljs-params"><span class="hljs-attr">shape</span>: <span class="hljs-title class_">Shape</span></span>): <span class="hljs-built_in">number</span> {
+  <span class="hljs-keyword">switch</span> (shape.<span class="hljs-property">kind</span>) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">"circle"</span>:
+      <span class="hljs-keyword">return</span> <span class="hljs-title class_">Math</span>.<span class="hljs-property">PI</span> * shape.<span class="hljs-property">radius</span> ** <span class="hljs-number">2</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">"square"</span>:
+      <span class="hljs-keyword">return</span> shape.<span class="hljs-property">sideLength</span> ** <span class="hljs-number">2</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">"triangle"</span>:
+      <span class="hljs-keyword">return</span> (shape.<span class="hljs-property">base</span> * shape.<span class="hljs-property">height</span>) / <span class="hljs-number">2</span>;
+  }
+}
+</code></pre>
+<hr></hr>
+<h2 id="十、声明文件（declaration-files）">十、声明文件（Declaration Files）</h2>
+<blockquote>
+<p>面试题：什么是声明文件？.d.ts 文件有什么作用？如何为第三方库编写声明文件？</p>
+</blockquote>
+<h3 id="101-声明文件的作用">10.1 声明文件的作用</h3>
+<p>声明文件（<code>.d.ts</code>）为 JavaScript 代码提供类型信息，使 TypeScript 编译器能够对非 TypeScript 编写的代码进行类型检查。它只包含类型声明，不包含具体实现。</p>
+<h3 id="102-常见声明方式">10.2 常见声明方式</h3>
+<pre><code class="lang-typescript"><span class="hljs-comment">// global.d.ts — 全局声明文件</span>
+
+<span class="hljs-comment">// 声明全局变量</span>
+<span class="hljs-keyword">declare</span> <span class="hljs-keyword">const</span> <span class="hljs-attr">APP_VERSION</span>: <span class="hljs-built_in">string</span>;
+
+<span class="hljs-comment">// 声明全局函数</span>
+<span class="hljs-keyword">declare</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">sendAnalytics</span>(<span class="hljs-params"><span class="hljs-attr">event</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">data</span>?: <span class="hljs-title class_">Record</span>&lt;<span class="hljs-built_in">string</span>, <span class="hljs-built_in">any</span>&gt;</span>): <span class="hljs-built_in">void</span>;
+
+<span class="hljs-comment">// 声明全局接口</span>
+<span class="hljs-keyword">declare</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Window</span> {
+  <span class="hljs-attr">__APP_CONFIG__</span>: {
+    <span class="hljs-attr">apiUrl</span>: <span class="hljs-built_in">string</span>;
+    <span class="hljs-attr">debug</span>: <span class="hljs-built_in">boolean</span>;
+  };
+}
+
+<span class="hljs-comment">// 声明模块</span>
+<span class="hljs-keyword">declare</span> <span class="hljs-variable language_">module</span> <span class="hljs-string">"my-library"</span> {
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">doSomething</span>(<span class="hljs-params"><span class="hljs-attr">input</span>: <span class="hljs-built_in">string</span></span>): <span class="hljs-built_in">number</span>;
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Options</span> {
+    <span class="hljs-attr">timeout</span>: <span class="hljs-built_in">number</span>;
+    <span class="hljs-attr">retries</span>: <span class="hljs-built_in">number</span>;
+  }
+}
+
+<span class="hljs-comment">// 声明通配符模块（如处理 CSS/图片等非 JS 资源）</span>
+<span class="hljs-keyword">declare</span> <span class="hljs-variable language_">module</span> <span class="hljs-string">"*.css"</span> {
+  <span class="hljs-keyword">const</span> <span class="hljs-attr">content</span>: <span class="hljs-title class_">Record</span>&lt;<span class="hljs-built_in">string</span>, <span class="hljs-built_in">string</span>&gt;;
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> content;
+}
+
+<span class="hljs-keyword">declare</span> <span class="hljs-variable language_">module</span> <span class="hljs-string">"*.png"</span> {
+  <span class="hljs-keyword">const</span> <span class="hljs-attr">value</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> value;
+}
+
+<span class="hljs-keyword">declare</span> <span class="hljs-variable language_">module</span> <span class="hljs-string">"*.svg"</span> {
+  <span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span> <span class="hljs-keyword">from</span> <span class="hljs-string">"react"</span>;
+  <span class="hljs-keyword">const</span> <span class="hljs-title class_">SVGComponent</span>: <span class="hljs-title class_">React</span>.<span class="hljs-property">FC</span>&lt;<span class="hljs-title class_">React</span>.<span class="hljs-property">SVGProps</span>&lt;<span class="hljs-title class_">SVGSVGElement</span>&gt;&gt;;
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">SVGComponent</span>;
+}
+</code></pre>
+<h3 id="103-三斜线指令与-types">10.3 三斜线指令与 @types</h3>
+<pre><code class="lang-typescript"><span class="hljs-comment">// 三斜线指令引用其他声明文件</span>
+<span class="hljs-comment">/// &lt;reference path="./global.d.ts" /&gt;</span>
+<span class="hljs-comment">/// &lt;reference types="node" /&gt;</span>
+
+<span class="hljs-comment">// @types 包：DefinitelyTyped 社区维护的类型声明</span>
+<span class="hljs-comment">// 安装方式：npm install @types/lodash -D</span>
+<span class="hljs-comment">// TypeScript 会自动从 node_modules/@types 中查找类型</span>
+</code></pre>
+<hr></hr>
+<h2 id="十一、tsconfigjson-重要配置">十一、tsconfig.json 重要配置</h2>
+<blockquote>
+<p>面试题：tsconfig.json 中有哪些重要的配置项？请列举并说明。</p>
+</blockquote>
+<h3 id="111-编译相关">11.1 编译相关</h3>
+<pre><code class="lang-jsonc"><span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">"compilerOptions"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+    <span class="hljs-comment">// 目标 JS 版本</span>
+    <span class="hljs-attr">"target"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"ES2020"</span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// 模块系统</span>
+    <span class="hljs-attr">"module"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"ESNext"</span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// 模块解析策略：node（Node.js风格）或 bundler（打包工具风格，TS5.0+）</span>
+    <span class="hljs-attr">"moduleResolution"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"bundler"</span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// 输出目录</span>
+    <span class="hljs-attr">"outDir"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"./dist"</span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// 根目录</span>
+    <span class="hljs-attr">"rootDir"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"./src"</span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// 启用所有严格类型检查</span>
+    <span class="hljs-attr">"strict"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// 严格的 null 检查（strict 包含此项）</span>
+    <span class="hljs-attr">"strictNullChecks"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// 不允许隐式 any（strict 包含此项）</span>
+    <span class="hljs-attr">"noImplicitAny"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// 允许导入 JSON 模块</span>
+    <span class="hljs-attr">"resolveJsonModule"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// 允许导入 .js 后缀（ESM 互操作）</span>
+    <span class="hljs-attr">"allowImportingTsExtensions"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// esModuleInterop：允许从 CommonJS 模块使用默认导入</span>
+    <span class="hljs-attr">"esModuleInterop"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// 跳过对声明文件的类型检查（加速编译）</span>
+    <span class="hljs-attr">"skipLibCheck"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// 强制文件名大小写一致</span>
+    <span class="hljs-attr">"forceConsistentCasingInFileNames"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// 生成声明文件</span>
+    <span class="hljs-attr">"declaration"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// 生成 source map</span>
+    <span class="hljs-attr">"sourceMap"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// 启用装饰器（实验性）</span>
+    <span class="hljs-attr">"experimentalDecorators"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"emitDecoratorMetadata"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// 路径别名</span>
+    <span class="hljs-attr">"baseUrl"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"."</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"paths"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">"@/*"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">"src/*"</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"@components/*"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">"src/components/*"</span><span class="hljs-punctuation">]</span>
+    <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// JSX 支持</span>
+    <span class="hljs-attr">"jsx"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"react-jsx"</span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// 库文件</span>
+    <span class="hljs-attr">"lib"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">"ES2020"</span><span class="hljs-punctuation">,</span> <span class="hljs-string">"DOM"</span><span class="hljs-punctuation">,</span> <span class="hljs-string">"DOM.Iterable"</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// 增量编译（加速二次编译）</span>
+    <span class="hljs-attr">"incremental"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// 隔离模块（确保每个文件可以独立转译，Babel 兼容）</span>
+    <span class="hljs-attr">"isolatedModules"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+
+    <span class="hljs-comment">// 不输出文件（仅做类型检查，适合配合 Babel/esbuild/swc 使用）</span>
+    <span class="hljs-attr">"noEmit"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span>
+  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"include"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">"src/**/*"</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"exclude"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">"node_modules"</span><span class="hljs-punctuation">,</span> <span class="hljs-string">"dist"</span><span class="hljs-punctuation">,</span> <span class="hljs-string">"**/*.test.ts"</span><span class="hljs-punctuation">]</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
+<h3 id="112-strict-模式包含的选项">11.2 strict 模式包含的选项</h3>
+<p><code>"strict": true</code> 是一个便捷选项，等价于同时开启以下所有选项：</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>strictNullChecks</td>
+<td>null 和 undefined 不可以赋值给其他类型</td>
+</tr>
+<tr>
+<td>noImplicitAny</td>
+<td>禁止隐式 any 类型</td>
+</tr>
+<tr>
+<td>strictFunctionTypes</td>
+<td>函数参数类型双变检查（更严格）</td>
+</tr>
+<tr>
+<td>strictBindCallApply</td>
+<td>严格检查 bind/call/apply 参数类型</td>
+</tr>
+<tr>
+<td>strictPropertyInitialization</td>
+<td>类属性必须在构造函数中初始化</td>
+</tr>
+<tr>
+<td>noImplicitThis</td>
+<td>禁止隐式 this 为 any</td>
+</tr>
+<tr>
+<td>alwaysStrict</td>
+<td>文件中始终使用严格模式</td>
+</tr>
+<tr>
+<td>useUnknownInCatchVariables</td>
+<td>catch 变量类型为 unknown 而非 any</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="十二、协变与逆变">十二、协变与逆变</h2>
+<blockquote>
+<p>面试题：什么是协变和逆变？在 TypeScript 中如何体现？</p>
+</blockquote>
+<p>协变（Covariance）和逆变（Contravariance）描述了类型之间的子类型关系在复合类型中的传递方式。</p>
+<h3 id="121-概念解释">12.1 概念解释</h3>
+<p>假设 <code>Dog extends Animal</code>（Dog 是 Animal 的子类型）：</p>
+<ul>
+<li><strong>协变（Covariance）</strong>：<code>F&lt;Dog&gt;</code> 也是 <code>F&lt;Animal&gt;</code> 的子类型，子类型关系方向<strong>一致</strong></li>
+<li><strong>逆变（Contravariance）</strong>：<code>F&lt;Animal&gt;</code> 是 <code>F&lt;Dog&gt;</code> 的子类型，子类型关系方向<strong>相反</strong></li>
+<li><strong>不变（Invariance）</strong>：两者之间没有子类型关系</li>
+<li><strong>双变（Bivariance）</strong>：两个方向都兼容</li>
+</ul>
+<h3 id="122-协变-——-返回值位置">12.2 协变 —— 返回值位置</h3>
+<p>在 TypeScript 中，类型在返回值位置上是协变的：</p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Animal</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span> = <span class="hljs-string">""</span>;
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Dog</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Animal</span> {
+  <span class="hljs-attr">breed</span>: <span class="hljs-built_in">string</span> = <span class="hljs-string">""</span>;
+}
+
+<span class="hljs-comment">// 函数返回值是协变的</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">AnimalFactory</span> = <span class="hljs-function">() =&gt;</span> <span class="hljs-title class_">Animal</span>;
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">DogFactory</span> = <span class="hljs-function">() =&gt;</span> <span class="hljs-title class_">Dog</span>;
+
+<span class="hljs-keyword">let</span> <span class="hljs-attr">animalFactory</span>: <span class="hljs-title class_">AnimalFactory</span>;
+<span class="hljs-keyword">let</span> <span class="hljs-attr">dogFactory</span>: <span class="hljs-title class_">DogFactory</span> = <span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Dog</span>();
+
+<span class="hljs-comment">// Dog 是 Animal 的子类型</span>
+<span class="hljs-comment">// () =&gt; Dog 也是 () =&gt; Animal 的子类型（协变）</span>
+animalFactory = dogFactory; <span class="hljs-comment">// OK! 协变</span>
+<span class="hljs-comment">// dogFactory = animalFactory; // Error! 返回 Animal 不一定是 Dog</span>
+</code></pre>
+<h3 id="123-逆变-——-参数位置">12.3 逆变 —— 参数位置</h3>
+<p>在 <code>strictFunctionTypes</code> 开启时，函数参数类型是逆变的：</p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">type</span> <span class="hljs-title class_">AnimalHandler</span> = <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">animal</span>: <span class="hljs-title class_">Animal</span></span>) =&gt;</span> <span class="hljs-built_in">void</span>;
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">DogHandler</span> = <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">dog</span>: <span class="hljs-title class_">Dog</span></span>) =&gt;</span> <span class="hljs-built_in">void</span>;
+
+<span class="hljs-keyword">let</span> <span class="hljs-attr">animalHandler</span>: <span class="hljs-title class_">AnimalHandler</span> = <span class="hljs-function">(<span class="hljs-params">animal</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(animal.<span class="hljs-property">name</span>);
+};
+<span class="hljs-keyword">let</span> <span class="hljs-attr">dogHandler</span>: <span class="hljs-title class_">DogHandler</span> = <span class="hljs-function">(<span class="hljs-params">dog</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(dog.<span class="hljs-property">breed</span>);
+};
+
+<span class="hljs-comment">// 函数参数是逆变的（strictFunctionTypes 开启时）</span>
+<span class="hljs-comment">// Animal 是 Dog 的父类型</span>
+<span class="hljs-comment">// (animal: Animal) =&gt; void 是 (dog: Dog) =&gt; void 的子类型（逆变）</span>
+dogHandler = animalHandler; <span class="hljs-comment">// OK! 逆变。处理 Animal 的函数自然能处理 Dog</span>
+<span class="hljs-comment">// animalHandler = dogHandler; // Error! 处理 Dog 的函数不一定能处理所有 Animal</span>
+</code></pre>
+<h3 id="124-实际应用">12.4 实际应用</h3>
+<pre><code class="lang-typescript"><span class="hljs-comment">// 数组是协变的（readonly 数组在 TypeScript 中是协变的）</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">dogs</span>: <span class="hljs-keyword">readonly</span> <span class="hljs-title class_">Dog</span>[] = [<span class="hljs-keyword">new</span> <span class="hljs-title class_">Dog</span>()];
+<span class="hljs-keyword">let</span> <span class="hljs-attr">animals</span>: <span class="hljs-keyword">readonly</span> <span class="hljs-title class_">Animal</span>[] = dogs; <span class="hljs-comment">// OK! 协变</span>
+
+<span class="hljs-comment">// 但可变数组在概念上应该是不变的</span>
+<span class="hljs-comment">// TypeScript 为了实用性允许可变数组协变（不够严格但很方便）</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">mutableDogs</span>: <span class="hljs-title class_">Dog</span>[] = [<span class="hljs-keyword">new</span> <span class="hljs-title class_">Dog</span>()];
+<span class="hljs-keyword">let</span> <span class="hljs-attr">mutableAnimals</span>: <span class="hljs-title class_">Animal</span>[] = mutableDogs; <span class="hljs-comment">// OK（TypeScript 的设计取舍）</span>
+
+<span class="hljs-comment">// 利用逆变实现精确的类型约束</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">Comparable</span>&lt;T&gt; {
+  <span class="hljs-title function_">compareTo</span>(<span class="hljs-attr">other</span>: T): <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-comment">// 由于参数逆变，Comparable&lt;Animal&gt; 是 Comparable&lt;Dog&gt; 的子类型</span>
+<span class="hljs-keyword">function</span> sortAnimals&lt;T <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Comparable</span>&lt;T&gt;&gt;(<span class="hljs-attr">items</span>: T[]): T[] {
+  <span class="hljs-keyword">return</span> items.<span class="hljs-title function_">sort</span>(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a.<span class="hljs-title function_">compareTo</span>(b));
+}
+</code></pre>
+<h3 id="125-总结口诀">12.5 总结口诀</h3>
+<ul>
+<li><strong>协变（covariant）</strong>：子类型关系保持一致，出现在<strong>输出/返回值</strong>位置</li>
+<li><strong>逆变（contravariant）</strong>：子类型关系反转，出现在<strong>输入/参数</strong>位置</li>
+<li><strong>不变（invariant）</strong>：既是输入又是输出时（如可变属性），理论上应该不变</li>
+<li>TypeScript 中：<code>strictFunctionTypes</code> 启用时参数逆变；不启用时参数双变（更宽松）</li>
+</ul>
+<hr></hr>
+<h2 id="总结">总结</h2>
+<p>TypeScript 的类型系统是图灵完备的，掌握以上核心概念不仅能帮助你通过面试，更能让你在实际项目中写出更安全、更可维护的代码。重点需要深入理解的知识点包括：</p>
+<ol>
+<li><strong>any vs unknown vs never</strong> 的本质区别和使用场景</li>
+<li><strong>interface 和 type</strong> 的选择策略</li>
+<li><strong>泛型</strong>及其约束、默认值、keyof 等高级用法</li>
+<li><strong>工具类型</strong>的实现原理（本质是映射类型 + 条件类型 + infer 的组合）</li>
+<li><strong>条件类型</strong>的分布式特性和 infer 推断</li>
+<li><strong>协变与逆变</strong>在函数类型中的体现</li>
+</ol>
+<p>建议在准备面试时结合实际项目经验，理解每个特性在真实场景中解决了什么问题，这样才能在面试中游刃有余。</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="javascript.html" class="navigation navigation-prev " aria-label="Previous page: JavaScript核心">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="browser.html" class="navigation navigation-next " aria-label="Next page: 浏览器原理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"TypeScript","level":"2.3","depth":1,"next":{"title":"浏览器原理","level":"2.4","depth":1,"path":"frontend/browser.md","ref":"frontend/browser.md","articles":[]},"previous":{"title":"JavaScript核心","level":"2.2","depth":1,"path":"frontend/javascript.md","ref":"frontend/javascript.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"frontend/typescript.md","mtime":"2026-03-31T06:35:11.838Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

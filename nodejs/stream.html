@@ -1,0 +1,1792 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>流与文件系统 · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="frameworks.html" />
+    
+    
+    <link rel="prev" href="event-loop.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../frontend/html-css.html">
+            
+                <a href="../frontend/html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../frontend/javascript.html">
+            
+                <a href="../frontend/javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../frontend/typescript.html">
+            
+                <a href="../frontend/typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../frontend/browser.html">
+            
+                <a href="../frontend/browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../frontend/network.html">
+            
+                <a href="../frontend/network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../frontend/react.html">
+            
+                <a href="../frontend/react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../frontend/vue.html">
+            
+                <a href="../frontend/vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../frontend/engineering.html">
+            
+                <a href="../frontend/engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../frontend/performance.html">
+            
+                <a href="../frontend/performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../frontend/security.html">
+            
+                <a href="../frontend/security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="basics.html">
+            
+                <a href="basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="event-loop.html">
+            
+                <a href="event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.3" data-path="stream.html">
+            
+                <a href="stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="frameworks.html">
+            
+                <a href="frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="database.html">
+            
+                <a href="database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="practice.html">
+            
+                <a href="practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../golang/basics.html">
+            
+                <a href="../golang/basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../golang/concurrency.html">
+            
+                <a href="../golang/concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../golang/memory.html">
+            
+                <a href="../golang/memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../golang/web-framework.html">
+            
+                <a href="../golang/web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../golang/database-design.html">
+            
+                <a href="../golang/database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../golang/testing-practice.html">
+            
+                <a href="../golang/testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../agent/llm-basics.html">
+            
+                <a href="../agent/llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../agent/prompt-engineering.html">
+            
+                <a href="../agent/prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../agent/rag.html">
+            
+                <a href="../agent/rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../agent/agent-architecture.html">
+            
+                <a href="../agent/agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../agent/tool-calling.html">
+            
+                <a href="../agent/tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../agent/practice.html">
+            
+                <a href="../agent/practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >流与文件系统</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="nodejs-流与文件系统面试指南">Node.js 流与文件系统面试指南</h1>
+<h2 id="一、流的概念与类型">一、流的概念与类型</h2>
+<blockquote>
+<p><strong>面试题：什么是 Node.js 中的流（Stream）？有哪几种类型？为什么要使用流？</strong></p>
+</blockquote>
+<p>流（Stream）是 Node.js 中处理数据的一种抽象接口。流可以将数据分成小块（chunk）进行处理，而不是一次性将整个数据加载到内存中。这在处理大文件、网络通信等场景中至关重要。</p>
+<p><strong>为什么使用流</strong>：</p>
+<ul>
+<li><strong>内存效率</strong>：不需要一次性将大量数据加载到内存，逐块处理</li>
+<li><strong>时间效率</strong>：不需要等到所有数据可用才开始处理，可以边读边处理</li>
+<li><strong>组合性</strong>：通过 <code>pipe</code> 将多个流连接在一起，形成数据处理管道</li>
+</ul>
+<h3 id="11-四种流类型">1.1 四种流类型</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> { <span class="hljs-title class_">Readable</span>, <span class="hljs-title class_">Writable</span>, <span class="hljs-title class_">Duplex</span>, <span class="hljs-title class_">Transform</span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'stream'</span>);
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+<th>典型示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Readable</td>
+<td>可读流，数据的来源</td>
+<td><code>fs.createReadStream</code>、<code>http.IncomingMessage</code>、<code>process.stdin</code></td>
+</tr>
+<tr>
+<td>Writable</td>
+<td>可写流，数据的目的地</td>
+<td><code>fs.createWriteStream</code>、<code>http.ServerResponse</code>、<code>process.stdout</code></td>
+</tr>
+<tr>
+<td>Duplex</td>
+<td>双工流，既可读又可写（独立）</td>
+<td><code>net.Socket</code>、<code>zlib</code> 流</td>
+</tr>
+<tr>
+<td>Transform</td>
+<td>转换流，在读写过程中可以修改数据</td>
+<td><code>zlib.createGzip()</code>、<code>crypto.createCipher()</code></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+
+<span class="hljs-comment">// Readable 示例</span>
+<span class="hljs-keyword">const</span> readable = fs.<span class="hljs-title function_">createReadStream</span>(<span class="hljs-string">'input.txt'</span>);
+
+<span class="hljs-comment">// Writable 示例</span>
+<span class="hljs-keyword">const</span> writable = fs.<span class="hljs-title function_">createWriteStream</span>(<span class="hljs-string">'output.txt'</span>);
+
+<span class="hljs-comment">// pipe 连接</span>
+readable.<span class="hljs-title function_">pipe</span>(writable);
+
+<span class="hljs-comment">// Transform 示例：将数据转换为大写</span>
+<span class="hljs-keyword">const</span> { <span class="hljs-title class_">Transform</span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'stream'</span>);
+<span class="hljs-keyword">const</span> upperCase = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Transform</span>({
+  <span class="hljs-title function_">transform</span>(<span class="hljs-params">chunk, encoding, callback</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">push</span>(chunk.<span class="hljs-title function_">toString</span>().<span class="hljs-title function_">toUpperCase</span>());
+    <span class="hljs-title function_">callback</span>();
+  }
+});
+
+fs.<span class="hljs-title function_">createReadStream</span>(<span class="hljs-string">'input.txt'</span>)
+  .<span class="hljs-title function_">pipe</span>(upperCase)
+  .<span class="hljs-title function_">pipe</span>(fs.<span class="hljs-title function_">createWriteStream</span>(<span class="hljs-string">'output.txt'</span>));
+</code></pre>
+<hr></hr>
+<h2 id="二、流的两种模式">二、流的两种模式</h2>
+<blockquote>
+<p><strong>面试题：Node.js 中可读流有哪两种工作模式？如何在它们之间切换？</strong></p>
+</blockquote>
+<p>可读流有两种工作模式：<strong>flowing（流动模式）</strong> 和 <strong>paused（暂停模式）</strong>。</p>
+<h3 id="21-流动模式（flowing-mode）">2.1 流动模式（Flowing Mode）</h3>
+<p>数据自动从底层系统读取，并通过 <code>data</code> 事件尽可能快地提供给应用程序。</p>
+<p>切换到流动模式的方式：</p>
+<ul>
+<li>添加 <code>data</code> 事件监听器</li>
+<li>调用 <code>stream.resume()</code> 方法</li>
+<li>调用 <code>stream.pipe()</code> 方法</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+<span class="hljs-keyword">const</span> readable = fs.<span class="hljs-title function_">createReadStream</span>(<span class="hljs-string">'file.txt'</span>);
+
+<span class="hljs-comment">// 方式1：监听 data 事件</span>
+readable.<span class="hljs-title function_">on</span>(<span class="hljs-string">'data'</span>, <span class="hljs-function">(<span class="hljs-params">chunk</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`接收到 <span class="hljs-subst">${chunk.length}</span> 字节数据`</span>);
+});
+
+readable.<span class="hljs-title function_">on</span>(<span class="hljs-string">'end'</span>, <span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'数据读取完毕'</span>);
+});
+
+<span class="hljs-comment">// 方式2：pipe</span>
+readable.<span class="hljs-title function_">pipe</span>(process.<span class="hljs-property">stdout</span>);
+</code></pre>
+<h3 id="22-暂停模式（paused-mode）">2.2 暂停模式（Paused Mode）</h3>
+<p>数据不会自动读取，需要显式调用 <code>stream.read()</code> 方法来读取数据块。</p>
+<p>切换到暂停模式的方式：</p>
+<ul>
+<li>调用 <code>stream.pause()</code> 方法</li>
+<li>如果没有管道目标，移除所有 <code>data</code> 事件监听器</li>
+<li>如果有管道目标，调用 <code>stream.unpipe()</code> 移除所有管道</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+<span class="hljs-keyword">const</span> readable = fs.<span class="hljs-title function_">createReadStream</span>(<span class="hljs-string">'file.txt'</span>);
+
+<span class="hljs-comment">// 暂停模式 - 需要手动调用 read()</span>
+readable.<span class="hljs-title function_">on</span>(<span class="hljs-string">'readable'</span>, <span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-keyword">let</span> chunk;
+  <span class="hljs-keyword">while</span> (<span class="hljs-literal">null</span> !== (chunk = readable.<span class="hljs-title function_">read</span>())) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`接收到 <span class="hljs-subst">${chunk.length}</span> 字节数据`</span>);
+  }
+});
+
+readable.<span class="hljs-title function_">on</span>(<span class="hljs-string">'end'</span>, <span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'数据读取完毕'</span>);
+});
+</code></pre>
+<h3 id="23-模式切换的注意事项">2.3 模式切换的注意事项</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> readable = fs.<span class="hljs-title function_">createReadStream</span>(<span class="hljs-string">'file.txt'</span>);
+
+<span class="hljs-comment">// 流动模式</span>
+readable.<span class="hljs-title function_">on</span>(<span class="hljs-string">'data'</span>, <span class="hljs-function">(<span class="hljs-params">chunk</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(chunk);
+  readable.<span class="hljs-title function_">pause</span>(); <span class="hljs-comment">// 暂停流</span>
+
+  <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+    readable.<span class="hljs-title function_">resume</span>(); <span class="hljs-comment">// 3秒后恢复流动</span>
+  }, <span class="hljs-number">3000</span>);
+});
+</code></pre>
+<p>初始状态下，可读流处于暂停模式。不要同时使用 <code>data</code> 事件和 <code>readable</code> 事件，这会导致不可预测的行为。</p>
+<hr></hr>
+<h2 id="三、pipe-机制">三、pipe 机制</h2>
+<blockquote>
+<p><strong>面试题：请解释 Node.js 流的 pipe 机制是如何工作的。</strong></p>
+</blockquote>
+<p><code>pipe()</code> 方法将可读流的输出连接到可写流的输入，自动管理数据流动和背压：</p>
+<pre><code class="lang-javascript">readable.<span class="hljs-title function_">pipe</span>(writable);
+</code></pre>
+<h3 id="31-pipe-的内部工作原理">3.1 pipe 的内部工作原理</h3>
+<p><code>pipe</code> 的简化实现：</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// pipe 的简化原理</span>
+<span class="hljs-title class_">Readable</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">pipe</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params">dest</span>) {
+  <span class="hljs-keyword">const</span> src = <span class="hljs-variable language_">this</span>;
+
+  <span class="hljs-comment">// 监听可读流的 data 事件</span>
+  src.<span class="hljs-title function_">on</span>(<span class="hljs-string">'data'</span>, <span class="hljs-function">(<span class="hljs-params">chunk</span>) =&gt;</span> {
+    <span class="hljs-comment">// 将数据写入可写流</span>
+    <span class="hljs-keyword">const</span> canWrite = dest.<span class="hljs-title function_">write</span>(chunk);
+
+    <span class="hljs-comment">// 如果可写流的缓冲区满了，暂停可读流（背压处理）</span>
+    <span class="hljs-keyword">if</span> (!canWrite) {
+      src.<span class="hljs-title function_">pause</span>();
+    }
+  });
+
+  <span class="hljs-comment">// 当可写流的缓冲区排空时，恢复可读流</span>
+  dest.<span class="hljs-title function_">on</span>(<span class="hljs-string">'drain'</span>, <span class="hljs-function">() =&gt;</span> {
+    src.<span class="hljs-title function_">resume</span>();
+  });
+
+  <span class="hljs-comment">// 当可读流结束时，结束可写流</span>
+  src.<span class="hljs-title function_">on</span>(<span class="hljs-string">'end'</span>, <span class="hljs-function">() =&gt;</span> {
+    dest.<span class="hljs-title function_">end</span>();
+  });
+
+  <span class="hljs-comment">// 错误处理</span>
+  src.<span class="hljs-title function_">on</span>(<span class="hljs-string">'error'</span>, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    dest.<span class="hljs-title function_">destroy</span>(err);
+  });
+
+  <span class="hljs-keyword">return</span> dest; <span class="hljs-comment">// 支持链式调用</span>
+};
+</code></pre>
+<h3 id="32-链式-pipe">3.2 链式 pipe</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+<span class="hljs-keyword">const</span> zlib = <span class="hljs-built_in">require</span>(<span class="hljs-string">'zlib'</span>);
+
+<span class="hljs-comment">// 读取文件 → 压缩 → 写入文件</span>
+fs.<span class="hljs-title function_">createReadStream</span>(<span class="hljs-string">'input.txt'</span>)
+  .<span class="hljs-title function_">pipe</span>(zlib.<span class="hljs-title function_">createGzip</span>())
+  .<span class="hljs-title function_">pipe</span>(fs.<span class="hljs-title function_">createWriteStream</span>(<span class="hljs-string">'input.txt.gz'</span>));
+
+<span class="hljs-comment">// 解压</span>
+fs.<span class="hljs-title function_">createReadStream</span>(<span class="hljs-string">'input.txt.gz'</span>)
+  .<span class="hljs-title function_">pipe</span>(zlib.<span class="hljs-title function_">createGunzip</span>())
+  .<span class="hljs-title function_">pipe</span>(fs.<span class="hljs-title function_">createWriteStream</span>(<span class="hljs-string">'output.txt'</span>));
+</code></pre>
+<h3 id="33-pipeline（推荐）">3.3 pipeline（推荐）</h3>
+<p>Node.js 10+ 引入了 <code>stream.pipeline()</code>，相比直接使用 <code>pipe</code>，它能正确处理错误和清理资源：</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> { pipeline } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'stream'</span>);
+<span class="hljs-keyword">const</span> { promisify } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'util'</span>);
+<span class="hljs-keyword">const</span> pipelineAsync = <span class="hljs-title function_">promisify</span>(pipeline);
+
+<span class="hljs-comment">// 回调方式</span>
+<span class="hljs-title function_">pipeline</span>(
+  fs.<span class="hljs-title function_">createReadStream</span>(<span class="hljs-string">'input.txt'</span>),
+  zlib.<span class="hljs-title function_">createGzip</span>(),
+  fs.<span class="hljs-title function_">createWriteStream</span>(<span class="hljs-string">'input.txt.gz'</span>),
+  <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-keyword">if</span> (err) {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'Pipeline 失败:'</span>, err);
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Pipeline 完成'</span>);
+    }
+  }
+);
+
+<span class="hljs-comment">// Promise 方式（Node.js 15+ 也可以直接使用 stream/promises）</span>
+<span class="hljs-keyword">const</span> { pipeline } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'stream/promises'</span>);
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">compress</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">await</span> <span class="hljs-title function_">pipeline</span>(
+    fs.<span class="hljs-title function_">createReadStream</span>(<span class="hljs-string">'input.txt'</span>),
+    zlib.<span class="hljs-title function_">createGzip</span>(),
+    fs.<span class="hljs-title function_">createWriteStream</span>(<span class="hljs-string">'input.txt.gz'</span>)
+  );
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'压缩完成'</span>);
+}
+</code></pre>
+<p><code>pipe()</code> 在出错时不会自动销毁流，可能导致内存泄漏。而 <code>pipeline()</code> 会在出错时自动清理所有流。</p>
+<hr></hr>
+<h2 id="四、背压（backpressure）问题与处理">四、背压（Backpressure）问题与处理</h2>
+<blockquote>
+<p><strong>面试题：什么是流的背压（Backpressure）？如何处理？</strong></p>
+</blockquote>
+<h3 id="41-什么是背压">4.1 什么是背压</h3>
+<p>背压是指当数据的生产速度大于消费速度时，未处理的数据在缓冲区中积累的现象。如果不处理背压，可能导致内存溢出或数据丢失。</p>
+<p>典型场景：从一个快速的 SSD 读取数据，写入一个慢速的网络连接。</p>
+<h3 id="42-背压的产生">4.2 背压的产生</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+
+<span class="hljs-keyword">const</span> readable = fs.<span class="hljs-title function_">createReadStream</span>(<span class="hljs-string">'huge-file.dat'</span>);   <span class="hljs-comment">// 读取很快</span>
+<span class="hljs-keyword">const</span> writable = fs.<span class="hljs-title function_">createWriteStream</span>(<span class="hljs-string">'output.dat'</span>);      <span class="hljs-comment">// 写入较慢</span>
+
+<span class="hljs-comment">// 错误做法 - 不处理背压</span>
+readable.<span class="hljs-title function_">on</span>(<span class="hljs-string">'data'</span>, <span class="hljs-function">(<span class="hljs-params">chunk</span>) =&gt;</span> {
+  writable.<span class="hljs-title function_">write</span>(chunk); <span class="hljs-comment">// 写入速度跟不上，数据堆积在内存中</span>
+});
+
+<span class="hljs-comment">// 正确做法 - 手动处理背压</span>
+readable.<span class="hljs-title function_">on</span>(<span class="hljs-string">'data'</span>, <span class="hljs-function">(<span class="hljs-params">chunk</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> canWrite = writable.<span class="hljs-title function_">write</span>(chunk);
+  <span class="hljs-keyword">if</span> (!canWrite) {
+    <span class="hljs-comment">// 可写流缓冲区满了，暂停可读流</span>
+    readable.<span class="hljs-title function_">pause</span>();
+  }
+});
+
+writable.<span class="hljs-title function_">on</span>(<span class="hljs-string">'drain'</span>, <span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-comment">// 可写流缓冲区排空了，恢复可读流</span>
+  readable.<span class="hljs-title function_">resume</span>();
+});
+</code></pre>
+<h3 id="43-最佳处理方式">4.3 最佳处理方式</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 方式1：使用 pipe（自动处理背压）</span>
+readable.<span class="hljs-title function_">pipe</span>(writable);
+
+<span class="hljs-comment">// 方式2：使用 pipeline（推荐）</span>
+<span class="hljs-keyword">const</span> { pipeline } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'stream/promises'</span>);
+<span class="hljs-keyword">await</span> <span class="hljs-title function_">pipeline</span>(readable, writable);
+
+<span class="hljs-comment">// 方式3：使用 async iterator（Node.js 10+）</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">processStream</span>(<span class="hljs-params">readable, writable</span>) {
+  <span class="hljs-keyword">for</span> <span class="hljs-title function_">await</span> (<span class="hljs-keyword">const</span> chunk <span class="hljs-keyword">of</span> readable) {
+    <span class="hljs-keyword">const</span> canWrite = writable.<span class="hljs-title function_">write</span>(chunk);
+    <span class="hljs-keyword">if</span> (!canWrite) {
+      <span class="hljs-keyword">await</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve</span>) =&gt;</span> writable.<span class="hljs-title function_">once</span>(<span class="hljs-string">'drain'</span>, resolve));
+    }
+  }
+  writable.<span class="hljs-title function_">end</span>();
+}
+</code></pre>
+<h3 id="44-highwatermark">4.4 highWaterMark</h3>
+<p><code>highWaterMark</code> 是流的内部缓冲区大小阈值，决定了何时触发背压：</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 默认值</span>
+<span class="hljs-comment">// Readable: 16KB（objectMode 下为 16 个对象）</span>
+<span class="hljs-comment">// Writable: 16KB</span>
+
+<span class="hljs-comment">// 自定义 highWaterMark</span>
+<span class="hljs-keyword">const</span> readable = fs.<span class="hljs-title function_">createReadStream</span>(<span class="hljs-string">'file.txt'</span>, {
+  <span class="hljs-attr">highWaterMark</span>: <span class="hljs-number">64</span> * <span class="hljs-number">1024</span> <span class="hljs-comment">// 64KB</span>
+});
+
+<span class="hljs-keyword">const</span> writable = fs.<span class="hljs-title function_">createWriteStream</span>(<span class="hljs-string">'output.txt'</span>, {
+  <span class="hljs-attr">highWaterMark</span>: <span class="hljs-number">32</span> * <span class="hljs-number">1024</span> <span class="hljs-comment">// 32KB</span>
+});
+</code></pre>
+<p>当可写流的内部缓冲区超过 <code>highWaterMark</code> 时，<code>write()</code> 返回 <code>false</code>，表示应该暂停写入。当缓冲区排空到 <code>highWaterMark</code> 以下时，触发 <code>drain</code> 事件。</p>
+<hr></hr>
+<h2 id="五、自定义可读流可写流">五、自定义可读流/可写流</h2>
+<blockquote>
+<p><strong>面试题：如何实现自定义的可读流和可写流？</strong></p>
+</blockquote>
+<h3 id="51-自定义可读流">5.1 自定义可读流</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> { <span class="hljs-title class_">Readable</span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'stream'</span>);
+
+<span class="hljs-comment">// 方式1：继承 Readable 类</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Counter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Readable</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">max, options</span>) {
+    <span class="hljs-variable language_">super</span>(options);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">max</span> = max;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">current</span> = <span class="hljs-number">0</span>;
+  }
+
+  <span class="hljs-title function_">_read</span>(<span class="hljs-params">size</span>) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">current</span> &lt;= <span class="hljs-variable language_">this</span>.<span class="hljs-property">max</span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">push</span>(<span class="hljs-title class_">String</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">current</span>++) + <span class="hljs-string">'\n'</span>);
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">push</span>(<span class="hljs-literal">null</span>); <span class="hljs-comment">// 表示流结束</span>
+    }
+  }
+}
+
+<span class="hljs-keyword">const</span> counter = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Counter</span>(<span class="hljs-number">10</span>);
+counter.<span class="hljs-title function_">pipe</span>(process.<span class="hljs-property">stdout</span>);
+
+<span class="hljs-comment">// 方式2：使用构造函数选项</span>
+<span class="hljs-keyword">const</span> readable = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Readable</span>({
+  <span class="hljs-title function_">read</span>(<span class="hljs-params">size</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">push</span>(<span class="hljs-string">'hello\n'</span>);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">push</span>(<span class="hljs-literal">null</span>);
+  }
+});
+
+<span class="hljs-comment">// 方式3：从迭代器/生成器创建（Node.js 12+）</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span>* <span class="hljs-title function_">generateData</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">yield</span> <span class="hljs-string">'Hello '</span>;
+  <span class="hljs-keyword">yield</span> <span class="hljs-string">'World'</span>;
+}
+
+<span class="hljs-keyword">const</span> readableFromGen = <span class="hljs-title class_">Readable</span>.<span class="hljs-title function_">from</span>(<span class="hljs-title function_">generateData</span>());
+readableFromGen.<span class="hljs-title function_">pipe</span>(process.<span class="hljs-property">stdout</span>);
+
+<span class="hljs-comment">// 方式4：对象模式</span>
+<span class="hljs-keyword">const</span> objectReadable = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Readable</span>({
+  <span class="hljs-attr">objectMode</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-title function_">read</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">push</span>({ <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">30</span> });
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">push</span>({ <span class="hljs-attr">name</span>: <span class="hljs-string">'Bob'</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">25</span> });
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">push</span>(<span class="hljs-literal">null</span>);
+  }
+});
+</code></pre>
+<h3 id="52-自定义可写流">5.2 自定义可写流</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> { <span class="hljs-title class_">Writable</span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'stream'</span>);
+
+<span class="hljs-comment">// 自定义可写流 - 数据收集器</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Collector</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Writable</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">options</span>) {
+    <span class="hljs-variable language_">super</span>(options);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">data</span> = [];
+  }
+
+  <span class="hljs-title function_">_write</span>(<span class="hljs-params">chunk, encoding, callback</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">data</span>.<span class="hljs-title function_">push</span>(chunk.<span class="hljs-title function_">toString</span>());
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`写入: <span class="hljs-subst">${chunk}</span>`</span>);
+    <span class="hljs-title function_">callback</span>(); <span class="hljs-comment">// 必须调用 callback 表示写入完成</span>
+  }
+
+  <span class="hljs-title function_">_final</span>(<span class="hljs-params">callback</span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'所有数据:'</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">data</span>.<span class="hljs-title function_">join</span>(<span class="hljs-string">''</span>));
+    <span class="hljs-title function_">callback</span>();
+  }
+}
+
+<span class="hljs-keyword">const</span> collector = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Collector</span>();
+collector.<span class="hljs-title function_">write</span>(<span class="hljs-string">'Hello '</span>);
+collector.<span class="hljs-title function_">write</span>(<span class="hljs-string">'World'</span>);
+collector.<span class="hljs-title function_">end</span>(); <span class="hljs-comment">// 触发 _final</span>
+</code></pre>
+<h3 id="53-自定义-transform-流">5.3 自定义 Transform 流</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> { <span class="hljs-title class_">Transform</span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'stream'</span>);
+
+<span class="hljs-comment">// 将 CSV 行转换为 JSON 对象</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">CsvToJson</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Transform</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">headers, options</span>) {
+    <span class="hljs-variable language_">super</span>({ ...options, <span class="hljs-attr">objectMode</span>: <span class="hljs-literal">true</span> });
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">headers</span> = headers;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">isFirstLine</span> = <span class="hljs-literal">true</span>;
+  }
+
+  <span class="hljs-title function_">_transform</span>(<span class="hljs-params">chunk, encoding, callback</span>) {
+    <span class="hljs-keyword">const</span> line = chunk.<span class="hljs-title function_">toString</span>().<span class="hljs-title function_">trim</span>();
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">isFirstLine</span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">isFirstLine</span> = <span class="hljs-literal">false</span>;
+      <span class="hljs-keyword">if</span> (!<span class="hljs-variable language_">this</span>.<span class="hljs-property">headers</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">headers</span> = line.<span class="hljs-title function_">split</span>(<span class="hljs-string">','</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-title function_">callback</span>();
+      }
+    }
+
+    <span class="hljs-keyword">const</span> values = line.<span class="hljs-title function_">split</span>(<span class="hljs-string">','</span>);
+    <span class="hljs-keyword">const</span> obj = {};
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">headers</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">header, i</span>) =&gt;</span> {
+      obj[header.<span class="hljs-title function_">trim</span>()] = values[i]?.<span class="hljs-title function_">trim</span>();
+    });
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">push</span>(obj);
+    <span class="hljs-title function_">callback</span>();
+  }
+}
+</code></pre>
+<h3 id="54-自定义-duplex-流">5.4 自定义 Duplex 流</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> { <span class="hljs-title class_">Duplex</span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'stream'</span>);
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">MyDuplex</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Duplex</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">options</span>) {
+    <span class="hljs-variable language_">super</span>(options);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">data</span> = [];
+  }
+
+  <span class="hljs-title function_">_read</span>(<span class="hljs-params">size</span>) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">data</span>.<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">push</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">data</span>.<span class="hljs-title function_">shift</span>());
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-comment">// 稍后再尝试</span>
+      <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">_read</span>(size), <span class="hljs-number">100</span>);
+    }
+  }
+
+  <span class="hljs-title function_">_write</span>(<span class="hljs-params">chunk, encoding, callback</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">data</span>.<span class="hljs-title function_">push</span>(chunk);
+    <span class="hljs-title function_">callback</span>();
+  }
+}
+</code></pre>
+<hr></hr>
+<h2 id="六、文件系统-fs-模块">六、文件系统 fs 模块</h2>
+<blockquote>
+<p><strong>面试题：Node.js 的 fs 模块有哪几种 API 风格？它们的区别是什么？</strong></p>
+</blockquote>
+<h3 id="61-三种-api-风格">6.1 三种 API 风格</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+<span class="hljs-keyword">const</span> fsPromises = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>).<span class="hljs-property">promises</span>; <span class="hljs-comment">// 或 require('fs/promises')</span>
+
+<span class="hljs-comment">// 1. 同步 API（阻塞事件循环）</span>
+<span class="hljs-keyword">try</span> {
+  <span class="hljs-keyword">const</span> data = fs.<span class="hljs-title function_">readFileSync</span>(<span class="hljs-string">'file.txt'</span>, <span class="hljs-string">'utf8'</span>);
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(data);
+} <span class="hljs-keyword">catch</span> (err) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(err);
+}
+
+<span class="hljs-comment">// 2. 回调 API（异步，不阻塞）</span>
+fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">'file.txt'</span>, <span class="hljs-string">'utf8'</span>, <span class="hljs-function">(<span class="hljs-params">err, data</span>) =&gt;</span> {
+  <span class="hljs-keyword">if</span> (err) { <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(err); <span class="hljs-keyword">return</span>; }
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(data);
+});
+
+<span class="hljs-comment">// 3. Promise API（异步，推荐）</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">readFile</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> fsPromises.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">'file.txt'</span>, <span class="hljs-string">'utf8'</span>);
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(data);
+  } <span class="hljs-keyword">catch</span> (err) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(err);
+  }
+}
+</code></pre>
+<h3 id="62-常用文件操作">6.2 常用文件操作</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs/promises'</span>);
+
+<span class="hljs-comment">// 读取文件</span>
+<span class="hljs-keyword">const</span> content = <span class="hljs-keyword">await</span> fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">'file.txt'</span>, <span class="hljs-string">'utf8'</span>);
+
+<span class="hljs-comment">// 写入文件（覆盖）</span>
+<span class="hljs-keyword">await</span> fs.<span class="hljs-title function_">writeFile</span>(<span class="hljs-string">'file.txt'</span>, <span class="hljs-string">'新内容'</span>, <span class="hljs-string">'utf8'</span>);
+
+<span class="hljs-comment">// 追加内容</span>
+<span class="hljs-keyword">await</span> fs.<span class="hljs-title function_">appendFile</span>(<span class="hljs-string">'file.txt'</span>, <span class="hljs-string">'\n追加内容'</span>, <span class="hljs-string">'utf8'</span>);
+
+<span class="hljs-comment">// 删除文件</span>
+<span class="hljs-keyword">await</span> fs.<span class="hljs-title function_">unlink</span>(<span class="hljs-string">'file.txt'</span>);
+
+<span class="hljs-comment">// 重命名/移动文件</span>
+<span class="hljs-keyword">await</span> fs.<span class="hljs-title function_">rename</span>(<span class="hljs-string">'old.txt'</span>, <span class="hljs-string">'new.txt'</span>);
+
+<span class="hljs-comment">// 复制文件</span>
+<span class="hljs-keyword">await</span> fs.<span class="hljs-title function_">copyFile</span>(<span class="hljs-string">'source.txt'</span>, <span class="hljs-string">'dest.txt'</span>);
+
+<span class="hljs-comment">// 获取文件信息</span>
+<span class="hljs-keyword">const</span> stats = <span class="hljs-keyword">await</span> fs.<span class="hljs-title function_">stat</span>(<span class="hljs-string">'file.txt'</span>);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(stats.<span class="hljs-title function_">isFile</span>());      <span class="hljs-comment">// 是否是文件</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(stats.<span class="hljs-title function_">isDirectory</span>()); <span class="hljs-comment">// 是否是目录</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(stats.<span class="hljs-property">size</span>);          <span class="hljs-comment">// 文件大小（字节）</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(stats.<span class="hljs-property">mtime</span>);         <span class="hljs-comment">// 最后修改时间</span>
+
+<span class="hljs-comment">// 检查文件是否存在</span>
+<span class="hljs-keyword">try</span> {
+  <span class="hljs-keyword">await</span> fs.<span class="hljs-title function_">access</span>(<span class="hljs-string">'file.txt'</span>, fs.<span class="hljs-property">constants</span>.<span class="hljs-property">F_OK</span>);
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'文件存在'</span>);
+} <span class="hljs-keyword">catch</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'文件不存在'</span>);
+}
+
+<span class="hljs-comment">// 创建目录（递归）</span>
+<span class="hljs-keyword">await</span> fs.<span class="hljs-title function_">mkdir</span>(<span class="hljs-string">'a/b/c'</span>, { <span class="hljs-attr">recursive</span>: <span class="hljs-literal">true</span> });
+
+<span class="hljs-comment">// 读取目录</span>
+<span class="hljs-keyword">const</span> files = <span class="hljs-keyword">await</span> fs.<span class="hljs-title function_">readdir</span>(<span class="hljs-string">'src'</span>);
+<span class="hljs-keyword">const</span> filesWithTypes = <span class="hljs-keyword">await</span> fs.<span class="hljs-title function_">readdir</span>(<span class="hljs-string">'src'</span>, { <span class="hljs-attr">withFileTypes</span>: <span class="hljs-literal">true</span> });
+filesWithTypes.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">dirent</span> =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(dirent.<span class="hljs-property">name</span>, dirent.<span class="hljs-title function_">isDirectory</span>() ? <span class="hljs-string">'目录'</span> : <span class="hljs-string">'文件'</span>);
+});
+
+<span class="hljs-comment">// 删除目录（递归）</span>
+<span class="hljs-keyword">await</span> fs.<span class="hljs-title function_">rm</span>(<span class="hljs-string">'dist'</span>, { <span class="hljs-attr">recursive</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">force</span>: <span class="hljs-literal">true</span> });
+
+<span class="hljs-comment">// 创建符号链接</span>
+<span class="hljs-keyword">await</span> fs.<span class="hljs-title function_">symlink</span>(<span class="hljs-string">'target.txt'</span>, <span class="hljs-string">'link.txt'</span>);
+
+<span class="hljs-comment">// 修改文件权限</span>
+<span class="hljs-keyword">await</span> fs.<span class="hljs-title function_">chmod</span>(<span class="hljs-string">'file.txt'</span>, <span class="hljs-number">0o755</span>);
+
+<span class="hljs-comment">// 截断文件</span>
+<span class="hljs-keyword">await</span> fs.<span class="hljs-title function_">truncate</span>(<span class="hljs-string">'file.txt'</span>, <span class="hljs-number">100</span>); <span class="hljs-comment">// 保留前 100 字节</span>
+</code></pre>
+<hr></hr>
+<h2 id="七、大文件读写方案">七、大文件读写方案</h2>
+<blockquote>
+<p><strong>面试题：如何在 Node.js 中高效地处理大文件（几 GB 甚至更大）？</strong></p>
+</blockquote>
+<h3 id="71-使用流逐块处理">7.1 使用流逐块处理</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+
+<span class="hljs-comment">// 读取大文件</span>
+<span class="hljs-keyword">const</span> readStream = fs.<span class="hljs-title function_">createReadStream</span>(<span class="hljs-string">'huge-file.log'</span>, {
+  <span class="hljs-attr">encoding</span>: <span class="hljs-string">'utf8'</span>,
+  <span class="hljs-attr">highWaterMark</span>: <span class="hljs-number">64</span> * <span class="hljs-number">1024</span> <span class="hljs-comment">// 每次读取 64KB</span>
+});
+
+<span class="hljs-keyword">let</span> lineCount = <span class="hljs-number">0</span>;
+
+readStream.<span class="hljs-title function_">on</span>(<span class="hljs-string">'data'</span>, <span class="hljs-function">(<span class="hljs-params">chunk</span>) =&gt;</span> {
+  lineCount += chunk.<span class="hljs-title function_">split</span>(<span class="hljs-string">'\n'</span>).<span class="hljs-property">length</span> - <span class="hljs-number">1</span>;
+});
+
+readStream.<span class="hljs-title function_">on</span>(<span class="hljs-string">'end'</span>, <span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`总行数: <span class="hljs-subst">${lineCount}</span>`</span>);
+});
+
+readStream.<span class="hljs-title function_">on</span>(<span class="hljs-string">'error'</span>, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'读取错误:'</span>, err);
+});
+</code></pre>
+<h3 id="72-逐行读取（readline）">7.2 逐行读取（readline）</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+<span class="hljs-keyword">const</span> readline = <span class="hljs-built_in">require</span>(<span class="hljs-string">'readline'</span>);
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">processLineByLine</span>(<span class="hljs-params">filePath</span>) {
+  <span class="hljs-keyword">const</span> fileStream = fs.<span class="hljs-title function_">createReadStream</span>(filePath);
+  <span class="hljs-keyword">const</span> rl = readline.<span class="hljs-title function_">createInterface</span>({
+    <span class="hljs-attr">input</span>: fileStream,
+    <span class="hljs-attr">crlfDelay</span>: <span class="hljs-title class_">Infinity</span> <span class="hljs-comment">// 识别 \r\n 为一行</span>
+  });
+
+  <span class="hljs-keyword">let</span> lineNum = <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">for</span> <span class="hljs-title function_">await</span> (<span class="hljs-keyword">const</span> line <span class="hljs-keyword">of</span> rl) {
+    lineNum++;
+    <span class="hljs-comment">// 逐行处理</span>
+    <span class="hljs-keyword">if</span> (line.<span class="hljs-title function_">includes</span>(<span class="hljs-string">'ERROR'</span>)) {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`第 <span class="hljs-subst">${lineNum}</span> 行: <span class="hljs-subst">${line}</span>`</span>);
+    }
+  }
+
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`处理完成，共 <span class="hljs-subst">${lineNum}</span> 行`</span>);
+}
+
+<span class="hljs-title function_">processLineByLine</span>(<span class="hljs-string">'server.log'</span>);
+</code></pre>
+<h3 id="73-大文件复制">7.3 大文件复制</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+<span class="hljs-keyword">const</span> { pipeline } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'stream/promises'</span>);
+
+<span class="hljs-comment">// 方式1：使用 pipeline（推荐）</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">copyFile</span>(<span class="hljs-params">src, dest</span>) {
+  <span class="hljs-keyword">await</span> <span class="hljs-title function_">pipeline</span>(
+    fs.<span class="hljs-title function_">createReadStream</span>(src),
+    fs.<span class="hljs-title function_">createWriteStream</span>(dest)
+  );
+}
+
+<span class="hljs-comment">// 方式2：使用 fs.copyFile（内部优化，可能使用操作系统的零拷贝）</span>
+<span class="hljs-keyword">await</span> fs.<span class="hljs-property">promises</span>.<span class="hljs-title function_">copyFile</span>(<span class="hljs-string">'source.dat'</span>, <span class="hljs-string">'dest.dat'</span>);
+
+<span class="hljs-comment">// 方式3：带进度报告的复制</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">copyWithProgress</span>(<span class="hljs-params">src, dest</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> stat = fs.<span class="hljs-title function_">statSync</span>(src);
+    <span class="hljs-keyword">let</span> copied = <span class="hljs-number">0</span>;
+
+    <span class="hljs-keyword">const</span> readStream = fs.<span class="hljs-title function_">createReadStream</span>(src);
+    <span class="hljs-keyword">const</span> writeStream = fs.<span class="hljs-title function_">createWriteStream</span>(dest);
+
+    readStream.<span class="hljs-title function_">on</span>(<span class="hljs-string">'data'</span>, <span class="hljs-function">(<span class="hljs-params">chunk</span>) =&gt;</span> {
+      copied += chunk.<span class="hljs-property">length</span>;
+      <span class="hljs-keyword">const</span> progress = ((copied / stat.<span class="hljs-property">size</span>) * <span class="hljs-number">100</span>).<span class="hljs-title function_">toFixed</span>(<span class="hljs-number">1</span>);
+      process.<span class="hljs-property">stdout</span>.<span class="hljs-title function_">write</span>(<span class="hljs-string">`\r复制进度: <span class="hljs-subst">${progress}</span>%`</span>);
+    });
+
+    readStream.<span class="hljs-title function_">pipe</span>(writeStream);
+    writeStream.<span class="hljs-title function_">on</span>(<span class="hljs-string">'finish'</span>, <span class="hljs-function">() =&gt;</span> {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'\n复制完成'</span>);
+      <span class="hljs-title function_">resolve</span>();
+    });
+    writeStream.<span class="hljs-title function_">on</span>(<span class="hljs-string">'error'</span>, reject);
+    readStream.<span class="hljs-title function_">on</span>(<span class="hljs-string">'error'</span>, reject);
+  });
+}
+</code></pre>
+<h3 id="74-分块上传大文件">7.4 分块上传大文件</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">splitFile</span>(<span class="hljs-params">filePath, chunkSize = <span class="hljs-number">10</span> * <span class="hljs-number">1024</span> * <span class="hljs-number">1024</span></span>) { <span class="hljs-comment">// 10MB</span>
+  <span class="hljs-keyword">const</span> stat = <span class="hljs-keyword">await</span> fs.<span class="hljs-property">promises</span>.<span class="hljs-title function_">stat</span>(filePath);
+  <span class="hljs-keyword">const</span> totalChunks = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">ceil</span>(stat.<span class="hljs-property">size</span> / chunkSize);
+  <span class="hljs-keyword">const</span> chunks = [];
+
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; totalChunks; i++) {
+    <span class="hljs-keyword">const</span> start = i * chunkSize;
+    <span class="hljs-keyword">const</span> end = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">min</span>(start + chunkSize, stat.<span class="hljs-property">size</span>);
+    <span class="hljs-keyword">const</span> chunkPath = <span class="hljs-string">`<span class="hljs-subst">${filePath}</span>.part<span class="hljs-subst">${i}</span>`</span>;
+
+    <span class="hljs-keyword">await</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+      <span class="hljs-keyword">const</span> readStream = fs.<span class="hljs-title function_">createReadStream</span>(filePath, { start, <span class="hljs-attr">end</span>: end - <span class="hljs-number">1</span> });
+      <span class="hljs-keyword">const</span> writeStream = fs.<span class="hljs-title function_">createWriteStream</span>(chunkPath);
+      readStream.<span class="hljs-title function_">pipe</span>(writeStream);
+      writeStream.<span class="hljs-title function_">on</span>(<span class="hljs-string">'finish'</span>, resolve);
+      writeStream.<span class="hljs-title function_">on</span>(<span class="hljs-string">'error'</span>, reject);
+    });
+
+    chunks.<span class="hljs-title function_">push</span>(chunkPath);
+  }
+
+  <span class="hljs-keyword">return</span> chunks;
+}
+</code></pre>
+<hr></hr>
+<h2 id="八、文件监听">八、文件监听</h2>
+<blockquote>
+<p><strong>面试题：Node.js 中如何监听文件变化？<code>fs.watch</code> 和 <code>fs.watchFile</code> 有什么区别？</strong></p>
+</blockquote>
+<h3 id="81-fswatch">8.1 fs.watch</h3>
+<p>基于操作系统的文件系统事件通知（如 Linux 的 inotify、macOS 的 FSEvents），性能好但可能不够可靠：</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+
+<span class="hljs-keyword">const</span> watcher = fs.<span class="hljs-title function_">watch</span>(<span class="hljs-string">'./src'</span>, { <span class="hljs-attr">recursive</span>: <span class="hljs-literal">true</span> }, <span class="hljs-function">(<span class="hljs-params">eventType, filename</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`事件类型: <span class="hljs-subst">${eventType}</span>, 文件: <span class="hljs-subst">${filename}</span>`</span>);
+  <span class="hljs-comment">// eventType: 'rename'（创建/删除/重命名）或 'change'（内容修改）</span>
+});
+
+watcher.<span class="hljs-title function_">on</span>(<span class="hljs-string">'error'</span>, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'监听错误:'</span>, err);
+});
+
+<span class="hljs-comment">// 停止监听</span>
+<span class="hljs-comment">// watcher.close();</span>
+</code></pre>
+<h3 id="82-fswatchfile">8.2 fs.watchFile</h3>
+<p>基于轮询（polling）的方式，通过定期检查文件 stat 来检测变化。可靠性更高但性能较差：</p>
+<pre><code class="lang-javascript">fs.<span class="hljs-title function_">watchFile</span>(<span class="hljs-string">'file.txt'</span>, { <span class="hljs-attr">interval</span>: <span class="hljs-number">1000</span> }, <span class="hljs-function">(<span class="hljs-params">curr, prev</span>) =&gt;</span> {
+  <span class="hljs-keyword">if</span> (curr.<span class="hljs-property">mtime</span> !== prev.<span class="hljs-property">mtime</span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'文件已被修改'</span>);
+  }
+});
+
+<span class="hljs-comment">// 停止监听</span>
+fs.<span class="hljs-title function_">unwatchFile</span>(<span class="hljs-string">'file.txt'</span>);
+</code></pre>
+<h3 id="83-chokidar（推荐）">8.3 chokidar（推荐）</h3>
+<p>在生产环境中，推荐使用 <code>chokidar</code> 库，它解决了 <code>fs.watch</code> 的跨平台兼容性问题：</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> chokidar = <span class="hljs-built_in">require</span>(<span class="hljs-string">'chokidar'</span>);
+
+<span class="hljs-keyword">const</span> watcher = chokidar.<span class="hljs-title function_">watch</span>(<span class="hljs-string">'./src'</span>, {
+  <span class="hljs-attr">ignored</span>: <span class="hljs-regexp">/(^|[\/\\])\../</span>, <span class="hljs-comment">// 忽略点文件</span>
+  <span class="hljs-attr">persistent</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">ignoreInitial</span>: <span class="hljs-literal">true</span>,       <span class="hljs-comment">// 忽略初始扫描触发的 add 事件</span>
+  <span class="hljs-attr">awaitWriteFinish</span>: {        <span class="hljs-comment">// 等待写入完成（避免重复触发）</span>
+    <span class="hljs-attr">stabilityThreshold</span>: <span class="hljs-number">200</span>,
+    <span class="hljs-attr">pollInterval</span>: <span class="hljs-number">100</span>
+  }
+});
+
+watcher
+  .<span class="hljs-title function_">on</span>(<span class="hljs-string">'add'</span>, <span class="hljs-function">(<span class="hljs-params">path</span>) =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`文件新增: <span class="hljs-subst">${path}</span>`</span>))
+  .<span class="hljs-title function_">on</span>(<span class="hljs-string">'change'</span>, <span class="hljs-function">(<span class="hljs-params">path</span>) =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`文件修改: <span class="hljs-subst">${path}</span>`</span>))
+  .<span class="hljs-title function_">on</span>(<span class="hljs-string">'unlink'</span>, <span class="hljs-function">(<span class="hljs-params">path</span>) =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`文件删除: <span class="hljs-subst">${path}</span>`</span>))
+  .<span class="hljs-title function_">on</span>(<span class="hljs-string">'addDir'</span>, <span class="hljs-function">(<span class="hljs-params">path</span>) =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`目录新增: <span class="hljs-subst">${path}</span>`</span>))
+  .<span class="hljs-title function_">on</span>(<span class="hljs-string">'unlinkDir'</span>, <span class="hljs-function">(<span class="hljs-params">path</span>) =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`目录删除: <span class="hljs-subst">${path}</span>`</span>))
+  .<span class="hljs-title function_">on</span>(<span class="hljs-string">'error'</span>, <span class="hljs-function">(<span class="hljs-params">error</span>) =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">`监听错误: <span class="hljs-subst">${error}</span>`</span>))
+  .<span class="hljs-title function_">on</span>(<span class="hljs-string">'ready'</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'初始扫描完成'</span>));
+</code></pre>
+<h3 id="84-fswatch-vs-fswatchfile-对比">8.4 fs.watch vs fs.watchFile 对比</h3>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>fs.watch</th>
+<th>fs.watchFile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>实现方式</td>
+<td>操作系统事件通知</td>
+<td>轮询</td>
+</tr>
+<tr>
+<td>性能</td>
+<td>高</td>
+<td>低（定期轮询）</td>
+</tr>
+<tr>
+<td>可靠性</td>
+<td>平台差异较大</td>
+<td>跨平台一致</td>
+</tr>
+<tr>
+<td>支持目录</td>
+<td>是</td>
+<td>否（仅监听单个文件）</td>
+</tr>
+<tr>
+<td>网络文件系统</td>
+<td>可能不支持</td>
+<td>支持（基于轮询）</td>
+</tr>
+<tr>
+<td>CPU 占用</td>
+<td>低</td>
+<td>较高（文件多时）</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="九、path-模块常用-api">九、path 模块常用 API</h2>
+<blockquote>
+<p><strong>面试题：Node.js 的 path 模块有哪些常用方法？</strong></p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+
+<span class="hljs-comment">// path.join() - 拼接路径（自动处理分隔符和 ..）</span>
+path.<span class="hljs-title function_">join</span>(<span class="hljs-string">'/home'</span>, <span class="hljs-string">'user'</span>, <span class="hljs-string">'..'</span>, <span class="hljs-string">'admin'</span>, <span class="hljs-string">'file.txt'</span>);
+<span class="hljs-comment">// '/home/admin/file.txt'</span>
+
+<span class="hljs-comment">// path.resolve() - 解析为绝对路径（从右到左处理，遇到绝对路径停止）</span>
+path.<span class="hljs-title function_">resolve</span>(<span class="hljs-string">'src'</span>, <span class="hljs-string">'index.js'</span>);
+<span class="hljs-comment">// '/当前工作目录/src/index.js'</span>
+path.<span class="hljs-title function_">resolve</span>(<span class="hljs-string">'/home'</span>, <span class="hljs-string">'user'</span>, <span class="hljs-string">'file.txt'</span>);
+<span class="hljs-comment">// '/home/user/file.txt'</span>
+
+<span class="hljs-comment">// path.basename() - 获取文件名</span>
+path.<span class="hljs-title function_">basename</span>(<span class="hljs-string">'/home/user/file.txt'</span>);      <span class="hljs-comment">// 'file.txt'</span>
+path.<span class="hljs-title function_">basename</span>(<span class="hljs-string">'/home/user/file.txt'</span>, <span class="hljs-string">'.txt'</span>); <span class="hljs-comment">// 'file'</span>
+
+<span class="hljs-comment">// path.dirname() - 获取目录名</span>
+path.<span class="hljs-title function_">dirname</span>(<span class="hljs-string">'/home/user/file.txt'</span>);       <span class="hljs-comment">// '/home/user'</span>
+
+<span class="hljs-comment">// path.extname() - 获取扩展名</span>
+path.<span class="hljs-title function_">extname</span>(<span class="hljs-string">'file.txt'</span>);      <span class="hljs-comment">// '.txt'</span>
+path.<span class="hljs-title function_">extname</span>(<span class="hljs-string">'file.tar.gz'</span>);   <span class="hljs-comment">// '.gz'</span>
+path.<span class="hljs-title function_">extname</span>(<span class="hljs-string">'file'</span>);          <span class="hljs-comment">// ''</span>
+
+<span class="hljs-comment">// path.parse() - 解析路径为对象</span>
+path.<span class="hljs-title function_">parse</span>(<span class="hljs-string">'/home/user/file.txt'</span>);
+<span class="hljs-comment">// { root: '/', dir: '/home/user', base: 'file.txt', ext: '.txt', name: 'file' }</span>
+
+<span class="hljs-comment">// path.format() - 从对象生成路径（parse 的逆操作）</span>
+path.<span class="hljs-title function_">format</span>({ <span class="hljs-attr">dir</span>: <span class="hljs-string">'/home/user'</span>, <span class="hljs-attr">base</span>: <span class="hljs-string">'file.txt'</span> });
+<span class="hljs-comment">// '/home/user/file.txt'</span>
+
+<span class="hljs-comment">// path.isAbsolute() - 判断是否为绝对路径</span>
+path.<span class="hljs-title function_">isAbsolute</span>(<span class="hljs-string">'/home/user'</span>);  <span class="hljs-comment">// true</span>
+path.<span class="hljs-title function_">isAbsolute</span>(<span class="hljs-string">'./src'</span>);       <span class="hljs-comment">// false</span>
+
+<span class="hljs-comment">// path.relative() - 获取两个路径之间的相对路径</span>
+path.<span class="hljs-title function_">relative</span>(<span class="hljs-string">'/home/user/src'</span>, <span class="hljs-string">'/home/user/dist'</span>);
+<span class="hljs-comment">// '../dist'</span>
+
+<span class="hljs-comment">// path.normalize() - 规范化路径</span>
+path.<span class="hljs-title function_">normalize</span>(<span class="hljs-string">'/home/user/../admin/./file.txt'</span>);
+<span class="hljs-comment">// '/home/admin/file.txt'</span>
+
+<span class="hljs-comment">// path.sep - 系统路径分隔符</span>
+path.<span class="hljs-property">sep</span>; <span class="hljs-comment">// Linux/macOS: '/'   Windows: '\\'</span>
+
+<span class="hljs-comment">// path.delimiter - 环境变量路径分隔符</span>
+path.<span class="hljs-property">delimiter</span>; <span class="hljs-comment">// Linux/macOS: ':'   Windows: ';'</span>
+
+<span class="hljs-comment">// path.posix / path.win32 - 指定平台的方法</span>
+path.<span class="hljs-property">posix</span>.<span class="hljs-title function_">join</span>(<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>);   <span class="hljs-comment">// 'a/b'（始终使用 /）</span>
+path.<span class="hljs-property">win32</span>.<span class="hljs-title function_">join</span>(<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>);   <span class="hljs-comment">// 'a\\b'（始终使用 \）</span>
+</code></pre>
+<h3 id="pathjoin-vs-pathresolve-的区别">path.join vs path.resolve 的区别</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// path.join 只是简单拼接</span>
+path.<span class="hljs-title function_">join</span>(<span class="hljs-string">'src'</span>, <span class="hljs-string">'index.js'</span>);          <span class="hljs-comment">// 'src/index.js'（相对路径）</span>
+path.<span class="hljs-title function_">join</span>(<span class="hljs-string">'/home'</span>, <span class="hljs-string">'user'</span>, <span class="hljs-string">'file'</span>);    <span class="hljs-comment">// '/home/user/file'</span>
+
+<span class="hljs-comment">// path.resolve 始终返回绝对路径</span>
+path.<span class="hljs-title function_">resolve</span>(<span class="hljs-string">'src'</span>, <span class="hljs-string">'index.js'</span>);       <span class="hljs-comment">// '/cwd/src/index.js'（基于 cwd）</span>
+path.<span class="hljs-title function_">resolve</span>(<span class="hljs-string">'/home'</span>, <span class="hljs-string">'user'</span>, <span class="hljs-string">'file'</span>); <span class="hljs-comment">// '/home/user/file'</span>
+
+<span class="hljs-comment">// 关键区别：处理以 / 开头的片段</span>
+path.<span class="hljs-title function_">join</span>(<span class="hljs-string">'/home'</span>, <span class="hljs-string">'/user'</span>);    <span class="hljs-comment">// '/home/user'（简单拼接）</span>
+path.<span class="hljs-title function_">resolve</span>(<span class="hljs-string">'/home'</span>, <span class="hljs-string">'/user'</span>); <span class="hljs-comment">// '/user'（遇到绝对路径重新开始）</span>
+</code></pre>
+<hr></hr>
+<h2 id="十、处理-csvjson-大文件的最佳实践">十、处理 CSV/JSON 大文件的最佳实践</h2>
+<blockquote>
+<p><strong>面试题：如何在 Node.js 中高效处理大型 CSV 和 JSON 文件？</strong></p>
+</blockquote>
+<h3 id="101-处理大型-csv-文件">10.1 处理大型 CSV 文件</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+<span class="hljs-keyword">const</span> { <span class="hljs-title class_">Transform</span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'stream'</span>);
+<span class="hljs-keyword">const</span> { pipeline } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'stream/promises'</span>);
+
+<span class="hljs-comment">// 方式1：使用 csv-parser 库（推荐）</span>
+<span class="hljs-keyword">const</span> csv = <span class="hljs-built_in">require</span>(<span class="hljs-string">'csv-parser'</span>);
+
+<span class="hljs-keyword">const</span> results = [];
+fs.<span class="hljs-title function_">createReadStream</span>(<span class="hljs-string">'large-data.csv'</span>)
+  .<span class="hljs-title function_">pipe</span>(<span class="hljs-title function_">csv</span>())
+  .<span class="hljs-title function_">on</span>(<span class="hljs-string">'data'</span>, <span class="hljs-function">(<span class="hljs-params">row</span>) =&gt;</span> {
+    <span class="hljs-comment">// 逐行处理</span>
+    <span class="hljs-keyword">if</span> (row.<span class="hljs-property">amount</span> &gt; <span class="hljs-number">1000</span>) {
+      results.<span class="hljs-title function_">push</span>(row);
+    }
+  })
+  .<span class="hljs-title function_">on</span>(<span class="hljs-string">'end'</span>, <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`筛选出 <span class="hljs-subst">${results.length}</span> 条记录`</span>);
+  });
+
+<span class="hljs-comment">// 方式2：手动实现 CSV 解析的 Transform 流</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">CsvParser</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Transform</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">options = {}</span>) {
+    <span class="hljs-variable language_">super</span>({ ...options, <span class="hljs-attr">objectMode</span>: <span class="hljs-literal">true</span> });
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">headers</span> = <span class="hljs-literal">null</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">buffer</span> = <span class="hljs-string">''</span>;
+  }
+
+  <span class="hljs-title function_">_transform</span>(<span class="hljs-params">chunk, encoding, callback</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">buffer</span> += chunk.<span class="hljs-title function_">toString</span>();
+    <span class="hljs-keyword">const</span> lines = <span class="hljs-variable language_">this</span>.<span class="hljs-property">buffer</span>.<span class="hljs-title function_">split</span>(<span class="hljs-string">'\n'</span>);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">buffer</span> = lines.<span class="hljs-title function_">pop</span>(); <span class="hljs-comment">// 保留最后一个不完整的行</span>
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> line <span class="hljs-keyword">of</span> lines) {
+      <span class="hljs-keyword">if</span> (!line.<span class="hljs-title function_">trim</span>()) <span class="hljs-keyword">continue</span>;
+      <span class="hljs-keyword">if</span> (!<span class="hljs-variable language_">this</span>.<span class="hljs-property">headers</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">headers</span> = line.<span class="hljs-title function_">split</span>(<span class="hljs-string">','</span>).<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">h</span> =&gt;</span> h.<span class="hljs-title function_">trim</span>());
+        <span class="hljs-keyword">continue</span>;
+      }
+      <span class="hljs-keyword">const</span> values = line.<span class="hljs-title function_">split</span>(<span class="hljs-string">','</span>);
+      <span class="hljs-keyword">const</span> obj = {};
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">headers</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">h, i</span>) =&gt;</span> { obj[h] = values[i]?.<span class="hljs-title function_">trim</span>(); });
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">push</span>(obj);
+    }
+    <span class="hljs-title function_">callback</span>();
+  }
+
+  <span class="hljs-title function_">_flush</span>(<span class="hljs-params">callback</span>) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">buffer</span>.<span class="hljs-title function_">trim</span>() &amp;&amp; <span class="hljs-variable language_">this</span>.<span class="hljs-property">headers</span>) {
+      <span class="hljs-keyword">const</span> values = <span class="hljs-variable language_">this</span>.<span class="hljs-property">buffer</span>.<span class="hljs-title function_">split</span>(<span class="hljs-string">','</span>);
+      <span class="hljs-keyword">const</span> obj = {};
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">headers</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">h, i</span>) =&gt;</span> { obj[h] = values[i]?.<span class="hljs-title function_">trim</span>(); });
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">push</span>(obj);
+    }
+    <span class="hljs-title function_">callback</span>();
+  }
+}
+
+<span class="hljs-comment">// 方式3：CSV 写入</span>
+<span class="hljs-keyword">const</span> { stringify } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'csv-stringify'</span>);
+
+<span class="hljs-keyword">const</span> data = [
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">30</span> },
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">'Bob'</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">25</span> }
+];
+
+<span class="hljs-keyword">const</span> stringifier = <span class="hljs-title function_">stringify</span>({ <span class="hljs-attr">header</span>: <span class="hljs-literal">true</span> });
+stringifier.<span class="hljs-title function_">pipe</span>(fs.<span class="hljs-title function_">createWriteStream</span>(<span class="hljs-string">'output.csv'</span>));
+
+data.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">row</span> =&gt;</span> stringifier.<span class="hljs-title function_">write</span>(row));
+stringifier.<span class="hljs-title function_">end</span>();
+</code></pre>
+<h3 id="102-处理大型-json-文件">10.2 处理大型 JSON 文件</h3>
+<p>对于大型 JSON 文件，不能使用 <code>JSON.parse()</code> 一次性解析（内存不足），应使用流式 JSON 解析器：</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 方式1：使用 JSONStream 库</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">JSON</span>Stream = <span class="hljs-built_in">require</span>(<span class="hljs-string">'JSONStream'</span>);
+
+<span class="hljs-comment">// 假设 JSON 结构为 { "users": [ {...}, {...}, ... ] }</span>
+fs.<span class="hljs-title function_">createReadStream</span>(<span class="hljs-string">'huge-data.json'</span>)
+  .<span class="hljs-title function_">pipe</span>(<span class="hljs-title class_">JSON</span>Stream.<span class="hljs-title function_">parse</span>(<span class="hljs-string">'users.*'</span>))
+  .<span class="hljs-title function_">on</span>(<span class="hljs-string">'data'</span>, <span class="hljs-function">(<span class="hljs-params">user</span>) =&gt;</span> {
+    <span class="hljs-comment">// 逐个处理 user 对象</span>
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(user.<span class="hljs-property">name</span>);
+  })
+  .<span class="hljs-title function_">on</span>(<span class="hljs-string">'end'</span>, <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'处理完成'</span>);
+  });
+
+<span class="hljs-comment">// 方式2：使用 stream-json 库（更强大）</span>
+<span class="hljs-keyword">const</span> { parser } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'stream-json'</span>);
+<span class="hljs-keyword">const</span> { streamArray } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'stream-json/streamers/StreamArray'</span>);
+
+<span class="hljs-keyword">const</span> jsonPipeline = fs.<span class="hljs-title function_">createReadStream</span>(<span class="hljs-string">'huge-array.json'</span>)
+  .<span class="hljs-title function_">pipe</span>(<span class="hljs-title function_">parser</span>())
+  .<span class="hljs-title function_">pipe</span>(<span class="hljs-title function_">streamArray</span>());
+
+jsonPipeline.<span class="hljs-title function_">on</span>(<span class="hljs-string">'data'</span>, <span class="hljs-function">(<span class="hljs-params">{ key, value }</span>) =&gt;</span> {
+  <span class="hljs-comment">// key 是数组索引，value 是元素</span>
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`第 <span class="hljs-subst">${key}</span> 个元素:`</span>, value);
+});
+
+<span class="hljs-comment">// 方式3：NDJSON（Newline Delimited JSON）- 每行一个 JSON 对象</span>
+<span class="hljs-comment">// 这是处理大量 JSON 数据的最佳格式</span>
+<span class="hljs-keyword">const</span> readline = <span class="hljs-built_in">require</span>(<span class="hljs-string">'readline'</span>);
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">processNDJSON</span>(<span class="hljs-params">filePath</span>) {
+  <span class="hljs-keyword">const</span> rl = readline.<span class="hljs-title function_">createInterface</span>({
+    <span class="hljs-attr">input</span>: fs.<span class="hljs-title function_">createReadStream</span>(filePath),
+    <span class="hljs-attr">crlfDelay</span>: <span class="hljs-title class_">Infinity</span>
+  });
+
+  <span class="hljs-keyword">let</span> count = <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">for</span> <span class="hljs-title function_">await</span> (<span class="hljs-keyword">const</span> line <span class="hljs-keyword">of</span> rl) {
+    <span class="hljs-keyword">if</span> (line.<span class="hljs-title function_">trim</span>()) {
+      <span class="hljs-keyword">const</span> obj = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(line);
+      count++;
+      <span class="hljs-comment">// 处理每个对象</span>
+    }
+  }
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`处理了 <span class="hljs-subst">${count}</span> 条记录`</span>);
+}
+
+<span class="hljs-comment">// 方式4：大型 JSON 写入（流式）</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">JsonArrayWriter</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">filePath</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">stream</span> = fs.<span class="hljs-title function_">createWriteStream</span>(filePath);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">first</span> = <span class="hljs-literal">true</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">stream</span>.<span class="hljs-title function_">write</span>(<span class="hljs-string">'[\n'</span>);
+  }
+
+  <span class="hljs-title function_">write</span>(<span class="hljs-params">obj</span>) {
+    <span class="hljs-keyword">if</span> (!<span class="hljs-variable language_">this</span>.<span class="hljs-property">first</span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">stream</span>.<span class="hljs-title function_">write</span>(<span class="hljs-string">',\n'</span>);
+    }
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">first</span> = <span class="hljs-literal">false</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">stream</span>.<span class="hljs-title function_">write</span>(<span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(obj));
+  }
+
+  <span class="hljs-title function_">end</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">stream</span>.<span class="hljs-title function_">write</span>(<span class="hljs-string">'\n]'</span>);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">stream</span>.<span class="hljs-title function_">end</span>();
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve</span>) =&gt;</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">stream</span>.<span class="hljs-title function_">on</span>(<span class="hljs-string">'finish'</span>, resolve));
+  }
+}
+
+<span class="hljs-keyword">const</span> writer = <span class="hljs-keyword">new</span> <span class="hljs-title class_">JsonArrayWriter</span>(<span class="hljs-string">'output.json'</span>);
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">1000000</span>; i++) {
+  writer.<span class="hljs-title function_">write</span>({ <span class="hljs-attr">id</span>: i, <span class="hljs-attr">name</span>: <span class="hljs-string">`user_<span class="hljs-subst">${i}</span>`</span> });
+}
+<span class="hljs-keyword">await</span> writer.<span class="hljs-title function_">end</span>();
+</code></pre>
+<hr></hr>
+<h2 id="常见面试题汇总">常见面试题汇总</h2>
+<blockquote>
+<p><strong>Q：<code>fs.readFile</code> 和 <code>fs.createReadStream</code> 有什么区别？什么时候使用哪个？</strong></p>
+</blockquote>
+<p><code>fs.readFile</code> 将整个文件读入内存后返回，适合小文件。<code>fs.createReadStream</code> 以流的方式分块读取，适合大文件。当文件大于可用内存或需要逐步处理时，必须使用流。一般原则：文件小于 100MB 可以用 <code>readFile</code>，大于 100MB 建议用流。</p>
+<blockquote>
+<p><strong>Q：流的 <code>data</code> 事件和 <code>readable</code> 事件有什么区别？</strong></p>
+</blockquote>
+<p><code>data</code> 事件在流动模式下触发，每当有数据可读时自动触发，数据以参数形式传递给回调函数。<code>readable</code> 事件在暂停模式下触发，通知消费者有数据可读，需要手动调用 <code>read()</code> 方法来获取数据。不要同时使用两者。</p>
+<blockquote>
+<p><strong>Q：为什么 <code>pipe()</code> 不会导致内存溢出？</strong></p>
+</blockquote>
+<p><code>pipe()</code> 内部实现了背压机制。当可写流的缓冲区满了（<code>write()</code> 返回 <code>false</code>）时，<code>pipe()</code> 会自动调用可读流的 <code>pause()</code> 暂停数据读取。当可写流触发 <code>drain</code> 事件（缓冲区排空）时，<code>pipe()</code> 会自动调用 <code>resume()</code> 恢复读取。这样确保了内存中始终只保留有限的数据。</p>
+<blockquote>
+<p><strong>Q：如何实现一个文件的逐行读取？</strong></p>
+</blockquote>
+<p>使用 <code>readline</code> 模块配合 <code>createReadStream</code>：创建一个 readline 接口，将文件流作为输入。可以通过 <code>for await...of</code> 遍历每一行，也可以监听 <code>line</code> 事件。这种方式内存效率高，适合处理大文件。</p>
+<blockquote>
+<p><strong>Q：<code>path.join</code> 和 <code>path.resolve</code> 的区别？</strong></p>
+</blockquote>
+<p><code>path.join</code> 只是将多个路径片段用系统分隔符拼接起来，结果可能是相对路径。<code>path.resolve</code> 从右到左解析路径，始终返回绝对路径（如果所有参数都是相对路径，则以 <code>process.cwd()</code> 为基准）。处理以 <code>/</code> 开头的中间路径时，<code>join</code> 会保留前面的路径，而 <code>resolve</code> 会将其视为新的根路径。</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="event-loop.html" class="navigation navigation-prev " aria-label="Previous page: 事件循环">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="frameworks.html" class="navigation navigation-next " aria-label="Next page: 常用框架">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"流与文件系统","level":"3.3","depth":1,"next":{"title":"常用框架","level":"3.4","depth":1,"path":"nodejs/frameworks.md","ref":"nodejs/frameworks.md","articles":[]},"previous":{"title":"事件循环","level":"3.2","depth":1,"path":"nodejs/event-loop.md","ref":"nodejs/event-loop.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"nodejs/stream.md","mtime":"2026-03-31T06:35:11.840Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

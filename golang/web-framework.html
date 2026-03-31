@@ -1,0 +1,1516 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Web框架与HTTP · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="database-design.html" />
+    
+    
+    <link rel="prev" href="memory.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../frontend/html-css.html">
+            
+                <a href="../frontend/html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../frontend/javascript.html">
+            
+                <a href="../frontend/javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../frontend/typescript.html">
+            
+                <a href="../frontend/typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../frontend/browser.html">
+            
+                <a href="../frontend/browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../frontend/network.html">
+            
+                <a href="../frontend/network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../frontend/react.html">
+            
+                <a href="../frontend/react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../frontend/vue.html">
+            
+                <a href="../frontend/vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../frontend/engineering.html">
+            
+                <a href="../frontend/engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../frontend/performance.html">
+            
+                <a href="../frontend/performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../frontend/security.html">
+            
+                <a href="../frontend/security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../nodejs/basics.html">
+            
+                <a href="../nodejs/basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../nodejs/event-loop.html">
+            
+                <a href="../nodejs/event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../nodejs/stream.html">
+            
+                <a href="../nodejs/stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../nodejs/frameworks.html">
+            
+                <a href="../nodejs/frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../nodejs/database.html">
+            
+                <a href="../nodejs/database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../nodejs/practice.html">
+            
+                <a href="../nodejs/practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="basics.html">
+            
+                <a href="basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="concurrency.html">
+            
+                <a href="concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="memory.html">
+            
+                <a href="memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.4" data-path="web-framework.html">
+            
+                <a href="web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="database-design.html">
+            
+                <a href="database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="testing-practice.html">
+            
+                <a href="testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../agent/llm-basics.html">
+            
+                <a href="../agent/llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../agent/prompt-engineering.html">
+            
+                <a href="../agent/prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../agent/rag.html">
+            
+                <a href="../agent/rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../agent/agent-architecture.html">
+            
+                <a href="../agent/agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../agent/tool-calling.html">
+            
+                <a href="../agent/tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../agent/practice.html">
+            
+                <a href="../agent/practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Web框架与HTTP</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="go-web框架与http面试指南">Go Web框架与HTTP面试指南</h1>
+<h2 id="一、nethttp-标准库">一、net/http 标准库</h2>
+<h3 id="11-基本用法">1.1 基本用法</h3>
+<p>Go 标准库 <code>net/http</code> 功能强大，很多生产项目直接使用它而无需第三方框架。</p>
+<pre><code class="lang-go"><span class="hljs-comment">// 最简 HTTP 服务器</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+    http.HandleFunc(<span class="hljs-string">"/hello"</span>, <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(w http.ResponseWriter, r *http.Request)</span></span> {
+        fmt.Fprintf(w, <span class="hljs-string">"Hello, World!"</span>)
+    })
+    http.ListenAndServe(<span class="hljs-string">":8080"</span>, <span class="hljs-literal">nil</span>)
+}
+</code></pre>
+<h3 id="12-核心接口">1.2 核心接口</h3>
+<blockquote>
+<p><strong>面试题：net/http 的 Handler 接口是什么？DefaultServeMux 是什么？</strong></p>
+</blockquote>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Handler <span class="hljs-keyword">interface</span> {
+    ServeHTTP(ResponseWriter, *Request)
+}
+</code></pre>
+<p>所有 HTTP 处理逻辑都围绕 <code>Handler</code> 接口展开。任何实现了 <code>ServeHTTP</code> 方法的类型都可以作为 HTTP 处理器。</p>
+<p><code>HandlerFunc</code> 是一个适配器，让普通函数满足 Handler 接口：</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> HandlerFunc <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(ResponseWriter, *Request)</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(f HandlerFunc)</span></span> ServeHTTP(w ResponseWriter, r *Request) {
+    f(w, r)
+}
+</code></pre>
+<p><code>DefaultServeMux</code> 是默认的路由多路复用器。当 <code>http.ListenAndServe</code> 的第二个参数为 nil 时使用。生产环境建议显式创建 <code>ServeMux</code> 或使用第三方路由器。</p>
+<h3 id="13-servemux-路由匹配">1.3 ServeMux 路由匹配</h3>
+<p>标准 ServeMux 使用最长前缀匹配：</p>
+<ul>
+<li><code>/</code> 匹配所有未匹配的路径</li>
+<li><code>/api/</code> 匹配 <code>/api/</code> 前缀的所有路径</li>
+<li><code>/api/users</code> 精确匹配</li>
+</ul>
+<p><strong>Go 1.22+ 增强路由：</strong></p>
+<pre><code class="lang-go">mux := http.NewServeMux()
+mux.HandleFunc(<span class="hljs-string">"GET /api/users/{id}"</span>, getUser)    <span class="hljs-comment">// 方法+路径参数</span>
+mux.HandleFunc(<span class="hljs-string">"POST /api/users"</span>, createUser)
+mux.HandleFunc(<span class="hljs-string">"GET /api/users/{id}/posts/{postID}"</span>, getUserPost)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">getUser</span><span class="hljs-params">(w http.ResponseWriter, r *http.Request)</span></span> {
+    id := r.PathValue(<span class="hljs-string">"id"</span>)  <span class="hljs-comment">// 获取路径参数</span>
+}
+</code></pre>
+<h3 id="14-http-server-内部流程">1.4 HTTP Server 内部流程</h3>
+<pre><code>客户端请求 → Listener.Accept()
+           → 为每个连接创建一个 goroutine
+           → conn.serve()
+           → 读取请求 → 路由匹配 → 调用 Handler.ServeHTTP()
+           → 写入响应
+</code></pre><p>每个 HTTP 连接对应一个 goroutine，这是 Go HTTP 服务器的并发模型。</p>
+<h3 id="15-httpclient-与连接池">1.5 http.Client 与连接池</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 默认 Client 使用 DefaultTransport，包含连接池</span>
+client := &amp;http.Client{
+    Timeout: <span class="hljs-number">10</span> * time.Second,
+    Transport: &amp;http.Transport{
+        MaxIdleConns:        <span class="hljs-number">100</span>,
+        MaxIdleConnsPerHost: <span class="hljs-number">10</span>,
+        IdleConnTimeout:     <span class="hljs-number">90</span> * time.Second,
+    },
+}
+</code></pre>
+<blockquote>
+<p><strong>面试题：http.Client 使用时有哪些常见错误？</strong></p>
+</blockquote>
+<ol>
+<li><strong>不复用 Client</strong>：每次请求创建新 Client 导致连接无法复用</li>
+<li><strong>不读取完 Response Body</strong>：连接不会被归还到连接池</li>
+<li><strong>不关闭 Response Body</strong>：内存泄漏</li>
+</ol>
+<pre><code class="lang-go">resp, err := client.Get(url)
+<span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+    <span class="hljs-keyword">return</span> err
+}
+<span class="hljs-keyword">defer</span> resp.Body.Close()
+<span class="hljs-comment">// 即使不需要 body 内容，也必须读取并丢弃</span>
+io.Copy(io.Discard, resp.Body)
+</code></pre>
+<hr></hr>
+<h2 id="二、gin-框架详解">二、Gin 框架详解</h2>
+<blockquote>
+<p><strong>面试题：Gin 框架的核心特性是什么？与标准库相比有什么优势？</strong></p>
+</blockquote>
+<h3 id="21-核心特性">2.1 核心特性</h3>
+<ul>
+<li><strong>高性能路由</strong>：基于 Radix Tree（压缩前缀树），路由匹配 O(n) n 为路径长度</li>
+<li><strong>中间件支持</strong>：洋葱模型的中间件链</li>
+<li><strong>参数绑定</strong>：自动绑定 JSON/XML/Form 到结构体</li>
+<li><strong>验证</strong>：集成 <code>go-playground/validator</code></li>
+<li><strong>错误管理</strong>：集中式错误处理</li>
+<li><strong>渲染</strong>：支持 JSON/XML/HTML/YAML 等多种响应格式</li>
+</ul>
+<h3 id="22-基本使用">2.2 基本使用</h3>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+    r := gin.Default() <span class="hljs-comment">// 包含 Logger 和 Recovery 中间件</span>
+
+    r.GET(<span class="hljs-string">"/users/:id"</span>, getUser)
+    r.POST(<span class="hljs-string">"/users"</span>, createUser)
+
+    <span class="hljs-comment">// 路由组</span>
+    api := r.Group(<span class="hljs-string">"/api/v1"</span>)
+    api.Use(AuthMiddleware())
+    {
+        api.GET(<span class="hljs-string">"/users"</span>, listUsers)
+        api.PUT(<span class="hljs-string">"/users/:id"</span>, updateUser)
+    }
+
+    r.Run(<span class="hljs-string">":8080"</span>)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">getUser</span><span class="hljs-params">(c *gin.Context)</span></span> {
+    id := c.Param(<span class="hljs-string">"id"</span>)           <span class="hljs-comment">// 路径参数</span>
+    name := c.Query(<span class="hljs-string">"name"</span>)       <span class="hljs-comment">// 查询参数</span>
+    page := c.DefaultQuery(<span class="hljs-string">"page"</span>, <span class="hljs-string">"1"</span>)
+
+    c.JSON(http.StatusOK, gin.H{
+        <span class="hljs-string">"id"</span>:   id,
+        <span class="hljs-string">"name"</span>: name,
+        <span class="hljs-string">"page"</span>: page,
+    })
+}
+</code></pre>
+<h3 id="23-参数绑定与验证">2.3 参数绑定与验证</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> CreateUserReq <span class="hljs-keyword">struct</span> {
+    Name  <span class="hljs-type">string</span> <span class="hljs-string">`json:"name" binding:"required,min=2,max=50"`</span>
+    Email <span class="hljs-type">string</span> <span class="hljs-string">`json:"email" binding:"required,email"`</span>
+    Age   <span class="hljs-type">int</span>    <span class="hljs-string">`json:"age" binding:"gte=0,lte=150"`</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">createUser</span><span class="hljs-params">(c *gin.Context)</span></span> {
+    <span class="hljs-keyword">var</span> req CreateUserReq
+    <span class="hljs-keyword">if</span> err := c.ShouldBindJSON(&amp;req); err != <span class="hljs-literal">nil</span> {
+        c.JSON(http.StatusBadRequest, gin.H{<span class="hljs-string">"error"</span>: err.Error()})
+        <span class="hljs-keyword">return</span>
+    }
+    <span class="hljs-comment">// 处理请求</span>
+}
+</code></pre>
+<h3 id="24-gin-中间件">2.4 Gin 中间件</h3>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">LoggerMiddleware</span><span class="hljs-params">()</span></span> gin.HandlerFunc {
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(c *gin.Context)</span></span> {
+        start := time.Now()
+
+        <span class="hljs-comment">// 请求前</span>
+        c.Next() <span class="hljs-comment">// 执行后续处理器</span>
+
+        <span class="hljs-comment">// 请求后</span>
+        latency := time.Since(start)
+        status := c.Writer.Status()
+        log.Printf(<span class="hljs-string">"[%d] %s %s %v"</span>, status, c.Request.Method, c.Request.URL.Path, latency)
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">AuthMiddleware</span><span class="hljs-params">()</span></span> gin.HandlerFunc {
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(c *gin.Context)</span></span> {
+        token := c.GetHeader(<span class="hljs-string">"Authorization"</span>)
+        <span class="hljs-keyword">if</span> token == <span class="hljs-string">""</span> {
+            c.AbortWithStatusJSON(http.StatusUnauthorized, gin.H{<span class="hljs-string">"error"</span>: <span class="hljs-string">"unauthorized"</span>})
+            <span class="hljs-keyword">return</span> <span class="hljs-comment">// Abort 后不会执行后续处理器</span>
+        }
+        c.Set(<span class="hljs-string">"userID"</span>, parseToken(token))
+        c.Next()
+    }
+}
+</code></pre>
+<h3 id="25-gin-的-context">2.5 Gin 的 Context</h3>
+<p><code>gin.Context</code> 是 Gin 的核心，贯穿整个请求生命周期：</p>
+<pre><code class="lang-go"><span class="hljs-comment">// 数据传递</span>
+c.Set(<span class="hljs-string">"key"</span>, value)
+val, exists := c.Get(<span class="hljs-string">"key"</span>)
+
+<span class="hljs-comment">// 请求信息</span>
+c.Request        <span class="hljs-comment">// *http.Request</span>
+c.Writer         <span class="hljs-comment">// gin.ResponseWriter</span>
+c.Param(<span class="hljs-string">"id"</span>)   <span class="hljs-comment">// 路径参数</span>
+c.Query(<span class="hljs-string">"q"</span>)    <span class="hljs-comment">// 查询参数</span>
+c.PostForm(<span class="hljs-string">"f"</span>) <span class="hljs-comment">// 表单参数</span>
+c.GetHeader(<span class="hljs-string">"h"</span>) <span class="hljs-comment">// 请求头</span>
+
+<span class="hljs-comment">// 响应</span>
+c.JSON(code, obj)
+c.String(code, format, values...)
+c.HTML(code, name, data)
+c.File(filepath)
+
+<span class="hljs-comment">// 流程控制</span>
+c.Next()    <span class="hljs-comment">// 执行下一个处理器</span>
+c.Abort()   <span class="hljs-comment">// 终止后续处理器</span>
+</code></pre>
+<hr></hr>
+<h2 id="三、grpc-详解">三、gRPC 详解</h2>
+<blockquote>
+<p><strong>面试题：gRPC 与 REST 有什么区别？gRPC 有哪四种调用模式？</strong></p>
+</blockquote>
+<h3 id="31-grpc-概述">3.1 gRPC 概述</h3>
+<p>gRPC 是 Google 开源的高性能 RPC 框架：</p>
+<ul>
+<li>使用 <strong>Protocol Buffers</strong> 作为 IDL（接口定义语言）和序列化格式</li>
+<li>基于 <strong>HTTP/2</strong> 协议（多路复用、头部压缩、双向流）</li>
+<li>支持多种语言</li>
+<li>比 JSON + HTTP/1.1 更高效（二进制编码、更小的体积）</li>
+</ul>
+<h3 id="32-protocol-buffers">3.2 Protocol Buffers</h3>
+<pre><code class="lang-protobuf">syntax = <span class="hljs-string">"proto3"</span>;
+<span class="hljs-keyword">package</span> user;
+
+<span class="hljs-keyword">option</span> go_package = <span class="hljs-string">"pb/user"</span>;
+
+<span class="hljs-keyword">service </span><span class="hljs-title class_">UserService</span> {
+    <span class="hljs-function"><span class="hljs-keyword">rpc</span> GetUser(GetUserRequest) <span class="hljs-keyword">returns</span> (GetUserResponse)</span>;
+    <span class="hljs-function"><span class="hljs-keyword">rpc</span> ListUsers(ListUsersRequest) <span class="hljs-keyword">returns</span> (stream User)</span>;
+    <span class="hljs-function"><span class="hljs-keyword">rpc</span> CreateUsers(stream CreateUserRequest) <span class="hljs-keyword">returns</span> (CreateUsersResponse)</span>;
+    <span class="hljs-function"><span class="hljs-keyword">rpc</span> Chat(stream ChatMessage) <span class="hljs-keyword">returns</span> (stream ChatMessage)</span>;
+}
+
+<span class="hljs-keyword">message </span><span class="hljs-title class_">User</span> {
+    <span class="hljs-type">int64</span> id = <span class="hljs-number">1</span>;
+    <span class="hljs-type">string</span> name = <span class="hljs-number">2</span>;
+    <span class="hljs-type">string</span> email = <span class="hljs-number">3</span>;
+    <span class="hljs-keyword">repeated</span> <span class="hljs-type">string</span> tags = <span class="hljs-number">4</span>;
+}
+
+<span class="hljs-keyword">message </span><span class="hljs-title class_">GetUserRequest</span> {
+    <span class="hljs-type">int64</span> id = <span class="hljs-number">1</span>;
+}
+
+<span class="hljs-keyword">message </span><span class="hljs-title class_">GetUserResponse</span> {
+    User user = <span class="hljs-number">1</span>;
+}
+</code></pre>
+<h3 id="33-四种调用模式">3.3 四种调用模式</h3>
+<p><strong>1. Unary RPC（一元调用）：</strong> 最基本的请求-响应模式</p>
+<pre><code class="lang-go"><span class="hljs-comment">// 服务端</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *server)</span></span> GetUser(ctx context.Context, req *pb.GetUserRequest) (*pb.GetUserResponse, <span class="hljs-type">error</span>) {
+    user, err := s.db.FindUser(req.Id)
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, status.Errorf(codes.NotFound, <span class="hljs-string">"user not found: %v"</span>, err)
+    }
+    <span class="hljs-keyword">return</span> &amp;pb.GetUserResponse{User: user}, <span class="hljs-literal">nil</span>
+}
+
+<span class="hljs-comment">// 客户端</span>
+resp, err := client.GetUser(ctx, &amp;pb.GetUserRequest{Id: <span class="hljs-number">1</span>})
+</code></pre>
+<p><strong>2. Server Streaming（服务端流）：</strong> 客户端发一个请求，服务端返回一个流</p>
+<pre><code class="lang-go"><span class="hljs-comment">// 服务端</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *server)</span></span> ListUsers(req *pb.ListUsersRequest, stream pb.UserService_ListUsersServer) <span class="hljs-type">error</span> {
+    <span class="hljs-keyword">for</span> _, user := <span class="hljs-keyword">range</span> users {
+        <span class="hljs-keyword">if</span> err := stream.Send(user); err != <span class="hljs-literal">nil</span> {
+            <span class="hljs-keyword">return</span> err
+        }
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
+}
+
+<span class="hljs-comment">// 客户端</span>
+stream, err := client.ListUsers(ctx, req)
+<span class="hljs-keyword">for</span> {
+    user, err := stream.Recv()
+    <span class="hljs-keyword">if</span> err == io.EOF { <span class="hljs-keyword">break</span> }
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> { <span class="hljs-keyword">return</span> err }
+    fmt.Println(user)
+}
+</code></pre>
+<p><strong>3. Client Streaming（客户端流）：</strong> 客户端发送流，服务端返回一个响应</p>
+<pre><code class="lang-go"><span class="hljs-comment">// 服务端</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *server)</span></span> CreateUsers(stream pb.UserService_CreateUsersServer) <span class="hljs-type">error</span> {
+    <span class="hljs-keyword">var</span> count <span class="hljs-type">int</span>
+    <span class="hljs-keyword">for</span> {
+        req, err := stream.Recv()
+        <span class="hljs-keyword">if</span> err == io.EOF {
+            <span class="hljs-keyword">return</span> stream.SendAndClose(&amp;pb.CreateUsersResponse{Count: <span class="hljs-type">int32</span>(count)})
+        }
+        <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> { <span class="hljs-keyword">return</span> err }
+        <span class="hljs-comment">// 处理 req</span>
+        count++
+    }
+}
+</code></pre>
+<p><strong>4. Bidirectional Streaming（双向流）：</strong> 双方同时发送流</p>
+<pre><code class="lang-go"><span class="hljs-comment">// 服务端</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *server)</span></span> Chat(stream pb.UserService_ChatServer) <span class="hljs-type">error</span> {
+    <span class="hljs-keyword">for</span> {
+        msg, err := stream.Recv()
+        <span class="hljs-keyword">if</span> err == io.EOF { <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span> }
+        <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> { <span class="hljs-keyword">return</span> err }
+        <span class="hljs-comment">// 处理并回复</span>
+        stream.Send(&amp;pb.ChatMessage{Text: <span class="hljs-string">"reply: "</span> + msg.Text})
+    }
+}
+</code></pre>
+<h3 id="34-grpc-拦截器（interceptor）">3.4 gRPC 拦截器（Interceptor）</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 一元拦截器</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">unaryInterceptor</span><span class="hljs-params">(
+    ctx context.Context,
+    req <span class="hljs-keyword">interface</span>{},
+    info *grpc.UnaryServerInfo,
+    handler grpc.UnaryHandler,
+)</span></span> (<span class="hljs-keyword">interface</span>{}, <span class="hljs-type">error</span>) {
+    start := time.Now()
+    <span class="hljs-comment">// 前处理</span>
+    log.Printf(<span class="hljs-string">"gRPC method: %s"</span>, info.FullMethod)
+
+    resp, err := handler(ctx, req) <span class="hljs-comment">// 执行实际处理</span>
+
+    <span class="hljs-comment">// 后处理</span>
+    log.Printf(<span class="hljs-string">"gRPC method: %s, duration: %v, error: %v"</span>,
+        info.FullMethod, time.Since(start), err)
+    <span class="hljs-keyword">return</span> resp, err
+}
+
+<span class="hljs-comment">// 注册拦截器</span>
+server := grpc.NewServer(
+    grpc.UnaryInterceptor(unaryInterceptor),
+    grpc.StreamInterceptor(streamInterceptor),
+    <span class="hljs-comment">// 多个拦截器使用 ChainUnaryInterceptor</span>
+    grpc.ChainUnaryInterceptor(authInterceptor, logInterceptor, recoveryInterceptor),
+)
+</code></pre>
+<h3 id="35-grpc-错误处理">3.5 gRPC 错误处理</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> <span class="hljs-string">"google.golang.org/grpc/status"</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">"google.golang.org/grpc/codes"</span>
+
+<span class="hljs-comment">// 返回 gRPC 错误</span>
+<span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, status.Errorf(codes.NotFound, <span class="hljs-string">"user %d not found"</span>, id)
+<span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, status.Errorf(codes.InvalidArgument, <span class="hljs-string">"invalid email format"</span>)
+<span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, status.Errorf(codes.Internal, <span class="hljs-string">"database error: %v"</span>, err)
+
+<span class="hljs-comment">// 客户端处理</span>
+resp, err := client.GetUser(ctx, req)
+<span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+    st, ok := status.FromError(err)
+    <span class="hljs-keyword">if</span> ok {
+        fmt.Println(<span class="hljs-string">"Code:"</span>, st.Code())
+        fmt.Println(<span class="hljs-string">"Message:"</span>, st.Message())
+    }
+}
+</code></pre>
+<hr></hr>
+<h2 id="四、中间件实现原理">四、中间件实现原理</h2>
+<blockquote>
+<p><strong>面试题：HTTP 中间件的本质是什么？Gin 的中间件链是如何实现的？</strong></p>
+</blockquote>
+<h3 id="41-中间件本质">4.1 中间件本质</h3>
+<p>中间件本质上是<strong>装饰器模式</strong>的应用，通过包装 Handler 在请求处理前后添加逻辑。</p>
+<h3 id="42-标准库中间件">4.2 标准库中间件</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 标准库中间件就是 Handler 的包装函数</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">loggingMiddleware</span><span class="hljs-params">(next http.Handler)</span></span> http.Handler {
+    <span class="hljs-keyword">return</span> http.HandlerFunc(<span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(w http.ResponseWriter, r *http.Request)</span></span> {
+        start := time.Now()
+        next.ServeHTTP(w, r)
+        log.Printf(<span class="hljs-string">"%s %s %v"</span>, r.Method, r.URL.Path, time.Since(start))
+    })
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">authMiddleware</span><span class="hljs-params">(next http.Handler)</span></span> http.Handler {
+    <span class="hljs-keyword">return</span> http.HandlerFunc(<span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(w http.ResponseWriter, r *http.Request)</span></span> {
+        token := r.Header.Get(<span class="hljs-string">"Authorization"</span>)
+        <span class="hljs-keyword">if</span> token == <span class="hljs-string">""</span> {
+            http.Error(w, <span class="hljs-string">"Unauthorized"</span>, http.StatusUnauthorized)
+            <span class="hljs-keyword">return</span>
+        }
+        next.ServeHTTP(w, r)
+    })
+}
+
+<span class="hljs-comment">// 链式组合</span>
+handler := loggingMiddleware(authMiddleware(actualHandler))
+</code></pre>
+<h3 id="43-gin-的中间件链实现">4.3 Gin 的中间件链实现</h3>
+<p>Gin 使用<strong>洋葱模型</strong>，核心是 <code>HandlersChain</code>（Handler 切片）和 <code>index</code> 索引：</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Context <span class="hljs-keyword">struct</span> {
+    handlers HandlersChain  <span class="hljs-comment">// []HandlerFunc</span>
+    index    <span class="hljs-type">int8</span>           <span class="hljs-comment">// 当前执行到第几个 handler</span>
+    <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c *Context)</span></span> Next() {
+    c.index++
+    <span class="hljs-keyword">for</span> c.index &lt; <span class="hljs-type">int8</span>(<span class="hljs-built_in">len</span>(c.handlers)) {
+        c.handlers[c.index](c)
+        c.index++
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c *Context)</span></span> Abort() {
+    c.index = abortIndex <span class="hljs-comment">// 设置为最大值，后续 handler 不再执行</span>
+}
+</code></pre>
+<p>执行流程：</p>
+<pre><code>Middleware1 前半段
+  → Middleware2 前半段
+    → Handler 执行
+  ← Middleware2 后半段
+← Middleware1 后半段
+</code></pre><hr></hr>
+<h2 id="五、路由实现原理">五、路由实现原理</h2>
+<blockquote>
+<p><strong>面试题：Gin 的路由是如何实现的？为什么要用前缀树？</strong></p>
+</blockquote>
+<h3 id="51-前缀树（trie）">5.1 前缀树（Trie）</h3>
+<p>普通前缀树将路径的每个字符作为节点：</p>
+<pre><code>/api/users → / → a → p → i → / → u → s → e → r → s
+/api/posts → / → a → p → i → / → p → o → s → t → s
+</code></pre><h3 id="52-radix-tree（压缩前缀树）">5.2 Radix Tree（压缩前缀树）</h3>
+<p>Gin 使用 Radix Tree，将共同前缀合并为一个节点：</p>
+<pre><code>                    /api/
+                   /      \
+              users        posts
+              /   \           \
+           /:id   /list     /:id
+</code></pre><p>优势：</p>
+<ul>
+<li>节点更少，内存更小</li>
+<li>查找路径更短，匹配更快</li>
+<li>时间复杂度 O(n)，n 为路径长度（与路由总数无关）</li>
+</ul>
+<h3 id="53-gin-路由树结构">5.3 Gin 路由树结构</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> node <span class="hljs-keyword">struct</span> {
+    path      <span class="hljs-type">string</span>        <span class="hljs-comment">// 当前节点的路径片段</span>
+    indices   <span class="hljs-type">string</span>        <span class="hljs-comment">// 子节点首字符索引（加速查找）</span>
+    children  []*node       <span class="hljs-comment">// 子节点</span>
+    handlers  HandlersChain <span class="hljs-comment">// 该路由的处理器链</span>
+    priority  <span class="hljs-type">uint32</span>        <span class="hljs-comment">// 优先级（子路由数量）</span>
+    nType     nodeType      <span class="hljs-comment">// 节点类型：static/root/param/catchAll</span>
+    maxParams <span class="hljs-type">uint8</span>         <span class="hljs-comment">// 子树中最大参数数量</span>
+    wildChild <span class="hljs-type">bool</span>          <span class="hljs-comment">// 是否有通配符子节点</span>
+}
+</code></pre>
+<p>每种 HTTP 方法（GET、POST 等）维护一棵独立的 Radix Tree。</p>
+<h3 id="54-路由参数">5.4 路由参数</h3>
+<pre><code class="lang-go">r.GET(<span class="hljs-string">"/users/:id"</span>, handler)     <span class="hljs-comment">// 参数路由，匹配一个路径段</span>
+r.GET(<span class="hljs-string">"/files/*filepath"</span>, handler) <span class="hljs-comment">// 通配符路由，匹配剩余所有路径</span>
+</code></pre>
+<hr></hr>
+<h2 id="六、优雅关机">六、优雅关机</h2>
+<blockquote>
+<p><strong>面试题：如何实现 Go HTTP 服务的优雅关机？</strong></p>
+</blockquote>
+<p>优雅关机（Graceful Shutdown）是指在关闭服务时，不直接中断正在处理的请求，而是：</p>
+<ol>
+<li>停止接受新请求</li>
+<li>等待正在处理的请求完成</li>
+<li>超时后强制关闭</li>
+</ol>
+<h3 id="61-标准库实现">6.1 标准库实现</h3>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+    srv := &amp;http.Server{
+        Addr:    <span class="hljs-string">":8080"</span>,
+        Handler: setupRouter(),
+    }
+
+    <span class="hljs-comment">// 在 goroutine 中启动服务</span>
+    <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> {
+        <span class="hljs-keyword">if</span> err := srv.ListenAndServe(); err != <span class="hljs-literal">nil</span> &amp;&amp; err != http.ErrServerClosed {
+            log.Fatalf(<span class="hljs-string">"listen: %s\n"</span>, err)
+        }
+    }()
+
+    <span class="hljs-comment">// 等待中断信号</span>
+    quit := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> os.Signal, <span class="hljs-number">1</span>)
+    signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
+    &lt;-quit
+    log.Println(<span class="hljs-string">"Shutting down server..."</span>)
+
+    <span class="hljs-comment">// 给正在处理的请求 30 秒完成</span>
+    ctx, cancel := context.WithTimeout(context.Background(), <span class="hljs-number">30</span>*time.Second)
+    <span class="hljs-keyword">defer</span> cancel()
+
+    <span class="hljs-keyword">if</span> err := srv.Shutdown(ctx); err != <span class="hljs-literal">nil</span> {
+        log.Fatal(<span class="hljs-string">"Server forced to shutdown:"</span>, err)
+    }
+
+    log.Println(<span class="hljs-string">"Server exiting"</span>)
+}
+</code></pre>
+<h3 id="62-shutdown-内部流程">6.2 Shutdown 内部流程</h3>
+<p><code>srv.Shutdown(ctx)</code> 做了以下事情：</p>
+<ol>
+<li>设置 <code>inShutdown</code> 标志，不再接受新连接</li>
+<li>关闭所有 listener</li>
+<li>关闭所有空闲连接</li>
+<li>等待所有活跃连接处理完毕或 context 超时</li>
+<li>返回 nil 或 context 错误</li>
+</ol>
+<h3 id="63-gin-框架的优雅关机">6.3 Gin 框架的优雅关机</h3>
+<p>Gin 底层使用标准库的 <code>http.Server</code>，优雅关机方式完全一致：</p>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+    router := gin.Default()
+    router.GET(<span class="hljs-string">"/"</span>, handler)
+
+    srv := &amp;http.Server{
+        Addr:    <span class="hljs-string">":8080"</span>,
+        Handler: router,
+    }
+
+    <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> {
+        <span class="hljs-keyword">if</span> err := srv.ListenAndServe(); err != <span class="hljs-literal">nil</span> &amp;&amp; err != http.ErrServerClosed {
+            log.Fatalf(<span class="hljs-string">"listen: %s\n"</span>, err)
+        }
+    }()
+
+    quit := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> os.Signal, <span class="hljs-number">1</span>)
+    signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
+    &lt;-quit
+
+    ctx, cancel := context.WithTimeout(context.Background(), <span class="hljs-number">5</span>*time.Second)
+    <span class="hljs-keyword">defer</span> cancel()
+    srv.Shutdown(ctx)
+}
+</code></pre>
+<hr></hr>
+<h2 id="七、http-客户端最佳实践">七、HTTP 客户端最佳实践</h2>
+<blockquote>
+<p><strong>面试题：在 Go 中如何正确使用 HTTP 客户端？有哪些性能优化手段？</strong></p>
+</blockquote>
+<h3 id="71-全局复用-client">7.1 全局复用 Client</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 错误：每次请求创建新 Client</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">bad</span><span class="hljs-params">()</span></span> {
+    resp, err := http.Get(url) <span class="hljs-comment">// 使用 DefaultClient，但自定义配置时常创建新的</span>
+}
+
+<span class="hljs-comment">// 正确：全局复用</span>
+<span class="hljs-keyword">var</span> httpClient = &amp;http.Client{
+    Timeout: <span class="hljs-number">30</span> * time.Second,
+    Transport: &amp;http.Transport{
+        DialContext: (&amp;net.Dialer{
+            Timeout:   <span class="hljs-number">30</span> * time.Second,
+            KeepAlive: <span class="hljs-number">30</span> * time.Second,
+        }).DialContext,
+        MaxIdleConns:          <span class="hljs-number">100</span>,
+        MaxIdleConnsPerHost:   <span class="hljs-number">10</span>,
+        MaxConnsPerHost:       <span class="hljs-number">100</span>,
+        IdleConnTimeout:       <span class="hljs-number">90</span> * time.Second,
+        TLSHandshakeTimeout:   <span class="hljs-number">10</span> * time.Second,
+        ExpectContinueTimeout: <span class="hljs-number">1</span> * time.Second,
+    },
+}
+</code></pre>
+<h3 id="72-正确处理-response">7.2 正确处理 Response</h3>
+<pre><code class="lang-go">resp, err := httpClient.Do(req)
+<span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+    <span class="hljs-keyword">return</span> err
+}
+<span class="hljs-keyword">defer</span> resp.Body.Close()
+
+<span class="hljs-comment">// 限制读取大小，防止恶意大响应</span>
+body, err := io.ReadAll(io.LimitReader(resp.Body, <span class="hljs-number">10</span>&lt;&lt;<span class="hljs-number">20</span>)) <span class="hljs-comment">// 最大 10MB</span>
+</code></pre>
+<h3 id="73-连接池调优">7.3 连接池调优</h3>
+<pre><code class="lang-go">transport := &amp;http.Transport{
+    <span class="hljs-comment">// 所有 host 的最大空闲连接总数</span>
+    MaxIdleConns: <span class="hljs-number">100</span>,
+    <span class="hljs-comment">// 每个 host 的最大空闲连接数（重要！默认只有2）</span>
+    MaxIdleConnsPerHost: <span class="hljs-number">20</span>,
+    <span class="hljs-comment">// 空闲连接的超时时间</span>
+    IdleConnTimeout: <span class="hljs-number">90</span> * time.Second,
+    <span class="hljs-comment">// 每个 host 的最大连接数（0=无限制）</span>
+    MaxConnsPerHost: <span class="hljs-number">0</span>,
+}
+</code></pre>
+<h3 id="74-请求重试与熔断">7.4 请求重试与熔断</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 简单重试</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">doWithRetry</span><span class="hljs-params">(client *http.Client, req *http.Request, maxRetries <span class="hljs-type">int</span>)</span></span> (*http.Response, <span class="hljs-type">error</span>) {
+    <span class="hljs-keyword">var</span> resp *http.Response
+    <span class="hljs-keyword">var</span> err <span class="hljs-type">error</span>
+    <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt;= maxRetries; i++ {
+        resp, err = client.Do(req)
+        <span class="hljs-keyword">if</span> err == <span class="hljs-literal">nil</span> &amp;&amp; resp.StatusCode &lt; <span class="hljs-number">500</span> {
+            <span class="hljs-keyword">return</span> resp, <span class="hljs-literal">nil</span>
+        }
+        <span class="hljs-keyword">if</span> resp != <span class="hljs-literal">nil</span> {
+            io.Copy(io.Discard, resp.Body)
+            resp.Body.Close()
+        }
+        <span class="hljs-comment">// 指数退避</span>
+        time.Sleep(time.Duration(<span class="hljs-number">1</span>&lt;&lt;<span class="hljs-type">uint</span>(i)) * <span class="hljs-number">100</span> * time.Millisecond)
+    }
+    <span class="hljs-keyword">return</span> resp, err
+}
+</code></pre>
+<h3 id="75-context-超时控制">7.5 Context 超时控制</h3>
+<pre><code class="lang-go">ctx, cancel := context.WithTimeout(context.Background(), <span class="hljs-number">5</span>*time.Second)
+<span class="hljs-keyword">defer</span> cancel()
+
+req, err := http.NewRequestWithContext(ctx, <span class="hljs-string">"GET"</span>, url, <span class="hljs-literal">nil</span>)
+<span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+    <span class="hljs-keyword">return</span> err
+}
+
+resp, err := httpClient.Do(req)
+<span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+    <span class="hljs-keyword">if</span> ctx.Err() == context.DeadlineExceeded {
+        log.Println(<span class="hljs-string">"request timeout"</span>)
+    }
+    <span class="hljs-keyword">return</span> err
+}
+</code></pre>
+<h3 id="76-http2">7.6 HTTP/2</h3>
+<p>Go 的 <code>http.Transport</code> 在连接 HTTPS 时默认自动启用 HTTP/2：</p>
+<pre><code class="lang-go"><span class="hljs-comment">// 默认自动启用 HTTP/2（HTTPS）</span>
+client := &amp;http.Client{}
+
+<span class="hljs-comment">// 强制启用 HTTP/2（即使是自定义 Transport）</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">"golang.org/x/net/http2"</span>
+transport := &amp;http.Transport{}
+http2.ConfigureTransport(transport)
+client := &amp;http.Client{Transport: transport}
+</code></pre>
+<hr></hr>
+<h2 id="八、综合面试题">八、综合面试题</h2>
+<blockquote>
+<p><strong>面试题：如何设计一个高性能的 Go HTTP API 服务？</strong></p>
+</blockquote>
+<p><strong>架构设计要点：</strong></p>
+<ol>
+<li><strong>路由层</strong>：使用 Gin/Chi 等高性能路由框架</li>
+<li><strong>中间件</strong>：日志、认证、限流、CORS、链路追踪、panic recovery</li>
+<li><strong>参数验证</strong>：结构体 tag + validator</li>
+<li><strong>业务层</strong>：依赖注入，接口解耦</li>
+<li><strong>数据层</strong>：连接池、读写分离、缓存策略</li>
+<li><strong>优雅关机</strong>：signal 捕获 + Shutdown</li>
+<li><strong>可观测性</strong>：结构化日志、Prometheus 指标、分布式追踪</li>
+<li><strong>配置管理</strong>：Viper/环境变量/配置中心</li>
+</ol>
+<pre><code class="lang-go"><span class="hljs-comment">// 典型项目启动流程</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+    <span class="hljs-comment">// 1. 加载配置</span>
+    cfg := config.Load()
+
+    <span class="hljs-comment">// 2. 初始化依赖</span>
+    db := database.NewConnection(cfg.DB)
+    cache := redis.NewClient(cfg.Redis)
+
+    <span class="hljs-comment">// 3. 初始化服务层</span>
+    userService := service.NewUserService(db, cache)
+
+    <span class="hljs-comment">// 4. 初始化路由</span>
+    router := setupRouter(userService)
+
+    <span class="hljs-comment">// 5. 启动服务器</span>
+    srv := &amp;http.Server{Addr: cfg.Addr, Handler: router}
+    <span class="hljs-keyword">go</span> srv.ListenAndServe()
+
+    <span class="hljs-comment">// 6. 优雅关机</span>
+    gracefulShutdown(srv, db, cache)
+}
+</code></pre>
+<blockquote>
+<p><strong>面试题：REST API 和 gRPC 分别适用于什么场景？</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>REST (JSON/HTTP)</th>
+<th>gRPC (Protobuf/HTTP2)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>通信协议</td>
+<td>HTTP/1.1</td>
+<td>HTTP/2</td>
+</tr>
+<tr>
+<td>数据格式</td>
+<td>JSON（文本）</td>
+<td>Protobuf（二进制）</td>
+</tr>
+<tr>
+<td>性能</td>
+<td>较低</td>
+<td>较高（更小的体积、更快的序列化）</td>
+</tr>
+<tr>
+<td>浏览器支持</td>
+<td>原生支持</td>
+<td>需要 gRPC-Web</td>
+</tr>
+<tr>
+<td>流式通信</td>
+<td>不原生支持</td>
+<td>四种流模式</td>
+</tr>
+<tr>
+<td>代码生成</td>
+<td>通常手写</td>
+<td>.proto 自动生成</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>对外 API、Web 前端</td>
+<td>微服务内部通信</td>
+</tr>
+<tr>
+<td>可读性</td>
+<td>高（JSON 文本）</td>
+<td>低（二进制）</td>
+</tr>
+<tr>
+<td>学习成本</td>
+<td>低</td>
+<td>较高</td>
+</tr>
+</tbody>
+</table>
+<p><strong>选择建议：</strong></p>
+<ul>
+<li>对外暴露 API / 前端调用 → REST</li>
+<li>微服务间内部通信 / 高性能要求 → gRPC</li>
+<li>很多团队采用混合架构：对外 REST，内部 gRPC</li>
+</ul>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="memory.html" class="navigation navigation-prev " aria-label="Previous page: 内存管理与GC">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="database-design.html" class="navigation navigation-next " aria-label="Next page: 数据库与系统设计">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Web框架与HTTP","level":"4.4","depth":1,"next":{"title":"数据库与系统设计","level":"4.5","depth":1,"path":"golang/database-design.md","ref":"golang/database-design.md","articles":[]},"previous":{"title":"内存管理与GC","level":"4.3","depth":1,"path":"golang/memory.md","ref":"golang/memory.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"golang/web-framework.md","mtime":"2026-03-31T06:35:11.838Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

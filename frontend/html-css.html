@@ -1,0 +1,1682 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML与CSS · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="javascript.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="html-css.html">
+            
+                <a href="html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="javascript.html">
+            
+                <a href="javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="typescript.html">
+            
+                <a href="typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="browser.html">
+            
+                <a href="browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="network.html">
+            
+                <a href="network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="react.html">
+            
+                <a href="react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="vue.html">
+            
+                <a href="vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="engineering.html">
+            
+                <a href="engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="performance.html">
+            
+                <a href="performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="security.html">
+            
+                <a href="security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../nodejs/basics.html">
+            
+                <a href="../nodejs/basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../nodejs/event-loop.html">
+            
+                <a href="../nodejs/event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../nodejs/stream.html">
+            
+                <a href="../nodejs/stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../nodejs/frameworks.html">
+            
+                <a href="../nodejs/frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../nodejs/database.html">
+            
+                <a href="../nodejs/database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../nodejs/practice.html">
+            
+                <a href="../nodejs/practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../golang/basics.html">
+            
+                <a href="../golang/basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../golang/concurrency.html">
+            
+                <a href="../golang/concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../golang/memory.html">
+            
+                <a href="../golang/memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../golang/web-framework.html">
+            
+                <a href="../golang/web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../golang/database-design.html">
+            
+                <a href="../golang/database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../golang/testing-practice.html">
+            
+                <a href="../golang/testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../agent/llm-basics.html">
+            
+                <a href="../agent/llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../agent/prompt-engineering.html">
+            
+                <a href="../agent/prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../agent/rag.html">
+            
+                <a href="../agent/rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../agent/agent-architecture.html">
+            
+                <a href="../agent/agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../agent/tool-calling.html">
+            
+                <a href="../agent/tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../agent/practice.html">
+            
+                <a href="../agent/practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >HTML与CSS</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="html与css面试指南">HTML与CSS面试指南</h1>
+<p>本指南系统整理了前端面试中关于HTML与CSS的高频考点，涵盖HTML5语义化、CSS盒模型、布局方案、选择器优先级、动画、性能优化等核心知识，适合中高级前端工程师面试复习使用。</p>
+<hr></hr>
+<h2 id="一、html基础">一、HTML基础</h2>
+<h3 id="11-html5语义化标签">1.1 HTML5语义化标签</h3>
+<blockquote>
+<p>面试题：为什么要使用语义化标签？语义化标签有哪些？</p>
+</blockquote>
+<p>HTML5引入了一系列语义化标签，用以替代传统的<code>&lt;div&gt;</code>容器，使页面结构更加清晰、可读性更强。常见的语义化标签包括：</p>
+<ul>
+<li><strong><code>&lt;header&gt;</code></strong>：定义页面或某一区域的头部。通常包含导航链接、Logo、搜索框等内容。一个页面可以包含多个<code>&lt;header&gt;</code>，例如文章内部也可以有自己的<code>&lt;header&gt;</code>。</li>
+<li><strong><code>&lt;nav&gt;</code></strong>：定义导航链接区域。主导航、侧边栏导航、面包屑导航等都可使用此标签。注意并非所有链接集合都需要使用<code>&lt;nav&gt;</code>，它应该用于主要的导航块。</li>
+<li><strong><code>&lt;main&gt;</code></strong>：定义文档的主体内容区域，每个页面只应有一个<code>&lt;main&gt;</code>标签。它不应包含侧边栏、导航、版权信息等辅助内容。</li>
+<li><strong><code>&lt;article&gt;</code></strong>：定义独立的、完整的内容块，如博客文章、新闻报道、论坛帖子等。<code>&lt;article&gt;</code>内的内容即使脱离页面上下文也应该是有意义的。</li>
+<li><strong><code>&lt;section&gt;</code></strong>：定义文档中的一个章节或区域。与<code>&lt;article&gt;</code>不同，<code>&lt;section&gt;</code>通常是页面内容的一部分，需要配合标题（h1-h6）使用。</li>
+<li><strong><code>&lt;aside&gt;</code></strong>：定义与主内容间接相关的辅助内容，如侧边栏、广告、相关链接等。</li>
+<li><strong><code>&lt;footer&gt;</code></strong>：定义页面或区域的底部。通常包含版权声明、联系方式、友情链接等。</li>
+<li><strong><code>&lt;figure&gt;</code> 和 <code>&lt;figcaption&gt;</code></strong>：用于包裹图片、图表、代码片段等，并提供说明文字。</li>
+<li><strong><code>&lt;time&gt;</code></strong>：用于表示日期或时间，利于搜索引擎和辅助设备理解时间信息。</li>
+<li><strong><code>&lt;mark&gt;</code></strong>：高亮显示文本，表示文本与上下文的相关性。</li>
+</ul>
+<p><strong>语义化标签的好处：</strong></p>
+<ol>
+<li><strong>对搜索引擎友好（SEO）</strong>：搜索引擎爬虫能更好地理解页面结构和各部分内容的重要性，有助于提升搜索排名。使用<code>&lt;article&gt;</code>标记的内容会被搜索引擎视为独立内容块，权重更高。</li>
+<li><strong>增强可访问性（Accessibility）</strong>：屏幕阅读器等辅助工具可以根据语义化标签构建内容大纲，帮助视障用户快速导航到页面的不同区域。例如，屏幕阅读器可以直接跳转到<code>&lt;nav&gt;</code>区域进行导航操作。</li>
+<li><strong>提升代码可读性和可维护性</strong>：开发者可以通过标签名称快速理解页面结构，而不必依赖<code>class</code>命名来猜测<code>&lt;div&gt;</code>的用途。</li>
+<li><strong>便于团队协作</strong>：统一的语义化标签使用规范可以减少沟通成本。</li>
+</ol>
+<h3 id="12-块级元素与内联元素">1.2 块级元素与内联元素</h3>
+<blockquote>
+<p>面试题：块级元素和内联元素有什么区别？<code>display: inline-block</code>有什么特性？</p>
+</blockquote>
+<p><strong>块级元素（Block-level Elements）：</strong>
+常见的块级元素包括<code>&lt;div&gt;</code>、<code>&lt;p&gt;</code>、<code>&lt;h1&gt;</code>~<code>&lt;h6&gt;</code>、<code>&lt;ul&gt;</code>、<code>&lt;ol&gt;</code>、<code>&lt;li&gt;</code>、<code>&lt;table&gt;</code>、<code>&lt;form&gt;</code>、<code>&lt;section&gt;</code>、<code>&lt;article&gt;</code>等。</p>
+<p>特点：</p>
+<ul>
+<li>独占一行，每个块级元素都从新行开始，后面的元素也会被迫换行</li>
+<li>可以设置<code>width</code>、<code>height</code>、<code>margin</code>、<code>padding</code></li>
+<li>宽度默认为父容器的100%</li>
+<li>可以包含块级元素和内联元素</li>
+</ul>
+<p><strong>内联元素（Inline Elements）：</strong>
+常见的内联元素包括<code>&lt;span&gt;</code>、<code>&lt;a&gt;</code>、<code>&lt;img&gt;</code>、<code>&lt;input&gt;</code>、<code>&lt;strong&gt;</code>、<code>&lt;em&gt;</code>、<code>&lt;label&gt;</code>、<code>&lt;code&gt;</code>、<code>&lt;br&gt;</code>等。</p>
+<p>特点：</p>
+<ul>
+<li>不会独占一行，多个内联元素会排列在同一行</li>
+<li>设置<code>width</code>和<code>height</code>无效（<code>&lt;img&gt;</code>和<code>&lt;input&gt;</code>除外，它们是替换元素）</li>
+<li>水平方向的<code>margin</code>和<code>padding</code>有效，垂直方向的<code>margin</code>无效、<code>padding</code>虽然视觉上有效果但不会影响布局</li>
+<li>宽度由内容决定</li>
+</ul>
+<p><strong>行内块元素（Inline-block）：</strong>
+<code>display: inline-block</code>结合了内联元素和块级元素的特点：</p>
+<ul>
+<li>不独占一行，可以和其他元素并排</li>
+<li>可以设置<code>width</code>、<code>height</code>、<code>margin</code>、<code>padding</code></li>
+<li>默认宽度由内容决定</li>
+</ul>
+<pre><code class="lang-css"><span class="hljs-comment">/* inline-block的常见使用场景：水平排列的导航项 */</span>
+<span class="hljs-selector-class">.nav-item</span> {
+  <span class="hljs-attribute">display</span>: inline-block;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">40px</span>;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">40px</span>;
+  <span class="hljs-attribute">text-align</span>: center;
+}
+</code></pre>
+<p><strong>注意事项：</strong> <code>inline-block</code>元素之间会产生间隙（由HTML代码中的空白字符导致），解决方法包括：父元素设置<code>font-size: 0</code>、去除HTML标签间空白、使用<code>margin</code>负值、改用Flexbox布局等。</p>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>块级元素</th>
+<th>内联元素</th>
+<th>行内块元素</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>独占一行</td>
+<td>是</td>
+<td>否</td>
+<td>否</td>
+</tr>
+<tr>
+<td>设置宽高</td>
+<td>有效</td>
+<td>无效</td>
+<td>有效</td>
+</tr>
+<tr>
+<td>默认宽度</td>
+<td>父容器100%</td>
+<td>内容宽度</td>
+<td>内容宽度</td>
+</tr>
+<tr>
+<td>margin</td>
+<td>四个方向有效</td>
+<td>仅水平有效</td>
+<td>四个方向有效</td>
+</tr>
+<tr>
+<td>padding</td>
+<td>四个方向有效</td>
+<td>水平有效，垂直不影响布局</td>
+<td>四个方向有效</td>
+</tr>
+</tbody>
+</table>
+<h3 id="13-meta标签">1.3 meta标签</h3>
+<blockquote>
+<p>面试题：常见的meta标签有哪些？各有什么作用？</p>
+</blockquote>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- 字符编码：告诉浏览器以何种编码解析文档 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- viewport设置：移动端必备，控制视口宽度和缩放行为 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- http-equiv：模拟HTTP头部信息 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>&gt;</span> <span class="hljs-comment">&lt;!-- 使用IE最新渲染模式 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"Cache-Control"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"no-cache"</span>&gt;</span> <span class="hljs-comment">&lt;!-- 缓存控制 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"refresh"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"5;url=https://example.com"</span>&gt;</span> <span class="hljs-comment">&lt;!-- 5秒后跳转 --&gt;</span>
+
+<span class="hljs-comment">&lt;!-- SEO相关 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"页面描述，影响搜索结果摘要"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"keywords"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"关键词1,关键词2,关键词3"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"author"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"作者名"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"robots"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"index,follow"</span>&gt;</span> <span class="hljs-comment">&lt;!-- 控制搜索引擎爬取行为 --&gt;</span>
+
+<span class="hljs-comment">&lt;!-- 社交媒体Open Graph --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"og:title"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"分享标题"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"og:description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"分享描述"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"og:image"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"分享图片URL"</span>&gt;</span>
+</code></pre>
+<p><code>viewport</code>的各参数含义：<code>width=device-width</code>让视口宽度等于设备宽度；<code>initial-scale=1.0</code>设置初始缩放比例为1；<code>maximum-scale=1.0</code>限制最大缩放比例；<code>user-scalable=no</code>禁止用户手动缩放。</p>
+<h3 id="14-doctype">1.4 DOCTYPE</h3>
+<blockquote>
+<p>面试题：DOCTYPE的作用是什么？标准模式和怪异模式有什么区别？</p>
+</blockquote>
+<p><code>&lt;!DOCTYPE html&gt;</code>声明位于HTML文档的最顶部，它告诉浏览器以何种标准来解析和渲染页面。</p>
+<ul>
+<li><strong>标准模式（Standards Mode）</strong>：浏览器按照W3C标准解析和渲染页面。盒模型采用标准盒模型（<code>content-box</code>），CSS属性的计算和行为符合规范。</li>
+<li><strong>怪异模式（Quirks Mode）</strong>：浏览器模拟老版本浏览器的行为来渲染页面，以兼容老旧网页。在怪异模式下，盒模型采用IE盒模型（<code>border-box</code>），一些CSS属性的行为与标准不同。</li>
+<li><strong>近似标准模式（Almost Standards Mode）</strong>：介于两者之间，大部分行为与标准模式一致，仅在少数情况下（如表格单元格中图片的垂直对齐）有差异。</li>
+</ul>
+<p>如果省略<code>&lt;!DOCTYPE&gt;</code>声明，浏览器会进入怪异模式。HTML5只需要简单地声明<code>&lt;!DOCTYPE html&gt;</code>即可触发标准模式。</p>
+<hr></hr>
+<h2 id="二、css盒模型">二、CSS盒模型</h2>
+<h3 id="21-标准盒模型-vs-ie盒模型">2.1 标准盒模型 vs IE盒模型</h3>
+<blockquote>
+<p>面试题：标准盒模型和IE盒模型有什么区别？<code>box-sizing</code>属性的作用？</p>
+</blockquote>
+<p>CSS盒模型描述了元素所占空间的构成，由四个区域组成：<strong>content</strong>（内容区）、<strong>padding</strong>（内边距）、<strong>border</strong>（边框）、<strong>margin</strong>（外边距）。</p>
+<p><strong>标准盒模型（<code>box-sizing: content-box</code>）：</strong></p>
+<ul>
+<li>这是CSS的默认盒模型</li>
+<li><code>width</code>和<code>height</code>仅指<strong>内容区</strong>的宽高</li>
+<li>元素实际占用宽度 = <code>width</code> + <code>padding-left</code> + <code>padding-right</code> + <code>border-left</code> + <code>border-right</code></li>
+</ul>
+<p><strong>IE盒模型（<code>box-sizing: border-box</code>）：</strong></p>
+<ul>
+<li><code>width</code>和<code>height</code>包含了<strong>内容区 + 内边距 + 边框</strong></li>
+<li>元素实际占用宽度 = <code>width</code>（其中content宽度 = <code>width</code> - <code>padding</code> - <code>border</code>）</li>
+</ul>
+<pre><code class="lang-css"><span class="hljs-comment">/* 标准盒模型示例 */</span>
+<span class="hljs-selector-class">.standard-box</span> {
+  <span class="hljs-attribute">box-sizing</span>: content-box;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">5px</span> solid <span class="hljs-number">#333</span>;
+  <span class="hljs-comment">/* 实际宽度 = 200 + 20*2 + 5*2 = 250px */</span>
+}
+
+<span class="hljs-comment">/* IE盒模型示例 */</span>
+<span class="hljs-selector-class">.ie-box</span> {
+  <span class="hljs-attribute">box-sizing</span>: border-box;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">5px</span> solid <span class="hljs-number">#333</span>;
+  <span class="hljs-comment">/* 实际宽度 = 200px，内容区宽度 = 200 - 20*2 - 5*2 = 150px */</span>
+}
+
+<span class="hljs-comment">/* 实际项目中，通常采用全局border-box，布局更加直观 */</span>
+*, *<span class="hljs-selector-pseudo">::before</span>, *<span class="hljs-selector-pseudo">::after</span> {
+  <span class="hljs-attribute">box-sizing</span>: border-box;
+}
+</code></pre>
+<h3 id="22-bfc块格式化上下文">2.2 BFC块格式化上下文</h3>
+<blockquote>
+<p>面试题：什么是BFC？如何触发BFC？BFC有哪些应用场景？</p>
+</blockquote>
+<p><strong>BFC（Block Formatting Context，块格式化上下文）</strong> 是一个独立的渲染区域，内部的元素布局不会影响外部元素，外部元素也不会影响内部布局。可以将BFC理解为一个“隔离的容器”。</p>
+<p><strong>触发BFC的条件（满足其一即可）：</strong></p>
+<ul>
+<li>根元素<code>&lt;html&gt;</code></li>
+<li><code>float</code>的值不为<code>none</code>（设置了<code>float: left</code>或<code>float: right</code>）</li>
+<li><code>overflow</code>的值不为<code>visible</code>（如<code>overflow: hidden</code>、<code>overflow: auto</code>、<code>overflow: scroll</code>）</li>
+<li><code>display</code>的值为<code>inline-block</code>、<code>table-cell</code>、<code>table-caption</code>、<code>flex</code>、<code>inline-flex</code>、<code>grid</code>、<code>inline-grid</code>、<code>flow-root</code></li>
+<li><code>position</code>的值为<code>absolute</code>或<code>fixed</code></li>
+<li><code>contain</code>的值为<code>layout</code>、<code>content</code>或<code>paint</code></li>
+</ul>
+<p><strong>BFC的核心应用场景：</strong></p>
+<p><strong>1. 清除浮动（防止父元素高度塔陷）：</strong></p>
+<pre><code class="lang-css"><span class="hljs-comment">/* 父元素触发BFC后能包裹住浮动子元素 */</span>
+<span class="hljs-selector-class">.parent</span> {
+  <span class="hljs-attribute">overflow</span>: hidden; <span class="hljs-comment">/* 触发BFC */</span>
+}
+<span class="hljs-selector-class">.child</span> {
+  <span class="hljs-attribute">float</span>: left;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+}
+</code></pre>
+<p><strong>2. 防止margin重叠：</strong>
+同一BFC中相邻块级元素的垂直外边距会发生折叠（取较大值）。将其中一个元素包裹在新的BFC中可以阻止折叠。</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"margin-bottom: 20px;"</span>&gt;</span>Box 1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"overflow: hidden;"</span>&gt;</span> <span class="hljs-comment">&lt;!-- 创建新的BFC --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"margin-top: 30px;"</span>&gt;</span>Box 2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- 此时margin不会折叠，间距为20+30=50px --&gt;</span>
+</code></pre>
+<p><strong>3. 自适应两栏布局：</strong></p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.left</span> {
+  <span class="hljs-attribute">float</span>: left;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">background</span>: <span class="hljs-number">#f0f0f0</span>;
+}
+<span class="hljs-selector-class">.right</span> {
+  <span class="hljs-attribute">overflow</span>: hidden; <span class="hljs-comment">/* 触发BFC，不会被float元素覆盖 */</span>
+  <span class="hljs-attribute">background</span>: <span class="hljs-number">#e0e0e0</span>;
+}
+</code></pre>
+<hr></hr>
+<h2 id="三、css选择器与优先级">三、CSS选择器与优先级</h2>
+<blockquote>
+<p>面试题：CSS选择器的优先级是如何计算的？</p>
+</blockquote>
+<p><strong>选择器种类：</strong></p>
+<ul>
+<li><strong>通配符选择器</strong>：<code>*</code> —— 匹配所有元素</li>
+<li><strong>元素选择器</strong>：<code>div</code>、<code>p</code>、<code>span</code> 等</li>
+<li><strong>类选择器</strong>：<code>.class-name</code></li>
+<li><strong>ID选择器</strong>：<code>#id-name</code></li>
+<li><strong>属性选择器</strong>：<code>[type="text"]</code>、<code>[href^="https"]</code></li>
+<li><strong>伪类选择器</strong>：<code>:hover</code>、<code>:focus</code>、<code>:nth-child(n)</code>、<code>:first-child</code>、<code>:last-of-type</code></li>
+<li><strong>伪元素选择器</strong>：<code>::before</code>、<code>::after</code>、<code>::first-line</code>、<code>::first-letter</code></li>
+<li><strong>后代选择器</strong>：<code>div p</code>（空格）</li>
+<li><strong>子选择器</strong>：<code>div &gt; p</code></li>
+<li><strong>相邻兄弟选择器</strong>：<code>div + p</code></li>
+<li><strong>通用兄弟选择器</strong>：<code>div ~ p</code></li>
+</ul>
+<p><strong>优先级计算规则：</strong>
+优先级可以用四位数表示：<code>(a, b, c, d)</code></p>
+<table>
+<thead>
+<tr>
+<th>级别</th>
+<th>权重</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>内联样式</td>
+<td>1,0,0,0</td>
+<td><code>style="..."</code></td>
+</tr>
+<tr>
+<td>ID选择器</td>
+<td>0,1,0,0</td>
+<td><code>#id</code></td>
+</tr>
+<tr>
+<td>类/伪类/属性选择器</td>
+<td>0,0,1,0</td>
+<td><code>.class</code>、<code>:hover</code>、<code>[attr]</code></td>
+</tr>
+<tr>
+<td>元素/伪元素选择器</td>
+<td>0,0,0,1</td>
+<td><code>div</code>、<code>::before</code></td>
+</tr>
+<tr>
+<td>通配符/组合符/否定伪类</td>
+<td>0,0,0,0</td>
+<td><code>*</code>、<code>&gt;</code>、<code>+</code>、<code>~</code>、<code>:not()</code></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-css"><span class="hljs-comment">/* 优先级示例 */</span>
+<span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">p</span> { }                 <span class="hljs-comment">/* (0,0,0,2) */</span>
+<span class="hljs-selector-class">.container</span> <span class="hljs-selector-class">.text</span> { }      <span class="hljs-comment">/* (0,0,2,0) */</span>
+<span class="hljs-selector-id">#header</span> <span class="hljs-selector-class">.nav</span> <span class="hljs-selector-tag">a</span> { }        <span class="hljs-comment">/* (0,1,1,1) */</span>
+<span class="hljs-selector-id">#header</span> <span class="hljs-selector-class">.nav</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> { }  <span class="hljs-comment">/* (0,1,2,1) */</span>
+</code></pre>
+<p><strong><code>!important</code>规则：</strong></p>
+<ul>
+<li><code>!important</code>会覆盖所有正常的优先级计算</li>
+<li>两个都带<code>!important</code>的声明，按正常优先级比较</li>
+<li>应尽量避免使用<code>!important</code>，它会破坏CSS的层叠机制，导致样式难以维护</li>
+<li>唯一合理的使用场景：覆盖第三方库的行内样式</li>
+</ul>
+<hr></hr>
+<h2 id="四、css布局">四、CSS布局</h2>
+<h3 id="41-flexbox布局详解">4.1 Flexbox布局详解</h3>
+<blockquote>
+<p>面试题：Flex布局的核心概念是什么？常用属性有哪些？</p>
+</blockquote>
+<p>Flexbox（弹性盒子布局）是一种一维布局模型，擅长处理单行或单列的元素排布与空间分配。</p>
+<p><strong>容器属性（设置在父元素上）：</strong></p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.flex-container</span> {
+  <span class="hljs-attribute">display</span>: flex;                <span class="hljs-comment">/* 开启Flex布局 */</span>
+  <span class="hljs-attribute">flex-direction</span>: row;          <span class="hljs-comment">/* 主轴方向：row(默认)|row-reverse|column|column-reverse */</span>
+  <span class="hljs-attribute">flex-wrap</span>: nowrap;            <span class="hljs-comment">/* 是否换行：nowrap(默认)|wrap|wrap-reverse */</span>
+  <span class="hljs-attribute">justify-content</span>: flex-start;  <span class="hljs-comment">/* 主轴对齐：flex-start|flex-end|center|space-between|space-around|space-evenly */</span>
+  <span class="hljs-attribute">align-items</span>: stretch;         <span class="hljs-comment">/* 交叉轴对齐：stretch(默认)|flex-start|flex-end|center|baseline */</span>
+  <span class="hljs-attribute">align-content</span>: stretch;       <span class="hljs-comment">/* 多行对齐：stretch|flex-start|flex-end|center|space-between|space-around */</span>
+  <span class="hljs-attribute">gap</span>: <span class="hljs-number">10px</span>;                    <span class="hljs-comment">/* 项目间距 */</span>
+}
+</code></pre>
+<p><strong>项目属性（设置在子元素上）：</strong></p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.flex-item</span> {
+  <span class="hljs-attribute">flex-grow</span>: <span class="hljs-number">0</span>;      <span class="hljs-comment">/* 放大比例，默认0（不放大）。值为1时，等分剩余空间 */</span>
+  <span class="hljs-attribute">flex-shrink</span>: <span class="hljs-number">1</span>;    <span class="hljs-comment">/* 缩小比例，默认1（空间不足时等比缩小）。值为0时不缩小 */</span>
+  <span class="hljs-attribute">flex-basis</span>: auto;  <span class="hljs-comment">/* 主轴上的初始大小，默认auto（由内容决定） */</span>
+  <span class="hljs-attribute">flex</span>: <span class="hljs-number">0</span> <span class="hljs-number">1</span> auto;    <span class="hljs-comment">/* 简写：grow shrink basis。常用值：flex:1 即 1 1 0% */</span>
+  <span class="hljs-attribute">order</span>: <span class="hljs-number">0</span>;          <span class="hljs-comment">/* 排列顺序，数值越小越靠前 */</span>
+  <span class="hljs-attribute">align-self</span>: auto;  <span class="hljs-comment">/* 单独设置交叉轴对齐方式，覆盖align-items */</span>
+}
+</code></pre>
+<p><strong>常见布局实例：</strong></p>
+<pre><code class="lang-css"><span class="hljs-comment">/* 经典三栏布局：左右固定，中间自适应 */</span>
+<span class="hljs-selector-class">.three-column</span> {
+  <span class="hljs-attribute">display</span>: flex;
+}
+<span class="hljs-selector-class">.three-column</span> <span class="hljs-selector-class">.left</span> { <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>; <span class="hljs-attribute">flex-shrink</span>: <span class="hljs-number">0</span>; }
+<span class="hljs-selector-class">.three-column</span> <span class="hljs-selector-class">.center</span> { <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>; }
+<span class="hljs-selector-class">.three-column</span> <span class="hljs-selector-class">.right</span> { <span class="hljs-attribute">width</span>: <span class="hljs-number">150px</span>; <span class="hljs-attribute">flex-shrink</span>: <span class="hljs-number">0</span>; }
+
+<span class="hljs-comment">/* 底部固定布局 */</span>
+<span class="hljs-selector-class">.page</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-direction</span>: column;
+  <span class="hljs-attribute">min-height</span>: <span class="hljs-number">100vh</span>;
+}
+<span class="hljs-selector-class">.page</span> <span class="hljs-selector-class">.content</span> { <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>; }
+<span class="hljs-selector-class">.page</span> <span class="hljs-selector-class">.footer</span> { <span class="hljs-attribute">height</span>: <span class="hljs-number">60px</span>; }
+
+<span class="hljs-comment">/* 等高布局 */</span>
+<span class="hljs-selector-class">.equal-height</span> {
+  <span class="hljs-attribute">display</span>: flex;          <span class="hljs-comment">/* flex子项默认stretch，自动等高 */</span>
+  <span class="hljs-attribute">align-items</span>: stretch;
+}
+</code></pre>
+<h3 id="42-grid布局">4.2 Grid布局</h3>
+<blockquote>
+<p>面试题：CSS Grid与Flexbox有什么区别？Grid如何定义行列？</p>
+</blockquote>
+<p>CSS Grid是一种二维布局系统，可以同时控制行和列，适合复杂的页面整体布局。</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.grid-container</span> {
+  <span class="hljs-attribute">display</span>: grid;
+
+  <span class="hljs-comment">/* 定义列：3列，第一列200px，第二列自适应，第三列1份 */</span>
+  <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-number">200px</span> auto <span class="hljs-number">1</span>fr;
+
+  <span class="hljs-comment">/* 使用repeat()简化：4列等宽 */</span>
+  <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-built_in">repeat</span>(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>fr);
+
+  <span class="hljs-comment">/* 使用minmax()设置弹性范围 */</span>
+  <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-built_in">repeat</span>(auto-fill, <span class="hljs-built_in">minmax</span>(<span class="hljs-number">250px</span>, <span class="hljs-number">1</span>fr));
+
+  <span class="hljs-comment">/* 定义行 */</span>
+  <span class="hljs-attribute">grid-template-rows</span>: <span class="hljs-number">80px</span> auto <span class="hljs-number">60px</span>;
+
+  <span class="hljs-comment">/* 行列间距 */</span>
+  <span class="hljs-attribute">gap</span>: <span class="hljs-number">20px</span>;               <span class="hljs-comment">/* 行列间距相同 */</span>
+  <span class="hljs-attribute">row-gap</span>: <span class="hljs-number">20px</span>;            <span class="hljs-comment">/* 单独设置行间距 */</span>
+  <span class="hljs-attribute">column-gap</span>: <span class="hljs-number">15px</span>;         <span class="hljs-comment">/* 单独设置列间距 */</span>
+
+  <span class="hljs-comment">/* 命名网格区域 */</span>
+  <span class="hljs-attribute">grid-template-areas</span>:
+    <span class="hljs-string">"header header header"</span>
+    <span class="hljs-string">"sidebar main   aside"</span>
+    <span class="hljs-string">"footer footer footer"</span>;
+}
+
+<span class="hljs-comment">/* 使用网格区域名称定位子元素 */</span>
+<span class="hljs-selector-class">.header</span>  { <span class="hljs-attribute">grid-area</span>: header; }
+<span class="hljs-selector-class">.sidebar</span> { <span class="hljs-attribute">grid-area</span>: sidebar; }
+<span class="hljs-selector-class">.main</span>    { <span class="hljs-attribute">grid-area</span>: main; }
+<span class="hljs-selector-class">.aside</span>   { <span class="hljs-attribute">grid-area</span>: aside; }
+<span class="hljs-selector-class">.footer</span>  { <span class="hljs-attribute">grid-area</span>: footer; }
+
+<span class="hljs-comment">/* 命名网格线 */</span>
+<span class="hljs-selector-class">.grid-named-lines</span> {
+  <span class="hljs-attribute">grid-template-columns</span>: [start] <span class="hljs-number">1</span>fr [mid] <span class="hljs-number">2</span>fr [end];
+  <span class="hljs-attribute">grid-template-rows</span>: [row-start] <span class="hljs-number">100px</span> [row-mid] auto [row-end];
+}
+<span class="hljs-selector-class">.item</span> {
+  <span class="hljs-attribute">grid-column</span>: start / mid;
+  <span class="hljs-attribute">grid-row</span>: row-start / row-end;
+}
+</code></pre>
+<p><strong>Grid vs Flexbox的选择：</strong></p>
+<ul>
+<li><strong>Flexbox</strong>：一维布局，适合导航栏、工具栏、卡片列表等单方向排列</li>
+<li><strong>Grid</strong>：二维布局，适合页面整体框架、仪表盘、复杂表格布局</li>
+<li>两者可以嵌套使用：用Grid做整体页面布局，用Flexbox处理组件内部排列</li>
+</ul>
+<h3 id="43-响应式设计">4.3 响应式设计</h3>
+<blockquote>
+<p>面试题：如何实现响应式布局？常用的CSS单位有哪些区别？</p>
+</blockquote>
+<p><strong>媒体查询（Media Query）：</strong></p>
+<pre><code class="lang-css"><span class="hljs-comment">/* 基础语法 */</span>
+<span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">768px</span>) {
+  <span class="hljs-selector-class">.sidebar</span> { <span class="hljs-attribute">display</span>: none; }
+  <span class="hljs-selector-class">.main</span> { <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>; }
+}
+
+<span class="hljs-comment">/* 常见断点 */</span>
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">576px</span>)  { <span class="hljs-comment">/* 手机 */</span> }
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">577px</span>) <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">768px</span>)  { <span class="hljs-comment">/* 平板竖屏 */</span> }
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">769px</span>) <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">992px</span>)  { <span class="hljs-comment">/* 平板横屏 */</span> }
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">993px</span>) <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1200px</span>) { <span class="hljs-comment">/* 小桌面 */</span> }
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">1201px</span>) { <span class="hljs-comment">/* 大桌面 */</span> }
+</code></pre>
+<p><strong>CSS单位区别：</strong></p>
+<table>
+<thead>
+<tr>
+<th>单位</th>
+<th>描述</th>
+<th>使用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>px</code></td>
+<td>绝对像素单位</td>
+<td>边框、固定尺寸元素</td>
+</tr>
+<tr>
+<td><code>em</code></td>
+<td>相对于<strong>父元素</strong>字体大小</td>
+<td>内边距、外边距（跟随字体缩放）</td>
+</tr>
+<tr>
+<td><code>rem</code></td>
+<td>相对于<strong>根元素(html)</strong>字体大小</td>
+<td>全局统一缩放布局</td>
+</tr>
+<tr>
+<td><code>vw</code></td>
+<td>视口宽度的1%</td>
+<td>全屏宽度、响应式字体</td>
+</tr>
+<tr>
+<td><code>vh</code></td>
+<td>视口高度的1%</td>
+<td>全屏高度布局</td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>相对于父元素对应属性</td>
+<td>流式布局</td>
+</tr>
+</tbody>
+</table>
+<p><strong>移动端适配方案：</strong></p>
+<ol>
+<li><p><strong>flexible方案（rem + 动态设置根字体大小）：</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 根据屏幕宽度动态设置html的font-size</span>
+(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+<span class="hljs-keyword">const</span> docEl = <span class="hljs-variable language_">document</span>.<span class="hljs-property">documentElement</span>;
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">setRemUnit</span>(<span class="hljs-params"></span>) {
+ <span class="hljs-keyword">const</span> rem = docEl.<span class="hljs-property">clientWidth</span> / <span class="hljs-number">10</span>; <span class="hljs-comment">// 将屏幕分为10份</span>
+ docEl.<span class="hljs-property">style</span>.<span class="hljs-property">fontSize</span> = rem + <span class="hljs-string">'px'</span>;
+}
+<span class="hljs-title function_">setRemUnit</span>();
+<span class="hljs-variable language_">window</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'resize'</span>, setRemUnit);
+})();
+</code></pre>
+</li>
+<li><p><strong>viewport方案（vw单位）：</strong></p>
+<pre><code class="lang-css"><span class="hljs-comment">/* 设计稿750px，1px = 100/750 vw = 0.1333vw */</span>
+<span class="hljs-selector-class">.box</span> {
+<span class="hljs-attribute">width</span>: <span class="hljs-number">26.667vw</span>;   <span class="hljs-comment">/* 设计稿200px */</span>
+<span class="hljs-attribute">font-size</span>: <span class="hljs-number">4.267vw</span>; <span class="hljs-comment">/* 设计稿32px */</span>
+}
+</code></pre>
+</li>
+</ol>
+<h3 id="44-居中方案大全">4.4 居中方案大全</h3>
+<blockquote>
+<p>面试题：如何实现元素的水平居中、垂直居中、水平垂直居中？</p>
+</blockquote>
+<p><strong>水平居中：</strong></p>
+<pre><code class="lang-css"><span class="hljs-comment">/* 1. 块级元素：margin auto */</span>
+<span class="hljs-selector-class">.block-center</span> { <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto; <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>; }
+
+<span class="hljs-comment">/* 2. 内联/内联块元素：text-align */</span>
+<span class="hljs-selector-class">.parent</span> { <span class="hljs-attribute">text-align</span>: center; }
+
+<span class="hljs-comment">/* 3. Flex */</span>
+<span class="hljs-selector-class">.parent</span> { <span class="hljs-attribute">display</span>: flex; <span class="hljs-attribute">justify-content</span>: center; }
+</code></pre>
+<p><strong>垂直居中：</strong></p>
+<pre><code class="lang-css"><span class="hljs-comment">/* 1. 单行文本：line-height等于height */</span>
+<span class="hljs-selector-class">.single-line</span> { <span class="hljs-attribute">height</span>: <span class="hljs-number">40px</span>; <span class="hljs-attribute">line-height</span>: <span class="hljs-number">40px</span>; }
+
+<span class="hljs-comment">/* 2. Flex */</span>
+<span class="hljs-selector-class">.parent</span> { <span class="hljs-attribute">display</span>: flex; <span class="hljs-attribute">align-items</span>: center; }
+
+<span class="hljs-comment">/* 3. Grid */</span>
+<span class="hljs-selector-class">.parent</span> { <span class="hljs-attribute">display</span>: grid; <span class="hljs-attribute">place-items</span>: center; <span class="hljs-comment">/* 或 align-items: center */</span> }
+
+<span class="hljs-comment">/* 4. 绝对定位 + transform */</span>
+<span class="hljs-selector-class">.child</span> { <span class="hljs-attribute">position</span>: absolute; <span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>; <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateY</span>(-<span class="hljs-number">50%</span>); }
+
+<span class="hljs-comment">/* 5. table-cell */</span>
+<span class="hljs-selector-class">.parent</span> { <span class="hljs-attribute">display</span>: table-cell; <span class="hljs-attribute">vertical-align</span>: middle; }
+</code></pre>
+<p><strong>水平垂直居中（最常考）：</strong></p>
+<pre><code class="lang-css"><span class="hljs-comment">/* 方案1：Flex（最推荐） */</span>
+<span class="hljs-selector-class">.parent</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">justify-content</span>: center;
+  <span class="hljs-attribute">align-items</span>: center;
+}
+
+<span class="hljs-comment">/* 方案2：Grid */</span>
+<span class="hljs-selector-class">.parent</span> {
+  <span class="hljs-attribute">display</span>: grid;
+  <span class="hljs-attribute">place-items</span>: center;
+}
+
+<span class="hljs-comment">/* 方案3：绝对定位 + transform（不需要知道子元素尺寸） */</span>
+<span class="hljs-selector-class">.parent</span> { <span class="hljs-attribute">position</span>: relative; }
+<span class="hljs-selector-class">.child</span> {
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translate</span>(-<span class="hljs-number">50%</span>, -<span class="hljs-number">50%</span>);
+}
+
+<span class="hljs-comment">/* 方案4：绝对定位 + margin:auto（需要设置宽高） */</span>
+<span class="hljs-selector-class">.parent</span> { <span class="hljs-attribute">position</span>: relative; }
+<span class="hljs-selector-class">.child</span> {
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>; <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>; <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>; <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">margin</span>: auto;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+}
+</code></pre>
+<h3 id="45-清除浮动">4.5 清除浮动</h3>
+<blockquote>
+<p>面试题：为什么需要清除浮动？有哪些清除浮动的方法？</p>
+</blockquote>
+<p>浮动元素脱离正常文档流，导致父元素无法被子元素撑开（高度塔陷）。</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* 方法1：clear:both（在浮动元素后添加空元素） */</span>
+&lt;<span class="hljs-selector-tag">div</span> style="<span class="hljs-attribute">clear</span>: both;"&gt;&lt;/<span class="hljs-selector-tag">div</span>&gt;
+
+<span class="hljs-comment">/* 方法2：overflow:hidden（触发BFC） */</span>
+<span class="hljs-selector-class">.parent</span> { <span class="hljs-attribute">overflow</span>: hidden; }
+
+<span class="hljs-comment">/* 方法3：clearfix伪元素（最推荐，兼容性好） */</span>
+<span class="hljs-selector-class">.clearfix</span><span class="hljs-selector-pseudo">::after</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">""</span>;
+  <span class="hljs-attribute">display</span>: block;    <span class="hljs-comment">/* 或 display: table */</span>
+  <span class="hljs-attribute">clear</span>: both;
+}
+</code></pre>
+<h3 id="46-position定位">4.6 position定位</h3>
+<blockquote>
+<p>面试题：CSS中position的各个值有什么区别？sticky是如何工作的？</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>定位值</th>
+<th>是否脱离文档流</th>
+<th>参照物</th>
+<th>使用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>static</code></td>
+<td>否</td>
+<td>无（默认定位）</td>
+<td>默认值，无需特殊定位</td>
+</tr>
+<tr>
+<td><code>relative</code></td>
+<td>否</td>
+<td>自身原始位置</td>
+<td>微调位置、作为子元素绝对定位的参照</td>
+</tr>
+<tr>
+<td><code>absolute</code></td>
+<td>是</td>
+<td>最近的非static祖先</td>
+<td>弹窗、下拉菜单、工具提示</td>
+</tr>
+<tr>
+<td><code>fixed</code></td>
+<td>是</td>
+<td>浏览器视口</td>
+<td>固定导航栏、回到顶部按钮</td>
+</tr>
+<tr>
+<td><code>sticky</code></td>
+<td>否（滚动到阈值后表现类似fixed）</td>
+<td>最近的滚动祖先</td>
+<td>吸顶导航、表头固定</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-css"><span class="hljs-comment">/* sticky示例：滚动到顶部时固定 */</span>
+<span class="hljs-selector-class">.sticky-header</span> {
+  <span class="hljs-attribute">position</span>: sticky;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;         <span class="hljs-comment">/* 距离视口顶部0px时“粘住” */</span>
+  <span class="hljs-attribute">z-index</span>: <span class="hljs-number">100</span>;
+  <span class="hljs-attribute">background</span>: white;
+}
+</code></pre>
+<p>注意：<code>sticky</code>需要指定<code>top</code>/<code>bottom</code>/<code>left</code>/<code>right</code>中的至少一个值才能生效；其父元素不能设置<code>overflow: hidden</code>。</p>
+<hr></hr>
+<h2 id="五、css进阶">五、CSS进阶</h2>
+<h3 id="51-z-index与层叠上下文">5.1 z-index与层叠上下文</h3>
+<blockquote>
+<p>面试题：z-index不生效可能是什么原因？什么是层叠上下文？</p>
+</blockquote>
+<p><strong>层叠上下文（Stacking Context）创建条件：</strong></p>
+<ul>
+<li>根元素<code>&lt;html&gt;</code></li>
+<li><code>position</code>为<code>absolute</code>或<code>relative</code>且<code>z-index</code>不为<code>auto</code></li>
+<li><code>position</code>为<code>fixed</code>或<code>sticky</code></li>
+<li><code>opacity</code>小于1</li>
+<li><code>transform</code>、<code>filter</code>、<code>perspective</code>不为<code>none</code></li>
+<li><code>z-index</code>不为<code>auto</code>的flex/grid子项</li>
+<li><code>isolation: isolate</code></li>
+</ul>
+<p><strong>层叠顺序（由下到上）：</strong></p>
+<ol>
+<li>层叠上下文的背景和边框</li>
+<li><code>z-index</code>为负的定位元素</li>
+<li>非定位的块级元素（正常流）</li>
+<li>非定位的浮动元素</li>
+<li>非定位的行内/行内块元素</li>
+<li><code>z-index: auto</code>或<code>z-index: 0</code>的定位元素</li>
+<li><code>z-index</code>为正的定位元素</li>
+</ol>
+<p><strong>z-index不生效的常见原因：</strong></p>
+<ul>
+<li>元素没有设置<code>position</code>（<code>static</code>以外的值）</li>
+<li>父元素创建了层叠上下文，子元素的<code>z-index</code>只在父级层叠上下文内比较</li>
+<li><code>z-index</code>只在同一层叠上下文中的兄弟元素之间比较</li>
+</ul>
+<h3 id="52-css动画">5.2 CSS动画</h3>
+<blockquote>
+<p>面试题：transition和animation有什么区别？如何实现GPU加速？</p>
+</blockquote>
+<p><strong>transition（过渡动画）：</strong></p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.box</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+  <span class="hljs-comment">/* transition: property duration timing-function delay */</span>
+  <span class="hljs-attribute">transition</span>: width <span class="hljs-number">0.3s</span> ease-in-out <span class="hljs-number">0s</span>;
+  <span class="hljs-comment">/* 多个属性 */</span>
+  <span class="hljs-attribute">transition</span>: width <span class="hljs-number">0.3s</span> ease, background-color <span class="hljs-number">0.5s</span> linear;
+  <span class="hljs-comment">/* 所有属性 */</span>
+  <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease;
+}
+<span class="hljs-selector-class">.box</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+}
+</code></pre>
+<p><strong>animation（关键帧动画）：</strong></p>
+<pre><code class="lang-css"><span class="hljs-comment">/* 定义关键帧 */</span>
+<span class="hljs-keyword">@keyframes</span> slide-in {
+  <span class="hljs-number">0%</span>   { <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateX</span>(-<span class="hljs-number">100%</span>); <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>; }
+  <span class="hljs-number">50%</span>  { <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.5</span>; }
+  <span class="hljs-number">100%</span> { <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateX</span>(<span class="hljs-number">0</span>); <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>; }
+}
+
+<span class="hljs-selector-class">.animated-box</span> {
+  <span class="hljs-comment">/* animation: name duration timing-function delay iteration-count direction fill-mode play-state */</span>
+  <span class="hljs-attribute">animation</span>: slide-in <span class="hljs-number">1s</span> ease-out <span class="hljs-number">0s</span> <span class="hljs-number">1</span> normal forwards running;
+
+  <span class="hljs-comment">/* 分写形式（animation的八大属性） */</span>
+  <span class="hljs-attribute">animation-name</span>: slide-in;
+  <span class="hljs-attribute">animation-duration</span>: <span class="hljs-number">1s</span>;
+  <span class="hljs-attribute">animation-timing-function</span>: ease-out;
+  <span class="hljs-attribute">animation-delay</span>: <span class="hljs-number">0s</span>;
+  <span class="hljs-attribute">animation-iteration-count</span>: <span class="hljs-number">1</span>;        <span class="hljs-comment">/* infinite为无限循环 */</span>
+  <span class="hljs-attribute">animation-direction</span>: normal;          <span class="hljs-comment">/* normal|reverse|alternate|alternate-reverse */</span>
+  <span class="hljs-attribute">animation-fill-mode</span>: forwards;        <span class="hljs-comment">/* none|forwards|backwards|both */</span>
+  <span class="hljs-attribute">animation-play-state</span>: running;        <span class="hljs-comment">/* running|paused */</span>
+}
+</code></pre>
+<p><strong>transition vs animation区别：</strong></p>
+<ul>
+<li><code>transition</code>需要事件触发（hover/click/class变化），<code>animation</code>可以自动执行</li>
+<li><code>transition</code>只有起始和结束两个状态，<code>animation</code>可以定义多个关键帧</li>
+<li><code>transition</code>不能重复执行（除非重复触发），<code>animation</code>可以设置循环次数</li>
+</ul>
+<p><strong>transform变换：</strong></p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.transform-demo</span> {
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translate</span>(<span class="hljs-number">50px</span>, <span class="hljs-number">100px</span>);   <span class="hljs-comment">/* 位移 */</span>
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotate</span>(<span class="hljs-number">45deg</span>);            <span class="hljs-comment">/* 旋转 */</span>
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scale</span>(<span class="hljs-number">1.5</span>, <span class="hljs-number">2</span>);            <span class="hljs-comment">/* 缩放 */</span>
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">skew</span>(<span class="hljs-number">10deg</span>, <span class="hljs-number">20deg</span>);       <span class="hljs-comment">/* 倾斜 */</span>
+  <span class="hljs-comment">/* 组合变换 */</span>
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translate</span>(<span class="hljs-number">50px</span>, <span class="hljs-number">0</span>) <span class="hljs-built_in">rotate</span>(<span class="hljs-number">45deg</span>) <span class="hljs-built_in">scale</span>(<span class="hljs-number">1.2</span>);
+}
+</code></pre>
+<p><strong>GPU加速：</strong></p>
+<pre><code class="lang-css"><span class="hljs-comment">/* 使用transform触发合成层，利用GPU渲染 */</span>
+<span class="hljs-selector-class">.gpu-accelerated</span> {
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateZ</span>(<span class="hljs-number">0</span>);       <span class="hljs-comment">/* 创建新的合成层 */</span>
+  <span class="hljs-comment">/* 或 */</span>
+  <span class="hljs-attribute">will-change</span>: transform;         <span class="hljs-comment">/* 提前告知浏览器哪些属性会变化 */</span>
+}
+</code></pre>
+<p>注意：过度使用GPU加速会占用大量显存，<code>will-change</code>应在动画开始前添加、结束后移除。</p>
+<h3 id="53-重绘与回流">5.3 重绘与回流</h3>
+<blockquote>
+<p>面试题：什么是重绘和回流？如何减少它们的发生？</p>
+</blockquote>
+<p><strong>回流（Reflow / Layout）：</strong> 当元素的几何属性（尺寸、位置、显示状态等）发生变化时，浏览器需要重新计算元素在页面中的布局。回流的代价很高，因为它会导致部分或整个渲染树重新计算。</p>
+<p><strong>重绘（Repaint）：</strong> 当元素的外观属性（颜色、背景、阴影等）发生变化但不影响布局时，浏览器重新绘制受影响的像素。</p>
+<p><strong>回流一定导致重绘，重绘不一定导致回流。</strong></p>
+<p><strong>触发回流的操作：</strong></p>
+<ul>
+<li>增删DOM元素</li>
+<li>修改元素尺寸（width/height/padding/margin/border）</li>
+<li>修改元素位置</li>
+<li>改变窗口大小</li>
+<li>修改元素字体大小</li>
+<li>读取某些属性（offsetTop/scrollTop/getComputedStyle等，浏览器需要强制回流以获取最新值）</li>
+</ul>
+<p><strong>触发重绘的操作：</strong></p>
+<ul>
+<li>修改颜色（color/background-color）</li>
+<li>修改阴影（box-shadow）</li>
+<li>修改可见性（visibility）</li>
+<li>修改边框圆角（border-radius）</li>
+</ul>
+<p><strong>优化方法：</strong></p>
+<ol>
+<li><strong>批量修改样式</strong>：用class切换替代逐条修改style</li>
+<li><strong>使用DocumentFragment</strong>：批量DOM操作时先在内存中构建，一次性插入</li>
+<li><strong>脱离文档流</strong>：对频繁变化的元素使用<code>position: absolute/fixed</code>，减少对其他元素的影响</li>
+<li><strong>使用transform替代位移</strong>：<code>transform</code>不触发回流，在合成层完成，性能远优于修改<code>top/left</code></li>
+<li><strong>避免频繁读取触发回流的属性</strong>：将offsetTop等值缓存到变量中</li>
+<li><strong>使用<code>requestAnimationFrame</code></strong>：将DOM修改集中在下一帧统一执行</li>
+</ol>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 反面示例：多次触发回流</span>
+<span class="hljs-keyword">const</span> el = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'box'</span>);
+el.<span class="hljs-property">style</span>.<span class="hljs-property">width</span> = <span class="hljs-string">'100px'</span>;
+el.<span class="hljs-property">style</span>.<span class="hljs-property">height</span> = <span class="hljs-string">'200px'</span>;
+el.<span class="hljs-property">style</span>.<span class="hljs-property">margin</span> = <span class="hljs-string">'10px'</span>;
+
+<span class="hljs-comment">// 正面示例：使用class一次性修改</span>
+el.<span class="hljs-property">classList</span>.<span class="hljs-title function_">add</span>(<span class="hljs-string">'new-style'</span>);
+
+<span class="hljs-comment">// 正面示例：使用DocumentFragment批量操作DOM</span>
+<span class="hljs-keyword">const</span> fragment = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createDocumentFragment</span>();
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">1000</span>; i++) {
+  <span class="hljs-keyword">const</span> li = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">'li'</span>);
+  li.<span class="hljs-property">textContent</span> = <span class="hljs-string">`Item <span class="hljs-subst">${i}</span>`</span>;
+  fragment.<span class="hljs-title function_">appendChild</span>(li);
+}
+<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'list'</span>).<span class="hljs-title function_">appendChild</span>(fragment);
+</code></pre>
+<h3 id="54-css预处理器与css-in-js">5.4 CSS预处理器与CSS-in-JS</h3>
+<blockquote>
+<p>面试题：Sass和Less有什么区别？CSS Modules和styled-components各自的原理和优缺点是什么？</p>
+</blockquote>
+<p><strong>Sass / Less 核心功能：</strong></p>
+<pre><code class="lang-scss"><span class="hljs-comment">// 1. 变量</span>
+<span class="hljs-variable">$primary-color</span>: <span class="hljs-number">#3498db</span>;    <span class="hljs-comment">// Sass用$</span>
+<span class="hljs-keyword">@primary-color</span>: <span class="hljs-number">#3498db</span>;    <span class="hljs-comment">// Less用@</span>
+
+<span class="hljs-comment">// 2. 嵌套</span>
+<span class="hljs-selector-class">.nav</span> {
+  <span class="hljs-attribute">background</span>: <span class="hljs-variable">$primary-color</span>;
+  &amp;__item {                  <span class="hljs-comment">// BEM命名 =&gt; .nav__item</span>
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
+    &amp;<span class="hljs-selector-pseudo">:hover</span> {                <span class="hljs-comment">// =&gt; .nav__item:hover</span>
+      <span class="hljs-attribute">color</span>: red;
+    }
+  }
+}
+
+<span class="hljs-comment">// 3. Mixin（可复用代码块）</span>
+<span class="hljs-keyword">@mixin</span> flex-center {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">justify-content</span>: center;
+  <span class="hljs-attribute">align-items</span>: center;
+}
+<span class="hljs-selector-class">.container</span> {
+  <span class="hljs-keyword">@include</span> flex-center;
+}
+
+<span class="hljs-comment">// 4. 继承</span>
+<span class="hljs-selector-class">.base-button</span> {
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span>;
+}
+<span class="hljs-selector-class">.primary-button</span> {
+  <span class="hljs-keyword">@extend</span> .base-button;
+  <span class="hljs-attribute">background</span>: blue;
+  <span class="hljs-attribute">color</span>: white;
+}
+
+<span class="hljs-comment">// 5. 函数和运算</span>
+<span class="hljs-selector-class">.sidebar</span> {
+  <span class="hljs-attribute">width</span>: (<span class="hljs-number">300px</span> / <span class="hljs-number">960px</span>) * <span class="hljs-number">100%</span>;
+}
+</code></pre>
+<p><strong>CSS Modules原理：</strong>
+构建工具（Webpack的css-loader开启modules模式）在编译时自动将类名转换为唯一的哈希值，避免全局命名冲突。</p>
+<pre><code class="lang-jsx"><span class="hljs-comment">// styles.module.css</span>
+.<span class="hljs-property">title</span> { <span class="hljs-attr">color</span>: red; }
+
+<span class="hljs-comment">// 编译后：.title_abc123 { color: red; }</span>
+
+<span class="hljs-keyword">import</span> styles <span class="hljs-keyword">from</span> <span class="hljs-string">'./styles.module.css'</span>;
+<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.title}</span>&gt;</span>Hello<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>
+</code></pre>
+<p><strong>CSS-in-JS（styled-components / Emotion）：</strong>
+在JavaScript中直接编写CSS，利用模板字符串定义样式组件，运行时动态生成唯一类名并注入<code>&lt;style&gt;</code>标签。</p>
+<pre><code class="lang-jsx"><span class="hljs-keyword">import</span> styled <span class="hljs-keyword">from</span> <span class="hljs-string">'styled-components'</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">Button</span> = styled.<span class="hljs-property">button</span><span class="hljs-string">`
+  background: <span class="hljs-subst">${props =&gt; props.primary ? <span class="hljs-string">'#3498db'</span> : <span class="hljs-string">'#fff'</span>}</span>;
+  color: <span class="hljs-subst">${props =&gt; props.primary ? <span class="hljs-string">'#fff'</span> : <span class="hljs-string">'#333'</span>}</span>;
+  padding: 10px 20px;
+  border-radius: 4px;
+
+  &amp;:hover {
+    opacity: 0.8;
+  }
+`</span>;
+
+<span class="hljs-comment">// 使用</span>
+<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">primary</span>&gt;</span>Primary Button<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span></span>
+</code></pre>
+<p><strong>优缺点对比：</strong></p>
+<table>
+<thead>
+<tr>
+<th>方案</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sass/Less</td>
+<td>成熟稳定、学习成本低、构建时编译无运行时开销</td>
+<td>全局命名需规范、难以动态样式</td>
+</tr>
+<tr>
+<td>CSS Modules</td>
+<td>自动作用域隔离、零运行时、与现有CSS兼容</td>
+<td>类名不够直观、动态样式需结合style</td>
+</tr>
+<tr>
+<td>styled-components</td>
+<td>动态样式强大、自动作用域、组件化思维</td>
+<td>运行时开销、包体积增大、调试时类名不直观</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<p>本指南覆盖了HTML与CSS在前端面试中的绝大部分高频考点。建议结合实际项目经验进行准备，在面试中能够给出具体的代码示例和实际应用场景将更加有说服力。</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 简介">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="javascript.html" class="navigation navigation-next " aria-label="Next page: JavaScript核心">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"HTML与CSS","level":"2.1","depth":1,"next":{"title":"JavaScript核心","level":"2.2","depth":1,"path":"frontend/javascript.md","ref":"frontend/javascript.md","articles":[]},"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"frontend/html-css.md","mtime":"2026-03-31T06:35:11.837Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

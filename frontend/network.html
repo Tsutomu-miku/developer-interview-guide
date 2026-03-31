@@ -1,0 +1,1653 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>网络协议 · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="react.html" />
+    
+    
+    <link rel="prev" href="browser.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="html-css.html">
+            
+                <a href="html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="javascript.html">
+            
+                <a href="javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="typescript.html">
+            
+                <a href="typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="browser.html">
+            
+                <a href="browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.5" data-path="network.html">
+            
+                <a href="network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="react.html">
+            
+                <a href="react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="vue.html">
+            
+                <a href="vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="engineering.html">
+            
+                <a href="engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="performance.html">
+            
+                <a href="performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="security.html">
+            
+                <a href="security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../nodejs/basics.html">
+            
+                <a href="../nodejs/basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../nodejs/event-loop.html">
+            
+                <a href="../nodejs/event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../nodejs/stream.html">
+            
+                <a href="../nodejs/stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../nodejs/frameworks.html">
+            
+                <a href="../nodejs/frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../nodejs/database.html">
+            
+                <a href="../nodejs/database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../nodejs/practice.html">
+            
+                <a href="../nodejs/practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../golang/basics.html">
+            
+                <a href="../golang/basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../golang/concurrency.html">
+            
+                <a href="../golang/concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../golang/memory.html">
+            
+                <a href="../golang/memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../golang/web-framework.html">
+            
+                <a href="../golang/web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../golang/database-design.html">
+            
+                <a href="../golang/database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../golang/testing-practice.html">
+            
+                <a href="../golang/testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../agent/llm-basics.html">
+            
+                <a href="../agent/llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../agent/prompt-engineering.html">
+            
+                <a href="../agent/prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../agent/rag.html">
+            
+                <a href="../agent/rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../agent/agent-architecture.html">
+            
+                <a href="../agent/agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../agent/tool-calling.html">
+            
+                <a href="../agent/tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../agent/practice.html">
+            
+                <a href="../agent/practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >网络协议</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="网络协议面试指南">网络协议面试指南</h1>
+<h2 id="一、http协议基础">一、HTTP协议基础</h2>
+<h3 id="11-http请求方法">1.1 HTTP请求方法</h3>
+<blockquote>
+<p>面试题：GET和POST有什么区别？</p>
+</blockquote>
+<p>HTTP定义了一组请求方法，用于指示对资源执行的操作：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+<th>幂等</th>
+<th>安全</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td>获取资源</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>提交数据/创建资源</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td>替换目标资源</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>PATCH</td>
+<td>部分修改资源</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>删除资源</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>OPTIONS</td>
+<td>获取通信选项（预检请求）</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>HEAD</td>
+<td>与GET相同但无响应体</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GET vs POST 全面对比：</strong></p>
+<table>
+<thead>
+<tr>
+<th>对比维度</th>
+<th>GET</th>
+<th>POST</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>语义</td>
+<td>获取资源</td>
+<td>提交数据</td>
+</tr>
+<tr>
+<td>参数位置</td>
+<td>URL查询字符串</td>
+<td>请求体Body</td>
+</tr>
+<tr>
+<td>参数长度</td>
+<td>受URL长度限制（约2KB~8KB，浏览器差异）</td>
+<td>理论无限制（服务器可配置）</td>
+</tr>
+<tr>
+<td>缓存</td>
+<td>可被浏览器缓存</td>
+<td>默认不缓存</td>
+</tr>
+<tr>
+<td>编码类型</td>
+<td>application/x-www-form-urlencoded</td>
+<td>支持多种（form-data/json/text等）</td>
+</tr>
+<tr>
+<td>安全性</td>
+<td>参数暴露在URL中，浏览器历史可见</td>
+<td>参数在Body中，相对安全</td>
+</tr>
+<tr>
+<td>幂等性</td>
+<td>幂等（多次请求结果一致）</td>
+<td>非幂等（可能产生副作用）</td>
+</tr>
+<tr>
+<td>书签</td>
+<td>可收藏为书签</td>
+<td>不能收藏</td>
+</tr>
+<tr>
+<td>回退</td>
+<td>浏览器回退无害</td>
+<td>回退会重新提交</td>
+</tr>
+<tr>
+<td>TCP包</td>
+<td>产生一个TCP数据包（Header+Data一起发）</td>
+<td>可能产生两个TCP包（先Header，返回100后再发Data，Firefox例外）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="12-http状态码">1.2 HTTP状态码</h3>
+<blockquote>
+<p>面试题：常见的HTTP状态码有哪些？分别表示什么含义？</p>
+</blockquote>
+<p><strong>1xx 信息响应：</strong></p>
+<ul>
+<li><strong>100 Continue</strong>：客户端应继续发送请求体</li>
+<li><strong>101 Switching Protocols</strong>：协议切换（如WebSocket握手）</li>
+</ul>
+<p><strong>2xx 成功：</strong></p>
+<ul>
+<li><strong>200 OK</strong>：请求成功</li>
+<li><strong>201 Created</strong>：资源创建成功（POST/PUT响应）</li>
+<li><strong>204 No Content</strong>：成功但无返回内容（DELETE常用）</li>
+<li><strong>206 Partial Content</strong>：部分内容（Range请求/断点续传）</li>
+</ul>
+<p><strong>3xx 重定向：</strong></p>
+<ul>
+<li><strong>301 Moved Permanently</strong>：永久重定向（搜索引擎更新链接，浏览器缓存）</li>
+<li><strong>302 Found</strong>：临时重定向（可能将POST改为GET）</li>
+<li><strong>304 Not Modified</strong>：协商缓存命中，使用本地缓存</li>
+<li><strong>307 Temporary Redirect</strong>：临时重定向（严格保持请求方法不变）</li>
+<li><strong>308 Permanent Redirect</strong>：永久重定向（严格保持请求方法不变）</li>
+</ul>
+<p><strong>4xx 客户端错误：</strong></p>
+<ul>
+<li><strong>400 Bad Request</strong>：请求语法错误/参数无效</li>
+<li><strong>401 Unauthorized</strong>：未认证（需要登录）</li>
+<li><strong>403 Forbidden</strong>：已认证但无权限</li>
+<li><strong>404 Not Found</strong>：资源不存在</li>
+<li><strong>405 Method Not Allowed</strong>：请求方法不允许</li>
+<li><strong>413 Payload Too Large</strong>：请求体超过服务器限制</li>
+<li><strong>429 Too Many Requests</strong>：请求频率超限（限流）</li>
+</ul>
+<p><strong>5xx 服务端错误：</strong></p>
+<ul>
+<li><strong>500 Internal Server Error</strong>：服务器内部错误</li>
+<li><strong>502 Bad Gateway</strong>：网关/代理收到上游服务器无效响应</li>
+<li><strong>503 Service Unavailable</strong>：服务暂时不可用（过载/维护）</li>
+<li><strong>504 Gateway Timeout</strong>：网关/代理等待上游服务器超时</li>
+</ul>
+<h3 id="13-http头部">1.3 HTTP头部</h3>
+<p><strong>通用头部：</strong></p>
+<pre><code>Cache-Control: max-age=3600, public     // 缓存控制
+Connection: keep-alive                   // 持久连接
+Date: Mon, 31 Mar 2025 00:00:00 GMT     // 日期
+</code></pre><p><strong>请求头部：</strong></p>
+<pre><code>Accept: application/json                 // 可接受的响应类型
+Accept-Encoding: gzip, deflate, br       // 可接受的编码
+Accept-Language: zh-CN,zh;q=0.9          // 语言偏好
+Authorization: Bearer eyJhbGciOi...      // 认证信息
+Cookie: session_id=abc123                // Cookie
+Host: www.example.com                    // 目标主机
+If-None-Match: "etag123"                 // 协商缓存ETag
+If-Modified-Since: Mon, 01 Jan 2025...  // 协商缓存时间
+Origin: https://www.example.com          // 跨域请求来源
+Referer: https://www.example.com/page    // 来源页面
+User-Agent: Mozilla/5.0...               // 客户端标识
+</code></pre><p><strong>响应头部：</strong></p>
+<pre><code>Access-Control-Allow-Origin: *           // CORS允许的源
+Access-Control-Allow-Methods: GET,POST   // CORS允许的方法
+Access-Control-Allow-Headers: Content-Type // CORS允许的头
+Access-Control-Allow-Credentials: true   // CORS允许携带凭证
+Content-Type: application/json; charset=utf-8
+Content-Length: 1234
+ETag: "etag123"                          // 资源标识
+Last-Modified: Mon, 01 Jan 2025...      // 最后修改时间
+Set-Cookie: id=abc; HttpOnly; Secure     // 设置Cookie
+</code></pre><hr></hr>
+<h2 id="二、http版本演进">二、HTTP版本演进</h2>
+<blockquote>
+<p>面试题：HTTP/1.0、HTTP/1.1、HTTP/2、HTTP/3有什么区别？</p>
+</blockquote>
+<h3 id="21-http10">2.1 HTTP/1.0</h3>
+<ul>
+<li><strong>短连接</strong>：每次请求都需要建立新的TCP连接，请求完成后关闭</li>
+<li>每次连接只能发送一个请求</li>
+<li>无Host头，不支持虚拟主机</li>
+<li>缓存控制：仅Expires和If-Modified-Since</li>
+</ul>
+<h3 id="22-http11">2.2 HTTP/1.1</h3>
+<ul>
+<li><strong>持久连接</strong>：Connection: keep-alive默认开启，TCP连接复用</li>
+<li><strong>管道化（Pipelining）</strong>：可在同一连接上连续发送多个请求，但响应必须按序返回（<strong>队头阻塞 Head-of-Line Blocking</strong>）</li>
+<li><strong>Host头</strong>：支持虚拟主机（同一IP托管多个域名）</li>
+<li><strong>断点续传</strong>：Range请求头，支持分片下载</li>
+<li>新增方法：PUT、PATCH、DELETE、OPTIONS</li>
+<li>增强缓存：Cache-Control、ETag</li>
+</ul>
+<p><strong>HTTP/1.1的问题：</strong></p>
+<ul>
+<li>队头阻塞：前一个响应未完成，后续响应被阻塞</li>
+<li>头部冗余：每次请求携带大量重复头部（Cookie等）</li>
+<li>并发限制：浏览器对同一域名限制6~8个TCP连接</li>
+</ul>
+<h3 id="23-http2">2.3 HTTP/2</h3>
+<pre><code>┌─────────────────────────┐
+│      HTTP/2 连接         │
+│  ┌─────────────────┐    │
+│  │    二进制分帧层    │    │
+│  │  ┌────┐ ┌────┐  │    │
+│  │  │帧1 │ │帧2 │  │    │  ← Stream 1 (请求A)
+│  │  └────┘ └────┘  │    │
+│  │  ┌────┐ ┌────┐  │    │
+│  │  │帧3 │ │帧4 │  │    │  ← Stream 2 (请求B)
+│  │  └────┘ └────┘  │    │
+│  └─────────────────┘    │
+│         TCP连接           │
+└─────────────────────────┘
+</code></pre><p><strong>核心特性：</strong></p>
+<ul>
+<li><strong>多路复用（Multiplexing）</strong>：同一TCP连接上并发多个请求/响应Stream，解决HTTP层队头阻塞</li>
+<li><strong>头部压缩（HPACK）</strong>：静态表（61个常见头部）+ 动态表（连接期间协商）+ 霍夫曼编码，头部体积减少85%+</li>
+<li><strong>服务器推送（Server Push）</strong>：服务器主动推送关联资源（如HTML中引用的CSS/JS），减少往返</li>
+<li><strong>二进制分帧层</strong>：HTTP消息被分解为帧（Frame），多个帧组成流（Stream），多个流在一个连接中复用</li>
+<li><strong>流优先级（Stream Priority）</strong>：客户端指定流的依赖关系和权重</li>
+</ul>
+<p><strong>HTTP/2的不足：</strong></p>
+<ul>
+<li>TCP层队头阻塞依然存在（丢包会阻塞所有流）</li>
+<li>TCP+TLS握手延迟（1-3 RTT）</li>
+</ul>
+<h3 id="24-http3">2.4 HTTP/3</h3>
+<ul>
+<li><strong>QUIC协议</strong>：基于UDP实现可靠传输（Google设计）</li>
+<li><strong>彻底解决队头阻塞</strong>：每个Stream独立，单个流丢包不影响其他流</li>
+<li><strong>0-RTT建连</strong>：结合TLS 1.3，首次1-RTT，重连0-RTT</li>
+<li><strong>连接迁移</strong>：使用Connection ID标识连接（而非IP+Port），网络切换（如WiFi→4G）不断连</li>
+<li><strong>TLS 1.3内置</strong>：加密集成在QUIC层中，减少握手延迟</li>
+<li><strong>前向纠错（FEC）</strong>：通过冗余数据恢复丢失的包，减少重传</li>
+</ul>
+<hr></hr>
+<h2 id="三、https">三、HTTPS</h2>
+<blockquote>
+<p>面试题：HTTPS是如何保证安全的？TLS握手过程是怎样的？</p>
+</blockquote>
+<h3 id="31-加密方式">3.1 加密方式</h3>
+<p><strong>对称加密（Symmetric Encryption）：</strong></p>
+<ul>
+<li>加密和解密使用<strong>同一个密钥</strong></li>
+<li>算法：AES（高级加密标准）、DES、3DES、ChaCha20</li>
+<li>优点：加解密速度快</li>
+<li>缺点：密钥分发问题（如何安全地将密钥传给对方？）</li>
+</ul>
+<p><strong>非对称加密（Asymmetric Encryption）：</strong></p>
+<ul>
+<li><strong>公钥加密，私钥解密</strong>（也可私钥签名，公钥验签）</li>
+<li>算法：RSA（2048/4096位）、ECC（椭圆曲线，256位≈RSA 3072位安全强度）</li>
+<li>优点：解决密钥分发问题</li>
+<li>缺点：加解密速度慢（比对称加密慢100~1000倍）</li>
+</ul>
+<p><strong>混合加密（HTTPS实际使用）：</strong></p>
+<ol>
+<li>非对称加密交换"会话密钥"（对称密钥）</li>
+<li>后续通信使用对称加密传输数据</li>
+</ol>
+<h3 id="32-ca证书与数字签名">3.2 CA证书与数字签名</h3>
+<p><strong>证书链：</strong></p>
+<pre><code>根CA证书（Root CA，预装在浏览器/OS中）
+  └── 中间CA证书（Intermediate CA）
+        └── 服务器证书（Server Certificate）
+</code></pre><p><strong>数字签名流程：</strong></p>
+<ol>
+<li>服务器将证书内容做Hash得到摘要</li>
+<li>CA用自己的<strong>私钥</strong>对摘要加密，生成数字签名</li>
+<li>客户端用CA的<strong>公钥</strong>解密签名，与自己计算的Hash对比</li>
+<li>一致则证明证书未被篡改</li>
+</ol>
+<p><strong>证书验证过程：</strong></p>
+<ol>
+<li>客户端收到服务器证书</li>
+<li>检查证书有效期、域名是否匹配</li>
+<li>沿证书链向上验证（中间CA→根CA），根CA是否在信任列表中</li>
+<li>检查证书吊销状态（CRL/OCSP）</li>
+</ol>
+<h3 id="33-tls握手流程">3.3 TLS握手流程</h3>
+<p><strong>TLS 1.2 四次握手（2-RTT）：</strong></p>
+<pre><code>Client                          Server
+  |                                |
+  |------ ClientHello -----------&gt;|  (支持的TLS版本/加密套件/随机数Client Random)
+  |                                |
+  |&lt;----- ServerHello ------------|  (选定TLS版本/加密套件/随机数Server Random)
+  |&lt;----- Certificate ------------|  (服务器证书)
+  |&lt;----- ServerHelloDone --------|
+  |                                |
+  |------ ClientKeyExchange -----&gt;|  (Pre-Master Secret，用服务器公钥加密)
+  |------ ChangeCipherSpec ------&gt;|  (切换为加密通信)
+  |------ Finished ---------------&gt;|  (加密的握手验证数据)
+  |                                |
+  |&lt;----- ChangeCipherSpec --------|  (切换为加密通信)
+  |&lt;----- Finished ----------------|  (加密的握手验证数据)
+  |                                |
+  |====== 加密数据传输 =============|
+</code></pre><p>双方通过 Client Random + Server Random + Pre-Master Secret 计算出相同的 <strong>Master Secret</strong>，派生出会话密钥。</p>
+<p><strong>TLS 1.3 握手（1-RTT，恢复会话0-RTT）：</strong></p>
+<ul>
+<li>仅支持5个安全的加密套件，移除RSA密钥交换（仅保留ECDHE/DHE前向保密）</li>
+<li>ClientHello直接携带密钥交换参数（key_share），减少1个RTT</li>
+<li>会话恢复可0-RTT（Early Data），但需防重放攻击</li>
+</ul>
+<hr></hr>
+<h2 id="四、tcp协议">四、TCP协议</h2>
+<h3 id="41-三次握手">4.1 三次握手</h3>
+<blockquote>
+<p>面试题：TCP为什么需要三次握手？两次行不行？</p>
+</blockquote>
+<pre><code>Client                   Server
+  |                        |
+  |--- SYN, seq=x -------&gt;|   第1次：客户端发起连接
+  |                        |   (Client: SYN_SENT)
+  |&lt;-- SYN+ACK,           |   第2次：服务器确认并发起连接
+  |    seq=y, ack=x+1 ----|   (Server: SYN_RCVD)
+  |                        |
+  |--- ACK, ack=y+1 -----&gt;|   第3次：客户端确认
+  |                        |   (Both: ESTABLISHED)
+</code></pre><p><strong>为什么是三次（不是两次）：</strong></p>
+<ol>
+<li><strong>防止历史连接初始化</strong>：如果客户端发送的旧SYN延迟到达，两次握手会导致服务器错误建立连接。三次握手允许客户端在第三步发现是旧连接并发RST拒绝</li>
+<li><strong>同步双方初始序列号（ISN）</strong>：客户端和服务器各需确认对方的ISN，至少需要三次消息交换</li>
+<li><strong>避免资源浪费</strong>：两次握手时服务器在第二步就分配资源，若第三步的ACK丢失，服务器资源白白占用</li>
+</ol>
+<h3 id="42-四次挥手">4.2 四次挥手</h3>
+<blockquote>
+<p>面试题：TCP为什么需要四次挥手？TIME_WAIT状态的作用？</p>
+</blockquote>
+<pre><code>Client                    Server
+  |                         |
+  |--- FIN, seq=u --------&gt;|   第1次：客户端请求关闭
+  |                         |   (Client: FIN_WAIT_1)
+  |&lt;-- ACK, ack=u+1 -------|   第2次：服务器确认
+  |                         |   (Client: FIN_WAIT_2, Server: CLOSE_WAIT)
+  |                         |   (服务器可能还有数据要发送...)
+  |&lt;-- FIN, seq=w ---------|   第3次：服务器请求关闭
+  |                         |   (Server: LAST_ACK)
+  |--- ACK, ack=w+1 ------&gt;|   第4次：客户端确认
+  |                         |   (Client: TIME_WAIT → 等待2MSL → CLOSED)
+  |                         |   (Server: CLOSED)
+</code></pre><p><strong>为什么是四次（不是三次）：</strong></p>
+<ul>
+<li>TCP是全双工的，每个方向需要独立关闭</li>
+<li>第2次ACK确认收到FIN后，服务器可能还有未发完的数据（<strong>半关闭状态CLOSE_WAIT</strong>）</li>
+<li>服务器发完数据后才发FIN</li>
+</ul>
+<p><strong>TIME_WAIT等待2MSL的原因：</strong></p>
+<ul>
+<li><strong>确保最后的ACK到达</strong>：如果ACK丢失，服务器会重发FIN，客户端需要在TIME_WAIT状态处理</li>
+<li><strong>等待旧报文段消失</strong>：2MSL（Maximum Segment Lifetime，通常60s）确保本次连接的所有报文都从网络中消失，避免影响新连接</li>
+</ul>
+<h3 id="43-tcp-vs-udp">4.3 TCP vs UDP</h3>
+<table>
+<thead>
+<tr>
+<th>对比维度</th>
+<th>TCP</th>
+<th>UDP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>连接</td>
+<td>面向连接（三次握手）</td>
+<td>无连接</td>
+</tr>
+<tr>
+<td>可靠性</td>
+<td>可靠传输（确认/重传/排序）</td>
+<td>不可靠（尽最大努力交付）</td>
+</tr>
+<tr>
+<td>有序性</td>
+<td>保证数据有序</td>
+<td>不保证顺序</td>
+</tr>
+<tr>
+<td>流量控制</td>
+<td>滑动窗口</td>
+<td>无</td>
+</tr>
+<tr>
+<td>拥塞控制</td>
+<td>有（慢启动/拥塞避免）</td>
+<td>无</td>
+</tr>
+<tr>
+<td>速度</td>
+<td>较慢（连接建立+确认开销）</td>
+<td>快（无连接开销）</td>
+</tr>
+<tr>
+<td>头部开销</td>
+<td>20字节</td>
+<td>8字节</td>
+</tr>
+<tr>
+<td>传输方式</td>
+<td>字节流</td>
+<td>数据报</td>
+</tr>
+<tr>
+<td>使用场景</td>
+<td>HTTP/HTTPS/FTP/SMTP/SSH</td>
+<td>DNS/DHCP/视频流/实时游戏/QUIC</td>
+</tr>
+</tbody>
+</table>
+<h3 id="44-tcp拥塞控制">4.4 TCP拥塞控制</h3>
+<blockquote>
+<p>面试题：TCP拥塞控制的四个阶段？</p>
+</blockquote>
+<pre><code>cwnd
+  |          ssthresh
+  |            |
+  |     .......|........超时
+  |    /       |       \
+  |   / 拥塞避免|        \  新ssthresh = cwnd/2
+  |  /  (线性) |         \
+  | / 慢启动   |          \→ 重新慢启动
+  |/ (指数)    |
+  +————————————————————→ time
+</code></pre><ol>
+<li><strong>慢启动（Slow Start）</strong>：cwnd从1个MSS开始，每收到一个ACK，cwnd翻倍（指数增长），直到达到ssthresh</li>
+<li><strong>拥塞避免（Congestion Avoidance）</strong>：cwnd超过ssthresh后，每RTT增加1个MSS（线性增长）</li>
+<li><strong>快重传（Fast Retransmit）</strong>：收到3个重复ACK时立即重传丢失的段，无需等待超时</li>
+<li><strong>快恢复（Fast Recovery）</strong>：ssthresh = cwnd/2，cwnd = ssthresh + 3，进入拥塞避免（而非从慢启动重来）</li>
+</ol>
+<hr></hr>
+<h2 id="五、dns解析">五、DNS解析</h2>
+<blockquote>
+<p>面试题：DNS解析过程是怎样的？</p>
+</blockquote>
+<h3 id="51-解析流程">5.1 解析流程</h3>
+<pre><code>浏览器DNS缓存 → OS DNS缓存 → hosts文件 → 本地DNS服务器缓存
+    ↓ (未命中)
+本地DNS服务器 ——迭代查询——→ 根DNS服务器（.）
+                            ↓ 返回顶级域NS
+                         顶级DNS服务器（.com）
+                            ↓ 返回权威域NS
+                         权威DNS服务器（example.com）
+                            ↓ 返回IP地址
+                         返回结果给客户端
+</code></pre><ul>
+<li><strong>递归查询</strong>：客户端→本地DNS服务器（客户端只发一次请求，DNS服务器代为查询）</li>
+<li><strong>迭代查询</strong>：本地DNS服务器→各级DNS服务器（每次返回下一级的地址，本地DNS自己去查）</li>
+</ul>
+<h3 id="52-dns记录类型">5.2 DNS记录类型</h3>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>描述</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>域名→IPv4地址</td>
+<td>example.com → 93.184.216.34</td>
+</tr>
+<tr>
+<td>AAAA</td>
+<td>域名→IPv6地址</td>
+<td>example.com → 2606:2800:220:1:...</td>
+</tr>
+<tr>
+<td>CNAME</td>
+<td>域名别名→另一个域名</td>
+<td>www.example.com → example.com</td>
+</tr>
+<tr>
+<td>MX</td>
+<td>邮件交换记录</td>
+<td>example.com → mail.example.com</td>
+</tr>
+<tr>
+<td>NS</td>
+<td>域名服务器记录</td>
+<td>example.com → ns1.example.com</td>
+</tr>
+<tr>
+<td>TXT</td>
+<td>文本记录（SPF/DKIM验证等）</td>
+<td>v=spf1 include:...</td>
+</tr>
+</tbody>
+</table>
+<h3 id="53-dns优化">5.3 DNS优化</h3>
+<ul>
+<li><strong>DNS预解析</strong>：<code>&lt;link rel="dns-prefetch" href="//api.example.com"&gt;</code></li>
+<li><strong>DNS缓存</strong>：TTL（Time To Live）控制缓存时间</li>
+<li><strong>DNS-over-HTTPS（DoH）</strong>：通过HTTPS加密DNS查询，防止DNS劫持/监听</li>
+<li><strong>DNS-over-TLS（DoT）</strong>：通过TLS加密DNS查询</li>
+</ul>
+<hr></hr>
+<h2 id="六、cdn原理">六、CDN原理</h2>
+<blockquote>
+<p>面试题：CDN是如何加速访问的？</p>
+</blockquote>
+<h3 id="61-cdn工作流程">6.1 CDN工作流程</h3>
+<pre><code>用户 → DNS解析 → GSLB全局负载均衡（根据IP/延迟/负载选择最优节点）
+                    ↓
+              边缘节点（Edge Server）
+              ├── 缓存命中 → 直接返回内容
+              └── 缓存未命中 → 回源
+                    ↓
+              源站服务器（Origin Server）
+                    ↓
+              返回内容 + 边缘节点缓存
+</code></pre><h3 id="62-核心概念">6.2 核心概念</h3>
+<ul>
+<li><strong>GSLB（Global Server Load Balancing）</strong>：全局负载均衡，根据用户地理位置、网络延迟、节点负载等选择最近/最优的CDN节点</li>
+<li><strong>边缘节点</strong>：部署在各地的缓存服务器，就近服务用户</li>
+<li><strong>回源</strong>：缓存未命中时向源站请求资源</li>
+<li><strong>缓存策略</strong>：遵循HTTP缓存头（Cache-Control/Expires）、支持自定义缓存规则、缓存刷新/预热</li>
+</ul>
+<h3 id="63-cdn适用场景">6.3 CDN适用场景</h3>
+<ul>
+<li>静态资源加速（JS/CSS/图片/视频）</li>
+<li>动态内容加速（动态路由优化）</li>
+<li>安全防护（DDoS防护/WAF）</li>
+<li>HTTPS卸载（边缘节点终止TLS，减轻源站压力）</li>
+</ul>
+<hr></hr>
+<h2 id="七、websocket">七、WebSocket</h2>
+<blockquote>
+<p>面试题：WebSocket和HTTP有什么区别？</p>
+</blockquote>
+<h3 id="71-基本概念">7.1 基本概念</h3>
+<p>WebSocket是一种在单个TCP连接上进行<strong>全双工通信</strong>的协议。客户端和服务器可以随时互相发送数据。</p>
+<h3 id="72-握手过程">7.2 握手过程</h3>
+<p>WebSocket连接通过HTTP Upgrade建立：</p>
+<pre><code>// 客户端请求
+GET /chat HTTP/1.1
+Host: server.example.com
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==
+Sec-WebSocket-Version: 13
+
+// 服务器响应
+HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Accept: s3pPLMBiTxaQ9kYGzzhZRbK+xOo=
+</code></pre><h3 id="73-与http轮询对比">7.3 与HTTP轮询对比</h3>
+<table>
+<thead>
+<tr>
+<th>方式</th>
+<th>原理</th>
+<th>实时性</th>
+<th>开销</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>短轮询</td>
+<td>客户端定时发请求</td>
+<td>低（取决于间隔）</td>
+<td>高（大量无效请求）</td>
+</tr>
+<tr>
+<td>长轮询</td>
+<td>服务器hold请求直到有数据</td>
+<td>中</td>
+<td>中（保持连接）</td>
+</tr>
+<tr>
+<td>SSE</td>
+<td>服务器单向推送（text/event-stream）</td>
+<td>高</td>
+<td>低（单向/自动重连）</td>
+</tr>
+<tr>
+<td>WebSocket</td>
+<td>全双工双向通信</td>
+<td>高</td>
+<td>低（握手后帧开销小）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="74-心跳机制">7.4 心跳机制</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 客户端心跳实现</span>
+<span class="hljs-keyword">let</span> heartbeatTimer = <span class="hljs-literal">null</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">startHeartbeat</span>(<span class="hljs-params">ws</span>) {
+  heartbeatTimer = <span class="hljs-built_in">setInterval</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">if</span> (ws.<span class="hljs-property">readyState</span> === <span class="hljs-title class_">WebSocket</span>.<span class="hljs-property">OPEN</span>) {
+      ws.<span class="hljs-title function_">send</span>(<span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>({ <span class="hljs-attr">type</span>: <span class="hljs-string">'ping'</span> }));
+    }
+  }, <span class="hljs-number">30000</span>); <span class="hljs-comment">// 30秒一次</span>
+}
+
+ws.<span class="hljs-property">onmessage</span> = <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> data = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(event.<span class="hljs-property">data</span>);
+  <span class="hljs-keyword">if</span> (data.<span class="hljs-property">type</span> === <span class="hljs-string">'pong'</span>) {
+    <span class="hljs-comment">// 收到心跳响应，连接正常</span>
+    <span class="hljs-keyword">return</span>;
+  }
+  <span class="hljs-comment">// 处理业务消息...</span>
+};
+
+ws.<span class="hljs-property">onclose</span> = <span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-built_in">clearInterval</span>(heartbeatTimer);
+  <span class="hljs-comment">// 重连逻辑...</span>
+};
+</code></pre>
+<h3 id="75-socketio">7.5 Socket.IO</h3>
+<ul>
+<li>封装了WebSocket，支持自动降级（WebSocket→HTTP长轮询）</li>
+<li>支持<strong>房间（Room）</strong>和<strong>命名空间（Namespace）</strong></li>
+<li>自动重连、心跳检测</li>
+<li>广播、多路复用</li>
+</ul>
+<hr></hr>
+<h2 id="八、restful-api设计">八、RESTful API设计</h2>
+<blockquote>
+<p>面试题：如何设计一个好的RESTful API？</p>
+</blockquote>
+<h3 id="81-设计原则">8.1 设计原则</h3>
+<p><strong>资源命名：</strong></p>
+<pre><code>GET    /users              // 获取用户列表
+GET    /users/123          // 获取单个用户
+POST   /users              // 创建用户
+PUT    /users/123          // 替换用户（全量更新）
+PATCH  /users/123          // 部分更新用户
+DELETE /users/123          // 删除用户
+
+GET    /users/123/posts    // 获取用户的文章列表（嵌套资源）
+</code></pre><p><strong>设计规范：</strong></p>
+<ul>
+<li>使用<strong>名词</strong>复数表示资源：<code>/users</code> 而非 <code>/getUser</code></li>
+<li>HTTP方法表示操作语义，不在URL中出现动词</li>
+<li>使用小写字母和连字符：<code>/user-profiles</code> 而非 <code>/userProfiles</code></li>
+<li>嵌套不超过2层：<code>/users/123/posts</code> 可以，避免 <code>/users/123/posts/456/comments/789</code></li>
+</ul>
+<p><strong>版本控制：</strong></p>
+<pre><code>// URL路径（推荐）
+GET /api/v1/users
+
+// 请求头
+Accept: application/vnd.api.v1+json
+</code></pre><p><strong>过滤、分页、排序：</strong></p>
+<pre><code>GET /users?status=active&amp;role=admin        // 过滤
+GET /users?page=2&amp;per_page=20             // 分页
+GET /users?sort=created_at&amp;order=desc     // 排序
+GET /users?fields=id,name,email           // 字段选择
+</code></pre><p><strong>统一响应格式：</strong></p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">"code"</span>: <span class="hljs-number">200</span>,
+  <span class="hljs-string">"message"</span>: <span class="hljs-string">"success"</span>,
+  <span class="hljs-string">"data"</span>: { },
+  <span class="hljs-string">"meta"</span>: {
+    <span class="hljs-string">"total"</span>: <span class="hljs-number">100</span>,
+    <span class="hljs-string">"page"</span>: <span class="hljs-number">1</span>,
+    <span class="hljs-string">"per_page"</span>: <span class="hljs-number">20</span>
+  }
+}
+</code></pre>
+<h3 id="82-hateoas">8.2 HATEOAS</h3>
+<p>Hypermedia as the Engine of Application State，响应中包含相关资源的链接：</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">"id"</span>: <span class="hljs-number">123</span>,
+  <span class="hljs-string">"name"</span>: <span class="hljs-string">"张三"</span>,
+  <span class="hljs-string">"links"</span>: {
+    <span class="hljs-string">"self"</span>: <span class="hljs-string">"/users/123"</span>,
+    <span class="hljs-string">"posts"</span>: <span class="hljs-string">"/users/123/posts"</span>,
+    <span class="hljs-string">"followers"</span>: <span class="hljs-string">"/users/123/followers"</span>
+  }
+}
+</code></pre>
+<hr></hr>
+<h2 id="九、graphql">九、GraphQL</h2>
+<blockquote>
+<p>面试题：GraphQL相比REST有什么优势？</p>
+</blockquote>
+<h3 id="91-核心概念">9.1 核心概念</h3>
+<p><strong>Query（查询）：</strong></p>
+<pre><code class="lang-graphql"><span class="hljs-keyword">query</span> <span class="hljs-punctuation">{</span>
+  user<span class="hljs-punctuation">(</span><span class="hljs-symbol">id</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"123"</span><span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
+    name
+    email
+    posts<span class="hljs-punctuation">(</span><span class="hljs-symbol">first</span><span class="hljs-punctuation">:</span> <span class="hljs-number">5</span><span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
+      title
+      createdAt
+    <span class="hljs-punctuation">}</span>
+  <span class="hljs-punctuation">}</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
+<p><strong>Mutation（变更）：</strong></p>
+<pre><code class="lang-graphql"><span class="hljs-keyword">mutation</span> <span class="hljs-punctuation">{</span>
+  createUser<span class="hljs-punctuation">(</span><span class="hljs-symbol">input</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span> <span class="hljs-symbol">name</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"张三"</span>, <span class="hljs-symbol">email</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"zhang@example.com"</span> <span class="hljs-punctuation">}</span><span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
+    id
+    name
+  <span class="hljs-punctuation">}</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
+<p><strong>Subscription（订阅）：</strong></p>
+<pre><code class="lang-graphql"><span class="hljs-keyword">subscription</span> <span class="hljs-punctuation">{</span>
+  messageAdded<span class="hljs-punctuation">(</span><span class="hljs-symbol">channelId</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"123"</span><span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
+    content
+    sender <span class="hljs-punctuation">{</span>
+      name
+    <span class="hljs-punctuation">}</span>
+  <span class="hljs-punctuation">}</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
+<h3 id="92-schema定义">9.2 Schema定义</h3>
+<pre><code class="lang-graphql"><span class="hljs-keyword">type</span> User <span class="hljs-punctuation">{</span>
+  <span class="hljs-symbol">id</span><span class="hljs-punctuation">:</span> ID<span class="hljs-punctuation">!</span>
+  <span class="hljs-symbol">name</span><span class="hljs-punctuation">:</span> String<span class="hljs-punctuation">!</span>
+  <span class="hljs-symbol">email</span><span class="hljs-punctuation">:</span> String<span class="hljs-punctuation">!</span>
+  <span class="hljs-symbol">posts</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>Post<span class="hljs-punctuation">!</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">!</span>
+<span class="hljs-punctuation">}</span>
+
+<span class="hljs-keyword">type</span> Post <span class="hljs-punctuation">{</span>
+  <span class="hljs-symbol">id</span><span class="hljs-punctuation">:</span> ID<span class="hljs-punctuation">!</span>
+  <span class="hljs-symbol">title</span><span class="hljs-punctuation">:</span> String<span class="hljs-punctuation">!</span>
+  <span class="hljs-symbol">content</span><span class="hljs-punctuation">:</span> String<span class="hljs-punctuation">!</span>
+  <span class="hljs-symbol">author</span><span class="hljs-punctuation">:</span> User<span class="hljs-punctuation">!</span>
+<span class="hljs-punctuation">}</span>
+
+<span class="hljs-keyword">type</span> <span class="hljs-keyword">Query</span> <span class="hljs-punctuation">{</span>
+  user<span class="hljs-punctuation">(</span><span class="hljs-symbol">id</span><span class="hljs-punctuation">:</span> ID<span class="hljs-punctuation">!</span><span class="hljs-punctuation">)</span><span class="hljs-punctuation">:</span> User
+  users<span class="hljs-punctuation">(</span><span class="hljs-symbol">page</span><span class="hljs-punctuation">:</span> Int, <span class="hljs-symbol">perPage</span><span class="hljs-punctuation">:</span> Int<span class="hljs-punctuation">)</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>User<span class="hljs-punctuation">!</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">!</span>
+<span class="hljs-punctuation">}</span>
+
+<span class="hljs-keyword">type</span> <span class="hljs-keyword">Mutation</span> <span class="hljs-punctuation">{</span>
+  createUser<span class="hljs-punctuation">(</span><span class="hljs-symbol">input</span><span class="hljs-punctuation">:</span> CreateUserInput<span class="hljs-punctuation">!</span><span class="hljs-punctuation">)</span><span class="hljs-punctuation">:</span> User<span class="hljs-punctuation">!</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
+<h3 id="93-graphql-vs-rest">9.3 GraphQL vs REST</h3>
+<table>
+<thead>
+<tr>
+<th>对比维度</th>
+<th>REST</th>
+<th>GraphQL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>端点</td>
+<td>多个端点（/users, /posts）</td>
+<td>单个端点（/graphql）</td>
+</tr>
+<tr>
+<td>数据获取</td>
+<td>固定数据结构（可能过度获取）</td>
+<td>客户端指定需要的字段</td>
+</tr>
+<tr>
+<td>欠获取</td>
+<td>需多次请求关联资源</td>
+<td>一次请求获取嵌套关联数据</td>
+</tr>
+<tr>
+<td>类型系统</td>
+<td>无内置类型</td>
+<td>强类型Schema</td>
+</tr>
+<tr>
+<td>版本控制</td>
+<td>URL或Header版本号</td>
+<td>Schema演进（@deprecated）</td>
+</tr>
+<tr>
+<td>缓存</td>
+<td>HTTP缓存天然支持</td>
+<td>需额外处理（Apollo Cache）</td>
+</tr>
+<tr>
+<td>文件上传</td>
+<td>原生支持multipart</td>
+<td>需额外处理（graphql-upload）</td>
+</tr>
+<tr>
+<td>学习曲线</td>
+<td>低</td>
+<td>中等</td>
+</tr>
+</tbody>
+</table>
+<h3 id="94-n1问题">9.4 N+1问题</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 查询10个用户及其文章，不优化时：</span>
+<span class="hljs-comment">// 1次查询用户列表 + 10次查询每个用户的文章 = 11次查询</span>
+
+<span class="hljs-comment">// 使用DataLoader批量加载解决：</span>
+<span class="hljs-keyword">const</span> postLoader = <span class="hljs-keyword">new</span> <span class="hljs-title class_">DataLoader</span>(<span class="hljs-title function_">async</span> (userIds) =&gt; {
+  <span class="hljs-keyword">const</span> posts = <span class="hljs-keyword">await</span> db.<span class="hljs-property">posts</span>.<span class="hljs-title function_">find</span>({ <span class="hljs-attr">authorId</span>: { <span class="hljs-attr">$in</span>: userIds } });
+  <span class="hljs-keyword">return</span> userIds.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">id</span> =&gt;</span> posts.<span class="hljs-title function_">filter</span>(<span class="hljs-function"><span class="hljs-params">p</span> =&gt;</span> p.<span class="hljs-property">authorId</span> === id));
+});
+
+<span class="hljs-comment">// Resolver中使用</span>
+<span class="hljs-keyword">const</span> resolvers = {
+  <span class="hljs-title class_">User</span>: {
+    <span class="hljs-attr">posts</span>: <span class="hljs-function">(<span class="hljs-params">user</span>) =&gt;</span> postLoader.<span class="hljs-title function_">load</span>(user.<span class="hljs-property">id</span>) <span class="hljs-comment">// 自动批量</span>
+  }
+};
+</code></pre>
+<p>DataLoader会收集同一事件循环内的所有load调用，合并为一次批量查询，将N+1问题降为2次查询。</p>
+<hr></hr>
+<h2 id="十、面试高频综合题">十、面试高频综合题</h2>
+<h3 id="101-从输入url到页面显示的网络部分">10.1 从输入URL到页面显示的网络部分</h3>
+<blockquote>
+<p>面试题：请详细描述从浏览器输入URL到页面显示过程中涉及的网络协议</p>
+</blockquote>
+<ol>
+<li><strong>URL解析</strong>：判断是搜索词还是URL，补全协议（https://）</li>
+<li><strong>DNS解析</strong>：域名→IP地址（递归+迭代查询，多级缓存）</li>
+<li><strong>TCP三次握手</strong>：建立可靠连接</li>
+<li><strong>TLS握手</strong>：如果是HTTPS，建立安全通道（1-2 RTT）</li>
+<li><strong>HTTP请求</strong>：发送请求报文（方法/URL/头部/体）</li>
+<li><strong>服务器处理</strong>：Web服务器→应用服务器→数据库，返回响应</li>
+<li><strong>HTTP响应</strong>：状态码+响应头+响应体（HTML/JSON等）</li>
+<li><strong>TCP四次挥手</strong>：短连接时关闭（HTTP/1.1默认keep-alive）</li>
+</ol>
+<h3 id="102-如何优化网络性能">10.2 如何优化网络性能</h3>
+<ul>
+<li>DNS预解析（dns-prefetch）</li>
+<li>预连接（preconnect）</li>
+<li>HTTP/2多路复用</li>
+<li>资源压缩（Gzip/Brotli）</li>
+<li>CDN加速</li>
+<li>合理使用缓存（强缓存+协商缓存）</li>
+<li>减少请求数（雪碧图/合并请求/内联小资源）</li>
+<li>减小请求体积（Tree-shaking/代码分割/图片优化）</li>
+<li>使用WebSocket替代轮询（实时场景）</li>
+</ul>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="browser.html" class="navigation navigation-prev " aria-label="Previous page: 浏览器原理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="react.html" class="navigation navigation-next " aria-label="Next page: React">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"网络协议","level":"2.5","depth":1,"next":{"title":"React","level":"2.6","depth":1,"path":"frontend/react.md","ref":"frontend/react.md","articles":[]},"previous":{"title":"浏览器原理","level":"2.4","depth":1,"path":"frontend/browser.md","ref":"frontend/browser.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"frontend/network.md","mtime":"2026-03-31T06:35:11.837Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

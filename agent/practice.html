@@ -1,0 +1,1713 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>实战与进阶 · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../algorithm/array-string.html" />
+    
+    
+    <link rel="prev" href="tool-calling.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../frontend/html-css.html">
+            
+                <a href="../frontend/html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../frontend/javascript.html">
+            
+                <a href="../frontend/javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../frontend/typescript.html">
+            
+                <a href="../frontend/typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../frontend/browser.html">
+            
+                <a href="../frontend/browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../frontend/network.html">
+            
+                <a href="../frontend/network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../frontend/react.html">
+            
+                <a href="../frontend/react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../frontend/vue.html">
+            
+                <a href="../frontend/vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../frontend/engineering.html">
+            
+                <a href="../frontend/engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../frontend/performance.html">
+            
+                <a href="../frontend/performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../frontend/security.html">
+            
+                <a href="../frontend/security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../nodejs/basics.html">
+            
+                <a href="../nodejs/basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../nodejs/event-loop.html">
+            
+                <a href="../nodejs/event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../nodejs/stream.html">
+            
+                <a href="../nodejs/stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../nodejs/frameworks.html">
+            
+                <a href="../nodejs/frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../nodejs/database.html">
+            
+                <a href="../nodejs/database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../nodejs/practice.html">
+            
+                <a href="../nodejs/practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../golang/basics.html">
+            
+                <a href="../golang/basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../golang/concurrency.html">
+            
+                <a href="../golang/concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../golang/memory.html">
+            
+                <a href="../golang/memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../golang/web-framework.html">
+            
+                <a href="../golang/web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../golang/database-design.html">
+            
+                <a href="../golang/database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../golang/testing-practice.html">
+            
+                <a href="../golang/testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="llm-basics.html">
+            
+                <a href="llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="prompt-engineering.html">
+            
+                <a href="prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="rag.html">
+            
+                <a href="rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="agent-architecture.html">
+            
+                <a href="agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="tool-calling.html">
+            
+                <a href="tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.6" data-path="practice.html">
+            
+                <a href="practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >实战与进阶</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="agent-开发实战与进阶面试指南">Agent 开发实战与进阶面试指南</h1>
+<p>本章聚焦 AI Agent 在实际生产环境中的工程挑战和解决方案，涵盖企业级架构设计、对话管理、流式输出、安全防护、性能优化、可观测性、部署方案等关键实战主题，以及 AI 应用的最新趋势。这些是面试中区分"知道理论"和"做过项目"的核心考察点。</p>
+<hr></hr>
+<h2 id="1-企业级-agent-项目架构设计">1. 企业级 Agent 项目架构设计</h2>
+<h3 id="11-整体架构">1.1 整体架构</h3>
+<pre><code>┌─────────────────────────────────────────────────────────┐
+│                    客户端层                               │
+│  Web App / Mobile App / API Client / Slack Bot          │
+└────────────────────────┬────────────────────────────────┘
+                         │ HTTP/WebSocket
+┌────────────────────────┴────────────────────────────────┐
+│                    API Gateway                           │
+│  认证/限流/路由/负载均衡                                  │
+└────────────────────────┬────────────────────────────────┘
+                         │
+┌────────────────────────┴────────────────────────────────┐
+│                    应用服务层                             │
+│  ┌──────────┐  ┌───────────┐  ┌───────────────────┐    │
+│  │  对话管理  │  │ Agent引擎  │  │  Guardrails模块    │    │
+│  └──────────┘  └───────────┘  └───────────────────┘    │
+│  ┌──────────┐  ┌───────────┐  ┌───────────────────┐    │
+│  │ 工具编排   │  │  RAG管道   │  │  缓存层            │    │
+│  └──────────┘  └───────────┘  └───────────────────┘    │
+└────────────────────────┬────────────────────────────────┘
+                         │
+┌────────────────────────┴────────────────────────────────┐
+│                    基础设施层                             │
+│  LLM API / 向量数据库 / 关系数据库 / 消息队列 / 对象存储   │
+└─────────────────────────────────────────────────────────┘
+</code></pre><h3 id="12-关键设计决策">1.2 关键设计决策</h3>
+<pre><code class="lang-python"><span class="hljs-comment"># 项目结构示例</span>
+project/
+├── api/                    <span class="hljs-comment"># API 层</span>
+│   ├── routes/
+│   ├── middleware/          <span class="hljs-comment"># 认证、限流、日志</span>
+│   └── schemas/            <span class="hljs-comment"># 请求/响应模型</span>
+├── agent/                  <span class="hljs-comment"># Agent 核心</span>
+│   ├── engine.py           <span class="hljs-comment"># Agent 执行引擎</span>
+│   ├── planner.py          <span class="hljs-comment"># 任务规划</span>
+│   ├── memory.py           <span class="hljs-comment"># 记忆管理</span>
+│   └── tools/              <span class="hljs-comment"># 工具定义</span>
+├── rag/                    <span class="hljs-comment"># RAG 模块</span>
+│   ├── indexer.py          <span class="hljs-comment"># 文档索引</span>
+│   ├── retriever.py        <span class="hljs-comment"># 检索器</span>
+│   └── reranker.py         <span class="hljs-comment"># 重排序</span>
+├── guardrails/             <span class="hljs-comment"># 安全防护</span>
+│   ├── input_filter.py
+│   ├── output_checker.py
+│   └── content_policy.py
+├── config/                 <span class="hljs-comment"># 配置管理</span>
+├── monitoring/             <span class="hljs-comment"># 可观测性</span>
+└── tests/                  <span class="hljs-comment"># 测试</span>
+</code></pre>
+<blockquote>
+<p><strong>面试题：如果让你从零设计一个企业级 AI Agent 系统，你会如何规划架构？</strong></p>
+<p>分阶段推进：
+<strong>第一阶段（MVP，2-4 周）</strong>：直接调用 LLM API + 基础工具 + 简单对话管理，快速验证核心场景可行性。使用 FastAPI + OpenAI SDK，部署在单实例上。</p>
+<p><strong>第二阶段（生产就绪，4-8 周）</strong>：</p>
+<ul>
+<li>添加 RAG 能力（向量数据库 + Embedding + Reranker）</li>
+<li>实现 Guardrails（输入过滤 + 输出检查）</li>
+<li>对话管理和会话持久化（Redis/PostgreSQL）</li>
+<li>流式输出（SSE）</li>
+<li>基础监控和日志</li>
+</ul>
+<p><strong>第三阶段（规模化，8-16 周）</strong>：</p>
+<ul>
+<li>多模型路由（根据任务复杂度选择模型）</li>
+<li>缓存层（语义缓存 + 结果缓存）</li>
+<li>高可用部署（多实例 + 负载均衡 + 自动扩缩容）</li>
+<li>完善的可观测性（LangSmith/Phoenix + 自定义 Dashboard）</li>
+<li>A/B 测试框架</li>
+<li>成本监控和优化</li>
+</ul>
+</blockquote>
+<hr></hr>
+<h2 id="2-对话管理">2. 对话管理</h2>
+<h3 id="21-多轮对话状态管理">2.1 多轮对话状态管理</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> dataclasses <span class="hljs-keyword">import</span> dataclass, field
+<span class="hljs-keyword">from</span> typing <span class="hljs-keyword">import</span> <span class="hljs-type">Optional</span>
+<span class="hljs-keyword">from</span> datetime <span class="hljs-keyword">import</span> datetime
+
+<span class="hljs-meta">@dataclass</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ConversationState</span>:
+    session_id: <span class="hljs-built_in">str</span>
+    user_id: <span class="hljs-built_in">str</span>
+    messages: <span class="hljs-built_in">list</span> = field(default_factory=<span class="hljs-built_in">list</span>)
+    metadata: <span class="hljs-built_in">dict</span> = field(default_factory=<span class="hljs-built_in">dict</span>)
+    created_at: datetime = field(default_factory=datetime.now)
+    last_active: datetime = field(default_factory=datetime.now)
+
+    <span class="hljs-comment"># 业务状态</span>
+    current_topic: <span class="hljs-type">Optional</span>[<span class="hljs-built_in">str</span>] = <span class="hljs-literal">None</span>
+    pending_action: <span class="hljs-type">Optional</span>[<span class="hljs-built_in">dict</span>] = <span class="hljs-literal">None</span>  <span class="hljs-comment"># 等待用户确认的操作</span>
+    extracted_entities: <span class="hljs-built_in">dict</span> = field(default_factory=<span class="hljs-built_in">dict</span>)
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ConversationManager</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, storage, llm, max_history=<span class="hljs-number">50</span></span>):
+        <span class="hljs-variable language_">self</span>.storage = storage  <span class="hljs-comment"># Redis / PostgreSQL</span>
+        <span class="hljs-variable language_">self</span>.llm = llm
+        <span class="hljs-variable language_">self</span>.max_history = max_history
+
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">get_or_create</span>(<span class="hljs-params">self, session_id, user_id</span>) -&gt; ConversationState:
+        state = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">self</span>.storage.get(session_id)
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> state:
+            state = ConversationState(session_id=session_id, user_id=user_id)
+            <span class="hljs-keyword">await</span> <span class="hljs-variable language_">self</span>.storage.save(state)
+        <span class="hljs-keyword">return</span> state
+
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">add_message</span>(<span class="hljs-params">self, session_id, role, content, metadata=<span class="hljs-literal">None</span></span>):
+        state = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">self</span>.storage.get(session_id)
+        state.messages.append({
+            <span class="hljs-string">"role"</span>: role,
+            <span class="hljs-string">"content"</span>: content,
+            <span class="hljs-string">"timestamp"</span>: datetime.now().isoformat(),
+            <span class="hljs-string">"metadata"</span>: metadata <span class="hljs-keyword">or</span> {}
+        })
+        state.last_active = datetime.now()
+
+        <span class="hljs-comment"># 超长对话处理</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(state.messages) &gt; <span class="hljs-variable language_">self</span>.max_history:
+            <span class="hljs-keyword">await</span> <span class="hljs-variable language_">self</span>._compress_history(state)
+
+        <span class="hljs-keyword">await</span> <span class="hljs-variable language_">self</span>.storage.save(state)
+
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">_compress_history</span>(<span class="hljs-params">self, state</span>):
+        <span class="hljs-string">"""压缩对话历史：摘要旧消息"""</span>
+        old_messages = state.messages[:-<span class="hljs-number">10</span>]  <span class="hljs-comment"># 保留最近10条</span>
+        summary = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">self</span>.llm.summarize(old_messages)
+        state.messages = [
+            {<span class="hljs-string">"role"</span>: <span class="hljs-string">"system"</span>, <span class="hljs-string">"content"</span>: <span class="hljs-string">f"[对话历史摘要]\n<span class="hljs-subst">{summary}</span>"</span>},
+            *state.messages[-<span class="hljs-number">10</span>:]
+        ]
+</code></pre>
+<h3 id="22-上下文维护策略">2.2 上下文维护策略</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">ContextBuilder</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, max_tokens=<span class="hljs-number">4000</span></span>):
+        <span class="hljs-variable language_">self</span>.max_tokens = max_tokens
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">build</span>(<span class="hljs-params">self, state: ConversationState, system_prompt: <span class="hljs-built_in">str</span></span>) -&gt; <span class="hljs-built_in">list</span>:
+        messages = [{<span class="hljs-string">"role"</span>: <span class="hljs-string">"system"</span>, <span class="hljs-string">"content"</span>: system_prompt}]
+
+        <span class="hljs-comment"># 1. 注入用户画像（如果有）</span>
+        <span class="hljs-keyword">if</span> state.extracted_entities:
+            profile = <span class="hljs-variable language_">self</span>._format_user_profile(state.extracted_entities)
+            messages[<span class="hljs-number">0</span>][<span class="hljs-string">"content"</span>] += <span class="hljs-string">f"\n\n[用户信息]\n<span class="hljs-subst">{profile}</span>"</span>
+
+        <span class="hljs-comment"># 2. 添加对话历史（从新到旧，直到超出 token 限制）</span>
+        token_count = count_tokens(messages)
+        history = []
+        <span class="hljs-keyword">for</span> msg <span class="hljs-keyword">in</span> <span class="hljs-built_in">reversed</span>(state.messages):
+            msg_tokens = count_tokens([msg])
+            <span class="hljs-keyword">if</span> token_count + msg_tokens &gt; <span class="hljs-variable language_">self</span>.max_tokens:
+                <span class="hljs-keyword">break</span>
+            history.insert(<span class="hljs-number">0</span>, msg)
+            token_count += msg_tokens
+
+        messages.extend(history)
+        <span class="hljs-keyword">return</span> messages
+</code></pre>
+<blockquote>
+<p><strong>面试题：多轮对话中如何处理话题切换？如何判断用户是在继续上一个话题还是开始新话题？</strong></p>
+<p><strong>判断方法</strong>：</p>
+<ol>
+<li><strong>语义相似度</strong>：计算新消息与最近几轮对话的 Embedding 相似度，低于阈值则视为话题切换</li>
+<li><strong>LLM 判断</strong>：让 LLM 判断新消息是否是当前话题的延续（添加一个轻量级的分类步骤）</li>
+<li><strong>显式信号</strong>：用户使用 "另外"、"换个话题"、"我还想问" 等转换词</li>
+<li><strong>时间间隔</strong>：超过一定时间（如 30 分钟）未活跃，视为新会话</li>
+</ol>
+<p><strong>处理策略</strong>：</p>
+<ul>
+<li>话题切换时不清除历史，但在构建上下文时降低旧话题消息的优先级</li>
+<li>将旧话题的关键信息（如提到的实体、达成的结论）提取到结构化字段中保留</li>
+<li>新话题开始时，可以对旧话题进行摘要归档</li>
+</ul>
+</blockquote>
+<hr></hr>
+<h2 id="3-流式输出实现">3. 流式输出实现</h2>
+<h3 id="31-sse（server-sent-events）">3.1 SSE（Server-Sent Events）</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> fastapi <span class="hljs-keyword">import</span> FastAPI
+<span class="hljs-keyword">from</span> fastapi.responses <span class="hljs-keyword">import</span> StreamingResponse
+<span class="hljs-keyword">from</span> openai <span class="hljs-keyword">import</span> OpenAI
+<span class="hljs-keyword">import</span> json
+
+app = FastAPI()
+client = OpenAI()
+
+<span class="hljs-meta">@app.post(<span class="hljs-params"><span class="hljs-string">"/chat/stream"</span></span>)</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">chat_stream</span>(<span class="hljs-params">request: ChatRequest</span>):
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">generate</span>():
+        stream = client.chat.completions.create(
+            model=<span class="hljs-string">"gpt-4o"</span>,
+            messages=request.messages,
+            stream=<span class="hljs-literal">True</span>
+        )
+
+        <span class="hljs-keyword">for</span> chunk <span class="hljs-keyword">in</span> stream:
+            <span class="hljs-keyword">if</span> chunk.choices[<span class="hljs-number">0</span>].delta.content:
+                data = {
+                    <span class="hljs-string">"type"</span>: <span class="hljs-string">"content"</span>,
+                    <span class="hljs-string">"content"</span>: chunk.choices[<span class="hljs-number">0</span>].delta.content
+                }
+                <span class="hljs-keyword">yield</span> <span class="hljs-string">f"data: <span class="hljs-subst">{json.dumps(data, ensure_ascii=<span class="hljs-literal">False</span>)}</span>\n\n"</span>
+
+            <span class="hljs-comment"># 处理工具调用的流式输出</span>
+            <span class="hljs-keyword">if</span> chunk.choices[<span class="hljs-number">0</span>].delta.tool_calls:
+                data = {
+                    <span class="hljs-string">"type"</span>: <span class="hljs-string">"tool_call"</span>,
+                    <span class="hljs-string">"tool_call"</span>: serialize_tool_call(chunk.choices[<span class="hljs-number">0</span>].delta.tool_calls)
+                }
+                <span class="hljs-keyword">yield</span> <span class="hljs-string">f"data: <span class="hljs-subst">{json.dumps(data, ensure_ascii=<span class="hljs-literal">False</span>)}</span>\n\n"</span>
+
+        <span class="hljs-keyword">yield</span> <span class="hljs-string">f"data: <span class="hljs-subst">{json.dumps({<span class="hljs-string">'type'</span>: <span class="hljs-string">'done'</span>}</span>)}\n\n"</span>
+
+    <span class="hljs-keyword">return</span> StreamingResponse(
+        generate(),
+        media_type=<span class="hljs-string">"text/event-stream"</span>,
+        headers={
+            <span class="hljs-string">"Cache-Control"</span>: <span class="hljs-string">"no-cache"</span>,
+            <span class="hljs-string">"Connection"</span>: <span class="hljs-string">"keep-alive"</span>
+        }
+    )
+</code></pre>
+<h3 id="32-websocket">3.2 WebSocket</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> fastapi <span class="hljs-keyword">import</span> WebSocket
+
+<span class="hljs-meta">@app.websocket(<span class="hljs-params"><span class="hljs-string">"/ws/chat"</span></span>)</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">websocket_chat</span>(<span class="hljs-params">websocket: WebSocket</span>):
+    <span class="hljs-keyword">await</span> websocket.accept()
+    session_id = <span class="hljs-built_in">str</span>(uuid.uuid4())
+
+    <span class="hljs-keyword">try</span>:
+        <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+            data = <span class="hljs-keyword">await</span> websocket.receive_json()
+
+            <span class="hljs-comment"># 流式响应</span>
+            <span class="hljs-keyword">async</span> <span class="hljs-keyword">for</span> chunk <span class="hljs-keyword">in</span> agent.stream(data[<span class="hljs-string">"message"</span>], session_id):
+                <span class="hljs-keyword">await</span> websocket.send_json({
+                    <span class="hljs-string">"type"</span>: chunk[<span class="hljs-string">"type"</span>],  <span class="hljs-comment"># thinking / tool_call / content / done</span>
+                    <span class="hljs-string">"content"</span>: chunk[<span class="hljs-string">"content"</span>]
+                })
+    <span class="hljs-keyword">except</span> WebSocketDisconnect:
+        <span class="hljs-keyword">await</span> cleanup_session(session_id)
+</code></pre>
+<h3 id="33-agent-流式输出中的特殊处理">3.3 Agent 流式输出中的特殊处理</h3>
+<p>Agent 的流式输出比简单对话更复杂，因为涉及多个阶段：</p>
+<pre><code class="lang-python"><span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">agent_stream</span>(<span class="hljs-params">self, user_input, session_id</span>):
+    <span class="hljs-comment"># 阶段1：思考</span>
+    <span class="hljs-keyword">yield</span> {<span class="hljs-string">"type"</span>: <span class="hljs-string">"thinking"</span>, <span class="hljs-string">"content"</span>: <span class="hljs-string">"正在分析您的问题..."</span>}
+
+    <span class="hljs-comment"># 阶段2：工具调用（可能多次）</span>
+    <span class="hljs-keyword">for</span> step <span class="hljs-keyword">in</span> <span class="hljs-variable language_">self</span>.execute_steps():
+        <span class="hljs-keyword">if</span> step.<span class="hljs-built_in">type</span> == <span class="hljs-string">"tool_call"</span>:
+            <span class="hljs-keyword">yield</span> {
+                <span class="hljs-string">"type"</span>: <span class="hljs-string">"tool_call"</span>,
+                <span class="hljs-string">"content"</span>: <span class="hljs-string">f"正在调用 <span class="hljs-subst">{step.tool_name}</span>..."</span>,
+                <span class="hljs-string">"tool_name"</span>: step.tool_name,
+                <span class="hljs-string">"arguments"</span>: step.arguments
+            }
+            <span class="hljs-comment"># 工具执行结果</span>
+            <span class="hljs-keyword">yield</span> {
+                <span class="hljs-string">"type"</span>: <span class="hljs-string">"tool_result"</span>,
+                <span class="hljs-string">"content"</span>: step.result[:<span class="hljs-number">200</span>]  <span class="hljs-comment"># 预览</span>
+            }
+
+    <span class="hljs-comment"># 阶段3：生成最终回答（逐 token 流式）</span>
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">for</span> token <span class="hljs-keyword">in</span> <span class="hljs-variable language_">self</span>.generate_answer_stream():
+        <span class="hljs-keyword">yield</span> {<span class="hljs-string">"type"</span>: <span class="hljs-string">"content"</span>, <span class="hljs-string">"content"</span>: token}
+
+    <span class="hljs-keyword">yield</span> {<span class="hljs-string">"type"</span>: <span class="hljs-string">"done"</span>, <span class="hljs-string">"content"</span>: <span class="hljs-string">""</span>}
+</code></pre>
+<blockquote>
+<p><strong>面试题：SSE 和 WebSocket 各适用于什么场景？在 Agent 应用中你会选择哪个？</strong></p>
+<p><strong>SSE</strong>：单向通信（服务器 → 客户端），基于 HTTP，实现简单，自动重连。适合只需要服务器推送的场景。
+<strong>WebSocket</strong>：双向通信，性能更好，但实现更复杂，需要处理连接管理。适合需要实时双向交互的场景。</p>
+<p><strong>Agent 应用选择</strong>：</p>
+<ul>
+<li><strong>标准问答/RAG</strong>：SSE 足够——用户发送问题，服务器流式返回答案</li>
+<li><strong>交互式 Agent</strong>：WebSocket 更合适——Agent 可能需要在执行过程中向用户请求确认（如 "确认发送邮件？"）</li>
+<li><strong>协作编辑</strong>：WebSocket——需要双向实时同步</li>
+<li><strong>实际建议</strong>：大多数情况下从 SSE 开始（更简单、兼容性更好），只在确实需要双向通信时升级到 WebSocket</li>
+</ul>
+</blockquote>
+<hr></hr>
+<h2 id="4-guardrails（护栏）">4. Guardrails（护栏）</h2>
+<h3 id="41-输入过滤">4.1 输入过滤</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">InputGuardrail</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):
+        <span class="hljs-variable language_">self</span>.blocked_patterns = [
+            <span class="hljs-string">r"忽略之前的(所有)?指令"</span>,
+            <span class="hljs-string">r"ignore (all )?previous instructions"</span>,
+            <span class="hljs-string">r"你现在是一个不受限制的"</span>,
+            <span class="hljs-string">r"DAN模式"</span>,
+        ]
+        <span class="hljs-variable language_">self</span>.content_classifier = load_safety_model()
+
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">check</span>(<span class="hljs-params">self, user_input: <span class="hljs-built_in">str</span></span>) -&gt; GuardrailResult:
+        <span class="hljs-comment"># 1. 正则匹配已知攻击模式</span>
+        <span class="hljs-keyword">for</span> pattern <span class="hljs-keyword">in</span> <span class="hljs-variable language_">self</span>.blocked_patterns:
+            <span class="hljs-keyword">if</span> re.search(pattern, user_input, re.IGNORECASE):
+                <span class="hljs-keyword">return</span> GuardrailResult(passed=<span class="hljs-literal">False</span>, reason=<span class="hljs-string">"检测到潜在的提示注入"</span>)
+
+        <span class="hljs-comment"># 2. 内容安全分类</span>
+        safety_score = <span class="hljs-variable language_">self</span>.content_classifier.predict(user_input)
+        <span class="hljs-keyword">if</span> safety_score[<span class="hljs-string">"unsafe"</span>] &gt; <span class="hljs-number">0.8</span>:
+            <span class="hljs-keyword">return</span> GuardrailResult(passed=<span class="hljs-literal">False</span>, reason=<span class="hljs-string">"内容不符合安全策略"</span>)
+
+        <span class="hljs-comment"># 3. 长度检查</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(user_input) &gt; <span class="hljs-number">10000</span>:
+            <span class="hljs-keyword">return</span> GuardrailResult(passed=<span class="hljs-literal">False</span>, reason=<span class="hljs-string">"输入过长"</span>)
+
+        <span class="hljs-comment"># 4. PII 检测</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-variable language_">self</span>.contains_pii(user_input):
+            <span class="hljs-keyword">return</span> GuardrailResult(
+                passed=<span class="hljs-literal">True</span>,
+                warnings=[<span class="hljs-string">"检测到可能的个人敏感信息，已做脱敏处理"</span>],
+                sanitized_input=<span class="hljs-variable language_">self</span>.redact_pii(user_input)
+            )
+
+        <span class="hljs-keyword">return</span> GuardrailResult(passed=<span class="hljs-literal">True</span>)
+</code></pre>
+<h3 id="42-输出校验">4.2 输出校验</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">OutputGuardrail</span>:
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">check</span>(<span class="hljs-params">self, output: <span class="hljs-built_in">str</span>, context: <span class="hljs-built_in">dict</span></span>) -&gt; GuardrailResult:
+        checks = [
+            <span class="hljs-variable language_">self</span>._check_safety(output),
+            <span class="hljs-variable language_">self</span>._check_factuality(output, context),
+            <span class="hljs-variable language_">self</span>._check_format(output, context.get(<span class="hljs-string">"expected_format"</span>)),
+            <span class="hljs-variable language_">self</span>._check_pii_leakage(output),
+        ]
+
+        results = <span class="hljs-keyword">await</span> asyncio.gather(*checks)
+
+        failed = [r <span class="hljs-keyword">for</span> r <span class="hljs-keyword">in</span> results <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> r.passed]
+        <span class="hljs-keyword">if</span> failed:
+            <span class="hljs-keyword">return</span> GuardrailResult(
+                passed=<span class="hljs-literal">False</span>,
+                reasons=[r.reason <span class="hljs-keyword">for</span> r <span class="hljs-keyword">in</span> failed],
+                suggestion=<span class="hljs-string">"部分内容已被过滤，请重新生成"</span>
+            )
+
+        <span class="hljs-keyword">return</span> GuardrailResult(passed=<span class="hljs-literal">True</span>)
+
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">_check_factuality</span>(<span class="hljs-params">self, output, context</span>):
+        <span class="hljs-string">"""检查输出是否基于提供的上下文"""</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> context.get(<span class="hljs-string">"retrieved_docs"</span>):
+            <span class="hljs-keyword">return</span> GuardrailResult(passed=<span class="hljs-literal">True</span>)
+
+        <span class="hljs-comment"># 使用 NLI 模型检查输出是否被上下文支持</span>
+        entailment_score = nli_model.predict(
+            premise=context[<span class="hljs-string">"retrieved_docs"</span>],
+            hypothesis=output
+        )
+        <span class="hljs-keyword">if</span> entailment_score &lt; <span class="hljs-number">0.5</span>:
+            <span class="hljs-keyword">return</span> GuardrailResult(passed=<span class="hljs-literal">False</span>, reason=<span class="hljs-string">"输出可能包含未被文档支持的信息"</span>)
+
+        <span class="hljs-keyword">return</span> GuardrailResult(passed=<span class="hljs-literal">True</span>)
+</code></pre>
+<blockquote>
+<p><strong>面试题：如何设计一个完整的 Guardrails 系统？需要考虑哪些维度？</strong></p>
+<p>完整的 Guardrails 系统需要覆盖<strong>输入-处理-输出</strong>全链路：</p>
+<p><strong>输入侧</strong>：(1) Prompt 注入检测——正则匹配 + ML 分类器；(2) 内容安全——色情/暴力/政治等违规内容检测；(3) PII 检测与脱敏——身份证、手机号、邮箱等；(4) 话题边界——限制模型只回答业务相关问题。</p>
+<p><strong>处理侧</strong>：(1) 工具调用权限控制——高危操作需确认；(2) Token 预算限制——防止成本失控；(3) 超时控制——长时间无响应则终止。</p>
+<p><strong>输出侧</strong>：(1) 内容安全检查——生成内容的安全性；(2) 事实性检查——是否基于检索文档；(3) 格式校验——输出是否符合预期结构；(4) PII 泄露检查——模型是否泄露了训练数据中的敏感信息；(5) 竞品/合规检查——确保不涉及品牌风险。</p>
+<p><strong>设计原则</strong>：快速失败（不安全输入直接拒绝）、可配置（策略通过配置管理）、可灰度（新规则逐步生效）、有兜底（所有检查失败时有默认安全响应）。</p>
+</blockquote>
+<hr></hr>
+<h2 id="5-幻觉（hallucination）检测与缓解">5. 幻觉（Hallucination）检测与缓解</h2>
+<h3 id="51-幻觉类型">5.1 幻觉类型</h3>
+<ol>
+<li><strong>事实性幻觉</strong>：模型编造不存在的事实（如虚假的引用、错误的数字）</li>
+<li><strong>忠实性幻觉</strong>：在 RAG 场景中，模型的回答与检索到的文档不一致</li>
+<li><strong>指令性幻觉</strong>：模型声称执行了某个操作但实际没有（如"我已经发送了邮件"但并未调用发邮件工具）</li>
+</ol>
+<h3 id="52-检测方法">5.2 检测方法</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">HallucinationDetector</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, nli_model, llm</span>):
+        <span class="hljs-variable language_">self</span>.nli_model = nli_model  <span class="hljs-comment"># Natural Language Inference 模型</span>
+        <span class="hljs-variable language_">self</span>.llm = llm
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">check_faithfulness</span>(<span class="hljs-params">self, answer, source_documents</span>):
+        <span class="hljs-string">"""检查回答是否忠实于源文档"""</span>
+        <span class="hljs-comment"># 1. 将回答拆分为独立声明</span>
+        claims = <span class="hljs-variable language_">self</span>.extract_claims(answer)
+
+        <span class="hljs-comment"># 2. 逐一检查每个声明是否被源文档支持</span>
+        results = []
+        <span class="hljs-keyword">for</span> claim <span class="hljs-keyword">in</span> claims:
+            supported = <span class="hljs-literal">False</span>
+            <span class="hljs-keyword">for</span> doc <span class="hljs-keyword">in</span> source_documents:
+                score = <span class="hljs-variable language_">self</span>.nli_model.predict(
+                    premise=doc.content,
+                    hypothesis=claim
+                )
+                <span class="hljs-keyword">if</span> score[<span class="hljs-string">"entailment"</span>] &gt; <span class="hljs-number">0.7</span>:
+                    supported = <span class="hljs-literal">True</span>
+                    <span class="hljs-keyword">break</span>
+            results.append({<span class="hljs-string">"claim"</span>: claim, <span class="hljs-string">"supported"</span>: supported})
+
+        unsupported = [r <span class="hljs-keyword">for</span> r <span class="hljs-keyword">in</span> results <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> r[<span class="hljs-string">"supported"</span>]]
+        <span class="hljs-keyword">return</span> {
+            <span class="hljs-string">"is_faithful"</span>: <span class="hljs-built_in">len</span>(unsupported) == <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unsupported_claims"</span>: unsupported,
+            <span class="hljs-string">"faithfulness_score"</span>: <span class="hljs-number">1</span> - <span class="hljs-built_in">len</span>(unsupported) / <span class="hljs-built_in">len</span>(results)
+        }
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">extract_claims</span>(<span class="hljs-params">self, text</span>):
+        <span class="hljs-string">"""使用 LLM 将文本拆分为独立声明"""</span>
+        prompt = <span class="hljs-string">f"请将以下文本拆分为独立的事实声明，每行一个：\n\n<span class="hljs-subst">{text}</span>"</span>
+        response = <span class="hljs-variable language_">self</span>.llm.generate(prompt)
+        <span class="hljs-keyword">return</span> response.strip().split(<span class="hljs-string">"\n"</span>)
+</code></pre>
+<h3 id="53-缓解策略">5.3 缓解策略</h3>
+<ol>
+<li><strong>RAG</strong>：用检索到的文档作为上下文，约束模型基于事实回答</li>
+<li><strong>System Prompt 约束</strong>：明确指示 "如果不确定，请说不知道"</li>
+<li><strong>引用标注</strong>：要求模型标注信息来源（如 "[1] 根据XX文档..."）</li>
+<li><strong>Self-Consistency</strong>：多次采样并比较一致性，不一致的部分可能是幻觉</li>
+<li><strong>Temperature=0</strong>：降低随机性，减少创造性幻觉</li>
+<li><strong>后处理验证</strong>：使用 NLI 模型检查输出与源文档的一致性</li>
+</ol>
+<blockquote>
+<p><strong>面试题：在你的项目中如何处理 LLM 幻觉问题？</strong></p>
+<p>采用<strong>预防 + 检测 + 应对</strong>三层策略：</p>
+<ul>
+<li><strong>预防</strong>：使用 RAG 提供事实依据；System Prompt 中强调 "基于提供的文档回答，如无法确认则明确表示不确定"；Temperature 设为 0</li>
+<li><strong>检测</strong>：使用 NLI 模型检查回答的忠实性分数；关键场景使用 LLM 自检（让另一个模型评审回答的准确性）</li>
+<li><strong>应对</strong>：对低忠实性分数的回答添加风险提示；要求模型标注引用来源，用户可点击查看原文；无法确认的信息标注为 "待验证"</li>
+<li><strong>持续改进</strong>：收集用户反馈的 "不准确" 标记，分析幻觉模式，针对性优化 Prompt 和检索策略</li>
+</ul>
+</blockquote>
+<hr></hr>
+<h2 id="6-token-管理与成本优化">6. Token 管理与成本优化</h2>
+<h3 id="61-成本构成分析">6.1 成本构成分析</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">CostTracker</span>:
+    <span class="hljs-comment"># 模型价格（美元/百万token，仅示例）</span>
+    PRICING = {
+        <span class="hljs-string">"gpt-4o"</span>: {<span class="hljs-string">"input"</span>: <span class="hljs-number">2.5</span>, <span class="hljs-string">"output"</span>: <span class="hljs-number">10.0</span>},
+        <span class="hljs-string">"gpt-4o-mini"</span>: {<span class="hljs-string">"input"</span>: <span class="hljs-number">0.15</span>, <span class="hljs-string">"output"</span>: <span class="hljs-number">0.6</span>},
+        <span class="hljs-string">"gpt-3.5-turbo"</span>: {<span class="hljs-string">"input"</span>: <span class="hljs-number">0.5</span>, <span class="hljs-string">"output"</span>: <span class="hljs-number">1.5</span>},
+        <span class="hljs-string">"claude-3.5-sonnet"</span>: {<span class="hljs-string">"input"</span>: <span class="hljs-number">3.0</span>, <span class="hljs-string">"output"</span>: <span class="hljs-number">15.0</span>},
+    }
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">calculate_cost</span>(<span class="hljs-params">self, model, input_tokens, output_tokens</span>):
+        pricing = <span class="hljs-variable language_">self</span>.PRICING[model]
+        cost = (input_tokens * pricing[<span class="hljs-string">"input"</span>] + 
+                output_tokens * pricing[<span class="hljs-string">"output"</span>]) / <span class="hljs-number">1_000_000</span>
+        <span class="hljs-keyword">return</span> cost
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">estimate_monthly_cost</span>(<span class="hljs-params">self, daily_requests, avg_input_tokens, avg_output_tokens, model</span>):
+        daily_cost = daily_requests * <span class="hljs-variable language_">self</span>.calculate_cost(
+            model, avg_input_tokens, avg_output_tokens
+        )
+        <span class="hljs-keyword">return</span> daily_cost * <span class="hljs-number">30</span>
+</code></pre>
+<h3 id="62-优化策略">6.2 优化策略</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">CostOptimizer</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">select_model</span>(<span class="hljs-params">self, task_complexity</span>):
+        <span class="hljs-string">"""根据任务复杂度选择模型"""</span>
+        <span class="hljs-keyword">if</span> task_complexity == <span class="hljs-string">"simple"</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"gpt-4o-mini"</span>  <span class="hljs-comment"># 简单任务用小模型</span>
+        <span class="hljs-keyword">elif</span> task_complexity == <span class="hljs-string">"medium"</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"gpt-4o-mini"</span>  <span class="hljs-comment"># 中等任务也先尝试小模型</span>
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"gpt-4o"</span>  <span class="hljs-comment"># 复杂任务用大模型</span>
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">optimize_prompt</span>(<span class="hljs-params">self, messages</span>):
+        <span class="hljs-string">"""优化 Prompt 减少 token"""</span>
+        <span class="hljs-comment"># 1. 压缩系统提示</span>
+        <span class="hljs-comment"># 2. 截断过长的对话历史</span>
+        <span class="hljs-comment"># 3. 对检索文档进行摘要</span>
+        <span class="hljs-keyword">return</span> optimized_messages
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">cache_response</span>(<span class="hljs-params">self, query, response</span>):
+        <span class="hljs-string">"""缓存常见问题的回答"""</span>
+        cache_key = <span class="hljs-variable language_">self</span>.semantic_hash(query)
+        <span class="hljs-variable language_">self</span>.cache.<span class="hljs-built_in">set</span>(cache_key, response, ttl=<span class="hljs-number">3600</span>)
+</code></pre>
+<p><strong>核心优化手段</strong>：</p>
+<ol>
+<li><strong>模型分层</strong>：简单任务用便宜模型，复杂任务用贵模型</li>
+<li><strong>缓存</strong>：语义缓存重复/相似查询的结果</li>
+<li><strong>Prompt 压缩</strong>：减少不必要的上下文</li>
+<li><strong>批处理</strong>：合并多个小请求为一次批量请求</li>
+<li><strong>输出控制</strong>：使用 <code>max_tokens</code> 限制输出长度</li>
+</ol>
+<blockquote>
+<p><strong>面试题：你的 Agent 系统每月 API 费用 10 万元，如何优化到 3 万元以内？</strong></p>
+<p>系统性的成本优化路径：</p>
+<ol>
+<li><strong>流量分析</strong>：先统计哪些接口/场景消耗最多 token，找到 80/20 的优化点</li>
+<li><strong>模型降级</strong>：80% 的请求可以用 gpt-4o-mini 替代 gpt-4o，成本降低 10 倍以上</li>
+<li><strong>语义缓存</strong>：对相似查询缓存结果，命中率 30% 就能减少 30% 的调用</li>
+<li><strong>Prompt 精简</strong>：审查所有 System Prompt，删除冗余；对检索文档做摘要后再送入 LLM</li>
+<li><strong>输出限制</strong>：对不需要长回答的场景设置 max_tokens</li>
+<li><strong>批量处理</strong>：非实时请求合并批处理</li>
+<li><strong>预计算</strong>：对频繁使用的知识做预处理和预生成</li>
+<li>综合以上策略，通常可以实现 3-5 倍的成本降低</li>
+</ol>
+</blockquote>
+<hr></hr>
+<h2 id="7-延迟优化">7. 延迟优化</h2>
+<h3 id="71-延迟分析">7.1 延迟分析</h3>
+<p>典型 Agent 请求的延迟组成：</p>
+<pre><code>总延迟 = 网络延迟 + LLM 首 token 延迟 + LLM 生成延迟 + 工具执行延迟
+       ≈ 50ms + 500ms + 2-10s + 100-5000ms
+</code></pre><h3 id="72-优化策略">7.2 优化策略</h3>
+<pre><code class="lang-python"><span class="hljs-comment"># 1. 语义缓存 - 减少重复 LLM 调用</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">SemanticCache</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, vector_store, similarity_threshold=<span class="hljs-number">0.95</span></span>):
+        <span class="hljs-variable language_">self</span>.vector_store = vector_store
+        <span class="hljs-variable language_">self</span>.threshold = similarity_threshold
+
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">get</span>(<span class="hljs-params">self, query</span>):
+        results = <span class="hljs-variable language_">self</span>.vector_store.search(embed(query), top_k=<span class="hljs-number">1</span>)
+        <span class="hljs-keyword">if</span> results <span class="hljs-keyword">and</span> results[<span class="hljs-number">0</span>].score &gt; <span class="hljs-variable language_">self</span>.threshold:
+            <span class="hljs-keyword">return</span> results[<span class="hljs-number">0</span>].cached_response
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">None</span>
+
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">set</span>(<span class="hljs-params">self, query, response</span>):
+        <span class="hljs-variable language_">self</span>.vector_store.add(embed(query), metadata={<span class="hljs-string">"response"</span>: response})
+
+<span class="hljs-comment"># 2. 并行化 - 独立工具同时执行</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">parallel_tools</span>(<span class="hljs-params">tool_calls</span>):
+    tasks = [execute_tool(tc) <span class="hljs-keyword">for</span> tc <span class="hljs-keyword">in</span> tool_calls]
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> asyncio.gather(*tasks, return_exceptions=<span class="hljs-literal">True</span>)
+
+<span class="hljs-comment"># 3. 模型选择 - 简单任务用快模型</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">select_fast_model</span>(<span class="hljs-params">query</span>):
+    complexity = estimate_complexity(query)
+    <span class="hljs-keyword">if</span> complexity &lt; <span class="hljs-number">0.3</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"gpt-4o-mini"</span>  <span class="hljs-comment"># TTFT ~200ms</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"gpt-4o"</span>  <span class="hljs-comment"># TTFT ~500ms</span>
+
+<span class="hljs-comment"># 4. 流式输出 - 用户感知延迟更低</span>
+<span class="hljs-comment"># 首 token 延迟通常是实际延迟的 1/10</span>
+
+<span class="hljs-comment"># 5. Prompt 缓存 - OpenAI/Anthropic 支持的前缀缓存</span>
+<span class="hljs-comment"># 相同的 System Prompt 前缀可以被缓存，减少处理时间</span>
+</code></pre>
+<blockquote>
+<p><strong>面试题：用户反馈 Agent 响应太慢（平均 8 秒），你会如何排查和优化？</strong></p>
+<p><strong>排查步骤</strong>：</p>
+<ol>
+<li>添加全链路埋点，测量每个阶段的耗时（查询预处理 / Embedding / 向量检索 / Reranking / LLM 推理 / 工具执行 / 后处理）</li>
+<li>分析 P50/P90/P99 延迟分布，找出长尾请求的原因</li>
+<li>检查 LLM API 的延迟（是否受限于 API 限流或网络）</li>
+</ol>
+<p><strong>优化手段</strong>（按优先级）：</p>
+<ol>
+<li><strong>开启流式输出</strong>：首 token 延迟 &lt; 1 秒，用户感知到 "立即有响应"</li>
+<li><strong>语义缓存</strong>：热门问题直接返回缓存，0 延迟</li>
+<li><strong>模型降级</strong>：80% 的请求用更快的模型</li>
+<li><strong>并行化</strong>：RAG 检索和意图分类并行执行</li>
+<li><strong>减少迭代</strong>：优化 Prompt 使 Agent 用更少的步骤完成任务</li>
+<li><strong>Prompt 缓存</strong>：利用 API 提供商的 Prompt Caching 功能</li>
+<li><strong>就近部署</strong>：选择离用户更近的 API 区域</li>
+</ol>
+</blockquote>
+<hr></hr>
+<h2 id="8-可观测性">8. 可观测性</h2>
+<h3 id="81-日志设计">8.1 日志设计</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> structlog
+
+logger = structlog.get_logger()
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">AgentLogger</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">log_request</span>(<span class="hljs-params">self, session_id, user_input, model, tokens</span>):
+        logger.info(
+            <span class="hljs-string">"agent_request"</span>,
+            session_id=session_id,
+            user_input_length=<span class="hljs-built_in">len</span>(user_input),
+            model=model,
+            input_tokens=tokens[<span class="hljs-string">"input"</span>],
+            output_tokens=tokens[<span class="hljs-string">"output"</span>],
+            cost=<span class="hljs-variable language_">self</span>.calculate_cost(model, tokens)
+        )
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">log_tool_call</span>(<span class="hljs-params">self, session_id, tool_name, args, result, duration_ms</span>):
+        logger.info(
+            <span class="hljs-string">"tool_call"</span>,
+            session_id=session_id,
+            tool_name=tool_name,
+            args_summary=<span class="hljs-variable language_">self</span>.summarize_args(args),
+            success=<span class="hljs-keyword">not</span> result.get(<span class="hljs-string">"error"</span>),
+            duration_ms=duration_ms
+        )
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">log_retrieval</span>(<span class="hljs-params">self, session_id, query, num_results, top_score, duration_ms</span>):
+        logger.info(
+            <span class="hljs-string">"rag_retrieval"</span>,
+            session_id=session_id,
+            query_length=<span class="hljs-built_in">len</span>(query),
+            num_results=num_results,
+            top_score=<span class="hljs-built_in">round</span>(top_score, <span class="hljs-number">4</span>),
+            duration_ms=duration_ms
+        )
+</code></pre>
+<h3 id="82-追踪（tracing）">8.2 追踪（Tracing）</h3>
+<pre><code class="lang-python"><span class="hljs-comment"># LangSmith 追踪示例</span>
+<span class="hljs-keyword">from</span> langsmith <span class="hljs-keyword">import</span> traceable
+
+<span class="hljs-meta">@traceable(<span class="hljs-params">run_type=<span class="hljs-string">"chain"</span>, name=<span class="hljs-string">"agent_run"</span></span>)</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">run_agent</span>(<span class="hljs-params">user_input, session_id</span>):
+    <span class="hljs-comment"># 自动追踪每个步骤</span>
+    context = <span class="hljs-keyword">await</span> retrieve_context(user_input)  <span class="hljs-comment"># 追踪检索</span>
+    response = <span class="hljs-keyword">await</span> llm_generate(context, user_input)  <span class="hljs-comment"># 追踪生成</span>
+    <span class="hljs-keyword">return</span> response
+</code></pre>
+<h3 id="83-关键监控指标">8.3 关键监控指标</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>说明</th>
+<th>告警阈值（示例）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TTFT（Time to First Token）</td>
+<td>首 token 延迟</td>
+<td>P99 &gt; 3s</td>
+</tr>
+<tr>
+<td>Total Latency</td>
+<td>总响应时间</td>
+<td>P99 &gt; 15s</td>
+</tr>
+<tr>
+<td>Token Usage</td>
+<td>Token 消耗</td>
+<td>日消耗 &gt; 预算 120%</td>
+</tr>
+<tr>
+<td>Error Rate</td>
+<td>错误率</td>
+<td>&gt; 5%</td>
+</tr>
+<tr>
+<td>Tool Call Success Rate</td>
+<td>工具调用成功率</td>
+<td>&lt; 90%</td>
+</tr>
+<tr>
+<td>Retrieval Relevancy</td>
+<td>检索相关性</td>
+<td>平均 &lt; 0.7</td>
+</tr>
+<tr>
+<td>User Satisfaction</td>
+<td>用户满意度</td>
+<td>&lt; 3.5/5</td>
+</tr>
+<tr>
+<td>Hallucination Rate</td>
+<td>幻觉率</td>
+<td>&gt; 10%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="84-可观测性工具">8.4 可观测性工具</h3>
+<ul>
+<li><strong>LangSmith</strong>：LangChain 官方，全链路追踪和评估</li>
+<li><strong>Phoenix (Arize)</strong>：开源，支持 LLM 可观测性和评估</li>
+<li><strong>Langfuse</strong>：开源，Prompt 管理和追踪</li>
+<li><strong>Weights &amp; Biases (W&amp;B)</strong>：实验追踪和评估</li>
+<li><strong>自建 Dashboard</strong>：Grafana + Prometheus 监控关键指标</li>
+</ul>
+<blockquote>
+<p><strong>面试题：如何构建一个 Agent 系统的可观测性体系？</strong></p>
+<p>三个支柱——日志（Logging）、指标（Metrics）、追踪（Tracing）：</p>
+<ol>
+<li><strong>日志</strong>：结构化日志记录每次请求的完整信息（输入、输出、中间步骤、耗时、token 消耗、错误信息）</li>
+<li><strong>指标</strong>：关键业务指标（QPS、延迟分布、错误率、成本）+ AI 特有指标（幻觉率、检索相关性、用户满意度）</li>
+<li><strong>追踪</strong>：全链路分布式追踪，从用户请求到 LLM 调用、工具执行、RAG 检索的每个环节</li>
+<li><strong>Dashboard</strong>：实时可视化面板，展示系统健康状态</li>
+<li><strong>告警</strong>：对关键指标设置阈值告警（错误率飙升、延迟异常、成本超预算）</li>
+<li><strong>回放与分析</strong>：支持回放单次请求的完整执行过程，方便排查问题</li>
+</ol>
+</blockquote>
+<hr></hr>
+<h2 id="9-ab-测试与评估">9. A/B 测试与评估</h2>
+<h3 id="91-ab-测试框架">9.1 A/B 测试框架</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">ABTestManager</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, config</span>):
+        <span class="hljs-variable language_">self</span>.experiments = config[<span class="hljs-string">"experiments"</span>]
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">assign_variant</span>(<span class="hljs-params">self, user_id, experiment_name</span>):
+        <span class="hljs-string">"""确定用户分到哪个实验组"""</span>
+        experiment = <span class="hljs-variable language_">self</span>.experiments[experiment_name]
+        hash_value = <span class="hljs-built_in">hash</span>(<span class="hljs-string">f"<span class="hljs-subst">{user_id}</span>:<span class="hljs-subst">{experiment_name}</span>"</span>) % <span class="hljs-number">100</span>
+
+        cumulative = <span class="hljs-number">0</span>
+        <span class="hljs-keyword">for</span> variant <span class="hljs-keyword">in</span> experiment[<span class="hljs-string">"variants"</span>]:
+            cumulative += variant[<span class="hljs-string">"traffic_percentage"</span>]
+            <span class="hljs-keyword">if</span> hash_value &lt; cumulative:
+                <span class="hljs-keyword">return</span> variant[<span class="hljs-string">"name"</span>]
+
+        <span class="hljs-keyword">return</span> experiment[<span class="hljs-string">"variants"</span>][<span class="hljs-number">0</span>][<span class="hljs-string">"name"</span>]
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">get_config</span>(<span class="hljs-params">self, user_id, experiment_name</span>):
+        variant = <span class="hljs-variable language_">self</span>.assign_variant(user_id, experiment_name)
+        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">self</span>.experiments[experiment_name][<span class="hljs-string">"configs"</span>][variant]
+
+<span class="hljs-comment"># 使用示例</span>
+<span class="hljs-comment"># A组：使用 gpt-4o，标准 Prompt</span>
+<span class="hljs-comment"># B组：使用 gpt-4o-mini，优化后的 Prompt</span>
+config = ab_manager.get_config(user_id, <span class="hljs-string">"model_optimization"</span>)
+response = agent.run(user_input, model=config[<span class="hljs-string">"model"</span>], prompt=config[<span class="hljs-string">"prompt"</span>])
+</code></pre>
+<h3 id="92-评估指标">9.2 评估指标</h3>
+<ul>
+<li><strong>在线指标</strong>：用户满意度评分、对话完成率、二次提问率</li>
+<li><strong>离线指标</strong>：标准答案匹配度、幻觉率、工具调用准确率</li>
+<li><strong>业务指标</strong>：转化率、客服工单减少量、用户留存率</li>
+</ul>
+<hr></hr>
+<h2 id="10-agent-安全">10. Agent 安全</h2>
+<h3 id="101-威胁模型">10.1 威胁模型</h3>
+<pre><code>┌─────────────────────────────────────────┐
+│              威胁面                       │
+│                                          │
+│  1. Prompt 注入     → 劫持Agent行为       │
+│  2. 数据泄露        → 训练数据/用户数据    │
+│  3. 越权操作        → 未授权的工具调用     │
+│  4. 拒绝服务        → 消耗大量资源        │
+│  5. 供应链攻击      → 恶意工具/插件       │
+│  6. 社会工程        → 诱导Agent泄露信息   │
+└─────────────────────────────────────────┘
+</code></pre><h3 id="102-安全对策">10.2 安全对策</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">SecurityMiddleware</span>:
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">process_request</span>(<span class="hljs-params">self, request</span>):
+        <span class="hljs-comment"># 1. 认证与授权</span>
+        user = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">self</span>.authenticate(request)
+        permissions = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">self</span>.get_permissions(user)
+
+        <span class="hljs-comment"># 2. 输入安全检查</span>
+        guardrail_result = <span class="hljs-keyword">await</span> input_guardrail.check(request.message)
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> guardrail_result.passed:
+            <span class="hljs-keyword">return</span> SecurityResponse(blocked=<span class="hljs-literal">True</span>, reason=guardrail_result.reason)
+
+        <span class="hljs-comment"># 3. 限流</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">await</span> <span class="hljs-variable language_">self</span>.rate_limiter.allow(user.<span class="hljs-built_in">id</span>, limit=<span class="hljs-number">60</span>, window=<span class="hljs-number">60</span>):
+            <span class="hljs-keyword">return</span> SecurityResponse(blocked=<span class="hljs-literal">True</span>, reason=<span class="hljs-string">"请求频率过高"</span>)
+
+        <span class="hljs-comment"># 4. Token 预算检查</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">await</span> <span class="hljs-variable language_">self</span>.budget_exceeded(user.<span class="hljs-built_in">id</span>):
+            <span class="hljs-keyword">return</span> SecurityResponse(blocked=<span class="hljs-literal">True</span>, reason=<span class="hljs-string">"已超出使用配额"</span>)
+
+        <span class="hljs-comment"># 5. 设置工具权限上下文</span>
+        request.allowed_tools = <span class="hljs-variable language_">self</span>.get_allowed_tools(permissions)
+
+        <span class="hljs-keyword">return</span> request
+</code></pre>
+<blockquote>
+<p><strong>面试题：你认为 Agent 系统面临的最大安全风险是什么？如何应对？</strong></p>
+<p><strong>最大风险是 Prompt 注入导致的越权操作</strong>——攻击者通过精心设计的输入劫持 Agent 的行为，使其调用不应该调用的工具或泄露敏感信息。</p>
+<p><strong>应对方案</strong>：</p>
+<ol>
+<li><strong>输入隔离</strong>：用户输入与系统指令严格分离（XML 标签、分隔符）</li>
+<li><strong>工具权限最小化</strong>：根据用户角色限制可用工具，高危工具需人工确认</li>
+<li><strong>输出过滤</strong>：检查 LLM 输出中是否泄露了 System Prompt 或敏感数据</li>
+<li><strong>审计日志</strong>：记录所有 Agent 操作，支持事后追溯</li>
+<li><strong>沙箱执行</strong>：代码执行类工具在隔离环境中运行</li>
+<li><strong>红队测试</strong>：定期进行对抗性测试，发现安全漏洞</li>
+<li><strong>实时监控</strong>：异常行为模式检测和自动告警</li>
+</ol>
+</blockquote>
+<hr></hr>
+<h2 id="11-部署方案">11. 部署方案</h2>
+<h3 id="111-api-gateway">11.1 API Gateway</h3>
+<pre><code class="lang-yaml"><span class="hljs-comment"># Kong / Nginx 配置示例</span>
+<span class="hljs-attr">services:</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">agent-service</span>
+    <span class="hljs-attr">url:</span> <span class="hljs-string">http://agent-backend:8000</span>
+    <span class="hljs-attr">routes:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">paths:</span> [<span class="hljs-string">"/api/v1/chat"</span>]
+    <span class="hljs-attr">plugins:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">rate-limiting</span>
+        <span class="hljs-attr">config:</span>
+          <span class="hljs-attr">minute:</span> <span class="hljs-number">60</span>
+          <span class="hljs-attr">policy:</span> <span class="hljs-string">redis</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">key-auth</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">cors</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">request-size-limiting</span>
+        <span class="hljs-attr">config:</span>
+          <span class="hljs-attr">allowed_payload_size:</span> <span class="hljs-number">1</span>  <span class="hljs-comment"># MB</span>
+</code></pre>
+<h3 id="112-负载均衡与容错">11.2 负载均衡与容错</h3>
+<pre><code class="lang-python"><span class="hljs-comment"># 多模型 Provider 的故障转移</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">LLMRouter</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):
+        <span class="hljs-variable language_">self</span>.providers = [
+            {<span class="hljs-string">"name"</span>: <span class="hljs-string">"openai"</span>, <span class="hljs-string">"client"</span>: OpenAI(), <span class="hljs-string">"priority"</span>: <span class="hljs-number">1</span>, <span class="hljs-string">"healthy"</span>: <span class="hljs-literal">True</span>},
+            {<span class="hljs-string">"name"</span>: <span class="hljs-string">"azure"</span>, <span class="hljs-string">"client"</span>: AzureOpenAI(), <span class="hljs-string">"priority"</span>: <span class="hljs-number">2</span>, <span class="hljs-string">"healthy"</span>: <span class="hljs-literal">True</span>},
+            {<span class="hljs-string">"name"</span>: <span class="hljs-string">"anthropic"</span>, <span class="hljs-string">"client"</span>: Anthropic(), <span class="hljs-string">"priority"</span>: <span class="hljs-number">3</span>, <span class="hljs-string">"healthy"</span>: <span class="hljs-literal">True</span>},
+        ]
+
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">call</span>(<span class="hljs-params">self, messages, **kwargs</span>):
+        <span class="hljs-keyword">for</span> provider <span class="hljs-keyword">in</span> <span class="hljs-built_in">sorted</span>(<span class="hljs-variable language_">self</span>.providers, key=<span class="hljs-keyword">lambda</span> p: p[<span class="hljs-string">"priority"</span>]):
+            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> provider[<span class="hljs-string">"healthy"</span>]:
+                <span class="hljs-keyword">continue</span>
+            <span class="hljs-keyword">try</span>:
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> provider[<span class="hljs-string">"client"</span>].chat(messages, **kwargs)
+            <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+                provider[<span class="hljs-string">"healthy"</span>] = <span class="hljs-literal">False</span>
+                asyncio.create_task(<span class="hljs-variable language_">self</span>._health_check(provider))
+                <span class="hljs-keyword">continue</span>
+
+        <span class="hljs-keyword">raise</span> AllProvidersUnavailableError()
+
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">_health_check</span>(<span class="hljs-params">self, provider</span>):
+        <span class="hljs-string">"""定期检查不健康的 provider"""</span>
+        <span class="hljs-keyword">await</span> asyncio.sleep(<span class="hljs-number">60</span>)
+        <span class="hljs-keyword">try</span>:
+            <span class="hljs-keyword">await</span> provider[<span class="hljs-string">"client"</span>].chat([{<span class="hljs-string">"role"</span>: <span class="hljs-string">"user"</span>, <span class="hljs-string">"content"</span>: <span class="hljs-string">"ping"</span>}])
+            provider[<span class="hljs-string">"healthy"</span>] = <span class="hljs-literal">True</span>
+        <span class="hljs-keyword">except</span>:
+            asyncio.create_task(<span class="hljs-variable language_">self</span>._health_check(provider))  <span class="hljs-comment"># 继续检查</span>
+</code></pre>
+<h3 id="113-部署拓扑">11.3 部署拓扑</h3>
+<pre><code>                    ┌──────────────┐
+                    │   CDN/WAF    │
+                    └──────┬───────┘
+                           │
+                    ┌──────┴───────┐
+                    │  API Gateway │
+                    │  (Kong/APISIX)│
+                    └──────┬───────┘
+                           │
+              ┌────────────┼────────────┐
+              │            │            │
+        ┌─────┴─────┐ ┌───┴──────┐ ┌──┴──────┐
+        │ Agent Pod 1│ │Agent Pod 2│ │Agent Pod3│
+        │ (K8s)     │ │ (K8s)    │ │ (K8s)   │
+        └─────┬─────┘ └───┬──────┘ └──┬──────┘
+              │            │            │
+        ┌─────┴────────────┴────────────┴──────┐
+        │           共享基础设施                  │
+        │  Redis | PostgreSQL | Milvus | S3     │
+        └──────────────────────────────────────┘
+</code></pre><hr></hr>
+<h2 id="12-ai-应用开发的伦理考虑">12. AI 应用开发的伦理考虑</h2>
+<h3 id="121-核心伦理原则">12.1 核心伦理原则</h3>
+<ol>
+<li><strong>透明性</strong>：告知用户他们在与 AI 交互；在回答不确定时明确表示</li>
+<li><strong>公平性</strong>：检测和消除模型偏见（性别、种族、地域等）</li>
+<li><strong>隐私保护</strong>：最小化数据收集；用户数据不用于训练；支持数据删除</li>
+<li><strong>安全性</strong>：防止有害内容生成；不提供危险信息</li>
+<li><strong>可追责</strong>：关键决策有人工审核环节；完整的审计日志</li>
+</ol>
+<h3 id="122-实践建议">12.2 实践建议</h3>
+<pre><code class="lang-python"><span class="hljs-comment"># 伦理检查中间件</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">EthicsMiddleware</span>:
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">check</span>(<span class="hljs-params">self, request, response</span>):
+        <span class="hljs-comment"># 偏见检测</span>
+        bias_score = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">self</span>.bias_detector.check(response.content)
+        <span class="hljs-keyword">if</span> bias_score &gt; threshold:
+            response.content = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">self</span>.debias(response.content)
+            response.warnings.append(<span class="hljs-string">"已进行偏见缓解处理"</span>)
+
+        <span class="hljs-comment"># 不确定性标注</span>
+        confidence = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">self</span>.confidence_estimator.estimate(response)
+        <span class="hljs-keyword">if</span> confidence &lt; <span class="hljs-number">0.6</span>:
+            response.content += <span class="hljs-string">"\n\n注：以上信息可能不完全准确，建议进一步核实。"</span>
+
+        <span class="hljs-keyword">return</span> response
+</code></pre>
+<hr></hr>
+<h2 id="13-最新趋势">13. 最新趋势</h2>
+<h3 id="131-moe（mixture-of-experts）">13.1 MoE（Mixture of Experts）</h3>
+<ul>
+<li><strong>原理</strong>：模型内部包含多个 "专家" 子网络，每次只激活少数几个，减少计算量</li>
+<li><strong>代表</strong>：Mixtral-8x7B（总参数 46.7B，激活 12.9B），GPT-4（传闻使用 MoE）</li>
+<li><strong>面试要点</strong>：理解路由机制（Router）、负载均衡、Expert 专业化</li>
+</ul>
+<h3 id="132-small-language-models（slm）">13.2 Small Language Models（SLM）</h3>
+<ul>
+<li><strong>趋势</strong>：更小但更强的模型——Phi-3（3.8B）、Gemma-2（2B/9B）、Qwen2.5（0.5B-7B）</li>
+<li><strong>适用场景</strong>：边缘设备、低延迟需求、成本敏感、隐私要求高</li>
+<li><strong>与大模型配合</strong>：SLM 处理简单任务，大模型处理复杂任务（级联/路由）</li>
+</ul>
+<h3 id="133-on-device-ai">13.3 On-device AI</h3>
+<ul>
+<li><strong>核心驱动力</strong>：隐私保护、离线可用、低延迟</li>
+<li><strong>技术栈</strong>：GGUF 量化 + llama.cpp / MLC-LLM / Core ML / ONNX Runtime</li>
+<li><strong>挑战</strong>：内存限制、计算能力有限、模型更新分发</li>
+</ul>
+<h3 id="134-ai-agents-ecosystem">13.4 AI Agents Ecosystem</h3>
+<ul>
+<li><strong>Agent 平台化</strong>：OpenAI GPTs Store、各类 Agent 商店</li>
+<li><strong>标准化</strong>：MCP 协议标准化工具连接、OpenAI Agents SDK</li>
+<li><strong>Agentic Workflows</strong>：不仅是单次对话，而是管理完整的业务工作流</li>
+<li><strong>Computer Use</strong>：Agent 能直接操作电脑界面（Claude Computer Use、OpenAI Operator）</li>
+<li><strong>多模态 Agent</strong>：能看（图像理解）、能说（语音交互）、能做（工具调用）</li>
+</ul>
+<blockquote>
+<p><strong>面试题：你如何看待 AI Agent 的发展方向？未来 1-2 年最重要的趋势是什么？</strong></p>
+<p>几个关键趋势：</p>
+<ol>
+<li><strong>Agent 可靠性提升</strong>：从 "demo 好用" 到 "生产可用"，需要更好的规划、错误恢复和评估体系。目前 Agent 的任务成功率在复杂场景下仍不够高，这是阻碍落地的主要瓶颈。</li>
+<li><strong>标准化和互操作</strong>：MCP 等协议推动工具连接标准化，Agent 之间也需要标准化的通信协议。</li>
+<li><strong>端云协同</strong>：小模型在端侧处理简单请求和隐私敏感任务，大模型在云端处理复杂推理。</li>
+<li><strong>多模态原生</strong>：Agent 不再只处理文本——能理解图像、视频、音频，能操作 GUI。</li>
+<li><strong>垂直领域深度优化</strong>：通用 Agent 框架 + 领域特化的工具和知识 = 可落地的行业解决方案。</li>
+<li><strong>评估和可观测性</strong>：更成熟的评估框架和可观测性工具将推动 Agent 质量的持续改进。</li>
+</ol>
+</blockquote>
+<hr></hr>
+<h2 id="总结">总结</h2>
+<p>Agent 开发实战考察的是将理论知识转化为可靠生产系统的能力。面试中，需要展示对完整系统架构的理解（不仅仅是调用 API），对性能、成本、安全、可观测性等工程维度的考量，以及对最新技术趋势的关注。关键不是能用框架搭出一个 demo，而是能设计出在真实生产环境中稳定运行、持续演进的 AI Agent 系统。</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="tool-calling.html" class="navigation navigation-prev " aria-label="Previous page: 工具调用与Function Calling">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../algorithm/array-string.html" class="navigation navigation-next " aria-label="Next page: 数组与字符串">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"实战与进阶","level":"5.6","depth":1,"next":{"title":"数组与字符串","level":"6.1","depth":1,"path":"algorithm/array-string.md","ref":"algorithm/array-string.md","articles":[]},"previous":{"title":"工具调用与Function Calling","level":"5.5","depth":1,"path":"agent/tool-calling.md","ref":"agent/tool-calling.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"agent/practice.md","mtime":"2026-03-31T06:35:11.835Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

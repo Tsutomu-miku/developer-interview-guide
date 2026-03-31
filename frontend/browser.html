@@ -1,0 +1,1549 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>浏览器原理 · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="network.html" />
+    
+    
+    <link rel="prev" href="typescript.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="html-css.html">
+            
+                <a href="html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="javascript.html">
+            
+                <a href="javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="typescript.html">
+            
+                <a href="typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.4" data-path="browser.html">
+            
+                <a href="browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="network.html">
+            
+                <a href="network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="react.html">
+            
+                <a href="react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="vue.html">
+            
+                <a href="vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="engineering.html">
+            
+                <a href="engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="performance.html">
+            
+                <a href="performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="security.html">
+            
+                <a href="security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../nodejs/basics.html">
+            
+                <a href="../nodejs/basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../nodejs/event-loop.html">
+            
+                <a href="../nodejs/event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../nodejs/stream.html">
+            
+                <a href="../nodejs/stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../nodejs/frameworks.html">
+            
+                <a href="../nodejs/frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../nodejs/database.html">
+            
+                <a href="../nodejs/database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../nodejs/practice.html">
+            
+                <a href="../nodejs/practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../golang/basics.html">
+            
+                <a href="../golang/basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../golang/concurrency.html">
+            
+                <a href="../golang/concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../golang/memory.html">
+            
+                <a href="../golang/memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../golang/web-framework.html">
+            
+                <a href="../golang/web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../golang/database-design.html">
+            
+                <a href="../golang/database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../golang/testing-practice.html">
+            
+                <a href="../golang/testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../agent/llm-basics.html">
+            
+                <a href="../agent/llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../agent/prompt-engineering.html">
+            
+                <a href="../agent/prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../agent/rag.html">
+            
+                <a href="../agent/rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../agent/agent-architecture.html">
+            
+                <a href="../agent/agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../agent/tool-calling.html">
+            
+                <a href="../agent/tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../agent/practice.html">
+            
+                <a href="../agent/practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >浏览器原理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="浏览器原理面试指南">浏览器原理面试指南</h1>
+<blockquote>
+<p>浏览器是前端开发最重要的运行环境。深入理解浏览器的工作原理，能帮助我们写出更高性能的代码，也是前端面试中的高频考点。本指南从浏览器架构、页面加载、渲染流程、V8 引擎、垃圾回收、安全策略、缓存机制等方面进行全面梳理。</p>
+</blockquote>
+<hr></hr>
+<h2 id="一、浏览器架构">一、浏览器架构</h2>
+<p>现代浏览器（以 Chrome 为例）采用<strong>多进程架构</strong>，主要包括以下进程：</p>
+<h3 id="1-browser-主进程（浏览器进程）">1. Browser 主进程（浏览器进程）</h3>
+<p>Browser 进程是浏览器的"大管家"，负责：</p>
+<ul>
+<li><strong>UI 管理</strong>：地址栏、书签、前进后退按钮等浏览器界面的渲染与交互。</li>
+<li><strong>网络请求调度</strong>：虽然具体的网络 I/O 由网络进程执行，但 Browser 进程负责发起和调度请求。</li>
+<li><strong>存储管理</strong>：Cookie、localStorage、IndexedDB 等存储的管理。</li>
+<li><strong>子进程管理</strong>：创建和销毁渲染进程、GPU 进程等，协调各进程间的通信（IPC）。</li>
+<li><strong>文件访问</strong>：处理文件下载、文件上传等涉及操作系统文件系统的操作。</li>
+</ul>
+<h3 id="2-renderer-渲染进程">2. Renderer 渲染进程</h3>
+<p>渲染进程是浏览器的核心，负责将 HTML、CSS、JavaScript 转化为用户可以交互的页面。</p>
+<ul>
+<li>内部集成 <strong>Blink 渲染引擎</strong>（负责 HTML 解析、CSS 计算、布局、绘制）和 <strong>V8 JavaScript 引擎</strong>（负责 JS 执行）。</li>
+<li><strong>进程隔离策略</strong>：Chrome 默认采用 Site Isolation（站点隔离），即每个站点（same-site）一个渲染进程。这意味着同一个 Tab 中如果有跨站点的 iframe，iframe 会运行在独立的渲染进程中。早期 Chrome 是每个 Tab 一个渲染进程，后来改为按站点划分以提升安全性。</li>
+<li>渲染进程运行在<strong>沙箱（Sandbox）</strong>中，不能直接访问操作系统资源，需要通过 Browser 进程代理。</li>
+</ul>
+<h3 id="3-gpu-进程">3. GPU 进程</h3>
+<ul>
+<li>负责 GPU 任务的处理，包括 CSS 3D 变换、WebGL、视频解码等。</li>
+<li>将各个渲染进程提交的<strong>合成帧</strong>进行最终合成，输出到屏幕。</li>
+<li>所有 GPU 操作集中在一个进程中，避免多个进程同时操作 GPU 带来的稳定性问题。</li>
+</ul>
+<h3 id="4-network-网络进程">4. Network 网络进程</h3>
+<ul>
+<li>独立的网络服务进程，负责所有网络请求的发起和接收。</li>
+<li>处理 DNS 解析、TCP/TLS 连接、HTTP 请求/响应、缓存策略等。</li>
+<li>独立成进程可以提升稳定性，网络故障不会影响其他功能。</li>
+</ul>
+<h3 id="5-plugin-插件进程">5. Plugin 插件进程</h3>
+<ul>
+<li>每个类型的插件（如 Flash，现已淘汰）运行在独立进程中。</li>
+<li>插件崩溃不会影响浏览器或页面。</li>
+<li>现代浏览器中，浏览器扩展（Extension）也运行在独立的进程中。</li>
+</ul>
+<h3 id="多进程架构的优势">多进程架构的优势</h3>
+<table>
+<thead>
+<tr>
+<th>优势</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>稳定性</strong></td>
+<td>一个页面或插件崩溃不会导致整个浏览器崩溃</td>
+</tr>
+<tr>
+<td><strong>安全性</strong></td>
+<td>渲染进程运行在沙箱中，恶意代码无法直接操作系统</td>
+</tr>
+<tr>
+<td><strong>流畅性</strong></td>
+<td>JavaScript 执行不会阻塞浏览器 UI 响应</td>
+</tr>
+</tbody>
+</table>
+<h3 id="多进程架构的劣势">多进程架构的劣势</h3>
+<ul>
+<li><strong>内存占用高</strong>：每个进程都需要独立的内存空间，包含公共基础设施的副本（如 V8 引擎实例）。</li>
+<li><strong>进程间通信开销</strong>：IPC（Inter-Process Communication）有一定的性能成本。</li>
+</ul>
+<hr></hr>
+<h2 id="二、页面加载全过程">二、页面加载全过程</h2>
+<blockquote>
+<p><strong>面试题：从输入 URL 到页面显示，经历了什么？</strong></p>
+</blockquote>
+<p>这是浏览器原理中最经典的面试题，答案涵盖网络、渲染、安全等多个知识领域。</p>
+<h3 id="1-url-解析">1. URL 解析</h3>
+<p>浏览器首先判断输入的内容是 URL 还是搜索关键词。如果是 URL，会补全协议（如添加 <code>https://</code>）。然后对 URL 进行解析，提取出协议、域名、端口、路径、查询参数、片段标识符等信息。对非 ASCII 字符进行编码（encodeURIComponent）。</p>
+<h3 id="2-dns-解析（域名解析）">2. DNS 解析（域名解析）</h3>
+<p>将域名（如 <code>www.example.com</code>）解析为 IP 地址。DNS 解析有<strong>递归查询</strong>和<strong>迭代查询</strong>两种方式，缓存层级如下：</p>
+<pre><code>浏览器 DNS 缓存 → 操作系统 DNS 缓存 → hosts 文件
+→ 本地 DNS 服务器（ISP 提供）
+→ 根域名服务器（.）
+→ 顶级域名服务器（.com）
+→ 权威域名服务器（example.com）
+</code></pre><ul>
+<li><strong>递归查询</strong>：客户端向本地 DNS 服务器发起请求，本地 DNS 服务器如果没有缓存，会依次向上级查询并最终返回结果给客户端。客户端只需发一次请求。</li>
+<li><strong>迭代查询</strong>：本地 DNS 服务器向根域名服务器查询时，根域名服务器不会帮忙查到底，而是返回下一级服务器的地址，本地 DNS 服务器再去查下一级。</li>
+</ul>
+<blockquote>
+<p><strong>面试题：DNS 解析优化手段有哪些？</strong></p>
+<ul>
+<li><code>dns-prefetch</code>：<code>&lt;link rel="dns-prefetch" href="//cdn.example.com"&gt;</code></li>
+<li>减少不同域名的使用数量</li>
+<li>使用 CDN 就近解析</li>
+</ul>
+</blockquote>
+<h3 id="3-tcp-三次握手">3. TCP 三次握手</h3>
+<p>浏览器与服务器建立 TCP 连接，经历三次握手（详见网络章节）。</p>
+<h3 id="4-tls-握手（https）">4. TLS 握手（HTTPS）</h3>
+<p>如果是 HTTPS 协议，还需要进行 TLS 握手，协商加密套件、验证证书、交换密钥。TLS 1.2 需要 2-RTT，TLS 1.3 优化到 1-RTT。</p>
+<h3 id="5-发送-http-请求">5. 发送 HTTP 请求</h3>
+<p>建立连接后，浏览器构造 HTTP 请求报文（请求行、请求头、请求体），发送给服务器。请求头中包含 Cookie、User-Agent、Accept 等信息。</p>
+<h3 id="6-服务器处理与响应">6. 服务器处理与响应</h3>
+<p>服务器接收请求后进行处理（可能涉及负载均衡、反向代理、应用逻辑、数据库查询等），返回 HTTP 响应报文（状态行、响应头、响应体）。</p>
+<h3 id="7-浏览器解析与渲染">7. 浏览器解析与渲染</h3>
+<p>收到响应后，浏览器开始解析 HTML 并进入渲染流程（详见下一节）。</p>
+<h3 id="8-连接关闭">8. 连接关闭</h3>
+<p>页面加载完成后，如果是 HTTP/1.0 或未设置 <code>keep-alive</code>，会通过四次挥手关闭 TCP 连接。HTTP/1.1 默认保持连接复用。</p>
+<hr></hr>
+<h2 id="三、渲染流程">三、渲染流程</h2>
+<blockquote>
+<p><strong>面试题：浏览器的渲染流程是怎样的？什么是回流和重绘？</strong></p>
+</blockquote>
+<h3 id="渲染流水线">渲染流水线</h3>
+<pre><code>HTML → DOM Tree
+                 ↘
+                  → Render Tree → Layout → Paint → Composite → 屏幕显示
+                 ↗
+CSS  → CSSOM
+</code></pre><h3 id="详细步骤">详细步骤</h3>
+<h4 id="1-解析-html，构建-dom-tree">1. 解析 HTML，构建 DOM Tree</h4>
+<p>HTML 解析器（Parser）将 HTML 字节流按以下流程转换为 DOM 树：</p>
+<pre><code>字节（Bytes）→ 字符（Characters）→ 令牌（Tokens）→ 节点（Nodes）→ DOM Tree
+</code></pre><p><strong>注意</strong>：</p>
+<ul>
+<li>遇到 <code>&lt;script&gt;</code> 标签会<strong>暂停 HTML 解析</strong>，先下载并执行 JavaScript（因为 JS 可能修改 DOM）。</li>
+<li><code>async</code> 属性：异步下载，下载完立即执行（不保证顺序）。</li>
+<li><code>defer</code> 属性：异步下载，在 DOMContentLoaded 之前按顺序执行。</li>
+</ul>
+<h4 id="2-解析-css，构建-cssom">2. 解析 CSS，构建 CSSOM</h4>
+<p>CSS 解析器将 CSS 样式表（外部、内联、行内）转换为 CSSOM（CSS Object Model）。CSS 解析<strong>不会阻塞 DOM 解析</strong>，但<strong>会阻塞渲染</strong>（浏览器需要等 CSSOM 构建完成才能进行渲染）。</p>
+<h4 id="3-合成-render-tree（渲染树）">3. 合成 Render Tree（渲染树）</h4>
+<p>将 DOM Tree 和 CSSOM 合并为 Render Tree：</p>
+<ul>
+<li><strong>不包含</strong>不可见元素：<code>display: none</code> 的元素不在渲染树中（但 <code>visibility: hidden</code> 和 <code>opacity: 0</code> 的元素仍在渲染树中，因为它们占据布局空间或参与合成）。</li>
+<li><strong>不包含</strong> <code>&lt;head&gt;</code>、<code>&lt;meta&gt;</code> 等非可视元素。</li>
+</ul>
+<h4 id="4-layout-布局（回流--reflow）">4. Layout 布局（回流 / Reflow）</h4>
+<p>计算 Render Tree 中每个节点的<strong>几何信息</strong>：位置（x, y）、大小（width, height）。</p>
+<ul>
+<li>这是一个递归过程，从根节点开始，逐层计算每个节点的布局。</li>
+<li><strong>触发回流的操作</strong>：改变窗口大小、修改元素尺寸/位置/边距、添加/删除 DOM 元素、读取 offsetWidth/offsetHeight/getBoundingClientRect 等布局属性。</li>
+</ul>
+<h4 id="5-paint-绘制（重绘--repaint）">5. Paint 绘制（重绘 / Repaint）</h4>
+<p>将布局结果转换为<strong>绘制指令列表</strong>（Paint Records），记录绘制的顺序和方式。</p>
+<ul>
+<li>绘制操作按照层叠上下文（Stacking Context）分层进行。</li>
+<li><strong>只触发重绘不触发回流的操作</strong>：修改 color、background-color、visibility、box-shadow 等不影响几何信息的属性。</li>
+</ul>
+<h4 id="6-composite-合成">6. Composite 合成</h4>
+<p>将页面分为多个<strong>合成层（Compositing Layers）</strong>，各层独立光栅化后由 GPU 合成最终图像。</p>
+<p><strong>创建合成层的条件</strong>：</p>
+<ul>
+<li><code>transform: translateZ(0)</code> 或 <code>translate3d(0,0,0)</code></li>
+<li><code>will-change: transform</code></li>
+<li><code>opacity</code> 动画</li>
+<li><code>&lt;video&gt;</code>、<code>&lt;canvas&gt;</code>、<code>&lt;iframe&gt;</code> 等元素</li>
+<li><code>position: fixed</code></li>
+</ul>
+<p><strong>合成层的优势</strong>：</p>
+<ul>
+<li>合成层的变换（transform、opacity）直接在 GPU 上处理，<strong>不触发回流和重绘</strong>，性能极佳。</li>
+<li>合成层更新不影响其他层。</li>
+</ul>
+<p><strong><code>will-change</code> 属性</strong>：</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.animated-element</span> {
+  <span class="hljs-attribute">will-change</span>: transform, opacity; <span class="hljs-comment">/* 提前告知浏览器该元素将发生变换 */</span>
+}
+</code></pre>
+<blockquote>
+<p><strong>面试题：如何减少回流和重绘？</strong></p>
+<ol>
+<li>使用 <code>transform</code> 代替 <code>top/left</code> 做动画（只触发合成）</li>
+<li>使用 <code>visibility: hidden</code> 代替 <code>display: none</code>（前者只重绘，后者触发回流）</li>
+<li>批量修改 DOM：使用 DocumentFragment 或脱离文档流后修改</li>
+<li>避免频繁读取触发回流的属性，或使用变量缓存</li>
+<li>使用 <code>will-change</code> 提前声明变化的属性</li>
+</ol>
+</blockquote>
+<hr></hr>
+<h2 id="四、v8-引擎">四、V8 引擎</h2>
+<blockquote>
+<p><strong>面试题：V8 引擎是如何执行 JavaScript 代码的？</strong></p>
+</blockquote>
+<p>V8 是 Google 开发的高性能 JavaScript 和 WebAssembly 引擎，用于 Chrome 浏览器和 Node.js。</p>
+<h3 id="执行流水线">执行流水线</h3>
+<pre><code>JavaScript 源码
+    ↓
+Scanner（词法分析）→ Token 流
+    ↓
+Parser（语法分析）→ AST（抽象语法树）
+    ↓
+Ignition（解释器）→ 字节码（Bytecode）
+    ↓
+Sparkplug（基线编译器）→ 轻度优化的机器码
+    ↓
+TurboFan（优化编译器）→ 高度优化的机器码
+</code></pre><h3 id="各阶段详解">各阶段详解</h3>
+<h4 id="1-scanner-词法分析">1. Scanner 词法分析</h4>
+<p>将源代码字符串拆分为一个个 Token（词法单元）。例如 <code>var a = 1;</code> 会被拆分为 <code>var</code>（关键字）、<code>a</code>（标识符）、<code>=</code>（赋值运算符）、<code>1</code>（数字字面量）、<code>;</code>（分号）。</p>
+<h4 id="2-parser-语法分析">2. Parser 语法分析</h4>
+<p>将 Token 流按照语法规则组织为 AST（抽象语法树）。V8 采用<strong>延迟解析（Lazy Parsing）</strong>策略：对于函数体内部的代码，如果函数没有被调用，就先不解析，只进行<strong>预解析（Pre-parsing）</strong>，记录函数的位置和作用域信息，等到函数实际被调用时再完整解析。这大大加快了初始解析速度。</p>
+<h4 id="3-ignition-解释器">3. Ignition 解释器</h4>
+<p>将 AST 编译为<strong>字节码</strong>并逐条解释执行。字节码是一种介于 AST 和机器码之间的中间表示，比机器码更紧凑。Ignition 同时收集<strong>类型反馈（Type Feedback）</strong>信息，记录变量和操作的类型，为后续优化编译提供依据。</p>
+<h4 id="4-sparkplug-基线编译器">4. Sparkplug 基线编译器</h4>
+<p>V8 在 v9.1 中引入的非优化编译器，将字节码快速编译为机器码，不做复杂优化。相比 Ignition 解释执行，Sparkplug 编译后的代码执行更快，但编译速度也很快，几乎不增加延迟。</p>
+<h4 id="5-turbofan-优化编译器">5. TurboFan 优化编译器</h4>
+<p>对<strong>热点函数</strong>（被多次调用的函数）进行深度优化编译，生成高度优化的机器码。优化手段包括：</p>
+<ul>
+<li><strong>内联（Inlining）</strong>：将被调用函数的代码内联到调用处，消除函数调用开销。</li>
+<li><strong>逃逸分析（Escape Analysis）</strong>：分析对象是否逃逸出函数作用域，如果没有则可以在栈上分配而非堆上。</li>
+<li><strong>类型特化（Type Specialization）</strong>：根据收集到的类型反馈，生成针对特定类型的优化代码。</li>
+</ul>
+<h3 id="inline-cache（ic，内联缓存）">Inline Cache（IC，内联缓存）</h3>
+<p>V8 使用 IC 机制缓存属性访问的查找结果。当代码首次访问 <code>obj.x</code> 时，V8 需要查找 <code>x</code> 属性的位置，查到后会将查找结果缓存起来。下次再访问同一类型对象的 <code>x</code> 属性时，直接使用缓存结果，无需重新查找。</p>
+<p>IC 状态变化：<strong>未初始化 → 单态（Monomorphic）→ 多态（Polymorphic）→ 超态（Megamorphic）</strong>。单态最快，超态最慢。</p>
+<h3 id="hidden-class（隐藏类）">Hidden Class（隐藏类）</h3>
+<p>V8 为每个对象创建一个 Hidden Class（也叫 Map 或 Shape），记录对象的属性布局（每个属性的名称、偏移量、类型等）。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 推荐：以相同顺序初始化属性，共享 Hidden Class</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Point</span>(<span class="hljs-params">x, y</span>) {
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">x</span> = x; <span class="hljs-comment">// Hidden Class 0 → Hidden Class 1</span>
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">y</span> = y; <span class="hljs-comment">// Hidden Class 1 → Hidden Class 2</span>
+}
+<span class="hljs-keyword">const</span> p1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Point</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>); <span class="hljs-comment">// 使用 Hidden Class 2</span>
+<span class="hljs-keyword">const</span> p2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Point</span>(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>); <span class="hljs-comment">// 共享同一个 Hidden Class 2</span>
+
+<span class="hljs-comment">// 不推荐：动态增删属性，导致 Hidden Class 分裂</span>
+<span class="hljs-keyword">const</span> obj = {};
+obj.<span class="hljs-property">a</span> = <span class="hljs-number">1</span>; <span class="hljs-comment">// Hidden Class 变化</span>
+obj.<span class="hljs-property">b</span> = <span class="hljs-number">2</span>; <span class="hljs-comment">// Hidden Class 再次变化</span>
+<span class="hljs-keyword">delete</span> obj.<span class="hljs-property">a</span>; <span class="hljs-comment">// 触发 Hidden Class 降级，V8 回退到慢速字典模式</span>
+</code></pre>
+<h3 id="反优化（deoptimization）">反优化（Deoptimization）</h3>
+<p>当 TurboFan 的优化假设被违反时（如类型发生变化），优化后的机器码会被丢弃，回退到 Ignition 字节码执行。这叫做<strong>反优化</strong>。</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">add</span>(<span class="hljs-params">a, b</span>) {
+  <span class="hljs-keyword">return</span> a + b;
+}
+
+<span class="hljs-comment">// 前 10000 次调用传入数字，TurboFan 优化为数字加法</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10000</span>; i++) <span class="hljs-title function_">add</span>(i, i);
+
+<span class="hljs-comment">// 突然传入字符串，类型假设被违反，触发反优化</span>
+<span class="hljs-title function_">add</span>(<span class="hljs-string">"hello"</span>, <span class="hljs-string">"world"</span>);
+</code></pre>
+<blockquote>
+<p><strong>面试题：如何写出 V8 友好的代码？</strong></p>
+<ol>
+<li>以固定顺序初始化对象属性（共享 Hidden Class）</li>
+<li>不要动态增删属性（特别是 <code>delete</code> 操作）</li>
+<li>保持函数参数类型稳定（避免反优化）</li>
+<li>使用 TypedArray 存储数值数据</li>
+</ol>
+</blockquote>
+<hr></hr>
+<h2 id="五、垃圾回收（gc）">五、垃圾回收（GC）</h2>
+<blockquote>
+<p><strong>面试题：V8 的垃圾回收机制是怎样的？</strong></p>
+</blockquote>
+<p>V8 的堆内存分为<strong>新生代（Young Generation）</strong>和<strong>老生代（Old Generation）</strong>，分别使用不同的回收策略。</p>
+<h3 id="新生代（scavenge-算法）">新生代（Scavenge 算法）</h3>
+<p>新生代存储<strong>存活时间短</strong>的对象，空间较小（通常 1~8 MB）。</p>
+<p>采用 <strong>Scavenge 算法</strong>（基于 Cheney 算法）：</p>
+<ol>
+<li>新生代空间分为两个等大的半空间：<strong>From 空间</strong>（使用中）和 <strong>To 空间</strong>（空闲）。</li>
+<li>新对象分配在 From 空间。</li>
+<li>当 From 空间快满时，触发 GC：<ul>
+<li>使用<strong>广度优先遍历</strong>（Cheney 算法的特点），从 GC Roots 开始标记 From 空间中所有存活对象。</li>
+<li>将存活对象<strong>复制</strong>到 To 空间（按顺序排列，消除内存碎片）。</li>
+<li>清空 From 空间。</li>
+<li><strong>交换 From 和 To 空间</strong>的角色。</li>
+</ul>
+</li>
+<li><strong>晋升条件</strong>：如果一个对象已经经历过一次 Scavenge 存活，或者 To 空间使用率超过 25%，该对象会被移动到老生代。</li>
+</ol>
+<p><strong>优点</strong>：速度快，适合频繁回收。<br></br><strong>缺点</strong>：空间利用率只有 50%（始终有一半空间空闲）。</p>
+<h3 id="老生代（mark-sweep--mark-compact）">老生代（Mark-Sweep + Mark-Compact）</h3>
+<p>老生代存储<strong>存活时间长</strong>的对象和从新生代晋升的对象，空间较大。</p>
+<h4 id="mark-sweep（标记清除）">Mark-Sweep（标记清除）</h4>
+<ol>
+<li><strong>标记阶段</strong>：从 GC Roots（全局对象、调用栈中的变量等）出发，递归遍历所有可达对象并标记为存活。</li>
+<li><strong>清除阶段</strong>：遍历整个堆，回收未被标记的对象所占的内存。</li>
+</ol>
+<p><strong>缺点</strong>：会产生<strong>内存碎片</strong>（被回收的空间是不连续的）。</p>
+<h4 id="mark-compact（标记整理）">Mark-Compact（标记整理）</h4>
+<p>在 Mark-Sweep 的基础上增加<strong>整理阶段</strong>：将所有存活对象向内存一端移动，然后清理边界外的所有内存。</p>
+<p><strong>优点</strong>：消除内存碎片。<br></br><strong>缺点</strong>：需要移动对象、更新引用，速度较慢。</p>
+<p>V8 实际上是混合使用 Mark-Sweep 和 Mark-Compact：大部分时候用 Mark-Sweep（快），当碎片率过高时才用 Mark-Compact（整理）。</p>
+<h4 id="增量标记（incremental-marking）">增量标记（Incremental Marking）</h4>
+<p>老生代堆可能很大，一次性标记所有对象会导致长时间停顿（Stop-The-World）。增量标记将标记工作拆分为多个小步骤，穿插在 JavaScript 执行之间，每次只标记一小部分对象。使用<strong>三色标记法</strong>（白色-未访问、灰色-已访问未完成、黑色-已完成）和<strong>写屏障（Write Barrier）</strong>来保证正确性。</p>
+<h4 id="并发标记（concurrent-marking）">并发标记（Concurrent Marking）</h4>
+<p>V8 在主线程执行 JavaScript 的同时，使用<strong>辅助线程</strong>进行标记工作。这进一步减少了主线程的停顿时间。并发标记同样依赖写屏障来处理标记过程中对象引用的变化。</p>
+<h3 id="gc-触发条件">GC 触发条件</h3>
+<ul>
+<li>新生代 From 空间快满时，触发 Scavenge。</li>
+<li>老生代内存使用率达到阈值时，触发 Mark-Sweep/Mark-Compact。</li>
+<li>手动调用 <code>global.gc()</code>（Node.js 中需要 <code>--expose-gc</code> 参数）。</li>
+<li>内存分配失败时，强制触发 GC。</li>
+</ul>
+<hr></hr>
+<h2 id="六、同源策略与跨域">六、同源策略与跨域</h2>
+<blockquote>
+<p><strong>面试题：什么是同源策略？如何解决跨域问题？</strong></p>
+</blockquote>
+<h3 id="同源的定义">同源的定义</h3>
+<p>两个 URL 的<strong>协议（Protocol）</strong>、<strong>域名（Host）</strong>、<strong>端口（Port）</strong>完全相同，即为同源。</p>
+<pre><code>https://www.example.com:443/path
+  ↑协议      ↑域名       ↑端口
+
+https://www.example.com/a 和 https://www.example.com/b → 同源 ✓
+http://www.example.com 和 https://www.example.com      → 不同源 ✗（协议不同）
+https://www.example.com 和 https://api.example.com     → 不同源 ✗（域名不同）
+https://www.example.com 和 https://www.example.com:8080 → 不同源 ✗（端口不同）
+</code></pre><p>同源策略限制的操作：DOM 访问、Cookie/localStorage/IndexedDB 读取、AJAX 请求。</p>
+<h3 id="跨域解决方案">跨域解决方案</h3>
+<h4 id="1-cors（cross-origin-resource-sharing，跨域资源共享）">1. CORS（Cross-Origin Resource Sharing，跨域资源共享）</h4>
+<p>CORS 是 W3C 标准，是最主流的跨域方案。由<strong>服务端</strong>设置响应头来允许跨域。</p>
+<p><strong>简单请求</strong>（满足以下所有条件）：</p>
+<ul>
+<li>方法为 GET / HEAD / POST</li>
+<li>Content-Type 为 <code>text/plain</code>、<code>multipart/form-data</code>、<code>application/x-www-form-urlencoded</code></li>
+<li>不包含自定义头部</li>
+</ul>
+<p>简单请求直接发送，浏览器自动在请求头中添加 <code>Origin</code> 字段，服务端返回 <code>Access-Control-Allow-Origin</code> 即可。</p>
+<p><strong>预检请求（Preflight）</strong>：非简单请求会先发送一个 <code>OPTIONS</code> 请求进行"预检"。</p>
+<pre><code>OPTIONS /api/data HTTP/1.1
+Origin: https://www.example.com
+Access-Control-Request-Method: PUT
+Access-Control-Request-Headers: Content-Type, Authorization
+
+HTTP/1.1 204 No Content
+Access-Control-Allow-Origin: https://www.example.com
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE
+Access-Control-Allow-Headers: Content-Type, Authorization
+Access-Control-Allow-Credentials: true
+Access-Control-Max-Age: 86400
+</code></pre><h4 id="2-jsonp（json-with-padding）">2. JSONP（JSON with Padding）</h4>
+<p>利用 <code>&lt;script&gt;</code> 标签不受同源策略限制的特性：</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 前端</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">handleResponse</span>(<span class="hljs-params">data</span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(data);
+}
+<span class="hljs-keyword">const</span> script = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">'script'</span>);
+script.<span class="hljs-property">src</span> = <span class="hljs-string">'https://api.example.com/data?callback=handleResponse'</span>;
+<span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">appendChild</span>(script);
+
+<span class="hljs-comment">// 服务端返回</span>
+<span class="hljs-title function_">handleResponse</span>({<span class="hljs-string">"name"</span>: <span class="hljs-string">"张三"</span>, <span class="hljs-string">"age"</span>: <span class="hljs-number">25</span>});
+</code></pre>
+<p><strong>局限</strong>：只支持 GET 请求、有安全风险（XSS）、无法获取状态码。</p>
+<h4 id="3-反向代理">3. 反向代理</h4>
+<pre><code class="lang-nginx"><span class="hljs-comment"># Nginx 反向代理配置</span>
+<span class="hljs-section">server</span> {
+    <span class="hljs-attribute">listen</span> <span class="hljs-number">80</span>;
+    <span class="hljs-attribute">server_name</span> www.example.com;
+
+    <span class="hljs-section">location</span> /api/ {
+        <span class="hljs-attribute">proxy_pass</span> https://api.backend.com/;
+        <span class="hljs-attribute">proxy_set_header</span> Host <span class="hljs-variable">$host</span>;
+    }
+}
+</code></pre>
+<p>开发环境中可使用 Webpack devServer proxy 或 Node.js 中间件（如 http-proxy-middleware）实现代理。</p>
+<h4 id="4-postmessage（跨窗口通信）">4. postMessage（跨窗口通信）</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 发送方（父窗口）</span>
+<span class="hljs-keyword">const</span> iframe = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'myIframe'</span>);
+iframe.<span class="hljs-property">contentWindow</span>.<span class="hljs-title function_">postMessage</span>({ <span class="hljs-attr">type</span>: <span class="hljs-string">'greeting'</span>, <span class="hljs-attr">data</span>: <span class="hljs-string">'hello'</span> }, <span class="hljs-string">'https://other.com'</span>);
+
+<span class="hljs-comment">// 接收方（iframe 页面）</span>
+<span class="hljs-variable language_">window</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'message'</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+  <span class="hljs-keyword">if</span> (event.<span class="hljs-property">origin</span> !== <span class="hljs-string">'https://parent.com'</span>) <span class="hljs-keyword">return</span>; <span class="hljs-comment">// 验证来源</span>
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(event.<span class="hljs-property">data</span>); <span class="hljs-comment">// { type: 'greeting', data: 'hello' }</span>
+});
+</code></pre>
+<h4 id="5-websocket">5. WebSocket</h4>
+<p>WebSocket 协议不受同源策略限制，可以自由跨域通信。</p>
+<hr></hr>
+<h2 id="七、认证方案">七、认证方案</h2>
+<blockquote>
+<p><strong>面试题：Cookie、Session、Token、JWT 各有什么特点？</strong></p>
+</blockquote>
+<h3 id="cookie">Cookie</h3>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>HttpOnly</code></td>
+<td>禁止 JavaScript 访问，防止 XSS 窃取 Cookie</td>
+</tr>
+<tr>
+<td><code>Secure</code></td>
+<td>只在 HTTPS 连接中发送</td>
+</tr>
+<tr>
+<td><code>SameSite</code></td>
+<td><code>Strict</code>：完全禁止第三方 Cookie；<code>Lax</code>：导航到第三方时允许（GET）；<code>None</code>：允许第三方（需配合 Secure）</td>
+</tr>
+<tr>
+<td><code>Domain</code></td>
+<td>Cookie 生效的域名，默认当前域名（不含子域名）</td>
+</tr>
+<tr>
+<td><code>Path</code></td>
+<td>Cookie 生效的路径</td>
+</tr>
+<tr>
+<td><code>Expires / Max-Age</code></td>
+<td>过期时间。<code>Expires</code> 是绝对时间，<code>Max-Age</code> 是相对秒数</td>
+</tr>
+</tbody>
+</table>
+<p><strong>限制</strong>：每个域名下 Cookie 大小不超过 <strong>4KB</strong>，数量通常限制在 20~50 个。</p>
+<h3 id="session">Session</h3>
+<ul>
+<li>会话数据存储在<strong>服务端</strong>（内存 / 文件 / 数据库）。</li>
+<li>服务端生成唯一的 <strong>Session ID</strong>，通过 Cookie（<code>Set-Cookie: JSESSIONID=xxx</code>）传递给客户端。</li>
+<li>客户端后续请求自动携带 Session ID，服务端据此查找对应的会话数据。</li>
+<li><strong>分布式 Session</strong>：多台服务器间共享 Session，常用方案是将 Session 存储在 <strong>Redis</strong> 中。</li>
+</ul>
+<h3 id="token">Token</h3>
+<ul>
+<li><strong>无状态</strong>：服务端不存储会话信息，Token 本身包含用户信息和签名。</li>
+<li><strong>存储位置</strong>：通常存在 localStorage 或内存中，通过请求头 <code>Authorization: Bearer &lt;token&gt;</code> 发送。</li>
+<li><strong>刷新机制</strong>：使用短期 Access Token + 长期 Refresh Token。Access Token 过期后用 Refresh Token 获取新的 Access Token。</li>
+</ul>
+<h3 id="jwt（json-web-token）">JWT（JSON Web Token）</h3>
+<p>JWT 由三部分组成，用 <code>.</code> 分隔：</p>
+<pre><code>Header.Payload.Signature
+</code></pre><ul>
+<li><strong>Header</strong>：Base64 编码的 JSON，包含算法类型（如 <code>HS256</code>）和 Token 类型（<code>JWT</code>）。</li>
+<li><strong>Payload</strong>：Base64 编码的 JSON，包含声明（Claims），如 <code>sub</code>（主题）、<code>exp</code>（过期时间）、<code>iat</code>（签发时间）和自定义数据。</li>
+<li><strong>Signature</strong>：<code>HMACSHA256(base64UrlEncode(header) + "." + base64UrlEncode(payload), secret)</code>。</li>
+</ul>
+<p><strong>优点</strong>：无状态可扩展、跨域友好、适合微服务架构。<br></br><strong>缺点</strong>：无法主动作废（除非使用黑名单）、Payload 只是 Base64 编码不是加密（不要放敏感信息）、Token 体积较大。</p>
+<p><strong>刷新 Token 方案</strong>：Access Token（短期，如 15 分钟）+ Refresh Token（长期，如 7 天）。Refresh Token 被泄露风险更低（仅在刷新时使用），且可以存储在 HttpOnly Cookie 中。</p>
+<hr></hr>
+<h2 id="八、浏览器缓存">八、浏览器缓存</h2>
+<blockquote>
+<p><strong>面试题：浏览器的缓存机制是怎样的？强缓存和协商缓存有什么区别？</strong></p>
+</blockquote>
+<h3 id="强缓存">强缓存</h3>
+<p>浏览器直接使用本地缓存，<strong>不向服务器发请求</strong>，返回状态码 <code>200 (from disk/memory cache)</code>。</p>
+<table>
+<thead>
+<tr>
+<th>头部</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Cache-Control: max-age=31536000</code></td>
+<td>缓存有效期，单位秒（优先级更高）</td>
+</tr>
+<tr>
+<td><code>Cache-Control: no-cache</code></td>
+<td>不使用强缓存，每次都要进行协商缓存验证</td>
+</tr>
+<tr>
+<td><code>Cache-Control: no-store</code></td>
+<td>完全不缓存，每次都从服务器获取</td>
+</tr>
+<tr>
+<td><code>Cache-Control: public</code></td>
+<td>允许中间代理缓存</td>
+</tr>
+<tr>
+<td><code>Cache-Control: private</code></td>
+<td>只允许浏览器缓存，不允许代理缓存</td>
+</tr>
+<tr>
+<td><code>Expires</code></td>
+<td>HTTP/1.0 的缓存头，是一个绝对时间（GMT 格式），优先级低于 Cache-Control</td>
+</tr>
+</tbody>
+</table>
+<h3 id="协商缓存">协商缓存</h3>
+<p>强缓存失效后，浏览器<strong>向服务器发请求验证</strong>缓存是否仍然有效。如果有效，服务器返回 <code>304 Not Modified</code>（不返回资源内容），浏览器继续使用本地缓存。</p>
+<table>
+<thead>
+<tr>
+<th>请求头</th>
+<th>响应头</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>If-None-Match</code></td>
+<td><code>ETag</code></td>
+<td>资源的唯一标识（哈希值），精确但计算有开销</td>
+</tr>
+<tr>
+<td><code>If-Modified-Since</code></td>
+<td><code>Last-Modified</code></td>
+<td>资源最后修改时间，精度为秒，可能不准确</td>
+</tr>
+</tbody>
+</table>
+<p>ETag 优先级高于 Last-Modified。</p>
+<h3 id="缓存优先级">缓存优先级</h3>
+<pre><code>Service Worker → Memory Cache → Disk Cache → Push Cache → 网络请求
+</code></pre><ol>
+<li><strong>Service Worker</strong>：完全可编程的缓存，优先级最高。</li>
+<li><strong>Memory Cache</strong>：存在内存中，速度最快，关闭 Tab 后清除。通常缓存当前页面已加载的资源（如图片、脚本）。</li>
+<li><strong>Disk Cache</strong>：存在磁盘中，容量大，持久化。根据 HTTP 头部决定缓存策略。</li>
+<li><strong>Push Cache</strong>：HTTP/2 服务器推送的资源缓存，生命周期很短（约 5 分钟），仅在会话（Session）内有效。</li>
+</ol>
+<hr></hr>
+<h2 id="九、web-存储">九、Web 存储</h2>
+<blockquote>
+<p><strong>面试题：localStorage、sessionStorage、IndexedDB 的区别？</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>localStorage</th>
+<th>sessionStorage</th>
+<th>IndexedDB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>容量</strong></td>
+<td>~5 MB</td>
+<td>~5 MB</td>
+<td>无固定上限（通常数百 MB）</td>
+</tr>
+<tr>
+<td><strong>生命周期</strong></td>
+<td>永久存储，除非手动清除</td>
+<td>页面会话期间，关闭标签页即清除</td>
+<td>永久存储</td>
+</tr>
+<tr>
+<td><strong>作用域</strong></td>
+<td>同源所有页面共享</td>
+<td>同源 + 同一标签页</td>
+<td>同源所有页面共享</td>
+</tr>
+<tr>
+<td><strong>API</strong></td>
+<td>同步</td>
+<td>同步</td>
+<td>异步（基于事件/Promise）</td>
+</tr>
+<tr>
+<td><strong>数据格式</strong></td>
+<td>字符串键值对</td>
+<td>字符串键值对</td>
+<td>结构化数据（对象、二进制等）</td>
+</tr>
+<tr>
+<td><strong>索引</strong></td>
+<td>无</td>
+<td>无</td>
+<td>支持索引查询</td>
+</tr>
+<tr>
+<td><strong>事务</strong></td>
+<td>无</td>
+<td>无</td>
+<td>支持事务（ACID）</td>
+</tr>
+<tr>
+<td><strong>使用场景</strong></td>
+<td>用户偏好、主题设置</td>
+<td>表单临时数据、页面状态</td>
+<td>离线数据、大量结构化数据</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="十、web-workers">十、Web Workers</h2>
+<blockquote>
+<p><strong>面试题：Web Workers 有哪几种？Service Worker 的生命周期是什么？</strong></p>
+</blockquote>
+<h3 id="dedicated-worker（专用-worker）">Dedicated Worker（专用 Worker）</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 主线程</span>
+<span class="hljs-keyword">const</span> worker = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Worker</span>(<span class="hljs-string">'worker.js'</span>);
+worker.<span class="hljs-title function_">postMessage</span>({ <span class="hljs-attr">type</span>: <span class="hljs-string">'calculate'</span>, <span class="hljs-attr">data</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>] });
+worker.<span class="hljs-property">onmessage</span> = <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'结果:'</span>, event.<span class="hljs-property">data</span>);
+};
+
+<span class="hljs-comment">// worker.js</span>
+self.<span class="hljs-property">onmessage</span> = <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> { type, data } = event.<span class="hljs-property">data</span>;
+  <span class="hljs-keyword">if</span> (type === <span class="hljs-string">'calculate'</span>) {
+    <span class="hljs-keyword">const</span> sum = data.<span class="hljs-title function_">reduce</span>(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a + b, <span class="hljs-number">0</span>);
+    self.<span class="hljs-title function_">postMessage</span>(sum);
+  }
+};
+</code></pre>
+<p><strong>特点</strong>：与创建它的页面一对一绑定、通过 <code>postMessage</code> 通信（数据是结构化克隆，非共享）、<strong>不能操作 DOM</strong>。</p>
+<h3 id="shared-worker（共享-worker）">Shared Worker（共享 Worker）</h3>
+<p>多个同源页面可以共享同一个 Shared Worker 实例，通过 <code>port</code> 对象通信。适合多标签页间的数据共享。</p>
+<h3 id="service-worker">Service Worker</h3>
+<p>Service Worker 是一种特殊的 Worker，运行在独立线程中，充当浏览器与网络之间的<strong>代理</strong>。它是 PWA（Progressive Web App）的核心技术。</p>
+<p><strong>生命周期</strong>：</p>
+<pre><code>注册（register）→ 安装（install）→ 激活（activate）→ 运行（fetch / push / sync）
+</code></pre><ol>
+<li><strong>install 事件</strong>：首次注册时触发，用于预缓存关键资源。调用 <code>event.waitUntil()</code> 等待缓存完成。</li>
+<li><strong>activate 事件</strong>：安装后激活时触发，用于清理旧版本缓存。新的 Service Worker 默认要等到旧的 Service Worker 控制的所有页面关闭后才会激活（可调用 <code>self.skipWaiting()</code> 跳过等待）。</li>
+<li><strong>fetch 事件</strong>：拦截页面发出的所有网络请求，可以自定义响应策略（缓存优先、网络优先、缓存回退等）。</li>
+</ol>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 注册 Service Worker</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-string">'serviceWorker'</span> <span class="hljs-keyword">in</span> navigator) {
+  navigator.<span class="hljs-property">serviceWorker</span>.<span class="hljs-title function_">register</span>(<span class="hljs-string">'/sw.js'</span>)
+    .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">reg</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'SW 注册成功'</span>, reg.<span class="hljs-property">scope</span>))
+    .<span class="hljs-title function_">catch</span>(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'SW 注册失败'</span>, err));
+}
+
+<span class="hljs-comment">// sw.js</span>
+<span class="hljs-keyword">const</span> <span class="hljs-variable constant_">CACHE_NAME</span> = <span class="hljs-string">'v1'</span>;
+
+self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'install'</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+  event.<span class="hljs-title function_">waitUntil</span>(
+    caches.<span class="hljs-title function_">open</span>(<span class="hljs-variable constant_">CACHE_NAME</span>).<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">cache</span> =&gt;</span>
+      cache.<span class="hljs-title function_">addAll</span>([<span class="hljs-string">'/index.html'</span>, <span class="hljs-string">'/styles.css'</span>, <span class="hljs-string">'/app.js'</span>])
+    )
+  );
+});
+
+self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'activate'</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+  event.<span class="hljs-title function_">waitUntil</span>(
+    caches.<span class="hljs-title function_">keys</span>().<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">names</span> =&gt;</span>
+      <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">all</span>(names.<span class="hljs-title function_">filter</span>(<span class="hljs-function"><span class="hljs-params">n</span> =&gt;</span> n !== <span class="hljs-variable constant_">CACHE_NAME</span>).<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">n</span> =&gt;</span> caches.<span class="hljs-title function_">delete</span>(n)))
+    )
+  );
+});
+
+self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'fetch'</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+  event.<span class="hljs-title function_">respondWith</span>(
+    caches.<span class="hljs-title function_">match</span>(event.<span class="hljs-property">request</span>).<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">cached</span> =&gt;</span> cached || <span class="hljs-title function_">fetch</span>(event.<span class="hljs-property">request</span>))
+  );
+});
+</code></pre>
+<hr></hr>
+<h2 id="十一、事件机制">十一、事件机制</h2>
+<blockquote>
+<p><strong>面试题：事件流的三个阶段是什么？事件委托的原理和优势？</strong></p>
+</blockquote>
+<h3 id="事件流三阶段">事件流三阶段</h3>
+<pre><code>       ① 捕获阶段           ③ 冒泡阶段
+Window ──────→ ... ──→ Target ──→ ... ──────→ Window
+                       ② 目标阶段
+</code></pre><ol>
+<li><strong>捕获阶段（Capturing Phase）</strong>：事件从 <code>window</code> 逐级向下传播到目标元素的父元素。</li>
+<li><strong>目标阶段（Target Phase）</strong>：事件到达目标元素。</li>
+<li><strong>冒泡阶段（Bubbling Phase）</strong>：事件从目标元素逐级向上传播到 <code>window</code>。</li>
+</ol>
+<h3 id="addeventlistener">addEventListener</h3>
+<pre><code class="lang-javascript">element.<span class="hljs-title function_">addEventListener</span>(type, handler, options);
+</code></pre>
+<p><code>options</code> 可以是布尔值（<code>useCapture</code>，默认 <code>false</code> 表示冒泡阶段触发），也可以是对象：</p>
+<pre><code class="lang-javascript">{
+  <span class="hljs-attr">capture</span>: <span class="hljs-literal">false</span>,  <span class="hljs-comment">// 是否在捕获阶段触发</span>
+  <span class="hljs-attr">once</span>: <span class="hljs-literal">true</span>,      <span class="hljs-comment">// 是否只触发一次后自动移除</span>
+  <span class="hljs-attr">passive</span>: <span class="hljs-literal">true</span>    <span class="hljs-comment">// 是否永远不调用 preventDefault（提升滚动性能）</span>
+}
+</code></pre>
+<h3 id="事件委托">事件委托</h3>
+<p>利用事件冒泡机制，将子元素的事件监听器统一绑定到父元素上：</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 不推荐：为每个 li 绑定事件</span>
+<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">'li'</span>).<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">li</span> =&gt;</span> {
+  li.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'click'</span>, handleClick);
+});
+
+<span class="hljs-comment">// 推荐：事件委托</span>
+<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">'ul'</span>).<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'click'</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> target = event.<span class="hljs-property">target</span>;
+  <span class="hljs-keyword">if</span> (target.<span class="hljs-property">tagName</span> === <span class="hljs-string">'LI'</span>) {
+    <span class="hljs-title function_">handleClick</span>(target);
+  }
+});
+</code></pre>
+<p><strong>优势</strong>：减少内存占用（少量监听器）、自动处理动态添加的子元素、简化代码。</p>
+<p><strong>注意</strong>：<code>focus</code>、<code>blur</code>、<code>mouseenter</code>、<code>mouseleave</code> 等事件<strong>不冒泡</strong>，无法使用事件委托。可以使用 <code>focusin</code>、<code>focusout</code> 替代前两者。</p>
+<h3 id="事件方法对比">事件方法对比</h3>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>stopPropagation()</code></td>
+<td>阻止事件继续传播（不再触发后续的捕获/冒泡阶段处理器）</td>
+</tr>
+<tr>
+<td><code>stopImmediatePropagation()</code></td>
+<td>阻止传播 + 阻止同一元素上其他同类事件处理器的执行</td>
+</tr>
+<tr>
+<td><code>preventDefault()</code></td>
+<td>阻止浏览器默认行为（如链接跳转、表单提交）</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="十二、定时器与渲染">十二、定时器与渲染</h2>
+<blockquote>
+<p><strong>面试题：requestAnimationFrame 和 setTimeout 做动画有什么区别？requestIdleCallback 是什么？</strong></p>
+</blockquote>
+<h3 id="requestanimationframe（raf）">requestAnimationFrame（rAF）</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">animate</span>(<span class="hljs-params"></span>) {
+  element.<span class="hljs-property">style</span>.<span class="hljs-property">transform</span> = <span class="hljs-string">`translateX(<span class="hljs-subst">${position}</span>px)`</span>;
+  position += <span class="hljs-number">2</span>;
+  <span class="hljs-keyword">if</span> (position &lt; <span class="hljs-number">300</span>) {
+    <span class="hljs-title function_">requestAnimationFrame</span>(animate);
+  }
+}
+<span class="hljs-title function_">requestAnimationFrame</span>(animate);
+</code></pre>
+<ul>
+<li>浏览器在<strong>下一次重绘之前</strong>调用回调函数。</li>
+<li>回调频率与屏幕刷新率同步，通常为 <strong>60fps（约 16.7ms 一帧）</strong>。</li>
+<li>当页面不可见（Tab 切换到后台）时，rAF <strong>自动暂停</strong>，节省 CPU 和电量。</li>
+<li>相比 <code>setTimeout(fn, 16)</code>，rAF 不会出现丢帧或过度绘制的问题。</li>
+</ul>
+<h3 id="requestidlecallback（ric）">requestIdleCallback（rIC）</h3>
+<pre><code class="lang-javascript"><span class="hljs-title function_">requestIdleCallback</span>(<span class="hljs-function">(<span class="hljs-params">deadline</span>) =&gt;</span> {
+  <span class="hljs-keyword">while</span> (deadline.<span class="hljs-title function_">timeRemaining</span>() &gt; <span class="hljs-number">0</span> &amp;&amp; tasks.<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span>) {
+    <span class="hljs-title function_">doTask</span>(tasks.<span class="hljs-title function_">pop</span>());
+  }
+  <span class="hljs-keyword">if</span> (tasks.<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span>) {
+    <span class="hljs-title function_">requestIdleCallback</span>(doNextTasks);
+  }
+}, { <span class="hljs-attr">timeout</span>: <span class="hljs-number">2000</span> }); <span class="hljs-comment">// 超过 2 秒强制执行</span>
+</code></pre>
+<ul>
+<li>在浏览器<strong>空闲时段</strong>执行回调。一帧中如果还有剩余时间（16.7ms 内渲染工作完成后），就会调用 rIC 回调。</li>
+<li><code>deadline.timeRemaining()</code> 返回当前帧剩余的空闲时间（毫秒）。</li>
+<li><code>timeout</code> 参数：如果超过指定时间还没有空闲，强制执行回调（避免饥饿）。</li>
+<li><strong>React Fiber 的灵感来源</strong>：React 的 Concurrent Mode 借鉴了 rIC 的思想，将渲染工作拆分为小任务，利用浏览器空闲时间执行，实现可中断的渲染。但 React 并未直接使用 rIC（因为兼容性和触发频率问题），而是使用 <code>MessageChannel</code> 模拟类似的调度机制。</li>
+</ul>
+<hr></hr>
+<blockquote>
+<p><strong>总结</strong>：浏览器原理是前端面试的必考内容，理解这些底层机制不仅能帮助通过面试，更能在实际工作中写出高性能、高安全性的前端应用。建议结合 Chrome DevTools 的 Performance、Network、Application 面板进行实践，加深理解。</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="typescript.html" class="navigation navigation-prev " aria-label="Previous page: TypeScript">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="network.html" class="navigation navigation-next " aria-label="Next page: 网络协议">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"浏览器原理","level":"2.4","depth":1,"next":{"title":"网络协议","level":"2.5","depth":1,"path":"frontend/network.md","ref":"frontend/network.md","articles":[]},"previous":{"title":"TypeScript","level":"2.3","depth":1,"path":"frontend/typescript.md","ref":"frontend/typescript.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"frontend/browser.md","mtime":"2026-03-31T06:35:11.836Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

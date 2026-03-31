@@ -1,0 +1,2311 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>最佳实践与进阶 · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../golang/basics.html" />
+    
+    
+    <link rel="prev" href="database.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../frontend/html-css.html">
+            
+                <a href="../frontend/html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../frontend/javascript.html">
+            
+                <a href="../frontend/javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../frontend/typescript.html">
+            
+                <a href="../frontend/typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../frontend/browser.html">
+            
+                <a href="../frontend/browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../frontend/network.html">
+            
+                <a href="../frontend/network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../frontend/react.html">
+            
+                <a href="../frontend/react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../frontend/vue.html">
+            
+                <a href="../frontend/vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../frontend/engineering.html">
+            
+                <a href="../frontend/engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../frontend/performance.html">
+            
+                <a href="../frontend/performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../frontend/security.html">
+            
+                <a href="../frontend/security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="basics.html">
+            
+                <a href="basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="event-loop.html">
+            
+                <a href="event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="stream.html">
+            
+                <a href="stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="frameworks.html">
+            
+                <a href="frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="database.html">
+            
+                <a href="database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.6" data-path="practice.html">
+            
+                <a href="practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../golang/basics.html">
+            
+                <a href="../golang/basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../golang/concurrency.html">
+            
+                <a href="../golang/concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../golang/memory.html">
+            
+                <a href="../golang/memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../golang/web-framework.html">
+            
+                <a href="../golang/web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../golang/database-design.html">
+            
+                <a href="../golang/database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../golang/testing-practice.html">
+            
+                <a href="../golang/testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../agent/llm-basics.html">
+            
+                <a href="../agent/llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../agent/prompt-engineering.html">
+            
+                <a href="../agent/prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../agent/rag.html">
+            
+                <a href="../agent/rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../agent/agent-architecture.html">
+            
+                <a href="../agent/agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../agent/tool-calling.html">
+            
+                <a href="../agent/tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../agent/practice.html">
+            
+                <a href="../agent/practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >最佳实践与进阶</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="nodejs-最佳实践与进阶面试指南">Node.js 最佳实践与进阶面试指南</h1>
+<h2 id="一、错误处理最佳实践">一、错误处理最佳实践</h2>
+<blockquote>
+<p><strong>面试题：Node.js 中如何正确处理错误？操作错误和程序错误有什么区别？</strong></p>
+</blockquote>
+<h3 id="11-操作错误-vs-程序错误">1.1 操作错误 vs 程序错误</h3>
+<p><strong>操作错误（Operational Errors）</strong>：运行时可预见的错误，如网络断开、文件不存在、请求超时、用户输入无效等。这些错误是应用正常运行中可能遇到的，需要正确处理和恢复。</p>
+<p><strong>程序错误（Programmer Errors）</strong>：代码 bug，如传入错误类型的参数、读取 undefined 的属性、内存泄漏等。这些错误应该通过修复代码来解决。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 操作错误 - 应该处理</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">readConfig</span>(<span class="hljs-params">path</span>) {
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> fs.<span class="hljs-property">promises</span>.<span class="hljs-title function_">readFile</span>(path, <span class="hljs-string">'utf8'</span>);
+  } <span class="hljs-keyword">catch</span> (err) {
+    <span class="hljs-keyword">if</span> (err.<span class="hljs-property">code</span> === <span class="hljs-string">'ENOENT'</span>) {
+      <span class="hljs-comment">// 文件不存在，返回默认配置</span>
+      <span class="hljs-keyword">return</span> <span class="hljs-title function_">getDefaultConfig</span>();
+    }
+    <span class="hljs-keyword">throw</span> err; <span class="hljs-comment">// 其他错误继续抛出</span>
+  }
+}
+
+<span class="hljs-comment">// 程序错误 - 应该修复代码</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">divide</span>(<span class="hljs-params">a, b</span>) {
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> a !== <span class="hljs-string">'number'</span> || <span class="hljs-keyword">typeof</span> b !== <span class="hljs-string">'number'</span>) {
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">TypeError</span>(<span class="hljs-string">'参数必须是数字'</span>); <span class="hljs-comment">// 参数校验</span>
+  }
+  <span class="hljs-keyword">if</span> (b === <span class="hljs-number">0</span>) {
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RangeError</span>(<span class="hljs-string">'除数不能为零'</span>);
+  }
+  <span class="hljs-keyword">return</span> a / b;
+}
+</code></pre>
+<h3 id="12-自定义错误类">1.2 自定义错误类</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 基础应用错误</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">AppError</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Error</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">message, statusCode, errorCode</span>) {
+    <span class="hljs-variable language_">super</span>(message);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">constructor</span>.<span class="hljs-property">name</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">statusCode</span> = statusCode;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">errorCode</span> = errorCode;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">isOperational</span> = <span class="hljs-literal">true</span>; <span class="hljs-comment">// 标记为操作错误</span>
+    <span class="hljs-title class_">Error</span>.<span class="hljs-title function_">captureStackTrace</span>(<span class="hljs-variable language_">this</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">constructor</span>);
+  }
+}
+
+<span class="hljs-comment">// 具体的错误类型</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">NotFoundError</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">AppError</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">resource = <span class="hljs-string">'资源'</span></span>) {
+    <span class="hljs-variable language_">super</span>(<span class="hljs-string">`<span class="hljs-subst">${resource}</span>不存在`</span>, <span class="hljs-number">404</span>, <span class="hljs-string">'NOT_FOUND'</span>);
+  }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ValidationError</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">AppError</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">message, details</span>) {
+    <span class="hljs-variable language_">super</span>(message, <span class="hljs-number">400</span>, <span class="hljs-string">'VALIDATION_ERROR'</span>);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">details</span> = details;
+  }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">UnauthorizedError</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">AppError</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">message = <span class="hljs-string">'未授权'</span></span>) {
+    <span class="hljs-variable language_">super</span>(message, <span class="hljs-number">401</span>, <span class="hljs-string">'UNAUTHORIZED'</span>);
+  }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ForbiddenError</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">AppError</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">message = <span class="hljs-string">'禁止访问'</span></span>) {
+    <span class="hljs-variable language_">super</span>(message, <span class="hljs-number">403</span>, <span class="hljs-string">'FORBIDDEN'</span>);
+  }
+}
+</code></pre>
+<h3 id="13-全局错误处理">1.3 全局错误处理</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 未捕获的异常</span>
+process.<span class="hljs-title function_">on</span>(<span class="hljs-string">'uncaughtException'</span>, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'未捕获的异常:'</span>, err);
+  <span class="hljs-comment">// 记录日志</span>
+  logger.<span class="hljs-title function_">fatal</span>({ err }, <span class="hljs-string">'未捕获的异常'</span>);
+  <span class="hljs-comment">// 优雅关闭后退出</span>
+  <span class="hljs-title function_">gracefulShutdown</span>().<span class="hljs-title function_">then</span>(<span class="hljs-function">() =&gt;</span> process.<span class="hljs-title function_">exit</span>(<span class="hljs-number">1</span>));
+});
+
+<span class="hljs-comment">// 未处理的 Promise 拒绝</span>
+process.<span class="hljs-title function_">on</span>(<span class="hljs-string">'unhandledRejection'</span>, <span class="hljs-function">(<span class="hljs-params">reason, promise</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'未处理的 Promise 拒绝:'</span>, reason);
+  logger.<span class="hljs-title function_">error</span>({ reason }, <span class="hljs-string">'未处理的 Promise 拒绝'</span>);
+  <span class="hljs-comment">// Node.js 15+ 默认行为是终止进程</span>
+});
+
+<span class="hljs-comment">// 优雅关闭</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">gracefulShutdown</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'正在优雅关闭...'</span>);
+
+  <span class="hljs-comment">// 停止接受新请求</span>
+  server.<span class="hljs-title function_">close</span>();
+
+  <span class="hljs-comment">// 等待现有请求完成（设置超时）</span>
+  <span class="hljs-keyword">const</span> timeout = <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'强制关闭'</span>);
+    process.<span class="hljs-title function_">exit</span>(<span class="hljs-number">1</span>);
+  }, <span class="hljs-number">30000</span>);
+
+  <span class="hljs-comment">// 关闭数据库连接</span>
+  <span class="hljs-keyword">await</span> pool.<span class="hljs-title function_">end</span>();
+  <span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">quit</span>();
+  <span class="hljs-keyword">await</span> mongoose.<span class="hljs-title function_">disconnect</span>();
+
+  <span class="hljs-built_in">clearTimeout</span>(timeout);
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'优雅关闭完成'</span>);
+}
+
+process.<span class="hljs-title function_">on</span>(<span class="hljs-string">'SIGTERM'</span>, gracefulShutdown);
+process.<span class="hljs-title function_">on</span>(<span class="hljs-string">'SIGINT'</span>, gracefulShutdown);
+</code></pre>
+<h3 id="14-异步错误处理模式">1.4 异步错误处理模式</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Express 中的异步错误处理</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">asyncHandler</span> = (<span class="hljs-params">fn</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">req, res, next</span>) =&gt;</span> {
+  <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>(<span class="hljs-title function_">fn</span>(req, res, next)).<span class="hljs-title function_">catch</span>(next);
+};
+
+app.<span class="hljs-title function_">get</span>(<span class="hljs-string">'/users'</span>, <span class="hljs-title function_">asyncHandler</span>(<span class="hljs-title function_">async</span> (req, res) =&gt; {
+  <span class="hljs-keyword">const</span> users = <span class="hljs-keyword">await</span> userService.<span class="hljs-title function_">findAll</span>(); <span class="hljs-comment">// 错误自动传递给 next</span>
+  res.<span class="hljs-title function_">json</span>(users);
+}));
+
+<span class="hljs-comment">// 统一的错误响应格式</span>
+app.<span class="hljs-title function_">use</span>(<span class="hljs-function">(<span class="hljs-params">err, req, res, next</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> statusCode = err.<span class="hljs-property">statusCode</span> || <span class="hljs-number">500</span>;
+
+  <span class="hljs-keyword">const</span> response = {
+    <span class="hljs-attr">success</span>: <span class="hljs-literal">false</span>,
+    <span class="hljs-attr">error</span>: {
+      <span class="hljs-attr">code</span>: err.<span class="hljs-property">errorCode</span> || <span class="hljs-string">'INTERNAL_ERROR'</span>,
+      <span class="hljs-attr">message</span>: err.<span class="hljs-property">isOperational</span> ? err.<span class="hljs-property">message</span> : <span class="hljs-string">'服务器内部错误'</span>,
+    }
+  };
+
+  <span class="hljs-keyword">if</span> (process.<span class="hljs-property">env</span>.<span class="hljs-property">NODE_ENV</span> === <span class="hljs-string">'development'</span>) {
+    response.<span class="hljs-property">error</span>.<span class="hljs-property">stack</span> = err.<span class="hljs-property">stack</span>;
+    response.<span class="hljs-property">error</span>.<span class="hljs-property">details</span> = err.<span class="hljs-property">details</span>;
+  }
+
+  <span class="hljs-comment">// 记录日志</span>
+  <span class="hljs-keyword">if</span> (statusCode &gt;= <span class="hljs-number">500</span>) {
+    logger.<span class="hljs-title function_">error</span>({ err, <span class="hljs-attr">req</span>: { <span class="hljs-attr">method</span>: req.<span class="hljs-property">method</span>, <span class="hljs-attr">url</span>: req.<span class="hljs-property">url</span> } }, err.<span class="hljs-property">message</span>);
+  }
+
+  res.<span class="hljs-title function_">status</span>(statusCode).<span class="hljs-title function_">json</span>(response);
+});
+</code></pre>
+<hr></hr>
+<h2 id="二、日志管理">二、日志管理</h2>
+<blockquote>
+<p><strong>面试题：Node.js 项目中如何做日志管理？winston 和 pino 有什么区别？</strong></p>
+</blockquote>
+<h3 id="21-winston">2.1 winston</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> winston = <span class="hljs-built_in">require</span>(<span class="hljs-string">'winston'</span>);
+
+<span class="hljs-keyword">const</span> logger = winston.<span class="hljs-title function_">createLogger</span>({
+  <span class="hljs-attr">level</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">LOG_LEVEL</span> || <span class="hljs-string">'info'</span>,
+  <span class="hljs-attr">format</span>: winston.<span class="hljs-property">format</span>.<span class="hljs-title function_">combine</span>(
+    winston.<span class="hljs-property">format</span>.<span class="hljs-title function_">timestamp</span>({ <span class="hljs-attr">format</span>: <span class="hljs-string">'YYYY-MM-DD HH:mm:ss'</span> }),
+    winston.<span class="hljs-property">format</span>.<span class="hljs-title function_">errors</span>({ <span class="hljs-attr">stack</span>: <span class="hljs-literal">true</span> }),
+    winston.<span class="hljs-property">format</span>.<span class="hljs-title function_">json</span>()
+  ),
+  <span class="hljs-attr">defaultMeta</span>: { <span class="hljs-attr">service</span>: <span class="hljs-string">'my-api'</span> },
+  <span class="hljs-attr">transports</span>: [
+    <span class="hljs-comment">// 错误日志单独写文件</span>
+    <span class="hljs-keyword">new</span> winston.<span class="hljs-property">transports</span>.<span class="hljs-title class_">File</span>({
+      <span class="hljs-attr">filename</span>: <span class="hljs-string">'logs/error.log'</span>,
+      <span class="hljs-attr">level</span>: <span class="hljs-string">'error'</span>,
+      <span class="hljs-attr">maxsize</span>: <span class="hljs-number">10</span> * <span class="hljs-number">1024</span> * <span class="hljs-number">1024</span>, <span class="hljs-comment">// 10MB</span>
+      <span class="hljs-attr">maxFiles</span>: <span class="hljs-number">5</span>,
+      <span class="hljs-attr">tailable</span>: <span class="hljs-literal">true</span>
+    }),
+    <span class="hljs-comment">// 所有日志</span>
+    <span class="hljs-keyword">new</span> winston.<span class="hljs-property">transports</span>.<span class="hljs-title class_">File</span>({
+      <span class="hljs-attr">filename</span>: <span class="hljs-string">'logs/combined.log'</span>,
+      <span class="hljs-attr">maxsize</span>: <span class="hljs-number">10</span> * <span class="hljs-number">1024</span> * <span class="hljs-number">1024</span>,
+      <span class="hljs-attr">maxFiles</span>: <span class="hljs-number">10</span>
+    }),
+  ],
+});
+
+<span class="hljs-comment">// 开发环境添加控制台输出</span>
+<span class="hljs-keyword">if</span> (process.<span class="hljs-property">env</span>.<span class="hljs-property">NODE_ENV</span> !== <span class="hljs-string">'production'</span>) {
+  logger.<span class="hljs-title function_">add</span>(<span class="hljs-keyword">new</span> winston.<span class="hljs-property">transports</span>.<span class="hljs-title class_">Console</span>({
+    <span class="hljs-attr">format</span>: winston.<span class="hljs-property">format</span>.<span class="hljs-title function_">combine</span>(
+      winston.<span class="hljs-property">format</span>.<span class="hljs-title function_">colorize</span>(),
+      winston.<span class="hljs-property">format</span>.<span class="hljs-title function_">simple</span>()
+    )
+  }));
+}
+
+<span class="hljs-comment">// 使用</span>
+logger.<span class="hljs-title function_">info</span>(<span class="hljs-string">'服务器启动'</span>, { <span class="hljs-attr">port</span>: <span class="hljs-number">3000</span> });
+logger.<span class="hljs-title function_">error</span>(<span class="hljs-string">'数据库连接失败'</span>, { <span class="hljs-attr">error</span>: err.<span class="hljs-property">message</span>, <span class="hljs-attr">stack</span>: err.<span class="hljs-property">stack</span> });
+logger.<span class="hljs-title function_">warn</span>(<span class="hljs-string">'请求超时'</span>, { <span class="hljs-attr">url</span>: <span class="hljs-string">'/api/users'</span>, <span class="hljs-attr">duration</span>: <span class="hljs-string">'5000ms'</span> });
+</code></pre>
+<h3 id="22-pino（高性能推荐）">2.2 pino（高性能推荐）</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> pino = <span class="hljs-built_in">require</span>(<span class="hljs-string">'pino'</span>);
+
+<span class="hljs-keyword">const</span> logger = <span class="hljs-title function_">pino</span>({
+  <span class="hljs-attr">level</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">LOG_LEVEL</span> || <span class="hljs-string">'info'</span>,
+  <span class="hljs-attr">transport</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">NODE_ENV</span> === <span class="hljs-string">'development'</span>
+    ? { <span class="hljs-attr">target</span>: <span class="hljs-string">'pino-pretty'</span>, <span class="hljs-attr">options</span>: { <span class="hljs-attr">colorize</span>: <span class="hljs-literal">true</span> } }
+    : <span class="hljs-literal">undefined</span>,
+  <span class="hljs-attr">serializers</span>: {
+    <span class="hljs-attr">req</span>: pino.<span class="hljs-property">stdSerializers</span>.<span class="hljs-property">req</span>,
+    <span class="hljs-attr">res</span>: pino.<span class="hljs-property">stdSerializers</span>.<span class="hljs-property">res</span>,
+    <span class="hljs-attr">err</span>: pino.<span class="hljs-property">stdSerializers</span>.<span class="hljs-property">err</span>,
+  },
+  <span class="hljs-attr">redact</span>: [<span class="hljs-string">'req.headers.authorization'</span>, <span class="hljs-string">'req.headers.cookie'</span>], <span class="hljs-comment">// 脱敏</span>
+});
+
+<span class="hljs-comment">// pino 比 winston 快 5-10 倍</span>
+<span class="hljs-comment">// 因为它使用 JSON.stringify 而不是格式化字符串</span>
+<span class="hljs-comment">// 日志输出到 stdout，由外部工具（如 pino-tee）负责分发</span>
+
+<span class="hljs-comment">// Express 集成</span>
+<span class="hljs-keyword">const</span> pinoHttp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'pino-http'</span>);
+app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">pinoHttp</span>({ logger }));
+
+<span class="hljs-comment">// Fastify 内置 pino</span>
+<span class="hljs-keyword">const</span> fastify = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fastify'</span>)({ <span class="hljs-attr">logger</span>: <span class="hljs-literal">true</span> });
+</code></pre>
+<h3 id="23-winston-vs-pino-对比">2.3 winston vs pino 对比</h3>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>winston</th>
+<th>pino</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>性能</td>
+<td>中等</td>
+<td>极高（快 5-10 倍）</td>
+</tr>
+<tr>
+<td>格式化</td>
+<td>内置丰富的 format</td>
+<td>JSON 输出，外部格式化</td>
+</tr>
+<tr>
+<td>传输目标</td>
+<td>内置多种 transport</td>
+<td>stdout，外部管道处理</td>
+</tr>
+<tr>
+<td>生态系统</td>
+<td>丰富</td>
+<td>增长中</td>
+</tr>
+<tr>
+<td>API 风格</td>
+<td>灵活多样</td>
+<td>简洁统一</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>通用项目</td>
+<td>高性能要求</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="三、安全最佳实践">三、安全最佳实践</h2>
+<blockquote>
+<p><strong>面试题：Node.js 应用中有哪些常见的安全风险？如何防范？</strong></p>
+</blockquote>
+<h3 id="31-sql-注入防护">3.1 SQL 注入防护</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 危险！直接拼接 SQL</span>
+<span class="hljs-keyword">const</span> sql = <span class="hljs-string">`SELECT * FROM users WHERE name = '<span class="hljs-subst">${userInput}</span>'`</span>;
+<span class="hljs-comment">// 如果 userInput = "'; DROP TABLE users; --"  就会删除整张表</span>
+
+<span class="hljs-comment">// 正确：使用参数化查询</span>
+<span class="hljs-keyword">await</span> pool.<span class="hljs-title function_">execute</span>(<span class="hljs-string">'SELECT * FROM users WHERE name = ?'</span>, [userInput]);
+
+<span class="hljs-comment">// Sequelize 自动防 SQL 注入</span>
+<span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">findAll</span>({ <span class="hljs-attr">where</span>: { <span class="hljs-attr">name</span>: userInput } });
+</code></pre>
+<h3 id="32-xss-防护">3.2 XSS 防护</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 输入过滤和输出编码</span>
+<span class="hljs-keyword">const</span> xss = <span class="hljs-built_in">require</span>(<span class="hljs-string">'xss'</span>);
+
+<span class="hljs-comment">// 过滤用户输入中的 HTML</span>
+<span class="hljs-keyword">const</span> cleanContent = <span class="hljs-title function_">xss</span>(userInput);
+
+<span class="hljs-comment">// 设置安全响应头</span>
+<span class="hljs-keyword">const</span> helmet = <span class="hljs-built_in">require</span>(<span class="hljs-string">'helmet'</span>);
+app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">helmet</span>());
+<span class="hljs-comment">// helmet 会设置 Content-Security-Policy 等安全头</span>
+
+<span class="hljs-comment">// 对于 API 响应，设置正确的 Content-Type</span>
+res.<span class="hljs-title function_">setHeader</span>(<span class="hljs-string">'Content-Type'</span>, <span class="hljs-string">'application/json'</span>);
+</code></pre>
+<h3 id="33-csrf-防护">3.3 CSRF 防护</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> csrf = <span class="hljs-built_in">require</span>(<span class="hljs-string">'csurf'</span>);
+<span class="hljs-keyword">const</span> cookieParser = <span class="hljs-built_in">require</span>(<span class="hljs-string">'cookie-parser'</span>);
+
+app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">cookieParser</span>());
+app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">csrf</span>({ <span class="hljs-attr">cookie</span>: <span class="hljs-literal">true</span> }));
+
+<span class="hljs-comment">// 在表单中包含 CSRF token</span>
+app.<span class="hljs-title function_">get</span>(<span class="hljs-string">'/form'</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> {
+  res.<span class="hljs-title function_">render</span>(<span class="hljs-string">'form'</span>, { <span class="hljs-attr">csrfToken</span>: req.<span class="hljs-title function_">csrfToken</span>() });
+});
+
+<span class="hljs-comment">// 对于 SPA + API 的架构，通常使用以下替代方案：</span>
+<span class="hljs-comment">// 1. SameSite Cookie</span>
+<span class="hljs-comment">// 2. Double Submit Cookie</span>
+<span class="hljs-comment">// 3. JWT Token（无 cookie = 无 CSRF）</span>
+</code></pre>
+<h3 id="34-rate-limiting">3.4 Rate Limiting</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> rateLimit = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express-rate-limit'</span>);
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">RedisStore</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'rate-limit-redis'</span>);
+
+<span class="hljs-comment">// 基于 IP 的限流</span>
+<span class="hljs-keyword">const</span> apiLimiter = <span class="hljs-title function_">rateLimit</span>({
+  <span class="hljs-attr">store</span>: <span class="hljs-keyword">new</span> <span class="hljs-title class_">RedisStore</span>({
+    <span class="hljs-attr">sendCommand</span>: <span class="hljs-function">(<span class="hljs-params">...args</span>) =&gt;</span> redis.<span class="hljs-title function_">call</span>(...args),
+  }),
+  <span class="hljs-attr">windowMs</span>: <span class="hljs-number">15</span> * <span class="hljs-number">60</span> * <span class="hljs-number">1000</span>,
+  <span class="hljs-attr">max</span>: <span class="hljs-number">100</span>,
+  <span class="hljs-attr">message</span>: { <span class="hljs-attr">error</span>: <span class="hljs-string">'请求过于频繁'</span> },
+  <span class="hljs-attr">standardHeaders</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">legacyHeaders</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">keyGenerator</span>: <span class="hljs-function">(<span class="hljs-params">req</span>) =&gt;</span> req.<span class="hljs-property">ip</span>,
+});
+
+app.<span class="hljs-title function_">use</span>(<span class="hljs-string">'/api/'</span>, apiLimiter);
+
+<span class="hljs-comment">// 登录接口更严格的限流</span>
+<span class="hljs-keyword">const</span> loginLimiter = <span class="hljs-title function_">rateLimit</span>({
+  <span class="hljs-attr">windowMs</span>: <span class="hljs-number">60</span> * <span class="hljs-number">60</span> * <span class="hljs-number">1000</span>, <span class="hljs-comment">// 1小时</span>
+  <span class="hljs-attr">max</span>: <span class="hljs-number">5</span>,
+  <span class="hljs-attr">message</span>: { <span class="hljs-attr">error</span>: <span class="hljs-string">'登录尝试次数过多，请1小时后再试'</span> }
+});
+
+app.<span class="hljs-title function_">post</span>(<span class="hljs-string">'/api/login'</span>, loginLimiter, loginController);
+</code></pre>
+<h3 id="35-helmet-安全头">3.5 Helmet 安全头</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> helmet = <span class="hljs-built_in">require</span>(<span class="hljs-string">'helmet'</span>);
+
+app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">helmet</span>({
+  <span class="hljs-attr">contentSecurityPolicy</span>: {
+    <span class="hljs-attr">directives</span>: {
+      <span class="hljs-attr">defaultSrc</span>: [<span class="hljs-string">"'self'"</span>],
+      <span class="hljs-attr">styleSrc</span>: [<span class="hljs-string">"'self'"</span>, <span class="hljs-string">"'unsafe-inline'"</span>],
+      <span class="hljs-attr">scriptSrc</span>: [<span class="hljs-string">"'self'"</span>],
+      <span class="hljs-attr">imgSrc</span>: [<span class="hljs-string">"'self'"</span>, <span class="hljs-string">'data:'</span>, <span class="hljs-string">'https:'</span>],
+    },
+  },
+  <span class="hljs-attr">crossOriginEmbedderPolicy</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">crossOriginOpenerPolicy</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">crossOriginResourcePolicy</span>: { <span class="hljs-attr">policy</span>: <span class="hljs-string">"same-site"</span> },
+  <span class="hljs-attr">hsts</span>: { <span class="hljs-attr">maxAge</span>: <span class="hljs-number">31536000</span>, <span class="hljs-attr">includeSubDomains</span>: <span class="hljs-literal">true</span> },
+  <span class="hljs-attr">noSniff</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">referrerPolicy</span>: { <span class="hljs-attr">policy</span>: <span class="hljs-string">"strict-origin-when-cross-origin"</span> },
+}));
+</code></pre>
+<h3 id="36-其他安全措施">3.6 其他安全措施</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 1. 环境变量管理敏感信息</span>
+<span class="hljs-built_in">require</span>(<span class="hljs-string">'dotenv'</span>).<span class="hljs-title function_">config</span>();
+<span class="hljs-keyword">const</span> dbPassword = process.<span class="hljs-property">env</span>.<span class="hljs-property">DB_PASSWORD</span>;
+
+<span class="hljs-comment">// 2. 密码哈希</span>
+<span class="hljs-keyword">const</span> bcrypt = <span class="hljs-built_in">require</span>(<span class="hljs-string">'bcrypt'</span>);
+<span class="hljs-keyword">const</span> hash = <span class="hljs-keyword">await</span> bcrypt.<span class="hljs-title function_">hash</span>(password, <span class="hljs-number">12</span>);
+<span class="hljs-keyword">const</span> isMatch = <span class="hljs-keyword">await</span> bcrypt.<span class="hljs-title function_">compare</span>(password, hash);
+
+<span class="hljs-comment">// 3. 输入验证</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">Joi</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'joi'</span>);
+<span class="hljs-keyword">const</span> schema = <span class="hljs-title class_">Joi</span>.<span class="hljs-title function_">object</span>({
+  <span class="hljs-attr">email</span>: <span class="hljs-title class_">Joi</span>.<span class="hljs-title function_">string</span>().<span class="hljs-title function_">email</span>().<span class="hljs-title function_">required</span>(),
+  <span class="hljs-attr">password</span>: <span class="hljs-title class_">Joi</span>.<span class="hljs-title function_">string</span>().<span class="hljs-title function_">min</span>(<span class="hljs-number">8</span>).<span class="hljs-title function_">max</span>(<span class="hljs-number">128</span>).<span class="hljs-title function_">required</span>(),
+  <span class="hljs-attr">age</span>: <span class="hljs-title class_">Joi</span>.<span class="hljs-title function_">number</span>().<span class="hljs-title function_">integer</span>().<span class="hljs-title function_">min</span>(<span class="hljs-number">0</span>).<span class="hljs-title function_">max</span>(<span class="hljs-number">150</span>)
+});
+<span class="hljs-keyword">const</span> { error, value } = schema.<span class="hljs-title function_">validate</span>(req.<span class="hljs-property">body</span>);
+
+<span class="hljs-comment">// 4. 防止 HTTP 参数污染</span>
+<span class="hljs-keyword">const</span> hpp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'hpp'</span>);
+app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">hpp</span>());
+
+<span class="hljs-comment">// 5. 限制请求体大小</span>
+app.<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">json</span>({ <span class="hljs-attr">limit</span>: <span class="hljs-string">'10kb'</span> }));
+
+<span class="hljs-comment">// 6. 依赖安全审计</span>
+<span class="hljs-comment">// npm audit</span>
+<span class="hljs-comment">// npm audit fix</span>
+</code></pre>
+<hr></hr>
+<h2 id="四、性能优化">四、性能优化</h2>
+<blockquote>
+<p><strong>面试题：如何排查 Node.js 应用的性能问题？内存泄漏如何定位？</strong></p>
+</blockquote>
+<h3 id="41-内存泄漏排查">4.1 内存泄漏排查</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 常见内存泄漏原因</span>
+<span class="hljs-comment">// 1. 全局变量不断增长</span>
+<span class="hljs-comment">// 2. 闭包引用</span>
+<span class="hljs-comment">// 3. 事件监听器未移除</span>
+<span class="hljs-comment">// 4. 定时器未清理</span>
+<span class="hljs-comment">// 5. 缓存无限增长</span>
+
+<span class="hljs-comment">// 监控内存使用</span>
+<span class="hljs-built_in">setInterval</span>(<span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-keyword">const</span> usage = process.<span class="hljs-title function_">memoryUsage</span>();
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>({
+    <span class="hljs-attr">rss</span>: <span class="hljs-string">`<span class="hljs-subst">${(usage.rss / <span class="hljs-number">1024</span> / <span class="hljs-number">1024</span>).toFixed(<span class="hljs-number">2</span>)}</span> MB`</span>,       <span class="hljs-comment">// 总内存</span>
+    <span class="hljs-attr">heapTotal</span>: <span class="hljs-string">`<span class="hljs-subst">${(usage.heapTotal / <span class="hljs-number">1024</span> / <span class="hljs-number">1024</span>).toFixed(<span class="hljs-number">2</span>)}</span> MB`</span>, <span class="hljs-comment">// V8 堆总大小</span>
+    <span class="hljs-attr">heapUsed</span>: <span class="hljs-string">`<span class="hljs-subst">${(usage.heapUsed / <span class="hljs-number">1024</span> / <span class="hljs-number">1024</span>).toFixed(<span class="hljs-number">2</span>)}</span> MB`</span>,  <span class="hljs-comment">// V8 堆使用量</span>
+    <span class="hljs-attr">external</span>: <span class="hljs-string">`<span class="hljs-subst">${(usage.external / <span class="hljs-number">1024</span> / <span class="hljs-number">1024</span>).toFixed(<span class="hljs-number">2</span>)}</span> MB`</span>,  <span class="hljs-comment">// C++ 对象内存</span>
+    <span class="hljs-attr">arrayBuffers</span>: <span class="hljs-string">`<span class="hljs-subst">${(usage.arrayBuffers / <span class="hljs-number">1024</span> / <span class="hljs-number">1024</span>).toFixed(<span class="hljs-number">2</span>)}</span> MB`</span>
+  });
+}, <span class="hljs-number">10000</span>);
+
+<span class="hljs-comment">// 使用 --inspect 标志启动，配合 Chrome DevTools 分析堆快照</span>
+<span class="hljs-comment">// node --inspect app.js</span>
+<span class="hljs-comment">// 打开 chrome://inspect 进行分析</span>
+
+<span class="hljs-comment">// 生成堆快照</span>
+<span class="hljs-keyword">const</span> v8 = <span class="hljs-built_in">require</span>(<span class="hljs-string">'v8'</span>);
+<span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">takeHeapSnapshot</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> snapshotStream = v8.<span class="hljs-title function_">writeHeapSnapshot</span>();
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'堆快照已保存:'</span>, snapshotStream);
+}
+
+<span class="hljs-comment">// 定期记录 GC 信息</span>
+<span class="hljs-comment">// node --expose-gc --trace-gc app.js</span>
+</code></pre>
+<h3 id="42-cpu-profiling">4.2 CPU Profiling</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 方式1：使用 --prof 标志</span>
+<span class="hljs-comment">// node --prof app.js</span>
+<span class="hljs-comment">// 生成 isolate-xxx.log 文件</span>
+<span class="hljs-comment">// node --prof-process isolate-xxx.log &gt; profile.txt</span>
+
+<span class="hljs-comment">// 方式2：使用 v8-profiler-next</span>
+<span class="hljs-keyword">const</span> profiler = <span class="hljs-built_in">require</span>(<span class="hljs-string">'v8-profiler-next'</span>);
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">startProfiling</span>(<span class="hljs-params">duration = <span class="hljs-number">10000</span></span>) {
+  profiler.<span class="hljs-title function_">startProfiling</span>(<span class="hljs-string">'CPU Profile'</span>);
+
+  <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">const</span> profile = profiler.<span class="hljs-title function_">stopProfiling</span>(<span class="hljs-string">'CPU Profile'</span>);
+    profile.<span class="hljs-title function_">export</span>(<span class="hljs-function">(<span class="hljs-params">error, result</span>) =&gt;</span> {
+      fs.<span class="hljs-title function_">writeFileSync</span>(<span class="hljs-string">'cpu-profile.cpuprofile'</span>, result);
+      profile.<span class="hljs-title function_">delete</span>();
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'CPU Profile 已保存'</span>);
+    });
+  }, duration);
+}
+
+<span class="hljs-comment">// 方式3：使用 clinic.js（推荐）</span>
+<span class="hljs-comment">// npm install -g clinic</span>
+<span class="hljs-comment">// clinic doctor -- node app.js</span>
+<span class="hljs-comment">// clinic flame -- node app.js</span>
+<span class="hljs-comment">// clinic bubbleprof -- node app.js</span>
+</code></pre>
+<h3 id="43-性能优化技巧">4.3 性能优化技巧</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 1. 使用流处理大数据</span>
+<span class="hljs-comment">// 见 stream.md</span>
+
+<span class="hljs-comment">// 2. 缓存（内存缓存 + Redis）</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">NodeCache</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'node-cache'</span>);
+<span class="hljs-keyword">const</span> cache = <span class="hljs-keyword">new</span> <span class="hljs-title class_">NodeCache</span>({ <span class="hljs-attr">stdTTL</span>: <span class="hljs-number">600</span>, <span class="hljs-attr">checkperiod</span>: <span class="hljs-number">120</span> });
+
+<span class="hljs-comment">// 3. 数据库查询优化</span>
+<span class="hljs-comment">// - 添加索引</span>
+<span class="hljs-comment">// - 避免 N+1 查询</span>
+<span class="hljs-comment">// - 使用连接池</span>
+<span class="hljs-comment">// - 只查询需要的字段</span>
+
+<span class="hljs-comment">// 4. 压缩响应</span>
+<span class="hljs-keyword">const</span> compression = <span class="hljs-built_in">require</span>(<span class="hljs-string">'compression'</span>);
+app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">compression</span>());
+
+<span class="hljs-comment">// 5. 集群模式利用多核</span>
+<span class="hljs-keyword">const</span> cluster = <span class="hljs-built_in">require</span>(<span class="hljs-string">'cluster'</span>);
+<span class="hljs-keyword">const</span> numCPUs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'os'</span>).<span class="hljs-title function_">cpus</span>().<span class="hljs-property">length</span>;
+
+<span class="hljs-comment">// 6. 异步操作并行化</span>
+<span class="hljs-comment">// 错误：串行执行</span>
+<span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> <span class="hljs-title function_">getUser</span>(id);
+<span class="hljs-keyword">const</span> posts = <span class="hljs-keyword">await</span> <span class="hljs-title function_">getPosts</span>(id);
+<span class="hljs-keyword">const</span> comments = <span class="hljs-keyword">await</span> <span class="hljs-title function_">getComments</span>(id);
+
+<span class="hljs-comment">// 正确：并行执行</span>
+<span class="hljs-keyword">const</span> [user, posts, comments] = <span class="hljs-keyword">await</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">all</span>([
+  <span class="hljs-title function_">getUser</span>(id),
+  <span class="hljs-title function_">getPosts</span>(id),
+  <span class="hljs-title function_">getComments</span>(id)
+]);
+
+<span class="hljs-comment">// 7. 避免同步操作</span>
+<span class="hljs-comment">// 不要在热路径上使用 fs.readFileSync, JSON.parse(大文件) 等</span>
+
+<span class="hljs-comment">// 8. 使用 Worker Threads 处理 CPU 密集任务</span>
+</code></pre>
+<hr></hr>
+<h2 id="五、测试">五、测试</h2>
+<blockquote>
+<p><strong>面试题：Node.js 项目中如何进行测试？单元测试、集成测试、E2E 测试有什么区别？</strong></p>
+</blockquote>
+<h3 id="51-测试金字塔">5.1 测试金字塔</h3>
+<pre><code>        /  E2E  \        少量 - 验证完整用户流程
+       /Integration\     适量 - 验证模块之间的交互
+      / Unit Tests  \    大量 - 验证单个函数/模块
+</code></pre><h3 id="52-单元测试（jest）">5.2 单元测试（Jest）</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// user.service.js</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">UserService</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">userRepository</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">userRepository</span> = userRepository;
+  }
+
+  <span class="hljs-keyword">async</span> <span class="hljs-title function_">findById</span>(<span class="hljs-params">id</span>) {
+    <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">userRepository</span>.<span class="hljs-title function_">findById</span>(id);
+    <span class="hljs-keyword">if</span> (!user) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">NotFoundError</span>(<span class="hljs-string">'用户'</span>);
+    <span class="hljs-keyword">return</span> user;
+  }
+
+  <span class="hljs-keyword">async</span> <span class="hljs-title function_">create</span>(<span class="hljs-params">data</span>) {
+    <span class="hljs-keyword">if</span> (!data.<span class="hljs-property">email</span>) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ValidationError</span>(<span class="hljs-string">'邮箱必填'</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">userRepository</span>.<span class="hljs-title function_">create</span>(data);
+  }
+}
+
+<span class="hljs-comment">// user.service.test.js</span>
+<span class="hljs-title function_">describe</span>(<span class="hljs-string">'UserService'</span>, <span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-keyword">let</span> userService;
+  <span class="hljs-keyword">let</span> mockRepository;
+
+  <span class="hljs-title function_">beforeEach</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-comment">// Mock 依赖</span>
+    mockRepository = {
+      <span class="hljs-attr">findById</span>: jest.<span class="hljs-title function_">fn</span>(),
+      <span class="hljs-attr">create</span>: jest.<span class="hljs-title function_">fn</span>(),
+    };
+    userService = <span class="hljs-keyword">new</span> <span class="hljs-title class_">UserService</span>(mockRepository);
+  });
+
+  <span class="hljs-title function_">describe</span>(<span class="hljs-string">'findById'</span>, <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-title function_">it</span>(<span class="hljs-string">'应该返回用户'</span>, <span class="hljs-title function_">async</span> () =&gt; {
+      <span class="hljs-keyword">const</span> mockUser = { <span class="hljs-attr">id</span>: <span class="hljs-string">'1'</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span> };
+      mockRepository.<span class="hljs-property">findById</span>.<span class="hljs-title function_">mockResolvedValue</span>(mockUser);
+
+      <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> userService.<span class="hljs-title function_">findById</span>(<span class="hljs-string">'1'</span>);
+
+      <span class="hljs-title function_">expect</span>(result).<span class="hljs-title function_">toEqual</span>(mockUser);
+      <span class="hljs-title function_">expect</span>(mockRepository.<span class="hljs-property">findById</span>).<span class="hljs-title function_">toHaveBeenCalledWith</span>(<span class="hljs-string">'1'</span>);
+    });
+
+    <span class="hljs-title function_">it</span>(<span class="hljs-string">'用户不存在时应该抛出 NotFoundError'</span>, <span class="hljs-title function_">async</span> () =&gt; {
+      mockRepository.<span class="hljs-property">findById</span>.<span class="hljs-title function_">mockResolvedValue</span>(<span class="hljs-literal">null</span>);
+
+      <span class="hljs-keyword">await</span> <span class="hljs-title function_">expect</span>(userService.<span class="hljs-title function_">findById</span>(<span class="hljs-string">'999'</span>))
+        .<span class="hljs-property">rejects</span>
+        .<span class="hljs-title function_">toThrow</span>(<span class="hljs-title class_">NotFoundError</span>);
+    });
+  });
+
+  <span class="hljs-title function_">describe</span>(<span class="hljs-string">'create'</span>, <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-title function_">it</span>(<span class="hljs-string">'邮箱为空时应该抛出 ValidationError'</span>, <span class="hljs-title function_">async</span> () =&gt; {
+      <span class="hljs-keyword">await</span> <span class="hljs-title function_">expect</span>(userService.<span class="hljs-title function_">create</span>({ <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span> }))
+        .<span class="hljs-property">rejects</span>
+        .<span class="hljs-title function_">toThrow</span>(<span class="hljs-title class_">ValidationError</span>);
+    });
+
+    <span class="hljs-title function_">it</span>(<span class="hljs-string">'应该成功创建用户'</span>, <span class="hljs-title function_">async</span> () =&gt; {
+      <span class="hljs-keyword">const</span> userData = { <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span>, <span class="hljs-attr">email</span>: <span class="hljs-string">'alice@example.com'</span> };
+      <span class="hljs-keyword">const</span> createdUser = { <span class="hljs-attr">id</span>: <span class="hljs-string">'1'</span>, ...userData };
+      mockRepository.<span class="hljs-property">create</span>.<span class="hljs-title function_">mockResolvedValue</span>(createdUser);
+
+      <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> userService.<span class="hljs-title function_">create</span>(userData);
+
+      <span class="hljs-title function_">expect</span>(result).<span class="hljs-title function_">toEqual</span>(createdUser);
+      <span class="hljs-title function_">expect</span>(mockRepository.<span class="hljs-property">create</span>).<span class="hljs-title function_">toHaveBeenCalledWith</span>(userData);
+    });
+  });
+});
+</code></pre>
+<h3 id="53-集成测试">5.3 集成测试</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// app.integration.test.js</span>
+<span class="hljs-keyword">const</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">'supertest'</span>);
+<span class="hljs-keyword">const</span> app = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../app'</span>);
+
+<span class="hljs-title function_">describe</span>(<span class="hljs-string">'User API'</span>, <span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-title function_">beforeAll</span>(<span class="hljs-title function_">async</span> () =&gt; {
+    <span class="hljs-comment">// 连接测试数据库</span>
+    <span class="hljs-keyword">await</span> <span class="hljs-title function_">connectTestDB</span>();
+  });
+
+  <span class="hljs-title function_">afterAll</span>(<span class="hljs-title function_">async</span> () =&gt; {
+    <span class="hljs-keyword">await</span> <span class="hljs-title function_">disconnectTestDB</span>();
+  });
+
+  <span class="hljs-title function_">beforeEach</span>(<span class="hljs-title function_">async</span> () =&gt; {
+    <span class="hljs-keyword">await</span> <span class="hljs-title function_">clearDatabase</span>();
+  });
+
+  <span class="hljs-title function_">describe</span>(<span class="hljs-string">'POST /api/users'</span>, <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-title function_">it</span>(<span class="hljs-string">'应该创建新用户'</span>, <span class="hljs-title function_">async</span> () =&gt; {
+      <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">request</span>(app)
+        .<span class="hljs-title function_">post</span>(<span class="hljs-string">'/api/users'</span>)
+        .<span class="hljs-title function_">send</span>({ <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span>, <span class="hljs-attr">email</span>: <span class="hljs-string">'alice@example.com'</span> })
+        .<span class="hljs-title function_">expect</span>(<span class="hljs-number">201</span>);
+
+      <span class="hljs-title function_">expect</span>(response.<span class="hljs-property">body</span>).<span class="hljs-title function_">toMatchObject</span>({
+        <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span>,
+        <span class="hljs-attr">email</span>: <span class="hljs-string">'alice@example.com'</span>
+      });
+      <span class="hljs-title function_">expect</span>(response.<span class="hljs-property">body</span>).<span class="hljs-title function_">toHaveProperty</span>(<span class="hljs-string">'id'</span>);
+    });
+
+    <span class="hljs-title function_">it</span>(<span class="hljs-string">'缺少必填字段应返回 400'</span>, <span class="hljs-title function_">async</span> () =&gt; {
+      <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">request</span>(app)
+        .<span class="hljs-title function_">post</span>(<span class="hljs-string">'/api/users'</span>)
+        .<span class="hljs-title function_">send</span>({ <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span> })
+        .<span class="hljs-title function_">expect</span>(<span class="hljs-number">400</span>);
+
+      <span class="hljs-title function_">expect</span>(response.<span class="hljs-property">body</span>.<span class="hljs-property">error</span>).<span class="hljs-title function_">toBeDefined</span>();
+    });
+
+    <span class="hljs-title function_">it</span>(<span class="hljs-string">'邮箱重复应返回 409'</span>, <span class="hljs-title function_">async</span> () =&gt; {
+      <span class="hljs-keyword">await</span> <span class="hljs-title function_">request</span>(app)
+        .<span class="hljs-title function_">post</span>(<span class="hljs-string">'/api/users'</span>)
+        .<span class="hljs-title function_">send</span>({ <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span>, <span class="hljs-attr">email</span>: <span class="hljs-string">'alice@example.com'</span> });
+
+      <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">request</span>(app)
+        .<span class="hljs-title function_">post</span>(<span class="hljs-string">'/api/users'</span>)
+        .<span class="hljs-title function_">send</span>({ <span class="hljs-attr">name</span>: <span class="hljs-string">'Bob'</span>, <span class="hljs-attr">email</span>: <span class="hljs-string">'alice@example.com'</span> })
+        .<span class="hljs-title function_">expect</span>(<span class="hljs-number">409</span>);
+    });
+  });
+
+  <span class="hljs-title function_">describe</span>(<span class="hljs-string">'GET /api/users/:id'</span>, <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-title function_">it</span>(<span class="hljs-string">'应该返回指定用户'</span>, <span class="hljs-title function_">async</span> () =&gt; {
+      <span class="hljs-keyword">const</span> createRes = <span class="hljs-keyword">await</span> <span class="hljs-title function_">request</span>(app)
+        .<span class="hljs-title function_">post</span>(<span class="hljs-string">'/api/users'</span>)
+        .<span class="hljs-title function_">send</span>({ <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span>, <span class="hljs-attr">email</span>: <span class="hljs-string">'alice@example.com'</span> });
+
+      <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">request</span>(app)
+        .<span class="hljs-title function_">get</span>(<span class="hljs-string">`/api/users/<span class="hljs-subst">${createRes.body.id}</span>`</span>)
+        .<span class="hljs-title function_">expect</span>(<span class="hljs-number">200</span>);
+
+      <span class="hljs-title function_">expect</span>(response.<span class="hljs-property">body</span>.<span class="hljs-property">name</span>).<span class="hljs-title function_">toBe</span>(<span class="hljs-string">'Alice'</span>);
+    });
+
+    <span class="hljs-title function_">it</span>(<span class="hljs-string">'用户不存在应返回 404'</span>, <span class="hljs-title function_">async</span> () =&gt; {
+      <span class="hljs-keyword">await</span> <span class="hljs-title function_">request</span>(app)
+        .<span class="hljs-title function_">get</span>(<span class="hljs-string">'/api/users/nonexistent'</span>)
+        .<span class="hljs-title function_">expect</span>(<span class="hljs-number">404</span>);
+    });
+  });
+});
+</code></pre>
+<hr></hr>
+<h2 id="六、api-设计">六、API 设计</h2>
+<blockquote>
+<p><strong>面试题：RESTful API、GraphQL 和 gRPC 各有什么特点？如何选择？</strong></p>
+</blockquote>
+<h3 id="61-restful-api">6.1 RESTful API</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// RESTful 设计原则</span>
+<span class="hljs-comment">// 1. 使用名词（资源）而非动词</span>
+<span class="hljs-comment">// GET    /api/users          获取用户列表</span>
+<span class="hljs-comment">// GET    /api/users/:id      获取单个用户</span>
+<span class="hljs-comment">// POST   /api/users          创建用户</span>
+<span class="hljs-comment">// PUT    /api/users/:id      全量更新用户</span>
+<span class="hljs-comment">// PATCH  /api/users/:id      部分更新用户</span>
+<span class="hljs-comment">// DELETE /api/users/:id      删除用户</span>
+
+<span class="hljs-comment">// 2. 嵌套资源</span>
+<span class="hljs-comment">// GET /api/users/:userId/posts  获取某用户的文章</span>
+
+<span class="hljs-comment">// 3. 查询参数用于过滤、排序、分页</span>
+<span class="hljs-comment">// GET /api/users?status=active&amp;sort=-createdAt&amp;page=1&amp;limit=20</span>
+
+<span class="hljs-comment">// 4. 版本控制</span>
+<span class="hljs-comment">// /api/v1/users</span>
+<span class="hljs-comment">// 或通过 Header: Accept: application/vnd.myapi.v1+json</span>
+
+<span class="hljs-comment">// 5. 统一响应格式</span>
+<span class="hljs-keyword">const</span> response = {
+  <span class="hljs-attr">success</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">data</span>: { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span> },
+  <span class="hljs-attr">meta</span>: { <span class="hljs-attr">page</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">total</span>: <span class="hljs-number">100</span>, <span class="hljs-attr">limit</span>: <span class="hljs-number">20</span> }
+};
+</code></pre>
+<h3 id="62-graphql">6.2 GraphQL</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> { <span class="hljs-title class_">ApolloServer</span>, gql } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'apollo-server-express'</span>);
+
+<span class="hljs-keyword">const</span> typeDefs = gql`<span class="language-graphql">
+  <span class="hljs-keyword">type</span> User <span class="hljs-punctuation">{</span>
+    <span class="hljs-symbol">id</span><span class="hljs-punctuation">:</span> ID<span class="hljs-punctuation">!</span>
+    <span class="hljs-symbol">name</span><span class="hljs-punctuation">:</span> String<span class="hljs-punctuation">!</span>
+    <span class="hljs-symbol">email</span><span class="hljs-punctuation">:</span> String<span class="hljs-punctuation">!</span>
+    <span class="hljs-symbol">posts</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>Post<span class="hljs-punctuation">!</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">!</span>
+  <span class="hljs-punctuation">}</span>
+
+  <span class="hljs-keyword">type</span> Post <span class="hljs-punctuation">{</span>
+    <span class="hljs-symbol">id</span><span class="hljs-punctuation">:</span> ID<span class="hljs-punctuation">!</span>
+    <span class="hljs-symbol">title</span><span class="hljs-punctuation">:</span> String<span class="hljs-punctuation">!</span>
+    <span class="hljs-symbol">content</span><span class="hljs-punctuation">:</span> String
+    <span class="hljs-symbol">author</span><span class="hljs-punctuation">:</span> User<span class="hljs-punctuation">!</span>
+  <span class="hljs-punctuation">}</span>
+
+  <span class="hljs-keyword">type</span> <span class="hljs-keyword">Query</span> <span class="hljs-punctuation">{</span>
+    users<span class="hljs-punctuation">(</span><span class="hljs-symbol">page</span><span class="hljs-punctuation">:</span> Int, <span class="hljs-symbol">limit</span><span class="hljs-punctuation">:</span> Int<span class="hljs-punctuation">)</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>User<span class="hljs-punctuation">!</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">!</span>
+    user<span class="hljs-punctuation">(</span><span class="hljs-symbol">id</span><span class="hljs-punctuation">:</span> ID<span class="hljs-punctuation">!</span><span class="hljs-punctuation">)</span><span class="hljs-punctuation">:</span> User
+  <span class="hljs-punctuation">}</span>
+
+  <span class="hljs-keyword">type</span> <span class="hljs-keyword">Mutation</span> <span class="hljs-punctuation">{</span>
+    createUser<span class="hljs-punctuation">(</span><span class="hljs-symbol">name</span><span class="hljs-punctuation">:</span> String<span class="hljs-punctuation">!</span>, <span class="hljs-symbol">email</span><span class="hljs-punctuation">:</span> String<span class="hljs-punctuation">!</span><span class="hljs-punctuation">)</span><span class="hljs-punctuation">:</span> User<span class="hljs-punctuation">!</span>
+    updateUser<span class="hljs-punctuation">(</span><span class="hljs-symbol">id</span><span class="hljs-punctuation">:</span> ID<span class="hljs-punctuation">!</span>, <span class="hljs-symbol">name</span><span class="hljs-punctuation">:</span> String, <span class="hljs-symbol">email</span><span class="hljs-punctuation">:</span> String<span class="hljs-punctuation">)</span><span class="hljs-punctuation">:</span> User<span class="hljs-punctuation">!</span>
+  <span class="hljs-punctuation">}</span>
+`</span>;
+
+<span class="hljs-keyword">const</span> resolvers = {
+  <span class="hljs-title class_">Query</span>: {
+    <span class="hljs-attr">users</span>: <span class="hljs-function">(<span class="hljs-params">_, { page, limit }</span>) =&gt;</span> userService.<span class="hljs-title function_">findAll</span>(page, limit),
+    <span class="hljs-attr">user</span>: <span class="hljs-function">(<span class="hljs-params">_, { id }</span>) =&gt;</span> userService.<span class="hljs-title function_">findById</span>(id),
+  },
+  <span class="hljs-title class_">Mutation</span>: {
+    <span class="hljs-attr">createUser</span>: <span class="hljs-function">(<span class="hljs-params">_, args</span>) =&gt;</span> userService.<span class="hljs-title function_">create</span>(args),
+  },
+  <span class="hljs-title class_">User</span>: {
+    <span class="hljs-attr">posts</span>: <span class="hljs-function">(<span class="hljs-params">user</span>) =&gt;</span> postService.<span class="hljs-title function_">findByUserId</span>(user.<span class="hljs-property">id</span>), <span class="hljs-comment">// 字段级解析</span>
+  },
+};
+
+<span class="hljs-keyword">const</span> server = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ApolloServer</span>({ typeDefs, resolvers });
+<span class="hljs-keyword">await</span> server.<span class="hljs-title function_">start</span>();
+server.<span class="hljs-title function_">applyMiddleware</span>({ app });
+</code></pre>
+<h3 id="63-对比选型">6.3 对比选型</h3>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>REST</th>
+<th>GraphQL</th>
+<th>gRPC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数据格式</td>
+<td>JSON</td>
+<td>JSON</td>
+<td>Protocol Buffers</td>
+</tr>
+<tr>
+<td>传输协议</td>
+<td>HTTP/1.1</td>
+<td>HTTP/1.1</td>
+<td>HTTP/2</td>
+</tr>
+<tr>
+<td>类型系统</td>
+<td>无（需Swagger）</td>
+<td>强类型 Schema</td>
+<td>强类型 .proto</td>
+</tr>
+<tr>
+<td>性能</td>
+<td>中等</td>
+<td>中等</td>
+<td>高</td>
+</tr>
+<tr>
+<td>灵活性</td>
+<td>固定端点</td>
+<td>按需查询</td>
+<td>固定接口</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>公开 API</td>
+<td>前端驱动API</td>
+<td>微服务间通信</td>
+</tr>
+<tr>
+<td>学习曲线</td>
+<td>低</td>
+<td>中等</td>
+<td>较高</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="七、认证与授权">七、认证与授权</h2>
+<blockquote>
+<p><strong>面试题：JWT、Session、OAuth2 各自的原理和适用场景是什么？</strong></p>
+</blockquote>
+<h3 id="71-jwt（json-web-token）">7.1 JWT（JSON Web Token）</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> jwt = <span class="hljs-built_in">require</span>(<span class="hljs-string">'jsonwebtoken'</span>);
+
+<span class="hljs-keyword">const</span> <span class="hljs-variable constant_">SECRET</span> = process.<span class="hljs-property">env</span>.<span class="hljs-property">JWT_SECRET</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-variable constant_">REFRESH_SECRET</span> = process.<span class="hljs-property">env</span>.<span class="hljs-property">JWT_REFRESH_SECRET</span>;
+
+<span class="hljs-comment">// 生成 Token</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">generateTokens</span>(<span class="hljs-params">user</span>) {
+  <span class="hljs-keyword">const</span> accessToken = jwt.<span class="hljs-title function_">sign</span>(
+    { <span class="hljs-attr">userId</span>: user.<span class="hljs-property">id</span>, <span class="hljs-attr">role</span>: user.<span class="hljs-property">role</span> },
+    <span class="hljs-variable constant_">SECRET</span>,
+    { <span class="hljs-attr">expiresIn</span>: <span class="hljs-string">'15m'</span> } <span class="hljs-comment">// 短期有效</span>
+  );
+
+  <span class="hljs-keyword">const</span> refreshToken = jwt.<span class="hljs-title function_">sign</span>(
+    { <span class="hljs-attr">userId</span>: user.<span class="hljs-property">id</span> },
+    <span class="hljs-variable constant_">REFRESH_SECRET</span>,
+    { <span class="hljs-attr">expiresIn</span>: <span class="hljs-string">'7d'</span> } <span class="hljs-comment">// 长期有效</span>
+  );
+
+  <span class="hljs-keyword">return</span> { accessToken, refreshToken };
+}
+
+<span class="hljs-comment">// 验证中间件</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">authenticate</span>(<span class="hljs-params">req, res, next</span>) {
+  <span class="hljs-keyword">const</span> authHeader = req.<span class="hljs-property">headers</span>.<span class="hljs-property">authorization</span>;
+  <span class="hljs-keyword">if</span> (!authHeader?.<span class="hljs-title function_">startsWith</span>(<span class="hljs-string">'Bearer '</span>)) {
+    <span class="hljs-keyword">return</span> res.<span class="hljs-title function_">status</span>(<span class="hljs-number">401</span>).<span class="hljs-title function_">json</span>({ <span class="hljs-attr">error</span>: <span class="hljs-string">'未提供 Token'</span> });
+  }
+
+  <span class="hljs-keyword">const</span> token = authHeader.<span class="hljs-title function_">substring</span>(<span class="hljs-number">7</span>);
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">const</span> payload = jwt.<span class="hljs-title function_">verify</span>(token, <span class="hljs-variable constant_">SECRET</span>);
+    req.<span class="hljs-property">user</span> = payload;
+    <span class="hljs-title function_">next</span>();
+  } <span class="hljs-keyword">catch</span> (err) {
+    <span class="hljs-keyword">if</span> (err.<span class="hljs-property">name</span> === <span class="hljs-string">'TokenExpiredError'</span>) {
+      <span class="hljs-keyword">return</span> res.<span class="hljs-title function_">status</span>(<span class="hljs-number">401</span>).<span class="hljs-title function_">json</span>({ <span class="hljs-attr">error</span>: <span class="hljs-string">'Token 已过期'</span> });
+    }
+    <span class="hljs-keyword">return</span> res.<span class="hljs-title function_">status</span>(<span class="hljs-number">401</span>).<span class="hljs-title function_">json</span>({ <span class="hljs-attr">error</span>: <span class="hljs-string">'Token 无效'</span> });
+  }
+}
+
+<span class="hljs-comment">// 刷新 Token</span>
+app.<span class="hljs-title function_">post</span>(<span class="hljs-string">'/api/refresh'</span>, <span class="hljs-title function_">async</span> (req, res) =&gt; {
+  <span class="hljs-keyword">const</span> { refreshToken } = req.<span class="hljs-property">body</span>;
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">const</span> payload = jwt.<span class="hljs-title function_">verify</span>(refreshToken, <span class="hljs-variable constant_">REFRESH_SECRET</span>);
+    <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">findByPk</span>(payload.<span class="hljs-property">userId</span>);
+    <span class="hljs-keyword">const</span> tokens = <span class="hljs-title function_">generateTokens</span>(user);
+    res.<span class="hljs-title function_">json</span>(tokens);
+  } <span class="hljs-keyword">catch</span> {
+    res.<span class="hljs-title function_">status</span>(<span class="hljs-number">401</span>).<span class="hljs-title function_">json</span>({ <span class="hljs-attr">error</span>: <span class="hljs-string">'Refresh Token 无效'</span> });
+  }
+});
+
+<span class="hljs-comment">// 授权中间件</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">authorize</span>(<span class="hljs-params">...roles</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-function">(<span class="hljs-params">req, res, next</span>) =&gt;</span> {
+    <span class="hljs-keyword">if</span> (!roles.<span class="hljs-title function_">includes</span>(req.<span class="hljs-property">user</span>.<span class="hljs-property">role</span>)) {
+      <span class="hljs-keyword">return</span> res.<span class="hljs-title function_">status</span>(<span class="hljs-number">403</span>).<span class="hljs-title function_">json</span>({ <span class="hljs-attr">error</span>: <span class="hljs-string">'权限不足'</span> });
+    }
+    <span class="hljs-title function_">next</span>();
+  };
+}
+
+<span class="hljs-comment">// 使用</span>
+app.<span class="hljs-title function_">get</span>(<span class="hljs-string">'/api/admin/users'</span>, authenticate, <span class="hljs-title function_">authorize</span>(<span class="hljs-string">'admin'</span>), <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> {
+  <span class="hljs-comment">// 只有 admin 角色才能访问</span>
+});
+</code></pre>
+<h3 id="72-session-认证">7.2 Session 认证</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> session = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express-session'</span>);
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">RedisStore</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'connect-redis'</span>).<span class="hljs-property">default</span>;
+
+app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">session</span>({
+  <span class="hljs-attr">store</span>: <span class="hljs-keyword">new</span> <span class="hljs-title class_">RedisStore</span>({ <span class="hljs-attr">client</span>: redis }),
+  <span class="hljs-attr">secret</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">SESSION_SECRET</span>,
+  <span class="hljs-attr">resave</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">saveUninitialized</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">cookie</span>: {
+    <span class="hljs-attr">secure</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">NODE_ENV</span> === <span class="hljs-string">'production'</span>,
+    <span class="hljs-attr">httpOnly</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">maxAge</span>: <span class="hljs-number">24</span> * <span class="hljs-number">60</span> * <span class="hljs-number">60</span> * <span class="hljs-number">1000</span>, <span class="hljs-comment">// 1天</span>
+    <span class="hljs-attr">sameSite</span>: <span class="hljs-string">'strict'</span>
+  }
+}));
+
+<span class="hljs-comment">// 登录</span>
+app.<span class="hljs-title function_">post</span>(<span class="hljs-string">'/api/login'</span>, <span class="hljs-title function_">async</span> (req, res) =&gt; {
+  <span class="hljs-keyword">const</span> { email, password } = req.<span class="hljs-property">body</span>;
+  <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">findByEmail</span>(email);
+  <span class="hljs-keyword">if</span> (!user || !<span class="hljs-keyword">await</span> bcrypt.<span class="hljs-title function_">compare</span>(password, user.<span class="hljs-property">password</span>)) {
+    <span class="hljs-keyword">return</span> res.<span class="hljs-title function_">status</span>(<span class="hljs-number">401</span>).<span class="hljs-title function_">json</span>({ <span class="hljs-attr">error</span>: <span class="hljs-string">'邮箱或密码错误'</span> });
+  }
+  req.<span class="hljs-property">session</span>.<span class="hljs-property">userId</span> = user.<span class="hljs-property">id</span>;
+  req.<span class="hljs-property">session</span>.<span class="hljs-property">role</span> = user.<span class="hljs-property">role</span>;
+  res.<span class="hljs-title function_">json</span>({ <span class="hljs-attr">message</span>: <span class="hljs-string">'登录成功'</span> });
+});
+
+<span class="hljs-comment">// 认证中间件</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">requireAuth</span>(<span class="hljs-params">req, res, next</span>) {
+  <span class="hljs-keyword">if</span> (!req.<span class="hljs-property">session</span>.<span class="hljs-property">userId</span>) {
+    <span class="hljs-keyword">return</span> res.<span class="hljs-title function_">status</span>(<span class="hljs-number">401</span>).<span class="hljs-title function_">json</span>({ <span class="hljs-attr">error</span>: <span class="hljs-string">'未登录'</span> });
+  }
+  <span class="hljs-title function_">next</span>();
+}
+</code></pre>
+<h3 id="73-jwt-vs-session">7.3 JWT vs Session</h3>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>JWT</th>
+<th>Session</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>存储位置</td>
+<td>客户端（localStorage/Cookie）</td>
+<td>服务端（Redis/内存）</td>
+</tr>
+<tr>
+<td>无状态性</td>
+<td>无状态</td>
+<td>有状态</td>
+</tr>
+<tr>
+<td>扩展性</td>
+<td>好（无需共享存储）</td>
+<td>需要共享 Session 存储</td>
+</tr>
+<tr>
+<td>安全性</td>
+<td>无法即时吊销</td>
+<td>可以即时吊销</td>
+</tr>
+<tr>
+<td>性能</td>
+<td>不需要查询存储</td>
+<td>需要查询 Redis/内存</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>分布式系统、移动端</td>
+<td>传统 Web 应用</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="八、文件上传与下载">八、文件上传与下载</h2>
+<blockquote>
+<p><strong>面试题：Node.js 中如何实现文件上传和下载？如何处理大文件上传？</strong></p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> multer = <span class="hljs-built_in">require</span>(<span class="hljs-string">'multer'</span>);
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+
+<span class="hljs-comment">// 配置存储</span>
+<span class="hljs-keyword">const</span> storage = multer.<span class="hljs-title function_">diskStorage</span>({
+  <span class="hljs-attr">destination</span>: <span class="hljs-function">(<span class="hljs-params">req, file, cb</span>) =&gt;</span> {
+    <span class="hljs-title function_">cb</span>(<span class="hljs-literal">null</span>, <span class="hljs-string">'uploads/'</span>);
+  },
+  <span class="hljs-attr">filename</span>: <span class="hljs-function">(<span class="hljs-params">req, file, cb</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> uniqueSuffix = <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>() + <span class="hljs-string">'-'</span> + <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">round</span>(<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">random</span>() * <span class="hljs-number">1E9</span>);
+    <span class="hljs-title function_">cb</span>(<span class="hljs-literal">null</span>, uniqueSuffix + path.<span class="hljs-title function_">extname</span>(file.<span class="hljs-property">originalname</span>));
+  }
+});
+
+<span class="hljs-comment">// 文件过滤</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">fileFilter</span> = (<span class="hljs-params">req, file, cb</span>) =&gt; {
+  <span class="hljs-keyword">const</span> allowedTypes = [<span class="hljs-string">'image/jpeg'</span>, <span class="hljs-string">'image/png'</span>, <span class="hljs-string">'image/gif'</span>];
+  <span class="hljs-keyword">if</span> (allowedTypes.<span class="hljs-title function_">includes</span>(file.<span class="hljs-property">mimetype</span>)) {
+    <span class="hljs-title function_">cb</span>(<span class="hljs-literal">null</span>, <span class="hljs-literal">true</span>);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-title function_">cb</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'不支持的文件类型'</span>), <span class="hljs-literal">false</span>);
+  }
+};
+
+<span class="hljs-keyword">const</span> upload = <span class="hljs-title function_">multer</span>({
+  storage,
+  fileFilter,
+  <span class="hljs-attr">limits</span>: { <span class="hljs-attr">fileSize</span>: <span class="hljs-number">5</span> * <span class="hljs-number">1024</span> * <span class="hljs-number">1024</span> } <span class="hljs-comment">// 5MB</span>
+});
+
+<span class="hljs-comment">// 单文件上传</span>
+app.<span class="hljs-title function_">post</span>(<span class="hljs-string">'/upload'</span>, upload.<span class="hljs-title function_">single</span>(<span class="hljs-string">'avatar'</span>), <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> {
+  res.<span class="hljs-title function_">json</span>({
+    <span class="hljs-attr">filename</span>: req.<span class="hljs-property">file</span>.<span class="hljs-property">filename</span>,
+    <span class="hljs-attr">size</span>: req.<span class="hljs-property">file</span>.<span class="hljs-property">size</span>,
+    <span class="hljs-attr">url</span>: <span class="hljs-string">`/uploads/<span class="hljs-subst">${req.file.filename}</span>`</span>
+  });
+});
+
+<span class="hljs-comment">// 多文件上传</span>
+app.<span class="hljs-title function_">post</span>(<span class="hljs-string">'/upload-multiple'</span>, upload.<span class="hljs-title function_">array</span>(<span class="hljs-string">'photos'</span>, <span class="hljs-number">10</span>), <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> {
+  res.<span class="hljs-title function_">json</span>({ <span class="hljs-attr">files</span>: req.<span class="hljs-property">files</span>.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">f</span> =&gt;</span> f.<span class="hljs-property">filename</span>) });
+});
+
+<span class="hljs-comment">// 文件下载</span>
+app.<span class="hljs-title function_">get</span>(<span class="hljs-string">'/download/:filename'</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> filePath = path.<span class="hljs-title function_">join</span>(__dirname, <span class="hljs-string">'uploads'</span>, req.<span class="hljs-property">params</span>.<span class="hljs-property">filename</span>);
+  res.<span class="hljs-title function_">download</span>(filePath, req.<span class="hljs-property">params</span>.<span class="hljs-property">filename</span>, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-keyword">if</span> (err) res.<span class="hljs-title function_">status</span>(<span class="hljs-number">404</span>).<span class="hljs-title function_">json</span>({ <span class="hljs-attr">error</span>: <span class="hljs-string">'文件不存在'</span> });
+  });
+});
+
+<span class="hljs-comment">// 流式下载（大文件）</span>
+app.<span class="hljs-title function_">get</span>(<span class="hljs-string">'/download-stream/:filename'</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> filePath = path.<span class="hljs-title function_">join</span>(__dirname, <span class="hljs-string">'uploads'</span>, req.<span class="hljs-property">params</span>.<span class="hljs-property">filename</span>);
+  <span class="hljs-keyword">const</span> stat = fs.<span class="hljs-title function_">statSync</span>(filePath);
+
+  res.<span class="hljs-title function_">setHeader</span>(<span class="hljs-string">'Content-Length'</span>, stat.<span class="hljs-property">size</span>);
+  res.<span class="hljs-title function_">setHeader</span>(<span class="hljs-string">'Content-Type'</span>, <span class="hljs-string">'application/octet-stream'</span>);
+  res.<span class="hljs-title function_">setHeader</span>(<span class="hljs-string">'Content-Disposition'</span>, <span class="hljs-string">`attachment; filename="<span class="hljs-subst">${req.params.filename}</span>"`</span>);
+
+  <span class="hljs-keyword">const</span> stream = fs.<span class="hljs-title function_">createReadStream</span>(filePath);
+  stream.<span class="hljs-title function_">pipe</span>(res);
+});
+</code></pre>
+<hr></hr>
+<h2 id="九、定时任务">九、定时任务</h2>
+<blockquote>
+<p><strong>面试题：Node.js 中如何实现定时任务？</strong></p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 方式1：node-cron（适合简单的定时任务）</span>
+<span class="hljs-keyword">const</span> cron = <span class="hljs-built_in">require</span>(<span class="hljs-string">'node-cron'</span>);
+
+<span class="hljs-comment">// 每天凌晨 2 点执行</span>
+cron.<span class="hljs-title function_">schedule</span>(<span class="hljs-string">'0 2 * * *'</span>, <span class="hljs-title function_">async</span> () =&gt; {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'执行每日数据清理'</span>);
+  <span class="hljs-keyword">await</span> <span class="hljs-title function_">cleanOldData</span>();
+});
+
+<span class="hljs-comment">// 每 5 分钟执行</span>
+cron.<span class="hljs-title function_">schedule</span>(<span class="hljs-string">'*/5 * * * *'</span>, <span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'检查健康状态'</span>);
+});
+
+<span class="hljs-comment">// Cron 表达式: 秒(可选) 分 时 日 月 周</span>
+<span class="hljs-comment">// * * * * * *</span>
+<span class="hljs-comment">// │ │ │ │ │ │</span>
+<span class="hljs-comment">// │ │ │ │ │ └── 周几 (0-7, 0和7都是周日)</span>
+<span class="hljs-comment">// │ │ │ │ └──── 月 (1-12)</span>
+<span class="hljs-comment">// │ │ │ └────── 日 (1-31)</span>
+<span class="hljs-comment">// │ │ └──────── 时 (0-23)</span>
+<span class="hljs-comment">// │ └────────── 分 (0-59)</span>
+<span class="hljs-comment">// └──────────── 秒 (0-59, 可选)</span>
+
+<span class="hljs-comment">// 方式2：BullMQ（分布式任务队列，推荐生产环境）</span>
+<span class="hljs-keyword">const</span> { <span class="hljs-title class_">Queue</span>, <span class="hljs-title class_">Worker</span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'bullmq'</span>);
+
+<span class="hljs-keyword">const</span> emailQueue = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Queue</span>(<span class="hljs-string">'email'</span>, { <span class="hljs-attr">connection</span>: redis });
+
+<span class="hljs-comment">// 添加延迟任务</span>
+<span class="hljs-keyword">await</span> emailQueue.<span class="hljs-title function_">add</span>(<span class="hljs-string">'welcome'</span>, { <span class="hljs-attr">userId</span>: <span class="hljs-string">'123'</span> }, {
+  <span class="hljs-attr">delay</span>: <span class="hljs-number">60000</span>,         <span class="hljs-comment">// 延迟 1 分钟执行</span>
+  <span class="hljs-attr">attempts</span>: <span class="hljs-number">3</span>,          <span class="hljs-comment">// 失败重试 3 次</span>
+  <span class="hljs-attr">backoff</span>: { <span class="hljs-attr">type</span>: <span class="hljs-string">'exponential'</span>, <span class="hljs-attr">delay</span>: <span class="hljs-number">2000</span> },
+  <span class="hljs-attr">removeOnComplete</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">removeOnFail</span>: <span class="hljs-number">1000</span>,
+});
+
+<span class="hljs-comment">// 添加重复任务</span>
+<span class="hljs-keyword">await</span> emailQueue.<span class="hljs-title function_">add</span>(<span class="hljs-string">'daily-report'</span>, { <span class="hljs-attr">type</span>: <span class="hljs-string">'report'</span> }, {
+  <span class="hljs-attr">repeat</span>: { <span class="hljs-attr">cron</span>: <span class="hljs-string">'0 8 * * 1-5'</span> } <span class="hljs-comment">// 工作日早上 8 点</span>
+});
+
+<span class="hljs-comment">// 处理任务</span>
+<span class="hljs-keyword">const</span> worker = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Worker</span>(<span class="hljs-string">'email'</span>, <span class="hljs-title function_">async</span> (job) =&gt; {
+  <span class="hljs-keyword">const</span> { userId } = job.<span class="hljs-property">data</span>;
+  <span class="hljs-keyword">await</span> <span class="hljs-title function_">sendEmail</span>(userId);
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`邮件已发送给用户 <span class="hljs-subst">${userId}</span>`</span>);
+}, { <span class="hljs-attr">connection</span>: redis, <span class="hljs-attr">concurrency</span>: <span class="hljs-number">5</span> });
+
+worker.<span class="hljs-title function_">on</span>(<span class="hljs-string">'completed'</span>, <span class="hljs-function">(<span class="hljs-params">job</span>) =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`任务 <span class="hljs-subst">${job.id}</span> 完成`</span>));
+worker.<span class="hljs-title function_">on</span>(<span class="hljs-string">'failed'</span>, <span class="hljs-function">(<span class="hljs-params">job, err</span>) =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">`任务 <span class="hljs-subst">${job.id}</span> 失败:`</span>, err));
+</code></pre>
+<hr></hr>
+<h2 id="十、消息队列">十、消息队列</h2>
+<blockquote>
+<p><strong>面试题：什么是消息队列？Node.js 中如何使用消息队列？</strong></p>
+</blockquote>
+<h3 id="101-rabbitmq（amqplib）">10.1 RabbitMQ（amqplib）</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> amqp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'amqplib'</span>);
+
+<span class="hljs-comment">// 生产者</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">publishMessage</span>(<span class="hljs-params">queue, message</span>) {
+  <span class="hljs-keyword">const</span> connection = <span class="hljs-keyword">await</span> amqp.<span class="hljs-title function_">connect</span>(<span class="hljs-string">'amqp://localhost'</span>);
+  <span class="hljs-keyword">const</span> channel = <span class="hljs-keyword">await</span> connection.<span class="hljs-title function_">createChannel</span>();
+
+  <span class="hljs-keyword">await</span> channel.<span class="hljs-title function_">assertQueue</span>(queue, { <span class="hljs-attr">durable</span>: <span class="hljs-literal">true</span> });
+  channel.<span class="hljs-title function_">sendToQueue</span>(queue, <span class="hljs-title class_">Buffer</span>.<span class="hljs-title function_">from</span>(<span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(message)), {
+    <span class="hljs-attr">persistent</span>: <span class="hljs-literal">true</span>
+  });
+
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'消息已发送:'</span>, message);
+  <span class="hljs-keyword">await</span> channel.<span class="hljs-title function_">close</span>();
+  <span class="hljs-keyword">await</span> connection.<span class="hljs-title function_">close</span>();
+}
+
+<span class="hljs-comment">// 消费者</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">consumeMessages</span>(<span class="hljs-params">queue</span>) {
+  <span class="hljs-keyword">const</span> connection = <span class="hljs-keyword">await</span> amqp.<span class="hljs-title function_">connect</span>(<span class="hljs-string">'amqp://localhost'</span>);
+  <span class="hljs-keyword">const</span> channel = <span class="hljs-keyword">await</span> connection.<span class="hljs-title function_">createChannel</span>();
+
+  <span class="hljs-keyword">await</span> channel.<span class="hljs-title function_">assertQueue</span>(queue, { <span class="hljs-attr">durable</span>: <span class="hljs-literal">true</span> });
+  channel.<span class="hljs-title function_">prefetch</span>(<span class="hljs-number">1</span>); <span class="hljs-comment">// 每次只处理一条消息</span>
+
+  channel.<span class="hljs-title function_">consume</span>(queue, <span class="hljs-title function_">async</span> (msg) =&gt; {
+    <span class="hljs-keyword">const</span> data = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(msg.<span class="hljs-property">content</span>.<span class="hljs-title function_">toString</span>());
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'收到消息:'</span>, data);
+
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">await</span> <span class="hljs-title function_">processMessage</span>(data);
+      channel.<span class="hljs-title function_">ack</span>(msg); <span class="hljs-comment">// 确认消息</span>
+    } <span class="hljs-keyword">catch</span> (err) {
+      channel.<span class="hljs-title function_">nack</span>(msg, <span class="hljs-literal">false</span>, <span class="hljs-literal">true</span>); <span class="hljs-comment">// 拒绝并重新入队</span>
+    }
+  });
+}
+</code></pre>
+<h3 id="102-kafka（kafkajs）">10.2 Kafka（kafkajs）</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> { <span class="hljs-title class_">Kafka</span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'kafkajs'</span>);
+
+<span class="hljs-keyword">const</span> kafka = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Kafka</span>({
+  <span class="hljs-attr">clientId</span>: <span class="hljs-string">'my-app'</span>,
+  <span class="hljs-attr">brokers</span>: [<span class="hljs-string">'localhost:9092'</span>]
+});
+
+<span class="hljs-comment">// 生产者</span>
+<span class="hljs-keyword">const</span> producer = kafka.<span class="hljs-title function_">producer</span>();
+<span class="hljs-keyword">await</span> producer.<span class="hljs-title function_">connect</span>();
+<span class="hljs-keyword">await</span> producer.<span class="hljs-title function_">send</span>({
+  <span class="hljs-attr">topic</span>: <span class="hljs-string">'user-events'</span>,
+  <span class="hljs-attr">messages</span>: [
+    { <span class="hljs-attr">key</span>: <span class="hljs-string">'user-1'</span>, <span class="hljs-attr">value</span>: <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>({ <span class="hljs-attr">event</span>: <span class="hljs-string">'login'</span>, <span class="hljs-attr">userId</span>: <span class="hljs-string">'1'</span> }) }
+  ],
+});
+
+<span class="hljs-comment">// 消费者</span>
+<span class="hljs-keyword">const</span> consumer = kafka.<span class="hljs-title function_">consumer</span>({ <span class="hljs-attr">groupId</span>: <span class="hljs-string">'my-group'</span> });
+<span class="hljs-keyword">await</span> consumer.<span class="hljs-title function_">connect</span>();
+<span class="hljs-keyword">await</span> consumer.<span class="hljs-title function_">subscribe</span>({ <span class="hljs-attr">topic</span>: <span class="hljs-string">'user-events'</span>, <span class="hljs-attr">fromBeginning</span>: <span class="hljs-literal">true</span> });
+
+<span class="hljs-keyword">await</span> consumer.<span class="hljs-title function_">run</span>({
+  <span class="hljs-attr">eachMessage</span>: <span class="hljs-title function_">async</span> ({ topic, partition, message }) =&gt; {
+    <span class="hljs-keyword">const</span> event = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(message.<span class="hljs-property">value</span>.<span class="hljs-title function_">toString</span>());
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`收到消息 [<span class="hljs-subst">${topic}</span>/<span class="hljs-subst">${partition}</span>]:`</span>, event);
+  },
+});
+</code></pre>
+<hr></hr>
+<h2 id="十一、websocket-实时通信">十一、WebSocket 实时通信</h2>
+<blockquote>
+<p><strong>面试题：Node.js 中如何实现 WebSocket 通信？Socket.io 和 ws 有什么区别？</strong></p>
+</blockquote>
+<h3 id="111-socketio">11.1 Socket.io</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> { <span class="hljs-title class_">Server</span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'socket.io'</span>);
+<span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>);
+<span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
+
+<span class="hljs-keyword">const</span> app = <span class="hljs-title function_">express</span>();
+<span class="hljs-keyword">const</span> server = http.<span class="hljs-title function_">createServer</span>(app);
+<span class="hljs-keyword">const</span> io = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Server</span>(server, {
+  <span class="hljs-attr">cors</span>: { <span class="hljs-attr">origin</span>: <span class="hljs-string">'*'</span> },
+  <span class="hljs-attr">pingTimeout</span>: <span class="hljs-number">60000</span>,
+  <span class="hljs-attr">pingInterval</span>: <span class="hljs-number">25000</span>,
+});
+
+<span class="hljs-comment">// 中间件（认证）</span>
+io.<span class="hljs-title function_">use</span>(<span class="hljs-function">(<span class="hljs-params">socket, next</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> token = socket.<span class="hljs-property">handshake</span>.<span class="hljs-property">auth</span>.<span class="hljs-property">token</span>;
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">const</span> user = jwt.<span class="hljs-title function_">verify</span>(token, <span class="hljs-variable constant_">SECRET</span>);
+    socket.<span class="hljs-property">user</span> = user;
+    <span class="hljs-title function_">next</span>();
+  } <span class="hljs-keyword">catch</span> (err) {
+    <span class="hljs-title function_">next</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'认证失败'</span>));
+  }
+});
+
+<span class="hljs-comment">// 连接事件</span>
+io.<span class="hljs-title function_">on</span>(<span class="hljs-string">'connection'</span>, <span class="hljs-function">(<span class="hljs-params">socket</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`用户连接: <span class="hljs-subst">${socket.user.name}</span>`</span>);
+
+  <span class="hljs-comment">// 加入房间</span>
+  socket.<span class="hljs-title function_">join</span>(<span class="hljs-string">`user:<span class="hljs-subst">${socket.user.id}</span>`</span>);
+
+  <span class="hljs-comment">// 监听消息</span>
+  socket.<span class="hljs-title function_">on</span>(<span class="hljs-string">'chat:message'</span>, <span class="hljs-title function_">async</span> (data) =&gt; {
+    <span class="hljs-keyword">const</span> message = <span class="hljs-keyword">await</span> <span class="hljs-title function_">saveMessage</span>(data);
+    <span class="hljs-comment">// 发送给房间内所有人</span>
+    io.<span class="hljs-title function_">to</span>(data.<span class="hljs-property">roomId</span>).<span class="hljs-title function_">emit</span>(<span class="hljs-string">'chat:message'</span>, message);
+  });
+
+  <span class="hljs-comment">// 加入聊天室</span>
+  socket.<span class="hljs-title function_">on</span>(<span class="hljs-string">'room:join'</span>, <span class="hljs-function">(<span class="hljs-params">roomId</span>) =&gt;</span> {
+    socket.<span class="hljs-title function_">join</span>(roomId);
+    socket.<span class="hljs-title function_">to</span>(roomId).<span class="hljs-title function_">emit</span>(<span class="hljs-string">'room:userJoined'</span>, socket.<span class="hljs-property">user</span>);
+  });
+
+  <span class="hljs-comment">// 断开连接</span>
+  socket.<span class="hljs-title function_">on</span>(<span class="hljs-string">'disconnect'</span>, <span class="hljs-function">(<span class="hljs-params">reason</span>) =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`用户断开: <span class="hljs-subst">${socket.user.name}</span>, 原因: <span class="hljs-subst">${reason}</span>`</span>);
+  });
+});
+
+<span class="hljs-comment">// 向特定用户发送</span>
+io.<span class="hljs-title function_">to</span>(<span class="hljs-string">`user:<span class="hljs-subst">${userId}</span>`</span>).<span class="hljs-title function_">emit</span>(<span class="hljs-string">'notification'</span>, { <span class="hljs-attr">message</span>: <span class="hljs-string">'您有新消息'</span> });
+
+<span class="hljs-comment">// 广播（除了发送者外的所有人）</span>
+socket.<span class="hljs-property">broadcast</span>.<span class="hljs-title function_">emit</span>(<span class="hljs-string">'user:online'</span>, { <span class="hljs-attr">userId</span>: socket.<span class="hljs-property">user</span>.<span class="hljs-property">id</span> });
+
+server.<span class="hljs-title function_">listen</span>(<span class="hljs-number">3000</span>);
+</code></pre>
+<h3 id="112-ws-库（轻量级）">11.2 ws 库（轻量级）</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> <span class="hljs-title class_">WebSocket</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'ws'</span>);
+<span class="hljs-keyword">const</span> wss = <span class="hljs-keyword">new</span> <span class="hljs-title class_">WebSocket</span>.<span class="hljs-title class_">Server</span>({ <span class="hljs-attr">port</span>: <span class="hljs-number">8080</span> });
+
+wss.<span class="hljs-title function_">on</span>(<span class="hljs-string">'connection'</span>, <span class="hljs-function">(<span class="hljs-params">ws, req</span>) =&gt;</span> {
+  ws.<span class="hljs-title function_">on</span>(<span class="hljs-string">'message'</span>, <span class="hljs-function">(<span class="hljs-params">data</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> message = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(data);
+    <span class="hljs-comment">// 广播给所有连接的客户端</span>
+    wss.<span class="hljs-property">clients</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">client</span>) =&gt;</span> {
+      <span class="hljs-keyword">if</span> (client.<span class="hljs-property">readyState</span> === <span class="hljs-title class_">WebSocket</span>.<span class="hljs-property">OPEN</span>) {
+        client.<span class="hljs-title function_">send</span>(<span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(message));
+      }
+    });
+  });
+
+  ws.<span class="hljs-title function_">on</span>(<span class="hljs-string">'close'</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'客户端断开'</span>));
+  ws.<span class="hljs-title function_">send</span>(<span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>({ <span class="hljs-attr">type</span>: <span class="hljs-string">'welcome'</span>, <span class="hljs-attr">message</span>: <span class="hljs-string">'连接成功'</span> }));
+});
+</code></pre>
+<h3 id="113-socketio-vs-ws">11.3 Socket.io vs ws</h3>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>Socket.io</th>
+<th>ws</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>体积</td>
+<td>较大</td>
+<td>极小</td>
+</tr>
+<tr>
+<td>功能</td>
+<td>丰富（房间、广播等）</td>
+<td>基础 WebSocket</td>
+</tr>
+<tr>
+<td>自动重连</td>
+<td>内置</td>
+<td>需自行实现</td>
+</tr>
+<tr>
+<td>降级方案</td>
+<td>自动（long-polling等）</td>
+<td>无</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>复杂实时应用</td>
+<td>简单实时通信/高性能</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="十二、sse（server-sent-events）">十二、SSE（Server-Sent Events）</h2>
+<blockquote>
+<p><strong>面试题：什么是 SSE？它和 WebSocket 有什么区别？</strong></p>
+</blockquote>
+<p>SSE 是一种服务器向客户端推送事件的技术，基于 HTTP 协议。</p>
+<pre><code class="lang-javascript">app.<span class="hljs-title function_">get</span>(<span class="hljs-string">'/api/events'</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> {
+  res.<span class="hljs-title function_">setHeader</span>(<span class="hljs-string">'Content-Type'</span>, <span class="hljs-string">'text/event-stream'</span>);
+  res.<span class="hljs-title function_">setHeader</span>(<span class="hljs-string">'Cache-Control'</span>, <span class="hljs-string">'no-cache'</span>);
+  res.<span class="hljs-title function_">setHeader</span>(<span class="hljs-string">'Connection'</span>, <span class="hljs-string">'keep-alive'</span>);
+
+  <span class="hljs-comment">// 发送事件</span>
+  <span class="hljs-keyword">function</span> <span class="hljs-title function_">sendEvent</span>(<span class="hljs-params">data, event = <span class="hljs-string">'message'</span></span>) {
+    res.<span class="hljs-title function_">write</span>(<span class="hljs-string">`event: <span class="hljs-subst">${event}</span>\n`</span>);
+    res.<span class="hljs-title function_">write</span>(<span class="hljs-string">`data: <span class="hljs-subst">${<span class="hljs-built_in">JSON</span>.stringify(data)}</span>\n\n`</span>);
+  }
+
+  <span class="hljs-title function_">sendEvent</span>({ <span class="hljs-attr">message</span>: <span class="hljs-string">'连接成功'</span> }, <span class="hljs-string">'connected'</span>);
+
+  <span class="hljs-keyword">const</span> interval = <span class="hljs-built_in">setInterval</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-title function_">sendEvent</span>({ <span class="hljs-attr">time</span>: <span class="hljs-keyword">new</span> <span class="hljs-title class_">Date</span>().<span class="hljs-title function_">toISOString</span>() }, <span class="hljs-string">'heartbeat'</span>);
+  }, <span class="hljs-number">5000</span>);
+
+  req.<span class="hljs-title function_">on</span>(<span class="hljs-string">'close'</span>, <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-built_in">clearInterval</span>(interval);
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'SSE 连接关闭'</span>);
+  });
+});
+</code></pre>
+<p>SSE vs WebSocket：SSE 是单向的（服务器到客户端），基于 HTTP，自动重连，更简单。WebSocket 是双向的，独立协议，性能更高，适合需要双向通信的场景（如聊天）。SSE 适用于通知推送、实时数据流、进度更新等单向推送场景。</p>
+<hr></hr>
+<h2 id="十三、微服务架构">十三、微服务架构</h2>
+<blockquote>
+<p><strong>面试题：Node.js 微服务架构有哪些常见模式和注意事项？</strong></p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 服务发现与注册</span>
+<span class="hljs-comment">// 使用 Consul、Eureka 或 Kubernetes Service Discovery</span>
+
+<span class="hljs-comment">// API 网关模式</span>
+<span class="hljs-comment">// 使用 Kong、Nginx 或自建 Express/Fastify 网关</span>
+<span class="hljs-keyword">const</span> gateway = <span class="hljs-title function_">express</span>();
+<span class="hljs-keyword">const</span> { createProxyMiddleware } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http-proxy-middleware'</span>);
+
+gateway.<span class="hljs-title function_">use</span>(<span class="hljs-string">'/api/users'</span>, <span class="hljs-title function_">createProxyMiddleware</span>({
+  <span class="hljs-attr">target</span>: <span class="hljs-string">'http://user-service:3001'</span>,
+  <span class="hljs-attr">changeOrigin</span>: <span class="hljs-literal">true</span>
+}));
+
+gateway.<span class="hljs-title function_">use</span>(<span class="hljs-string">'/api/orders'</span>, <span class="hljs-title function_">createProxyMiddleware</span>({
+  <span class="hljs-attr">target</span>: <span class="hljs-string">'http://order-service:3002'</span>,
+  <span class="hljs-attr">changeOrigin</span>: <span class="hljs-literal">true</span>
+}));
+
+<span class="hljs-comment">// 熔断器模式</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">CircuitBreaker</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'opossum'</span>);
+
+<span class="hljs-keyword">const</span> breaker = <span class="hljs-keyword">new</span> <span class="hljs-title class_">CircuitBreaker</span>(callExternalService, {
+  <span class="hljs-attr">timeout</span>: <span class="hljs-number">3000</span>,         <span class="hljs-comment">// 超时时间</span>
+  <span class="hljs-attr">errorThresholdPercentage</span>: <span class="hljs-number">50</span>,  <span class="hljs-comment">// 错误率阈值</span>
+  <span class="hljs-attr">resetTimeout</span>: <span class="hljs-number">10000</span>    <span class="hljs-comment">// 半开状态等待时间</span>
+});
+
+breaker.<span class="hljs-title function_">on</span>(<span class="hljs-string">'open'</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'熔断器打开'</span>));
+breaker.<span class="hljs-title function_">on</span>(<span class="hljs-string">'halfOpen'</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'熔断器半开'</span>));
+breaker.<span class="hljs-title function_">on</span>(<span class="hljs-string">'close'</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'熔断器关闭'</span>));
+
+breaker.<span class="hljs-title function_">fallback</span>(<span class="hljs-function">() =&gt;</span> ({ <span class="hljs-attr">data</span>: <span class="hljs-string">'降级数据'</span> }));
+<span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> breaker.<span class="hljs-title function_">fire</span>(params);
+</code></pre>
+<hr></hr>
+<h2 id="十四、docker-部署-nodejs-应用">十四、Docker 部署 Node.js 应用</h2>
+<blockquote>
+<p><strong>面试题：如何使用 Docker 部署 Node.js 应用？Dockerfile 有哪些最佳实践？</strong></p>
+</blockquote>
+<pre><code class="lang-dockerfile"><span class="hljs-comment"># 多阶段构建</span>
+<span class="hljs-comment"># Stage 1: 安装依赖</span>
+<span class="hljs-keyword">FROM</span> node:<span class="hljs-number">18</span>-alpine AS deps
+<span class="hljs-keyword">WORKDIR</span><span class="language-bash"> /app</span>
+<span class="hljs-keyword">COPY</span><span class="language-bash"> package.json package-lock.json ./</span>
+<span class="hljs-keyword">RUN</span><span class="language-bash"> npm ci --only=production</span>
+
+<span class="hljs-comment"># Stage 2: 构建</span>
+<span class="hljs-keyword">FROM</span> node:<span class="hljs-number">18</span>-alpine AS builder
+<span class="hljs-keyword">WORKDIR</span><span class="language-bash"> /app</span>
+<span class="hljs-keyword">COPY</span><span class="language-bash"> package.json package-lock.json ./</span>
+<span class="hljs-keyword">RUN</span><span class="language-bash"> npm ci</span>
+<span class="hljs-keyword">COPY</span><span class="language-bash"> . .</span>
+<span class="hljs-keyword">RUN</span><span class="language-bash"> npm run build</span>
+
+<span class="hljs-comment"># Stage 3: 运行</span>
+<span class="hljs-keyword">FROM</span> node:<span class="hljs-number">18</span>-alpine AS runner
+<span class="hljs-keyword">WORKDIR</span><span class="language-bash"> /app</span>
+
+<span class="hljs-keyword">ENV</span> NODE_ENV=production
+
+<span class="hljs-comment"># 创建非 root 用户</span>
+<span class="hljs-keyword">RUN</span><span class="language-bash"> addgroup --system --gid 1001 nodejs \
+    &amp;&amp; adduser --system --uid 1001 nodeuser</span>
+
+<span class="hljs-keyword">COPY</span><span class="language-bash"> --from=deps /app/node_modules ./node_modules</span>
+<span class="hljs-keyword">COPY</span><span class="language-bash"> --from=builder /app/dist ./dist</span>
+<span class="hljs-keyword">COPY</span><span class="language-bash"> package.json ./</span>
+
+<span class="hljs-keyword">USER</span> nodeuser
+<span class="hljs-keyword">EXPOSE</span> <span class="hljs-number">3000</span>
+<span class="hljs-keyword">HEALTHCHECK</span><span class="language-bash"> --interval=30s --<span class="hljs-built_in">timeout</span>=10s --start-period=5s --retries=3 \
+  CMD wget --no-verbose --tries=1 --spider http://localhost:3000/health || <span class="hljs-built_in">exit</span> 1</span>
+
+<span class="hljs-keyword">CMD</span><span class="language-bash"> [<span class="hljs-string">"node"</span>, <span class="hljs-string">"dist/index.js"</span>]</span>
+</code></pre>
+<pre><code class="lang-yaml"><span class="hljs-comment"># docker-compose.yml</span>
+<span class="hljs-attr">version:</span> <span class="hljs-string">'3.8'</span>
+<span class="hljs-attr">services:</span>
+  <span class="hljs-attr">app:</span>
+    <span class="hljs-attr">build:</span> <span class="hljs-string">.</span>
+    <span class="hljs-attr">ports:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">"3000:3000"</span>
+    <span class="hljs-attr">environment:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">NODE_ENV=production</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">DB_HOST=mysql</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">REDIS_HOST=redis</span>
+    <span class="hljs-attr">depends_on:</span>
+      <span class="hljs-attr">mysql:</span>
+        <span class="hljs-attr">condition:</span> <span class="hljs-string">service_healthy</span>
+      <span class="hljs-attr">redis:</span>
+        <span class="hljs-attr">condition:</span> <span class="hljs-string">service_healthy</span>
+    <span class="hljs-attr">restart:</span> <span class="hljs-string">unless-stopped</span>
+
+  <span class="hljs-attr">mysql:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">mysql:8</span>
+    <span class="hljs-attr">environment:</span>
+      <span class="hljs-attr">MYSQL_ROOT_PASSWORD:</span> <span class="hljs-string">password</span>
+      <span class="hljs-attr">MYSQL_DATABASE:</span> <span class="hljs-string">mydb</span>
+    <span class="hljs-attr">volumes:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">mysql_data:/var/lib/mysql</span>
+    <span class="hljs-attr">healthcheck:</span>
+      <span class="hljs-attr">test:</span> [<span class="hljs-string">"CMD"</span>, <span class="hljs-string">"mysqladmin"</span>, <span class="hljs-string">"ping"</span>, <span class="hljs-string">"-h"</span>, <span class="hljs-string">"localhost"</span>]
+      <span class="hljs-attr">interval:</span> <span class="hljs-string">10s</span>
+      <span class="hljs-attr">timeout:</span> <span class="hljs-string">5s</span>
+      <span class="hljs-attr">retries:</span> <span class="hljs-number">5</span>
+
+  <span class="hljs-attr">redis:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">redis:7-alpine</span>
+    <span class="hljs-attr">healthcheck:</span>
+      <span class="hljs-attr">test:</span> [<span class="hljs-string">"CMD"</span>, <span class="hljs-string">"redis-cli"</span>, <span class="hljs-string">"ping"</span>]
+
+<span class="hljs-attr">volumes:</span>
+  <span class="hljs-attr">mysql_data:</span>
+</code></pre>
+<hr></hr>
+<h2 id="十五、pm2-进程管理">十五、PM2 进程管理</h2>
+<blockquote>
+<p><strong>面试题：PM2 有哪些功能？如何在生产环境中使用 PM2？</strong></p>
+</blockquote>
+<pre><code class="lang-bash"><span class="hljs-comment"># 基本命令</span>
+pm2 start app.js                    <span class="hljs-comment"># 启动应用</span>
+pm2 start app.js -i max             <span class="hljs-comment"># cluster 模式，利用所有 CPU</span>
+pm2 start app.js -i 4               <span class="hljs-comment"># 指定 4 个实例</span>
+pm2 start app.js --name my-api      <span class="hljs-comment"># 指定名称</span>
+pm2 start app.js --watch            <span class="hljs-comment"># 文件变化时自动重启</span>
+
+pm2 list                            <span class="hljs-comment"># 查看所有进程</span>
+pm2 monit                           <span class="hljs-comment"># 监控面板</span>
+pm2 logs                            <span class="hljs-comment"># 查看日志</span>
+pm2 logs my-api --lines 100         <span class="hljs-comment"># 查看指定应用的最近 100 行日志</span>
+
+pm2 restart my-api                  <span class="hljs-comment"># 重启</span>
+pm2 reload my-api                   <span class="hljs-comment"># 零停机重启（graceful reload）</span>
+pm2 stop my-api                     <span class="hljs-comment"># 停止</span>
+pm2 delete my-api                   <span class="hljs-comment"># 删除</span>
+
+pm2 save                            <span class="hljs-comment"># 保存进程列表</span>
+pm2 startup                         <span class="hljs-comment"># 设置开机自启</span>
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// ecosystem.config.js（推荐使用配置文件）</span>
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = {
+  <span class="hljs-attr">apps</span>: [{
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'my-api'</span>,
+    <span class="hljs-attr">script</span>: <span class="hljs-string">'dist/index.js'</span>,
+    <span class="hljs-attr">instances</span>: <span class="hljs-string">'max'</span>,           <span class="hljs-comment">// 或具体数字</span>
+    <span class="hljs-attr">exec_mode</span>: <span class="hljs-string">'cluster'</span>,       <span class="hljs-comment">// cluster 模式</span>
+    <span class="hljs-attr">max_memory_restart</span>: <span class="hljs-string">'500M'</span>, <span class="hljs-comment">// 内存超过 500M 自动重启</span>
+    <span class="hljs-attr">env</span>: {
+      <span class="hljs-attr">NODE_ENV</span>: <span class="hljs-string">'development'</span>,
+      <span class="hljs-attr">PORT</span>: <span class="hljs-number">3000</span>
+    },
+    <span class="hljs-attr">env_production</span>: {
+      <span class="hljs-attr">NODE_ENV</span>: <span class="hljs-string">'production'</span>,
+      <span class="hljs-attr">PORT</span>: <span class="hljs-number">3000</span>
+    },
+    <span class="hljs-attr">log_date_format</span>: <span class="hljs-string">'YYYY-MM-DD HH:mm:ss'</span>,
+    <span class="hljs-attr">error_file</span>: <span class="hljs-string">'./logs/error.log'</span>,
+    <span class="hljs-attr">out_file</span>: <span class="hljs-string">'./logs/out.log'</span>,
+    <span class="hljs-attr">merge_logs</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-comment">// 优雅关闭</span>
+    <span class="hljs-attr">kill_timeout</span>: <span class="hljs-number">5000</span>,
+    <span class="hljs-attr">listen_timeout</span>: <span class="hljs-number">10000</span>,
+    <span class="hljs-attr">wait_ready</span>: <span class="hljs-literal">true</span>,           <span class="hljs-comment">// 等待应用发送 ready 信号</span>
+    <span class="hljs-comment">// 自动重启策略</span>
+    <span class="hljs-attr">exp_backoff_restart_delay</span>: <span class="hljs-number">100</span>,
+    <span class="hljs-attr">max_restarts</span>: <span class="hljs-number">10</span>,
+    <span class="hljs-attr">min_uptime</span>: <span class="hljs-string">'10s'</span>,
+  }]
+};
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 在应用中配置优雅关闭</span>
+<span class="hljs-keyword">const</span> server = app.<span class="hljs-title function_">listen</span>(<span class="hljs-variable constant_">PORT</span>, <span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`服务器运行在端口 <span class="hljs-subst">${PORT}</span>`</span>);
+  <span class="hljs-comment">// 通知 PM2 应用已就绪</span>
+  process.<span class="hljs-property">send</span> &amp;&amp; process.<span class="hljs-title function_">send</span>(<span class="hljs-string">'ready'</span>);
+});
+
+process.<span class="hljs-title function_">on</span>(<span class="hljs-string">'SIGINT'</span>, <span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'收到 SIGINT，正在优雅关闭...'</span>);
+  server.<span class="hljs-title function_">close</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'HTTP 服务器已关闭'</span>);
+    <span class="hljs-comment">// 关闭数据库连接等资源</span>
+    process.<span class="hljs-title function_">exit</span>(<span class="hljs-number">0</span>);
+  });
+});
+</code></pre>
+<hr></hr>
+<h2 id="常见面试题汇总">常见面试题汇总</h2>
+<blockquote>
+<p><strong>Q：Node.js 生产环境部署的最佳实践有哪些？</strong></p>
+</blockquote>
+<ol>
+<li>使用 PM2 或容器化（Docker + Kubernetes）管理进程；2. 设置 <code>NODE_ENV=production</code>（Express 性能提升 3 倍）；3. 使用反向代理（Nginx）处理静态文件、SSL 终止、负载均衡；4. 实现健康检查端点；5. 结构化日志（JSON 格式，使用 pino）；6. 监控和告警（APM 工具如 Datadog、New Relic）；7. 优雅关闭处理；8. 环境变量管理敏感配置；9. 使用 HTTPS；10. 定期更新依赖和安全审计。</li>
+</ol>
+<blockquote>
+<p><strong>Q：如何防止 Node.js 应用被 DDoS 攻击？</strong></p>
+</blockquote>
+<ol>
+<li>使用 Rate Limiting 限制请求频率；2. 使用 Nginx 或 CDN 作为前置代理吸收流量；3. 设置请求体大小限制；4. 使用 helmet 设置安全头；5. 配置超时（请求超时、Keep-Alive 超时）；6. 使用云服务商的 DDoS 防护（如 AWS Shield、Cloudflare）；7. 限制并发连接数。</li>
+</ol>
+<blockquote>
+<p><strong>Q：如何实现 Node.js 的零停机部署？</strong></p>
+</blockquote>
+<ol>
+<li>PM2 的 <code>pm2 reload</code> 命令支持零停机重启（逐个重启 cluster 实例）；2. Kubernetes 的 Rolling Update 策略；3. 蓝绿部署：同时运行两个版本，切换流量；4. 金丝雀发布：先将少量流量导向新版本，逐步增加。关键是应用要支持优雅关闭——收到终止信号后停止接受新请求，等待现有请求完成后再退出。</li>
+</ol>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="database.html" class="navigation navigation-prev " aria-label="Previous page: 数据库操作">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../golang/basics.html" class="navigation navigation-next " aria-label="Next page: Go语言基础">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"最佳实践与进阶","level":"3.6","depth":1,"next":{"title":"Go语言基础","level":"4.1","depth":1,"path":"golang/basics.md","ref":"golang/basics.md","articles":[]},"previous":{"title":"数据库操作","level":"3.5","depth":1,"path":"nodejs/database.md","ref":"nodejs/database.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"nodejs/practice.md","mtime":"2026-03-31T06:35:11.839Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

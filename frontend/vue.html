@@ -1,0 +1,1647 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Vue · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="engineering.html" />
+    
+    
+    <link rel="prev" href="react.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="html-css.html">
+            
+                <a href="html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="javascript.html">
+            
+                <a href="javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="typescript.html">
+            
+                <a href="typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="browser.html">
+            
+                <a href="browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="network.html">
+            
+                <a href="network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="react.html">
+            
+                <a href="react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.7" data-path="vue.html">
+            
+                <a href="vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="engineering.html">
+            
+                <a href="engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="performance.html">
+            
+                <a href="performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="security.html">
+            
+                <a href="security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../nodejs/basics.html">
+            
+                <a href="../nodejs/basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../nodejs/event-loop.html">
+            
+                <a href="../nodejs/event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../nodejs/stream.html">
+            
+                <a href="../nodejs/stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../nodejs/frameworks.html">
+            
+                <a href="../nodejs/frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../nodejs/database.html">
+            
+                <a href="../nodejs/database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../nodejs/practice.html">
+            
+                <a href="../nodejs/practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../golang/basics.html">
+            
+                <a href="../golang/basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../golang/concurrency.html">
+            
+                <a href="../golang/concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../golang/memory.html">
+            
+                <a href="../golang/memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../golang/web-framework.html">
+            
+                <a href="../golang/web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../golang/database-design.html">
+            
+                <a href="../golang/database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../golang/testing-practice.html">
+            
+                <a href="../golang/testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../agent/llm-basics.html">
+            
+                <a href="../agent/llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../agent/prompt-engineering.html">
+            
+                <a href="../agent/prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../agent/rag.html">
+            
+                <a href="../agent/rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../agent/agent-architecture.html">
+            
+                <a href="../agent/agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../agent/tool-calling.html">
+            
+                <a href="../agent/tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../agent/practice.html">
+            
+                <a href="../agent/practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Vue</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="vue-面试指南">Vue 面试指南</h1>
+<h2 id="1-vue2-与-vue3-的核心区别">1. Vue2 与 Vue3 的核心区别</h2>
+<blockquote>
+<p>面试题：Vue2 和 Vue3 在响应式原理上有什么本质区别？</p>
+</blockquote>
+<p><strong>Vue2 响应式原理 — Object.defineProperty</strong></p>
+<p>Vue2 使用 <code>Object.defineProperty</code> 对数据对象的每个属性进行劫持，通过 getter 收集依赖，通过 setter 触发更新。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Vue2 响应式简化实现</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">defineReactive</span>(<span class="hljs-params">obj, key, val</span>) {
+  <span class="hljs-keyword">const</span> dep = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Dep</span>();
+  <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">defineProperty</span>(obj, key, {
+    <span class="hljs-title function_">get</span>(<span class="hljs-params"></span>) {
+      <span class="hljs-keyword">if</span> (<span class="hljs-title class_">Dep</span>.<span class="hljs-property">target</span>) {
+        dep.<span class="hljs-title function_">depend</span>(); <span class="hljs-comment">// 收集依赖</span>
+      }
+      <span class="hljs-keyword">return</span> val;
+    },
+    <span class="hljs-title function_">set</span>(<span class="hljs-params">newVal</span>) {
+      <span class="hljs-keyword">if</span> (newVal === val) <span class="hljs-keyword">return</span>;
+      val = newVal;
+      dep.<span class="hljs-title function_">notify</span>(); <span class="hljs-comment">// 通知更新</span>
+    }
+  });
+}
+</code></pre>
+<p>Vue2 的局限性：</p>
+<ul>
+<li>无法检测对象属性的新增和删除（需要 <code>Vue.set</code> / <code>Vue.delete</code>）</li>
+<li>无法检测数组索引和长度的变化（需要重写数组方法）</li>
+<li>初始化时需要递归遍历所有属性，性能开销大</li>
+</ul>
+<p><strong>Vue3 响应式原理 — Proxy / Reflect</strong></p>
+<p>Vue3 使用 ES6 的 <code>Proxy</code> 对整个对象进行代理，配合 <code>Reflect</code> 完成操作转发。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Vue3 响应式简化实现</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">reactive</span>(<span class="hljs-params">target</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Proxy</span>(target, {
+    <span class="hljs-title function_">get</span>(<span class="hljs-params">target, key, receiver</span>) {
+      <span class="hljs-title function_">track</span>(target, key); <span class="hljs-comment">// 依赖追踪</span>
+      <span class="hljs-keyword">const</span> result = <span class="hljs-title class_">Reflect</span>.<span class="hljs-title function_">get</span>(target, key, receiver);
+      <span class="hljs-keyword">if</span> (<span class="hljs-title function_">isObject</span>(result)) {
+        <span class="hljs-keyword">return</span> <span class="hljs-title function_">reactive</span>(result); <span class="hljs-comment">// 惰性递归</span>
+      }
+      <span class="hljs-keyword">return</span> result;
+    },
+    <span class="hljs-title function_">set</span>(<span class="hljs-params">target, key, value, receiver</span>) {
+      <span class="hljs-keyword">const</span> oldValue = target[key];
+      <span class="hljs-keyword">const</span> result = <span class="hljs-title class_">Reflect</span>.<span class="hljs-title function_">set</span>(target, key, value, receiver);
+      <span class="hljs-keyword">if</span> (oldValue !== value) {
+        <span class="hljs-title function_">trigger</span>(target, key); <span class="hljs-comment">// 触发更新</span>
+      }
+      <span class="hljs-keyword">return</span> result;
+    },
+    <span class="hljs-title function_">deleteProperty</span>(<span class="hljs-params">target, key</span>) {
+      <span class="hljs-keyword">const</span> result = <span class="hljs-title class_">Reflect</span>.<span class="hljs-title function_">deleteProperty</span>(target, key);
+      <span class="hljs-title function_">trigger</span>(target, key);
+      <span class="hljs-keyword">return</span> result;
+    }
+  });
+}
+</code></pre>
+<p>Vue3 的优势：</p>
+<ul>
+<li>可以检测属性的新增、删除</li>
+<li>可以检测数组索引和长度变化</li>
+<li>惰性递归，只在访问时才代理嵌套对象，初始化性能更好</li>
+<li>支持 Map、Set、WeakMap、WeakSet 等集合类型</li>
+</ul>
+<p><strong>其他核心区别</strong></p>
+<table>
+<thead>
+<tr>
+<th>对比项</th>
+<th>Vue2</th>
+<th>Vue3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API 风格</td>
+<td>Options API</td>
+<td>Composition API + Options API</td>
+</tr>
+<tr>
+<td>生命周期</td>
+<td>beforeCreate/created 等</td>
+<td>setup() + onMounted 等</td>
+</tr>
+<tr>
+<td>根实例</td>
+<td>new Vue()</td>
+<td>createApp()</td>
+</tr>
+<tr>
+<td>Fragment</td>
+<td>不支持，需单根节点</td>
+<td>支持多根节点</td>
+</tr>
+<tr>
+<td>Teleport</td>
+<td>不支持</td>
+<td>内置支持</td>
+</tr>
+<tr>
+<td>Suspense</td>
+<td>不支持</td>
+<td>实验性支持</td>
+</tr>
+<tr>
+<td>TypeScript</td>
+<td>支持较弱</td>
+<td>原生友好</td>
+</tr>
+<tr>
+<td>Tree-shaking</td>
+<td>不支持</td>
+<td>完全支持</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="2-虚拟-dom-与-diff-算法">2. 虚拟 DOM 与 Diff 算法</h2>
+<blockquote>
+<p>面试题：Vue 的虚拟 DOM 是什么？Diff 算法是如何工作的？</p>
+</blockquote>
+<p><strong>虚拟 DOM（Virtual DOM）</strong></p>
+<p>虚拟 DOM 是用 JavaScript 对象来描述真实 DOM 结构的一种抽象表示。每次状态变化时，Vue 会生成新的虚拟 DOM 树，通过 Diff 算法比较新旧两棵树的差异，最终只将必要的变更应用到真实 DOM 上。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// VNode 结构示例</span>
+<span class="hljs-keyword">const</span> vnode = {
+  <span class="hljs-attr">type</span>: <span class="hljs-string">'div'</span>,
+  <span class="hljs-attr">props</span>: { <span class="hljs-attr">id</span>: <span class="hljs-string">'app'</span>, <span class="hljs-attr">class</span>: <span class="hljs-string">'container'</span> },
+  <span class="hljs-attr">children</span>: [
+    { <span class="hljs-attr">type</span>: <span class="hljs-string">'h1'</span>, <span class="hljs-attr">props</span>: <span class="hljs-literal">null</span>, <span class="hljs-attr">children</span>: <span class="hljs-string">'Hello'</span> },
+    { <span class="hljs-attr">type</span>: <span class="hljs-string">'p'</span>, <span class="hljs-attr">props</span>: <span class="hljs-literal">null</span>, <span class="hljs-attr">children</span>: <span class="hljs-string">'World'</span> }
+  ]
+};
+</code></pre>
+<p><strong>Vue2 Diff — 双端比较</strong></p>
+<p>Vue2 采用双端比较算法，同时从新旧子节点列表的两端开始对比，共有四种比较方式：</p>
+<ol>
+<li>旧头 vs 新头</li>
+<li>旧尾 vs 新尾</li>
+<li>旧头 vs 新尾</li>
+<li>旧尾 vs 新头</li>
+</ol>
+<p>如果四种都不匹配，则用 key 在旧节点中查找。</p>
+<p><strong>Vue3 Diff — 最长递增子序列（LIS）</strong></p>
+<p>Vue3 在双端比较的基础上引入了最长递增子序列（Longest Increasing Subsequence）优化：</p>
+<ol>
+<li>先处理前置和后置相同节点（预处理）</li>
+<li>对于中间乱序部分，建立新节点 key → index 映射</li>
+<li>计算最长递增子序列，最大限度减少 DOM 移动操作</li>
+</ol>
+<pre><code class="lang-javascript"><span class="hljs-comment">// LIS 核心思想：找到不需要移动的最长序列</span>
+<span class="hljs-comment">// 假设旧序列索引为 [2, 3, 1, 5, 4]</span>
+<span class="hljs-comment">// LIS = [2, 3, 5]，只需移动不在 LIS 中的节点</span>
+</code></pre>
+<p><strong>为什么需要 key？</strong></p>
+<ul>
+<li>key 是 VNode 的唯一标识，帮助 Diff 算法准确识别节点</li>
+<li>没有 key 时，Vue 使用就地复用策略，可能导致状态错乱</li>
+<li>不建议用 index 作为 key，因为列表变化时 index 会变化，导致错误复用</li>
+</ul>
+<hr></hr>
+<h2 id="3-composition-api">3. Composition API</h2>
+<blockquote>
+<p>面试题：Composition API 相比 Options API 有什么优势？</p>
+</blockquote>
+<p><strong>Options API 的问题</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Options API 中，同一逻辑关注点被分散到不同选项中</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> { <span class="hljs-attr">count</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">user</span>: <span class="hljs-literal">null</span> };
+  },
+  <span class="hljs-attr">computed</span>: {
+    <span class="hljs-title function_">doubleCount</span>(<span class="hljs-params"></span>) { <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">count</span> * <span class="hljs-number">2</span>; }
+  },
+  <span class="hljs-attr">methods</span>: {
+    <span class="hljs-title function_">increment</span>(<span class="hljs-params"></span>) { <span class="hljs-variable language_">this</span>.<span class="hljs-property">count</span>++; },
+    <span class="hljs-title function_">fetchUser</span>(<span class="hljs-params"></span>) { <span class="hljs-comment">/* ... */</span> }
+  },
+  <span class="hljs-title function_">mounted</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">fetchUser</span>();
+  }
+};
+</code></pre>
+<p><strong>Composition API 的优势</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Composition API：按逻辑关注点组织代码</span>
+<span class="hljs-keyword">import</span> { ref, computed, onMounted } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
+
+<span class="hljs-comment">// 计数逻辑</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">useCounter</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> count = <span class="hljs-title function_">ref</span>(<span class="hljs-number">0</span>);
+  <span class="hljs-keyword">const</span> doubleCount = <span class="hljs-title function_">computed</span>(<span class="hljs-function">() =&gt;</span> count.<span class="hljs-property">value</span> * <span class="hljs-number">2</span>);
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">increment</span> = (<span class="hljs-params"></span>) =&gt; count.<span class="hljs-property">value</span>++;
+  <span class="hljs-keyword">return</span> { count, doubleCount, increment };
+}
+
+<span class="hljs-comment">// 用户逻辑</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">useUser</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> user = <span class="hljs-title function_">ref</span>(<span class="hljs-literal">null</span>);
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">fetchUser</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) =&gt; {
+    user.<span class="hljs-property">value</span> = <span class="hljs-keyword">await</span> api.<span class="hljs-title function_">getUser</span>();
+  };
+  <span class="hljs-title function_">onMounted</span>(fetchUser);
+  <span class="hljs-keyword">return</span> { user, fetchUser };
+}
+
+<span class="hljs-comment">// 组合使用</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-title function_">setup</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">const</span> { count, doubleCount, increment } = <span class="hljs-title function_">useCounter</span>();
+    <span class="hljs-keyword">const</span> { user } = <span class="hljs-title function_">useUser</span>();
+    <span class="hljs-keyword">return</span> { count, doubleCount, increment, user };
+  }
+};
+</code></pre>
+<p>核心优势：</p>
+<ol>
+<li><strong>逻辑复用</strong>：通过 composables（组合函数）替代 mixins，无命名冲突、数据来源清晰</li>
+<li><strong>代码组织</strong>：相关逻辑集中在一起，而非分散到 data/methods/computed 等选项中</li>
+<li><strong>TypeScript 支持</strong>：天然支持类型推导，无需额外声明</li>
+<li><strong>Tree-shaking</strong>：按需引入 API，未使用的功能不会被打包</li>
+</ol>
+<hr></hr>
+<h2 id="4-组件通信方式">4. 组件通信方式</h2>
+<blockquote>
+<p>面试题：Vue 中有哪些组件通信方式？</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>通信方式</th>
+<th>适用场景</th>
+<th>Vue 版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>props / emit</td>
+<td>父子组件</td>
+<td>2 &amp; 3</td>
+</tr>
+<tr>
+<td>v-model</td>
+<td>父子双向绑定</td>
+<td>2 &amp; 3</td>
+</tr>
+<tr>
+<td>provide / inject</td>
+<td>跨层级组件</td>
+<td>2 &amp; 3</td>
+</tr>
+<tr>
+<td>EventBus</td>
+<td>任意组件</td>
+<td>2（3 中需第三方库）</td>
+</tr>
+<tr>
+<td>Vuex / Pinia</td>
+<td>全局状态管理</td>
+<td>2 &amp; 3</td>
+</tr>
+<tr>
+<td>$refs</td>
+<td>父访问子实例</td>
+<td>2 &amp; 3</td>
+</tr>
+<tr>
+<td>$attrs / $listeners</td>
+<td>属性透传</td>
+<td>2（3 中合并为 $attrs）</td>
+</tr>
+<tr>
+<td>expose / defineExpose</td>
+<td>子暴露给父</td>
+<td>3</td>
+</tr>
+<tr>
+<td>slot 作用域插槽</td>
+<td>子向父传递渲染数据</td>
+<td>2 &amp; 3</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Vue3 provide / inject 示例</span>
+<span class="hljs-comment">// 祖先组件</span>
+<span class="hljs-keyword">import</span> { provide, ref } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
+<span class="hljs-keyword">const</span> theme = <span class="hljs-title function_">ref</span>(<span class="hljs-string">'dark'</span>);
+<span class="hljs-title function_">provide</span>(<span class="hljs-string">'theme'</span>, theme);
+
+<span class="hljs-comment">// 后代组件</span>
+<span class="hljs-keyword">import</span> { inject } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
+<span class="hljs-keyword">const</span> theme = <span class="hljs-title function_">inject</span>(<span class="hljs-string">'theme'</span>, <span class="hljs-string">'light'</span>); <span class="hljs-comment">// 第二个参数为默认值</span>
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Vue3 defineExpose 示例</span>
+<span class="hljs-comment">// 子组件</span>
+&lt;script setup&gt;
+<span class="hljs-keyword">import</span> { ref } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
+<span class="hljs-keyword">const</span> count = <span class="hljs-title function_">ref</span>(<span class="hljs-number">0</span>);
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">reset</span> = (<span class="hljs-params"></span>) =&gt; { count.<span class="hljs-property">value</span> = <span class="hljs-number">0</span>; };
+<span class="hljs-title function_">defineExpose</span>({ count, reset });
+&lt;/script&gt;
+
+<span class="hljs-comment">// 父组件</span>
+<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ChildComponent</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">"childRef"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span></span>
+<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">setup</span>&gt;</span><span class="language-javascript">
+<span class="hljs-keyword">import</span> { ref, onMounted } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
+<span class="hljs-keyword">const</span> childRef = <span class="hljs-title function_">ref</span>(<span class="hljs-literal">null</span>);
+<span class="hljs-title function_">onMounted</span>(<span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(childRef.<span class="hljs-property">value</span>.<span class="hljs-property">count</span>);
+  childRef.<span class="hljs-property">value</span>.<span class="hljs-title function_">reset</span>();
+});
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+</code></pre>
+<hr></hr>
+<h2 id="5-生命周期钩子">5. 生命周期钩子</h2>
+<blockquote>
+<p>面试题：Vue3 的生命周期有哪些？与 Vue2 有什么对应关系？</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Vue2（Options API）</th>
+<th>Vue3（Options API）</th>
+<th>Vue3（Composition API）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>beforeCreate</td>
+<td>beforeCreate</td>
+<td>setup()</td>
+</tr>
+<tr>
+<td>created</td>
+<td>created</td>
+<td>setup()</td>
+</tr>
+<tr>
+<td>beforeMount</td>
+<td>beforeMount</td>
+<td>onBeforeMount</td>
+</tr>
+<tr>
+<td>mounted</td>
+<td>mounted</td>
+<td>onMounted</td>
+</tr>
+<tr>
+<td>beforeUpdate</td>
+<td>beforeUpdate</td>
+<td>onBeforeUpdate</td>
+</tr>
+<tr>
+<td>updated</td>
+<td>updated</td>
+<td>onUpdated</td>
+</tr>
+<tr>
+<td>beforeDestroy</td>
+<td>beforeUnmount</td>
+<td>onBeforeUnmount</td>
+</tr>
+<tr>
+<td>destroyed</td>
+<td>unmounted</td>
+<td>onUnmounted</td>
+</tr>
+<tr>
+<td>—</td>
+<td>—</td>
+<td>onActivated</td>
+</tr>
+<tr>
+<td>—</td>
+<td>—</td>
+<td>onDeactivated</td>
+</tr>
+<tr>
+<td>errorCaptured</td>
+<td>errorCaptured</td>
+<td>onErrorCaptured</td>
+</tr>
+</tbody>
+</table>
+<p><strong>执行顺序（父子组件）</strong></p>
+<p>挂载阶段：父 beforeMount → 子 beforeMount → 子 mounted → 父 mounted</p>
+<p>更新阶段：父 beforeUpdate → 子 beforeUpdate → 子 updated → 父 updated</p>
+<p>卸载阶段：父 beforeUnmount → 子 beforeUnmount → 子 unmounted → 父 unmounted</p>
+<hr></hr>
+<h2 id="6-computed、watch-与-watcheffect">6. computed、watch 与 watchEffect</h2>
+<blockquote>
+<p>面试题：computed、watch 和 watchEffect 有什么区别？</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> { ref, computed, watch, watchEffect } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
+
+<span class="hljs-keyword">const</span> firstName = <span class="hljs-title function_">ref</span>(<span class="hljs-string">'张'</span>);
+<span class="hljs-keyword">const</span> lastName = <span class="hljs-title function_">ref</span>(<span class="hljs-string">'三'</span>);
+
+<span class="hljs-comment">// computed：有缓存，依赖不变不会重新计算</span>
+<span class="hljs-keyword">const</span> fullName = <span class="hljs-title function_">computed</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-string">`<span class="hljs-subst">${firstName.value}</span><span class="hljs-subst">${lastName.value}</span>`</span>);
+
+<span class="hljs-comment">// watch：明确指定侦听源，可获取新旧值，默认惰性执行</span>
+<span class="hljs-title function_">watch</span>(firstName, <span class="hljs-function">(<span class="hljs-params">newVal, oldVal</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`姓从 <span class="hljs-subst">${oldVal}</span> 变为 <span class="hljs-subst">${newVal}</span>`</span>);
+});
+
+<span class="hljs-comment">// watch 侦听多个源</span>
+<span class="hljs-title function_">watch</span>([firstName, lastName], <span class="hljs-function">(<span class="hljs-params">[newFirst, newLast], [oldFirst, oldLast]</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'姓名变化'</span>);
+});
+
+<span class="hljs-comment">// watchEffect：自动收集依赖，立即执行，无法获取旧值</span>
+<span class="hljs-title function_">watchEffect</span>(<span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`当前姓名：<span class="hljs-subst">${firstName.value}</span><span class="hljs-subst">${lastName.value}</span>`</span>);
+});
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>computed</th>
+<th>watch</th>
+<th>watchEffect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>返回值</td>
+<td>有（计算结果）</td>
+<td>无</td>
+<td>无</td>
+</tr>
+<tr>
+<td>缓存</td>
+<td>有</td>
+<td>无</td>
+<td>无</td>
+</tr>
+<tr>
+<td>惰性</td>
+<td>是（访问时才计算）</td>
+<td>是（默认）</td>
+<td>否（立即执行）</td>
+</tr>
+<tr>
+<td>旧值</td>
+<td>不提供</td>
+<td>提供</td>
+<td>不提供</td>
+</tr>
+<tr>
+<td>依赖声明</td>
+<td>自动</td>
+<td>手动指定</td>
+<td>自动收集</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="7-vue-router">7. Vue Router</h2>
+<blockquote>
+<p>面试题：Vue Router 的导航守卫有哪些？路由懒加载如何实现？</p>
+</blockquote>
+<p><strong>导航守卫</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> { createRouter, createWebHistory } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue-router'</span>;
+
+<span class="hljs-keyword">const</span> router = <span class="hljs-title function_">createRouter</span>({
+  <span class="hljs-attr">history</span>: <span class="hljs-title function_">createWebHistory</span>(),
+  <span class="hljs-attr">routes</span>: [
+    {
+      <span class="hljs-attr">path</span>: <span class="hljs-string">'/dashboard'</span>,
+      <span class="hljs-attr">component</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">'./views/Dashboard.vue'</span>), <span class="hljs-comment">// 路由懒加载</span>
+      <span class="hljs-attr">meta</span>: { <span class="hljs-attr">requiresAuth</span>: <span class="hljs-literal">true</span> },
+      <span class="hljs-attr">beforeEnter</span>: <span class="hljs-function">(<span class="hljs-params">to, <span class="hljs-keyword">from</span></span>) =&gt;</span> {
+        <span class="hljs-comment">// 路由独享守卫</span>
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'进入 dashboard 前'</span>);
+      }
+    }
+  ]
+});
+
+<span class="hljs-comment">// 全局前置守卫</span>
+router.<span class="hljs-title function_">beforeEach</span>(<span class="hljs-function">(<span class="hljs-params">to, <span class="hljs-keyword">from</span>, next</span>) =&gt;</span> {
+  <span class="hljs-keyword">if</span> (to.<span class="hljs-property">meta</span>.<span class="hljs-property">requiresAuth</span> &amp;&amp; !<span class="hljs-title function_">isAuthenticated</span>()) {
+    <span class="hljs-title function_">next</span>(<span class="hljs-string">'/login'</span>);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-title function_">next</span>();
+  }
+});
+
+<span class="hljs-comment">// 全局后置钩子</span>
+router.<span class="hljs-title function_">afterEach</span>(<span class="hljs-function">(<span class="hljs-params">to, <span class="hljs-keyword">from</span></span>) =&gt;</span> {
+  <span class="hljs-variable language_">document</span>.<span class="hljs-property">title</span> = to.<span class="hljs-property">meta</span>.<span class="hljs-property">title</span> || <span class="hljs-string">'默认标题'</span>;
+});
+</code></pre>
+<p><strong>完整的导航解析流程</strong>：</p>
+<ol>
+<li>导航被触发</li>
+<li>在失活的组件里调用 <code>onBeforeRouteLeave</code></li>
+<li>调用全局的 <code>beforeEach</code> 守卫</li>
+<li>在重用的组件里调用 <code>onBeforeRouteUpdate</code></li>
+<li>在路由配置里调用 <code>beforeEnter</code></li>
+<li>解析异步路由组件</li>
+<li>在被激活的组件里调用 <code>onBeforeRouteEnter</code>（Vue2 仅 Options API）</li>
+<li>调用全局的 <code>beforeResolve</code> 守卫</li>
+<li>导航被确认</li>
+<li>调用全局的 <code>afterEach</code> 钩子</li>
+<li>触发 DOM 更新</li>
+<li>调用 <code>onBeforeRouteEnter</code> 中 next 的回调函数（Vue2）</li>
+</ol>
+<p><strong>hash 模式 vs history 模式</strong></p>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>hash 模式</th>
+<th>history 模式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>URL 格式</td>
+<td><code>/#/path</code></td>
+<td><code>/path</code></td>
+</tr>
+<tr>
+<td>原理</td>
+<td>hashchange 事件</td>
+<td>History API (pushState/replaceState)</td>
+</tr>
+<tr>
+<td>服务器配置</td>
+<td>不需要</td>
+<td>需要配置 fallback</td>
+</tr>
+<tr>
+<td>SEO</td>
+<td>不友好</td>
+<td>友好</td>
+</tr>
+<tr>
+<td>兼容性</td>
+<td>好</td>
+<td>IE10+</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="8-pinia-状态管理">8. Pinia 状态管理</h2>
+<blockquote>
+<p>面试题：Pinia 与 Vuex 有什么区别？</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Pinia Store 定义</span>
+<span class="hljs-keyword">import</span> { defineStore } <span class="hljs-keyword">from</span> <span class="hljs-string">'pinia'</span>;
+
+<span class="hljs-comment">// Option Store 风格</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> useCounterStore = <span class="hljs-title function_">defineStore</span>(<span class="hljs-string">'counter'</span>, {
+  <span class="hljs-attr">state</span>: <span class="hljs-function">() =&gt;</span> ({ <span class="hljs-attr">count</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">'Pinia'</span> }),
+  <span class="hljs-attr">getters</span>: {
+    <span class="hljs-attr">doubleCount</span>: <span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> state.<span class="hljs-property">count</span> * <span class="hljs-number">2</span>,
+  },
+  <span class="hljs-attr">actions</span>: {
+    <span class="hljs-title function_">increment</span>(<span class="hljs-params"></span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">count</span>++;
+    },
+    <span class="hljs-keyword">async</span> <span class="hljs-title function_">fetchData</span>(<span class="hljs-params"></span>) {
+      <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> api.<span class="hljs-title function_">getData</span>();
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = data.<span class="hljs-property">name</span>;
+    }
+  }
+});
+
+<span class="hljs-comment">// Setup Store 风格（推荐）</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> useCounterStore = <span class="hljs-title function_">defineStore</span>(<span class="hljs-string">'counter'</span>, <span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-keyword">const</span> count = <span class="hljs-title function_">ref</span>(<span class="hljs-number">0</span>);
+  <span class="hljs-keyword">const</span> name = <span class="hljs-title function_">ref</span>(<span class="hljs-string">'Pinia'</span>);
+  <span class="hljs-keyword">const</span> doubleCount = <span class="hljs-title function_">computed</span>(<span class="hljs-function">() =&gt;</span> count.<span class="hljs-property">value</span> * <span class="hljs-number">2</span>);
+
+  <span class="hljs-keyword">function</span> <span class="hljs-title function_">increment</span>(<span class="hljs-params"></span>) {
+    count.<span class="hljs-property">value</span>++;
+  }
+
+  <span class="hljs-keyword">return</span> { count, name, doubleCount, increment };
+});
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>对比项</th>
+<th>Vuex</th>
+<th>Pinia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mutations</td>
+<td>需要</td>
+<td>去掉了</td>
+</tr>
+<tr>
+<td>modules</td>
+<td>嵌套模块</td>
+<td>扁平化 Store</td>
+</tr>
+<tr>
+<td>TypeScript</td>
+<td>支持弱</td>
+<td>完美支持</td>
+</tr>
+<tr>
+<td>体积</td>
+<td>较大</td>
+<td>~1KB</td>
+</tr>
+<tr>
+<td>DevTools</td>
+<td>支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>代码分割</td>
+<td>不支持</td>
+<td>自动</td>
+</tr>
+<tr>
+<td>Composition API</td>
+<td>适配弱</td>
+<td>原生支持</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="9-模板编译原理">9. 模板编译原理</h2>
+<blockquote>
+<p>面试题：Vue 的模板编译过程是怎样的？</p>
+</blockquote>
+<p>Vue 模板编译分为三个阶段：</p>
+<ol>
+<li><strong>解析（Parse）</strong>：将模板字符串解析为 AST（抽象语法树）</li>
+<li><strong>转换/优化（Transform/Optimize）</strong>：对 AST 进行静态标记和优化</li>
+<li><strong>代码生成（Generate）</strong>：将优化后的 AST 生成 render 函数代码</li>
+</ol>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 模板</span>
+<span class="hljs-comment">// &lt;div id="app"&gt;</span>
+<span class="hljs-comment">//   &lt;p&gt;{{ message }}&lt;/p&gt;</span>
+<span class="hljs-comment">//   &lt;span&gt;静态文本&lt;/span&gt;</span>
+<span class="hljs-comment">// &lt;/div&gt;</span>
+
+<span class="hljs-comment">// 编译后的 render 函数（简化）</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">render</span>(<span class="hljs-params">_ctx</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-title function_">h</span>(<span class="hljs-string">'div'</span>, { <span class="hljs-attr">id</span>: <span class="hljs-string">'app'</span> }, [
+    <span class="hljs-title function_">h</span>(<span class="hljs-string">'p'</span>, <span class="hljs-literal">null</span>, _ctx.<span class="hljs-property">message</span>),    <span class="hljs-comment">// 动态节点</span>
+    <span class="hljs-title function_">h</span>(<span class="hljs-string">'span'</span>, <span class="hljs-literal">null</span>, <span class="hljs-string">'静态文本'</span>)     <span class="hljs-comment">// 静态节点，会被提升</span>
+  ]);
+}
+</code></pre>
+<hr></hr>
+<h2 id="10-keep-alive-缓存">10. keep-alive 缓存</h2>
+<blockquote>
+<p>面试题：keep-alive 的原理是什么？如何控制缓存？</p>
+</blockquote>
+<p><code>keep-alive</code> 是 Vue 内置的抽象组件，用于缓存不活跃的组件实例而不是销毁它们。</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- 基础用法 --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">keep-alive</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">component</span> <span class="hljs-attr">:is</span>=<span class="hljs-string">"currentComponent"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">keep-alive</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- include / exclude 控制 --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">keep-alive</span> <span class="hljs-attr">:include</span>=<span class="hljs-string">"['ComponentA', 'ComponentB']"</span> <span class="hljs-attr">:exclude</span>=<span class="hljs-string">"['ComponentC']"</span> <span class="hljs-attr">:max</span>=<span class="hljs-string">"10"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">router-view</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">keep-alive</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">setup</span>&gt;</span><span class="language-javascript">
+<span class="hljs-keyword">import</span> { onActivated, onDeactivated } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
+
+<span class="hljs-comment">// 缓存组件特有的生命周期</span>
+<span class="hljs-title function_">onActivated</span>(<span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'组件被激活（从缓存恢复）'</span>);
+});
+
+<span class="hljs-title function_">onDeactivated</span>(<span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'组件被停用（进入缓存）'</span>);
+});
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p><strong>缓存策略 — LRU（最近最少使用）</strong></p>
+<p><code>keep-alive</code> 内部使用 LRU 缓存策略。当缓存数量超过 <code>max</code> 限制时，会销毁最近最久未使用的组件实例。</p>
+<hr></hr>
+<h2 id="11-nexttick-原理">11. nextTick 原理</h2>
+<blockquote>
+<p>面试题：Vue.nextTick 的实现原理是什么？</p>
+</blockquote>
+<p><code>nextTick</code> 用于在下次 DOM 更新循环结束之后执行延迟回调。Vue 的响应式更新是异步的，数据变化后 DOM 不会立即更新，而是将更新放入队列，在同一事件循环的微任务阶段统一执行。</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> { ref, nextTick } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
+
+<span class="hljs-keyword">const</span> count = <span class="hljs-title function_">ref</span>(<span class="hljs-number">0</span>);
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">increment</span>(<span class="hljs-params"></span>) {
+  count.<span class="hljs-property">value</span>++;
+  <span class="hljs-comment">// DOM 尚未更新</span>
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'count'</span>).<span class="hljs-property">textContent</span>); <span class="hljs-comment">// 旧值</span>
+
+  <span class="hljs-keyword">await</span> <span class="hljs-title function_">nextTick</span>();
+  <span class="hljs-comment">// DOM 已更新</span>
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'count'</span>).<span class="hljs-property">textContent</span>); <span class="hljs-comment">// 新值</span>
+}
+</code></pre>
+<p><strong>nextTick 的降级策略</strong>（Vue2）：</p>
+<ol>
+<li><code>Promise.then</code>（微任务）</li>
+<li><code>MutationObserver</code>（微任务）</li>
+<li><code>setImmediate</code>（宏任务，仅 IE/Node）</li>
+<li><code>setTimeout(fn, 0)</code>（宏任务，兜底）</li>
+</ol>
+<p>Vue3 中统一使用 <code>Promise.then</code> 实现。</p>
+<hr></hr>
+<h2 id="12-vue3-编译优化">12. Vue3 编译优化</h2>
+<blockquote>
+<p>面试题：Vue3 做了哪些编译优化？</p>
+</blockquote>
+<p><strong>1. 静态提升（Static Hoisting）</strong></p>
+<p>将静态节点提升到 render 函数之外，避免每次渲染重复创建。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 编译前</span>
+<span class="hljs-comment">// &lt;div&gt;</span>
+<span class="hljs-comment">//   &lt;p&gt;静态内容&lt;/p&gt;</span>
+<span class="hljs-comment">//   &lt;p&gt;{{ dynamic }}&lt;/p&gt;</span>
+<span class="hljs-comment">// &lt;/div&gt;</span>
+
+<span class="hljs-comment">// 编译后（静态节点被提升）</span>
+<span class="hljs-keyword">const</span> _hoisted_1 = <span class="hljs-title function_">h</span>(<span class="hljs-string">'p'</span>, <span class="hljs-literal">null</span>, <span class="hljs-string">'静态内容'</span>);
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">render</span>(<span class="hljs-params">_ctx</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-title function_">h</span>(<span class="hljs-string">'div'</span>, <span class="hljs-literal">null</span>, [
+    _hoisted_1,  <span class="hljs-comment">// 复用，不重新创建</span>
+    <span class="hljs-title function_">h</span>(<span class="hljs-string">'p'</span>, <span class="hljs-literal">null</span>, _ctx.<span class="hljs-property">dynamic</span>)
+  ]);
+}
+</code></pre>
+<p><strong>2. PatchFlags（补丁标记）</strong></p>
+<p>为动态节点添加标记，Diff 时只比较有标记的部分。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// PatchFlags 枚举（部分）</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">PatchFlags</span> = {
+  <span class="hljs-attr">TEXT</span>: <span class="hljs-number">1</span>,         <span class="hljs-comment">// 动态文本</span>
+  <span class="hljs-attr">CLASS</span>: <span class="hljs-number">2</span>,        <span class="hljs-comment">// 动态 class</span>
+  <span class="hljs-attr">STYLE</span>: <span class="hljs-number">4</span>,        <span class="hljs-comment">// 动态 style</span>
+  <span class="hljs-attr">PROPS</span>: <span class="hljs-number">8</span>,        <span class="hljs-comment">// 动态 props</span>
+  <span class="hljs-attr">FULL_PROPS</span>: <span class="hljs-number">16</span>,  <span class="hljs-comment">// 带有动态 key 的 props</span>
+  <span class="hljs-attr">NEED_HYDRATION</span>: <span class="hljs-number">32</span>,
+  <span class="hljs-attr">STABLE_FRAGMENT</span>: <span class="hljs-number">64</span>,
+};
+</code></pre>
+<p><strong>3. Block Tree（块树）</strong></p>
+<p>将模板按照动态节点分块，配合 PatchFlags，在 Diff 时跳过整个静态子树，只对比动态节点数组。</p>
+<p><strong>4. 缓存事件处理函数</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 编译前</span>
+<span class="hljs-comment">// &lt;button @click="handleClick"&gt;点击&lt;/button&gt;</span>
+
+<span class="hljs-comment">// 编译后：事件处理函数被缓存</span>
+<span class="hljs-title function_">render</span>(<span class="hljs-params">_ctx, _cache</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-title function_">h</span>(<span class="hljs-string">'button'</span>, {
+    <span class="hljs-attr">onClick</span>: _cache[<span class="hljs-number">0</span>] || (_cache[<span class="hljs-number">0</span>] = <span class="hljs-function">(<span class="hljs-params">...args</span>) =&gt;</span> _ctx.<span class="hljs-title function_">handleClick</span>(...args))
+  }, <span class="hljs-string">'点击'</span>);
+}
+</code></pre>
+<hr></hr>
+<h2 id="13-nuxtjs">13. Nuxt.js</h2>
+<blockquote>
+<p>面试题：Nuxt.js 的渲染模式有哪些？</p>
+</blockquote>
+<p>Nuxt.js 是基于 Vue 的全栈框架，主要特性：</p>
+<table>
+<thead>
+<tr>
+<th>渲染模式</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SSR（服务端渲染）</td>
+<td>每次请求在服务端渲染 HTML，首屏快、SEO 友好</td>
+</tr>
+<tr>
+<td>SSG（静态站点生成）</td>
+<td>构建时预渲染所有页面为静态 HTML</td>
+</tr>
+<tr>
+<td>SPA（单页应用）</td>
+<td>纯客户端渲染，传统 Vue 应用模式</td>
+</tr>
+<tr>
+<td>ISR（增量静态再生）</td>
+<td>结合 SSG 和 SSR，静态页面可按需更新</td>
+</tr>
+<tr>
+<td>Hybrid（混合渲染）</td>
+<td>不同路由使用不同的渲染策略</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-javascript"><span class="hljs-comment">// nuxt.config.ts</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title function_">defineNuxtConfig</span>({
+  <span class="hljs-comment">// 全局 SSR</span>
+  <span class="hljs-attr">ssr</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-comment">// 路由级别配置</span>
+  <span class="hljs-attr">routeRules</span>: {
+    <span class="hljs-string">'/'</span>: { <span class="hljs-attr">prerender</span>: <span class="hljs-literal">true</span> },        <span class="hljs-comment">// SSG</span>
+    <span class="hljs-string">'/blog/**'</span>: { <span class="hljs-attr">isr</span>: <span class="hljs-number">3600</span> },       <span class="hljs-comment">// ISR，每小时更新</span>
+    <span class="hljs-string">'/admin/**'</span>: { <span class="hljs-attr">ssr</span>: <span class="hljs-literal">false</span> },     <span class="hljs-comment">// SPA</span>
+    <span class="hljs-string">'/api/**'</span>: { <span class="hljs-attr">cors</span>: <span class="hljs-literal">true</span> }        <span class="hljs-comment">// API 路由</span>
+  }
+});
+</code></pre>
+<p>Nuxt3 核心特性：</p>
+<ul>
+<li>基于 Vue3 + Vite，支持 TypeScript</li>
+<li>文件系统路由（pages 目录自动生成路由）</li>
+<li>自动导入（组件、composables、工具函数）</li>
+<li>服务端引擎 Nitro（支持部署到各种平台）</li>
+<li>中间件系统（全局、路由级别）</li>
+<li>数据获取（useFetch、useAsyncData）</li>
+</ul>
+<hr></hr>
+<h2 id="14-常见性能优化技巧">14. 常见性能优化技巧</h2>
+<blockquote>
+<p>面试题：在 Vue 项目中你做过哪些性能优化？</p>
+</blockquote>
+<ol>
+<li><strong>路由懒加载</strong>：<code>component: () =&gt; import('./views/Page.vue')</code></li>
+<li><strong>组件异步加载</strong>：<code>defineAsyncComponent(() =&gt; import('./Heavy.vue'))</code></li>
+<li><strong>v-show vs v-if</strong>：频繁切换用 v-show，条件不常变用 v-if</li>
+<li><strong>v-once</strong>：只渲染一次的静态内容</li>
+<li><strong>v-memo</strong>：缓存子树，依赖不变时跳过更新</li>
+<li><strong>keep-alive</strong>：缓存组件实例</li>
+<li><strong>computed 缓存</strong>：避免模板中调用方法计算</li>
+<li><strong>大列表虚拟滚动</strong>：使用 vue-virtual-scroller</li>
+<li><strong>事件销毁</strong>：在 onUnmounted 中移除全局事件监听</li>
+<li><strong>shallowRef / shallowReactive</strong>：大数据对象避免深层响应式</li>
+<li><strong>合理使用 key</strong>：帮助 Diff 精确识别节点</li>
+<li><strong>图片懒加载</strong>：v-lazy 或 IntersectionObserver</li>
+</ol>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="react.html" class="navigation navigation-prev " aria-label="Previous page: React">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="engineering.html" class="navigation navigation-next " aria-label="Next page: 前端工程化">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Vue","level":"2.7","depth":1,"next":{"title":"前端工程化","level":"2.8","depth":1,"path":"frontend/engineering.md","ref":"frontend/engineering.md","articles":[]},"previous":{"title":"React","level":"2.6","depth":1,"path":"frontend/react.md","ref":"frontend/react.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"frontend/vue.md","mtime":"2026-03-31T06:35:11.838Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

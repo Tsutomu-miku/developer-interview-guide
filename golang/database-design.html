@@ -1,0 +1,1554 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>数据库与系统设计 · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="testing-practice.html" />
+    
+    
+    <link rel="prev" href="web-framework.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../frontend/html-css.html">
+            
+                <a href="../frontend/html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../frontend/javascript.html">
+            
+                <a href="../frontend/javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../frontend/typescript.html">
+            
+                <a href="../frontend/typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../frontend/browser.html">
+            
+                <a href="../frontend/browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../frontend/network.html">
+            
+                <a href="../frontend/network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../frontend/react.html">
+            
+                <a href="../frontend/react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../frontend/vue.html">
+            
+                <a href="../frontend/vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../frontend/engineering.html">
+            
+                <a href="../frontend/engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../frontend/performance.html">
+            
+                <a href="../frontend/performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../frontend/security.html">
+            
+                <a href="../frontend/security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../nodejs/basics.html">
+            
+                <a href="../nodejs/basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../nodejs/event-loop.html">
+            
+                <a href="../nodejs/event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../nodejs/stream.html">
+            
+                <a href="../nodejs/stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../nodejs/frameworks.html">
+            
+                <a href="../nodejs/frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../nodejs/database.html">
+            
+                <a href="../nodejs/database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../nodejs/practice.html">
+            
+                <a href="../nodejs/practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="basics.html">
+            
+                <a href="basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="concurrency.html">
+            
+                <a href="concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="memory.html">
+            
+                <a href="memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="web-framework.html">
+            
+                <a href="web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.5" data-path="database-design.html">
+            
+                <a href="database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="testing-practice.html">
+            
+                <a href="testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../agent/llm-basics.html">
+            
+                <a href="../agent/llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../agent/prompt-engineering.html">
+            
+                <a href="../agent/prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../agent/rag.html">
+            
+                <a href="../agent/rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../agent/agent-architecture.html">
+            
+                <a href="../agent/agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../agent/tool-calling.html">
+            
+                <a href="../agent/tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../agent/practice.html">
+            
+                <a href="../agent/practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >数据库与系统设计</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="go数据库与系统设计面试指南">Go数据库与系统设计面试指南</h1>
+<h2 id="一、gorm-框架">一、GORM 框架</h2>
+<h3 id="11-基本用法">1.1 基本用法</h3>
+<p>GORM 是 Go 中最流行的 ORM 框架，支持 MySQL、PostgreSQL、SQLite、SQL Server。</p>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> (
+    <span class="hljs-string">"gorm.io/gorm"</span>
+    <span class="hljs-string">"gorm.io/driver/mysql"</span>
+)
+
+<span class="hljs-comment">// 连接数据库</span>
+dsn := <span class="hljs-string">"user:pass@tcp(127.0.0.1:3306)/dbname?charset=utf8mb4&amp;parseTime=True&amp;loc=Local"</span>
+db, err := gorm.Open(mysql.Open(dsn), &amp;gorm.Config{
+    Logger: logger.Default.LogMode(logger.Info),
+})
+
+<span class="hljs-comment">// 获取底层 *sql.DB 设置连接池</span>
+sqlDB, _ := db.DB()
+sqlDB.SetMaxIdleConns(<span class="hljs-number">10</span>)
+sqlDB.SetMaxOpenConns(<span class="hljs-number">100</span>)
+sqlDB.SetConnMaxLifetime(time.Hour)
+</code></pre>
+<h3 id="12-模型定义">1.2 模型定义</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> User <span class="hljs-keyword">struct</span> {
+    gorm.Model            <span class="hljs-comment">// 内嵌 ID, CreatedAt, UpdatedAt, DeletedAt</span>
+    Name     <span class="hljs-type">string</span>       <span class="hljs-string">`gorm:"type:varchar(100);not null;index"`</span>
+    Email    <span class="hljs-type">string</span>       <span class="hljs-string">`gorm:"type:varchar(200);uniqueIndex"`</span>
+    Age      <span class="hljs-type">int</span>          <span class="hljs-string">`gorm:"default:0"`</span>
+    Profile  Profile      <span class="hljs-string">`gorm:"foreignKey:UserID"`</span> <span class="hljs-comment">// has one</span>
+    Orders   []Order      <span class="hljs-string">`gorm:"foreignKey:UserID"`</span> <span class="hljs-comment">// has many</span>
+}
+
+<span class="hljs-keyword">type</span> Profile <span class="hljs-keyword">struct</span> {
+    ID     <span class="hljs-type">uint</span>
+    UserID <span class="hljs-type">uint</span>
+    Bio    <span class="hljs-type">string</span>
+}
+
+<span class="hljs-keyword">type</span> Order <span class="hljs-keyword">struct</span> {
+    ID     <span class="hljs-type">uint</span>
+    UserID <span class="hljs-type">uint</span>
+    Amount <span class="hljs-type">float64</span>
+}
+</code></pre>
+<h3 id="13-crud-操作">1.3 CRUD 操作</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// Create</span>
+user := User{Name: <span class="hljs-string">"Alice"</span>, Email: <span class="hljs-string">"alice@example.com"</span>}
+result := db.Create(&amp;user)
+fmt.Println(user.ID)             <span class="hljs-comment">// 自动填充 ID</span>
+fmt.Println(result.RowsAffected) <span class="hljs-comment">// 受影响的行数</span>
+
+<span class="hljs-comment">// Read</span>
+<span class="hljs-keyword">var</span> user User
+db.First(&amp;user, <span class="hljs-number">1</span>)                              <span class="hljs-comment">// 主键查询</span>
+db.Where(<span class="hljs-string">"name = ?"</span>, <span class="hljs-string">"Alice"</span>).First(&amp;user)       <span class="hljs-comment">// 条件查询</span>
+db.Where(<span class="hljs-string">"age &gt; ? AND name LIKE ?"</span>, <span class="hljs-number">18</span>, <span class="hljs-string">"%ali%"</span>).Find(&amp;users) <span class="hljs-comment">// 多条件</span>
+
+<span class="hljs-comment">// Update</span>
+db.Model(&amp;user).Update(<span class="hljs-string">"name"</span>, <span class="hljs-string">"Bob"</span>)
+db.Model(&amp;user).Updates(User{Name: <span class="hljs-string">"Bob"</span>, Age: <span class="hljs-number">25</span>}) <span class="hljs-comment">// 零值不更新</span>
+db.Model(&amp;user).Updates(<span class="hljs-keyword">map</span>[<span class="hljs-type">string</span>]<span class="hljs-keyword">interface</span>{}{<span class="hljs-string">"name"</span>: <span class="hljs-string">"Bob"</span>, <span class="hljs-string">"age"</span>: <span class="hljs-number">0</span>}) <span class="hljs-comment">// 零值也更新</span>
+
+<span class="hljs-comment">// Delete（软删除，设置 DeletedAt）</span>
+db.Delete(&amp;user, <span class="hljs-number">1</span>)
+<span class="hljs-comment">// 永久删除</span>
+db.Unscoped().Delete(&amp;user, <span class="hljs-number">1</span>)
+</code></pre>
+<h3 id="14-预加载（eager-loading）">1.4 预加载（Eager Loading）</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// Preload: 单独查询关联表</span>
+db.Preload(<span class="hljs-string">"Profile"</span>).Preload(<span class="hljs-string">"Orders"</span>).Find(&amp;users)
+
+<span class="hljs-comment">// Joins: LEFT JOIN 查询</span>
+db.Joins(<span class="hljs-string">"Profile"</span>).Find(&amp;users)
+
+<span class="hljs-comment">// 条件预加载</span>
+db.Preload(<span class="hljs-string">"Orders"</span>, <span class="hljs-string">"amount &gt; ?"</span>, <span class="hljs-number">100</span>).Find(&amp;users)
+
+<span class="hljs-comment">// 嵌套预加载</span>
+db.Preload(<span class="hljs-string">"Orders.Items"</span>).Find(&amp;users)
+</code></pre>
+<blockquote>
+<p><strong>面试题：GORM 使用中有哪些常见的性能陷阱？</strong></p>
+</blockquote>
+<ol>
+<li><strong>N+1 查询问题</strong>：不使用 Preload 导致循环中查询关联数据</li>
+<li><strong>不使用连接池</strong>：未设置 <code>MaxOpenConns</code> 导致连接数暴增</li>
+<li><strong>全表扫描</strong>：查询条件未命中索引</li>
+<li><strong>大批量操作</strong>：应使用 <code>CreateInBatches</code> 而非逐条插入</li>
+<li><strong>事务滥用</strong>：不必要的事务增加锁持有时间</li>
+<li><strong>软删除陷阱</strong>：忘记 <code>Unscoped()</code> 导致查询结果不符预期</li>
+</ol>
+<pre><code class="lang-go"><span class="hljs-comment">// 批量插入</span>
+<span class="hljs-keyword">var</span> users []User
+db.CreateInBatches(users, <span class="hljs-number">100</span>) <span class="hljs-comment">// 每批 100 条</span>
+
+<span class="hljs-comment">// 原生 SQL（复杂查询推荐）</span>
+db.Raw(<span class="hljs-string">"SELECT * FROM users WHERE age &gt; ? AND deleted_at IS NULL"</span>, <span class="hljs-number">18</span>).Scan(&amp;users)
+</code></pre>
+<hr></hr>
+<h2 id="二、mysql-索引优化">二、MySQL 索引优化</h2>
+<blockquote>
+<p><strong>面试题：B+树为什么适合做数据库索引？聚簇索引和非聚簇索引有什么区别？</strong></p>
+</blockquote>
+<h3 id="21-b树索引">2.1 B+树索引</h3>
+<p>B+树是 InnoDB 存储引擎的默认索引结构：</p>
+<p><strong>B+树特点：</strong></p>
+<ul>
+<li>所有数据存储在<strong>叶子节点</strong>，非叶子节点只存储索引键</li>
+<li>叶子节点通过<strong>双向链表</strong>连接，利于范围查询</li>
+<li>树的高度通常为 3-4 层，一次查询只需 3-4 次磁盘 I/O</li>
+<li>每个节点大小为一个页（16KB），可以存储大量索引键</li>
+</ul>
+<p><strong>为什么不用哈希索引：</strong></p>
+<ul>
+<li>哈希索引不支持范围查询</li>
+<li>不支持排序</li>
+<li>不支持最左前缀匹配</li>
+<li>存在哈希冲突</li>
+</ul>
+<p><strong>为什么不用红黑树/AVL 树：</strong></p>
+<ul>
+<li>树高度大，磁盘 I/O 次数多</li>
+<li>B+树扇出更大，同样数据量树更矮</li>
+</ul>
+<h3 id="22-聚簇索引-vs-非聚簇索引">2.2 聚簇索引 vs 非聚簇索引</h3>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>聚簇索引</th>
+<th>非聚簇索引（二级索引）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>叶子节点存储</td>
+<td>完整行数据</td>
+<td>索引列 + 主键值</td>
+</tr>
+<tr>
+<td>数量</td>
+<td>每表只有一个</td>
+<td>可以有多个</td>
+</tr>
+<tr>
+<td>默认</td>
+<td>主键索引</td>
+<td>其他索引</td>
+</tr>
+<tr>
+<td>查询效率</td>
+<td>直接获取数据</td>
+<td>可能需要<strong>回表</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>回表：</strong> 通过二级索引找到主键值，再通过主键在聚簇索引中查找完整数据。</p>
+<h3 id="23-覆盖索引">2.3 覆盖索引</h3>
+<p>当查询所需的所有列都在索引中时，无需回表，称为<strong>覆盖索引</strong>：</p>
+<pre><code class="lang-sql"><span class="hljs-comment">-- 复合索引 (name, age)</span>
+<span class="hljs-comment">-- 覆盖索引查询（不需要回表）</span>
+<span class="hljs-keyword">SELECT</span> name, age <span class="hljs-keyword">FROM</span> users <span class="hljs-keyword">WHERE</span> name <span class="hljs-operator">=</span> <span class="hljs-string">'Alice'</span>;
+
+<span class="hljs-comment">-- 需要回表（email 不在索引中）</span>
+<span class="hljs-keyword">SELECT</span> name, age, email <span class="hljs-keyword">FROM</span> users <span class="hljs-keyword">WHERE</span> name <span class="hljs-operator">=</span> <span class="hljs-string">'Alice'</span>;
+</code></pre>
+<h3 id="24-索引优化原则">2.4 索引优化原则</h3>
+<ol>
+<li><strong>最左前缀原则</strong>：复合索引 <code>(a, b, c)</code> 可以优化 <code>WHERE a=?</code>、<code>WHERE a=? AND b=?</code>、<code>WHERE a=? AND b=? AND c=?</code></li>
+<li><strong>避免索引失效</strong>：<ul>
+<li>对索引列使用函数：<code>WHERE YEAR(created_at) = 2024</code> → 失效</li>
+<li>隐式类型转换：<code>WHERE phone = 13800138000</code>（phone 是 varchar）→ 失效</li>
+<li>LIKE 左模糊：<code>WHERE name LIKE '%alice'</code> → 失效</li>
+<li>OR 条件中有非索引列 → 可能失效</li>
+<li>不等于 <code>!=</code>、<code>&lt;&gt;</code> → 可能失效</li>
+</ul>
+</li>
+<li><strong>选择性高的列优先建索引</strong>（区分度大的列）</li>
+<li><strong>避免冗余索引</strong>：<code>(a)</code> 和 <code>(a, b)</code> 同时存在时，<code>(a)</code> 是冗余的</li>
+</ol>
+<h3 id="25-explain-分析">2.5 Explain 分析</h3>
+<pre><code class="lang-sql">EXPLAIN <span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">FROM</span> users <span class="hljs-keyword">WHERE</span> name <span class="hljs-operator">=</span> <span class="hljs-string">'Alice'</span> <span class="hljs-keyword">AND</span> age <span class="hljs-operator">&gt;</span> <span class="hljs-number">20</span>;
+</code></pre>
+<p>关键字段：</p>
+<ul>
+<li><strong>type</strong>：查询类型（从好到差：system &gt; const &gt; eq_ref &gt; ref &gt; range &gt; index &gt; ALL）</li>
+<li><strong>key</strong>：实际使用的索引</li>
+<li><strong>rows</strong>：预估扫描行数</li>
+<li><strong>Extra</strong>：额外信息（Using index=覆盖索引，Using filesort=需排序，Using temporary=需临时表）</li>
+</ul>
+<hr></hr>
+<h2 id="三、mysql-事务">三、MySQL 事务</h2>
+<blockquote>
+<p><strong>面试题：MySQL 的事务隔离级别有哪些？InnoDB 如何通过 MVCC 实现可重复读？</strong></p>
+</blockquote>
+<h3 id="31-acid">3.1 ACID</h3>
+<ul>
+<li><strong>Atomicity（原子性）</strong>：事务要么全部成功，要么全部回滚（undo log）</li>
+<li><strong>Consistency（一致性）</strong>：事务执行前后数据库状态一致</li>
+<li><strong>Isolation（隔离性）</strong>：并发事务之间互不干扰（MVCC + 锁）</li>
+<li><strong>Durability（持久性）</strong>：事务提交后数据永久保存（redo log）</li>
+</ul>
+<h3 id="32-隔离级别">3.2 隔离级别</h3>
+<table>
+<thead>
+<tr>
+<th>隔离级别</th>
+<th>脏读</th>
+<th>不可重复读</th>
+<th>幻读</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>READ UNCOMMITTED</td>
+<td>可能</td>
+<td>可能</td>
+<td>可能</td>
+</tr>
+<tr>
+<td>READ COMMITTED</td>
+<td>不可能</td>
+<td>可能</td>
+<td>可能</td>
+</tr>
+<tr>
+<td>REPEATABLE READ（InnoDB 默认）</td>
+<td>不可能</td>
+<td>不可能</td>
+<td>InnoDB 基本不可能</td>
+</tr>
+<tr>
+<td>SERIALIZABLE</td>
+<td>不可能</td>
+<td>不可能</td>
+<td>不可能</td>
+</tr>
+</tbody>
+</table>
+<h3 id="33-mvcc（多版本并发控制）">3.3 MVCC（多版本并发控制）</h3>
+<p>InnoDB 每行数据有两个隐藏列：</p>
+<ul>
+<li><code>DB_TRX_ID</code>：最后修改该行的事务 ID</li>
+<li><code>DB_ROLL_PTR</code>：回滚指针，指向 undo log 中该行的上一个版本</li>
+</ul>
+<p><strong>ReadView（快照读的可见性判断）：</strong></p>
+<ul>
+<li><code>m_ids</code>：创建 ReadView 时活跃的事务 ID 列表</li>
+<li><code>min_trx_id</code>：活跃事务中最小的 ID</li>
+<li><code>max_trx_id</code>：下一个将分配的事务 ID</li>
+<li><code>creator_trx_id</code>：创建该 ReadView 的事务 ID</li>
+</ul>
+<p><strong>可见性规则：</strong></p>
+<ol>
+<li><code>DB_TRX_ID == creator_trx_id</code> → 可见（自己修改的）</li>
+<li><code>DB_TRX_ID &lt; min_trx_id</code> → 可见（事务已提交）</li>
+<li><code>DB_TRX_ID &gt;= max_trx_id</code> → 不可见（事务在快照之后开始）</li>
+<li><code>min_trx_id &lt;= DB_TRX_ID &lt; max_trx_id</code> → 检查是否在 m_ids 中，在则不可见，不在则可见</li>
+</ol>
+<p><strong>RC vs RR 的区别：</strong></p>
+<ul>
+<li><strong>RC（读已提交）</strong>：每次 SELECT 创建新的 ReadView</li>
+<li><strong>RR（可重复读）</strong>：整个事务复用第一次 SELECT 创建的 ReadView</li>
+</ul>
+<h3 id="34-锁机制">3.4 锁机制</h3>
+<p><strong>行锁类型：</strong></p>
+<ul>
+<li><strong>共享锁（S Lock）</strong>：<code>SELECT ... LOCK IN SHARE MODE</code></li>
+<li><strong>排他锁（X Lock）</strong>：<code>SELECT ... FOR UPDATE</code></li>
+<li><strong>Record Lock</strong>：锁定索引记录</li>
+<li><strong>Gap Lock</strong>：锁定索引间隙（防止幻读）</li>
+<li><strong>Next-Key Lock</strong>：Record Lock + Gap Lock</li>
+</ul>
+<pre><code class="lang-go"><span class="hljs-comment">// GORM 中使用事务</span>
+err := db.Transaction(<span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(tx *gorm.DB)</span></span> <span class="hljs-type">error</span> {
+    <span class="hljs-comment">// 悲观锁</span>
+    <span class="hljs-keyword">var</span> user User
+    <span class="hljs-keyword">if</span> err := tx.Clauses(clause.Locking{Strength: <span class="hljs-string">"UPDATE"</span>}).
+        Where(<span class="hljs-string">"id = ?"</span>, <span class="hljs-number">1</span>).First(&amp;user).Error; err != <span class="hljs-literal">nil</span> {
+        <span class="hljs-keyword">return</span> err
+    }
+    user.Balance -= <span class="hljs-number">100</span>
+    <span class="hljs-keyword">return</span> tx.Save(&amp;user).Error
+})
+</code></pre>
+<hr></hr>
+<h2 id="四、redis-在-go-中的使用">四、Redis 在 Go 中的使用</h2>
+<blockquote>
+<p><strong>面试题：Go 中使用 Redis 有哪些最佳实践？如何防止缓存穿透/雪崩/击穿？</strong></p>
+</blockquote>
+<h3 id="41-go-redis-基本用法">4.1 go-redis 基本用法</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> <span class="hljs-string">"github.com/redis/go-redis/v9"</span>
+
+rdb := redis.NewClient(&amp;redis.Options{
+    Addr:         <span class="hljs-string">"localhost:6379"</span>,
+    Password:     <span class="hljs-string">""</span>,
+    DB:           <span class="hljs-number">0</span>,
+    PoolSize:     <span class="hljs-number">100</span>,           <span class="hljs-comment">// 连接池大小</span>
+    MinIdleConns: <span class="hljs-number">10</span>,            <span class="hljs-comment">// 最小空闲连接</span>
+    DialTimeout:  <span class="hljs-number">5</span> * time.Second,
+    ReadTimeout:  <span class="hljs-number">3</span> * time.Second,
+    WriteTimeout: <span class="hljs-number">3</span> * time.Second,
+})
+
+<span class="hljs-comment">// 基本操作</span>
+ctx := context.Background()
+rdb.Set(ctx, <span class="hljs-string">"key"</span>, <span class="hljs-string">"value"</span>, time.Hour)
+val, err := rdb.Get(ctx, <span class="hljs-string">"key"</span>).Result()
+<span class="hljs-keyword">if</span> err == redis.Nil {
+    <span class="hljs-comment">// key 不存在</span>
+}
+</code></pre>
+<h3 id="42-常见使用模式">4.2 常见使用模式</h3>
+<p><strong>缓存模式：</strong></p>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">GetUser</span><span class="hljs-params">(ctx context.Context, id <span class="hljs-type">int64</span>)</span></span> (*User, <span class="hljs-type">error</span>) {
+    cacheKey := fmt.Sprintf(<span class="hljs-string">"user:%d"</span>, id)
+
+    <span class="hljs-comment">// 1. 查缓存</span>
+    data, err := rdb.Get(ctx, cacheKey).Bytes()
+    <span class="hljs-keyword">if</span> err == <span class="hljs-literal">nil</span> {
+        <span class="hljs-keyword">var</span> user User
+        json.Unmarshal(data, &amp;user)
+        <span class="hljs-keyword">return</span> &amp;user, <span class="hljs-literal">nil</span>
+    }
+
+    <span class="hljs-comment">// 2. 查数据库</span>
+    user, err := db.GetUser(id)
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, err
+    }
+
+    <span class="hljs-comment">// 3. 写缓存</span>
+    data, _ = json.Marshal(user)
+    rdb.Set(ctx, cacheKey, data, time.Hour+time.Duration(rand.Intn(<span class="hljs-number">300</span>))*time.Second)
+    <span class="hljs-keyword">return</span> user, <span class="hljs-literal">nil</span>
+}
+</code></pre>
+<p><strong>分布式锁：</strong></p>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">acquireLock</span><span class="hljs-params">(ctx context.Context, key <span class="hljs-type">string</span>, ttl time.Duration)</span></span> (<span class="hljs-type">bool</span>, <span class="hljs-type">error</span>) {
+    <span class="hljs-keyword">return</span> rdb.SetNX(ctx, <span class="hljs-string">"lock:"</span>+key, <span class="hljs-string">"1"</span>, ttl).Result()
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">releaseLock</span><span class="hljs-params">(ctx context.Context, key <span class="hljs-type">string</span>)</span></span> <span class="hljs-type">error</span> {
+    <span class="hljs-comment">// 使用 Lua 脚本保证原子性</span>
+    script := redis.NewScript(<span class="hljs-string">`
+        if redis.call("get", KEYS[1]) == ARGV[1] then
+            return redis.call("del", KEYS[1])
+        else
+            return 0
+        end
+    `</span>)
+    <span class="hljs-keyword">return</span> script.Run(ctx, rdb, []<span class="hljs-type">string</span>{<span class="hljs-string">"lock:"</span> + key}, <span class="hljs-string">"1"</span>).Err()
+}
+</code></pre>
+<h3 id="43-缓存三大问题">4.3 缓存三大问题</h3>
+<p><strong>缓存穿透</strong>（查询不存在的数据）：</p>
+<ul>
+<li>布隆过滤器过滤不存在的 key</li>
+<li>缓存空值（设置较短 TTL）</li>
+</ul>
+<p><strong>缓存雪崩</strong>（大量缓存同时过期）：</p>
+<ul>
+<li>TTL 加随机值避免同时过期</li>
+<li>多级缓存（本地缓存 + Redis）</li>
+<li>熔断降级</li>
+</ul>
+<p><strong>缓存击穿</strong>（热点 key 过期）：</p>
+<ul>
+<li>singleflight 合并并发请求</li>
+<li>互斥锁（分布式锁）控制只有一个请求查 DB</li>
+<li>永不过期 + 异步更新</li>
+</ul>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> <span class="hljs-string">"golang.org/x/sync/singleflight"</span>
+
+<span class="hljs-keyword">var</span> sf singleflight.Group
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">GetUserWithSingleFlight</span><span class="hljs-params">(ctx context.Context, id <span class="hljs-type">int64</span>)</span></span> (*User, <span class="hljs-type">error</span>) {
+    cacheKey := fmt.Sprintf(<span class="hljs-string">"user:%d"</span>, id)
+    data, err := rdb.Get(ctx, cacheKey).Bytes()
+    <span class="hljs-keyword">if</span> err == <span class="hljs-literal">nil</span> {
+        <span class="hljs-keyword">var</span> user User
+        json.Unmarshal(data, &amp;user)
+        <span class="hljs-keyword">return</span> &amp;user, <span class="hljs-literal">nil</span>
+    }
+
+    <span class="hljs-comment">// singleflight 合并并发请求</span>
+    v, err, _ := sf.Do(cacheKey, <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> (<span class="hljs-keyword">interface</span>{}, <span class="hljs-type">error</span>) {
+        user, err := db.GetUser(id)
+        <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, err
+        }
+        data, _ := json.Marshal(user)
+        rdb.Set(ctx, cacheKey, data, time.Hour)
+        <span class="hljs-keyword">return</span> user, <span class="hljs-literal">nil</span>
+    })
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, err
+    }
+    <span class="hljs-keyword">return</span> v.(*User), <span class="hljs-literal">nil</span>
+}
+</code></pre>
+<hr></hr>
+<h2 id="五、消息队列">五、消息队列</h2>
+<h3 id="51-kafka-在-go-中的使用">5.1 Kafka 在 Go 中的使用</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 使用 segmentio/kafka-go</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">"github.com/segmentio/kafka-go"</span>
+
+<span class="hljs-comment">// 生产者</span>
+writer := &amp;kafka.Writer{
+    Addr:         kafka.TCP(<span class="hljs-string">"localhost:9092"</span>),
+    Topic:        <span class="hljs-string">"user-events"</span>,
+    Balancer:     &amp;kafka.LeastBytes{},
+    BatchSize:    <span class="hljs-number">100</span>,
+    BatchTimeout: <span class="hljs-number">10</span> * time.Millisecond,
+    RequiredAcks: kafka.RequireAll, <span class="hljs-comment">// 等待所有副本确认</span>
+}
+
+err := writer.WriteMessages(ctx, kafka.Message{
+    Key:   []<span class="hljs-type">byte</span>(<span class="hljs-string">"user-123"</span>),
+    Value: []<span class="hljs-type">byte</span>(<span class="hljs-string">`{"event":"created"}`</span>),
+})
+
+<span class="hljs-comment">// 消费者</span>
+reader := kafka.NewReader(kafka.ReaderConfig{
+    Brokers:  []<span class="hljs-type">string</span>{<span class="hljs-string">"localhost:9092"</span>},
+    GroupID:  <span class="hljs-string">"my-group"</span>,
+    Topic:    <span class="hljs-string">"user-events"</span>,
+    MinBytes: <span class="hljs-number">1</span>,
+    MaxBytes: <span class="hljs-number">10e6</span>,
+})
+
+<span class="hljs-keyword">for</span> {
+    msg, err := reader.ReadMessage(ctx)
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> { <span class="hljs-keyword">break</span> }
+    fmt.Printf(<span class="hljs-string">"offset=%d key=%s value=%s\n"</span>, msg.Offset, msg.Key, msg.Value)
+}
+</code></pre>
+<h3 id="52-消息队列核心概念">5.2 消息队列核心概念</h3>
+<blockquote>
+<p><strong>面试题：Kafka 如何保证消息不丢失？如何保证消息不重复消费？</strong></p>
+</blockquote>
+<p><strong>消息不丢失：</strong></p>
+<ol>
+<li><strong>生产者</strong>：设置 <code>acks=all</code>，确保所有 ISR 副本都确认</li>
+<li><strong>Broker</strong>：设置 <code>replication.factor &gt;= 3</code>，<code>min.insync.replicas &gt;= 2</code></li>
+<li><strong>消费者</strong>：手动提交 offset，处理完成后再提交</li>
+</ol>
+<p><strong>消息不重复（幂等性）：</strong></p>
+<ol>
+<li>生产者幂等：Kafka 支持 <code>enable.idempotence=true</code></li>
+<li>消费者幂等：业务层面保证<ul>
+<li>数据库唯一约束</li>
+<li>Redis 去重（消息 ID 为 key）</li>
+<li>状态机（检查业务状态是否已更新）</li>
+</ul>
+</li>
+</ol>
+<h3 id="53-消息队列选型">5.3 消息队列选型</h3>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>Kafka</th>
+<th>RabbitMQ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>吞吐量</td>
+<td>极高（百万/秒）</td>
+<td>中等（万级/秒）</td>
+</tr>
+<tr>
+<td>延迟</td>
+<td>毫秒级</td>
+<td>微秒~毫秒级</td>
+</tr>
+<tr>
+<td>消息模型</td>
+<td>发布-订阅</td>
+<td>队列+交换机</td>
+</tr>
+<tr>
+<td>持久化</td>
+<td>磁盘顺序写</td>
+<td>内存+磁盘</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>日志、事件流、大数据</td>
+<td>业务消息、任务队列</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="六、分布式系统设计">六、分布式系统设计</h2>
+<h3 id="61-cap-定理">6.1 CAP 定理</h3>
+<blockquote>
+<p><strong>面试题：什么是 CAP 定理？在实际系统中如何选择？</strong></p>
+</blockquote>
+<p>分布式系统不可能同时满足以下三个特性，最多只能满足两个：</p>
+<ul>
+<li><strong>C（Consistency，一致性）</strong>：所有节点同一时刻看到的数据一致</li>
+<li><strong>A（Availability，可用性）</strong>：每个请求都能得到响应（不保证数据最新）</li>
+<li><strong>P（Partition tolerance，分区容错）</strong>：网络分区时系统继续运行</li>
+</ul>
+<p>实际中 P 是必须的（网络分区一定会发生），因此选择在 CP 和 AP 之间：</p>
+<ul>
+<li><strong>CP 系统</strong>：ZooKeeper、etcd、HBase（保证一致性，牺牲部分可用性）</li>
+<li><strong>AP 系统</strong>：Cassandra、DynamoDB（保证可用性，牺牲强一致性）</li>
+</ul>
+<h3 id="62-base-理论">6.2 BASE 理论</h3>
+<p>对 CAP 中 AP 方案的补充：</p>
+<ul>
+<li><strong>BA（Basically Available）</strong>：基本可用</li>
+<li><strong>S（Soft State）</strong>：允许中间状态</li>
+<li><strong>E（Eventually Consistent）</strong>：最终一致性</li>
+</ul>
+<h3 id="63-一致性哈希">6.3 一致性哈希</h3>
+<blockquote>
+<p><strong>面试题：什么是一致性哈希？它解决了什么问题？</strong></p>
+</blockquote>
+<p><strong>普通哈希的问题：</strong> <code>node = hash(key) % N</code>，当节点数 N 变化时，几乎所有 key 的映射都会改变，导致缓存大量失效。</p>
+<p><strong>一致性哈希：</strong></p>
+<ol>
+<li>将哈希空间组成一个环（0 ~ 2^32-1）</li>
+<li>节点映射到环上</li>
+<li>Key 映射到环上后，顺时针找到第一个节点</li>
+<li>增删节点只影响相邻节点的数据</li>
+</ol>
+<p><strong>虚拟节点：</strong> 解决节点分布不均匀的问题，每个物理节点对应多个虚拟节点。</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> ConsistentHash <span class="hljs-keyword">struct</span> {
+    ring     <span class="hljs-keyword">map</span>[<span class="hljs-type">uint32</span>]<span class="hljs-type">string</span> <span class="hljs-comment">// hash -&gt; node</span>
+    keys     []<span class="hljs-type">uint32</span>          <span class="hljs-comment">// sorted hashes</span>
+    replicas <span class="hljs-type">int</span>               <span class="hljs-comment">// 虚拟节点数</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c *ConsistentHash)</span></span> Get(key <span class="hljs-type">string</span>) <span class="hljs-type">string</span> {
+    hash := c.hash(key)
+    idx := sort.Search(<span class="hljs-built_in">len</span>(c.keys), <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(i <span class="hljs-type">int</span>)</span></span> <span class="hljs-type">bool</span> {
+        <span class="hljs-keyword">return</span> c.keys[i] &gt;= hash
+    })
+    <span class="hljs-keyword">if</span> idx == <span class="hljs-built_in">len</span>(c.keys) {
+        idx = <span class="hljs-number">0</span>
+    }
+    <span class="hljs-keyword">return</span> c.ring[c.keys[idx]]
+}
+</code></pre>
+<h3 id="64-分布式锁">6.4 分布式锁</h3>
+<blockquote>
+<p><strong>面试题：Go 中如何实现分布式锁？Redis 分布式锁有什么问题？</strong></p>
+</blockquote>
+<p><strong>Redis 分布式锁（Redisson/go-redis）：</strong></p>
+<pre><code class="lang-go"><span class="hljs-comment">// 获取锁：SET key value NX EX ttl</span>
+<span class="hljs-comment">// 释放锁：Lua 脚本（判断值相等后删除）</span>
+
+<span class="hljs-comment">// 问题：</span>
+<span class="hljs-comment">// 1. 锁过期但业务未完成 → 续期（看门狗机制）</span>
+<span class="hljs-comment">// 2. Redis 主从切换导致锁丢失 → RedLock 算法</span>
+<span class="hljs-comment">// 3. 非可重入 → 用 hash 结构记录持有次数</span>
+</code></pre>
+<p><strong>etcd 分布式锁：</strong></p>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> clientv3 <span class="hljs-string">"go.etcd.io/etcd/client/v3"</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">"go.etcd.io/etcd/client/v3/concurrency"</span>
+
+cli, _ := clientv3.New(clientv3.Config{Endpoints: []<span class="hljs-type">string</span>{<span class="hljs-string">"localhost:2379"</span>}})
+session, _ := concurrency.NewSession(cli, concurrency.WithTTL(<span class="hljs-number">10</span>))
+mutex := concurrency.NewMutex(session, <span class="hljs-string">"/my-lock/"</span>)
+
+<span class="hljs-keyword">if</span> err := mutex.Lock(ctx); err != <span class="hljs-literal">nil</span> {
+    log.Fatal(err)
+}
+<span class="hljs-comment">// 临界区</span>
+mutex.Unlock(ctx)
+</code></pre>
+<p>etcd 锁基于 Raft 共识算法，比 Redis 锁更可靠，但延迟更高。</p>
+<h3 id="65-分布式事务">6.5 分布式事务</h3>
+<p><strong>常见方案：</strong></p>
+<ol>
+<li><p><strong>2PC（两阶段提交）</strong>：协调者先发 Prepare，所有参与者确认后再发 Commit。问题：同步阻塞、单点故障。</p>
+</li>
+<li><p><strong>TCC（Try-Confirm-Cancel）</strong>：</p>
+<ul>
+<li>Try：预留资源</li>
+<li>Confirm：确认执行</li>
+<li>Cancel：取消释放资源</li>
+</ul>
+</li>
+<li><p><strong>Saga 模式</strong>：将长事务拆分为一系列本地事务，每个本地事务有对应的补偿操作。失败时按反序执行补偿。</p>
+</li>
+<li><p><strong>本地消息表</strong>：</p>
+<ul>
+<li>业务操作和消息写入同一个本地事务</li>
+<li>异步发送消息到消息队列</li>
+<li>消费者消费后回调确认</li>
+<li>定时任务补偿未发送/未确认的消息</li>
+</ul>
+</li>
+</ol>
+<hr></hr>
+<h2 id="七、微服务架构">七、微服务架构</h2>
+<blockquote>
+<p><strong>面试题：Go 微服务架构中通常包含哪些组件？如何做服务治理？</strong></p>
+</blockquote>
+<h3 id="71-核心组件">7.1 核心组件</h3>
+<pre><code>                        ┌─────────────┐
+                        │  API Gateway│ (Kong/Traefik/自研)
+                        └──────┬──────┘
+                               │
+            ┌──────────────────┼──────────────────┐
+            │                  │                  │
+     ┌──────┴──────┐   ┌──────┴──────┐   ┌──────┴──────┐
+     │ User Service│   │Order Service│   │Pay Service  │
+     │   (gRPC)    │   │   (gRPC)    │   │   (gRPC)    │
+     └──────┬──────┘   └──────┬──────┘   └──────┬──────┘
+            │                  │                  │
+     ┌──────┴──────┐   ┌──────┴──────┐   ┌──────┴──────┐
+     │  MySQL      │   │  MySQL      │   │  MySQL      │
+     │  Redis      │   │  Redis      │   │  Redis      │
+     └─────────────┘   │  Kafka      │   └─────────────┘
+                        └─────────────┘
+</code></pre><h3 id="72-服务注册与发现">7.2 服务注册与发现</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 使用 etcd 做服务注册</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">registerService</span><span class="hljs-params">(cli *clientv3.Client, name, addr <span class="hljs-type">string</span>)</span></span> <span class="hljs-type">error</span> {
+    lease, _ := cli.Grant(context.Background(), <span class="hljs-number">10</span>) <span class="hljs-comment">// 10秒租约</span>
+    _, err := cli.Put(context.Background(),
+        fmt.Sprintf(<span class="hljs-string">"/services/%s/%s"</span>, name, addr),
+        addr,
+        clientv3.WithLease(lease.ID),
+    )
+    <span class="hljs-comment">// 续约</span>
+    ch, _ := cli.KeepAlive(context.Background(), lease.ID)
+    <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> {
+        <span class="hljs-keyword">for</span> <span class="hljs-keyword">range</span> ch {} <span class="hljs-comment">// 自动续约</span>
+    }()
+    <span class="hljs-keyword">return</span> err
+}
+
+<span class="hljs-comment">// 服务发现</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">discoverService</span><span class="hljs-params">(cli *clientv3.Client, name <span class="hljs-type">string</span>)</span></span> ([]<span class="hljs-type">string</span>, <span class="hljs-type">error</span>) {
+    resp, err := cli.Get(context.Background(),
+        fmt.Sprintf(<span class="hljs-string">"/services/%s/"</span>, name),
+        clientv3.WithPrefix(),
+    )
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> { <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, err }
+    <span class="hljs-keyword">var</span> addrs []<span class="hljs-type">string</span>
+    <span class="hljs-keyword">for</span> _, kv := <span class="hljs-keyword">range</span> resp.Kvs {
+        addrs = <span class="hljs-built_in">append</span>(addrs, <span class="hljs-type">string</span>(kv.Value))
+    }
+    <span class="hljs-keyword">return</span> addrs, <span class="hljs-literal">nil</span>
+}
+</code></pre>
+<h3 id="73-负载均衡">7.3 负载均衡</h3>
+<p>gRPC 内置支持多种负载均衡策略：</p>
+<pre><code class="lang-go"><span class="hljs-comment">// 客户端负载均衡</span>
+conn, err := grpc.Dial(
+    <span class="hljs-string">"my-service"</span>,
+    grpc.WithDefaultServiceConfig(<span class="hljs-string">`{"loadBalancingPolicy":"round_robin"}`</span>),
+    grpc.WithResolvers(etcdResolver), <span class="hljs-comment">// 自定义 resolver</span>
+)
+</code></pre>
+<p>常见策略：轮询（Round Robin）、加权轮询、最少连接数、一致性哈希。</p>
+<h3 id="74-熔断与限流">7.4 熔断与限流</h3>
+<p><strong>熔断（Circuit Breaker）：</strong></p>
+<pre><code class="lang-go"><span class="hljs-comment">// 使用 sony/gobreaker</span>
+cb := gobreaker.NewCircuitBreaker(gobreaker.Settings{
+    Name:        <span class="hljs-string">"my-service"</span>,
+    MaxRequests: <span class="hljs-number">3</span>,                <span class="hljs-comment">// 半开状态最大请求数</span>
+    Interval:    <span class="hljs-number">10</span> * time.Second, <span class="hljs-comment">// 统计窗口</span>
+    Timeout:     <span class="hljs-number">30</span> * time.Second, <span class="hljs-comment">// 熔断后恢复时间</span>
+    ReadyToTrip: <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(counts gobreaker.Counts)</span></span> <span class="hljs-type">bool</span> {
+        <span class="hljs-keyword">return</span> counts.ConsecutiveFailures &gt; <span class="hljs-number">5</span> <span class="hljs-comment">// 连续失败5次熔断</span>
+    },
+})
+
+result, err := cb.Execute(<span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> (<span class="hljs-keyword">interface</span>{}, <span class="hljs-type">error</span>) {
+    <span class="hljs-keyword">return</span> callRemoteService()
+})
+</code></pre>
+<p><strong>限流（Rate Limiting）：</strong></p>
+<pre><code class="lang-go"><span class="hljs-comment">// 令牌桶</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">"golang.org/x/time/rate"</span>
+
+limiter := rate.NewLimiter(rate.Limit(<span class="hljs-number">100</span>), <span class="hljs-number">200</span>) <span class="hljs-comment">// 每秒100个请求，突发200</span>
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">rateLimitMiddleware</span><span class="hljs-params">()</span></span> gin.HandlerFunc {
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(c *gin.Context)</span></span> {
+        <span class="hljs-keyword">if</span> !limiter.Allow() {
+            c.AbortWithStatusJSON(<span class="hljs-number">429</span>, gin.H{<span class="hljs-string">"error"</span>: <span class="hljs-string">"too many requests"</span>})
+            <span class="hljs-keyword">return</span>
+        }
+        c.Next()
+    }
+}
+</code></pre>
+<h3 id="75-链路追踪">7.5 链路追踪</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 使用 OpenTelemetry</span>
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">"go.opentelemetry.io/otel"</span>
+    <span class="hljs-string">"go.opentelemetry.io/otel/trace"</span>
+)
+
+tracer := otel.Tracer(<span class="hljs-string">"my-service"</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">handleRequest</span><span class="hljs-params">(ctx context.Context)</span></span> <span class="hljs-type">error</span> {
+    ctx, span := tracer.Start(ctx, <span class="hljs-string">"handleRequest"</span>)
+    <span class="hljs-keyword">defer</span> span.End()
+
+    <span class="hljs-comment">// span 会随 context 传播到下游服务</span>
+    <span class="hljs-keyword">return</span> callDownstream(ctx)
+}
+</code></pre>
+<h3 id="76-go-微服务框架选型">7.6 Go 微服务框架选型</h3>
+<table>
+<thead>
+<tr>
+<th>框架</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Go-kit</td>
+<td>微服务工具集，理念先进但学习曲线高</td>
+</tr>
+<tr>
+<td>Go-micro</td>
+<td>插件化微服务框架</td>
+</tr>
+<tr>
+<td>Kratos (B站)</td>
+<td>生产验证，gRPC+HTTP，Wire 依赖注入</td>
+</tr>
+<tr>
+<td>Go-zero (好未来)</td>
+<td>内置代码生成、API 定义、服务治理</td>
+</tr>
+<tr>
+<td>Kitex (字节)</td>
+<td>高性能 RPC 框架，支持 Thrift 和 gRPC</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>面试题：微服务拆分的原则是什么？</strong></p>
+</blockquote>
+<ol>
+<li><strong>单一职责</strong>：每个服务只负责一个业务领域</li>
+<li><strong>高内聚低耦合</strong>：服务内部高内聚，服务之间通过清晰的 API 交互</li>
+<li><strong>数据库独立</strong>：每个服务拥有独立的数据库</li>
+<li><strong>团队对齐</strong>：服务边界与团队边界对齐（康威定律）</li>
+<li><strong>渐进拆分</strong>：从单体逐步拆分，不要一开始就过度拆分</li>
+<li><strong>避免循环依赖</strong>：服务间的依赖关系应该是单向的</li>
+</ol>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="web-framework.html" class="navigation navigation-prev " aria-label="Previous page: Web框架与HTTP">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="testing-practice.html" class="navigation navigation-next " aria-label="Next page: 测试与最佳实践">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"数据库与系统设计","level":"4.5","depth":1,"next":{"title":"测试与最佳实践","level":"4.6","depth":1,"path":"golang/testing-practice.md","ref":"golang/testing-practice.md","articles":[]},"previous":{"title":"Web框架与HTTP","level":"4.4","depth":1,"path":"golang/web-framework.md","ref":"golang/web-framework.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"golang/database-design.md","mtime":"2026-03-31T06:35:11.838Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

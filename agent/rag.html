@@ -1,0 +1,1445 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>RAG检索增强生成 · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="agent-architecture.html" />
+    
+    
+    <link rel="prev" href="prompt-engineering.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../frontend/html-css.html">
+            
+                <a href="../frontend/html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../frontend/javascript.html">
+            
+                <a href="../frontend/javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../frontend/typescript.html">
+            
+                <a href="../frontend/typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../frontend/browser.html">
+            
+                <a href="../frontend/browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../frontend/network.html">
+            
+                <a href="../frontend/network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../frontend/react.html">
+            
+                <a href="../frontend/react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../frontend/vue.html">
+            
+                <a href="../frontend/vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../frontend/engineering.html">
+            
+                <a href="../frontend/engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../frontend/performance.html">
+            
+                <a href="../frontend/performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../frontend/security.html">
+            
+                <a href="../frontend/security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../nodejs/basics.html">
+            
+                <a href="../nodejs/basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../nodejs/event-loop.html">
+            
+                <a href="../nodejs/event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../nodejs/stream.html">
+            
+                <a href="../nodejs/stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../nodejs/frameworks.html">
+            
+                <a href="../nodejs/frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../nodejs/database.html">
+            
+                <a href="../nodejs/database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../nodejs/practice.html">
+            
+                <a href="../nodejs/practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../golang/basics.html">
+            
+                <a href="../golang/basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../golang/concurrency.html">
+            
+                <a href="../golang/concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../golang/memory.html">
+            
+                <a href="../golang/memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../golang/web-framework.html">
+            
+                <a href="../golang/web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../golang/database-design.html">
+            
+                <a href="../golang/database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../golang/testing-practice.html">
+            
+                <a href="../golang/testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="llm-basics.html">
+            
+                <a href="llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="prompt-engineering.html">
+            
+                <a href="prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.3" data-path="rag.html">
+            
+                <a href="rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="agent-architecture.html">
+            
+                <a href="agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="tool-calling.html">
+            
+                <a href="tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="practice.html">
+            
+                <a href="practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >RAG检索增强生成</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="rag（检索增强生成）面试指南">RAG（检索增强生成）面试指南</h1>
+<p>RAG（Retrieval-Augmented Generation，检索增强生成）是当前 AI Agent 和企业级 LLM 应用中最核心的技术架构之一。它通过在生成阶段引入外部知识检索，解决了 LLM 知识截止、幻觉和领域知识不足等问题。本章全面覆盖 RAG 的架构设计、关键组件、高级技术、评估方法和生产实践。</p>
+<hr></hr>
+<h2 id="1-rag-整体架构">1. RAG 整体架构</h2>
+<p>RAG 系统的核心流程分为三个阶段：</p>
+<pre><code>Indexing（索引构建） → Retrieval（检索） → Generation（生成）
+</code></pre><h3 id="11-indexing（索引阶段）">1.1 Indexing（索引阶段）</h3>
+<ol>
+<li><strong>文档加载</strong>：从各类数据源读取原始文档</li>
+<li><strong>文档处理</strong>：清洗、格式化、去噪</li>
+<li><strong>文本分块</strong>：将长文档切分为合适大小的片段（Chunk）</li>
+<li><strong>向量化</strong>：使用 Embedding 模型将文本块转换为向量</li>
+<li><strong>存储索引</strong>：将向量和原始文本存入向量数据库</li>
+</ol>
+<h3 id="12-retrieval（检索阶段）">1.2 Retrieval（检索阶段）</h3>
+<ol>
+<li><strong>查询处理</strong>：对用户查询进行优化（重写、扩展）</li>
+<li><strong>向量检索</strong>：将查询向量化，在向量数据库中检索相似文档</li>
+<li><strong>混合检索</strong>：结合向量检索和关键词检索</li>
+<li><strong>重排序</strong>：对检索结果进行精排，提升相关性</li>
+<li><strong>结果筛选</strong>：根据阈值和策略过滤低质量结果</li>
+</ol>
+<h3 id="13-generation（生成阶段）">1.3 Generation（生成阶段）</h3>
+<ol>
+<li><strong>上下文构造</strong>：将检索到的文档片段组装到 Prompt 中</li>
+<li><strong>LLM 生成</strong>：基于增强后的 Prompt 生成回答</li>
+<li><strong>后处理</strong>：引用标注、格式化、事实核查</li>
+</ol>
+<blockquote>
+<p><strong>面试题：请描述一个完整 RAG 系统的数据流，从用户提问到返回答案的全过程。</strong></p>
+<p>完整流程：用户输入查询 → 查询预处理（意图识别、查询改写）→ 查询向量化（Embedding Model）→ 向量数据库检索 Top-K 相似文档 → （可选）BM25 关键词检索 → 检索结果合并去重 → Reranker 重排序 → 取 Top-N 最相关文档 → 构造 Prompt（System Prompt + 检索文档 + 用户问题）→ LLM 生成回答 → 后处理（引用标注、安全检查）→ 返回用户。整个过程中需要处理的关键问题包括：分块质量、检索召回率、上下文长度限制、幻觉控制等。</p>
+</blockquote>
+<hr></hr>
+<h2 id="2-文档加载与处理">2. 文档加载与处理</h2>
+<h3 id="21-常见文档格式">2.1 常见文档格式</h3>
+<table>
+<thead>
+<tr>
+<th>格式</th>
+<th>工具</th>
+<th>注意事项</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PDF</td>
+<td>PyPDF2, pdfplumber, Unstructured</td>
+<td>表格和图片需要特殊处理，扫描件需 OCR</td>
+</tr>
+<tr>
+<td>HTML</td>
+<td>BeautifulSoup, Unstructured</td>
+<td>需要去除导航、广告等噪音内容</td>
+</tr>
+<tr>
+<td>Markdown</td>
+<td>直接解析</td>
+<td>保留结构化信息（标题层级）有助于分块</td>
+</tr>
+<tr>
+<td>Word</td>
+<td>python-docx</td>
+<td>注意样式、嵌入图片的处理</td>
+</tr>
+<tr>
+<td>代码文件</td>
+<td>AST 解析</td>
+<td>按函数/类/模块进行语义分块更有效</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-文档预处理">2.2 文档预处理</h3>
+<pre><code class="lang-python"><span class="hljs-comment"># 典型的文档处理流程</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">preprocess_document</span>(<span class="hljs-params">raw_text</span>):
+    <span class="hljs-comment"># 1. 清洗：去除多余空白、特殊字符</span>
+    text = re.sub(<span class="hljs-string">r'\s+'</span>, <span class="hljs-string">' '</span>, raw_text).strip()
+    <span class="hljs-comment"># 2. 去噪：移除页眉页脚、水印等</span>
+    text = remove_headers_footers(text)
+    <span class="hljs-comment"># 3. 格式标准化：统一编码、日期格式等</span>
+    text = normalize_format(text)
+    <span class="hljs-comment"># 4. 元数据提取：标题、作者、日期、来源</span>
+    metadata = extract_metadata(raw_text)
+    <span class="hljs-keyword">return</span> text, metadata
+</code></pre>
+<blockquote>
+<p><strong>面试题：处理 PDF 文档时常遇到哪些问题？如何解决？</strong></p>
+<ol>
+<li><strong>表格识别困难</strong>：PDF 中的表格可能被解析为零散文本 → 使用 pdfplumber 或 Camelot 专门提取表格，转为结构化数据</li>
+<li><strong>多栏布局错乱</strong>：两栏/三栏 PDF 的文本顺序被打乱 → 使用 Layout-aware 解析器（如 Unstructured）</li>
+<li><strong>扫描件/图片型 PDF</strong>：无法直接提取文本 → OCR（Tesseract/PaddleOCR）+ 后纠错</li>
+<li><strong>公式和图表</strong>：数学公式被截断、图表信息丢失 → 多模态模型识别图表，LaTeX OCR 处理公式</li>
+<li><strong>编码问题</strong>：中文 PDF 乱码 → 尝试不同编码，使用 pdfminer 的字体映射功能</li>
+</ol>
+</blockquote>
+<hr></hr>
+<h2 id="3-文本分块策略">3. 文本分块策略</h2>
+<p>分块（Chunking）是 RAG 系统中对效果影响最大的环节之一。</p>
+<h3 id="31-fixed-size-chunking（固定大小分块）">3.1 Fixed-size Chunking（固定大小分块）</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">fixed_size_chunk</span>(<span class="hljs-params">text, chunk_size=<span class="hljs-number">500</span>, overlap=<span class="hljs-number">50</span></span>):
+    chunks = []
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, <span class="hljs-built_in">len</span>(text), chunk_size - overlap):
+        chunks.append(text[i:i + chunk_size])
+    <span class="hljs-keyword">return</span> chunks
+</code></pre>
+<p>简单高效，但可能在语义不完整处断开。</p>
+<h3 id="32-recursive-character-splitting（递归字符分块）">3.2 Recursive Character Splitting（递归字符分块）</h3>
+<p>LangChain 的默认策略，按优先级使用不同分隔符递归分割：</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> langchain.text_splitter <span class="hljs-keyword">import</span> RecursiveCharacterTextSplitter
+
+splitter = RecursiveCharacterTextSplitter(
+    chunk_size=<span class="hljs-number">1000</span>,
+    chunk_overlap=<span class="hljs-number">200</span>,
+    separators=[<span class="hljs-string">"\n\n"</span>, <span class="hljs-string">"\n"</span>, <span class="hljs-string">"。"</span>, <span class="hljs-string">"！"</span>, <span class="hljs-string">"？"</span>, <span class="hljs-string">"；"</span>, <span class="hljs-string">" "</span>, <span class="hljs-string">""</span>]
+)
+chunks = splitter.split_text(document)
+</code></pre>
+<p>先尝试按段落分，段落太长则按句子分，以此类推，尽量保留语义完整性。</p>
+<h3 id="33-semantic-chunking（语义分块）">3.3 Semantic Chunking（语义分块）</h3>
+<p>使用 Embedding 相似度判断语义断点：</p>
+<pre><code class="lang-python"><span class="hljs-comment"># 思路：计算相邻句子的语义相似度</span>
+<span class="hljs-comment"># 相似度骤降处即为语义边界</span>
+sentences = split_into_sentences(text)
+embeddings = embed_model.encode(sentences)
+similarities = [cosine_similarity(embeddings[i], embeddings[i+<span class="hljs-number">1</span>]) 
+                <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(embeddings)-<span class="hljs-number">1</span>)]
+<span class="hljs-comment"># 在相似度低于阈值处分块</span>
+breakpoints = [i <span class="hljs-keyword">for</span> i, sim <span class="hljs-keyword">in</span> <span class="hljs-built_in">enumerate</span>(similarities) <span class="hljs-keyword">if</span> sim &lt; threshold]
+</code></pre>
+<h3 id="34-agentic-chunking（智能体分块）">3.4 Agentic Chunking（智能体分块）</h3>
+<p>使用 LLM 来决定分块策略：</p>
+<ol>
+<li>LLM 阅读文档，判断每段内容的主题</li>
+<li>将同主题的内容归为一个 chunk</li>
+<li>为每个 chunk 生成摘要作为索引</li>
+</ol>
+<blockquote>
+<p><strong>面试题：如何选择合适的分块大小（chunk size）？</strong></p>
+<p>没有万能的 chunk size，需要根据场景调整：</p>
+<ul>
+<li><strong>小 chunk（100-300 tokens）</strong>：检索精度高（内容聚焦），但缺乏上下文；适合 FAQ、定义类内容</li>
+<li><strong>大 chunk（500-1500 tokens）</strong>：上下文完整，但检索精度可能下降；适合需要完整段落理解的场景</li>
+<li><strong>推荐做法</strong>：从 500-800 tokens 开始，通过评估调整；使用 overlap（通常 10-20%）防止信息断裂</li>
+<li><strong>Parent-Child 策略</strong>：检索用小 chunk 提高精度，生成时将相邻 chunk 或 parent chunk 一并送入 LLM 保证完整性</li>
+<li><strong>最终依据</strong>：在你的评估数据集上做实验，分别测试不同 chunk size 的检索召回率和最终回答质量</li>
+</ul>
+</blockquote>
+<hr></hr>
+<h2 id="4-embedding-模型">4. Embedding 模型</h2>
+<h3 id="41-主流-embedding-模型">4.1 主流 Embedding 模型</h3>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th>维度</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenAI text-embedding-3-small</td>
+<td>1536</td>
+<td>性价比高，支持维度缩减</td>
+</tr>
+<tr>
+<td>OpenAI text-embedding-3-large</td>
+<td>3072</td>
+<td>精度最高的商用模型</td>
+</tr>
+<tr>
+<td>BGE (BAAI)</td>
+<td>768/1024</td>
+<td>开源最佳中文 Embedding 之一</td>
+</tr>
+<tr>
+<td>E5 (Microsoft)</td>
+<td>768/1024</td>
+<td>指令式 Embedding，效果优秀</td>
+</tr>
+<tr>
+<td>GTE (Alibaba)</td>
+<td>768</td>
+<td>多语言支持好，中文表现优秀</td>
+</tr>
+<tr>
+<td>Cohere Embed v3</td>
+<td>1024</td>
+<td>支持多语言，有压缩功能</td>
+</tr>
+<tr>
+<td>Jina Embeddings v3</td>
+<td>1024</td>
+<td>支持超长文本（8K tokens）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="42-embedding-使用要点">4.2 Embedding 使用要点</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> sentence_transformers <span class="hljs-keyword">import</span> SentenceTransformer
+
+model = SentenceTransformer(<span class="hljs-string">'BAAI/bge-large-zh-v1.5'</span>)
+
+<span class="hljs-comment"># 查询和文档使用不同的前缀（某些模型需要）</span>
+query_embedding = model.encode(<span class="hljs-string">"query: 什么是RAG？"</span>)
+doc_embedding = model.encode(<span class="hljs-string">"passage: RAG是检索增强生成的缩写..."</span>)
+
+<span class="hljs-comment"># 计算相似度</span>
+similarity = cosine_similarity([query_embedding], [doc_embedding])[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>]
+</code></pre>
+<blockquote>
+<p><strong>面试题：如何选择 Embedding 模型？商用 vs 开源如何决策？</strong></p>
+<p><strong>选择标准</strong>：</p>
+<ol>
+<li><strong>语言覆盖</strong>：中文场景优先考虑 BGE/GTE，英文场景 OpenAI/E5 都很好</li>
+<li><strong>MTEB 排行榜</strong>：参考 HuggingFace MTEB 基准测试排名</li>
+<li><strong>维度与性能平衡</strong>：高维度（1024/3072）精度更高但存储和计算成本更大</li>
+<li><strong>上下文长度</strong>：大部分模型限制 512 tokens，超长文本需要选择支持 8K+ 的模型</li>
+<li><strong>成本考量</strong>：OpenAI Embedding 按 token 收费，开源模型可自部署</li>
+<li><strong>数据隐私</strong>：敏感数据不宜发送到外部 API → 部署开源模型</li>
+<li><strong>微调需求</strong>：如需在特定领域微调，开源模型更灵活</li>
+</ol>
+</blockquote>
+<hr></hr>
+<h2 id="5-向量数据库">5. 向量数据库</h2>
+<h3 id="51-主流向量数据库对比">5.1 主流向量数据库对比</h3>
+<table>
+<thead>
+<tr>
+<th>数据库</th>
+<th>类型</th>
+<th>特点</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pinecone</td>
+<td>云托管</td>
+<td>全托管，简单易用</td>
+<td>快速上线，不想运维</td>
+</tr>
+<tr>
+<td>Weaviate</td>
+<td>开源/云</td>
+<td>支持混合搜索，GraphQL API</td>
+<td>需要混合检索</td>
+</tr>
+<tr>
+<td>Milvus</td>
+<td>开源</td>
+<td>高性能，支持十亿级向量</td>
+<td>大规模生产环境</td>
+</tr>
+<tr>
+<td>Chroma</td>
+<td>开源</td>
+<td>轻量级，开发友好</td>
+<td>原型开发，小规模应用</td>
+</tr>
+<tr>
+<td>Qdrant</td>
+<td>开源/云</td>
+<td>Rust 实现，过滤性能优秀</td>
+<td>需要复杂过滤条件</td>
+</tr>
+<tr>
+<td>FAISS</td>
+<td>库</td>
+<td>Meta 开发，纯索引库</td>
+<td>需要嵌入自有系统</td>
+</tr>
+<tr>
+<td>pgvector</td>
+<td>扩展</td>
+<td>PostgreSQL 扩展</td>
+<td>已有 PG 生态，数据量不大</td>
+</tr>
+</tbody>
+</table>
+<h3 id="52-基本使用示例">5.2 基本使用示例</h3>
+<pre><code class="lang-python"><span class="hljs-comment"># Chroma 示例</span>
+<span class="hljs-keyword">import</span> chromadb
+
+client = chromadb.Client()
+collection = client.create_collection(<span class="hljs-string">"my_docs"</span>)
+
+<span class="hljs-comment"># 添加文档</span>
+collection.add(
+    documents=[<span class="hljs-string">"RAG是检索增强生成"</span>, <span class="hljs-string">"LLM是大语言模型"</span>],
+    metadatas=[{<span class="hljs-string">"source"</span>: <span class="hljs-string">"wiki"</span>}, {<span class="hljs-string">"source"</span>: <span class="hljs-string">"paper"</span>}],
+    ids=[<span class="hljs-string">"doc1"</span>, <span class="hljs-string">"doc2"</span>]
+)
+
+<span class="hljs-comment"># 查询</span>
+results = collection.query(
+    query_texts=[<span class="hljs-string">"什么是RAG？"</span>],
+    n_results=<span class="hljs-number">3</span>,
+    where={<span class="hljs-string">"source"</span>: <span class="hljs-string">"wiki"</span>}  <span class="hljs-comment"># 元数据过滤</span>
+)
+</code></pre>
+<blockquote>
+<p><strong>面试题：如何在生产环境中选择向量数据库？</strong></p>
+<p>考虑因素：</p>
+<ol>
+<li><strong>数据规模</strong>：&lt;100 万向量，Chroma/pgvector 足够；百万到十亿级用 Milvus/Qdrant；更大规模考虑 Pinecone</li>
+<li><strong>查询模式</strong>：需要复杂元数据过滤 → Qdrant（过滤性能优秀）；需要全文检索 → Weaviate</li>
+<li><strong>运维能力</strong>：无专门运维 → 云托管（Pinecone）；有运维团队 → 自部署开源方案</li>
+<li><strong>延迟要求</strong>：P99 &lt; 50ms → 需要内存级方案或 SSD 优化的数据库</li>
+<li><strong>一致性需求</strong>：金融等场景需要强一致性 → 考虑有事务支持的方案</li>
+<li><strong>已有技术栈</strong>：已用 PostgreSQL → pgvector 最低侵入；纯 Python → Chroma 最简单</li>
+</ol>
+</blockquote>
+<hr></hr>
+<h2 id="6-向量检索算法">6. 向量检索算法</h2>
+<h3 id="61-精确搜索（brute-force--flat）">6.1 精确搜索（Brute Force / Flat）</h3>
+<p>遍历所有向量计算相似度，保证找到最精确的结果。时间复杂度 O(n·d)，适合小数据集。</p>
+<h3 id="62-hnsw（hierarchical-navigable-small-world）">6.2 HNSW（Hierarchical Navigable Small World）</h3>
+<p>构建多层图结构，上层图用于快速定位近似区域，下层图用于精细搜索。</p>
+<ul>
+<li><strong>优点</strong>：查询速度快（O(log n)），召回率高（通常 &gt;95%）</li>
+<li><strong>缺点</strong>：内存占用大（需要存储图结构），构建索引慢</li>
+<li><strong>适用</strong>：中等规模数据集（百万级），对查询延迟要求高</li>
+</ul>
+<h3 id="63-ivf（inverted-file-index）">6.3 IVF（Inverted File Index）</h3>
+<p>将向量空间用 K-means 聚类分成多个 Voronoi 区域，查询时只搜索最近的几个区域。</p>
+<ul>
+<li><strong>nlist</strong>：聚类中心数量</li>
+<li><strong>nprobe</strong>：查询时搜索的区域数量（nprobe 越大召回率越高，但速度越慢）</li>
+</ul>
+<h3 id="64-pq（product-quantization，乘积量化）">6.4 PQ（Product Quantization，乘积量化）</h3>
+<p>将高维向量分成多个子向量，每个子向量用量化码本编码。大幅减少存储空间（如 128 维 float32 可压缩为 16 字节）。</p>
+<p>常见组合：<strong>IVF-PQ</strong>（IVF 粗排 + PQ 精排），兼顾速度和空间。</p>
+<blockquote>
+<p><strong>面试题：HNSW 和 IVF 各有什么优缺点？如何选择？</strong></p>
+<p><strong>HNSW</strong>：查询快、召回率高，但内存占用约为原始向量的 1.5-2 倍，构建索引较慢，不支持动态删除（需要标记删除+重建）。
+<strong>IVF</strong>：构建快、支持增量更新，配合 PQ 可大幅压缩内存，但需要调参（nlist/nprobe），且对数据分布的均匀性有要求。
+<strong>选择建议</strong>：数据量 &lt;1000 万且内存充足 → HNSW；数据量 &gt;1000 万或内存受限 → IVF-PQ；实时性要求极高 → HNSW；需要频繁更新数据 → IVF。</p>
+</blockquote>
+<hr></hr>
+<h2 id="7-混合检索">7. 混合检索</h2>
+<h3 id="71-dense--sparse-检索">7.1 Dense + Sparse 检索</h3>
+<pre><code class="lang-python"><span class="hljs-comment"># 混合检索示例</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">hybrid_search</span>(<span class="hljs-params">query, alpha=<span class="hljs-number">0.7</span></span>):
+    <span class="hljs-comment"># Dense 检索（向量相似度）</span>
+    dense_results = vector_db.search(
+        query_embedding=embed(query), top_k=<span class="hljs-number">20</span>
+    )
+    <span class="hljs-comment"># Sparse 检索（BM25 关键词匹配）</span>
+    sparse_results = bm25_index.search(query, top_k=<span class="hljs-number">20</span>)
+
+    <span class="hljs-comment"># Reciprocal Rank Fusion (RRF) 融合</span>
+    fused = reciprocal_rank_fusion(
+        [dense_results, sparse_results],
+        weights=[alpha, <span class="hljs-number">1</span> - alpha]
+    )
+    <span class="hljs-keyword">return</span> fused[:<span class="hljs-number">10</span>]
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">reciprocal_rank_fusion</span>(<span class="hljs-params">result_lists, weights, k=<span class="hljs-number">60</span></span>):
+    scores = {}
+    <span class="hljs-keyword">for</span> results, weight <span class="hljs-keyword">in</span> <span class="hljs-built_in">zip</span>(result_lists, weights):
+        <span class="hljs-keyword">for</span> rank, doc <span class="hljs-keyword">in</span> <span class="hljs-built_in">enumerate</span>(results):
+            doc_id = doc.<span class="hljs-built_in">id</span>
+            scores[doc_id] = scores.get(doc_id, <span class="hljs-number">0</span>) + weight / (k + rank + <span class="hljs-number">1</span>)
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">sorted</span>(scores.items(), key=<span class="hljs-keyword">lambda</span> x: x[<span class="hljs-number">1</span>], reverse=<span class="hljs-literal">True</span>)
+</code></pre>
+<h3 id="72-为什么需要混合检索">7.2 为什么需要混合检索</h3>
+<ul>
+<li><strong>向量检索（Dense）</strong>：擅长语义匹配，能找到意思相近但用词不同的内容</li>
+<li><strong>关键词检索（Sparse / BM25）</strong>：擅长精确匹配，对专有名词、编号、代码等有优势</li>
+</ul>
+<blockquote>
+<p><strong>面试题：举例说明什么场景下纯向量检索不如 BM25？</strong></p>
+<ol>
+<li><strong>精确术语查询</strong>：用户搜索「RFC 7231」或产品编号「SKU-A10032」，向量检索可能将其与语义相近但不同的编号混淆，BM25 通过精确匹配能直接命中。</li>
+<li><strong>缩写和代码</strong>：搜索「CORS 错误」，向量检索可能返回一般性的跨域内容，BM25 能精确匹配包含 "CORS" 的文档。</li>
+<li><strong>低频专业术语</strong>：Embedding 模型对罕见术语的表示不够好，BM25 的 IDF 权重反而对低频词给予更高权重。</li>
+<li><strong>最佳实践</strong>是使用混合检索，用 RRF 或 Weighted Sum 融合两种结果，取长补短。</li>
+</ol>
+</blockquote>
+<hr></hr>
+<h2 id="8-重排序（reranking）">8. 重排序（Reranking）</h2>
+<p>重排序是在初步检索后，使用更精细的模型对候选结果进行二次排序。</p>
+<h3 id="81-cross-encoder-reranker">8.1 Cross-Encoder Reranker</h3>
+<p>与 Bi-Encoder（分别编码 query 和 document 再计算相似度）不同，Cross-Encoder 将 query 和 document 拼接在一起输入模型，能够进行更深层的交互匹配：</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> sentence_transformers <span class="hljs-keyword">import</span> CrossEncoder
+
+reranker = CrossEncoder(<span class="hljs-string">'BAAI/bge-reranker-v2-m3'</span>)
+
+query = <span class="hljs-string">"什么是RAG？"</span>
+documents = [<span class="hljs-string">"RAG是检索增强生成..."</span>, <span class="hljs-string">"RPC是远程过程调用..."</span>, <span class="hljs-string">"RAG通过检索外部知识..."</span>]
+
+<span class="hljs-comment"># Cross-Encoder 对每个 (query, doc) 对打分</span>
+pairs = [[query, doc] <span class="hljs-keyword">for</span> doc <span class="hljs-keyword">in</span> documents]
+scores = reranker.predict(pairs)
+
+<span class="hljs-comment"># 按分数排序</span>
+ranked = <span class="hljs-built_in">sorted</span>(<span class="hljs-built_in">zip</span>(documents, scores), key=<span class="hljs-keyword">lambda</span> x: x[<span class="hljs-number">1</span>], reverse=<span class="hljs-literal">True</span>)
+</code></pre>
+<h3 id="82-常用-reranker">8.2 常用 Reranker</h3>
+<ul>
+<li><strong>BGE Reranker</strong>：BAAI 开源，中英文效果好</li>
+<li><strong>Cohere Rerank</strong>：商用 API，多语言支持好</li>
+<li><strong>ColBERT</strong>：Late Interaction 模型，兼顾效率和精度</li>
+<li><strong>LLM Reranker</strong>：直接用 LLM 判断相关性，成本高但效果最好</li>
+</ul>
+<blockquote>
+<p><strong>面试题：为什么需要 Reranking？它在 RAG pipeline 中的价值是什么？</strong></p>
+<p><strong>需要 Reranking 的原因</strong>：Bi-Encoder（Embedding）检索虽然速度快，但查询和文档分别编码，交互不充分，精排能力有限。Reranker 将查询和文档一起输入模型，可以捕捉更细粒度的语义匹配。</p>
+<p><strong>价值体现</strong>：(1) 典型情况下，Reranking 可将 Top-10 的 NDCG 提升 5-15%；(2) 允许初始检索召回更多候选（Top-50），再由 Reranker 精选 Top-5，提高整体召回率；(3) Reranker 可以过滤掉与查询表面相似但实际不相关的结果。</p>
+<p><strong>Pipeline 通常为</strong>：向量检索 Top-50 → Reranker 精排 → Top-5 送入 LLM。</p>
+</blockquote>
+<hr></hr>
+<h2 id="9-查询优化">9. 查询优化</h2>
+<h3 id="91-query-rewriting（查询重写）">9.1 Query Rewriting（查询重写）</h3>
+<p>使用 LLM 将用户的口语化查询改写为更适合检索的形式：</p>
+<pre><code class="lang-python">rewrite_prompt = <span class="hljs-string">"""请将以下用户问题改写为更适合搜索引擎检索的查询：
+
+用户问题：{query}
+改写后的查询："""</span>
+
+<span class="hljs-comment"># 原始："那个什么RAG的东西是咋工作的啊"</span>
+<span class="hljs-comment"># 改写后："RAG检索增强生成工作原理"</span>
+</code></pre>
+<h3 id="92-hyde（hypothetical-document-embeddings）">9.2 HyDE（Hypothetical Document Embeddings）</h3>
+<p>先让 LLM 生成一个"假设性回答"，然后用这个回答去检索：</p>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">hyde_search</span>(<span class="hljs-params">query</span>):
+    <span class="hljs-comment"># 1. LLM 生成假设性回答</span>
+    hypothetical_answer = llm.generate(
+        <span class="hljs-string">f"请回答以下问题（不需要准确，只需要大致合理）：\n<span class="hljs-subst">{query}</span>"</span>
+    )
+    <span class="hljs-comment"># 2. 用假设性回答的 Embedding 去检索</span>
+    results = vector_db.search(embed(hypothetical_answer), top_k=<span class="hljs-number">10</span>)
+    <span class="hljs-keyword">return</span> results
+</code></pre>
+<p>HyDE 的原理是：假设性回答与真实文档在向量空间中更接近（因为它们都是 "回答" 的形式），从而提高检索效果。</p>
+<h3 id="93-multi-query（多查询）">9.3 Multi-Query（多查询）</h3>
+<p>将原始问题扩展为多个不同角度的子查询，分别检索后合并结果：</p>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">multi_query_search</span>(<span class="hljs-params">query</span>):
+    <span class="hljs-comment"># LLM 生成多个角度的查询</span>
+    sub_queries = llm.generate(<span class="hljs-string">f"""
+    请从3个不同角度重新表述以下问题：
+    原始问题：<span class="hljs-subst">{query}</span>
+    """</span>)
+
+    all_results = []
+    <span class="hljs-keyword">for</span> sub_q <span class="hljs-keyword">in</span> sub_queries:
+        results = vector_db.search(embed(sub_q), top_k=<span class="hljs-number">5</span>)
+        all_results.extend(results)
+
+    <span class="hljs-keyword">return</span> deduplicate(all_results)
+</code></pre>
+<h3 id="94-sub-question-decomposition（子问题分解）">9.4 Sub-question Decomposition（子问题分解）</h3>
+<p>将复杂问题拆分为多个简单子问题，分别检索和回答：</p>
+<pre><code class="lang-python"><span class="hljs-comment"># 原始问题："比较 Python 和 Java 在机器学习领域的优缺点"</span>
+<span class="hljs-comment"># 拆分为：</span>
+<span class="hljs-comment"># 1. "Python 在机器学习领域的优点"</span>
+<span class="hljs-comment"># 2. "Python 在机器学习领域的缺点"</span>
+<span class="hljs-comment"># 3. "Java 在机器学习领域的优点"</span>
+<span class="hljs-comment"># 4. "Java 在机器学习领域的缺点"</span>
+</code></pre>
+<blockquote>
+<p><strong>面试题：这些查询优化方法各适用于什么场景？</strong></p>
+<ul>
+<li><strong>Query Rewriting</strong>：用户查询口语化、含有拼写错误或过于简短时</li>
+<li><strong>HyDE</strong>：查询和目标文档的形式差异大时（如问题 vs 段落）</li>
+<li><strong>Multi-Query</strong>：查询含义模糊，可能有多种理解角度时</li>
+<li><strong>Sub-question</strong>：复杂问题包含多个子话题，单次检索无法完全覆盖时</li>
+<li><strong>Step-back Prompting</strong>：查询过于具体，需要先回答更一般性的问题时</li>
+<li>实际生产中常<strong>组合使用</strong>，如 Query Rewriting + Multi-Query + Reranking</li>
+</ul>
+</blockquote>
+<hr></hr>
+<h2 id="10-advanced-rag-技术">10. Advanced RAG 技术</h2>
+<h3 id="101-self-rag">10.1 Self-RAG</h3>
+<p>模型在生成过程中自主决定是否需要检索、检索结果是否相关、生成内容是否被支持：</p>
+<ol>
+<li><strong>检索判断</strong>：模型判断当前是否需要检索（Retrieve token）</li>
+<li><strong>相关性判断</strong>：评估检索结果与问题的相关性（ISREL token）</li>
+<li><strong>支持性判断</strong>：评估生成内容是否被检索结果支持（ISSUP token）</li>
+<li><strong>有用性判断</strong>：评估最终回答的有用程度（ISUSE token）</li>
+</ol>
+<h3 id="102-corrective-rag（crag）">10.2 Corrective RAG（CRAG）</h3>
+<p>对检索结果进行评估和纠正：</p>
+<pre><code>1. 检索文档
+2. 使用 Knowledge Refinement 模块评估文档质量
+   - 如果所有文档都不相关 → 触发 Web 搜索补充
+   - 如果部分相关 → 过滤掉不相关文档
+   - 如果都相关 → 直接使用
+3. 基于精炼后的文档生成回答
+</code></pre><h3 id="103-adaptive-rag">10.3 Adaptive RAG</h3>
+<p>根据查询的复杂度动态选择策略：</p>
+<ul>
+<li>简单事实类问题 → 直接检索回答</li>
+<li>中等复杂度 → 标准 RAG 流程</li>
+<li>复杂推理 → 多步检索 + CoT 推理</li>
+</ul>
+<h3 id="104-graph-rag">10.4 Graph RAG</h3>
+<p>将文档知识组织为知识图谱，利用图结构进行检索：</p>
+<ol>
+<li><strong>实体抽取</strong>：从文档中抽取实体和关系</li>
+<li><strong>图构建</strong>：构建知识图谱</li>
+<li><strong>社区检测</strong>：对图进行社区检测，生成不同层级的摘要</li>
+<li><strong>图检索</strong>：结合图遍历和向量检索</li>
+</ol>
+<p>Graph RAG 特别适合多跳推理和需要理解实体关系的场景。</p>
+<blockquote>
+<p><strong>面试题：Self-RAG 和标准 RAG 的核心区别是什么？</strong></p>
+<p>标准 RAG <strong>总是</strong>检索——不管问题是否需要外部知识。Self-RAG 通过特殊 token 让模型<strong>自主判断</strong>何时检索、检索结果是否可用。这带来两个优势：(1) 对于模型已知的简单问题，跳过检索减少延迟；(2) 对检索结果进行质量把关，不相关的结果不会被使用，减少噪音干扰和幻觉。代价是需要在训练阶段引入 Critic 模型的标注数据来训练这些判断能力。</p>
+</blockquote>
+<hr></hr>
+<h2 id="11-rag-评估">11. RAG 评估</h2>
+<h3 id="111-评估维度">11.1 评估维度</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>含义</th>
+<th>对应问题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Faithfulness（忠实度）</td>
+<td>回答是否基于检索到的文档</td>
+<td>是否产生幻觉？</td>
+</tr>
+<tr>
+<td>Answer Relevancy（答案相关性）</td>
+<td>回答是否与问题相关</td>
+<td>是否答非所问？</td>
+</tr>
+<tr>
+<td>Context Relevancy（上下文相关性）</td>
+<td>检索到的文档是否与问题相关</td>
+<td>检索是否准确？</td>
+</tr>
+<tr>
+<td>Context Recall（上下文召回率）</td>
+<td>回答所需信息是否被检索到</td>
+<td>是否遗漏关键信息？</td>
+</tr>
+</tbody>
+</table>
+<h3 id="112-ragas-框架">11.2 RAGAS 框架</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> ragas <span class="hljs-keyword">import</span> evaluate
+<span class="hljs-keyword">from</span> ragas.metrics <span class="hljs-keyword">import</span> faithfulness, answer_relevancy, context_precision, context_recall
+
+dataset = {
+    <span class="hljs-string">"question"</span>: [<span class="hljs-string">"什么是RAG？"</span>],
+    <span class="hljs-string">"answer"</span>: [<span class="hljs-string">"RAG是检索增强生成，通过..."</span>],
+    <span class="hljs-string">"contexts"</span>: [[<span class="hljs-string">"RAG全称Retrieval-Augmented Generation..."</span>]],
+    <span class="hljs-string">"ground_truth"</span>: [<span class="hljs-string">"RAG是一种结合检索和生成的技术..."</span>]
+}
+
+result = evaluate(
+    dataset,
+    metrics=[faithfulness, answer_relevancy, context_precision, context_recall]
+)
+<span class="hljs-built_in">print</span>(result)
+</code></pre>
+<blockquote>
+<p><strong>面试题：如何构建 RAG 系统的评估体系？</strong></p>
+<ol>
+<li><strong>离线评估</strong>：构建包含（问题, 标准答案, 相关文档）三元组的评估集，使用 RAGAS 或自定义指标自动评估</li>
+<li><strong>检索评估</strong>：Recall@K、MRR（Mean Reciprocal Rank）、NDCG 评估检索模块</li>
+<li><strong>生成评估</strong>：Faithfulness（是否基于检索文档）、Correctness（答案是否正确）</li>
+<li><strong>端到端评估</strong>：在完整 pipeline 上评估最终回答质量</li>
+<li><strong>LLM-as-Judge</strong>：使用 GPT-4 对回答进行多维度打分</li>
+<li><strong>用户反馈</strong>：收集真实用户的满意度评分和反馈</li>
+<li><strong>错误分析</strong>：定期抽样分析失败案例，分类归因（检索失败 / 生成幻觉 / 格式错误 等）</li>
+</ol>
+</blockquote>
+<hr></hr>
+<h2 id="12-rag-vs-fine-tuning">12. RAG vs Fine-tuning</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>RAG</th>
+<th>Fine-tuning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>知识更新</td>
+<td>实时更新，修改文档即可</td>
+<td>需要重新训练</td>
+</tr>
+<tr>
+<td>可解释性</td>
+<td>高，可追溯到源文档</td>
+<td>低，知识内化在参数中</td>
+</tr>
+<tr>
+<td>成本</td>
+<td>推理成本稍高（多检索步骤）</td>
+<td>训练成本高，推理成本不变</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>知识频繁变化、需要引用源</td>
+<td>风格/格式调整、领域术语</td>
+</tr>
+<tr>
+<td>幻觉控制</td>
+<td>较好（基于检索文档）</td>
+<td>较差（可能编造）</td>
+</tr>
+<tr>
+<td>数据需求</td>
+<td>只需文档，无需标注</td>
+<td>需要高质量标注数据</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>面试题：什么场景下应该用 RAG，什么场景下应该 Fine-tuning？能否结合使用？</strong></p>
+<p><strong>用 RAG</strong>：知识库频繁更新；需要引用来源；数据敏感不能用于训练；快速上线。
+<strong>用 Fine-tuning</strong>：需要特定输出格式/风格；领域专业术语理解；需要极致的推理速度。
+<strong>结合使用</strong>：先用领域数据 Fine-tune 模型提升领域理解能力，再用 RAG 注入最新知识。这是企业级应用中最常见的方案。例如，Fine-tune 使模型理解金融术语和分析框架，RAG 提供最新的市场数据和研报。</p>
+</blockquote>
+<hr></hr>
+<h2 id="13-rag-系统常见问题与优化">13. RAG 系统常见问题与优化</h2>
+<h3 id="常见问题及解决方案">常见问题及解决方案</h3>
+<ol>
+<li><strong>检索不到相关文档</strong>：优化分块策略、添加 Query Rewriting、使用混合检索</li>
+<li><strong>检索到但不相关</strong>：添加 Reranking、优化 Embedding 模型、使用元数据过滤</li>
+<li><strong>回答产生幻觉</strong>：增强 Faithfulness 约束、要求引用、使用 Self-RAG</li>
+<li><strong>回答不完整</strong>：增加 Top-K、使用 Multi-Query、优化分块避免信息碎片化</li>
+<li><strong>延迟过高</strong>：缓存热门查询、使用更快的 ANN 算法、减少 Reranker 的候选数</li>
+</ol>
+<hr></hr>
+<h2 id="14-生产环境-rag-最佳实践">14. 生产环境 RAG 最佳实践</h2>
+<ol>
+<li><strong>数据质量优先</strong>：投入 80% 的时间在文档质量和分块策略上</li>
+<li><strong>混合检索 + Reranking</strong>：这是目前效果最稳定的检索方案</li>
+<li><strong>元数据管理</strong>：为每个 chunk 附加来源、时间、类别等元数据，支持过滤</li>
+<li><strong>增量更新</strong>：设计文档变更检测和增量索引更新机制</li>
+<li><strong>监控与可观测性</strong>：记录每个环节的中间结果（检索结果、重排结果、最终回答）</li>
+<li><strong>缓存策略</strong>：对热门查询缓存检索结果和最终答案</li>
+<li><strong>降级策略</strong>：检索失败时回退到纯 LLM 回答，并标注 "未找到相关文档"</li>
+<li><strong>用户反馈闭环</strong>：收集用户反馈持续优化检索和生成质量</li>
+</ol>
+<hr></hr>
+<h2 id="总结">总结</h2>
+<p>RAG 是构建知识密集型 AI 应用的核心技术栈。面试中，候选人需要展示对全链路的深入理解——从文档处理、分块策略、Embedding 选型、向量数据库、检索算法、重排序，到高级 RAG 技术和评估方法。关键是不仅知道 "what"，更要理解 "why"（为什么这样设计）和 "how"（在具体场景中如何选择和优化）。</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="prompt-engineering.html" class="navigation navigation-prev " aria-label="Previous page: Prompt Engineering">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="agent-architecture.html" class="navigation navigation-next " aria-label="Next page: Agent架构">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"RAG检索增强生成","level":"5.3","depth":1,"next":{"title":"Agent架构","level":"5.4","depth":1,"path":"agent/agent-architecture.md","ref":"agent/agent-architecture.md","articles":[]},"previous":{"title":"Prompt Engineering","level":"5.2","depth":1,"path":"agent/prompt-engineering.md","ref":"agent/prompt-engineering.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"agent/rag.md","mtime":"2026-03-31T06:35:11.835Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

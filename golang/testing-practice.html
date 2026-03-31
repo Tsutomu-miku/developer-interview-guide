@@ -1,0 +1,1753 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>测试与最佳实践 · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../agent/llm-basics.html" />
+    
+    
+    <link rel="prev" href="database-design.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../frontend/html-css.html">
+            
+                <a href="../frontend/html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../frontend/javascript.html">
+            
+                <a href="../frontend/javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../frontend/typescript.html">
+            
+                <a href="../frontend/typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../frontend/browser.html">
+            
+                <a href="../frontend/browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../frontend/network.html">
+            
+                <a href="../frontend/network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../frontend/react.html">
+            
+                <a href="../frontend/react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../frontend/vue.html">
+            
+                <a href="../frontend/vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../frontend/engineering.html">
+            
+                <a href="../frontend/engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../frontend/performance.html">
+            
+                <a href="../frontend/performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../frontend/security.html">
+            
+                <a href="../frontend/security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../nodejs/basics.html">
+            
+                <a href="../nodejs/basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../nodejs/event-loop.html">
+            
+                <a href="../nodejs/event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../nodejs/stream.html">
+            
+                <a href="../nodejs/stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../nodejs/frameworks.html">
+            
+                <a href="../nodejs/frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../nodejs/database.html">
+            
+                <a href="../nodejs/database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../nodejs/practice.html">
+            
+                <a href="../nodejs/practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="basics.html">
+            
+                <a href="basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="concurrency.html">
+            
+                <a href="concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="memory.html">
+            
+                <a href="memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="web-framework.html">
+            
+                <a href="web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="database-design.html">
+            
+                <a href="database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.6" data-path="testing-practice.html">
+            
+                <a href="testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../agent/llm-basics.html">
+            
+                <a href="../agent/llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../agent/prompt-engineering.html">
+            
+                <a href="../agent/prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../agent/rag.html">
+            
+                <a href="../agent/rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../agent/agent-architecture.html">
+            
+                <a href="../agent/agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../agent/tool-calling.html">
+            
+                <a href="../agent/tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../agent/practice.html">
+            
+                <a href="../agent/practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >测试与最佳实践</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="go测试与最佳实践面试指南">Go测试与最佳实践面试指南</h1>
+<h2 id="一、单元测试">一、单元测试</h2>
+<h3 id="11-基础测试">1.1 基础测试</h3>
+<p>Go 内置了完善的测试框架，测试文件以 <code>_test.go</code> 结尾，测试函数以 <code>Test</code> 开头：</p>
+<pre><code class="lang-go"><span class="hljs-comment">// math.go</span>
+<span class="hljs-keyword">package</span> math
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">Add</span><span class="hljs-params">(a, b <span class="hljs-type">int</span>)</span></span> <span class="hljs-type">int</span> {
+    <span class="hljs-keyword">return</span> a + b
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">Divide</span><span class="hljs-params">(a, b <span class="hljs-type">float64</span>)</span></span> (<span class="hljs-type">float64</span>, <span class="hljs-type">error</span>) {
+    <span class="hljs-keyword">if</span> b == <span class="hljs-number">0</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>, errors.New(<span class="hljs-string">"division by zero"</span>)
+    }
+    <span class="hljs-keyword">return</span> a / b, <span class="hljs-literal">nil</span>
+}
+</code></pre>
+<pre><code class="lang-go"><span class="hljs-comment">// math_test.go</span>
+<span class="hljs-keyword">package</span> math
+
+<span class="hljs-keyword">import</span> <span class="hljs-string">"testing"</span>
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">TestAdd</span><span class="hljs-params">(t *testing.T)</span></span> {
+    result := Add(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
+    <span class="hljs-keyword">if</span> result != <span class="hljs-number">5</span> {
+        t.Errorf(<span class="hljs-string">"Add(2, 3) = %d; want 5"</span>, result)
+    }
+}
+</code></pre>
+<h3 id="12-表驱动测试（table-driven-tests）">1.2 表驱动测试（Table-Driven Tests）</h3>
+<p>Go 社区推崇的标准测试模式：</p>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">TestDivide</span><span class="hljs-params">(t *testing.T)</span></span> {
+    tests := []<span class="hljs-keyword">struct</span> {
+        name    <span class="hljs-type">string</span>
+        a, b    <span class="hljs-type">float64</span>
+        want    <span class="hljs-type">float64</span>
+        wantErr <span class="hljs-type">bool</span>
+    }{
+        {<span class="hljs-string">"normal division"</span>, <span class="hljs-number">10</span>, <span class="hljs-number">2</span>, <span class="hljs-number">5</span>, <span class="hljs-literal">false</span>},
+        {<span class="hljs-string">"division by zero"</span>, <span class="hljs-number">10</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-literal">true</span>},
+        {<span class="hljs-string">"negative numbers"</span>, <span class="hljs-number">-10</span>, <span class="hljs-number">2</span>, <span class="hljs-number">-5</span>, <span class="hljs-literal">false</span>},
+        {<span class="hljs-string">"decimal result"</span>, <span class="hljs-number">7</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2.3333333333333335</span>, <span class="hljs-literal">false</span>},
+    }
+
+    <span class="hljs-keyword">for</span> _, tt := <span class="hljs-keyword">range</span> tests {
+        t.Run(tt.name, <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(t *testing.T)</span></span> {
+            got, err := Divide(tt.a, tt.b)
+            <span class="hljs-keyword">if</span> (err != <span class="hljs-literal">nil</span>) != tt.wantErr {
+                t.Errorf(<span class="hljs-string">"Divide() error = %v, wantErr %v"</span>, err, tt.wantErr)
+                <span class="hljs-keyword">return</span>
+            }
+            <span class="hljs-keyword">if</span> got != tt.want {
+                t.Errorf(<span class="hljs-string">"Divide() = %v, want %v"</span>, got, tt.want)
+            }
+        })
+    }
+}
+</code></pre>
+<h3 id="13-测试辅助方法">1.3 测试辅助方法</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// TestMain: 整个包的测试入口</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">TestMain</span><span class="hljs-params">(m *testing.M)</span></span> {
+    <span class="hljs-comment">// 测试前的全局设置</span>
+    setup()
+    code := m.Run() <span class="hljs-comment">// 运行所有测试</span>
+    <span class="hljs-comment">// 测试后的全局清理</span>
+    teardown()
+    os.Exit(code)
+}
+
+<span class="hljs-comment">// t.Helper(): 标记辅助函数，错误信息指向调用者</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">assertEqual</span><span class="hljs-params">(t *testing.T, got, want <span class="hljs-keyword">interface</span>{})</span></span> {
+    t.Helper()
+    <span class="hljs-keyword">if</span> got != want {
+        t.Errorf(<span class="hljs-string">"got %v, want %v"</span>, got, want)
+    }
+}
+
+<span class="hljs-comment">// t.Cleanup(): 注册清理函数</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">TestWithDB</span><span class="hljs-params">(t *testing.T)</span></span> {
+    db := setupTestDB(t)
+    t.Cleanup(<span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> {
+        db.Close()
+    })
+    <span class="hljs-comment">// 测试代码</span>
+}
+
+<span class="hljs-comment">// t.Parallel(): 并行测试</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">TestParallel</span><span class="hljs-params">(t *testing.T)</span></span> {
+    t.Parallel()
+    <span class="hljs-comment">// 该测试将与其他 Parallel 测试并行执行</span>
+}
+</code></pre>
+<h3 id="14-测试覆盖率">1.4 测试覆盖率</h3>
+<pre><code class="lang-bash"><span class="hljs-comment"># 运行测试并生成覆盖率</span>
+go <span class="hljs-built_in">test</span> -coverprofile=coverage.out ./...
+
+<span class="hljs-comment"># 查看覆盖率报告</span>
+go tool cover -func=coverage.out
+
+<span class="hljs-comment"># 生成 HTML 报告</span>
+go tool cover -html=coverage.out -o coverage.html
+</code></pre>
+<blockquote>
+<p><strong>面试题：测试覆盖率 100% 意味着什么？覆盖率应该追求多高？</strong></p>
+</blockquote>
+<p>100% 覆盖率<strong>不等于</strong>没有 bug。它只表示所有代码行都被执行过，但不保证所有逻辑分支和边界条件都被正确测试。建议核心业务逻辑覆盖率达到 80% 以上，关键路径（支付、认证等）尽量接近 100%。</p>
+<hr></hr>
+<h2 id="二、基准测试（benchmark）">二、基准测试（Benchmark）</h2>
+<blockquote>
+<p><strong>面试题：如何对 Go 代码进行性能基准测试？如何避免编译器优化影响结果？</strong></p>
+</blockquote>
+<h3 id="21-基本用法">2.1 基本用法</h3>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">BenchmarkAdd</span><span class="hljs-params">(b *testing.B)</span></span> {
+    <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; b.N; i++ {
+        Add(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
+    }
+}
+
+<span class="hljs-comment">// 运行基准测试</span>
+<span class="hljs-comment">// go test -bench=BenchmarkAdd -benchmem -count=3</span>
+<span class="hljs-comment">// BenchmarkAdd-8   1000000000   0.256 ns/op   0 B/op   0 allocs/op</span>
+</code></pre>
+<p>输出说明：</p>
+<ul>
+<li><code>1000000000</code>：运行次数（b.N 由框架自动调整）</li>
+<li><code>0.256 ns/op</code>：每次操作耗时</li>
+<li><code>0 B/op</code>：每次操作分配的字节数</li>
+<li><code>0 allocs/op</code>：每次操作的内存分配次数</li>
+</ul>
+<h3 id="22-避免编译器优化">2.2 避免编译器优化</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 错误：编译器可能优化掉整个调用</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">BenchmarkBad</span><span class="hljs-params">(b *testing.B)</span></span> {
+    <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; b.N; i++ {
+        Add(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>) <span class="hljs-comment">// 结果未使用，可能被优化</span>
+    }
+}
+
+<span class="hljs-comment">// 正确：将结果赋值给包级变量</span>
+<span class="hljs-keyword">var</span> result <span class="hljs-type">int</span>
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">BenchmarkGood</span><span class="hljs-params">(b *testing.B)</span></span> {
+    <span class="hljs-keyword">var</span> r <span class="hljs-type">int</span>
+    <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; b.N; i++ {
+        r = Add(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
+    }
+    result = r <span class="hljs-comment">// 防止编译器优化</span>
+}
+</code></pre>
+<h3 id="23-比较基准测试">2.3 比较基准测试</h3>
+<pre><code class="lang-bash"><span class="hljs-comment"># 安装 benchstat</span>
+go install golang.org/x/perf/cmd/benchstat@latest
+
+<span class="hljs-comment"># 运行优化前后的基准测试</span>
+go <span class="hljs-built_in">test</span> -bench=. -count=10 &gt; old.txt
+<span class="hljs-comment"># (修改代码)</span>
+go <span class="hljs-built_in">test</span> -bench=. -count=10 &gt; new.txt
+
+<span class="hljs-comment"># 比较结果</span>
+benchstat old.txt new.txt
+</code></pre>
+<h3 id="24-子基准测试">2.4 子基准测试</h3>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">BenchmarkConcat</span><span class="hljs-params">(b *testing.B)</span></span> {
+    sizes := []<span class="hljs-type">int</span>{<span class="hljs-number">10</span>, <span class="hljs-number">100</span>, <span class="hljs-number">1000</span>, <span class="hljs-number">10000</span>}
+    <span class="hljs-keyword">for</span> _, size := <span class="hljs-keyword">range</span> sizes {
+        b.Run(fmt.Sprintf(<span class="hljs-string">"size=%d"</span>, size), <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(b *testing.B)</span></span> {
+            strs := <span class="hljs-built_in">make</span>([]<span class="hljs-type">string</span>, size)
+            <span class="hljs-keyword">for</span> i := <span class="hljs-keyword">range</span> strs {
+                strs[i] = <span class="hljs-string">"hello"</span>
+            }
+            b.ResetTimer() <span class="hljs-comment">// 重置计时器，排除准备时间</span>
+            <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; b.N; i++ {
+                strings.Join(strs, <span class="hljs-string">","</span>)
+            }
+        })
+    }
+}
+</code></pre>
+<hr></hr>
+<h2 id="三、mock-测试">三、Mock 测试</h2>
+<blockquote>
+<p><strong>面试题：Go 中如何做 Mock 测试？有哪些常用方案？</strong></p>
+</blockquote>
+<h3 id="31-接口-mock（推荐）">3.1 接口 Mock（推荐）</h3>
+<p>Go 推崇通过接口实现依赖注入和 Mock：</p>
+<pre><code class="lang-go"><span class="hljs-comment">// 定义接口</span>
+<span class="hljs-keyword">type</span> UserRepository <span class="hljs-keyword">interface</span> {
+    GetByID(ctx context.Context, id <span class="hljs-type">int64</span>) (*User, <span class="hljs-type">error</span>)
+    Create(ctx context.Context, user *User) <span class="hljs-type">error</span>
+}
+
+<span class="hljs-comment">// 业务层依赖接口</span>
+<span class="hljs-keyword">type</span> UserService <span class="hljs-keyword">struct</span> {
+    repo UserRepository
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">NewUserService</span><span class="hljs-params">(repo UserRepository)</span></span> *UserService {
+    <span class="hljs-keyword">return</span> &amp;UserService{repo: repo}
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *UserService)</span></span> GetUser(ctx context.Context, id <span class="hljs-type">int64</span>) (*User, <span class="hljs-type">error</span>) {
+    user, err := s.repo.GetByID(ctx, id)
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, fmt.Errorf(<span class="hljs-string">"get user: %w"</span>, err)
+    }
+    <span class="hljs-keyword">return</span> user, <span class="hljs-literal">nil</span>
+}
+</code></pre>
+<pre><code class="lang-go"><span class="hljs-comment">// Mock 实现</span>
+<span class="hljs-keyword">type</span> MockUserRepo <span class="hljs-keyword">struct</span> {
+    GetByIDFunc <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(ctx context.Context, id <span class="hljs-type">int64</span>)</span></span> (*User, <span class="hljs-type">error</span>)
+    CreateFunc  <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(ctx context.Context, user *User)</span></span> <span class="hljs-type">error</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MockUserRepo)</span></span> GetByID(ctx context.Context, id <span class="hljs-type">int64</span>) (*User, <span class="hljs-type">error</span>) {
+    <span class="hljs-keyword">return</span> m.GetByIDFunc(ctx, id)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MockUserRepo)</span></span> Create(ctx context.Context, user *User) <span class="hljs-type">error</span> {
+    <span class="hljs-keyword">return</span> m.CreateFunc(ctx, user)
+}
+
+<span class="hljs-comment">// 测试</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">TestUserService_GetUser</span><span class="hljs-params">(t *testing.T)</span></span> {
+    mockRepo := &amp;MockUserRepo{
+        GetByIDFunc: <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(ctx context.Context, id <span class="hljs-type">int64</span>)</span></span> (*User, <span class="hljs-type">error</span>) {
+            <span class="hljs-keyword">if</span> id == <span class="hljs-number">1</span> {
+                <span class="hljs-keyword">return</span> &amp;User{ID: <span class="hljs-number">1</span>, Name: <span class="hljs-string">"Alice"</span>}, <span class="hljs-literal">nil</span>
+            }
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, errors.New(<span class="hljs-string">"not found"</span>)
+        },
+    }
+
+    svc := NewUserService(mockRepo)
+
+    user, err := svc.GetUser(context.Background(), <span class="hljs-number">1</span>)
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+        t.Fatal(err)
+    }
+    <span class="hljs-keyword">if</span> user.Name != <span class="hljs-string">"Alice"</span> {
+        t.Errorf(<span class="hljs-string">"got name %q, want Alice"</span>, user.Name)
+    }
+
+    _, err = svc.GetUser(context.Background(), <span class="hljs-number">999</span>)
+    <span class="hljs-keyword">if</span> err == <span class="hljs-literal">nil</span> {
+        t.Error(<span class="hljs-string">"expected error for non-existent user"</span>)
+    }
+}
+</code></pre>
+<h3 id="32-使用-mockgen（gomock）">3.2 使用 mockgen（gomock）</h3>
+<pre><code class="lang-bash"><span class="hljs-comment"># 安装</span>
+go install go.uber.org/mock/mockgen@latest
+
+<span class="hljs-comment"># 生成 Mock</span>
+mockgen -<span class="hljs-built_in">source</span>=repository.go -destination=mock_repository.go -package=mocks
+</code></pre>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">TestWithGoMock</span><span class="hljs-params">(t *testing.T)</span></span> {
+    ctrl := gomock.NewController(t)
+    <span class="hljs-keyword">defer</span> ctrl.Finish()
+
+    mockRepo := mocks.NewMockUserRepository(ctrl)
+    mockRepo.EXPECT().
+        GetByID(gomock.Any(), <span class="hljs-type">int64</span>(<span class="hljs-number">1</span>)).
+        Return(&amp;User{ID: <span class="hljs-number">1</span>, Name: <span class="hljs-string">"Alice"</span>}, <span class="hljs-literal">nil</span>).
+        Times(<span class="hljs-number">1</span>)
+
+    svc := NewUserService(mockRepo)
+    user, err := svc.GetUser(context.Background(), <span class="hljs-number">1</span>)
+    assert.NoError(t, err)
+    assert.Equal(t, <span class="hljs-string">"Alice"</span>, user.Name)
+}
+</code></pre>
+<h3 id="33-使用-testify">3.3 使用 testify</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> (
+    <span class="hljs-string">"github.com/stretchr/testify/assert"</span>
+    <span class="hljs-string">"github.com/stretchr/testify/require"</span>
+    <span class="hljs-string">"github.com/stretchr/testify/suite"</span>
+)
+
+<span class="hljs-comment">// assert: 失败后继续执行</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">TestWithAssert</span><span class="hljs-params">(t *testing.T)</span></span> {
+    assert.Equal(t, <span class="hljs-number">5</span>, Add(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>))
+    assert.NotNil(t, user)
+    assert.Contains(t, <span class="hljs-string">"hello world"</span>, <span class="hljs-string">"hello"</span>)
+    assert.ErrorIs(t, err, ErrNotFound)
+}
+
+<span class="hljs-comment">// require: 失败后立即停止</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">TestWithRequire</span><span class="hljs-params">(t *testing.T)</span></span> {
+    user, err := GetUser(<span class="hljs-number">1</span>)
+    require.NoError(t, err)  <span class="hljs-comment">// 如果 err != nil，测试立即停止</span>
+    require.NotNil(t, user)
+    assert.Equal(t, <span class="hljs-string">"Alice"</span>, user.Name)
+}
+
+<span class="hljs-comment">// 测试套件</span>
+<span class="hljs-keyword">type</span> UserServiceTestSuite <span class="hljs-keyword">struct</span> {
+    suite.Suite
+    svc  *UserService
+    repo *MockUserRepo
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *UserServiceTestSuite)</span></span> SetupTest() {
+    s.repo = &amp;MockUserRepo{}
+    s.svc = NewUserService(s.repo)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *UserServiceTestSuite)</span></span> TestGetUser() {
+    s.repo.GetByIDFunc = <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(ctx context.Context, id <span class="hljs-type">int64</span>)</span></span> (*User, <span class="hljs-type">error</span>) {
+        <span class="hljs-keyword">return</span> &amp;User{ID: <span class="hljs-number">1</span>, Name: <span class="hljs-string">"Alice"</span>}, <span class="hljs-literal">nil</span>
+    }
+    user, err := s.svc.GetUser(context.Background(), <span class="hljs-number">1</span>)
+    s.NoError(err)
+    s.Equal(<span class="hljs-string">"Alice"</span>, user.Name)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">TestUserServiceSuite</span><span class="hljs-params">(t *testing.T)</span></span> {
+    suite.Run(t, <span class="hljs-built_in">new</span>(UserServiceTestSuite))
+}
+</code></pre>
+<h3 id="34-httptest（http-测试）">3.4 httptest（HTTP 测试）</h3>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">TestHandler</span><span class="hljs-params">(t *testing.T)</span></span> {
+    <span class="hljs-comment">// 创建测试路由</span>
+    router := setupRouter()
+
+    <span class="hljs-comment">// 创建请求</span>
+    body := strings.NewReader(<span class="hljs-string">`{"name":"Alice","email":"alice@example.com"}`</span>)
+    req := httptest.NewRequest(<span class="hljs-string">"POST"</span>, <span class="hljs-string">"/api/users"</span>, body)
+    req.Header.Set(<span class="hljs-string">"Content-Type"</span>, <span class="hljs-string">"application/json"</span>)
+
+    <span class="hljs-comment">// 记录响应</span>
+    w := httptest.NewRecorder()
+    router.ServeHTTP(w, req)
+
+    <span class="hljs-comment">// 验证</span>
+    assert.Equal(t, http.StatusCreated, w.Code)
+
+    <span class="hljs-keyword">var</span> resp <span class="hljs-keyword">map</span>[<span class="hljs-type">string</span>]<span class="hljs-keyword">interface</span>{}
+    json.Unmarshal(w.Body.Bytes(), &amp;resp)
+    assert.Equal(t, <span class="hljs-string">"Alice"</span>, resp[<span class="hljs-string">"name"</span>])
+}
+
+<span class="hljs-comment">// 测试外部 HTTP 依赖（Mock HTTP 服务器）</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">TestExternalAPI</span><span class="hljs-params">(t *testing.T)</span></span> {
+    server := httptest.NewServer(http.HandlerFunc(<span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(w http.ResponseWriter, r *http.Request)</span></span> {
+        w.Header().Set(<span class="hljs-string">"Content-Type"</span>, <span class="hljs-string">"application/json"</span>)
+        json.NewEncoder(w).Encode(<span class="hljs-keyword">map</span>[<span class="hljs-type">string</span>]<span class="hljs-type">string</span>{<span class="hljs-string">"status"</span>: <span class="hljs-string">"ok"</span>})
+    }))
+    <span class="hljs-keyword">defer</span> server.Close()
+
+    <span class="hljs-comment">// 将 server.URL 作为外部 API 地址传给被测代码</span>
+    client := NewAPIClient(server.URL)
+    result, err := client.GetStatus()
+    assert.NoError(t, err)
+    assert.Equal(t, <span class="hljs-string">"ok"</span>, result.Status)
+}
+</code></pre>
+<hr></hr>
+<h2 id="四、pprof-性能分析">四、pprof 性能分析</h2>
+<blockquote>
+<p><strong>面试题：Go 中如何做性能分析？pprof 支持哪些分析类型？</strong></p>
+</blockquote>
+<h3 id="41-分析类型">4.1 分析类型</h3>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+<th>命令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPU</td>
+<td>CPU 使用热点</td>
+<td><code>go tool pprof cpu.prof</code></td>
+</tr>
+<tr>
+<td>Heap</td>
+<td>堆内存分配</td>
+<td><code>go tool pprof heap.prof</code></td>
+</tr>
+<tr>
+<td>Goroutine</td>
+<td>goroutine 栈信息</td>
+<td><code>go tool pprof goroutine.prof</code></td>
+</tr>
+<tr>
+<td>Allocs</td>
+<td>内存分配统计</td>
+<td><code>go tool pprof allocs.prof</code></td>
+</tr>
+<tr>
+<td>Block</td>
+<td>阻塞操作</td>
+<td><code>go tool pprof block.prof</code></td>
+</tr>
+<tr>
+<td>Mutex</td>
+<td>锁竞争</td>
+<td><code>go tool pprof mutex.prof</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="42-http-pprof">4.2 HTTP pprof</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> _ <span class="hljs-string">"net/http/pprof"</span>
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+    <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> {
+        log.Println(http.ListenAndServe(<span class="hljs-string">":6060"</span>, <span class="hljs-literal">nil</span>))
+    }()
+    <span class="hljs-comment">// 主程序...</span>
+}
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># 交互式分析</span>
+go tool pprof http://localhost:6060/debug/pprof/heap
+go tool pprof http://localhost:6060/debug/pprof/profile?seconds=30
+
+<span class="hljs-comment"># 常用命令</span>
+(pprof) top 20       <span class="hljs-comment"># 查看前20个热点函数</span>
+(pprof) list funcName <span class="hljs-comment"># 查看函数级别详情</span>
+(pprof) web           <span class="hljs-comment"># 生成 SVG 调用图</span>
+(pprof) flame         <span class="hljs-comment"># 火焰图（需要安装 graphviz）</span>
+</code></pre>
+<h3 id="43-代码中使用-pprof">4.3 代码中使用 pprof</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> <span class="hljs-string">"runtime/pprof"</span>
+
+<span class="hljs-comment">// CPU 分析</span>
+f, _ := os.Create(<span class="hljs-string">"cpu.prof"</span>)
+pprof.StartCPUProfile(f)
+<span class="hljs-keyword">defer</span> pprof.StopCPUProfile()
+
+<span class="hljs-comment">// 内存分析</span>
+f, _ := os.Create(<span class="hljs-string">"mem.prof"</span>)
+runtime.GC() <span class="hljs-comment">// 先 GC 获取更准确的数据</span>
+pprof.WriteHeapProfile(f)
+f.Close()
+</code></pre>
+<h3 id="44-基准测试中的-pprof">4.4 基准测试中的 pprof</h3>
+<pre><code class="lang-bash"><span class="hljs-comment"># 生成 CPU 和内存 profile</span>
+go <span class="hljs-built_in">test</span> -bench=BenchmarkXxx -cpuprofile cpu.prof -memprofile mem.prof
+
+<span class="hljs-comment"># 分析</span>
+go tool pprof cpu.prof
+</code></pre>
+<h3 id="45-火焰图分析">4.5 火焰图分析</h3>
+<pre><code class="lang-bash"><span class="hljs-comment"># 方式1：pprof 内置</span>
+go tool pprof -http=:8080 cpu.prof
+<span class="hljs-comment"># 浏览器访问 http://localhost:8080/ui/flamegraph</span>
+
+<span class="hljs-comment"># 方式2：使用 go-torch（较旧）</span>
+go-torch -u http://localhost:6060 -t 30
+</code></pre>
+<p>火焰图的横轴表示 CPU 时间占比，纵轴表示调用栈深度。越宽的块表示占用 CPU 越多，是优化的重点。</p>
+<hr></hr>
+<h2 id="五、项目结构">五、项目结构</h2>
+<blockquote>
+<p><strong>面试题：Go 项目通常采用什么样的目录结构？</strong></p>
+</blockquote>
+<h3 id="51-标准项目布局">5.1 标准项目布局</h3>
+<p>参考社区广泛采用的 <code>golang-standards/project-layout</code>：</p>
+<pre><code>myproject/
+├── cmd/                    # 主应用入口
+│   ├── server/
+│   │   └── main.go
+│   └── worker/
+│       └── main.go
+├── internal/               # 私有代码（不被外部包引用）
+│   ├── handler/           # HTTP/gRPC 处理器
+│   │   └── user.go
+│   ├── service/           # 业务逻辑层
+│   │   └── user.go
+│   ├── repository/        # 数据访问层
+│   │   └── user.go
+│   ├── model/             # 数据模型
+│   │   └── user.go
+│   └── middleware/        # 中间件
+│       └── auth.go
+├── pkg/                    # 可被外部引用的公共包
+│   ├── response/
+│   └── validator/
+├── api/                    # API 定义（protobuf/swagger）
+│   └── proto/
+├── configs/               # 配置文件
+│   └── config.yaml
+├── deployments/           # 部署配置（Docker/K8s）
+│   ├── Dockerfile
+│   └── k8s/
+├── scripts/               # 脚本
+├── test/                  # 集成测试
+├── go.mod
+├── go.sum
+└── Makefile
+</code></pre><h3 id="52-分层架构">5.2 分层架构</h3>
+<pre><code>Handler (API层)        ← 接收请求，参数验证，调用 Service
+    ↓
+Service (业务层)       ← 核心业务逻辑，事务管理
+    ↓
+Repository (数据层)    ← 数据访问，SQL 查询
+    ↓
+Model (模型层)         ← 数据结构定义
+</code></pre><pre><code class="lang-go"><span class="hljs-comment">// handler 层</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(h *UserHandler)</span></span> GetUser(c *gin.Context) {
+    id, _ := strconv.ParseInt(c.Param(<span class="hljs-string">"id"</span>), <span class="hljs-number">10</span>, <span class="hljs-number">64</span>)
+    user, err := h.userService.GetByID(c.Request.Context(), id)
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+        c.JSON(http.StatusInternalServerError, gin.H{<span class="hljs-string">"error"</span>: err.Error()})
+        <span class="hljs-keyword">return</span>
+    }
+    c.JSON(http.StatusOK, user)
+}
+
+<span class="hljs-comment">// service 层</span>
+<span class="hljs-keyword">type</span> UserService <span class="hljs-keyword">struct</span> {
+    repo  UserRepository
+    cache CacheRepository
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *UserService)</span></span> GetByID(ctx context.Context, id <span class="hljs-type">int64</span>) (*model.User, <span class="hljs-type">error</span>) {
+    <span class="hljs-comment">// 先查缓存</span>
+    user, err := s.cache.GetUser(ctx, id)
+    <span class="hljs-keyword">if</span> err == <span class="hljs-literal">nil</span> { <span class="hljs-keyword">return</span> user, <span class="hljs-literal">nil</span> }
+    <span class="hljs-comment">// 再查数据库</span>
+    user, err = s.repo.GetByID(ctx, id)
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> { <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, err }
+    <span class="hljs-comment">// 写缓存</span>
+    s.cache.SetUser(ctx, user)
+    <span class="hljs-keyword">return</span> user, <span class="hljs-literal">nil</span>
+}
+
+<span class="hljs-comment">// repository 层</span>
+<span class="hljs-keyword">type</span> UserRepo <span class="hljs-keyword">struct</span> { db *gorm.DB }
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(r *UserRepo)</span></span> GetByID(ctx context.Context, id <span class="hljs-type">int64</span>) (*model.User, <span class="hljs-type">error</span>) {
+    <span class="hljs-keyword">var</span> user model.User
+    err := r.db.WithContext(ctx).First(&amp;user, id).Error
+    <span class="hljs-keyword">return</span> &amp;user, err
+}
+</code></pre>
+<h3 id="53-依赖注入">5.3 依赖注入</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 手动依赖注入</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+    db := initDB()
+    cache := initRedis()
+
+    userRepo := repository.NewUserRepo(db)
+    userCache := repository.NewUserCache(cache)
+    userService := service.NewUserService(userRepo, userCache)
+    userHandler := handler.NewUserHandler(userService)
+
+    router := gin.Default()
+    router.GET(<span class="hljs-string">"/users/:id"</span>, userHandler.GetUser)
+    router.Run(<span class="hljs-string">":8080"</span>)
+}
+
+<span class="hljs-comment">// 使用 Wire（Google 的依赖注入代码生成工具）</span>
+<span class="hljs-comment">// wire.go</span>
+<span class="hljs-comment">//go:build wireinject</span>
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">InitializeApp</span><span class="hljs-params">()</span></span> (*App, <span class="hljs-type">error</span>) {
+    wire.Build(
+        initDB,
+        initRedis,
+        repository.NewUserRepo,
+        repository.NewUserCache,
+        service.NewUserService,
+        handler.NewUserHandler,
+        NewApp,
+    )
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, <span class="hljs-literal">nil</span>
+}
+</code></pre>
+<hr></hr>
+<h2 id="六、设计模式在-go-中的实践">六、设计模式在 Go 中的实践</h2>
+<blockquote>
+<p><strong>面试题：Go 中常用的设计模式有哪些？与 Java 的设计模式有什么区别？</strong></p>
+</blockquote>
+<p>Go 由于没有类继承、简洁的接口机制，设计模式的实现更加简洁。</p>
+<h3 id="61-单例模式">6.1 单例模式</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 使用 sync.Once（推荐）</span>
+<span class="hljs-keyword">type</span> Database <span class="hljs-keyword">struct</span>{}
+
+<span class="hljs-keyword">var</span> (
+    dbInstance *Database
+    dbOnce     sync.Once
+)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">GetDB</span><span class="hljs-params">()</span></span> *Database {
+    dbOnce.Do(<span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> {
+        dbInstance = &amp;Database{}
+    })
+    <span class="hljs-keyword">return</span> dbInstance
+}
+</code></pre>
+<h3 id="62-工厂模式">6.2 工厂模式</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Storage <span class="hljs-keyword">interface</span> {
+    Save(key <span class="hljs-type">string</span>, data []<span class="hljs-type">byte</span>) <span class="hljs-type">error</span>
+    Load(key <span class="hljs-type">string</span>) ([]<span class="hljs-type">byte</span>, <span class="hljs-type">error</span>)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">NewStorage</span><span class="hljs-params">(storageType <span class="hljs-type">string</span>)</span></span> (Storage, <span class="hljs-type">error</span>) {
+    <span class="hljs-keyword">switch</span> storageType {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">"file"</span>:
+        <span class="hljs-keyword">return</span> &amp;FileStorage{}, <span class="hljs-literal">nil</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-string">"s3"</span>:
+        <span class="hljs-keyword">return</span> &amp;S3Storage{}, <span class="hljs-literal">nil</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-string">"memory"</span>:
+        <span class="hljs-keyword">return</span> &amp;MemoryStorage{}, <span class="hljs-literal">nil</span>
+    <span class="hljs-keyword">default</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, fmt.Errorf(<span class="hljs-string">"unknown storage type: %s"</span>, storageType)
+    }
+}
+</code></pre>
+<h3 id="63-策略模式">6.3 策略模式</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Compressor <span class="hljs-keyword">interface</span> {
+    Compress(data []<span class="hljs-type">byte</span>) ([]<span class="hljs-type">byte</span>, <span class="hljs-type">error</span>)
+}
+
+<span class="hljs-keyword">type</span> GzipCompressor <span class="hljs-keyword">struct</span>{}
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(g *GzipCompressor)</span></span> Compress(data []<span class="hljs-type">byte</span>) ([]<span class="hljs-type">byte</span>, <span class="hljs-type">error</span>) { <span class="hljs-comment">/* ... */</span> }
+
+<span class="hljs-keyword">type</span> ZstdCompressor <span class="hljs-keyword">struct</span>{}
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(z *ZstdCompressor)</span></span> Compress(data []<span class="hljs-type">byte</span>) ([]<span class="hljs-type">byte</span>, <span class="hljs-type">error</span>) { <span class="hljs-comment">/* ... */</span> }
+
+<span class="hljs-keyword">type</span> FileProcessor <span class="hljs-keyword">struct</span> {
+    compressor Compressor <span class="hljs-comment">// 策略注入</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(p *FileProcessor)</span></span> Process(data []<span class="hljs-type">byte</span>) ([]<span class="hljs-type">byte</span>, <span class="hljs-type">error</span>) {
+    <span class="hljs-keyword">return</span> p.compressor.Compress(data)
+}
+</code></pre>
+<h3 id="64-选项模式（options-pattern）">6.4 选项模式（Options Pattern）</h3>
+<p>Go 中非常常用的参数传递模式：</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Server <span class="hljs-keyword">struct</span> {
+    addr     <span class="hljs-type">string</span>
+    port     <span class="hljs-type">int</span>
+    timeout  time.Duration
+    maxConns <span class="hljs-type">int</span>
+}
+
+<span class="hljs-keyword">type</span> Option <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(*Server)</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">WithPort</span><span class="hljs-params">(port <span class="hljs-type">int</span>)</span></span> Option {
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(s *Server)</span></span> { s.port = port }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">WithTimeout</span><span class="hljs-params">(timeout time.Duration)</span></span> Option {
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(s *Server)</span></span> { s.timeout = timeout }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">WithMaxConns</span><span class="hljs-params">(maxConns <span class="hljs-type">int</span>)</span></span> Option {
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(s *Server)</span></span> { s.maxConns = maxConns }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">NewServer</span><span class="hljs-params">(addr <span class="hljs-type">string</span>, opts ...Option)</span></span> *Server {
+    s := &amp;Server{
+        addr:     addr,
+        port:     <span class="hljs-number">8080</span>,        <span class="hljs-comment">// 默认值</span>
+        timeout:  <span class="hljs-number">30</span> * time.Second,
+        maxConns: <span class="hljs-number">100</span>,
+    }
+    <span class="hljs-keyword">for</span> _, opt := <span class="hljs-keyword">range</span> opts {
+        opt(s)
+    }
+    <span class="hljs-keyword">return</span> s
+}
+
+<span class="hljs-comment">// 使用</span>
+srv := NewServer(<span class="hljs-string">"0.0.0.0"</span>,
+    WithPort(<span class="hljs-number">9090</span>),
+    WithTimeout(<span class="hljs-number">60</span>*time.Second),
+)
+</code></pre>
+<h3 id="65-装饰器模式">6.5 装饰器模式</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Handler <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(ctx context.Context, req <span class="hljs-keyword">interface</span>{})</span></span> (<span class="hljs-keyword">interface</span>{}, <span class="hljs-type">error</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">WithLogging</span><span class="hljs-params">(h Handler)</span></span> Handler {
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(ctx context.Context, req <span class="hljs-keyword">interface</span>{})</span></span> (<span class="hljs-keyword">interface</span>{}, <span class="hljs-type">error</span>) {
+        log.Printf(<span class="hljs-string">"request: %v"</span>, req)
+        resp, err := h(ctx, req)
+        log.Printf(<span class="hljs-string">"response: %v, error: %v"</span>, resp, err)
+        <span class="hljs-keyword">return</span> resp, err
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">WithRetry</span><span class="hljs-params">(h Handler, maxRetries <span class="hljs-type">int</span>)</span></span> Handler {
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(ctx context.Context, req <span class="hljs-keyword">interface</span>{})</span></span> (<span class="hljs-keyword">interface</span>{}, <span class="hljs-type">error</span>) {
+        <span class="hljs-keyword">var</span> resp <span class="hljs-keyword">interface</span>{}
+        <span class="hljs-keyword">var</span> err <span class="hljs-type">error</span>
+        <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt;= maxRetries; i++ {
+            resp, err = h(ctx, req)
+            <span class="hljs-keyword">if</span> err == <span class="hljs-literal">nil</span> { <span class="hljs-keyword">return</span> resp, <span class="hljs-literal">nil</span> }
+            time.Sleep(time.Duration(i) * time.Second)
+        }
+        <span class="hljs-keyword">return</span> resp, err
+    }
+}
+
+<span class="hljs-comment">// 组合</span>
+handler = WithLogging(WithRetry(baseHandler, <span class="hljs-number">3</span>))
+</code></pre>
+<hr></hr>
+<h2 id="七、编码规范">七、编码规范</h2>
+<h3 id="71-命名规范">7.1 命名规范</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 包名：小写，简洁，单数</span>
+<span class="hljs-keyword">package</span> user     <span class="hljs-comment">// 好</span>
+<span class="hljs-keyword">package</span> utils    <span class="hljs-comment">// 不太好（过于通用）</span>
+
+<span class="hljs-comment">// 导出标识符：大写开头</span>
+<span class="hljs-keyword">type</span> UserService <span class="hljs-keyword">struct</span>{}  <span class="hljs-comment">// 导出</span>
+<span class="hljs-keyword">type</span> userRepo <span class="hljs-keyword">struct</span>{}     <span class="hljs-comment">// 不导出</span>
+
+<span class="hljs-comment">// 接口命名：动词+er 后缀（单方法接口）</span>
+<span class="hljs-keyword">type</span> Reader <span class="hljs-keyword">interface</span> { Read(p []<span class="hljs-type">byte</span>) (n <span class="hljs-type">int</span>, err <span class="hljs-type">error</span>) }
+<span class="hljs-keyword">type</span> Stringer <span class="hljs-keyword">interface</span> { String() <span class="hljs-type">string</span> }
+
+<span class="hljs-comment">// 变量命名：驼峰，缩略词全大写</span>
+<span class="hljs-keyword">var</span> userID <span class="hljs-type">int64</span>     <span class="hljs-comment">// 不是 userId</span>
+<span class="hljs-keyword">var</span> httpClient *http.Client
+<span class="hljs-keyword">var</span> xmlParser *XMLParser
+
+<span class="hljs-comment">// 错误变量：Err 前缀</span>
+<span class="hljs-keyword">var</span> ErrNotFound = errors.New(<span class="hljs-string">"not found"</span>)
+<span class="hljs-keyword">var</span> ErrInvalidInput = errors.New(<span class="hljs-string">"invalid input"</span>)
+</code></pre>
+<h3 id="72-错误处理规范">7.2 错误处理规范</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 1. 不要忽略错误</span>
+result, err := doSomething()
+<span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+    <span class="hljs-keyword">return</span> fmt.Errorf(<span class="hljs-string">"do something: %w"</span>, err) <span class="hljs-comment">// 包装错误并携带上下文</span>
+}
+
+<span class="hljs-comment">// 2. 错误只处理一次（不要又 log 又 return）</span>
+<span class="hljs-comment">// 错误示例</span>
+<span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+    log.Printf(<span class="hljs-string">"error: %v"</span>, err) <span class="hljs-comment">// 打了日志</span>
+    <span class="hljs-keyword">return</span> err                    <span class="hljs-comment">// 又返回了 → 上层可能再打一次</span>
+}
+
+<span class="hljs-comment">// 3. 使用 %w 包装错误，保留错误链</span>
+<span class="hljs-keyword">return</span> fmt.Errorf(<span class="hljs-string">"query user %d: %w"</span>, userID, err)
+</code></pre>
+<h3 id="73-并发编码规范">7.3 并发编码规范</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 1. 传递 context 作为第一个参数</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">ProcessOrder</span><span class="hljs-params">(ctx context.Context, orderID <span class="hljs-type">int64</span>)</span></span> <span class="hljs-type">error</span> {}
+
+<span class="hljs-comment">// 2. channel 方向明确</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">producer</span><span class="hljs-params">(ch <span class="hljs-keyword">chan</span>&lt;- <span class="hljs-type">int</span>)</span></span> {}  <span class="hljs-comment">// 只发送</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">consumer</span><span class="hljs-params">(ch &lt;-<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>)</span></span> {}  <span class="hljs-comment">// 只接收</span>
+
+<span class="hljs-comment">// 3. goroutine 生命周期可控</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">startWorker</span><span class="hljs-params">(ctx context.Context)</span></span> {
+    <span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> {
+        <span class="hljs-keyword">for</span> {
+            <span class="hljs-keyword">select</span> {
+            <span class="hljs-keyword">case</span> &lt;-ctx.Done():
+                <span class="hljs-keyword">return</span>
+            <span class="hljs-keyword">case</span> task := &lt;-taskCh:
+                process(task)
+            }
+        }
+    }()
+}
+</code></pre>
+<hr></hr>
+<h2 id="八、日志管理">八、日志管理</h2>
+<blockquote>
+<p><strong>面试题：Go 中如何选择日志库？结构化日志有什么优势？</strong></p>
+</blockquote>
+<h3 id="81-日志库选型">8.1 日志库选型</h3>
+<table>
+<thead>
+<tr>
+<th>日志库</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>log（标准库）</td>
+<td>简单，无级别、无结构化</td>
+</tr>
+<tr>
+<td>slog（Go 1.21+）</td>
+<td>官方结构化日志，推荐新项目使用</td>
+</tr>
+<tr>
+<td>zap（Uber）</td>
+<td>高性能，零分配，广泛使用</td>
+</tr>
+<tr>
+<td>zerolog</td>
+<td>零分配 JSON 日志</td>
+</tr>
+<tr>
+<td>logrus</td>
+<td>功能丰富，性能一般</td>
+</tr>
+</tbody>
+</table>
+<h3 id="82-slog（推荐）">8.2 slog（推荐）</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> <span class="hljs-string">"log/slog"</span>
+
+<span class="hljs-comment">// 创建 JSON 格式的 logger</span>
+logger := slog.New(slog.NewJSONHandler(os.Stdout, &amp;slog.HandlerOptions{
+    Level: slog.LevelInfo,
+}))
+
+<span class="hljs-comment">// 结构化日志</span>
+logger.Info(<span class="hljs-string">"user created"</span>,
+    slog.Int64(<span class="hljs-string">"user_id"</span>, <span class="hljs-number">123</span>),
+    slog.String(<span class="hljs-string">"email"</span>, <span class="hljs-string">"alice@example.com"</span>),
+    slog.Duration(<span class="hljs-string">"latency"</span>, <span class="hljs-number">42</span>*time.Millisecond),
+)
+<span class="hljs-comment">// 输出: {"time":"...","level":"INFO","msg":"user created","user_id":123,"email":"alice@example.com","latency":"42ms"}</span>
+
+<span class="hljs-comment">// 设置为默认 logger</span>
+slog.SetDefault(logger)
+</code></pre>
+<h3 id="83-zap">8.3 zap</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> <span class="hljs-string">"go.uber.org/zap"</span>
+
+logger, _ := zap.NewProduction()
+<span class="hljs-keyword">defer</span> logger.Sync()
+
+sugar := logger.Sugar()
+sugar.Infow(<span class="hljs-string">"user created"</span>,
+    <span class="hljs-string">"user_id"</span>, <span class="hljs-number">123</span>,
+    <span class="hljs-string">"email"</span>, <span class="hljs-string">"alice@example.com"</span>,
+)
+
+<span class="hljs-comment">// 高性能模式（避免 interface{} 分配）</span>
+logger.Info(<span class="hljs-string">"user created"</span>,
+    zap.Int64(<span class="hljs-string">"user_id"</span>, <span class="hljs-number">123</span>),
+    zap.String(<span class="hljs-string">"email"</span>, <span class="hljs-string">"alice@example.com"</span>),
+)
+</code></pre>
+<h3 id="84-日志最佳实践">8.4 日志最佳实践</h3>
+<ol>
+<li><strong>使用结构化日志</strong>：便于日志聚合和搜索</li>
+<li><strong>携带 request_id/trace_id</strong>：通过 context 传递</li>
+<li><strong>合理的日志级别</strong>：Debug（开发）、Info（业务流程）、Warn（异常但可恢复）、Error（需要关注的错误）</li>
+<li><strong>不要记录敏感信息</strong>：密码、Token、身份证号等</li>
+<li><strong>日志采样</strong>：高频日志使用采样避免性能影响</li>
+</ol>
+<pre><code class="lang-go"><span class="hljs-comment">// 通过 context 携带 trace_id</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">loggerFromContext</span><span class="hljs-params">(ctx context.Context)</span></span> *slog.Logger {
+    traceID, _ := ctx.Value(<span class="hljs-string">"trace_id"</span>).(<span class="hljs-type">string</span>)
+    <span class="hljs-keyword">return</span> slog.Default().With(slog.String(<span class="hljs-string">"trace_id"</span>, traceID))
+}
+</code></pre>
+<hr></hr>
+<h2 id="九、配置管理">九、配置管理</h2>
+<h3 id="91-viper">9.1 Viper</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> <span class="hljs-string">"github.com/spf13/viper"</span>
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">initConfig</span><span class="hljs-params">()</span></span> {
+    viper.SetConfigName(<span class="hljs-string">"config"</span>)
+    viper.SetConfigType(<span class="hljs-string">"yaml"</span>)
+    viper.AddConfigPath(<span class="hljs-string">"./configs"</span>)
+    viper.AutomaticEnv()                    <span class="hljs-comment">// 自动读取环境变量</span>
+    viper.SetEnvPrefix(<span class="hljs-string">"APP"</span>)               <span class="hljs-comment">// 环境变量前缀</span>
+    viper.SetEnvKeyReplacer(strings.NewReplacer(<span class="hljs-string">"."</span>, <span class="hljs-string">"_"</span>)) <span class="hljs-comment">// 嵌套key映射</span>
+
+    <span class="hljs-keyword">if</span> err := viper.ReadInConfig(); err != <span class="hljs-literal">nil</span> {
+        log.Fatal(err)
+    }
+}
+
+<span class="hljs-comment">// 获取配置</span>
+port := viper.GetInt(<span class="hljs-string">"server.port"</span>)
+dbDSN := viper.GetString(<span class="hljs-string">"database.dsn"</span>)
+
+<span class="hljs-comment">// 绑定到结构体</span>
+<span class="hljs-keyword">type</span> Config <span class="hljs-keyword">struct</span> {
+    Server <span class="hljs-keyword">struct</span> {
+        Port    <span class="hljs-type">int</span>           <span class="hljs-string">`mapstructure:"port"`</span>
+        Timeout time.Duration <span class="hljs-string">`mapstructure:"timeout"`</span>
+    } <span class="hljs-string">`mapstructure:"server"`</span>
+    Database <span class="hljs-keyword">struct</span> {
+        DSN             <span class="hljs-type">string</span> <span class="hljs-string">`mapstructure:"dsn"`</span>
+        MaxOpenConns    <span class="hljs-type">int</span>    <span class="hljs-string">`mapstructure:"max_open_conns"`</span>
+    } <span class="hljs-string">`mapstructure:"database"`</span>
+}
+
+<span class="hljs-keyword">var</span> cfg Config
+viper.Unmarshal(&amp;cfg)
+</code></pre>
+<h3 id="92-配置管理最佳实践">9.2 配置管理最佳实践</h3>
+<ol>
+<li><strong>环境变量优先</strong>：12-Factor App 原则，支持通过环境变量覆盖配置文件</li>
+<li><strong>配置结构体化</strong>：定义 Config struct 并在启动时校验</li>
+<li><strong>敏感信息加密</strong>：密码、密钥通过环境变量或密钥管理服务获取</li>
+<li><strong>配置热更新</strong>：使用配置中心（etcd/Consul/Nacos）实现不重启更新</li>
+</ol>
+<pre><code class="lang-go"><span class="hljs-comment">// 配置校验</span>
+<span class="hljs-keyword">type</span> Config <span class="hljs-keyword">struct</span> {
+    Port <span class="hljs-type">int</span> <span class="hljs-string">`validate:"required,gte=1,lte=65535"`</span>
+    DSN  <span class="hljs-type">string</span> <span class="hljs-string">`validate:"required"`</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c *Config)</span></span> Validate() <span class="hljs-type">error</span> {
+    validate := validator.New()
+    <span class="hljs-keyword">return</span> validate.Struct(c)
+}
+</code></pre>
+<hr></hr>
+<h2 id="十、综合面试题">十、综合面试题</h2>
+<blockquote>
+<p><strong>面试题：如何保证 Go 项目的代码质量？</strong></p>
+</blockquote>
+<p><strong>CI/CD 流水线中应包含：</strong></p>
+<ol>
+<li><strong>代码格式化</strong>：<code>gofmt -s</code>、<code>goimports</code></li>
+<li><strong>静态分析</strong>：<code>go vet</code>、<code>staticcheck</code>、<code>golangci-lint</code></li>
+<li><strong>单元测试</strong>：<code>go test -race -coverprofile=coverage.out ./...</code></li>
+<li><strong>覆盖率检查</strong>：设置覆盖率阈值（如 80%）</li>
+<li><strong>基准测试</strong>：关键路径有基准测试</li>
+<li><strong>安全扫描</strong>：<code>gosec</code>、<code>govulncheck</code></li>
+<li><strong>代码审查</strong>：PR Review</li>
+</ol>
+<pre><code class="lang-makefile"><span class="hljs-comment"># Makefile 示例</span>
+<span class="hljs-meta"><span class="hljs-keyword">.PHONY</span>: lint test build</span>
+
+<span class="hljs-section">lint:</span>
+    golangci-lint run ./...
+
+<span class="hljs-section">test:</span>
+    go test -race -coverprofile=coverage.out ./...
+    go tool cover -func=coverage.out
+
+<span class="hljs-section">build:</span>
+    CGO_ENABLED=0 GOOS=linux go build -o bin/server ./cmd/server
+
+<span class="hljs-section">ci: lint test build</span>
+</code></pre>
+<blockquote>
+<p><strong>面试题：Go 项目上线前的检查清单？</strong></p>
+</blockquote>
+<ol>
+<li><strong>功能测试</strong>：单元测试和集成测试全部通过</li>
+<li><strong>性能测试</strong>：基准测试无回归，pprof 无内存泄漏</li>
+<li><strong>并发安全</strong>：<code>go test -race</code> 无数据竞争</li>
+<li><strong>配置检查</strong>：生产环境配置正确（数据库连接、超时设置等）</li>
+<li><strong>日志完善</strong>：关键路径有日志，错误日志有上下文</li>
+<li><strong>监控告警</strong>：Prometheus 指标暴露，Grafana 面板配置</li>
+<li><strong>优雅关机</strong>：确保 Shutdown 逻辑正确</li>
+<li><strong>回滚方案</strong>：具备快速回滚能力</li>
+<li><strong>限流熔断</strong>：核心接口配置限流，依赖服务配置熔断</li>
+<li><strong>文档更新</strong>：API 文档、变更日志更新</li>
+</ol>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="database-design.html" class="navigation navigation-prev " aria-label="Previous page: 数据库与系统设计">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../agent/llm-basics.html" class="navigation navigation-next " aria-label="Next page: 大语言模型基础">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"测试与最佳实践","level":"4.6","depth":1,"next":{"title":"大语言模型基础","level":"5.1","depth":1,"path":"agent/llm-basics.md","ref":"agent/llm-basics.md","articles":[]},"previous":{"title":"数据库与系统设计","level":"4.5","depth":1,"path":"golang/database-design.md","ref":"golang/database-design.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"golang/testing-practice.md","mtime":"2026-03-31T06:35:11.838Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

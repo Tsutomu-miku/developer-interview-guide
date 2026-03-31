@@ -1,0 +1,1636 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>性能优化 · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="security.html" />
+    
+    
+    <link rel="prev" href="engineering.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="html-css.html">
+            
+                <a href="html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="javascript.html">
+            
+                <a href="javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="typescript.html">
+            
+                <a href="typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="browser.html">
+            
+                <a href="browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="network.html">
+            
+                <a href="network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="react.html">
+            
+                <a href="react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="vue.html">
+            
+                <a href="vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="engineering.html">
+            
+                <a href="engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.9" data-path="performance.html">
+            
+                <a href="performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="security.html">
+            
+                <a href="security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../nodejs/basics.html">
+            
+                <a href="../nodejs/basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../nodejs/event-loop.html">
+            
+                <a href="../nodejs/event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../nodejs/stream.html">
+            
+                <a href="../nodejs/stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../nodejs/frameworks.html">
+            
+                <a href="../nodejs/frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../nodejs/database.html">
+            
+                <a href="../nodejs/database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../nodejs/practice.html">
+            
+                <a href="../nodejs/practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../golang/basics.html">
+            
+                <a href="../golang/basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../golang/concurrency.html">
+            
+                <a href="../golang/concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../golang/memory.html">
+            
+                <a href="../golang/memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../golang/web-framework.html">
+            
+                <a href="../golang/web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../golang/database-design.html">
+            
+                <a href="../golang/database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../golang/testing-practice.html">
+            
+                <a href="../golang/testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../agent/llm-basics.html">
+            
+                <a href="../agent/llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../agent/prompt-engineering.html">
+            
+                <a href="../agent/prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../agent/rag.html">
+            
+                <a href="../agent/rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../agent/agent-architecture.html">
+            
+                <a href="../agent/agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../agent/tool-calling.html">
+            
+                <a href="../agent/tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../agent/practice.html">
+            
+                <a href="../agent/practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >性能优化</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="前端性能优化面试指南">前端性能优化面试指南</h1>
+<h2 id="1-web-vitals-核心指标">1. Web Vitals 核心指标</h2>
+<blockquote>
+<p>面试题：什么是 Core Web Vitals？各指标的含义和标准是什么？</p>
+</blockquote>
+<p><strong>Core Web Vitals（核心 Web 指标）</strong></p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>全称</th>
+<th>含义</th>
+<th>良好</th>
+<th>需改进</th>
+<th>差</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LCP</td>
+<td>Largest Contentful Paint</td>
+<td>最大内容绘制，衡量加载性能</td>
+<td>≤ 2.5s</td>
+<td>≤ 4.0s</td>
+<td>&gt; 4.0s</td>
+</tr>
+<tr>
+<td>FID</td>
+<td>First Input Delay</td>
+<td>首次输入延迟，衡量交互性</td>
+<td>≤ 100ms</td>
+<td>≤ 300ms</td>
+<td>&gt; 300ms</td>
+</tr>
+<tr>
+<td>CLS</td>
+<td>Cumulative Layout Shift</td>
+<td>累计布局偏移，衡量视觉稳定性</td>
+<td>≤ 0.1</td>
+<td>≤ 0.25</td>
+<td>&gt; 0.25</td>
+</tr>
+<tr>
+<td>INP</td>
+<td>Interaction to Next Paint</td>
+<td>交互到下次绘制，FID 的替代指标</td>
+<td>≤ 200ms</td>
+<td>≤ 500ms</td>
+<td>&gt; 500ms</td>
+</tr>
+</tbody>
+</table>
+<p><strong>其他关键性能指标</strong></p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>全称</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FCP</td>
+<td>First Contentful Paint</td>
+<td>首次内容绘制，页面首个内容元素渲染的时间</td>
+</tr>
+<tr>
+<td>TTFB</td>
+<td>Time to First Byte</td>
+<td>首字节时间，从请求到收到第一个字节</td>
+</tr>
+<tr>
+<td>TTI</td>
+<td>Time to Interactive</td>
+<td>可交互时间，页面完全可交互的时间</td>
+</tr>
+<tr>
+<td>TBT</td>
+<td>Total Blocking Time</td>
+<td>总阻塞时间，FCP 到 TTI 之间长任务的阻塞总时长</td>
+</tr>
+<tr>
+<td>FMP</td>
+<td>First Meaningful Paint</td>
+<td>首次有意义绘制（已弃用，被 LCP 替代）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>指标采集</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 使用 web-vitals 库采集</span>
+<span class="hljs-keyword">import</span> { onLCP, onFID, onCLS, onINP, onFCP, onTTFB } <span class="hljs-keyword">from</span> <span class="hljs-string">'web-vitals'</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">reportMetric</span>(<span class="hljs-params">metric</span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(metric.<span class="hljs-property">name</span>, metric.<span class="hljs-property">value</span>, metric.<span class="hljs-property">rating</span>);
+  <span class="hljs-comment">// 上报到监控平台</span>
+  navigator.<span class="hljs-title function_">sendBeacon</span>(<span class="hljs-string">'/analytics'</span>, <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(metric));
+}
+
+<span class="hljs-title function_">onLCP</span>(reportMetric);
+<span class="hljs-title function_">onFID</span>(reportMetric);
+<span class="hljs-title function_">onCLS</span>(reportMetric);
+<span class="hljs-title function_">onINP</span>(reportMetric);
+<span class="hljs-title function_">onFCP</span>(reportMetric);
+<span class="hljs-title function_">onTTFB</span>(reportMetric);
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 使用 PerformanceObserver 原生采集 LCP</span>
+<span class="hljs-keyword">const</span> observer = <span class="hljs-keyword">new</span> <span class="hljs-title class_">PerformanceObserver</span>(<span class="hljs-function">(<span class="hljs-params">entryList</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> entries = entryList.<span class="hljs-title function_">getEntries</span>();
+  <span class="hljs-keyword">const</span> lastEntry = entries[entries.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>];
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'LCP:'</span>, lastEntry.<span class="hljs-property">startTime</span>);
+});
+observer.<span class="hljs-title function_">observe</span>({ <span class="hljs-attr">type</span>: <span class="hljs-string">'largest-contentful-paint'</span>, <span class="hljs-attr">buffered</span>: <span class="hljs-literal">true</span> });
+</code></pre>
+<hr></hr>
+<h2 id="2-lighthouse-性能审计">2. Lighthouse 性能审计</h2>
+<blockquote>
+<p>面试题：Lighthouse 的性能评分包含哪些指标？如何优化评分？</p>
+</blockquote>
+<p><strong>Lighthouse 性能评分权重（v10+）</strong></p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>权重</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FCP（First Contentful Paint）</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>SI（Speed Index）</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>LCP（Largest Contentful Paint）</td>
+<td>25%</td>
+</tr>
+<tr>
+<td>TBT（Total Blocking Time）</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>CLS（Cumulative Layout Shift）</td>
+<td>25%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>常用优化建议</strong></p>
+<ol>
+<li><strong>减少未使用的 JavaScript</strong>：代码分割、Tree-shaking、按需加载</li>
+<li><strong>减少未使用的 CSS</strong>：PurgeCSS、CSS-in-JS 按需生成</li>
+<li><strong>消除阻塞渲染的资源</strong>：defer/async 加载 JS，关键 CSS 内联</li>
+<li><strong>适当调整图片大小</strong>：响应式图片、WebP/AVIF 格式</li>
+<li><strong>预连接所需源</strong>：<code>&lt;link rel="preconnect"&gt;</code>、<code>&lt;link rel="dns-prefetch"&gt;</code></li>
+</ol>
+<hr></hr>
+<h2 id="3-加载性能优化">3. 加载性能优化</h2>
+<blockquote>
+<p>面试题：如何优化页面的加载性能？</p>
+</blockquote>
+<p><strong>资源加载策略</strong></p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- 预加载关键资源 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"preload"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/fonts/main.woff2"</span> <span class="hljs-attr">as</span>=<span class="hljs-string">"font"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"font/woff2"</span> <span class="hljs-attr">crossorigin</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"preload"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/css/critical.css"</span> <span class="hljs-attr">as</span>=<span class="hljs-string">"style"</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- 预连接第三方域名 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"preconnect"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.example.com"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"dns-prefetch"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://analytics.example.com"</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- 预获取下一页资源 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"prefetch"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/next-page.js"</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- 脚本加载策略 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"critical.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>                    <span class="hljs-comment">&lt;!-- 同步，阻塞渲染 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"non-critical.js"</span> <span class="hljs-attr">defer</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>          <span class="hljs-comment">&lt;!-- 延迟，DOMContentLoaded 前执行 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"analytics.js"</span> <span class="hljs-attr">async</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>             <span class="hljs-comment">&lt;!-- 异步，下载完立即执行 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"module"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"app.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>           <span class="hljs-comment">&lt;!-- 模块，天然 defer --&gt;</span>
+</code></pre>
+<p><strong>代码分割</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 路由懒加载</span>
+<span class="hljs-keyword">const</span> routes = [
+  {
+    <span class="hljs-attr">path</span>: <span class="hljs-string">'/dashboard'</span>,
+    <span class="hljs-attr">component</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(
+      <span class="hljs-comment">/* webpackChunkName: "dashboard" */</span>
+      <span class="hljs-comment">/* webpackPrefetch: true */</span>
+      <span class="hljs-string">'./views/Dashboard.vue'</span>
+    ),
+  },
+];
+
+<span class="hljs-comment">// 组件懒加载</span>
+<span class="hljs-keyword">import</span> { defineAsyncComponent } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">HeavyChart</span> = <span class="hljs-title function_">defineAsyncComponent</span>({
+  <span class="hljs-attr">loader</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">'./components/HeavyChart.vue'</span>),
+  <span class="hljs-attr">loadingComponent</span>: <span class="hljs-title class_">LoadingSpinner</span>,
+  <span class="hljs-attr">delay</span>: <span class="hljs-number">200</span>,
+  <span class="hljs-attr">timeout</span>: <span class="hljs-number">10000</span>,
+});
+</code></pre>
+<p><strong>图片懒加载</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 原生懒加载</span>
+<span class="hljs-comment">// &lt;img src="photo.jpg" loading="lazy" alt="描述"&gt;</span>
+
+<span class="hljs-comment">// IntersectionObserver 实现</span>
+<span class="hljs-keyword">const</span> observer = <span class="hljs-keyword">new</span> <span class="hljs-title class_">IntersectionObserver</span>(<span class="hljs-function">(<span class="hljs-params">entries</span>) =&gt;</span> {
+  entries.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">entry</span>) =&gt;</span> {
+    <span class="hljs-keyword">if</span> (entry.<span class="hljs-property">isIntersecting</span>) {
+      <span class="hljs-keyword">const</span> img = entry.<span class="hljs-property">target</span>;
+      img.<span class="hljs-property">src</span> = img.<span class="hljs-property">dataset</span>.<span class="hljs-property">src</span>;
+      img.<span class="hljs-title function_">removeAttribute</span>(<span class="hljs-string">'data-src'</span>);
+      observer.<span class="hljs-title function_">unobserve</span>(img);
+    }
+  });
+}, {
+  <span class="hljs-attr">rootMargin</span>: <span class="hljs-string">'200px 0px'</span>, <span class="hljs-comment">// 提前 200px 开始加载</span>
+});
+
+<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">'img[data-src]'</span>).<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">img</span>) =&gt;</span> {
+  observer.<span class="hljs-title function_">observe</span>(img);
+});
+</code></pre>
+<hr></hr>
+<h2 id="4-渲染性能优化">4. 渲染性能优化</h2>
+<blockquote>
+<p>面试题：浏览器渲染流程是怎样的？如何避免回流和重绘？</p>
+</blockquote>
+<p><strong>浏览器渲染流程（关键渲染路径）</strong></p>
+<pre><code>HTML → DOM 树
+              → Render 树 → Layout（布局） → Paint（绘制） → Composite（合成）
+CSS  → CSSOM
+</code></pre><p><strong>回流（Reflow/Layout）与重绘（Repaint）</strong></p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>触发条件</th>
+<th>性能影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>回流</td>
+<td>改变几何属性（尺寸、位置、显示状态）</td>
+<td>高（需重新计算布局）</td>
+</tr>
+<tr>
+<td>重绘</td>
+<td>改变外观属性（颜色、背景、阴影）</td>
+<td>中（无需重新布局）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>回流一定会触发重绘，重绘不一定触发回流。</strong></p>
+<p><strong>优化策略</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 1. 批量 DOM 操作 — 使用 DocumentFragment</span>
+<span class="hljs-keyword">const</span> fragment = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createDocumentFragment</span>();
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">1000</span>; i++) {
+  <span class="hljs-keyword">const</span> li = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">'li'</span>);
+  li.<span class="hljs-property">textContent</span> = <span class="hljs-string">`Item <span class="hljs-subst">${i}</span>`</span>;
+  fragment.<span class="hljs-title function_">appendChild</span>(li);
+}
+<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'list'</span>).<span class="hljs-title function_">appendChild</span>(fragment);
+
+<span class="hljs-comment">// 2. 批量样式修改 — 使用 class 或 cssText</span>
+element.<span class="hljs-property">className</span> = <span class="hljs-string">'new-class'</span>; <span class="hljs-comment">// 好：一次回流</span>
+<span class="hljs-comment">// 避免逐条修改样式属性</span>
+
+<span class="hljs-comment">// 3. 读写分离 — 避免强制同步布局</span>
+<span class="hljs-comment">// 不好：读写交替导致多次回流</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; items.<span class="hljs-property">length</span>; i++) {
+  items[i].<span class="hljs-property">style</span>.<span class="hljs-property">width</span> = container.<span class="hljs-property">offsetWidth</span> + <span class="hljs-string">'px'</span>; <span class="hljs-comment">// 每次读都触发回流</span>
+}
+<span class="hljs-comment">// 好：先读后写</span>
+<span class="hljs-keyword">const</span> width = container.<span class="hljs-property">offsetWidth</span>; <span class="hljs-comment">// 读一次</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; items.<span class="hljs-property">length</span>; i++) {
+  items[i].<span class="hljs-property">style</span>.<span class="hljs-property">width</span> = width + <span class="hljs-string">'px'</span>; <span class="hljs-comment">// 只写</span>
+}
+
+<span class="hljs-comment">// 4. 使用 transform 替代 top/left（触发合成，跳过布局和绘制）</span>
+<span class="hljs-comment">// 不好</span>
+element.<span class="hljs-property">style</span>.<span class="hljs-property">left</span> = newX + <span class="hljs-string">'px'</span>;
+<span class="hljs-comment">// 好</span>
+element.<span class="hljs-property">style</span>.<span class="hljs-property">transform</span> = <span class="hljs-string">`translateX(<span class="hljs-subst">${newX}</span>px)`</span>;
+
+<span class="hljs-comment">// 5. 使用 will-change 提示浏览器优化</span>
+.<span class="hljs-property">animated</span>-element {
+  will-<span class="hljs-attr">change</span>: transform, opacity;
+}
+</code></pre>
+<p><strong>使用 requestAnimationFrame 优化动画</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">animate</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-comment">// 在下一帧执行动画</span>
+  element.<span class="hljs-property">style</span>.<span class="hljs-property">transform</span> = <span class="hljs-string">`translateX(<span class="hljs-subst">${position}</span>px)`</span>;
+  position += speed;
+
+  <span class="hljs-keyword">if</span> (position &lt; target) {
+    <span class="hljs-title function_">requestAnimationFrame</span>(animate);
+  }
+}
+<span class="hljs-title function_">requestAnimationFrame</span>(animate);
+</code></pre>
+<hr></hr>
+<h2 id="5-图片优化">5. 图片优化</h2>
+<blockquote>
+<p>面试题：前端图片优化有哪些策略？</p>
+</blockquote>
+<p><strong>图片格式选择</strong></p>
+<table>
+<thead>
+<tr>
+<th>格式</th>
+<th>特点</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JPEG/JPG</td>
+<td>有损压缩，文件小</td>
+<td>照片、渐变丰富的图</td>
+</tr>
+<tr>
+<td>PNG</td>
+<td>无损压缩，支持透明</td>
+<td>图标、需要透明的图</td>
+</tr>
+<tr>
+<td>WebP</td>
+<td>比 JPEG/PNG 更小，支持透明和动画</td>
+<td>现代浏览器的通用选择</td>
+</tr>
+<tr>
+<td>AVIF</td>
+<td>比 WebP 更小，压缩率最高</td>
+<td>最新浏览器，兼顾质量和体积</td>
+</tr>
+<tr>
+<td>SVG</td>
+<td>矢量，不失真，可编程</td>
+<td>图标、简单图形</td>
+</tr>
+</tbody>
+</table>
+<p><strong>响应式图片</strong></p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- srcset + sizes --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+  <span class="hljs-attr">src</span>=<span class="hljs-string">"photo-800w.jpg"</span>
+  <span class="hljs-attr">srcset</span>=<span class="hljs-string">"
+    photo-400w.jpg 400w,
+    photo-800w.jpg 800w,
+    photo-1200w.jpg 1200w
+  "</span>
+  <span class="hljs-attr">sizes</span>=<span class="hljs-string">"
+    (max-width: 480px) 400px,
+    (max-width: 960px) 800px,
+    1200px
+  "</span>
+  <span class="hljs-attr">alt</span>=<span class="hljs-string">"响应式图片"</span>
+  <span class="hljs-attr">loading</span>=<span class="hljs-string">"lazy"</span>
+&gt;</span>
+
+<span class="hljs-comment">&lt;!-- picture 元素：格式协商 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">picture</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"photo.avif"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"image/avif"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"photo.webp"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"image/webp"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"photo.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"多格式图片"</span> <span class="hljs-attr">loading</span>=<span class="hljs-string">"lazy"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">picture</span>&gt;</span>
+</code></pre>
+<p><strong>其他图片优化手段</strong></p>
+<ol>
+<li><strong>压缩</strong>：使用 tinypng、imagemin 等工具压缩</li>
+<li><strong>CDN 图片处理</strong>：动态裁剪、格式转换、质量调整</li>
+<li><strong>雪碧图/CSS Sprites</strong>：合并小图标减少请求（现在更推荐 SVG Sprite 或 Icon Font）</li>
+<li><strong>Base64 内联</strong>：小于 4-8KB 的图片转为 Base64 内联到代码中</li>
+<li><strong>渐进式加载</strong>：先加载模糊缩略图，再加载原图（如 BlurHash）</li>
+</ol>
+<hr></hr>
+<h2 id="6-缓存策略">6. 缓存策略</h2>
+<blockquote>
+<p>面试题：浏览器缓存机制有哪些？强缓存和协商缓存的区别？</p>
+</blockquote>
+<p><strong>缓存优先级：Service Worker → Memory Cache → Disk Cache → 网络请求</strong></p>
+<p><strong>强缓存（不发请求）</strong></p>
+<table>
+<thead>
+<tr>
+<th>头部</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Cache-Control: max-age=31536000</code></td>
+<td>资源有效期（秒），优先级高</td>
+</tr>
+<tr>
+<td><code>Cache-Control: no-cache</code></td>
+<td>每次都需要协商验证</td>
+</tr>
+<tr>
+<td><code>Cache-Control: no-store</code></td>
+<td>完全不缓存</td>
+</tr>
+<tr>
+<td><code>Expires: Wed, 09 Jun 2027 10:18:14 GMT</code></td>
+<td>过期时间（绝对时间），优先级低于 Cache-Control</td>
+</tr>
+</tbody>
+</table>
+<p><strong>协商缓存（发请求验证）</strong></p>
+<table>
+<thead>
+<tr>
+<th>请求头</th>
+<th>响应头</th>
+<th>机制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>If-None-Match</code></td>
+<td><code>ETag</code></td>
+<td>资源内容的哈希值</td>
+</tr>
+<tr>
+<td><code>If-Modified-Since</code></td>
+<td><code>Last-Modified</code></td>
+<td>资源最后修改时间</td>
+</tr>
+</tbody>
+</table>
+<p>命中协商缓存返回 <strong>304 Not Modified</strong>，未命中返回 <strong>200</strong> 和新资源。</p>
+<p><strong>前端缓存最佳实践</strong></p>
+<pre><code>HTML 文件        → Cache-Control: no-cache（每次协商验证）
+JS/CSS（带hash） → Cache-Control: max-age=31536000（一年强缓存）
+API 数据         → Cache-Control: no-cache 或 max-age=0
+字体文件         → Cache-Control: max-age=31536000
+图片（带hash）   → Cache-Control: max-age=31536000
+</code></pre><p><strong>Service Worker 缓存</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// sw.js</span>
+<span class="hljs-keyword">const</span> <span class="hljs-variable constant_">CACHE_NAME</span> = <span class="hljs-string">'app-v1'</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-variable constant_">STATIC_ASSETS</span> = [
+  <span class="hljs-string">'/'</span>,
+  <span class="hljs-string">'/index.html'</span>,
+  <span class="hljs-string">'/css/main.css'</span>,
+  <span class="hljs-string">'/js/app.js'</span>,
+];
+
+<span class="hljs-comment">// 安装：预缓存静态资源</span>
+self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'install'</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+  event.<span class="hljs-title function_">waitUntil</span>(
+    caches.<span class="hljs-title function_">open</span>(<span class="hljs-variable constant_">CACHE_NAME</span>).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">cache</span>) =&gt;</span> cache.<span class="hljs-title function_">addAll</span>(<span class="hljs-variable constant_">STATIC_ASSETS</span>))
+  );
+});
+
+<span class="hljs-comment">// 激活：清理旧缓存</span>
+self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'activate'</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+  event.<span class="hljs-title function_">waitUntil</span>(
+    caches.<span class="hljs-title function_">keys</span>().<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">keys</span>) =&gt;</span> {
+      <span class="hljs-keyword">return</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">all</span>(
+        keys.<span class="hljs-title function_">filter</span>(<span class="hljs-function">(<span class="hljs-params">key</span>) =&gt;</span> key !== <span class="hljs-variable constant_">CACHE_NAME</span>).<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">key</span>) =&gt;</span> caches.<span class="hljs-title function_">delete</span>(key))
+      );
+    })
+  );
+});
+
+<span class="hljs-comment">// 拦截请求：Cache First 策略</span>
+self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'fetch'</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+  event.<span class="hljs-title function_">respondWith</span>(
+    caches.<span class="hljs-title function_">match</span>(event.<span class="hljs-property">request</span>).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">cached</span>) =&gt;</span> {
+      <span class="hljs-keyword">return</span> cached || <span class="hljs-title function_">fetch</span>(event.<span class="hljs-property">request</span>).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">response</span>) =&gt;</span> {
+        <span class="hljs-keyword">const</span> clone = response.<span class="hljs-title function_">clone</span>();
+        caches.<span class="hljs-title function_">open</span>(<span class="hljs-variable constant_">CACHE_NAME</span>).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">cache</span>) =&gt;</span> cache.<span class="hljs-title function_">put</span>(event.<span class="hljs-property">request</span>, clone));
+        <span class="hljs-keyword">return</span> response;
+      });
+    })
+  );
+});
+</code></pre>
+<p><strong>常见缓存策略模式</strong></p>
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>说明</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cache First</td>
+<td>优先缓存，缓存无则网络</td>
+<td>静态资源</td>
+</tr>
+<tr>
+<td>Network First</td>
+<td>优先网络，失败则缓存</td>
+<td>API 数据</td>
+</tr>
+<tr>
+<td>Stale While Revalidate</td>
+<td>先返回缓存，同时后台更新</td>
+<td>频繁更新的非关键资源</td>
+</tr>
+<tr>
+<td>Cache Only</td>
+<td>只用缓存</td>
+<td>离线资源</td>
+</tr>
+<tr>
+<td>Network Only</td>
+<td>只用网络</td>
+<td>实时数据</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="7-首屏优化">7. 首屏优化</h2>
+<blockquote>
+<p>面试题：如何优化首屏加载速度？</p>
+</blockquote>
+<p><strong>首屏优化清单</strong></p>
+<ol>
+<li><p><strong>关键渲染路径优化</strong></p>
+<ul>
+<li>内联关键 CSS（Critical CSS），异步加载非关键 CSS</li>
+<li>JS 加入 defer/async，避免阻塞渲染</li>
+<li>减少关键资源数量和大小</li>
+</ul>
+</li>
+<li><p><strong>资源体积优化</strong></p>
+<ul>
+<li>Gzip / Brotli 压缩（Brotli 压缩率更高）</li>
+<li>代码分割，首屏只加载必要代码</li>
+<li>Tree-shaking 去除无用代码</li>
+<li>图片压缩 + WebP/AVIF 格式</li>
+</ul>
+</li>
+<li><p><strong>网络优化</strong></p>
+<ul>
+<li>CDN 加速静态资源分发</li>
+<li>HTTP/2 多路复用</li>
+<li>资源预加载（preload）和预连接（preconnect）</li>
+<li>DNS 预解析（dns-prefetch）</li>
+</ul>
+</li>
+<li><p><strong>渲染优化</strong></p>
+<ul>
+<li>SSR/SSG 服务端渲染</li>
+<li>骨架屏（Skeleton Screen）占位</li>
+<li>首屏内容优先渲染，非首屏懒加载</li>
+<li>字体加载优化（font-display: swap）</li>
+</ul>
+</li>
+</ol>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- 关键 CSS 内联 + 非关键 CSS 异步 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css">
+  <span class="hljs-comment">/* 首屏关键样式内联 */</span>
+  <span class="hljs-selector-tag">body</span> { <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>; <span class="hljs-attribute">font-family</span>: sans-serif; }
+  <span class="hljs-selector-class">.header</span> { <span class="hljs-attribute">height</span>: <span class="hljs-number">64px</span>; <span class="hljs-attribute">background</span>: <span class="hljs-number">#1a1a2e</span>; }
+  <span class="hljs-selector-class">.hero</span> { <span class="hljs-attribute">min-height</span>: <span class="hljs-number">400px</span>; }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"preload"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/css/full.css"</span> <span class="hljs-attr">as</span>=<span class="hljs-string">"style"</span> <span class="hljs-attr">onload</span>=<span class="hljs-string">"this.onload=null;this.rel='stylesheet'"</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- 骨架屏 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"skeleton"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"skeleton-header"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"skeleton-content"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"skeleton-line"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"skeleton-line short"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<hr></hr>
+<h2 id="8-虚拟滚动">8. 虚拟滚动</h2>
+<blockquote>
+<p>面试题：大数据量列表如何优化渲染性能？虚拟滚动的原理是什么？</p>
+</blockquote>
+<p><strong>虚拟滚动原理</strong></p>
+<p>虚拟滚动的核心思想是只渲染可视区域内的列表项，而不是渲染全部数据。通过监听滚动事件，动态计算当前应该渲染哪些数据项。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 虚拟滚动核心实现</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">VirtualScroller</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">{ container, itemHeight, totalItems, renderItem }</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">container</span> = container;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">itemHeight</span> = itemHeight;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">totalItems</span> = totalItems;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">renderItem</span> = renderItem;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">visibleCount</span> = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">ceil</span>(container.<span class="hljs-property">clientHeight</span> / itemHeight);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">bufferSize</span> = <span class="hljs-number">5</span>; <span class="hljs-comment">// 上下缓冲区</span>
+
+    <span class="hljs-comment">// 总高度占位</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">phantom</span> = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">'div'</span>);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">phantom</span>.<span class="hljs-property">style</span>.<span class="hljs-property">height</span> = <span class="hljs-string">`<span class="hljs-subst">${totalItems * itemHeight}</span>px`</span>;
+    container.<span class="hljs-title function_">appendChild</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">phantom</span>);
+
+    <span class="hljs-comment">// 内容容器</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">content</span> = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">'div'</span>);
+    container.<span class="hljs-title function_">appendChild</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">content</span>);
+
+    container.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'scroll'</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">onScroll</span>());
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">onScroll</span>();
+  }
+
+  <span class="hljs-title function_">onScroll</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">const</span> scrollTop = <span class="hljs-variable language_">this</span>.<span class="hljs-property">container</span>.<span class="hljs-property">scrollTop</span>;
+    <span class="hljs-keyword">const</span> startIndex = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">max</span>(<span class="hljs-number">0</span>, <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>(scrollTop / <span class="hljs-variable language_">this</span>.<span class="hljs-property">itemHeight</span>) - <span class="hljs-variable language_">this</span>.<span class="hljs-property">bufferSize</span>);
+    <span class="hljs-keyword">const</span> endIndex = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">min</span>(
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">totalItems</span>,
+      startIndex + <span class="hljs-variable language_">this</span>.<span class="hljs-property">visibleCount</span> + <span class="hljs-number">2</span> * <span class="hljs-variable language_">this</span>.<span class="hljs-property">bufferSize</span>
+    );
+
+    <span class="hljs-comment">// 偏移内容容器</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">content</span>.<span class="hljs-property">style</span>.<span class="hljs-property">transform</span> = <span class="hljs-string">`translateY(<span class="hljs-subst">${startIndex * <span class="hljs-variable language_">this</span>.itemHeight}</span>px)`</span>;
+
+    <span class="hljs-comment">// 只渲染可视区域 + 缓冲区的项目</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">content</span>.<span class="hljs-property">innerHTML</span> = <span class="hljs-string">''</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = startIndex; i &lt; endIndex; i++) {
+      <span class="hljs-keyword">const</span> item = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">renderItem</span>(i);
+      item.<span class="hljs-property">style</span>.<span class="hljs-property">height</span> = <span class="hljs-string">`<span class="hljs-subst">${<span class="hljs-variable language_">this</span>.itemHeight}</span>px`</span>;
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">content</span>.<span class="hljs-title function_">appendChild</span>(item);
+    }
+  }
+}
+</code></pre>
+<p><strong>Vue 中使用虚拟滚动</strong></p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- 使用 vue-virtual-scroller --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">RecycleScroller</span>
+    <span class="hljs-attr">class</span>=<span class="hljs-string">"scroller"</span>
+    <span class="hljs-attr">:items</span>=<span class="hljs-string">"items"</span>
+    <span class="hljs-attr">:item-size</span>=<span class="hljs-string">"50"</span>
+    <span class="hljs-attr">key-field</span>=<span class="hljs-string">"id"</span>
+    <span class="hljs-attr">v-slot</span>=<span class="hljs-string">"{ item }"</span>
+  &gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>{{ item.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">RecycleScroller</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+</code></pre>
+<p><strong>不定高度虚拟滚动</strong></p>
+<p>处理不定高度的列表项更复杂，通常需要：</p>
+<ol>
+<li>预估每项高度</li>
+<li>渲染后测量实际高度并缓存</li>
+<li>动态更新总高度和偏移量</li>
+<li>使用二分查找快速定位 scrollTop 对应的起始索引</li>
+</ol>
+<hr></hr>
+<h2 id="9-内存泄漏检测与治理">9. 内存泄漏检测与治理</h2>
+<blockquote>
+<p>面试题：前端常见的内存泄漏有哪些？如何检测和修复？</p>
+</blockquote>
+<p><strong>常见内存泄漏场景</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 1. 未清除的定时器</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-title function_">mounted</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">timer</span> = <span class="hljs-built_in">setInterval</span>(<span class="hljs-function">() =&gt;</span> {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">fetchData</span>();
+    }, <span class="hljs-number">5000</span>);
+  },
+  <span class="hljs-comment">// 修复：组件卸载时清除</span>
+  <span class="hljs-title function_">unmounted</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-built_in">clearInterval</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">timer</span>);
+  }
+};
+
+<span class="hljs-comment">// 2. 未移除的事件监听</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">setupListener</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">handler</span> = (<span class="hljs-params"></span>) =&gt; { <span class="hljs-comment">/* 处理逻辑 */</span> };
+  <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'resize'</span>, handler);
+
+  <span class="hljs-comment">// 修复：返回清理函数</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-string">'resize'</span>, handler);
+}
+
+<span class="hljs-comment">// 3. 闭包引用 DOM</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">setupClickHandler</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> element = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'huge-data'</span>);
+  <span class="hljs-keyword">const</span> data = element.<span class="hljs-property">innerHTML</span>; <span class="hljs-comment">// 大量数据</span>
+
+  element.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'click'</span>, <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-comment">// 闭包引用了 element 和 data，即使 element 从 DOM 移除也不会被回收</span>
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(data.<span class="hljs-property">length</span>);
+  });
+}
+
+<span class="hljs-comment">// 4. 未清理的全局变量和 Map/Set</span>
+<span class="hljs-keyword">const</span> cache = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>();
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">processData</span>(<span class="hljs-params">key, value</span>) {
+  cache.<span class="hljs-title function_">set</span>(key, value); <span class="hljs-comment">// 只增不减，内存不断增长</span>
+}
+<span class="hljs-comment">// 修复：使用 WeakMap 或设置清理策略</span>
+<span class="hljs-keyword">const</span> cache2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">WeakMap</span>(); <span class="hljs-comment">// key 被回收时自动清理</span>
+
+<span class="hljs-comment">// 5. console.log 保留对象引用（开发环境）</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(largeObject); <span class="hljs-comment">// DevTools 保持引用，对象无法被 GC</span>
+
+<span class="hljs-comment">// 6. 未取消的 AbortController</span>
+<span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> <span class="hljs-title class_">AbortController</span>();
+<span class="hljs-title function_">fetch</span>(<span class="hljs-string">'/api/data'</span>, { <span class="hljs-attr">signal</span>: controller.<span class="hljs-property">signal</span> });
+<span class="hljs-comment">// 组件卸载时应调用 controller.abort()</span>
+</code></pre>
+<p><strong>Vue3 中的最佳实践</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> { onMounted, onUnmounted, ref } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">useEventListener</span>(<span class="hljs-params">target, event, handler</span>) {
+  <span class="hljs-title function_">onMounted</span>(<span class="hljs-function">() =&gt;</span> target.<span class="hljs-title function_">addEventListener</span>(event, handler));
+  <span class="hljs-title function_">onUnmounted</span>(<span class="hljs-function">() =&gt;</span> target.<span class="hljs-title function_">removeEventListener</span>(event, handler));
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">useInterval</span>(<span class="hljs-params">callback, delay</span>) {
+  <span class="hljs-keyword">const</span> id = <span class="hljs-title function_">ref</span>(<span class="hljs-literal">null</span>);
+  <span class="hljs-title function_">onMounted</span>(<span class="hljs-function">() =&gt;</span> {
+    id.<span class="hljs-property">value</span> = <span class="hljs-built_in">setInterval</span>(callback, delay);
+  });
+  <span class="hljs-title function_">onUnmounted</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">if</span> (id.<span class="hljs-property">value</span>) <span class="hljs-built_in">clearInterval</span>(id.<span class="hljs-property">value</span>);
+  });
+}
+</code></pre>
+<p><strong>Chrome DevTools 检测内存泄漏</strong></p>
+<ol>
+<li><p><strong>Memory 面板 → Heap Snapshot</strong></p>
+<ul>
+<li>拍摄快照 A → 执行操作 → 拍摄快照 B</li>
+<li>对比两个快照，查看 Detached DOM 节点和增长的对象</li>
+<li>筛选 "Objects allocated between Snapshot 1 and Snapshot 2"</li>
+</ul>
+</li>
+<li><p><strong>Memory 面板 → Allocation Timeline</strong></p>
+<ul>
+<li>实时记录内存分配情况</li>
+<li>蓝色条表示仍然存活的分配，灰色表示已被 GC</li>
+</ul>
+</li>
+<li><p><strong>Performance Monitor</strong></p>
+<ul>
+<li>实时监控 JS Heap Size、DOM Nodes 数量</li>
+<li>如果随时间持续增长且不回落，说明存在泄漏</li>
+</ul>
+</li>
+<li><p><strong>Performance 面板录制</strong></p>
+<ul>
+<li>录制一段时间的性能数据</li>
+<li>查看 JS Heap 曲线是否持续上升</li>
+</ul>
+</li>
+</ol>
+<hr></hr>
+<h2 id="10-网络请求优化">10. 网络请求优化</h2>
+<blockquote>
+<p>面试题：如何优化前端的网络请求？</p>
+</blockquote>
+<p><strong>HTTP/2 优化</strong></p>
+<p>HTTP/2 核心特性：</p>
+<ul>
+<li><strong>多路复用</strong>：一个 TCP 连接上并行多个请求</li>
+<li><strong>头部压缩</strong>：HPACK 算法压缩 HTTP 头</li>
+<li><strong>服务器推送</strong>：服务器主动推送资源</li>
+<li><strong>二进制分帧</strong>：更高效的数据传输</li>
+</ul>
+<p>HTTP/2 环境下需要调整的优化策略：</p>
+<ul>
+<li>不再需要域名分片（sharding）</li>
+<li>不再需要合并 JS/CSS 文件（多路复用已解决）</li>
+<li>小文件不需要内联（HTTP/2 请求开销很小）</li>
+<li>仍然需要代码分割和压缩</li>
+</ul>
+<p><strong>请求优化策略</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 1. 请求去重 — 相同请求只发一次</span>
+<span class="hljs-keyword">const</span> pendingRequests = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>();
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">dedupedFetch</span>(<span class="hljs-params">url, options</span>) {
+  <span class="hljs-keyword">const</span> key = <span class="hljs-string">`<span class="hljs-subst">${url}</span>-<span class="hljs-subst">${<span class="hljs-built_in">JSON</span>.stringify(options)}</span>`</span>;
+  <span class="hljs-keyword">if</span> (pendingRequests.<span class="hljs-title function_">has</span>(key)) {
+    <span class="hljs-keyword">return</span> pendingRequests.<span class="hljs-title function_">get</span>(key);
+  }
+  <span class="hljs-keyword">const</span> promise = <span class="hljs-title function_">fetch</span>(url, options).<span class="hljs-title function_">finally</span>(<span class="hljs-function">() =&gt;</span> {
+    pendingRequests.<span class="hljs-title function_">delete</span>(key);
+  });
+  pendingRequests.<span class="hljs-title function_">set</span>(key, promise);
+  <span class="hljs-keyword">return</span> promise;
+}
+
+<span class="hljs-comment">// 2. 请求取消</span>
+<span class="hljs-keyword">const</span> controller = <span class="hljs-keyword">new</span> <span class="hljs-title class_">AbortController</span>();
+<span class="hljs-title function_">fetch</span>(<span class="hljs-string">'/api/search?q=keyword'</span>, { <span class="hljs-attr">signal</span>: controller.<span class="hljs-property">signal</span> });
+<span class="hljs-comment">// 用户输入变化时取消上一次请求</span>
+controller.<span class="hljs-title function_">abort</span>();
+
+<span class="hljs-comment">// 3. 请求并发控制</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">concurrentFetch</span>(<span class="hljs-params">urls, maxConcurrency = <span class="hljs-number">5</span></span>) {
+  <span class="hljs-keyword">const</span> results = [];
+  <span class="hljs-keyword">const</span> executing = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Set</span>();
+
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> url <span class="hljs-keyword">of</span> urls) {
+    <span class="hljs-keyword">const</span> promise = <span class="hljs-title function_">fetch</span>(url).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> res.<span class="hljs-title function_">json</span>());
+    results.<span class="hljs-title function_">push</span>(promise);
+    executing.<span class="hljs-title function_">add</span>(promise);
+    promise.<span class="hljs-title function_">finally</span>(<span class="hljs-function">() =&gt;</span> executing.<span class="hljs-title function_">delete</span>(promise));
+
+    <span class="hljs-keyword">if</span> (executing.<span class="hljs-property">size</span> &gt;= maxConcurrency) {
+      <span class="hljs-keyword">await</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">race</span>(executing);
+    }
+  }
+  <span class="hljs-keyword">return</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">all</span>(results);
+}
+
+<span class="hljs-comment">// 4. 接口数据缓存</span>
+<span class="hljs-keyword">const</span> apiCache = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>();
+<span class="hljs-keyword">const</span> <span class="hljs-variable constant_">CACHE_TTL</span> = <span class="hljs-number">5</span> * <span class="hljs-number">60</span> * <span class="hljs-number">1000</span>; <span class="hljs-comment">// 5 分钟</span>
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">cachedFetch</span>(<span class="hljs-params">url</span>) {
+  <span class="hljs-keyword">const</span> cached = apiCache.<span class="hljs-title function_">get</span>(url);
+  <span class="hljs-keyword">if</span> (cached &amp;&amp; <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>() - cached.<span class="hljs-property">timestamp</span> &lt; <span class="hljs-variable constant_">CACHE_TTL</span>) {
+    <span class="hljs-keyword">return</span> cached.<span class="hljs-property">data</span>;
+  }
+  <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(url).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">r</span>) =&gt;</span> r.<span class="hljs-title function_">json</span>());
+  apiCache.<span class="hljs-title function_">set</span>(url, { data, <span class="hljs-attr">timestamp</span>: <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>() });
+  <span class="hljs-keyword">return</span> data;
+}
+</code></pre>
+<p><strong>数据传输优化</strong></p>
+<ol>
+<li><strong>Gzip/Brotli 压缩</strong>：服务端开启压缩，Brotli 压缩率比 Gzip 高 15-25%</li>
+<li><strong>GraphQL</strong>：按需请求字段，避免 over-fetching</li>
+<li><strong>分页和增量加载</strong>：大数据集分页返回</li>
+<li><strong>WebSocket</strong>：实时场景使用长连接替代轮询</li>
+<li><strong>合并请求</strong>：将多个小请求合并为一个批量请求</li>
+</ol>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="engineering.html" class="navigation navigation-prev " aria-label="Previous page: 前端工程化">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="security.html" class="navigation navigation-next " aria-label="Next page: 前端安全">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"性能优化","level":"2.9","depth":1,"next":{"title":"前端安全","level":"2.10","depth":1,"path":"frontend/security.md","ref":"frontend/security.md","articles":[]},"previous":{"title":"前端工程化","level":"2.8","depth":1,"path":"frontend/engineering.md","ref":"frontend/engineering.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"frontend/performance.md","mtime":"2026-03-31T06:35:11.837Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

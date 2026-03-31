@@ -1,0 +1,1891 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>数据库操作 · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="practice.html" />
+    
+    
+    <link rel="prev" href="frameworks.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../frontend/html-css.html">
+            
+                <a href="../frontend/html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../frontend/javascript.html">
+            
+                <a href="../frontend/javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../frontend/typescript.html">
+            
+                <a href="../frontend/typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../frontend/browser.html">
+            
+                <a href="../frontend/browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../frontend/network.html">
+            
+                <a href="../frontend/network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../frontend/react.html">
+            
+                <a href="../frontend/react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../frontend/vue.html">
+            
+                <a href="../frontend/vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../frontend/engineering.html">
+            
+                <a href="../frontend/engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../frontend/performance.html">
+            
+                <a href="../frontend/performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../frontend/security.html">
+            
+                <a href="../frontend/security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="basics.html">
+            
+                <a href="basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="event-loop.html">
+            
+                <a href="event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="stream.html">
+            
+                <a href="stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="frameworks.html">
+            
+                <a href="frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.5" data-path="database.html">
+            
+                <a href="database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="practice.html">
+            
+                <a href="practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../golang/basics.html">
+            
+                <a href="../golang/basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../golang/concurrency.html">
+            
+                <a href="../golang/concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../golang/memory.html">
+            
+                <a href="../golang/memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../golang/web-framework.html">
+            
+                <a href="../golang/web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../golang/database-design.html">
+            
+                <a href="../golang/database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../golang/testing-practice.html">
+            
+                <a href="../golang/testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../agent/llm-basics.html">
+            
+                <a href="../agent/llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../agent/prompt-engineering.html">
+            
+                <a href="../agent/prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../agent/rag.html">
+            
+                <a href="../agent/rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../agent/agent-architecture.html">
+            
+                <a href="../agent/agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../agent/tool-calling.html">
+            
+                <a href="../agent/tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../agent/practice.html">
+            
+                <a href="../agent/practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >数据库操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="nodejs-数据库操作面试指南">Node.js 数据库操作面试指南</h1>
+<h2 id="一、mysql-操作">一、MySQL 操作</h2>
+<blockquote>
+<p><strong>面试题：Node.js 中如何操作 MySQL 数据库？mysql2 和 Sequelize 有什么区别？</strong></p>
+</blockquote>
+<h3 id="11-mysql2-原生驱动">1.1 mysql2 原生驱动</h3>
+<p><code>mysql2</code> 是 Node.js 中最常用的 MySQL 驱动，兼容 <code>mysql</code> 库的 API，但性能更好，支持 Promise 和预处理语句。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 基本连接</span>
+<span class="hljs-keyword">const</span> mysql = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mysql2/promise'</span>);
+
+<span class="hljs-comment">// 创建连接</span>
+<span class="hljs-keyword">const</span> connection = <span class="hljs-keyword">await</span> mysql.<span class="hljs-title function_">createConnection</span>({
+  <span class="hljs-attr">host</span>: <span class="hljs-string">'localhost'</span>,
+  <span class="hljs-attr">port</span>: <span class="hljs-number">3306</span>,
+  <span class="hljs-attr">user</span>: <span class="hljs-string">'root'</span>,
+  <span class="hljs-attr">password</span>: <span class="hljs-string">'password'</span>,
+  <span class="hljs-attr">database</span>: <span class="hljs-string">'mydb'</span>,
+  <span class="hljs-attr">charset</span>: <span class="hljs-string">'utf8mb4'</span>
+});
+
+<span class="hljs-comment">// 查询</span>
+<span class="hljs-keyword">const</span> [rows] = <span class="hljs-keyword">await</span> connection.<span class="hljs-title function_">execute</span>(<span class="hljs-string">'SELECT * FROM users WHERE id = ?'</span>, [<span class="hljs-number">1</span>]);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(rows);
+
+<span class="hljs-comment">// 插入</span>
+<span class="hljs-keyword">const</span> [result] = <span class="hljs-keyword">await</span> connection.<span class="hljs-title function_">execute</span>(
+  <span class="hljs-string">'INSERT INTO users (name, email) VALUES (?, ?)'</span>,
+  [<span class="hljs-string">'Alice'</span>, <span class="hljs-string">'alice@example.com'</span>]
+);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'插入 ID:'</span>, result.<span class="hljs-property">insertId</span>);
+
+<span class="hljs-comment">// 更新</span>
+<span class="hljs-keyword">const</span> [updateResult] = <span class="hljs-keyword">await</span> connection.<span class="hljs-title function_">execute</span>(
+  <span class="hljs-string">'UPDATE users SET name = ? WHERE id = ?'</span>,
+  [<span class="hljs-string">'Bob'</span>, <span class="hljs-number">1</span>]
+);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'影响行数:'</span>, updateResult.<span class="hljs-property">affectedRows</span>);
+
+<span class="hljs-comment">// 删除</span>
+<span class="hljs-keyword">await</span> connection.<span class="hljs-title function_">execute</span>(<span class="hljs-string">'DELETE FROM users WHERE id = ?'</span>, [<span class="hljs-number">1</span>]);
+
+<span class="hljs-comment">// 关闭连接</span>
+<span class="hljs-keyword">await</span> connection.<span class="hljs-title function_">end</span>();
+</code></pre>
+<h3 id="12-连接池（pool）">1.2 连接池（Pool）</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> mysql = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mysql2/promise'</span>);
+
+<span class="hljs-comment">// 创建连接池（推荐生产环境使用）</span>
+<span class="hljs-keyword">const</span> pool = mysql.<span class="hljs-title function_">createPool</span>({
+  <span class="hljs-attr">host</span>: <span class="hljs-string">'localhost'</span>,
+  <span class="hljs-attr">user</span>: <span class="hljs-string">'root'</span>,
+  <span class="hljs-attr">password</span>: <span class="hljs-string">'password'</span>,
+  <span class="hljs-attr">database</span>: <span class="hljs-string">'mydb'</span>,
+  <span class="hljs-attr">waitForConnections</span>: <span class="hljs-literal">true</span>,    <span class="hljs-comment">// 连接池满时等待</span>
+  <span class="hljs-attr">connectionLimit</span>: <span class="hljs-number">10</span>,          <span class="hljs-comment">// 最大连接数</span>
+  <span class="hljs-attr">maxIdle</span>: <span class="hljs-number">10</span>,                  <span class="hljs-comment">// 最大空闲连接数</span>
+  <span class="hljs-attr">idleTimeout</span>: <span class="hljs-number">60000</span>,           <span class="hljs-comment">// 空闲连接超时时间（毫秒）</span>
+  <span class="hljs-attr">queueLimit</span>: <span class="hljs-number">0</span>,                <span class="hljs-comment">// 等待队列限制（0 = 无限制）</span>
+  <span class="hljs-attr">enableKeepAlive</span>: <span class="hljs-literal">true</span>,        <span class="hljs-comment">// 保持连接活跃</span>
+  <span class="hljs-attr">keepAliveInitialDelay</span>: <span class="hljs-number">0</span>
+});
+
+<span class="hljs-comment">// 使用连接池执行查询</span>
+<span class="hljs-keyword">const</span> [rows] = <span class="hljs-keyword">await</span> pool.<span class="hljs-title function_">execute</span>(<span class="hljs-string">'SELECT * FROM users'</span>);
+
+<span class="hljs-comment">// 或者获取单个连接</span>
+<span class="hljs-keyword">const</span> conn = <span class="hljs-keyword">await</span> pool.<span class="hljs-title function_">getConnection</span>();
+<span class="hljs-keyword">try</span> {
+  <span class="hljs-keyword">const</span> [rows] = <span class="hljs-keyword">await</span> conn.<span class="hljs-title function_">execute</span>(<span class="hljs-string">'SELECT * FROM users'</span>);
+  <span class="hljs-keyword">return</span> rows;
+} <span class="hljs-keyword">finally</span> {
+  conn.<span class="hljs-title function_">release</span>(); <span class="hljs-comment">// 必须释放连接回池中</span>
+}
+</code></pre>
+<h3 id="13-sequelize-orm">1.3 Sequelize ORM</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> { <span class="hljs-title class_">Sequelize</span>, <span class="hljs-title class_">DataTypes</span>, <span class="hljs-title class_">Op</span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'sequelize'</span>);
+
+<span class="hljs-comment">// 创建实例</span>
+<span class="hljs-keyword">const</span> sequelize = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Sequelize</span>(<span class="hljs-string">'mydb'</span>, <span class="hljs-string">'root'</span>, <span class="hljs-string">'password'</span>, {
+  <span class="hljs-attr">host</span>: <span class="hljs-string">'localhost'</span>,
+  <span class="hljs-attr">dialect</span>: <span class="hljs-string">'mysql'</span>,
+  <span class="hljs-attr">pool</span>: {
+    <span class="hljs-attr">max</span>: <span class="hljs-number">10</span>,
+    <span class="hljs-attr">min</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-attr">acquire</span>: <span class="hljs-number">30000</span>,  <span class="hljs-comment">// 获取连接的超时时间</span>
+    <span class="hljs-attr">idle</span>: <span class="hljs-number">10000</span>      <span class="hljs-comment">// 连接空闲超时时间</span>
+  },
+  <span class="hljs-attr">logging</span>: <span class="hljs-variable language_">console</span>.<span class="hljs-property">log</span>, <span class="hljs-comment">// 打印 SQL（生产环境设为 false）</span>
+});
+
+<span class="hljs-comment">// 测试连接</span>
+<span class="hljs-keyword">await</span> sequelize.<span class="hljs-title function_">authenticate</span>();
+
+<span class="hljs-comment">// 定义模型</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">User</span> = sequelize.<span class="hljs-title function_">define</span>(<span class="hljs-string">'User'</span>, {
+  <span class="hljs-attr">id</span>: {
+    <span class="hljs-attr">type</span>: <span class="hljs-title class_">DataTypes</span>.<span class="hljs-property">INTEGER</span>,
+    <span class="hljs-attr">primaryKey</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">autoIncrement</span>: <span class="hljs-literal">true</span>
+  },
+  <span class="hljs-attr">name</span>: {
+    <span class="hljs-attr">type</span>: <span class="hljs-title class_">DataTypes</span>.<span class="hljs-title function_">STRING</span>(<span class="hljs-number">100</span>),
+    <span class="hljs-attr">allowNull</span>: <span class="hljs-literal">false</span>,
+    <span class="hljs-attr">validate</span>: {
+      <span class="hljs-attr">notEmpty</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">len</span>: [<span class="hljs-number">2</span>, <span class="hljs-number">100</span>]
+    }
+  },
+  <span class="hljs-attr">email</span>: {
+    <span class="hljs-attr">type</span>: <span class="hljs-title class_">DataTypes</span>.<span class="hljs-title function_">STRING</span>(<span class="hljs-number">255</span>),
+    <span class="hljs-attr">unique</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">validate</span>: { <span class="hljs-attr">isEmail</span>: <span class="hljs-literal">true</span> }
+  },
+  <span class="hljs-attr">age</span>: {
+    <span class="hljs-attr">type</span>: <span class="hljs-title class_">DataTypes</span>.<span class="hljs-property">INTEGER</span>,
+    <span class="hljs-attr">validate</span>: { <span class="hljs-attr">min</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">max</span>: <span class="hljs-number">150</span> }
+  },
+  <span class="hljs-attr">status</span>: {
+    <span class="hljs-attr">type</span>: <span class="hljs-title class_">DataTypes</span>.<span class="hljs-title function_">ENUM</span>(<span class="hljs-string">'active'</span>, <span class="hljs-string">'inactive'</span>),
+    <span class="hljs-attr">defaultValue</span>: <span class="hljs-string">'active'</span>
+  }
+}, {
+  <span class="hljs-attr">tableName</span>: <span class="hljs-string">'users'</span>,
+  <span class="hljs-attr">timestamps</span>: <span class="hljs-literal">true</span>,     <span class="hljs-comment">// 自动添加 createdAt/updatedAt</span>
+  <span class="hljs-attr">paranoid</span>: <span class="hljs-literal">true</span>,        <span class="hljs-comment">// 软删除（添加 deletedAt）</span>
+  <span class="hljs-attr">underscored</span>: <span class="hljs-literal">true</span>,     <span class="hljs-comment">// 使用下划线命名法（created_at 而不是 createdAt）</span>
+  <span class="hljs-attr">indexes</span>: [
+    { <span class="hljs-attr">fields</span>: [<span class="hljs-string">'email'</span>], <span class="hljs-attr">unique</span>: <span class="hljs-literal">true</span> },
+    { <span class="hljs-attr">fields</span>: [<span class="hljs-string">'status'</span>] }
+  ]
+});
+
+<span class="hljs-comment">// 关联关系</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">Post</span> = sequelize.<span class="hljs-title function_">define</span>(<span class="hljs-string">'Post'</span>, {
+  <span class="hljs-attr">title</span>: <span class="hljs-title class_">DataTypes</span>.<span class="hljs-property">STRING</span>,
+  <span class="hljs-attr">content</span>: <span class="hljs-title class_">DataTypes</span>.<span class="hljs-property">TEXT</span>,
+});
+
+<span class="hljs-title class_">User</span>.<span class="hljs-title function_">hasMany</span>(<span class="hljs-title class_">Post</span>, { <span class="hljs-attr">foreignKey</span>: <span class="hljs-string">'userId'</span>, <span class="hljs-attr">as</span>: <span class="hljs-string">'posts'</span> });
+<span class="hljs-title class_">Post</span>.<span class="hljs-title function_">belongsTo</span>(<span class="hljs-title class_">User</span>, { <span class="hljs-attr">foreignKey</span>: <span class="hljs-string">'userId'</span>, <span class="hljs-attr">as</span>: <span class="hljs-string">'author'</span> });
+
+<span class="hljs-comment">// CRUD 操作</span>
+<span class="hljs-comment">// 创建</span>
+<span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">create</span>({ <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span>, <span class="hljs-attr">email</span>: <span class="hljs-string">'alice@example.com'</span> });
+
+<span class="hljs-comment">// 批量创建</span>
+<span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">bulkCreate</span>([
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">'Bob'</span>, <span class="hljs-attr">email</span>: <span class="hljs-string">'bob@example.com'</span> },
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">'Charlie'</span>, <span class="hljs-attr">email</span>: <span class="hljs-string">'charlie@example.com'</span> }
+]);
+
+<span class="hljs-comment">// 查询</span>
+<span class="hljs-keyword">const</span> users = <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">findAll</span>({
+  <span class="hljs-attr">where</span>: {
+    <span class="hljs-attr">status</span>: <span class="hljs-string">'active'</span>,
+    <span class="hljs-attr">age</span>: { [<span class="hljs-title class_">Op</span>.<span class="hljs-property">gte</span>]: <span class="hljs-number">18</span> },
+    <span class="hljs-attr">name</span>: { [<span class="hljs-title class_">Op</span>.<span class="hljs-property">like</span>]: <span class="hljs-string">'%alice%'</span> }
+  },
+  <span class="hljs-attr">include</span>: [{ <span class="hljs-attr">model</span>: <span class="hljs-title class_">Post</span>, <span class="hljs-attr">as</span>: <span class="hljs-string">'posts'</span> }],
+  <span class="hljs-attr">order</span>: [[<span class="hljs-string">'createdAt'</span>, <span class="hljs-string">'DESC'</span>]],
+  <span class="hljs-attr">limit</span>: <span class="hljs-number">10</span>,
+  <span class="hljs-attr">offset</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">attributes</span>: [<span class="hljs-string">'id'</span>, <span class="hljs-string">'name'</span>, <span class="hljs-string">'email'</span>] <span class="hljs-comment">// 选择字段</span>
+});
+
+<span class="hljs-comment">// findOne</span>
+<span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">findOne</span>({ <span class="hljs-attr">where</span>: { <span class="hljs-attr">email</span>: <span class="hljs-string">'alice@example.com'</span> } });
+
+<span class="hljs-comment">// findByPk</span>
+<span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">findByPk</span>(<span class="hljs-number">1</span>);
+
+<span class="hljs-comment">// findOrCreate</span>
+<span class="hljs-keyword">const</span> [user, created] = <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">findOrCreate</span>({
+  <span class="hljs-attr">where</span>: { <span class="hljs-attr">email</span>: <span class="hljs-string">'alice@example.com'</span> },
+  <span class="hljs-attr">defaults</span>: { <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span> }
+});
+
+<span class="hljs-comment">// 更新</span>
+<span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">update</span>({ <span class="hljs-attr">status</span>: <span class="hljs-string">'inactive'</span> }, { <span class="hljs-attr">where</span>: { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span> } });
+
+<span class="hljs-comment">// 删除</span>
+<span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">destroy</span>({ <span class="hljs-attr">where</span>: { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span> } });
+
+<span class="hljs-comment">// 聚合查询</span>
+<span class="hljs-keyword">const</span> count = <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">count</span>({ <span class="hljs-attr">where</span>: { <span class="hljs-attr">status</span>: <span class="hljs-string">'active'</span> } });
+<span class="hljs-keyword">const</span> maxAge = <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">max</span>(<span class="hljs-string">'age'</span>);
+<span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">findAll</span>({
+  <span class="hljs-attr">attributes</span>: [
+    <span class="hljs-string">'status'</span>,
+    [sequelize.<span class="hljs-title function_">fn</span>(<span class="hljs-string">'COUNT'</span>, sequelize.<span class="hljs-title function_">col</span>(<span class="hljs-string">'id'</span>)), <span class="hljs-string">'count'</span>]
+  ],
+  <span class="hljs-attr">group</span>: [<span class="hljs-string">'status'</span>]
+});
+</code></pre>
+<hr></hr>
+<h2 id="二、postgresql-操作">二、PostgreSQL 操作</h2>
+<blockquote>
+<p><strong>面试题：Node.js 中如何操作 PostgreSQL？pg 库有什么特点？</strong></p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> { <span class="hljs-title class_">Pool</span>, <span class="hljs-title class_">Client</span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'pg'</span>);
+
+<span class="hljs-comment">// 连接池</span>
+<span class="hljs-keyword">const</span> pool = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Pool</span>({
+  <span class="hljs-attr">host</span>: <span class="hljs-string">'localhost'</span>,
+  <span class="hljs-attr">port</span>: <span class="hljs-number">5432</span>,
+  <span class="hljs-attr">user</span>: <span class="hljs-string">'postgres'</span>,
+  <span class="hljs-attr">password</span>: <span class="hljs-string">'password'</span>,
+  <span class="hljs-attr">database</span>: <span class="hljs-string">'mydb'</span>,
+  <span class="hljs-attr">max</span>: <span class="hljs-number">20</span>,                <span class="hljs-comment">// 连接池最大连接数</span>
+  <span class="hljs-attr">idleTimeoutMillis</span>: <span class="hljs-number">30000</span>,
+  <span class="hljs-attr">connectionTimeoutMillis</span>: <span class="hljs-number">2000</span>,
+  <span class="hljs-attr">ssl</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">NODE_ENV</span> === <span class="hljs-string">'production'</span> ? { <span class="hljs-attr">rejectUnauthorized</span>: <span class="hljs-literal">false</span> } : <span class="hljs-literal">false</span>
+});
+
+<span class="hljs-comment">// 查询</span>
+<span class="hljs-keyword">const</span> { rows } = <span class="hljs-keyword">await</span> pool.<span class="hljs-title function_">query</span>(<span class="hljs-string">'SELECT * FROM users WHERE id = $1'</span>, [<span class="hljs-number">1</span>]);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(rows[<span class="hljs-number">0</span>]);
+
+<span class="hljs-comment">// PostgreSQL 特有功能</span>
+
+<span class="hljs-comment">// 1. JSONB 操作</span>
+<span class="hljs-keyword">await</span> pool.<span class="hljs-title function_">query</span>(
+  <span class="hljs-string">`INSERT INTO products (name, metadata) VALUES ($1, $2)`</span>,
+  [<span class="hljs-string">'Phone'</span>, <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>({ <span class="hljs-attr">brand</span>: <span class="hljs-string">'Apple'</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">'black'</span> })]
+);
+
+<span class="hljs-comment">// JSONB 查询</span>
+<span class="hljs-keyword">const</span> { rows } = <span class="hljs-keyword">await</span> pool.<span class="hljs-title function_">query</span>(
+  <span class="hljs-string">`SELECT * FROM products WHERE metadata-&gt;&gt;'brand' = $1`</span>,
+  [<span class="hljs-string">'Apple'</span>]
+);
+
+<span class="hljs-comment">// 2. 数组类型</span>
+<span class="hljs-keyword">await</span> pool.<span class="hljs-title function_">query</span>(
+  <span class="hljs-string">`INSERT INTO users (name, tags) VALUES ($1, $2)`</span>,
+  [<span class="hljs-string">'Alice'</span>, [<span class="hljs-string">'admin'</span>, <span class="hljs-string">'developer'</span>]]
+);
+
+<span class="hljs-comment">// 3. 全文搜索</span>
+<span class="hljs-keyword">const</span> { rows } = <span class="hljs-keyword">await</span> pool.<span class="hljs-title function_">query</span>(
+  <span class="hljs-string">`SELECT * FROM articles WHERE to_tsvector('english', title || ' ' || content) @@ to_tsquery('english', $1)`</span>,
+  [<span class="hljs-string">'node &amp; javascript'</span>]
+);
+
+<span class="hljs-comment">// 4. 监听/通知（实时功能）</span>
+<span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Client</span>();
+<span class="hljs-keyword">await</span> client.<span class="hljs-title function_">connect</span>();
+
+client.<span class="hljs-title function_">on</span>(<span class="hljs-string">'notification'</span>, <span class="hljs-function">(<span class="hljs-params">msg</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'收到通知:'</span>, msg.<span class="hljs-property">channel</span>, msg.<span class="hljs-property">payload</span>);
+});
+
+<span class="hljs-keyword">await</span> client.<span class="hljs-title function_">query</span>(<span class="hljs-string">'LISTEN new_order'</span>);
+<span class="hljs-comment">// 另一个连接中执行：NOTIFY new_order, '{"orderId": 123}'</span>
+
+<span class="hljs-comment">// 5. 使用连接池中的单个连接执行事务</span>
+<span class="hljs-keyword">const</span> client = <span class="hljs-keyword">await</span> pool.<span class="hljs-title function_">connect</span>();
+<span class="hljs-keyword">try</span> {
+  <span class="hljs-keyword">await</span> client.<span class="hljs-title function_">query</span>(<span class="hljs-string">'BEGIN'</span>);
+  <span class="hljs-keyword">await</span> client.<span class="hljs-title function_">query</span>(<span class="hljs-string">'INSERT INTO accounts (id, balance) VALUES ($1, $2)'</span>, [<span class="hljs-number">1</span>, <span class="hljs-number">100</span>]);
+  <span class="hljs-keyword">await</span> client.<span class="hljs-title function_">query</span>(<span class="hljs-string">'UPDATE accounts SET balance = balance - $1 WHERE id = $2'</span>, [<span class="hljs-number">50</span>, <span class="hljs-number">1</span>]);
+  <span class="hljs-keyword">await</span> client.<span class="hljs-title function_">query</span>(<span class="hljs-string">'COMMIT'</span>);
+} <span class="hljs-keyword">catch</span> (e) {
+  <span class="hljs-keyword">await</span> client.<span class="hljs-title function_">query</span>(<span class="hljs-string">'ROLLBACK'</span>);
+  <span class="hljs-keyword">throw</span> e;
+} <span class="hljs-keyword">finally</span> {
+  client.<span class="hljs-title function_">release</span>();
+}
+</code></pre>
+<hr></hr>
+<h2 id="三、mongodb-操作">三、MongoDB 操作</h2>
+<blockquote>
+<p><strong>面试题：Node.js 中如何操作 MongoDB？Mongoose 的 Schema 设计有哪些最佳实践？</strong></p>
+</blockquote>
+<h3 id="31-原生-mongodb-驱动">3.1 原生 MongoDB 驱动</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> { <span class="hljs-title class_">MongoClient</span>, <span class="hljs-title class_">ObjectId</span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mongodb'</span>);
+
+<span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> <span class="hljs-title class_">MongoClient</span>(<span class="hljs-string">'mongodb://localhost:27017'</span>, {
+  <span class="hljs-attr">maxPoolSize</span>: <span class="hljs-number">10</span>,
+  <span class="hljs-attr">minPoolSize</span>: <span class="hljs-number">2</span>,
+  <span class="hljs-attr">serverSelectionTimeoutMS</span>: <span class="hljs-number">5000</span>,
+  <span class="hljs-attr">socketTimeoutMS</span>: <span class="hljs-number">45000</span>,
+});
+
+<span class="hljs-keyword">await</span> client.<span class="hljs-title function_">connect</span>();
+<span class="hljs-keyword">const</span> db = client.<span class="hljs-title function_">db</span>(<span class="hljs-string">'mydb'</span>);
+<span class="hljs-keyword">const</span> collection = db.<span class="hljs-title function_">collection</span>(<span class="hljs-string">'users'</span>);
+
+<span class="hljs-comment">// 插入</span>
+<span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> collection.<span class="hljs-title function_">insertOne</span>({ <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">30</span> });
+<span class="hljs-keyword">await</span> collection.<span class="hljs-title function_">insertMany</span>([{ <span class="hljs-attr">name</span>: <span class="hljs-string">'Bob'</span> }, { <span class="hljs-attr">name</span>: <span class="hljs-string">'Charlie'</span> }]);
+
+<span class="hljs-comment">// 查询</span>
+<span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> collection.<span class="hljs-title function_">findOne</span>({ <span class="hljs-attr">_id</span>: <span class="hljs-keyword">new</span> <span class="hljs-title class_">ObjectId</span>(<span class="hljs-string">'...'</span>) });
+<span class="hljs-keyword">const</span> users = <span class="hljs-keyword">await</span> collection.<span class="hljs-title function_">find</span>({ <span class="hljs-attr">age</span>: { <span class="hljs-attr">$gte</span>: <span class="hljs-number">18</span> } }).<span class="hljs-title function_">toArray</span>();
+
+<span class="hljs-comment">// 更新</span>
+<span class="hljs-keyword">await</span> collection.<span class="hljs-title function_">updateOne</span>({ <span class="hljs-attr">_id</span>: <span class="hljs-keyword">new</span> <span class="hljs-title class_">ObjectId</span>(<span class="hljs-string">'...'</span>) }, { <span class="hljs-attr">$set</span>: { <span class="hljs-attr">name</span>: <span class="hljs-string">'NewName'</span> } });
+<span class="hljs-keyword">await</span> collection.<span class="hljs-title function_">updateMany</span>({ <span class="hljs-attr">status</span>: <span class="hljs-string">'active'</span> }, { <span class="hljs-attr">$inc</span>: { <span class="hljs-attr">visits</span>: <span class="hljs-number">1</span> } });
+
+<span class="hljs-comment">// 删除</span>
+<span class="hljs-keyword">await</span> collection.<span class="hljs-title function_">deleteOne</span>({ <span class="hljs-attr">_id</span>: <span class="hljs-keyword">new</span> <span class="hljs-title class_">ObjectId</span>(<span class="hljs-string">'...'</span>) });
+
+<span class="hljs-comment">// 聚合管道</span>
+<span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> collection.<span class="hljs-title function_">aggregate</span>([
+  { <span class="hljs-attr">$match</span>: { <span class="hljs-attr">status</span>: <span class="hljs-string">'active'</span> } },
+  { <span class="hljs-attr">$group</span>: { <span class="hljs-attr">_id</span>: <span class="hljs-string">'$city'</span>, <span class="hljs-attr">count</span>: { <span class="hljs-attr">$sum</span>: <span class="hljs-number">1</span> }, <span class="hljs-attr">avgAge</span>: { <span class="hljs-attr">$avg</span>: <span class="hljs-string">'$age'</span> } } },
+  { <span class="hljs-attr">$sort</span>: { <span class="hljs-attr">count</span>: -<span class="hljs-number">1</span> } },
+  { <span class="hljs-attr">$limit</span>: <span class="hljs-number">10</span> }
+]).<span class="hljs-title function_">toArray</span>();
+
+<span class="hljs-comment">// 索引</span>
+<span class="hljs-keyword">await</span> collection.<span class="hljs-title function_">createIndex</span>({ <span class="hljs-attr">email</span>: <span class="hljs-number">1</span> }, { <span class="hljs-attr">unique</span>: <span class="hljs-literal">true</span> });
+<span class="hljs-keyword">await</span> collection.<span class="hljs-title function_">createIndex</span>({ <span class="hljs-attr">name</span>: <span class="hljs-string">'text'</span>, <span class="hljs-attr">bio</span>: <span class="hljs-string">'text'</span> }); <span class="hljs-comment">// 文本索引</span>
+
+<span class="hljs-comment">// 关闭连接</span>
+<span class="hljs-keyword">await</span> client.<span class="hljs-title function_">close</span>();
+</code></pre>
+<h3 id="32-mongoose-odm">3.2 Mongoose ODM</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> mongoose = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mongoose'</span>);
+
+<span class="hljs-comment">// 连接</span>
+<span class="hljs-keyword">await</span> mongoose.<span class="hljs-title function_">connect</span>(<span class="hljs-string">'mongodb://localhost:27017/mydb'</span>, {
+  <span class="hljs-attr">maxPoolSize</span>: <span class="hljs-number">10</span>,
+  <span class="hljs-attr">serverSelectionTimeoutMS</span>: <span class="hljs-number">5000</span>,
+  <span class="hljs-attr">socketTimeoutMS</span>: <span class="hljs-number">45000</span>,
+});
+
+<span class="hljs-comment">// 监听连接事件</span>
+mongoose.<span class="hljs-property">connection</span>.<span class="hljs-title function_">on</span>(<span class="hljs-string">'connected'</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'MongoDB 已连接'</span>));
+mongoose.<span class="hljs-property">connection</span>.<span class="hljs-title function_">on</span>(<span class="hljs-string">'error'</span>, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'MongoDB 连接错误:'</span>, err));
+mongoose.<span class="hljs-property">connection</span>.<span class="hljs-title function_">on</span>(<span class="hljs-string">'disconnected'</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'MongoDB 断开连接'</span>));
+
+<span class="hljs-comment">// 定义 Schema</span>
+<span class="hljs-keyword">const</span> userSchema = <span class="hljs-keyword">new</span> mongoose.<span class="hljs-title class_">Schema</span>({
+  <span class="hljs-attr">name</span>: {
+    <span class="hljs-attr">type</span>: <span class="hljs-title class_">String</span>,
+    <span class="hljs-attr">required</span>: [<span class="hljs-literal">true</span>, <span class="hljs-string">'用户名必填'</span>],
+    <span class="hljs-attr">trim</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">minlength</span>: [<span class="hljs-number">2</span>, <span class="hljs-string">'用户名至少 2 个字符'</span>],
+    <span class="hljs-attr">maxlength</span>: [<span class="hljs-number">50</span>, <span class="hljs-string">'用户名最多 50 个字符'</span>]
+  },
+  <span class="hljs-attr">email</span>: {
+    <span class="hljs-attr">type</span>: <span class="hljs-title class_">String</span>,
+    <span class="hljs-attr">required</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">unique</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">lowercase</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">validate</span>: {
+      <span class="hljs-attr">validator</span>: <span class="hljs-keyword">function</span>(<span class="hljs-params">v</span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-regexp">/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/</span>.<span class="hljs-title function_">test</span>(v);
+      },
+      <span class="hljs-attr">message</span>: <span class="hljs-string">'邮箱格式不正确'</span>
+    }
+  },
+  <span class="hljs-attr">password</span>: {
+    <span class="hljs-attr">type</span>: <span class="hljs-title class_">String</span>,
+    <span class="hljs-attr">required</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">select</span>: <span class="hljs-literal">false</span>  <span class="hljs-comment">// 查询时默认不返回</span>
+  },
+  <span class="hljs-attr">role</span>: {
+    <span class="hljs-attr">type</span>: <span class="hljs-title class_">String</span>,
+    <span class="hljs-attr">enum</span>: [<span class="hljs-string">'user'</span>, <span class="hljs-string">'admin'</span>, <span class="hljs-string">'moderator'</span>],
+    <span class="hljs-attr">default</span>: <span class="hljs-string">'user'</span>
+  },
+  <span class="hljs-attr">profile</span>: {
+    <span class="hljs-attr">avatar</span>: <span class="hljs-title class_">String</span>,
+    <span class="hljs-attr">bio</span>: { <span class="hljs-attr">type</span>: <span class="hljs-title class_">String</span>, <span class="hljs-attr">maxlength</span>: <span class="hljs-number">500</span> }
+  },
+  <span class="hljs-attr">tags</span>: [<span class="hljs-title class_">String</span>],
+  <span class="hljs-attr">friends</span>: [{ <span class="hljs-attr">type</span>: mongoose.<span class="hljs-property">Schema</span>.<span class="hljs-property">Types</span>.<span class="hljs-property">ObjectId</span>, <span class="hljs-attr">ref</span>: <span class="hljs-string">'User'</span> }],
+}, {
+  <span class="hljs-attr">timestamps</span>: <span class="hljs-literal">true</span>,  <span class="hljs-comment">// 自动添加 createdAt/updatedAt</span>
+  <span class="hljs-attr">toJSON</span>: { <span class="hljs-attr">virtuals</span>: <span class="hljs-literal">true</span> },
+  <span class="hljs-attr">toObject</span>: { <span class="hljs-attr">virtuals</span>: <span class="hljs-literal">true</span> }
+});
+
+<span class="hljs-comment">// 虚拟属性</span>
+userSchema.<span class="hljs-title function_">virtual</span>(<span class="hljs-string">'posts'</span>, {
+  <span class="hljs-attr">ref</span>: <span class="hljs-string">'Post'</span>,
+  <span class="hljs-attr">localField</span>: <span class="hljs-string">'_id'</span>,
+  <span class="hljs-attr">foreignField</span>: <span class="hljs-string">'author'</span>
+});
+
+<span class="hljs-comment">// 索引</span>
+userSchema.<span class="hljs-title function_">index</span>({ <span class="hljs-attr">email</span>: <span class="hljs-number">1</span> }, { <span class="hljs-attr">unique</span>: <span class="hljs-literal">true</span> });
+userSchema.<span class="hljs-title function_">index</span>({ <span class="hljs-attr">name</span>: <span class="hljs-string">'text'</span>, <span class="hljs-string">'profile.bio'</span>: <span class="hljs-string">'text'</span> });
+userSchema.<span class="hljs-title function_">index</span>({ <span class="hljs-attr">createdAt</span>: -<span class="hljs-number">1</span> });
+
+<span class="hljs-comment">// 中间件（钩子）</span>
+userSchema.<span class="hljs-title function_">pre</span>(<span class="hljs-string">'save'</span>, <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span>(<span class="hljs-params">next</span>) {
+  <span class="hljs-keyword">if</span> (!<span class="hljs-variable language_">this</span>.<span class="hljs-title function_">isModified</span>(<span class="hljs-string">'password'</span>)) <span class="hljs-keyword">return</span> <span class="hljs-title function_">next</span>();
+  <span class="hljs-keyword">const</span> bcrypt = <span class="hljs-built_in">require</span>(<span class="hljs-string">'bcrypt'</span>);
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">password</span> = <span class="hljs-keyword">await</span> bcrypt.<span class="hljs-title function_">hash</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">password</span>, <span class="hljs-number">10</span>);
+  <span class="hljs-title function_">next</span>();
+});
+
+userSchema.<span class="hljs-title function_">post</span>(<span class="hljs-string">'save'</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params">doc</span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'用户已保存:'</span>, doc.<span class="hljs-property">name</span>);
+});
+
+<span class="hljs-comment">// 实例方法</span>
+userSchema.<span class="hljs-property">methods</span>.<span class="hljs-property">comparePassword</span> = <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span>(<span class="hljs-params">candidatePassword</span>) {
+  <span class="hljs-keyword">const</span> bcrypt = <span class="hljs-built_in">require</span>(<span class="hljs-string">'bcrypt'</span>);
+  <span class="hljs-keyword">return</span> bcrypt.<span class="hljs-title function_">compare</span>(candidatePassword, <span class="hljs-variable language_">this</span>.<span class="hljs-property">password</span>);
+};
+
+<span class="hljs-comment">// 静态方法</span>
+userSchema.<span class="hljs-property">statics</span>.<span class="hljs-property">findByEmail</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params">email</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">findOne</span>({ <span class="hljs-attr">email</span>: email.<span class="hljs-title function_">toLowerCase</span>() });
+};
+
+<span class="hljs-comment">// 查询辅助方法</span>
+userSchema.<span class="hljs-property">query</span>.<span class="hljs-property">active</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">where</span>({ <span class="hljs-attr">status</span>: <span class="hljs-string">'active'</span> });
+};
+
+<span class="hljs-comment">// 创建模型</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">User</span> = mongoose.<span class="hljs-title function_">model</span>(<span class="hljs-string">'User'</span>, userSchema);
+
+<span class="hljs-comment">// CRUD 操作</span>
+<span class="hljs-comment">// 创建</span>
+<span class="hljs-keyword">const</span> user = <span class="hljs-keyword">new</span> <span class="hljs-title class_">User</span>({ <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span>, <span class="hljs-attr">email</span>: <span class="hljs-string">'alice@example.com'</span>, <span class="hljs-attr">password</span>: <span class="hljs-string">'123456'</span> });
+<span class="hljs-keyword">await</span> user.<span class="hljs-title function_">save</span>();
+<span class="hljs-comment">// 或</span>
+<span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">create</span>({ <span class="hljs-attr">name</span>: <span class="hljs-string">'Bob'</span>, <span class="hljs-attr">email</span>: <span class="hljs-string">'bob@example.com'</span>, <span class="hljs-attr">password</span>: <span class="hljs-string">'123456'</span> });
+
+<span class="hljs-comment">// 查询</span>
+<span class="hljs-keyword">const</span> users = <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">find</span>({ <span class="hljs-attr">role</span>: <span class="hljs-string">'user'</span> })
+  .<span class="hljs-title function_">select</span>(<span class="hljs-string">'name email'</span>)
+  .<span class="hljs-title function_">sort</span>({ <span class="hljs-attr">createdAt</span>: -<span class="hljs-number">1</span> })
+  .<span class="hljs-title function_">skip</span>(<span class="hljs-number">0</span>)
+  .<span class="hljs-title function_">limit</span>(<span class="hljs-number">10</span>)
+  .<span class="hljs-title function_">lean</span>(); <span class="hljs-comment">// lean() 返回普通 JS 对象（性能更好）</span>
+
+<span class="hljs-comment">// 关联查询（populate）</span>
+<span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">findById</span>(id).<span class="hljs-title function_">populate</span>(<span class="hljs-string">'friends'</span>, <span class="hljs-string">'name email'</span>);
+<span class="hljs-keyword">const</span> userWithPosts = <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">findById</span>(id).<span class="hljs-title function_">populate</span>({
+  <span class="hljs-attr">path</span>: <span class="hljs-string">'posts'</span>,
+  <span class="hljs-attr">select</span>: <span class="hljs-string">'title createdAt'</span>,
+  <span class="hljs-attr">options</span>: { <span class="hljs-attr">sort</span>: { <span class="hljs-attr">createdAt</span>: -<span class="hljs-number">1</span> }, <span class="hljs-attr">limit</span>: <span class="hljs-number">5</span> }
+});
+
+<span class="hljs-comment">// 更新</span>
+<span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">findByIdAndUpdate</span>(id, { <span class="hljs-attr">$set</span>: { <span class="hljs-attr">name</span>: <span class="hljs-string">'NewName'</span> } }, { <span class="hljs-attr">new</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">runValidators</span>: <span class="hljs-literal">true</span> });
+
+<span class="hljs-comment">// 删除</span>
+<span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">findByIdAndDelete</span>(id);
+</code></pre>
+<hr></hr>
+<h2 id="四、redis-操作">四、Redis 操作</h2>
+<blockquote>
+<p><strong>面试题：Node.js 中如何使用 Redis？ioredis 有什么优势？</strong></p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> <span class="hljs-title class_">Redis</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'ioredis'</span>);
+
+<span class="hljs-comment">// 创建连接</span>
+<span class="hljs-keyword">const</span> redis = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Redis</span>({
+  <span class="hljs-attr">host</span>: <span class="hljs-string">'127.0.0.1'</span>,
+  <span class="hljs-attr">port</span>: <span class="hljs-number">6379</span>,
+  <span class="hljs-attr">password</span>: <span class="hljs-string">'your-password'</span>,
+  <span class="hljs-attr">db</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-title function_">retryStrategy</span>(<span class="hljs-params">times</span>) {
+    <span class="hljs-keyword">const</span> delay = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">min</span>(times * <span class="hljs-number">50</span>, <span class="hljs-number">2000</span>);
+    <span class="hljs-keyword">return</span> delay;
+  },
+  <span class="hljs-attr">maxRetriesPerRequest</span>: <span class="hljs-number">3</span>,
+  <span class="hljs-attr">lazyConnect</span>: <span class="hljs-literal">true</span>,        <span class="hljs-comment">// 延迟连接</span>
+  <span class="hljs-attr">enableReadyCheck</span>: <span class="hljs-literal">true</span>
+});
+
+<span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">connect</span>();
+
+<span class="hljs-comment">// 字符串操作</span>
+<span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">set</span>(<span class="hljs-string">'key'</span>, <span class="hljs-string">'value'</span>);
+<span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">set</span>(<span class="hljs-string">'key'</span>, <span class="hljs-string">'value'</span>, <span class="hljs-string">'EX'</span>, <span class="hljs-number">3600</span>); <span class="hljs-comment">// 设置过期时间（秒）</span>
+<span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">set</span>(<span class="hljs-string">'key'</span>, <span class="hljs-string">'value'</span>, <span class="hljs-string">'PX'</span>, <span class="hljs-number">60000</span>); <span class="hljs-comment">// 毫秒</span>
+<span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">set</span>(<span class="hljs-string">'key'</span>, <span class="hljs-string">'value'</span>, <span class="hljs-string">'NX'</span>);        <span class="hljs-comment">// 仅当 key 不存在时设置</span>
+<span class="hljs-keyword">const</span> value = <span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">get</span>(<span class="hljs-string">'key'</span>);
+<span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">del</span>(<span class="hljs-string">'key'</span>);
+<span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">incr</span>(<span class="hljs-string">'counter'</span>);
+<span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">incrby</span>(<span class="hljs-string">'counter'</span>, <span class="hljs-number">10</span>);
+
+<span class="hljs-comment">// Hash 操作</span>
+<span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">hset</span>(<span class="hljs-string">'user:1'</span>, <span class="hljs-string">'name'</span>, <span class="hljs-string">'Alice'</span>, <span class="hljs-string">'age'</span>, <span class="hljs-string">'30'</span>);
+<span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">hget</span>(<span class="hljs-string">'user:1'</span>, <span class="hljs-string">'name'</span>);
+<span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">hgetall</span>(<span class="hljs-string">'user:1'</span>); <span class="hljs-comment">// { name: 'Alice', age: '30' }</span>
+
+<span class="hljs-comment">// List 操作</span>
+<span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">lpush</span>(<span class="hljs-string">'queue'</span>, <span class="hljs-string">'task1'</span>, <span class="hljs-string">'task2'</span>);
+<span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">rpop</span>(<span class="hljs-string">'queue'</span>);
+<span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">lrange</span>(<span class="hljs-string">'queue'</span>, <span class="hljs-number">0</span>, -<span class="hljs-number">1</span>);
+
+<span class="hljs-comment">// Set 操作</span>
+<span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">sadd</span>(<span class="hljs-string">'tags'</span>, <span class="hljs-string">'node'</span>, <span class="hljs-string">'javascript'</span>);
+<span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">smembers</span>(<span class="hljs-string">'tags'</span>);
+<span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">sismember</span>(<span class="hljs-string">'tags'</span>, <span class="hljs-string">'node'</span>);
+
+<span class="hljs-comment">// Sorted Set（有序集合）</span>
+<span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">zadd</span>(<span class="hljs-string">'leaderboard'</span>, <span class="hljs-number">100</span>, <span class="hljs-string">'Alice'</span>, <span class="hljs-number">90</span>, <span class="hljs-string">'Bob'</span>, <span class="hljs-number">80</span>, <span class="hljs-string">'Charlie'</span>);
+<span class="hljs-keyword">const</span> top3 = <span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">zrevrange</span>(<span class="hljs-string">'leaderboard'</span>, <span class="hljs-number">0</span>, <span class="hljs-number">2</span>, <span class="hljs-string">'WITHSCORES'</span>);
+
+<span class="hljs-comment">// 过期时间</span>
+<span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">expire</span>(<span class="hljs-string">'key'</span>, <span class="hljs-number">3600</span>);
+<span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">ttl</span>(<span class="hljs-string">'key'</span>); <span class="hljs-comment">// 剩余过期时间（秒）</span>
+
+<span class="hljs-comment">// Pipeline（批量操作，减少网络往返）</span>
+<span class="hljs-keyword">const</span> pipeline = redis.<span class="hljs-title function_">pipeline</span>();
+pipeline.<span class="hljs-title function_">set</span>(<span class="hljs-string">'key1'</span>, <span class="hljs-string">'value1'</span>);
+pipeline.<span class="hljs-title function_">set</span>(<span class="hljs-string">'key2'</span>, <span class="hljs-string">'value2'</span>);
+pipeline.<span class="hljs-title function_">get</span>(<span class="hljs-string">'key1'</span>);
+pipeline.<span class="hljs-title function_">get</span>(<span class="hljs-string">'key2'</span>);
+<span class="hljs-keyword">const</span> results = <span class="hljs-keyword">await</span> pipeline.<span class="hljs-title function_">exec</span>();
+
+<span class="hljs-comment">// 事务</span>
+<span class="hljs-keyword">const</span> multi = redis.<span class="hljs-title function_">multi</span>();
+multi.<span class="hljs-title function_">set</span>(<span class="hljs-string">'key1'</span>, <span class="hljs-string">'value1'</span>);
+multi.<span class="hljs-title function_">set</span>(<span class="hljs-string">'key2'</span>, <span class="hljs-string">'value2'</span>);
+<span class="hljs-keyword">const</span> results = <span class="hljs-keyword">await</span> multi.<span class="hljs-title function_">exec</span>();
+
+<span class="hljs-comment">// 发布/订阅</span>
+<span class="hljs-keyword">const</span> sub = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Redis</span>();
+<span class="hljs-keyword">const</span> pub = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Redis</span>();
+
+sub.<span class="hljs-title function_">subscribe</span>(<span class="hljs-string">'channel1'</span>, <span class="hljs-string">'channel2'</span>);
+sub.<span class="hljs-title function_">on</span>(<span class="hljs-string">'message'</span>, <span class="hljs-function">(<span class="hljs-params">channel, message</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`收到消息 [<span class="hljs-subst">${channel}</span>]: <span class="hljs-subst">${message}</span>`</span>);
+});
+
+pub.<span class="hljs-title function_">publish</span>(<span class="hljs-string">'channel1'</span>, <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>({ <span class="hljs-attr">type</span>: <span class="hljs-string">'notification'</span>, <span class="hljs-attr">data</span>: <span class="hljs-string">'Hello'</span> }));
+
+<span class="hljs-comment">// Lua 脚本（原子操作）</span>
+<span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> redis.<span class="hljs-built_in">eval</span>(
+  <span class="hljs-string">`
+  local current = redis.call('GET', KEYS[1])
+  if current == ARGV[1] then
+    redis.call('DEL', KEYS[1])
+    return 1
+  end
+  return 0
+  `</span>,
+  <span class="hljs-number">1</span>,           <span class="hljs-comment">// KEY 的数量</span>
+  <span class="hljs-string">'lock:key'</span>,  <span class="hljs-comment">// KEYS[1]</span>
+  <span class="hljs-string">'lock-value'</span> <span class="hljs-comment">// ARGV[1]</span>
+);
+
+<span class="hljs-comment">// 关闭连接</span>
+<span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">quit</span>();
+</code></pre>
+<hr></hr>
+<h2 id="五、orm-vs-原生查询">五、ORM vs 原生查询</h2>
+<blockquote>
+<p><strong>面试题：使用 ORM 和原生 SQL 查询各有什么优缺点？什么时候该用哪个？</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>ORM（Sequelize/Mongoose）</th>
+<th>原生查询（mysql2/pg）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>开发效率</td>
+<td>高（自动生成 SQL，模型抽象）</td>
+<td>低（手写 SQL）</td>
+</tr>
+<tr>
+<td>学习曲线</td>
+<td>需要学习 ORM API</td>
+<td>需要掌握 SQL</td>
+</tr>
+<tr>
+<td>性能</td>
+<td>较低（额外的抽象层开销）</td>
+<td>较高（直接执行 SQL）</td>
+</tr>
+<tr>
+<td>复杂查询</td>
+<td>可能受限，复杂查询需要回退到原生 SQL</td>
+<td>灵活，可以写任意复杂的 SQL</td>
+</tr>
+<tr>
+<td>数据库迁移</td>
+<td>内置支持</td>
+<td>需要额外工具</td>
+</tr>
+<tr>
+<td>类型安全</td>
+<td>模型提供一定的类型约束</td>
+<td>无（需配合 TypeScript 类型）</td>
+</tr>
+<tr>
+<td>数据库切换</td>
+<td>相对容易（抽象层屏蔽差异）</td>
+<td>困难（SQL 方言不同）</td>
+</tr>
+<tr>
+<td>关联查询</td>
+<td>自动处理（eager/lazy loading）</td>
+<td>手动 JOIN</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>CRUD 为主、快速开发、中小型项目</td>
+<td>复杂查询、高性能要求、大型项目</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最佳实践</strong>：结合使用。在日常的 CRUD 操作中使用 ORM 提高效率，在复杂查询或性能关键路径上使用原生 SQL。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Sequelize 中使用原生查询</span>
+<span class="hljs-keyword">const</span> [results] = <span class="hljs-keyword">await</span> sequelize.<span class="hljs-title function_">query</span>(
+  <span class="hljs-string">`SELECT u.name, COUNT(p.id) as post_count 
+   FROM users u 
+   LEFT JOIN posts p ON u.id = p.user_id 
+   WHERE u.status = :status 
+   GROUP BY u.id 
+   HAVING post_count &gt; :minPosts`</span>,
+  {
+    <span class="hljs-attr">replacements</span>: { <span class="hljs-attr">status</span>: <span class="hljs-string">'active'</span>, <span class="hljs-attr">minPosts</span>: <span class="hljs-number">5</span> },
+    <span class="hljs-attr">type</span>: <span class="hljs-title class_">Sequelize</span>.<span class="hljs-property">QueryTypes</span>.<span class="hljs-property">SELECT</span>
+  }
+);
+</code></pre>
+<hr></hr>
+<h2 id="六、连接池管理">六、连接池管理</h2>
+<blockquote>
+<p><strong>面试题：什么是数据库连接池？为什么需要连接池？如何正确配置？</strong></p>
+</blockquote>
+<h3 id="61-为什么需要连接池">6.1 为什么需要连接池</h3>
+<p>数据库连接是昂贵的资源：</p>
+<ol>
+<li><strong>TCP 三次握手</strong>：建立连接需要网络往返</li>
+<li><strong>认证过程</strong>：用户名密码验证</li>
+<li><strong>资源分配</strong>：数据库为每个连接分配内存和线程</li>
+<li><strong>连接数限制</strong>：数据库有最大连接数限制</li>
+</ol>
+<p>连接池预先创建一组连接并重复使用，避免频繁创建和销毁连接的开销。</p>
+<h3 id="62-连接池配置原则">6.2 连接池配置原则</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 连接池大小的经验公式</span>
+<span class="hljs-comment">// connections = (核心数 * 2) + 磁盘数</span>
+<span class="hljs-comment">// 对于 4 核 CPU + 1 个 SSD，最优连接数约为 9-10</span>
+
+<span class="hljs-keyword">const</span> pool = mysql.<span class="hljs-title function_">createPool</span>({
+  <span class="hljs-attr">connectionLimit</span>: <span class="hljs-number">10</span>,          <span class="hljs-comment">// 最大连接数</span>
+  <span class="hljs-attr">waitForConnections</span>: <span class="hljs-literal">true</span>,     <span class="hljs-comment">// 连接池满时等待（而不是报错）</span>
+  <span class="hljs-attr">queueLimit</span>: <span class="hljs-number">0</span>,                <span class="hljs-comment">// 等待队列大小（0 = 无限）</span>
+  <span class="hljs-attr">enableKeepAlive</span>: <span class="hljs-literal">true</span>,        <span class="hljs-comment">// TCP KeepAlive</span>
+  <span class="hljs-attr">keepAliveInitialDelay</span>: <span class="hljs-number">10000</span>, <span class="hljs-comment">// KeepAlive 初始延迟</span>
+});
+
+<span class="hljs-comment">// 监控连接池状态</span>
+<span class="hljs-built_in">setInterval</span>(<span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-keyword">const</span> poolStatus = {
+    <span class="hljs-attr">totalConnections</span>: pool.<span class="hljs-property">pool</span>.<span class="hljs-property">_allConnections</span>.<span class="hljs-property">length</span>,
+    <span class="hljs-attr">freeConnections</span>: pool.<span class="hljs-property">pool</span>.<span class="hljs-property">_freeConnections</span>.<span class="hljs-property">length</span>,
+    <span class="hljs-attr">queuedRequests</span>: pool.<span class="hljs-property">pool</span>.<span class="hljs-property">_connectionQueue</span>.<span class="hljs-property">length</span>,
+  };
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'连接池状态:'</span>, poolStatus);
+}, <span class="hljs-number">30000</span>);
+
+<span class="hljs-comment">// 优雅关闭</span>
+process.<span class="hljs-title function_">on</span>(<span class="hljs-string">'SIGTERM'</span>, <span class="hljs-title function_">async</span> () =&gt; {
+  <span class="hljs-keyword">await</span> pool.<span class="hljs-title function_">end</span>();
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'连接池已关闭'</span>);
+  process.<span class="hljs-title function_">exit</span>(<span class="hljs-number">0</span>);
+});
+</code></pre>
+<hr></hr>
+<h2 id="七、事务处理">七、事务处理</h2>
+<blockquote>
+<p><strong>面试题：Node.js 中如何处理数据库事务？什么场景需要用事务？</strong></p>
+</blockquote>
+<p>事务确保一组数据库操作要么全部成功，要么全部回滚（ACID 特性）。</p>
+<h3 id="71-mysql2-事务">7.1 mysql2 事务</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> connection = <span class="hljs-keyword">await</span> pool.<span class="hljs-title function_">getConnection</span>();
+<span class="hljs-keyword">try</span> {
+  <span class="hljs-keyword">await</span> connection.<span class="hljs-title function_">beginTransaction</span>();
+
+  <span class="hljs-comment">// 转账操作：A 向 B 转 100 元</span>
+  <span class="hljs-keyword">await</span> connection.<span class="hljs-title function_">execute</span>(
+    <span class="hljs-string">'UPDATE accounts SET balance = balance - ? WHERE id = ? AND balance &gt;= ?'</span>,
+    [<span class="hljs-number">100</span>, accountA, <span class="hljs-number">100</span>]
+  );
+
+  <span class="hljs-keyword">await</span> connection.<span class="hljs-title function_">execute</span>(
+    <span class="hljs-string">'UPDATE accounts SET balance = balance + ? WHERE id = ?'</span>,
+    [<span class="hljs-number">100</span>, accountB]
+  );
+
+  <span class="hljs-keyword">await</span> connection.<span class="hljs-title function_">commit</span>();
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'转账成功'</span>);
+} <span class="hljs-keyword">catch</span> (err) {
+  <span class="hljs-keyword">await</span> connection.<span class="hljs-title function_">rollback</span>();
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'转账失败，已回滚:'</span>, err);
+  <span class="hljs-keyword">throw</span> err;
+} <span class="hljs-keyword">finally</span> {
+  connection.<span class="hljs-title function_">release</span>();
+}
+</code></pre>
+<h3 id="72-sequelize-事务">7.2 Sequelize 事务</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 方式1：托管事务（自动提交/回滚，推荐）</span>
+<span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> sequelize.<span class="hljs-title function_">transaction</span>(<span class="hljs-title function_">async</span> (t) =&gt; {
+  <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">create</span>({ <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span>, <span class="hljs-attr">email</span>: <span class="hljs-string">'alice@example.com'</span> }, { <span class="hljs-attr">transaction</span>: t });
+  <span class="hljs-keyword">await</span> <span class="hljs-title class_">Profile</span>.<span class="hljs-title function_">create</span>({ <span class="hljs-attr">userId</span>: user.<span class="hljs-property">id</span>, <span class="hljs-attr">bio</span>: <span class="hljs-string">'Hello'</span> }, { <span class="hljs-attr">transaction</span>: t });
+  <span class="hljs-keyword">return</span> user;
+  <span class="hljs-comment">// 如果回调函数成功返回，事务自动提交</span>
+  <span class="hljs-comment">// 如果回调函数抛出异常，事务自动回滚</span>
+});
+
+<span class="hljs-comment">// 方式2：非托管事务（手动控制）</span>
+<span class="hljs-keyword">const</span> t = <span class="hljs-keyword">await</span> sequelize.<span class="hljs-title function_">transaction</span>();
+<span class="hljs-keyword">try</span> {
+  <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">create</span>({ <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span> }, { <span class="hljs-attr">transaction</span>: t });
+  <span class="hljs-keyword">await</span> <span class="hljs-title class_">Post</span>.<span class="hljs-title function_">create</span>({ <span class="hljs-attr">title</span>: <span class="hljs-string">'Hello'</span> }, { <span class="hljs-attr">transaction</span>: t });
+  <span class="hljs-keyword">await</span> t.<span class="hljs-title function_">commit</span>();
+} <span class="hljs-keyword">catch</span> (err) {
+  <span class="hljs-keyword">await</span> t.<span class="hljs-title function_">rollback</span>();
+  <span class="hljs-keyword">throw</span> err;
+}
+
+<span class="hljs-comment">// 事务隔离级别</span>
+<span class="hljs-keyword">const</span> { <span class="hljs-title class_">Transaction</span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'sequelize'</span>);
+<span class="hljs-keyword">await</span> sequelize.<span class="hljs-title function_">transaction</span>({
+  <span class="hljs-attr">isolationLevel</span>: <span class="hljs-title class_">Transaction</span>.<span class="hljs-property">ISOLATION_LEVELS</span>.<span class="hljs-property">SERIALIZABLE</span>
+}, <span class="hljs-title function_">async</span> (t) =&gt; {
+  <span class="hljs-comment">// ...</span>
+});
+</code></pre>
+<h3 id="73-mongoose-事务（需要-mongodb-副本集）">7.3 Mongoose 事务（需要 MongoDB 副本集）</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> session = <span class="hljs-keyword">await</span> mongoose.<span class="hljs-title function_">startSession</span>();
+session.<span class="hljs-title function_">startTransaction</span>();
+
+<span class="hljs-keyword">try</span> {
+  <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">create</span>([{ <span class="hljs-attr">name</span>: <span class="hljs-string">'Alice'</span> }], { session });
+  <span class="hljs-keyword">await</span> <span class="hljs-title class_">Post</span>.<span class="hljs-title function_">create</span>([{ <span class="hljs-attr">title</span>: <span class="hljs-string">'Hello'</span>, <span class="hljs-attr">author</span>: user[<span class="hljs-number">0</span>].<span class="hljs-property">_id</span> }], { session });
+
+  <span class="hljs-keyword">await</span> session.<span class="hljs-title function_">commitTransaction</span>();
+} <span class="hljs-keyword">catch</span> (err) {
+  <span class="hljs-keyword">await</span> session.<span class="hljs-title function_">abortTransaction</span>();
+  <span class="hljs-keyword">throw</span> err;
+} <span class="hljs-keyword">finally</span> {
+  session.<span class="hljs-title function_">endSession</span>();
+}
+</code></pre>
+<hr></hr>
+<h2 id="八、数据库迁移">八、数据库迁移</h2>
+<blockquote>
+<p><strong>面试题：什么是数据库迁移？在 Node.js 中如何管理数据库迁移？</strong></p>
+</blockquote>
+<p>数据库迁移（Migration）是对数据库 schema 进行版本控制的方式，每次迁移包含 <code>up</code>（执行变更）和 <code>down</code>（回滚变更）两个操作。</p>
+<h3 id="sequelize-迁移">Sequelize 迁移</h3>
+<pre><code class="lang-bash"><span class="hljs-comment"># 安装 CLI</span>
+npm install -g sequelize-cli
+
+<span class="hljs-comment"># 初始化</span>
+sequelize init
+
+<span class="hljs-comment"># 创建迁移文件</span>
+sequelize migration:generate --name create-users-table
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// migrations/20240101000000-create-users-table.js</span>
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = {
+  <span class="hljs-attr">up</span>: <span class="hljs-title function_">async</span> (queryInterface, <span class="hljs-title class_">Sequelize</span>) =&gt; {
+    <span class="hljs-keyword">await</span> queryInterface.<span class="hljs-title function_">createTable</span>(<span class="hljs-string">'users'</span>, {
+      <span class="hljs-attr">id</span>: {
+        <span class="hljs-attr">type</span>: <span class="hljs-title class_">Sequelize</span>.<span class="hljs-property">INTEGER</span>,
+        <span class="hljs-attr">primaryKey</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">autoIncrement</span>: <span class="hljs-literal">true</span>,
+      },
+      <span class="hljs-attr">name</span>: {
+        <span class="hljs-attr">type</span>: <span class="hljs-title class_">Sequelize</span>.<span class="hljs-title function_">STRING</span>(<span class="hljs-number">100</span>),
+        <span class="hljs-attr">allowNull</span>: <span class="hljs-literal">false</span>,
+      },
+      <span class="hljs-attr">email</span>: {
+        <span class="hljs-attr">type</span>: <span class="hljs-title class_">Sequelize</span>.<span class="hljs-title function_">STRING</span>(<span class="hljs-number">255</span>),
+        <span class="hljs-attr">unique</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">allowNull</span>: <span class="hljs-literal">false</span>,
+      },
+      <span class="hljs-attr">created_at</span>: {
+        <span class="hljs-attr">type</span>: <span class="hljs-title class_">Sequelize</span>.<span class="hljs-property">DATE</span>,
+        <span class="hljs-attr">defaultValue</span>: <span class="hljs-title class_">Sequelize</span>.<span class="hljs-title function_">literal</span>(<span class="hljs-string">'CURRENT_TIMESTAMP'</span>),
+      },
+      <span class="hljs-attr">updated_at</span>: {
+        <span class="hljs-attr">type</span>: <span class="hljs-title class_">Sequelize</span>.<span class="hljs-property">DATE</span>,
+        <span class="hljs-attr">defaultValue</span>: <span class="hljs-title class_">Sequelize</span>.<span class="hljs-title function_">literal</span>(<span class="hljs-string">'CURRENT_TIMESTAMP'</span>),
+      },
+    });
+
+    <span class="hljs-comment">// 添加索引</span>
+    <span class="hljs-keyword">await</span> queryInterface.<span class="hljs-title function_">addIndex</span>(<span class="hljs-string">'users'</span>, [<span class="hljs-string">'email'</span>], { <span class="hljs-attr">unique</span>: <span class="hljs-literal">true</span> });
+  },
+
+  <span class="hljs-attr">down</span>: <span class="hljs-title function_">async</span> (queryInterface) =&gt; {
+    <span class="hljs-keyword">await</span> queryInterface.<span class="hljs-title function_">dropTable</span>(<span class="hljs-string">'users'</span>);
+  },
+};
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># 运行迁移</span>
+sequelize db:migrate
+
+<span class="hljs-comment"># 回滚上一次迁移</span>
+sequelize db:migrate:undo
+
+<span class="hljs-comment"># 回滚所有迁移</span>
+sequelize db:migrate:undo:all
+
+<span class="hljs-comment"># 种子数据</span>
+sequelize seed:generate --name demo-users
+sequelize db:seed:all
+</code></pre>
+<hr></hr>
+<h2 id="九、n1-查询问题">九、N+1 查询问题</h2>
+<blockquote>
+<p><strong>面试题：什么是 N+1 查询问题？在 Node.js 中如何解决？</strong></p>
+</blockquote>
+<h3 id="91-什么是-n1-问题">9.1 什么是 N+1 问题</h3>
+<p>N+1 问题是指在查询关联数据时，先执行 1 次查询获取主表数据（N 条记录），然后对每条记录执行 1 次查询获取关联数据，共执行 N+1 次查询。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// N+1 问题示例</span>
+<span class="hljs-keyword">const</span> posts = <span class="hljs-keyword">await</span> <span class="hljs-title class_">Post</span>.<span class="hljs-title function_">findAll</span>(); <span class="hljs-comment">// 1 次查询获取所有文章</span>
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> post <span class="hljs-keyword">of</span> posts) {
+  <span class="hljs-comment">// 每篇文章都要查询一次作者，如果有 100 篇文章就是 100 次查询</span>
+  <span class="hljs-keyword">const</span> author = <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">findByPk</span>(post.<span class="hljs-property">userId</span>);
+  post.<span class="hljs-property">author</span> = author;
+}
+<span class="hljs-comment">// 总共 101 次查询！</span>
+</code></pre>
+<h3 id="92-解决方案">9.2 解决方案</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 方案1：预加载（Eager Loading）- Sequelize</span>
+<span class="hljs-keyword">const</span> posts = <span class="hljs-keyword">await</span> <span class="hljs-title class_">Post</span>.<span class="hljs-title function_">findAll</span>({
+  <span class="hljs-attr">include</span>: [{ <span class="hljs-attr">model</span>: <span class="hljs-title class_">User</span>, <span class="hljs-attr">as</span>: <span class="hljs-string">'author'</span> }]
+});
+<span class="hljs-comment">// 只执行 2 次查询：SELECT * FROM posts; SELECT * FROM users WHERE id IN (...)</span>
+
+<span class="hljs-comment">// 方案2：批量加载 - Mongoose populate</span>
+<span class="hljs-keyword">const</span> posts = <span class="hljs-keyword">await</span> <span class="hljs-title class_">Post</span>.<span class="hljs-title function_">find</span>().<span class="hljs-title function_">populate</span>(<span class="hljs-string">'author'</span>, <span class="hljs-string">'name email'</span>);
+<span class="hljs-comment">// 只执行 2 次查询</span>
+
+<span class="hljs-comment">// 方案3：DataLoader（GraphQL 场景常用）</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">DataLoader</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'dataloader'</span>);
+
+<span class="hljs-keyword">const</span> userLoader = <span class="hljs-keyword">new</span> <span class="hljs-title class_">DataLoader</span>(<span class="hljs-title function_">async</span> (userIds) =&gt; {
+  <span class="hljs-keyword">const</span> users = <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">findAll</span>({
+    <span class="hljs-attr">where</span>: { <span class="hljs-attr">id</span>: userIds }
+  });
+  <span class="hljs-comment">// DataLoader 要求返回的数组顺序和 keys 一致</span>
+  <span class="hljs-keyword">const</span> userMap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>(users.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">u</span> =&gt;</span> [u.<span class="hljs-property">id</span>, u]));
+  <span class="hljs-keyword">return</span> userIds.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">id</span> =&gt;</span> userMap.<span class="hljs-title function_">get</span>(id) || <span class="hljs-literal">null</span>);
+});
+
+<span class="hljs-comment">// 使用 DataLoader</span>
+<span class="hljs-keyword">const</span> author = <span class="hljs-keyword">await</span> userLoader.<span class="hljs-title function_">load</span>(post.<span class="hljs-property">userId</span>); <span class="hljs-comment">// 自动批量化</span>
+
+<span class="hljs-comment">// 方案4：手动批量查询</span>
+<span class="hljs-keyword">const</span> posts = <span class="hljs-keyword">await</span> <span class="hljs-title class_">Post</span>.<span class="hljs-title function_">findAll</span>();
+<span class="hljs-keyword">const</span> userIds = [...<span class="hljs-keyword">new</span> <span class="hljs-title class_">Set</span>(posts.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">p</span> =&gt;</span> p.<span class="hljs-property">userId</span>))];
+<span class="hljs-keyword">const</span> users = <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">findAll</span>({ <span class="hljs-attr">where</span>: { <span class="hljs-attr">id</span>: userIds } });
+<span class="hljs-keyword">const</span> userMap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>(users.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">u</span> =&gt;</span> [u.<span class="hljs-property">id</span>, u]));
+posts.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">p</span> =&gt;</span> { p.<span class="hljs-property">author</span> = userMap.<span class="hljs-title function_">get</span>(p.<span class="hljs-property">userId</span>); });
+</code></pre>
+<hr></hr>
+<h2 id="十、数据库索引优化">十、数据库索引优化</h2>
+<blockquote>
+<p><strong>面试题：什么是数据库索引？如何在 Node.js 项目中正确使用索引？</strong></p>
+</blockquote>
+<h3 id="101-索引的基本概念">10.1 索引的基本概念</h3>
+<p>索引是一种数据结构（通常是 B+ 树），用于加速数据库的查询操作。类比字典的目录，通过索引可以快速定位到数据行，避免全表扫描。</p>
+<h3 id="102-索引类型">10.2 索引类型</h3>
+<pre><code class="lang-sql"><span class="hljs-comment">-- 主键索引（自动创建）</span>
+<span class="hljs-keyword">PRIMARY KEY</span> (id)
+
+<span class="hljs-comment">-- 唯一索引</span>
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">UNIQUE</span> INDEX idx_email <span class="hljs-keyword">ON</span> users(email);
+
+<span class="hljs-comment">-- 普通索引</span>
+<span class="hljs-keyword">CREATE</span> INDEX idx_status <span class="hljs-keyword">ON</span> users(status);
+
+<span class="hljs-comment">-- 复合索引（注意最左前缀原则）</span>
+<span class="hljs-keyword">CREATE</span> INDEX idx_status_created <span class="hljs-keyword">ON</span> users(status, created_at);
+
+<span class="hljs-comment">-- 全文索引</span>
+<span class="hljs-keyword">CREATE</span> FULLTEXT INDEX idx_content <span class="hljs-keyword">ON</span> articles(title, content);
+</code></pre>
+<h3 id="103-在-nodejs-orm-中定义索引">10.3 在 Node.js ORM 中定义索引</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Sequelize</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">User</span> = sequelize.<span class="hljs-title function_">define</span>(<span class="hljs-string">'User'</span>, {
+  <span class="hljs-attr">email</span>: { <span class="hljs-attr">type</span>: <span class="hljs-title class_">DataTypes</span>.<span class="hljs-property">STRING</span>, <span class="hljs-attr">unique</span>: <span class="hljs-literal">true</span> }, <span class="hljs-comment">// 唯一索引</span>
+  <span class="hljs-attr">name</span>: <span class="hljs-title class_">DataTypes</span>.<span class="hljs-property">STRING</span>,
+  <span class="hljs-attr">status</span>: <span class="hljs-title class_">DataTypes</span>.<span class="hljs-property">STRING</span>,
+}, {
+  <span class="hljs-attr">indexes</span>: [
+    { <span class="hljs-attr">fields</span>: [<span class="hljs-string">'status'</span>] },
+    { <span class="hljs-attr">fields</span>: [<span class="hljs-string">'status'</span>, <span class="hljs-string">'createdAt'</span>] }, <span class="hljs-comment">// 复合索引</span>
+    { <span class="hljs-attr">fields</span>: [<span class="hljs-string">'name'</span>], <span class="hljs-attr">type</span>: <span class="hljs-string">'FULLTEXT'</span> } <span class="hljs-comment">// 全文索引</span>
+  ]
+});
+
+<span class="hljs-comment">// Mongoose</span>
+<span class="hljs-keyword">const</span> userSchema = <span class="hljs-keyword">new</span> mongoose.<span class="hljs-title class_">Schema</span>({ <span class="hljs-comment">/* ... */</span> });
+userSchema.<span class="hljs-title function_">index</span>({ <span class="hljs-attr">email</span>: <span class="hljs-number">1</span> }, { <span class="hljs-attr">unique</span>: <span class="hljs-literal">true</span> });
+userSchema.<span class="hljs-title function_">index</span>({ <span class="hljs-attr">status</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">createdAt</span>: -<span class="hljs-number">1</span> }); <span class="hljs-comment">// 复合索引</span>
+userSchema.<span class="hljs-title function_">index</span>({ <span class="hljs-attr">name</span>: <span class="hljs-string">'text'</span>, <span class="hljs-attr">bio</span>: <span class="hljs-string">'text'</span> }); <span class="hljs-comment">// 文本索引</span>
+userSchema.<span class="hljs-title function_">index</span>({ <span class="hljs-attr">location</span>: <span class="hljs-string">'2dsphere'</span> }); <span class="hljs-comment">// 地理空间索引</span>
+</code></pre>
+<h3 id="104-查询分析">10.4 查询分析</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// MySQL - EXPLAIN</span>
+<span class="hljs-keyword">const</span> [analysis] = <span class="hljs-keyword">await</span> pool.<span class="hljs-title function_">execute</span>(<span class="hljs-string">'EXPLAIN SELECT * FROM users WHERE status = ? AND created_at &gt; ?'</span>, [<span class="hljs-string">'active'</span>, <span class="hljs-string">'2024-01-01'</span>]);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(analysis);
+<span class="hljs-comment">// 关注 type（ALL/index/range/ref/const）、rows、Extra</span>
+
+<span class="hljs-comment">// MongoDB - explain</span>
+<span class="hljs-keyword">const</span> explanation = <span class="hljs-keyword">await</span> <span class="hljs-title class_">User</span>.<span class="hljs-title function_">find</span>({ <span class="hljs-attr">status</span>: <span class="hljs-string">'active'</span> }).<span class="hljs-title function_">explain</span>(<span class="hljs-string">'executionStats'</span>);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(explanation.<span class="hljs-property">executionStats</span>);
+<span class="hljs-comment">// 关注 totalDocsExamined vs totalDocsReturned</span>
+</code></pre>
+<h3 id="105-索引使用原则">10.5 索引使用原则</h3>
+<ol>
+<li><strong>频繁查询的字段</strong>添加索引</li>
+<li><strong>WHERE、JOIN、ORDER BY</strong> 中使用的字段优先建索引</li>
+<li><strong>选择性高的字段</strong>更适合建索引（如 email 比 gender 更适合）</li>
+<li><strong>复合索引遵循最左前缀原则</strong>：<code>(A, B, C)</code> 索引可用于 <code>A</code>、<code>A,B</code>、<code>A,B,C</code> 的查询，但不能用于单独的 <code>B</code> 或 <code>C</code></li>
+<li><strong>避免过多索引</strong>：索引会减慢写入速度，增加存储空间</li>
+<li><strong>避免在索引列上使用函数或运算</strong></li>
+<li><strong>定期分析慢查询并优化索引</strong></li>
+</ol>
+<hr></hr>
+<h2 id="十一、缓存策略">十一、缓存策略</h2>
+<blockquote>
+<p><strong>面试题：什么是缓存穿透、缓存击穿和缓存雪崩？如何解决？</strong></p>
+</blockquote>
+<h3 id="111-缓存穿透">11.1 缓存穿透</h3>
+<p><strong>定义</strong>：查询一个不存在的数据，缓存中没有，每次请求都直接打到数据库。</p>
+<p><strong>场景</strong>：恶意攻击，大量请求不存在的 ID。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 解决方案1：缓存空值</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">getUser</span>(<span class="hljs-params">id</span>) {
+  <span class="hljs-keyword">const</span> cacheKey = <span class="hljs-string">`user:<span class="hljs-subst">${id}</span>`</span>;
+  <span class="hljs-keyword">let</span> user = <span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">get</span>(cacheKey);
+
+  <span class="hljs-keyword">if</span> (user !== <span class="hljs-literal">null</span>) {
+    <span class="hljs-keyword">return</span> user === <span class="hljs-string">'NULL'</span> ? <span class="hljs-literal">null</span> : <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(user);
+  }
+
+  user = <span class="hljs-keyword">await</span> db.<span class="hljs-title function_">query</span>(<span class="hljs-string">'SELECT * FROM users WHERE id = ?'</span>, [id]);
+
+  <span class="hljs-keyword">if</span> (user) {
+    <span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">set</span>(cacheKey, <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(user), <span class="hljs-string">'EX'</span>, <span class="hljs-number">3600</span>);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// 缓存空值，过期时间短一些</span>
+    <span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">set</span>(cacheKey, <span class="hljs-string">'NULL'</span>, <span class="hljs-string">'EX'</span>, <span class="hljs-number">60</span>);
+  }
+
+  <span class="hljs-keyword">return</span> user;
+}
+
+<span class="hljs-comment">// 解决方案2：布隆过滤器（Bloom Filter）</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">BloomFilter</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'bloom-filters'</span>);
+<span class="hljs-keyword">const</span> filter = <span class="hljs-keyword">new</span> <span class="hljs-title class_">BloomFilter</span>.<span class="hljs-title class_">BloomFilter</span>(<span class="hljs-number">10000</span>, <span class="hljs-number">0.01</span>);
+
+<span class="hljs-comment">// 初始化时加载所有有效 ID</span>
+<span class="hljs-keyword">const</span> allIds = <span class="hljs-keyword">await</span> db.<span class="hljs-title function_">query</span>(<span class="hljs-string">'SELECT id FROM users'</span>);
+allIds.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">row</span> =&gt;</span> filter.<span class="hljs-title function_">add</span>(<span class="hljs-title class_">String</span>(row.<span class="hljs-property">id</span>)));
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">getUserSafe</span>(<span class="hljs-params">id</span>) {
+  <span class="hljs-comment">// 先检查布隆过滤器</span>
+  <span class="hljs-keyword">if</span> (!filter.<span class="hljs-title function_">has</span>(<span class="hljs-title class_">String</span>(id))) {
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>; <span class="hljs-comment">// 一定不存在</span>
+  }
+  <span class="hljs-comment">// 可能存在，查缓存和数据库</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-title function_">getUser</span>(id);
+}
+</code></pre>
+<h3 id="112-缓存击穿">11.2 缓存击穿</h3>
+<p><strong>定义</strong>：某个热点 key 过期的瞬间，大量并发请求同时访问该 key，全部打到数据库。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 解决方案1：互斥锁（分布式锁）</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">getUserWithLock</span>(<span class="hljs-params">id</span>) {
+  <span class="hljs-keyword">const</span> cacheKey = <span class="hljs-string">`user:<span class="hljs-subst">${id}</span>`</span>;
+  <span class="hljs-keyword">const</span> lockKey = <span class="hljs-string">`lock:user:<span class="hljs-subst">${id}</span>`</span>;
+
+  <span class="hljs-keyword">let</span> user = <span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">get</span>(cacheKey);
+  <span class="hljs-keyword">if</span> (user) <span class="hljs-keyword">return</span> <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(user);
+
+  <span class="hljs-comment">// 尝试获取锁</span>
+  <span class="hljs-keyword">const</span> locked = <span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">set</span>(lockKey, <span class="hljs-string">'1'</span>, <span class="hljs-string">'NX'</span>, <span class="hljs-string">'EX'</span>, <span class="hljs-number">10</span>);
+
+  <span class="hljs-keyword">if</span> (locked) {
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-comment">// 获取锁成功，查数据库</span>
+      user = <span class="hljs-keyword">await</span> db.<span class="hljs-title function_">query</span>(<span class="hljs-string">'SELECT * FROM users WHERE id = ?'</span>, [id]);
+      <span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">set</span>(cacheKey, <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(user), <span class="hljs-string">'EX'</span>, <span class="hljs-number">3600</span>);
+      <span class="hljs-keyword">return</span> user;
+    } <span class="hljs-keyword">finally</span> {
+      <span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">del</span>(lockKey);
+    }
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// 获取锁失败，等待后重试</span>
+    <span class="hljs-keyword">await</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function"><span class="hljs-params">resolve</span> =&gt;</span> <span class="hljs-built_in">setTimeout</span>(resolve, <span class="hljs-number">100</span>));
+    <span class="hljs-keyword">return</span> <span class="hljs-title function_">getUserWithLock</span>(id);
+  }
+}
+
+<span class="hljs-comment">// 解决方案2：逻辑过期（不设置 Redis TTL，在值中记录逻辑过期时间）</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">getUserLogicalExpiry</span>(<span class="hljs-params">id</span>) {
+  <span class="hljs-keyword">const</span> cacheKey = <span class="hljs-string">`user:<span class="hljs-subst">${id}</span>`</span>;
+  <span class="hljs-keyword">const</span> cached = <span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">get</span>(cacheKey);
+
+  <span class="hljs-keyword">if</span> (cached) {
+    <span class="hljs-keyword">const</span> { data, expireAt } = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(cached);
+    <span class="hljs-keyword">if</span> (<span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>() &lt; expireAt) {
+      <span class="hljs-keyword">return</span> data; <span class="hljs-comment">// 未过期</span>
+    }
+    <span class="hljs-comment">// 逻辑过期，异步更新缓存</span>
+    <span class="hljs-title function_">refreshCacheAsync</span>(id);
+    <span class="hljs-keyword">return</span> data; <span class="hljs-comment">// 返回旧数据</span>
+  }
+
+  <span class="hljs-keyword">return</span> <span class="hljs-title function_">fetchAndCache</span>(id);
+}
+</code></pre>
+<h3 id="113-缓存雪崩">11.3 缓存雪崩</h3>
+<p><strong>定义</strong>：大量缓存 key 在同一时间过期，或者 Redis 服务宕机，导致大量请求涌向数据库。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 解决方案1：过期时间添加随机值</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">cacheWithJitter</span>(<span class="hljs-params">key, data, baseTTL = <span class="hljs-number">3600</span></span>) {
+  <span class="hljs-keyword">const</span> jitter = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>(<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">random</span>() * <span class="hljs-number">600</span>); <span class="hljs-comment">// 0-600秒的随机值</span>
+  <span class="hljs-keyword">await</span> redis.<span class="hljs-title function_">set</span>(key, <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(data), <span class="hljs-string">'EX'</span>, baseTTL + jitter);
+}
+
+<span class="hljs-comment">// 解决方案2：多级缓存</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">MultiLevelCache</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">redis, localCacheTTL = <span class="hljs-number">60</span></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">redis</span> = redis;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">localCache</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>();
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">localCacheTTL</span> = localCacheTTL;
+  }
+
+  <span class="hljs-keyword">async</span> <span class="hljs-title function_">get</span>(<span class="hljs-params">key</span>) {
+    <span class="hljs-comment">// L1：本地缓存</span>
+    <span class="hljs-keyword">const</span> local = <span class="hljs-variable language_">this</span>.<span class="hljs-property">localCache</span>.<span class="hljs-title function_">get</span>(key);
+    <span class="hljs-keyword">if</span> (local &amp;&amp; local.<span class="hljs-property">expireAt</span> &gt; <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>()) {
+      <span class="hljs-keyword">return</span> local.<span class="hljs-property">value</span>;
+    }
+
+    <span class="hljs-comment">// L2：Redis 缓存</span>
+    <span class="hljs-keyword">const</span> remote = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">redis</span>.<span class="hljs-title function_">get</span>(key);
+    <span class="hljs-keyword">if</span> (remote) {
+      <span class="hljs-keyword">const</span> value = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(remote);
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">localCache</span>.<span class="hljs-title function_">set</span>(key, {
+        value,
+        <span class="hljs-attr">expireAt</span>: <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>() + <span class="hljs-variable language_">this</span>.<span class="hljs-property">localCacheTTL</span> * <span class="hljs-number">1000</span>
+      });
+      <span class="hljs-keyword">return</span> value;
+    }
+
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+  }
+
+  <span class="hljs-keyword">async</span> <span class="hljs-title function_">set</span>(<span class="hljs-params">key, value, ttl = <span class="hljs-number">3600</span></span>) {
+    <span class="hljs-keyword">const</span> jitter = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>(<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">random</span>() * <span class="hljs-number">300</span>);
+    <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">redis</span>.<span class="hljs-title function_">set</span>(key, <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(value), <span class="hljs-string">'EX'</span>, ttl + jitter);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">localCache</span>.<span class="hljs-title function_">set</span>(key, {
+      value,
+      <span class="hljs-attr">expireAt</span>: <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>() + <span class="hljs-variable language_">this</span>.<span class="hljs-property">localCacheTTL</span> * <span class="hljs-number">1000</span>
+    });
+  }
+}
+
+<span class="hljs-comment">// 解决方案3：熔断降级</span>
+<span class="hljs-comment">// 当数据库压力过大时，返回默认值或错误提示</span>
+<span class="hljs-comment">// 配合 Circuit Breaker 模式使用</span>
+</code></pre>
+<hr></hr>
+<h2 id="常见面试题汇总">常见面试题汇总</h2>
+<blockquote>
+<p><strong>Q：ORM 的 Eager Loading 和 Lazy Loading 有什么区别？</strong></p>
+</blockquote>
+<p>Eager Loading（急切加载）在查询主数据时同时加载关联数据，通常通过 JOIN 或额外的批量查询实现。Lazy Loading（懒加载）在首次访问关联属性时才触发查询。Eager Loading 适用于确定需要关联数据的场景，避免 N+1 问题；Lazy Loading 适用于不确定是否需要关联数据的场景，但可能产生 N+1 问题。</p>
+<blockquote>
+<p><strong>Q：Redis 为什么快？</strong></p>
+</blockquote>
+<ol>
+<li>纯内存操作，不涉及磁盘 I/O；2. 单线程模型避免了上下文切换和锁竞争；3. 使用 I/O 多路复用（epoll）处理并发连接；4. 高效的数据结构（如 SDS、跳表、压缩列表等）。Redis 6.0+ 引入了多线程处理网络 I/O，但命令执行仍是单线程。</li>
+</ol>
+<blockquote>
+<p><strong>Q：数据库连接池大小设为多少合适？</strong></p>
+</blockquote>
+<p>一般公式为 <code>connections = (CPU 核心数 * 2) + 磁盘数</code>。对于 4 核 CPU + SSD，约为 9-10 个连接。但实际应以性能测试为准。过大的连接池反而会降低性能（上下文切换开销）。连接池大小也要考虑数据库服务器的最大连接数限制和应用实例数量。</p>
+<blockquote>
+<p><strong>Q：MongoDB 和 MySQL 如何选择？</strong></p>
+</blockquote>
+<p>MySQL（关系型）适合数据结构固定、需要事务支持、强一致性的场景（如金融、电商订单）。MongoDB（文档型）适合数据结构灵活多变、读多写少、需要水平扩展的场景（如内容管理、日志记录、物联网数据）。实际项目中可以同时使用：核心业务数据用 MySQL，非结构化数据/日志用 MongoDB。</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="frameworks.html" class="navigation navigation-prev " aria-label="Previous page: 常用框架">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="practice.html" class="navigation navigation-next " aria-label="Next page: 最佳实践与进阶">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"数据库操作","level":"3.5","depth":1,"next":{"title":"最佳实践与进阶","level":"3.6","depth":1,"path":"nodejs/practice.md","ref":"nodejs/practice.md","articles":[]},"previous":{"title":"常用框架","level":"3.4","depth":1,"path":"nodejs/frameworks.md","ref":"nodejs/frameworks.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"nodejs/database.md","mtime":"2026-03-31T06:35:11.839Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

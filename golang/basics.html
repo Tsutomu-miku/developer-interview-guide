@@ -1,0 +1,1422 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Go语言基础 · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="concurrency.html" />
+    
+    
+    <link rel="prev" href="../nodejs/practice.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../frontend/html-css.html">
+            
+                <a href="../frontend/html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../frontend/javascript.html">
+            
+                <a href="../frontend/javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../frontend/typescript.html">
+            
+                <a href="../frontend/typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../frontend/browser.html">
+            
+                <a href="../frontend/browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../frontend/network.html">
+            
+                <a href="../frontend/network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../frontend/react.html">
+            
+                <a href="../frontend/react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../frontend/vue.html">
+            
+                <a href="../frontend/vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../frontend/engineering.html">
+            
+                <a href="../frontend/engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../frontend/performance.html">
+            
+                <a href="../frontend/performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../frontend/security.html">
+            
+                <a href="../frontend/security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../nodejs/basics.html">
+            
+                <a href="../nodejs/basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../nodejs/event-loop.html">
+            
+                <a href="../nodejs/event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../nodejs/stream.html">
+            
+                <a href="../nodejs/stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../nodejs/frameworks.html">
+            
+                <a href="../nodejs/frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../nodejs/database.html">
+            
+                <a href="../nodejs/database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../nodejs/practice.html">
+            
+                <a href="../nodejs/practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter active" data-level="4.1" data-path="basics.html">
+            
+                <a href="basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="concurrency.html">
+            
+                <a href="concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="memory.html">
+            
+                <a href="memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="web-framework.html">
+            
+                <a href="web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="database-design.html">
+            
+                <a href="database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="testing-practice.html">
+            
+                <a href="testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../agent/llm-basics.html">
+            
+                <a href="../agent/llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../agent/prompt-engineering.html">
+            
+                <a href="../agent/prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../agent/rag.html">
+            
+                <a href="../agent/rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../agent/agent-architecture.html">
+            
+                <a href="../agent/agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../agent/tool-calling.html">
+            
+                <a href="../agent/tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../agent/practice.html">
+            
+                <a href="../agent/practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Go语言基础</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="go语言基础面试指南">Go语言基础面试指南</h1>
+<h2 id="一、go语言特点">一、Go语言特点</h2>
+<p>Go（又称 Golang）是 Google 于 2009 年发布的开源编程语言，由 Robert Griesemer、Rob Pike 和 Ken Thompson 设计。其核心特点如下：</p>
+<h3 id="11-静态类型">1.1 静态类型</h3>
+<p>Go 是静态类型语言，所有变量的类型在编译期确定。类型系统简洁但完备，支持类型推断（<code>:=</code>），在保证类型安全的前提下减少了样板代码。</p>
+<h3 id="12-编译型语言">1.2 编译型语言</h3>
+<p>Go 代码直接编译为机器码，无需虚拟机或解释器。编译速度极快，是 Go 设计的核心目标之一。交叉编译非常方便，通过 <code>GOOS</code> 和 <code>GOARCH</code> 环境变量即可编译不同平台的二进制文件。</p>
+<h3 id="13-垃圾回收（gc）">1.3 垃圾回收（GC）</h3>
+<p>Go 内置垃圾回收器，开发者无需手动管理内存。GC 采用三色标记-清扫算法并持续优化，STW（Stop The World）时间已控制在亚毫秒级别。</p>
+<h3 id="14-原生并发支持">1.4 原生并发支持</h3>
+<p>Go 通过 goroutine 和 channel 提供了语言级别的并发原语，goroutine 的创建成本极低（初始栈仅几 KB），可轻松创建数十万个并发任务。</p>
+<h3 id="15-简洁语法">1.5 简洁语法</h3>
+<p>Go 故意省略了继承、泛型（1.18 之前）、异常等复杂特性，推崇"少即是多"的设计哲学。代码风格统一（<code>gofmt</code>），减少了团队协作中的争论。</p>
+<blockquote>
+<p><strong>面试题：Go语言相比Java/C++有哪些优势和劣势？</strong></p>
+</blockquote>
+<p><strong>优势：</strong></p>
+<ul>
+<li>编译速度快，部署简单（单一二进制文件）</li>
+<li>原生并发模型，goroutine 比线程更轻量</li>
+<li>内置垃圾回收，无需手动内存管理</li>
+<li>语法简洁，学习曲线低</li>
+<li>强大的标准库（net/http、encoding/json 等）</li>
+<li>交叉编译方便</li>
+</ul>
+<p><strong>劣势：</strong></p>
+<ul>
+<li>泛型支持较晚（1.18 才引入），且功能仍在完善</li>
+<li>错误处理较为繁琐（大量 <code>if err != nil</code>）</li>
+<li>没有传统面向对象的继承机制</li>
+<li>包管理生态相对较新（Go Modules 从 1.11 开始）</li>
+</ul>
+<hr></hr>
+<h2 id="二、基础数据类型">二、基础数据类型</h2>
+<h3 id="21-整型">2.1 整型</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 有符号: int8, int16, int32, int64, int</span>
+<span class="hljs-comment">// 无符号: uint8, uint16, uint32, uint64, uint</span>
+<span class="hljs-comment">// 特殊: uintptr(存放指针), byte(uint8别名), rune(int32别名)</span>
+<span class="hljs-keyword">var</span> a <span class="hljs-type">int</span> = <span class="hljs-number">42</span>
+<span class="hljs-keyword">var</span> b <span class="hljs-type">int64</span> = <span class="hljs-number">100</span>
+</code></pre>
+<p><code>int</code> 和 <code>uint</code> 的大小取决于平台（32位系统为4字节，64位系统为8字节）。</p>
+<h3 id="22-浮点型">2.2 浮点型</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">var</span> f1 <span class="hljs-type">float32</span> = <span class="hljs-number">3.14</span>
+<span class="hljs-keyword">var</span> f2 <span class="hljs-type">float64</span> = <span class="hljs-number">3.141592653589793</span>
+</code></pre>
+<p>默认浮点字面量为 <code>float64</code>。Go 没有 <code>double</code> 类型，<code>float64</code> 即为双精度浮点。</p>
+<h3 id="23-字符串-string">2.3 字符串 string</h3>
+<pre><code class="lang-go">s := <span class="hljs-string">"Hello, 世界"</span>
+fmt.Println(<span class="hljs-built_in">len</span>(s))    <span class="hljs-comment">// 13 (字节数，非字符数)</span>
+fmt.Println(utf8.RuneCountInString(s)) <span class="hljs-comment">// 9 (字符数)</span>
+</code></pre>
+<h3 id="24-布尔-bool">2.4 布尔 bool</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">var</span> b <span class="hljs-type">bool</span> = <span class="hljs-literal">true</span>
+<span class="hljs-comment">// Go中布尔值不能与整型互转，不能用 0/1 代替</span>
+</code></pre>
+<h3 id="25-byte-与-rune">2.5 byte 与 rune</h3>
+<ul>
+<li><code>byte</code> 是 <code>uint8</code> 的别名，用于表示 ASCII 字符或原始字节</li>
+<li><code>rune</code> 是 <code>int32</code> 的别名，用于表示 Unicode 码点</li>
+</ul>
+<pre><code class="lang-go">s := <span class="hljs-string">"Go语言"</span>
+<span class="hljs-keyword">for</span> i, r := <span class="hljs-keyword">range</span> s {
+    fmt.Printf(<span class="hljs-string">"index=%d, rune=%c, unicode=%U\n"</span>, i, r, r)
+}
+</code></pre>
+<hr></hr>
+<h2 id="三、复合数据类型">三、复合数据类型</h2>
+<h3 id="31-数组-array">3.1 数组 Array</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">var</span> arr [<span class="hljs-number">5</span>]<span class="hljs-type">int</span>              <span class="hljs-comment">// 零值初始化</span>
+arr2 := [<span class="hljs-number">3</span>]<span class="hljs-type">int</span>{<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>}    <span class="hljs-comment">// 字面量初始化</span>
+arr3 := [...]<span class="hljs-type">int</span>{<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>}  <span class="hljs-comment">// 编译器自动推断长度</span>
+</code></pre>
+<p>数组是<strong>值类型</strong>，赋值和传参都会复制整个数组。数组的长度是类型的一部分，<code>[3]int</code> 和 <code>[5]int</code> 是不同类型。</p>
+<h3 id="32-切片-slice">3.2 切片 Slice</h3>
+<pre><code class="lang-go">s := <span class="hljs-built_in">make</span>([]<span class="hljs-type">int</span>, <span class="hljs-number">5</span>, <span class="hljs-number">10</span>)  <span class="hljs-comment">// len=5, cap=10</span>
+s2 := []<span class="hljs-type">int</span>{<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>}
+s3 := arr[<span class="hljs-number">1</span>:<span class="hljs-number">3</span>]           <span class="hljs-comment">// 从数组创建切片</span>
+</code></pre>
+<h3 id="33-映射-map">3.3 映射 Map</h3>
+<pre><code class="lang-go">m := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-type">string</span>]<span class="hljs-type">int</span>)
+m[<span class="hljs-string">"age"</span>] = <span class="hljs-number">25</span>
+value, ok := m[<span class="hljs-string">"age"</span>]  <span class="hljs-comment">// 两值返回判断key是否存在</span>
+</code></pre>
+<h3 id="34-结构体-struct">3.4 结构体 Struct</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> User <span class="hljs-keyword">struct</span> {
+    Name <span class="hljs-type">string</span>
+    Age  <span class="hljs-type">int</span>
+}
+u := User{Name: <span class="hljs-string">"Alice"</span>, Age: <span class="hljs-number">30</span>}
+</code></pre>
+<hr></hr>
+<h2 id="四、slice-底层原理">四、Slice 底层原理</h2>
+<blockquote>
+<p><strong>面试题：请详细描述 slice 的底层结构和扩容机制。</strong></p>
+</blockquote>
+<h3 id="41-底层数据结构">4.1 底层数据结构</h3>
+<p>Slice 在 runtime 中对应 <code>reflect.SliceHeader</code>：</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> SliceHeader <span class="hljs-keyword">struct</span> {
+    Data <span class="hljs-type">uintptr</span>  <span class="hljs-comment">// 指向底层数组的指针</span>
+    Len  <span class="hljs-type">int</span>      <span class="hljs-comment">// 当前长度</span>
+    Cap  <span class="hljs-type">int</span>      <span class="hljs-comment">// 容量</span>
+}
+</code></pre>
+<p>Slice 本身是一个包含三个字段的结构体（24 字节在 64 位系统上），传递 slice 时传递的是这个结构体的拷贝（浅拷贝），但底层数组数据是共享的。</p>
+<h3 id="42-扩容机制">4.2 扩容机制</h3>
+<p>当 <code>append</code> 导致长度超过容量时，需要扩容：</p>
+<p><strong>Go 1.18 之前的策略：</strong></p>
+<ul>
+<li>如果新容量大于旧容量的 2 倍，则使用新容量</li>
+<li>如果旧容量小于 1024，则新容量 = 旧容量 × 2</li>
+<li>如果旧容量 &gt;= 1024，则新容量 = 旧容量 × 1.25，直到满足需求</li>
+</ul>
+<p><strong>Go 1.18+ 的策略（更平滑的过渡）：</strong></p>
+<ul>
+<li>如果新容量大于旧容量的 2 倍，则使用新容量</li>
+<li>如果旧容量小于 256，则新容量 = 旧容量 × 2</li>
+<li>否则 <code>newcap = oldcap + (oldcap + 3*256) / 4</code>，直到满足需求</li>
+</ul>
+<p>扩容后还会进行<strong>内存对齐</strong>，实际分配的容量可能比计算值稍大。</p>
+<pre><code class="lang-go">s := <span class="hljs-built_in">make</span>([]<span class="hljs-type">int</span>, <span class="hljs-number">0</span>, <span class="hljs-number">3</span>)
+fmt.Printf(<span class="hljs-string">"len=%d, cap=%d, ptr=%p\n"</span>, <span class="hljs-built_in">len</span>(s), <span class="hljs-built_in">cap</span>(s), s) <span class="hljs-comment">// cap=3</span>
+s = <span class="hljs-built_in">append</span>(s, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>)
+fmt.Printf(<span class="hljs-string">"len=%d, cap=%d, ptr=%p\n"</span>, <span class="hljs-built_in">len</span>(s), <span class="hljs-built_in">cap</span>(s), s) <span class="hljs-comment">// cap=6, 地址已变</span>
+</code></pre>
+<h3 id="43-常见陷阱">4.3 常见陷阱</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 陷阱1：切片共享底层数组</span>
+a := []<span class="hljs-type">int</span>{<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>}
+b := a[<span class="hljs-number">1</span>:<span class="hljs-number">3</span>]   <span class="hljs-comment">// b = [2, 3]</span>
+b[<span class="hljs-number">0</span>] = <span class="hljs-number">20</span>     <span class="hljs-comment">// a 也被修改！a = [1, 20, 3, 4, 5]</span>
+
+<span class="hljs-comment">// 陷阱2：append 可能影响原切片</span>
+a := []<span class="hljs-type">int</span>{<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>}
+b := a[<span class="hljs-number">1</span>:<span class="hljs-number">3</span>]         <span class="hljs-comment">// b = [2, 3], len=2, cap=4</span>
+b = <span class="hljs-built_in">append</span>(b, <span class="hljs-number">100</span>)  <span class="hljs-comment">// 修改了 a[3]！a = [1, 2, 3, 100, 5]</span>
+
+<span class="hljs-comment">// 解决方案：使用完整切片表达式限制容量</span>
+b := a[<span class="hljs-number">1</span>:<span class="hljs-number">3</span>:<span class="hljs-number">3</span>]       <span class="hljs-comment">// len=2, cap=2, append 将触发扩容</span>
+</code></pre>
+<hr></hr>
+<h2 id="五、map-底层原理">五、Map 底层原理</h2>
+<blockquote>
+<p><strong>面试题：Go 中 map 的底层实现是什么？为什么遍历是无序的？</strong></p>
+</blockquote>
+<h3 id="51-底层结构">5.1 底层结构</h3>
+<p>Go 的 map 底层是<strong>哈希表</strong>，核心结构为 <code>runtime.hmap</code>：</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> hmap <span class="hljs-keyword">struct</span> {
+    count     <span class="hljs-type">int</span>            <span class="hljs-comment">// 元素个数</span>
+    flags     <span class="hljs-type">uint8</span>
+    B         <span class="hljs-type">uint8</span>          <span class="hljs-comment">// 桶的数量 = 2^B</span>
+    noverflow <span class="hljs-type">uint16</span>         <span class="hljs-comment">// 溢出桶的近似数量</span>
+    hash0     <span class="hljs-type">uint32</span>         <span class="hljs-comment">// 哈希种子</span>
+    buckets    unsafe.Pointer <span class="hljs-comment">// 桶数组</span>
+    oldbuckets unsafe.Pointer <span class="hljs-comment">// 扩容时的旧桶</span>
+    nevacuate  <span class="hljs-type">uintptr</span>       <span class="hljs-comment">// 扩容迁移进度</span>
+    extra *mapextra
+}
+</code></pre>
+<p>每个桶（<code>bmap</code>）可以存储 <strong>8 个键值对</strong>。桶中使用 <code>tophash</code> 数组（存储哈希值的高 8 位）加速查找。当桶满时，会链接<strong>溢出桶</strong>。</p>
+<h3 id="52-负载因子与扩容">5.2 负载因子与扩容</h3>
+<ul>
+<li><strong>负载因子</strong> = count / (2^B)，默认阈值为 <strong>6.5</strong></li>
+<li><strong>等量扩容</strong>：溢出桶过多时触发（整理数据但不增加桶数量）</li>
+<li><strong>翻倍扩容</strong>：负载因子超过 6.5 时触发（桶数量翻倍）</li>
+</ul>
+<p>扩容采用<strong>渐进式</strong>策略，每次访问 map 时迁移少量数据，避免一次性大量迁移导致的延迟。</p>
+<h3 id="53-遍历无序">5.3 遍历无序</h3>
+<p>Go 故意在 <code>range</code> 遍历 map 时引入随机起始位置（随机选择起始桶和桶内起始位置），这是为了防止开发者依赖遍历顺序。</p>
+<h3 id="54-并发安全">5.4 并发安全</h3>
+<p>map 不是并发安全的。并发读写会导致 <code>fatal error: concurrent map read and map write</code>。解决方案：</p>
+<ol>
+<li>使用 <code>sync.RWMutex</code> 保护</li>
+<li>使用 <code>sync.Map</code>（读多写少场景更优）</li>
+</ol>
+<hr></hr>
+<h2 id="六、string-底层原理">六、String 底层原理</h2>
+<blockquote>
+<p><strong>面试题：Go 中 string 是如何实现的？string 和 []byte 的转换有什么需要注意的？</strong></p>
+</blockquote>
+<h3 id="61-底层结构">6.1 底层结构</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> StringHeader <span class="hljs-keyword">struct</span> {
+    Data <span class="hljs-type">uintptr</span>  <span class="hljs-comment">// 指向底层字节数组</span>
+    Len  <span class="hljs-type">int</span>      <span class="hljs-comment">// 字节长度</span>
+}
+</code></pre>
+<p>string 在 Go 中是<strong>不可变</strong>的，任何修改操作都会产生新的字符串。</p>
+<h3 id="62-utf-8-编码">6.2 UTF-8 编码</h3>
+<p>Go 的字符串默认采用 UTF-8 编码。中文字符通常占 3 个字节：</p>
+<pre><code class="lang-go">s := <span class="hljs-string">"Hello, 世界"</span>
+fmt.Println(<span class="hljs-built_in">len</span>(s))                    <span class="hljs-comment">// 13</span>
+fmt.Println(utf8.RuneCountInString(s)) <span class="hljs-comment">// 9</span>
+fmt.Println([]<span class="hljs-type">rune</span>(s))                 <span class="hljs-comment">// [72 101 108 108 111 44 32 19990 30028]</span>
+</code></pre>
+<h3 id="63-string-与-byte-转换">6.3 string 与 []byte 转换</h3>
+<pre><code class="lang-go">s := <span class="hljs-string">"hello"</span>
+b := []<span class="hljs-type">byte</span>(s)   <span class="hljs-comment">// 需要内存拷贝</span>
+s2 := <span class="hljs-type">string</span>(b)  <span class="hljs-comment">// 需要内存拷贝</span>
+</code></pre>
+<p>标准转换涉及<strong>内存拷贝</strong>，因为 string 不可变而 []byte 可变。编译器在某些场景（如 map 查找、字符串比较）会优化避免拷贝。</p>
+<p>高性能场景可通过 <code>unsafe</code> 实现零拷贝转换（需自行保证安全）：</p>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">StringToBytes</span><span class="hljs-params">(s <span class="hljs-type">string</span>)</span></span> []<span class="hljs-type">byte</span> {
+    <span class="hljs-keyword">return</span> *(*[]<span class="hljs-type">byte</span>)(unsafe.Pointer(&amp;s))
+}
+</code></pre>
+<h3 id="64-字符串拼接效率">6.4 字符串拼接效率</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 方式1: + 拼接（每次产生新字符串，效率低）</span>
+s := <span class="hljs-string">"a"</span> + <span class="hljs-string">"b"</span> + <span class="hljs-string">"c"</span>
+
+<span class="hljs-comment">// 方式2: fmt.Sprintf（使用反射，较慢）</span>
+s := fmt.Sprintf(<span class="hljs-string">"%s%s%s"</span>, <span class="hljs-string">"a"</span>, <span class="hljs-string">"b"</span>, <span class="hljs-string">"c"</span>)
+
+<span class="hljs-comment">// 方式3: strings.Builder（推荐，内部用 []byte 缓冲）</span>
+<span class="hljs-keyword">var</span> builder strings.Builder
+builder.WriteString(<span class="hljs-string">"a"</span>)
+builder.WriteString(<span class="hljs-string">"b"</span>)
+result := builder.String()
+
+<span class="hljs-comment">// 方式4: strings.Join</span>
+s := strings.Join([]<span class="hljs-type">string</span>{<span class="hljs-string">"a"</span>, <span class="hljs-string">"b"</span>, <span class="hljs-string">"c"</span>}, <span class="hljs-string">""</span>)
+</code></pre>
+<p>性能排序（从快到慢）：<code>strings.Builder</code> ≈ <code>bytes.Buffer</code> &gt; <code>strings.Join</code> &gt; <code>+</code> &gt; <code>fmt.Sprintf</code></p>
+<hr></hr>
+<h2 id="七、指针">七、指针</h2>
+<h3 id="71-与-c-指针的区别">7.1 与 C 指针的区别</h3>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>Go 指针</th>
+<th>C 指针</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>指针运算</td>
+<td>不支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>类型安全</td>
+<td>强类型</td>
+<td>可随意转换</td>
+</tr>
+<tr>
+<td>空值</td>
+<td>nil</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>垃圾回收</td>
+<td>GC 管理</td>
+<td>手动管理</td>
+</tr>
+</tbody>
+</table>
+<h3 id="72-unsafepointer">7.2 unsafe.Pointer</h3>
+<p><code>unsafe.Pointer</code> 是 Go 中绕过类型安全的桥梁，可以在任意指针类型之间转换：</p>
+<pre><code class="lang-go"><span class="hljs-comment">// unsafe.Pointer 的合法转换:</span>
+<span class="hljs-comment">// 1. 任意指针类型 &lt;-&gt; unsafe.Pointer</span>
+<span class="hljs-comment">// 2. unsafe.Pointer &lt;-&gt; uintptr</span>
+
+<span class="hljs-comment">// 通过 unsafe.Pointer 进行类型转换</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">Float64bits</span><span class="hljs-params">(f <span class="hljs-type">float64</span>)</span></span> <span class="hljs-type">uint64</span> {
+    <span class="hljs-keyword">return</span> *(*<span class="hljs-type">uint64</span>)(unsafe.Pointer(&amp;f))
+}
+
+<span class="hljs-comment">// 通过 unsafe 访问结构体私有字段</span>
+<span class="hljs-keyword">type</span> Demo <span class="hljs-keyword">struct</span> {
+    a <span class="hljs-type">bool</span>    <span class="hljs-comment">// 偏移0</span>
+    b <span class="hljs-type">int32</span>   <span class="hljs-comment">// 偏移4（因为对齐）</span>
+    c <span class="hljs-type">int64</span>   <span class="hljs-comment">// 偏移8</span>
+}
+d := Demo{a: <span class="hljs-literal">true</span>, b: <span class="hljs-number">42</span>, c: <span class="hljs-number">100</span>}
+p := unsafe.Pointer(&amp;d)
+<span class="hljs-comment">// 读取字段 b</span>
+bPtr := (*<span class="hljs-type">int32</span>)(unsafe.Pointer(<span class="hljs-type">uintptr</span>(p) + unsafe.Offsetof(d.b)))
+fmt.Println(*bPtr) <span class="hljs-comment">// 42</span>
+</code></pre>
+<hr></hr>
+<h2 id="八、interface-详解">八、Interface 详解</h2>
+<blockquote>
+<p><strong>面试题：Go 中 interface 的底层是怎么实现的？nil interface 和 nil 有什么区别？</strong></p>
+</blockquote>
+<h3 id="81-接口的隐式实现">8.1 接口的隐式实现</h3>
+<p>Go 的接口是<strong>隐式实现</strong>的，不需要 <code>implements</code> 关键字：</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Writer <span class="hljs-keyword">interface</span> {
+    Write([]<span class="hljs-type">byte</span>) (<span class="hljs-type">int</span>, <span class="hljs-type">error</span>)
+}
+
+<span class="hljs-comment">// os.File 实现了 Writer 接口，无需显式声明</span>
+<span class="hljs-keyword">type</span> File <span class="hljs-keyword">struct</span> { <span class="hljs-comment">/* ... */</span> }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(f *File)</span></span> Write(b []<span class="hljs-type">byte</span>) (<span class="hljs-type">int</span>, <span class="hljs-type">error</span>) { <span class="hljs-comment">/* ... */</span> }
+</code></pre>
+<h3 id="82-底层结构">8.2 底层结构</h3>
+<p><strong>非空接口 <code>iface</code>：</strong></p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> iface <span class="hljs-keyword">struct</span> {
+    tab  *itab          <span class="hljs-comment">// 类型信息和方法表</span>
+    data unsafe.Pointer <span class="hljs-comment">// 指向实际数据</span>
+}
+
+<span class="hljs-keyword">type</span> itab <span class="hljs-keyword">struct</span> {
+    inter *interfacetype <span class="hljs-comment">// 接口类型</span>
+    _type *_type         <span class="hljs-comment">// 具体类型</span>
+    hash  <span class="hljs-type">uint32</span>         <span class="hljs-comment">// 类型哈希值（用于快速类型断言）</span>
+    fun   [<span class="hljs-number">1</span>]<span class="hljs-type">uintptr</span>     <span class="hljs-comment">// 方法表（变长数组）</span>
+}
+</code></pre>
+<p><strong>空接口 <code>eface</code>：</strong></p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> eface <span class="hljs-keyword">struct</span> {
+    _type *_type         <span class="hljs-comment">// 类型信息</span>
+    data  unsafe.Pointer <span class="hljs-comment">// 数据指针</span>
+}
+</code></pre>
+<h3 id="83-nil-interface-陷阱">8.3 nil interface 陷阱</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">var</span> w io.Writer       <span class="hljs-comment">// w = nil (tab=nil, data=nil)</span>
+<span class="hljs-keyword">var</span> f *os.File        <span class="hljs-comment">// f = nil</span>
+w = f                 <span class="hljs-comment">// w != nil! (tab 不为 nil，data 为 nil)</span>
+
+<span class="hljs-comment">// 判断时:</span>
+fmt.Println(w == <span class="hljs-literal">nil</span>) <span class="hljs-comment">// false！</span>
+fmt.Println(f == <span class="hljs-literal">nil</span>) <span class="hljs-comment">// true</span>
+</code></pre>
+<p>接口值只有在<strong>类型和值都为 nil</strong> 时才等于 nil。</p>
+<h3 id="84-类型断言与类型选择">8.4 类型断言与类型选择</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 类型断言</span>
+val, ok := i.(<span class="hljs-type">string</span>)
+
+<span class="hljs-comment">// 类型选择</span>
+<span class="hljs-keyword">switch</span> v := i.(<span class="hljs-keyword">type</span>) {
+<span class="hljs-keyword">case</span> <span class="hljs-type">string</span>:
+    fmt.Println(<span class="hljs-string">"string:"</span>, v)
+<span class="hljs-keyword">case</span> <span class="hljs-type">int</span>:
+    fmt.Println(<span class="hljs-string">"int:"</span>, v)
+<span class="hljs-keyword">default</span>:
+    fmt.Println(<span class="hljs-string">"unknown"</span>)
+}
+</code></pre>
+<hr></hr>
+<h2 id="九、struct">九、Struct</h2>
+<h3 id="91-结构体嵌入（组合）">9.1 结构体嵌入（组合）</h3>
+<p>Go 通过嵌入（embedding）替代继承：</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Animal <span class="hljs-keyword">struct</span> {
+    Name <span class="hljs-type">string</span>
+}
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(a Animal)</span></span> Speak() <span class="hljs-type">string</span> { <span class="hljs-keyword">return</span> a.Name + <span class="hljs-string">" speaks"</span> }
+
+<span class="hljs-keyword">type</span> Dog <span class="hljs-keyword">struct</span> {
+    Animal   <span class="hljs-comment">// 嵌入，Dog 自动获得 Animal 的字段和方法</span>
+    Breed <span class="hljs-type">string</span>
+}
+
+d := Dog{Animal: Animal{Name: <span class="hljs-string">"Buddy"</span>}, Breed: <span class="hljs-string">"Labrador"</span>}
+fmt.Println(d.Name)    <span class="hljs-comment">// 直接访问</span>
+fmt.Println(d.Speak()) <span class="hljs-comment">// 直接调用</span>
+</code></pre>
+<h3 id="92-值接收者-vs-指针接收者">9.2 值接收者 vs 指针接收者</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Counter <span class="hljs-keyword">struct</span> {
+    count <span class="hljs-type">int</span>
+}
+
+<span class="hljs-comment">// 值接收者：不修改原对象</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c Counter)</span></span> GetCount() <span class="hljs-type">int</span> { <span class="hljs-keyword">return</span> c.count }
+
+<span class="hljs-comment">// 指针接收者：可修改原对象</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c *Counter)</span></span> Increment() { c.count++ }
+</code></pre>
+<p><strong>方法集规则：</strong></p>
+<ul>
+<li><code>T</code> 类型的方法集包含所有<strong>值接收者</strong>方法</li>
+<li><code>*T</code> 类型的方法集包含所有<strong>值接收者 + 指针接收者</strong>方法</li>
+<li>这影响接口的实现：如果接口方法使用指针接收者实现，只有 <code>*T</code> 满足接口</li>
+</ul>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Sayer <span class="hljs-keyword">interface</span> {
+    Say()
+}
+<span class="hljs-keyword">type</span> Person <span class="hljs-keyword">struct</span>{}
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(p *Person)</span></span> Say() {} <span class="hljs-comment">// 指针接收者</span>
+
+<span class="hljs-keyword">var</span> s Sayer
+<span class="hljs-comment">// s = Person{}   // 编译错误！Person 的方法集不包含 Say()</span>
+s = &amp;Person{}     <span class="hljs-comment">// OK</span>
+</code></pre>
+<hr></hr>
+<h2 id="十、错误处理">十、错误处理</h2>
+<blockquote>
+<p><strong>面试题：Go 的错误处理方式有什么优缺点？errors.Is 和 errors.As 有什么区别？</strong></p>
+</blockquote>
+<h3 id="101-error-接口">10.1 error 接口</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> <span class="hljs-type">error</span> <span class="hljs-keyword">interface</span> {
+    Error() <span class="hljs-type">string</span>
+}
+</code></pre>
+<h3 id="102-自定义错误">10.2 自定义错误</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 方式1: errors.New</span>
+<span class="hljs-keyword">var</span> ErrNotFound = errors.New(<span class="hljs-string">"not found"</span>)
+
+<span class="hljs-comment">// 方式2: fmt.Errorf（支持 %w 包装）</span>
+err := fmt.Errorf(<span class="hljs-string">"query user: %w"</span>, ErrNotFound)
+
+<span class="hljs-comment">// 方式3: 自定义错误类型</span>
+<span class="hljs-keyword">type</span> ValidationError <span class="hljs-keyword">struct</span> {
+    Field   <span class="hljs-type">string</span>
+    Message <span class="hljs-type">string</span>
+}
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(e *ValidationError)</span></span> Error() <span class="hljs-type">string</span> {
+    <span class="hljs-keyword">return</span> fmt.Sprintf(<span class="hljs-string">"field %s: %s"</span>, e.Field, e.Message)
+}
+</code></pre>
+<h3 id="103-errorsis-与-errorsas">10.3 errors.Is 与 errors.As</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// errors.Is: 判断错误链中是否包含特定错误值</span>
+<span class="hljs-keyword">if</span> errors.Is(err, ErrNotFound) {
+    <span class="hljs-comment">// 处理 not found</span>
+}
+
+<span class="hljs-comment">// errors.As: 判断错误链中是否包含特定错误类型，并提取</span>
+<span class="hljs-keyword">var</span> ve *ValidationError
+<span class="hljs-keyword">if</span> errors.As(err, &amp;ve) {
+    fmt.Println(ve.Field) <span class="hljs-comment">// 可以访问具体字段</span>
+}
+</code></pre>
+<p><code>errors.Is</code> 比较的是<strong>值</strong>（类似 <code>==</code>），<code>errors.As</code> 比较的是<strong>类型</strong>（类似类型断言）。两者都会递归解包 <code>Unwrap()</code> 链。</p>
+<hr></hr>
+<h2 id="十一、defer">十一、defer</h2>
+<blockquote>
+<p><strong>面试题：以下代码输出什么？</strong></p>
+</blockquote>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">f</span><span class="hljs-params">()</span></span> <span class="hljs-type">int</span> {
+    x := <span class="hljs-number">0</span>
+    <span class="hljs-keyword">defer</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> { x++ }()
+    <span class="hljs-keyword">return</span> x  <span class="hljs-comment">// 返回 0（返回值已经确定为0，defer修改的是局部变量x）</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">g</span><span class="hljs-params">()</span></span> (x <span class="hljs-type">int</span>) {
+    <span class="hljs-keyword">defer</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> { x++ }()
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>  <span class="hljs-comment">// 返回 1（defer修改的是命名返回值x）</span>
+}
+</code></pre>
+<h3 id="111-执行顺序：lifo（后进先出）">11.1 执行顺序：LIFO（后进先出）</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">defer</span> fmt.Println(<span class="hljs-string">"1"</span>)
+<span class="hljs-keyword">defer</span> fmt.Println(<span class="hljs-string">"2"</span>)
+<span class="hljs-keyword">defer</span> fmt.Println(<span class="hljs-string">"3"</span>)
+<span class="hljs-comment">// 输出: 3, 2, 1</span>
+</code></pre>
+<h3 id="112-defer-与-return-的关系">11.2 defer 与 return 的关系</h3>
+<p>执行顺序：<strong>设置返回值 → 执行 defer → RET 返回</strong></p>
+<h3 id="113-defer-闭包陷阱">11.3 defer 闭包陷阱</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// 陷阱：循环中的 defer</span>
+<span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++ {
+    <span class="hljs-keyword">defer</span> fmt.Println(i) <span class="hljs-comment">// 输出 4,3,2,1,0 — 参数在 defer 时求值</span>
+}
+
+<span class="hljs-comment">// 陷阱：defer 闭包捕获变量</span>
+<span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++ {
+    <span class="hljs-keyword">defer</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> {
+        fmt.Println(i) <span class="hljs-comment">// 全部输出 5 — 闭包捕获的是变量引用</span>
+    }()
+}
+
+<span class="hljs-comment">// 修正：通过参数传递</span>
+<span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++ {
+    <span class="hljs-keyword">defer</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(n <span class="hljs-type">int</span>)</span></span> {
+        fmt.Println(n) <span class="hljs-comment">// 输出 4,3,2,1,0</span>
+    }(i)
+}
+</code></pre>
+<hr></hr>
+<h2 id="十二、panic-与-recover">十二、panic 与 recover</h2>
+<pre><code class="lang-go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">safeDiv</span><span class="hljs-params">(a, b <span class="hljs-type">int</span>)</span></span> (result <span class="hljs-type">int</span>, err <span class="hljs-type">error</span>) {
+    <span class="hljs-keyword">defer</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> {
+        <span class="hljs-keyword">if</span> r := <span class="hljs-built_in">recover</span>(); r != <span class="hljs-literal">nil</span> {
+            err = fmt.Errorf(<span class="hljs-string">"panic recovered: %v"</span>, r)
+        }
+    }()
+    <span class="hljs-keyword">return</span> a / b, <span class="hljs-literal">nil</span>
+}
+</code></pre>
+<p><strong>关键规则：</strong></p>
+<ol>
+<li><code>recover()</code> 必须在 <code>defer</code> 函数中直接调用才有效</li>
+<li><code>recover()</code> 只能捕获当前 goroutine 的 panic</li>
+<li>不建议滥用 panic/recover，Go 推荐显式错误处理</li>
+</ol>
+<hr></hr>
+<h2 id="十三、init-函数">十三、init 函数</h2>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> <span class="hljs-string">"fmt"</span>
+
+<span class="hljs-keyword">var</span> x = initVar()
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">initVar</span><span class="hljs-params">()</span></span> <span class="hljs-type">int</span> {
+    fmt.Println(<span class="hljs-string">"var init"</span>)
+    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">init</span><span class="hljs-params">()</span></span> {
+    fmt.Println(<span class="hljs-string">"init 1"</span>)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">init</span><span class="hljs-params">()</span></span> {
+    fmt.Println(<span class="hljs-string">"init 2"</span>)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+    fmt.Println(<span class="hljs-string">"main"</span>)
+}
+<span class="hljs-comment">// 输出: var init → init 1 → init 2 → main</span>
+</code></pre>
+<p><strong>执行顺序：</strong> 包级变量初始化 → init 函数（按源文件中的出现顺序） → main。<br></br>如果有依赖包，则被导入的包先初始化。一个包中可以有多个 init 函数。</p>
+<hr></hr>
+<h2 id="十四、包管理（go-modules）">十四、包管理（Go Modules）</h2>
+<blockquote>
+<p><strong>面试题：Go Modules 中 go.mod 和 go.sum 分别是什么作用？</strong></p>
+</blockquote>
+<ul>
+<li><strong>go.mod</strong>：声明模块路径和依赖关系（module path、Go 版本、require、replace、exclude）</li>
+<li><strong>go.sum</strong>：记录依赖的加密哈希值，确保构建的可重复性和安全性</li>
+</ul>
+<pre><code>// go.mod 示例
+module github.com/myproject
+go 1.21
+require (
+    github.com/gin-gonic/gin v1.9.1
+    google.golang.org/grpc v1.58.0
+)
+</code></pre><p>常用命令：<code>go mod init</code>、<code>go mod tidy</code>、<code>go mod vendor</code>、<code>go mod download</code>。</p>
+<hr></hr>
+<h2 id="十五、常见关键字">十五、常见关键字</h2>
+<h3 id="151-make-vs-new">15.1 make vs new</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// make: 用于 slice、map、channel 的初始化，返回类型本身</span>
+s := <span class="hljs-built_in">make</span>([]<span class="hljs-type">int</span>, <span class="hljs-number">0</span>, <span class="hljs-number">10</span>)   <span class="hljs-comment">// []int</span>
+m := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-type">string</span>]<span class="hljs-type">int</span>)  <span class="hljs-comment">// map[string]int</span>
+ch := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-type">int</span>, <span class="hljs-number">5</span>)     <span class="hljs-comment">// chan int</span>
+
+<span class="hljs-comment">// new: 分配内存并返回指针，适用于任意类型</span>
+p := <span class="hljs-built_in">new</span>(<span class="hljs-type">int</span>)    <span class="hljs-comment">// *int, 值为 0</span>
+sp := <span class="hljs-built_in">new</span>(User)  <span class="hljs-comment">// *User, 零值初始化</span>
+</code></pre>
+<h3 id="152-select">15.2 select</h3>
+<p>select 用于多路 channel 复用，语法类似 switch：</p>
+<pre><code class="lang-go"><span class="hljs-keyword">select</span> {
+<span class="hljs-keyword">case</span> msg := &lt;-ch1:
+    fmt.Println(msg)
+<span class="hljs-keyword">case</span> ch2 &lt;- data:
+    fmt.Println(<span class="hljs-string">"sent"</span>)
+<span class="hljs-keyword">case</span> &lt;-time.After(<span class="hljs-number">3</span> * time.Second):
+    fmt.Println(<span class="hljs-string">"timeout"</span>)
+<span class="hljs-keyword">default</span>:
+    fmt.Println(<span class="hljs-string">"no channel ready"</span>)
+}
+</code></pre>
+<h3 id="153-range">15.3 range</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// range slice: index, value</span>
+<span class="hljs-keyword">for</span> i, v := <span class="hljs-keyword">range</span> slice {}
+<span class="hljs-comment">// range map: key, value（无序）</span>
+<span class="hljs-keyword">for</span> k, v := <span class="hljs-keyword">range</span> m {}
+<span class="hljs-comment">// range string: index, rune</span>
+<span class="hljs-keyword">for</span> i, r := <span class="hljs-keyword">range</span> <span class="hljs-string">"Hello, 世界"</span> {}
+<span class="hljs-comment">// range channel: value（阻塞直到channel关闭）</span>
+<span class="hljs-keyword">for</span> v := <span class="hljs-keyword">range</span> ch {}
+</code></pre>
+<h3 id="154-fallthrough">15.4 fallthrough</h3>
+<p>Go 的 switch 默认不会穿透，需要 <code>fallthrough</code> 显式声明：</p>
+<pre><code class="lang-go"><span class="hljs-keyword">switch</span> n {
+<span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
+    fmt.Println(<span class="hljs-string">"one"</span>)
+    <span class="hljs-keyword">fallthrough</span>
+<span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:
+    fmt.Println(<span class="hljs-string">"two"</span>) <span class="hljs-comment">// n=1 时也会执行</span>
+}
+</code></pre>
+<hr></hr>
+<h2 id="十六、反射（reflect）">十六、反射（reflect）</h2>
+<blockquote>
+<p><strong>面试题：Go 中反射的三大法则是什么？反射有哪些使用场景？</strong></p>
+</blockquote>
+<h3 id="161-三大法则">16.1 三大法则</h3>
+<ol>
+<li>从接口值可以获取反射对象：<code>reflect.TypeOf(i)</code> / <code>reflect.ValueOf(i)</code></li>
+<li>从反射对象可以获取接口值：<code>v.Interface()</code></li>
+<li>要修改反射对象，其值必须可设置（addressable）：需传指针</li>
+</ol>
+<pre><code class="lang-go">x := <span class="hljs-number">3.14</span>
+v := reflect.ValueOf(&amp;x)
+v.Elem().SetFloat(<span class="hljs-number">2.71</span>) <span class="hljs-comment">// 通过指针的 Elem() 才能修改</span>
+</code></pre>
+<h3 id="162-常见用法">16.2 常见用法</h3>
+<pre><code class="lang-go">t := reflect.TypeOf(user)
+<span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; t.NumField(); i++ {
+    field := t.Field(i)
+    fmt.Printf(<span class="hljs-string">"Name: %s, Type: %s, Tag: %s\n"</span>,
+        field.Name, field.Type, field.Tag.Get(<span class="hljs-string">"json"</span>))
+}
+</code></pre>
+<h3 id="163-反射的性能">16.3 反射的性能</h3>
+<p>反射操作比直接调用慢 <strong>1~2 个数量级</strong>，因为涉及类型查找、接口装箱/拆箱等开销。在性能敏感路径上应避免使用。</p>
+<p><strong>适用场景：</strong> JSON/XML 序列化、ORM 框架、依赖注入、通用工具函数。</p>
+<hr></hr>
+<h2 id="经典综合面试题">经典综合面试题</h2>
+<blockquote>
+<p><strong>面试题：<code>[]int</code> 能转换成 <code>[]interface{}</code> 吗？为什么？</strong></p>
+</blockquote>
+<p>不能直接转换。因为 <code>[]int</code> 的内存布局是连续的 int 值，每个元素占 8 字节；<code>[]interface{}</code> 的每个元素是 16 字节（type + data），内存布局完全不同，无法简单的类型转换，必须逐个复制：</p>
+<pre><code class="lang-go">ints := []<span class="hljs-type">int</span>{<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>}
+interfaces := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">interface</span>{}, <span class="hljs-built_in">len</span>(ints))
+<span class="hljs-keyword">for</span> i, v := <span class="hljs-keyword">range</span> ints {
+    interfaces[i] = v
+}
+</code></pre>
+<blockquote>
+<p><strong>面试题：Go 函数参数传递是值传递还是引用传递？</strong></p>
+</blockquote>
+<p>Go 中<strong>所有参数传递都是值传递</strong>。但需要理解不同类型"值"的含义：</p>
+<ul>
+<li>基本类型：复制值本身</li>
+<li>指针：复制指针地址（指向同一数据）</li>
+<li>slice：复制 SliceHeader（Data/Len/Cap），底层数组共享</li>
+<li>map：复制指针（底层 hmap 共享）</li>
+<li>channel：复制指针（底层 hchan 共享）</li>
+</ul>
+<p>因此 slice、map、channel 虽然是值传递，但修改内容时可以影响原始数据。但如果在函数内部 append 导致 slice 扩容，原始 slice 将不受影响。</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../nodejs/practice.html" class="navigation navigation-prev " aria-label="Previous page: 最佳实践与进阶">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="concurrency.html" class="navigation navigation-next " aria-label="Next page: 并发编程">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Go语言基础","level":"4.1","depth":1,"next":{"title":"并发编程","level":"4.2","depth":1,"path":"golang/concurrency.md","ref":"golang/concurrency.md","articles":[]},"previous":{"title":"最佳实践与进阶","level":"3.6","depth":1,"path":"nodejs/practice.md","ref":"nodejs/practice.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"golang/basics.md","mtime":"2026-03-31T06:35:11.838Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

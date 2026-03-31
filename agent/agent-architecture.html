@@ -1,0 +1,1418 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Agent架构 · 全栈开发面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="tool-calling.html" />
+    
+    
+    <link rel="prev" href="rag.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/Tsutomu-miku/developer-interview-guide" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一部分：前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../frontend/html-css.html">
+            
+                <a href="../frontend/html-css.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    HTML与CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../frontend/javascript.html">
+            
+                <a href="../frontend/javascript.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    JavaScript核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../frontend/typescript.html">
+            
+                <a href="../frontend/typescript.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../frontend/browser.html">
+            
+                <a href="../frontend/browser.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../frontend/network.html">
+            
+                <a href="../frontend/network.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../frontend/react.html">
+            
+                <a href="../frontend/react.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../frontend/vue.html">
+            
+                <a href="../frontend/vue.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../frontend/engineering.html">
+            
+                <a href="../frontend/engineering.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../frontend/performance.html">
+            
+                <a href="../frontend/performance.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../frontend/security.html">
+            
+                <a href="../frontend/security.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：Node.js开发</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../nodejs/basics.html">
+            
+                <a href="../nodejs/basics.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../nodejs/event-loop.html">
+            
+                <a href="../nodejs/event-loop.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../nodejs/stream.html">
+            
+                <a href="../nodejs/stream.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    流与文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../nodejs/frameworks.html">
+            
+                <a href="../nodejs/frameworks.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../nodejs/database.html">
+            
+                <a href="../nodejs/database.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../nodejs/practice.html">
+            
+                <a href="../nodejs/practice.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    最佳实践与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：Go后端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../golang/basics.html">
+            
+                <a href="../golang/basics.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Go语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../golang/concurrency.html">
+            
+                <a href="../golang/concurrency.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../golang/memory.html">
+            
+                <a href="../golang/memory.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    内存管理与GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../golang/web-framework.html">
+            
+                <a href="../golang/web-framework.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Web框架与HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../golang/database-design.html">
+            
+                <a href="../golang/database-design.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    数据库与系统设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../golang/testing-practice.html">
+            
+                <a href="../golang/testing-practice.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    测试与最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：AI Agent开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="llm-basics.html">
+            
+                <a href="llm-basics.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    大语言模型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="prompt-engineering.html">
+            
+                <a href="prompt-engineering.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Prompt Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="rag.html">
+            
+                <a href="rag.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    RAG检索增强生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.4" data-path="agent-architecture.html">
+            
+                <a href="agent-architecture.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Agent架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="tool-calling.html">
+            
+                <a href="tool-calling.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    工具调用与Function Calling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="practice.html">
+            
+                <a href="practice.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    实战与进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：经典算法题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../algorithm/array-string.html">
+            
+                <a href="../algorithm/array-string.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数组与字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../algorithm/linked-list.html">
+            
+                <a href="../algorithm/linked-list.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../algorithm/tree-graph.html">
+            
+                <a href="../algorithm/tree-graph.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../algorithm/sorting-searching.html">
+            
+                <a href="../algorithm/sorting-searching.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    排序与搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../algorithm/backtracking-greedy.html">
+            
+                <a href="../algorithm/backtracking-greedy.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    回溯与贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Agent架构</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="agent-架构面试指南">Agent 架构面试指南</h1>
+<p>AI Agent（智能体）是当前大语言模型应用的最重要方向之一。Agent 能够自主感知环境、制定计划、调用工具并根据反馈迭代优化，远超传统的 "输入-输出" 对话模式。本章全面覆盖 Agent 的核心概念、架构设计、记忆系统、规划能力、多 Agent 协作以及主流框架的深入解析。</p>
+<hr></hr>
+<h2 id="1-agent-定义与核心组件">1. Agent 定义与核心组件</h2>
+<h3 id="11-什么是-ai-agent">1.1 什么是 AI Agent</h3>
+<p>AI Agent 是一个以大语言模型（LLM）为核心推理引擎的自主系统，它能够：</p>
+<ul>
+<li><strong>感知</strong>外部环境（接收用户输入、观察工具返回结果）</li>
+<li><strong>思考</strong>并制定行动计划（推理、规划、分解任务）</li>
+<li><strong>行动</strong>执行具体操作（调用工具、API、生成文本）</li>
+<li><strong>反思</strong>评估结果并调整策略</li>
+</ul>
+<h3 id="12-核心组件">1.2 核心组件</h3>
+<pre><code>Agent = LLM（大脑） + Memory（记忆） + Planning（规划） + Tools（工具）
+</code></pre><table>
+<thead>
+<tr>
+<th>组件</th>
+<th>职责</th>
+<th>类比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LLM</td>
+<td>核心推理与决策引擎</td>
+<td>大脑</td>
+</tr>
+<tr>
+<td>Memory</td>
+<td>存储历史信息和经验</td>
+<td>记忆系统</td>
+</tr>
+<tr>
+<td>Planning</td>
+<td>分解任务、制定计划</td>
+<td>前额叶皮层</td>
+</tr>
+<tr>
+<td>Tools</td>
+<td>与外部世界交互的能力</td>
+<td>双手</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>面试题：AI Agent 和普通的 LLM 对话有什么根本区别？</strong></p>
+<p>核心区别在于<strong>自主性和行动能力</strong>：</p>
+<ol>
+<li><strong>目标驱动 vs 响应驱动</strong>：Agent 围绕目标自主规划和执行一系列步骤，普通对话仅对单个输入做出响应</li>
+<li><strong>工具使用</strong>：Agent 可以调用搜索引擎、执行代码、操作数据库等，普通对话只能生成文本</li>
+<li><strong>迭代循环</strong>：Agent 在 "思考-行动-观察" 循环中反复迭代直到达成目标，普通对话是一次性的</li>
+<li><strong>记忆管理</strong>：Agent 维护结构化的记忆系统，普通对话仅依赖上下文窗口</li>
+<li><strong>错误恢复</strong>：Agent 能根据失败反馈调整策略，普通对话无法自我纠正</li>
+</ol>
+</blockquote>
+<hr></hr>
+<h2 id="2-agent-工作流程">2. Agent 工作流程</h2>
+<h3 id="21-核心循环：perception-→-planning-→-action-→-observation">2.1 核心循环：Perception → Planning → Action → Observation</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">SimpleAgent</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, llm, tools, memory</span>):
+        <span class="hljs-variable language_">self</span>.llm = llm
+        <span class="hljs-variable language_">self</span>.tools = tools
+        <span class="hljs-variable language_">self</span>.memory = memory
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">run</span>(<span class="hljs-params">self, task</span>):
+        <span class="hljs-variable language_">self</span>.memory.add(<span class="hljs-string">"user"</span>, task)
+
+        <span class="hljs-keyword">while</span> <span class="hljs-keyword">not</span> <span class="hljs-variable language_">self</span>.is_task_complete():
+            <span class="hljs-comment"># 1. Perception - 感知当前状态</span>
+            context = <span class="hljs-variable language_">self</span>.memory.get_context()
+
+            <span class="hljs-comment"># 2. Planning - 思考下一步行动</span>
+            thought = <span class="hljs-variable language_">self</span>.llm.think(context)
+
+            <span class="hljs-comment"># 3. Action - 执行行动</span>
+            <span class="hljs-keyword">if</span> thought.requires_tool:
+                result = <span class="hljs-variable language_">self</span>.execute_tool(thought.tool_name, thought.tool_args)
+            <span class="hljs-keyword">else</span>:
+                result = thought.final_answer
+
+            <span class="hljs-comment"># 4. Observation - 观察结果</span>
+            <span class="hljs-variable language_">self</span>.memory.add(<span class="hljs-string">"observation"</span>, result)
+
+        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">self</span>.memory.get_final_answer()
+</code></pre>
+<h3 id="22-react-执行模式">2.2 ReAct 执行模式</h3>
+<p>ReAct 是当前最主流的 Agent 执行模式，交替进行推理（Thought）和行动（Action）：</p>
+<pre><code>用户: 帮我查一下北京明天的天气，如果会下雨就提醒我带伞
+
+Thought: 我需要查询北京明天的天气信息
+Action: weather_api(city="北京", date="明天")
+Observation: 北京明天多云转小雨，气温15-22°C，降水概率70%
+
+Thought: 天气预报显示明天有小雨，降水概率70%，我需要提醒用户带伞
+Action: 生成最终回答
+Answer: 北京明天的天气是多云转小雨，气温15-22°C。降水概率较高（70%），建议您明天出门记得带伞。
+</code></pre><blockquote>
+<p><strong>面试题：ReAct 模式相比纯推理（CoT）和纯行动有什么优势？</strong></p>
+<p><strong>纯推理（CoT）的问题</strong>：模型只能利用内部知识，无法获取最新信息或执行操作，容易产生幻觉。
+<strong>纯行动的问题</strong>：盲目调用工具，缺乏策略性，可能做很多无用操作。
+<strong>ReAct 的优势</strong>：(1) Thought 步骤让模型在行动前显式推理，提高决策质量；(2) Action 的 Observation 结果为后续推理提供了真实依据，减少幻觉；(3) 交替进行使得模型能够根据观察动态调整策略；(4) 中间推理过程可解释性强，方便调试。</p>
+</blockquote>
+<hr></hr>
+<h2 id="3-规划能力">3. 规划能力</h2>
+<h3 id="31-task-decomposition（任务分解）">3.1 Task Decomposition（任务分解）</h3>
+<p>将复杂任务分解为多个可执行的子任务：</p>
+<pre><code class="lang-python">decomposition_prompt = <span class="hljs-string">"""
+你是一个任务规划专家。请将以下复杂任务分解为具体的执行步骤：
+
+任务：{task}
+
+请按以下格式输出：
+1. [子任务1] - 预期输出
+2. [子任务2] - 预期输出
+...
+
+注意：
+- 每个子任务应该是原子性的，可以独立执行
+- 子任务之间的依赖关系要明确
+- 优先执行没有依赖的子任务
+"""</span>
+</code></pre>
+<h3 id="32-规划策略">3.2 规划策略</h3>
+<p><strong>Plan-and-Execute</strong>：先生成完整计划，再逐步执行。适合结构化、步骤清晰的任务。</p>
+<pre><code>Plan:
+1. 搜索相关论文
+2. 阅读论文摘要
+3. 提取关键发现
+4. 对比不同论文观点
+5. 生成综述报告
+
+Execute: 按顺序执行每一步
+</code></pre><p><strong>动态规划（Adaptive Planning）</strong>：执行过程中根据中间结果动态调整计划。</p>
+<p><strong>分层规划（Hierarchical Planning）</strong>：高层计划定义宏观方向，低层计划处理具体细节。</p>
+<blockquote>
+<p><strong>面试题：Plan-and-Execute 和 ReAct 有什么区别？各适用于什么场景？</strong></p>
+<p><strong>Plan-and-Execute</strong>：先制定完整计划再执行。优点是全局视角好、执行路径清晰；缺点是计划可能因中间结果变化而失效。适合步骤相对确定的任务（如数据处理流程、报告生成）。</p>
+<p><strong>ReAct</strong>：边想边做，每一步根据观察决定下一步。优点是灵活适应变化、能处理不确定性；缺点是可能缺乏全局规划、容易陷入局部循环。适合探索性强的任务（如信息检索、调试问题）。</p>
+<p><strong>实际应用</strong>中常结合使用：先用 Plan-and-Execute 制定大致计划，每一步的执行用 ReAct 模式，同时支持根据执行结果 Re-plan（重新规划）。</p>
+</blockquote>
+<hr></hr>
+<h2 id="4-记忆系统">4. 记忆系统</h2>
+<h3 id="41-短期记忆（short-term--working-memory）">4.1 短期记忆（Short-term / Working Memory）</h3>
+<ul>
+<li>本质是<strong>对话上下文窗口</strong>中的信息</li>
+<li>包含当前对话历史、中间推理步骤、工具返回结果</li>
+<li>受 context window 大小限制</li>
+<li>生命周期：单次对话/任务</li>
+</ul>
+<h3 id="42-长期记忆（long-term-memory）">4.2 长期记忆（Long-term Memory）</h3>
+<p>存储跨对话/跨会话的持久信息：</p>
+<pre><code class="lang-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">LongTermMemory</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, vector_store</span>):
+        <span class="hljs-variable language_">self</span>.vector_store = vector_store
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">store</span>(<span class="hljs-params">self, content, metadata=<span class="hljs-literal">None</span></span>):
+        <span class="hljs-string">"""将信息存入长期记忆"""</span>
+        embedding = embed(content)
+        <span class="hljs-variable language_">self</span>.vector_store.add(
+            embedding=embedding,
+            text=content,
+            metadata={
+                <span class="hljs-string">"timestamp"</span>: datetime.now(),
+                <span class="hljs-string">"type"</span>: metadata.get(<span class="hljs-string">"type"</span>, <span class="hljs-string">"general"</span>),
+                **metadata
+            }
+        )
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">retrieve</span>(<span class="hljs-params">self, query, top_k=<span class="hljs-number">5</span>, filters=<span class="hljs-literal">None</span></span>):
+        <span class="hljs-string">"""从长期记忆中检索相关信息"""</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">self</span>.vector_store.search(
+            query_embedding=embed(query),
+            top_k=top_k,
+            filters=filters
+        )
+</code></pre>
+<h3 id="43-向量存储记忆">4.3 向量存储记忆</h3>
+<p>将对话历史、任务结果等编码为向量存储在向量数据库中，查询时检索最相关的记忆片段。适合大量历史信息的场景。</p>
+<h3 id="44-对话缓冲记忆（conversation-buffer-memory）">4.4 对话缓冲记忆（Conversation Buffer Memory）</h3>
+<pre><code class="lang-python"><span class="hljs-comment"># LangChain 对话缓冲记忆</span>
+<span class="hljs-keyword">from</span> langchain.memory <span class="hljs-keyword">import</span> ConversationBufferMemory
+
+memory = ConversationBufferMemory(return_messages=<span class="hljs-literal">True</span>)
+memory.save_context(
+    {<span class="hljs-string">"input"</span>: <span class="hljs-string">"我叫张三"</span>},
+    {<span class="hljs-string">"output"</span>: <span class="hljs-string">"你好，张三！有什么可以帮助你的？"</span>}
+)
+<span class="hljs-comment"># 直接保留完整对话历史，简单但占用 token 多</span>
+</code></pre>
+<h3 id="45-摘要记忆（summary-memory）">4.5 摘要记忆（Summary Memory）</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> langchain.memory <span class="hljs-keyword">import</span> ConversationSummaryMemory
+
+memory = ConversationSummaryMemory(llm=llm)
+<span class="hljs-comment"># 将对话历史压缩为摘要</span>
+<span class="hljs-comment"># "用户自我介绍为张三，是一名Python开发者，正在开发一个RAG系统"</span>
+</code></pre>
+<h3 id="46-实体记忆（entity-memory）">4.6 实体记忆（Entity Memory）</h3>
+<p>提取和维护对话中出现的实体信息：</p>
+<pre><code class="lang-python"><span class="hljs-comment"># 存储结构</span>
+entities = {
+    <span class="hljs-string">"张三"</span>: <span class="hljs-string">"用户本人，Python开发者，在开发RAG系统"</span>,
+    <span class="hljs-string">"RAG系统"</span>: <span class="hljs-string">"用户正在开发的项目，使用Pinecone作为向量数据库"</span>,
+    <span class="hljs-string">"Pinecone"</span>: <span class="hljs-string">"向量数据库，用户已经部署了"</span>
+}
+</code></pre>
+<blockquote>
+<p><strong>面试题：Agent 的记忆系统应该如何设计？不同类型的记忆如何配合使用？</strong></p>
+<p>采用<strong>分层记忆架构</strong>：</p>
+<ol>
+<li><strong>工作记忆（L1）</strong>：当前对话的最近 N 轮，保持在 context window 中，用于即时推理</li>
+<li><strong>会话记忆（L2）</strong>：当前会话的完整历史，超出 context window 部分用摘要压缩或向量存储</li>
+<li><strong>长期记忆（L3）</strong>：跨会话的持久信息，存储在向量数据库中，按需检索</li>
+<li><strong>结构化记忆（L4）</strong>：实体关系、用户画像等结构化信息，存储在关系数据库中</li>
+</ol>
+<p><strong>配合策略</strong>：每次推理时，L1 完整注入上下文；L2 按相关性检索部分注入；L3 只在需要时检索（如用户提到过去的对话）；L4 作为 System Prompt 的一部分持续生效。</p>
+</blockquote>
+<hr></hr>
+<h2 id="5-反思机制">5. 反思机制</h2>
+<h3 id="51-reflexion">5.1 Reflexion</h3>
+<p>Agent 在任务执行后对自身表现进行反思，生成改进建议存入记忆，指导未来行为：</p>
+<pre><code>任务结果：代码执行失败，IndexError: list index out of range
+
+Reflexion: 
+- 我在处理列表时没有检查边界条件
+- 下次处理列表操作时，应该先验证列表长度
+- 应该在关键步骤添加异常处理
+
+将此反思存入长期记忆，下次遇到类似任务时检索使用
+</code></pre><h3 id="52-self-critique">5.2 Self-Critique</h3>
+<p>在生成最终输出前进行自我批评和修正：</p>
+<pre><code class="lang-python">critique_prompt = <span class="hljs-string">"""
+请审查以下回答是否存在问题：
+
+原始问题：{question}
+回答：{answer}
+
+检查项：
+1. 事实准确性：是否有错误的信息？
+2. 完整性：是否遗漏了重要内容？
+3. 逻辑性：推理过程是否合理？
+4. 格式：是否符合要求的输出格式？
+
+如果发现问题，请指出并给出修正后的回答。
+"""</span>
+</code></pre>
+<blockquote>
+<p><strong>面试题：反思机制如何提升 Agent 的性能？实现上有哪些挑战？</strong></p>
+<p><strong>提升方式</strong>：(1) 从错误中学习——将失败经验存为记忆，避免重复犯错；(2) 质量把关——生成后自我审查，减少低质量输出；(3) 策略优化——分析多次执行的模式，优化决策策略。</p>
+<p><strong>挑战</strong>：(1) LLM 的自我评估能力有限，可能无法准确识别自身错误（自我评估偏差）；(2) 反思增加了推理成本和延迟；(3) 反思记忆的管理——过多的历史反思可能引入噪音；(4) 需要设计何时触发反思的策略，不能每步都反思。</p>
+</blockquote>
+<hr></hr>
+<h2 id="6-单-agent-架构设计">6. 单 Agent 架构设计</h2>
+<h3 id="61-基础架构">6.1 基础架构</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Agent</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, llm, tools, memory, system_prompt</span>):
+        <span class="hljs-variable language_">self</span>.llm = llm
+        <span class="hljs-variable language_">self</span>.tools = {t.name: t <span class="hljs-keyword">for</span> t <span class="hljs-keyword">in</span> tools}
+        <span class="hljs-variable language_">self</span>.memory = memory
+        <span class="hljs-variable language_">self</span>.system_prompt = system_prompt
+        <span class="hljs-variable language_">self</span>.max_iterations = <span class="hljs-number">10</span>
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">run</span>(<span class="hljs-params">self, user_input</span>):
+        <span class="hljs-variable language_">self</span>.memory.add_message(<span class="hljs-string">"user"</span>, user_input)
+
+        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-variable language_">self</span>.max_iterations):
+            <span class="hljs-comment"># 构造 prompt</span>
+            messages = [
+                {<span class="hljs-string">"role"</span>: <span class="hljs-string">"system"</span>, <span class="hljs-string">"content"</span>: <span class="hljs-variable language_">self</span>.system_prompt},
+                *<span class="hljs-variable language_">self</span>.memory.get_messages()
+            ]
+
+            <span class="hljs-comment"># LLM 推理</span>
+            response = <span class="hljs-variable language_">self</span>.llm.chat(messages, tools=<span class="hljs-variable language_">self</span>.get_tool_schemas())
+
+            <span class="hljs-comment"># 判断是否调用工具</span>
+            <span class="hljs-keyword">if</span> response.tool_calls:
+                <span class="hljs-keyword">for</span> tool_call <span class="hljs-keyword">in</span> response.tool_calls:
+                    result = <span class="hljs-variable language_">self</span>.tools[tool_call.name].execute(tool_call.args)
+                    <span class="hljs-variable language_">self</span>.memory.add_message(<span class="hljs-string">"tool"</span>, result, tool_call_id=tool_call.<span class="hljs-built_in">id</span>)
+            <span class="hljs-keyword">else</span>:
+                <span class="hljs-comment"># 最终回答</span>
+                <span class="hljs-variable language_">self</span>.memory.add_message(<span class="hljs-string">"assistant"</span>, response.content)
+                <span class="hljs-keyword">return</span> response.content
+
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"达到最大迭代次数，任务未完成"</span>
+</code></pre>
+<h3 id="62-关键设计决策">6.2 关键设计决策</h3>
+<ol>
+<li><strong>迭代上限</strong>：防止无限循环，通常设置 5-15 次</li>
+<li><strong>退出条件</strong>：LLM 决定不再调用工具时视为完成</li>
+<li><strong>错误处理</strong>：工具执行失败时将错误信息反馈给 LLM</li>
+<li><strong>成本控制</strong>：记录 token 消耗，设置预算上限</li>
+</ol>
+<hr></hr>
+<h2 id="7-多-agent-系统">7. 多 Agent 系统</h2>
+<h3 id="71-协作模式">7.1 协作模式</h3>
+<p><strong>层级模式（Hierarchical）</strong>：</p>
+<pre><code>       ┌─────────────┐
+       │  Supervisor  │  (管理者Agent)
+       └──────┬───────┘
+         ┌────┼────┐
+    ┌────┴──┐ │ ┌──┴────┐
+    │Worker1│ │ │Worker3│  (执行者Agent)
+    └───────┘ │ └───────┘
+          ┌───┴───┐
+          │Worker2│
+          └───────┘
+</code></pre><p>管理者 Agent 负责分配任务、监督进度和整合结果。每个 Worker Agent 专注于特定领域。</p>
+<p><strong>对等模式（Peer-to-Peer）</strong>：</p>
+<p>所有 Agent 地位平等，通过消息传递协作。适合需要协商和讨论的场景。</p>
+<p><strong>辩论模式（Debate）</strong>：</p>
+<p>多个 Agent 对同一问题给出不同观点，通过辩论达成共识或由仲裁者决策。</p>
+<h3 id="72-通信协议">7.2 通信协议</h3>
+<pre><code class="lang-python"><span class="hljs-comment"># Agent 之间的消息格式</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">AgentMessage</span>:
+    sender: <span class="hljs-built_in">str</span>        <span class="hljs-comment"># 发送者Agent名称</span>
+    receiver: <span class="hljs-built_in">str</span>      <span class="hljs-comment"># 接收者Agent名称</span>
+    content: <span class="hljs-built_in">str</span>       <span class="hljs-comment"># 消息内容</span>
+    message_type: <span class="hljs-built_in">str</span>  <span class="hljs-comment"># 类型：task/result/question/feedback</span>
+    metadata: <span class="hljs-built_in">dict</span>     <span class="hljs-comment"># 附加信息</span>
+</code></pre>
+<h3 id="73-冲突解决">7.3 冲突解决</h3>
+<p>当多个 Agent 意见不一致时：</p>
+<ul>
+<li><strong>投票机制</strong>：多数表决</li>
+<li><strong>权重投票</strong>：根据 Agent 的专业性赋予不同权重</li>
+<li><strong>仲裁者</strong>：由专门的 Supervisor Agent 做最终决策</li>
+<li><strong>协商轮次</strong>：限制辩论轮次，超时则采用最高置信度的答案</li>
+</ul>
+<blockquote>
+<p><strong>面试题：多 Agent 系统相比单 Agent 有什么优势和挑战？</strong></p>
+<p><strong>优势</strong>：(1) <strong>专业化分工</strong>——每个 Agent 专注于擅长的领域，整体能力更强；(2) <strong>并行执行</strong>——独立子任务可同时进行，提高效率；(3) <strong>鲁棒性</strong>——单个 Agent 失败不影响整体系统；(4) <strong>可扩展性</strong>——添加新能力只需增加新 Agent。</p>
+<p><strong>挑战</strong>：(1) <strong>通信开销</strong>——Agent 之间的消息传递增加延迟和 token 消耗；(2) <strong>协调复杂性</strong>——任务分配、进度同步、冲突解决需要额外设计；(3) <strong>一致性维护</strong>——确保多个 Agent 对共享状态的理解一致；(4) <strong>调试困难</strong>——问题可能出在任何 Agent 或它们之间的交互中；(5) <strong>成本</strong>——多个 LLM 调用的成本远高于单 Agent。</p>
+</blockquote>
+<hr></hr>
+<h2 id="8-langchain-框架详解">8. LangChain 框架详解</h2>
+<h3 id="81-核心概念">8.1 核心概念</h3>
+<p><strong>Chain</strong>：将多个处理步骤串联的管道：</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> langchain_core.prompts <span class="hljs-keyword">import</span> ChatPromptTemplate
+<span class="hljs-keyword">from</span> langchain_openai <span class="hljs-keyword">import</span> ChatOpenAI
+<span class="hljs-keyword">from</span> langchain_core.output_parsers <span class="hljs-keyword">import</span> StrOutputParser
+
+<span class="hljs-comment"># LCEL (LangChain Expression Language) 语法</span>
+prompt = ChatPromptTemplate.from_template(<span class="hljs-string">"翻译以下文本为{language}：{text}"</span>)
+llm = ChatOpenAI(model=<span class="hljs-string">"gpt-4o"</span>)
+output_parser = StrOutputParser()
+
+chain = prompt | llm | output_parser
+result = chain.invoke({<span class="hljs-string">"language"</span>: <span class="hljs-string">"英文"</span>, <span class="hljs-string">"text"</span>: <span class="hljs-string">"你好世界"</span>})
+</code></pre>
+<p><strong>Agent</strong>：具有工具调用和推理能力的自主系统：</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> langchain.agents <span class="hljs-keyword">import</span> create_tool_calling_agent, AgentExecutor
+
+agent = create_tool_calling_agent(llm, tools, prompt)
+agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=<span class="hljs-literal">True</span>)
+result = agent_executor.invoke({<span class="hljs-string">"input"</span>: <span class="hljs-string">"北京今天天气怎么样？"</span>})
+</code></pre>
+<p><strong>Memory</strong>：管理对话历史和状态：</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> langchain.memory <span class="hljs-keyword">import</span> ConversationBufferWindowMemory
+
+memory = ConversationBufferWindowMemory(k=<span class="hljs-number">10</span>)  <span class="hljs-comment"># 保留最近10轮</span>
+</code></pre>
+<p><strong>Tool</strong>：Agent 可调用的外部能力：</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> langchain.tools <span class="hljs-keyword">import</span> tool
+
+<span class="hljs-meta">@tool</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">search_web</span>(<span class="hljs-params">query: <span class="hljs-built_in">str</span></span>) -&gt; <span class="hljs-built_in">str</span>:
+    <span class="hljs-string">"""搜索互联网获取最新信息"""</span>
+    <span class="hljs-keyword">return</span> web_search_api(query)
+</code></pre>
+<p><strong>Callback</strong>：用于日志、追踪、流式输出的钩子机制：</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> langchain.callbacks <span class="hljs-keyword">import</span> StdOutCallbackHandler
+agent_executor.invoke({<span class="hljs-string">"input"</span>: <span class="hljs-string">"..."</span>}, config={<span class="hljs-string">"callbacks"</span>: [StdOutCallbackHandler()]})
+</code></pre>
+<h3 id="82-langchain-的优缺点">8.2 LangChain 的优缺点</h3>
+<blockquote>
+<p><strong>面试题：你如何评价 LangChain？它适合什么场景？</strong></p>
+<p><strong>优点</strong>：(1) 丰富的集成——支持数百个 LLM、向量数据库、工具的连接器；(2) 快速原型——可以几十行代码搭建 RAG/Agent；(3) 社区活跃——文档多、示例多。</p>
+<p><strong>缺点</strong>：(1) 过度抽象——太多封装层导致调试困难，出错时难以定位问题；(2) API 不稳定——频繁breaking changes；(3) 性能开销——封装引入额外延迟；(4) 黑盒问题——Chain 内部行为不透明。</p>
+<p><strong>适合场景</strong>：快速原型验证、概念验证（PoC）。生产环境建议根据复杂度决定：简单应用可直接用 OpenAI SDK；复杂 Agent 用 LangGraph；需要极致可控性则自建框架。</p>
+</blockquote>
+<hr></hr>
+<h2 id="9-langgraph">9. LangGraph</h2>
+<p>LangGraph 是 LangChain 团队推出的 Agent 编排框架，基于图（Graph）结构定义 Agent 的控制流。</p>
+<h3 id="91-核心概念">9.1 核心概念</h3>
+<ul>
+<li><strong>State（状态）</strong>：在图中流转的数据，类似于"全局变量"</li>
+<li><strong>Node（节点）</strong>：执行具体操作的函数</li>
+<li><strong>Edge（边）</strong>：定义节点之间的流转关系</li>
+<li><strong>Conditional Edge（条件边）</strong>：根据状态决定下一个节点</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> langgraph.graph <span class="hljs-keyword">import</span> StateGraph, END
+<span class="hljs-keyword">from</span> typing <span class="hljs-keyword">import</span> TypedDict, Annotated
+<span class="hljs-keyword">import</span> operator
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">AgentState</span>(<span class="hljs-title class_ inherited__">TypedDict</span>):
+    messages: Annotated[<span class="hljs-built_in">list</span>, operator.add]
+    next_action: <span class="hljs-built_in">str</span>
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">reasoning_node</span>(<span class="hljs-params">state: AgentState</span>) -&gt; AgentState:
+    <span class="hljs-string">"""推理节点：决定下一步行动"""</span>
+    response = llm.invoke(state[<span class="hljs-string">"messages"</span>])
+    <span class="hljs-keyword">if</span> response.tool_calls:
+        <span class="hljs-keyword">return</span> {<span class="hljs-string">"messages"</span>: [response], <span class="hljs-string">"next_action"</span>: <span class="hljs-string">"tool"</span>}
+    <span class="hljs-keyword">return</span> {<span class="hljs-string">"messages"</span>: [response], <span class="hljs-string">"next_action"</span>: <span class="hljs-string">"end"</span>}
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">tool_node</span>(<span class="hljs-params">state: AgentState</span>) -&gt; AgentState:
+    <span class="hljs-string">"""工具执行节点"""</span>
+    tool_calls = state[<span class="hljs-string">"messages"</span>][-<span class="hljs-number">1</span>].tool_calls
+    results = [execute_tool(tc) <span class="hljs-keyword">for</span> tc <span class="hljs-keyword">in</span> tool_calls]
+    <span class="hljs-keyword">return</span> {<span class="hljs-string">"messages"</span>: results, <span class="hljs-string">"next_action"</span>: <span class="hljs-string">"reason"</span>}
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">should_continue</span>(<span class="hljs-params">state: AgentState</span>) -&gt; <span class="hljs-built_in">str</span>:
+    <span class="hljs-string">"""条件路由"""</span>
+    <span class="hljs-keyword">if</span> state[<span class="hljs-string">"next_action"</span>] == <span class="hljs-string">"end"</span>:
+        <span class="hljs-keyword">return</span> END
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"tool"</span>
+
+<span class="hljs-comment"># 构建图</span>
+graph = StateGraph(AgentState)
+graph.add_node(<span class="hljs-string">"reason"</span>, reasoning_node)
+graph.add_node(<span class="hljs-string">"tool"</span>, tool_node)
+graph.set_entry_point(<span class="hljs-string">"reason"</span>)
+graph.add_conditional_edges(<span class="hljs-string">"reason"</span>, should_continue, {<span class="hljs-string">"tool"</span>: <span class="hljs-string">"tool"</span>, END: END})
+graph.add_edge(<span class="hljs-string">"tool"</span>, <span class="hljs-string">"reason"</span>)
+
+app = graph.<span class="hljs-built_in">compile</span>()
+result = app.invoke({<span class="hljs-string">"messages"</span>: [HumanMessage(content=<span class="hljs-string">"你好"</span>)]})
+</code></pre>
+<h3 id="92-langgraph-的优势">9.2 LangGraph 的优势</h3>
+<ol>
+<li><strong>可视化</strong>：图结构可以直观地展示 Agent 的控制流</li>
+<li><strong>可控性</strong>：显式定义状态转移，避免黑盒行为</li>
+<li><strong>Human-in-the-Loop</strong>：在关键节点插入人工审核</li>
+<li><strong>持久化</strong>：支持状态持久化，Agent 可以暂停和恢复</li>
+<li><strong>流式输出</strong>：支持节点级别的 streaming</li>
+</ol>
+<blockquote>
+<p><strong>面试题：LangGraph 和传统的 LangChain Agent 有什么区别？什么场景下应该使用 LangGraph？</strong></p>
+<p>传统 LangChain Agent 是<strong>线性循环</strong>（think → act → observe → think...），控制流由 LLM 自行决定，缺乏显式的状态管理。LangGraph 是<strong>图结构</strong>，开发者显式定义状态、节点和转移条件，对流程有完全控制。</p>
+<p><strong>使用 LangGraph 的场景</strong>：(1) 复杂工作流——有分支、循环、并行的场景；(2) 需要 Human-in-the-Loop——在关键决策点需要人工确认；(3) 多 Agent 协作——不同 Agent 作为不同节点；(4) 需要状态持久化——支持长时间运行的任务；(5) 需要可观测性——清晰的执行路径便于调试和审计。</p>
+</blockquote>
+<hr></hr>
+<h2 id="10-crewai-框架">10. CrewAI 框架</h2>
+<p>CrewAI 专注于多 Agent 角色扮演和协作：</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> crewai <span class="hljs-keyword">import</span> Agent, Task, Crew
+
+<span class="hljs-comment"># 定义 Agent</span>
+researcher = Agent(
+    role=<span class="hljs-string">"高级研究分析师"</span>,
+    goal=<span class="hljs-string">"发现AI领域最新的突破性技术"</span>,
+    backstory=<span class="hljs-string">"你是一名经验丰富的技术研究员..."</span>,
+    tools=[search_tool, web_scraper],
+    llm=llm
+)
+
+writer = Agent(
+    role=<span class="hljs-string">"技术内容作者"</span>,
+    goal=<span class="hljs-string">"将研究发现转化为易懂的文章"</span>,
+    backstory=<span class="hljs-string">"你是一名擅长科技写作的资深编辑..."</span>,
+    llm=llm
+)
+
+<span class="hljs-comment"># 定义任务</span>
+research_task = Task(
+    description=<span class="hljs-string">"研究2024年最重要的AI突破"</span>,
+    agent=researcher,
+    expected_output=<span class="hljs-string">"详细的研究报告"</span>
+)
+
+writing_task = Task(
+    description=<span class="hljs-string">"基于研究报告撰写一篇科普文章"</span>,
+    agent=writer,
+    context=[research_task],  <span class="hljs-comment"># 依赖研究任务的输出</span>
+    expected_output=<span class="hljs-string">"一篇800字的科普文章"</span>
+)
+
+<span class="hljs-comment"># 组建团队</span>
+crew = Crew(
+    agents=[researcher, writer],
+    tasks=[research_task, writing_task],
+    verbose=<span class="hljs-literal">True</span>
+)
+
+result = crew.kickoff()
+</code></pre>
+<p>CrewAI 的特点是用"角色扮演"的方式定义 Agent，每个 Agent 有明确的角色、目标和背景故事，以及支持灵活的任务依赖和委托机制。</p>
+<hr></hr>
+<h2 id="11-autogen-框架">11. AutoGen 框架</h2>
+<p>Microsoft 的 AutoGen 专注于多 Agent 对话式协作：</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> autogen <span class="hljs-keyword">import</span> AssistantAgent, UserProxyAgent
+
+assistant = AssistantAgent(
+    name=<span class="hljs-string">"助手"</span>,
+    llm_config={<span class="hljs-string">"model"</span>: <span class="hljs-string">"gpt-4o"</span>},
+    system_message=<span class="hljs-string">"你是一个有帮助的AI助手。"</span>
+)
+
+user_proxy = UserProxyAgent(
+    name=<span class="hljs-string">"用户代理"</span>,
+    human_input_mode=<span class="hljs-string">"NEVER"</span>,  <span class="hljs-comment"># ALWAYS / TERMINATE / NEVER</span>
+    code_execution_config={<span class="hljs-string">"work_dir"</span>: <span class="hljs-string">"coding"</span>}
+)
+
+<span class="hljs-comment"># 自动对话执行</span>
+user_proxy.initiate_chat(
+    assistant,
+    message=<span class="hljs-string">"用Python分析这个CSV文件的销售趋势"</span>
+)
+</code></pre>
+<p>AutoGen 的特点是通过 Agent 之间的自动对话来完成任务，支持代码执行和人机交互。</p>
+<hr></hr>
+<h2 id="12-openai-assistants-api">12. OpenAI Assistants API</h2>
+<p>OpenAI 的 Assistants API 提供了托管式的 Agent 能力：</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> openai <span class="hljs-keyword">import</span> OpenAI
+client = OpenAI()
+
+<span class="hljs-comment"># 创建 Assistant</span>
+assistant = client.beta.assistants.create(
+    name=<span class="hljs-string">"数据分析师"</span>,
+    instructions=<span class="hljs-string">"你是一个数据分析专家，善于用Python分析数据。"</span>,
+    tools=[
+        {<span class="hljs-string">"type"</span>: <span class="hljs-string">"code_interpreter"</span>},
+        {<span class="hljs-string">"type"</span>: <span class="hljs-string">"file_search"</span>}
+    ],
+    model=<span class="hljs-string">"gpt-4o"</span>
+)
+
+<span class="hljs-comment"># 创建 Thread（对话线程）</span>
+thread = client.beta.threads.create()
+
+<span class="hljs-comment"># 添加消息</span>
+client.beta.threads.messages.create(
+    thread_id=thread.<span class="hljs-built_in">id</span>,
+    role=<span class="hljs-string">"user"</span>,
+    content=<span class="hljs-string">"请分析这份销售数据"</span>
+)
+
+<span class="hljs-comment"># 运行 Assistant</span>
+run = client.beta.threads.runs.create(
+    thread_id=thread.<span class="hljs-built_in">id</span>,
+    assistant_id=assistant.<span class="hljs-built_in">id</span>
+)
+</code></pre>
+<p>特点：托管式记忆管理、内置 Code Interpreter 和 File Search、支持 Function Calling。</p>
+<blockquote>
+<p><strong>面试题：比较 LangGraph、CrewAI、AutoGen 和 OpenAI Assistants API 的适用场景。</strong></p>
+<table>
+<thead>
+<tr>
+<th>框架</th>
+<th>最佳场景</th>
+<th>优势</th>
+<th>劣势</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LangGraph</td>
+<td>复杂工作流、需要精确控制流程</td>
+<td>可控性强、支持持久化</td>
+<td>学习曲线陡</td>
+</tr>
+<tr>
+<td>CrewAI</td>
+<td>多角色协作、创意类任务</td>
+<td>直观的角色定义、简单易用</td>
+<td>对精确控制支持较弱</td>
+</tr>
+<tr>
+<td>AutoGen</td>
+<td>多Agent对话、代码相关任务</td>
+<td>自动对话机制、代码执行</td>
+<td>调试较困难</td>
+</tr>
+<tr>
+<td>Assistants API</td>
+<td>快速上线、托管运维</td>
+<td>零运维、内置工具</td>
+<td>供应商锁定、定制性有限</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr></hr>
+<h2 id="13-agent-评估与调试">13. Agent 评估与调试</h2>
+<h3 id="131-评估维度">13.1 评估维度</h3>
+<ol>
+<li><strong>任务完成率</strong>：Agent 能否成功完成指定任务</li>
+<li><strong>步骤效率</strong>：完成任务所需的步骤数（LLM 调用次数）</li>
+<li><strong>工具使用准确率</strong>：是否选择了正确的工具和参数</li>
+<li><strong>最终答案质量</strong>：答案的准确性、完整性、相关性</li>
+<li><strong>鲁棒性</strong>：面对异常输入和工具错误时的表现</li>
+<li><strong>成本</strong>：Token 消耗和 API 调用费用</li>
+</ol>
+<h3 id="132-调试工具">13.2 调试工具</h3>
+<ul>
+<li><strong>LangSmith</strong>：LangChain 官方追踪平台，可视化每步执行</li>
+<li><strong>Phoenix (Arize)</strong>：开源可观测性工具</li>
+<li><strong>Verbose/Debug 模式</strong>：打印每步 Thought/Action/Observation</li>
+<li><strong>断点调试</strong>：在 LangGraph 中设置检查点</li>
+</ul>
+<blockquote>
+<p><strong>面试题：Agent 在生产环境中常见的失败模式有哪些？如何预防？</strong></p>
+<ol>
+<li><strong>无限循环</strong>：Agent 反复执行相同操作 → 设置最大迭代次数，检测重复行为</li>
+<li><strong>工具调用错误</strong>：参数格式错误、工具不可用 → 严格的参数校验、优雅降级</li>
+<li><strong>规划偏差</strong>：分解的子任务不合理 → 使用 Plan-and-Replan 策略</li>
+<li><strong>幻觉行为</strong>：编造工具名或参数 → 限制工具列表、严格校验 tool_call</li>
+<li><strong>成本失控</strong>：复杂任务消耗大量 token → 设置预算上限和早停机制</li>
+<li><strong>安全风险</strong>：Agent 执行了不应该执行的操作 → 权限控制、敏感操作人工确认</li>
+</ol>
+</blockquote>
+<hr></hr>
+<h2 id="总结">总结</h2>
+<p>Agent 架构是 LLM 应用从"对话"走向"行动"的关键转变。面试中需要展示对 Agent 核心概念（感知-规划-行动-观察循环）、记忆系统设计、规划策略、多 Agent 协作模式的深入理解，以及对主流框架（LangChain/LangGraph/CrewAI/AutoGen）的实践经验。重点是能够根据实际业务需求选择合适的架构和框架，并预见和解决生产环境中的常见问题。</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="rag.html" class="navigation navigation-prev " aria-label="Previous page: RAG检索增强生成">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="tool-calling.html" class="navigation navigation-next " aria-label="Next page: 工具调用与Function Calling">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Agent架构","level":"5.4","depth":1,"next":{"title":"工具调用与Function Calling","level":"5.5","depth":1,"path":"agent/tool-calling.md","ref":"agent/tool-calling.md","articles":[]},"previous":{"title":"RAG检索增强生成","level":"5.3","depth":1,"path":"agent/rag.md","ref":"agent/rag.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","-livereload","theme-default","highlight","fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"全栈开发面试指南","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/Tsutomu-miku/developer-interview-guide"}},"gitbook":"*","description":"涵盖前端、Node.js、Go后端、AI Agent开发及经典算法题的全面面试准备资料"},"file":{"path":"agent/agent-architecture.md","mtime":"2026-03-31T06:35:11.835Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-03-31T06:35:24.067Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
