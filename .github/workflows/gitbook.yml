@@ -37,11 +37,11 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install HonKit and build
-        run: |
-          npm install honkit
-          npx honkit install
-          npx honkit build . ./docs
+      - name: Install HonKit
+        run: npm install honkit
+
+      - name: Build GitBook with HonKit
+        run: npx honkit build . ./docs
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
